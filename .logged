@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2018.9.11)  11 SEP 2018 15:09
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2018.9.11)  11 SEP 2018 16:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2000,19 +2000,19 @@ File: chapters/TAL/modelcomparison.png Graphic file (type QTm)
 *************************************************
 * fontspec warning: "addfontfeatures-ignored"
 * 
-* \addfontfeature(s) ignored on line 79; it cannot be used with a font that
+* \addfontfeature(s) ignored on line 80; it cannot be used with a font that
 * wasn't selected by a fontspec command.
 * 
 * The current font is "\EU1/lmr/m/n/10.95 ".
 * The requested feature is "RawFeature=+tnum".
 *************************************************
 
-Overfull \hbox (27.14499pt too wide) in paragraph at lines 79--97
+Underfull \hbox (badness 10000) in paragraph at lines 80--98
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 79--97
+Underfull \hbox (badness 10000) in paragraph at lines 80--98
 
  []
 
@@ -2020,28 +2020,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 79--97
 *************************************************
 * fontspec warning: "addfontfeatures-ignored"
 * 
-* \addfontfeature(s) ignored on line 139; it cannot be used with a font that
+* \addfontfeature(s) ignored on line 140; it cannot be used with a font that
 * wasn't selected by a fontspec command.
 * 
 * The current font is "\EU1/lmr/m/n/10.95 ".
 * The requested feature is "RawFeature=+tnum".
 *************************************************
-
-Overfull \hbox (14.87187pt too wide) in paragraph at lines 139--155
- [][] 
- []
-
 File: chapters/TAL/concreteness.png Graphic file (type QTm)
 <use  "chapters/TAL/concreteness.png" > [43] [44]
-Overfull \hbox (125.32657pt too wide) in paragraph at lines 193--201
-\EU1/lmr/m/n/12 form particularly well: by only retrieving the sequence $\OML/c
-mm/m/it/12 < []; []; []; []; [] >$\EU1/lmr/m/n/12 ,
- []
-
 *************************************************
 * fontspec warning: "addfontfeatures-ignored"
 * 
-* \addfontfeature(s) ignored on line 223; it cannot be used with a font that
+* \addfontfeature(s) ignored on line 224; it cannot be used with a font that
 * wasn't selected by a fontspec command.
 * 
 * The current font is "\EU1/lmr/m/n/12 ".
@@ -2054,7 +2044,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 *************************************************
 * fontspec warning: "addfontfeatures-ignored"
 * 
-* \addfontfeature(s) ignored on line 293; it cannot be used with a font that
+* \addfontfeature(s) ignored on line 294; it cannot be used with a font that
 * wasn't selected by a fontspec command.
 * 
 * The current font is "\EU1/lmr/m/n/12 ".
@@ -2086,16 +2076,16 @@ File: chapters/TAL/imagenet/mountain.png Graphic file (type QTm)
 File: chapters/TAL/imagenet/sail.png Graphic file (type QTm)
 
 <use  "chapters/TAL/imagenet/sail.png" >) (./chapters/TAL/discussion.tex
-[47] [48] [49])) [50]
+[47] [48])) [49]
 \openout2 = `chapters/COLI/double_paper.aux'.
 
- (./chapters/COLI/double_paper.tex
+ (./chapters/COLI/double_paper.tex [50
+
+
+
+]
 Chapter 3.
-(./chapters/COLI/intro.tex [51
-
-
-
-] [52] [53]) (./chapters/COLI/related.tex
+(./chapters/COLI/intro.tex [51] [52] [53]) (./chapters/COLI/related.tex
 [54] [55] [56] [57]) (./chapters/COLI/models.tex [58] [59]
 File: chapters/COLI/imaginet.pdf Graphic file (type QTm)
 
@@ -2109,15 +2099,20 @@ File: chapters/COLI/85826.jpg Graphic file (type QTm)
 File: chapters/COLI/60596.jpg Graphic file (type QTm)
 
 <use  "chapters/COLI/60596.jpg" > [63] [64]
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 90; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+* 
+* The current font is "\EU1/lmr/m/n/12 ".
+* The requested feature is "RawFeature=+tnum".
+*************************************************
 File: chapters/COLI/imaginet-omission-pos-boxplot.png Graphic file (type QTm)
-
 <use  "chapters/COLI/imaginet-omission-pos-boxplot.png" >
 File: chapters/COLI/imaginet-omission-dep-boxplot.png Graphic file (type QTm)
 
 <use  "chapters/COLI/imaginet-omission-dep-boxplot.png" >
-
-LaTeX Warning: Float too large for page by 199.50421pt on input line 100.
-
 *************************************************
 * fontspec warning: "addfontfeatures-ignored"
 * 
@@ -2133,12 +2128,8 @@ QTm)
 File: chapters/COLI/imaginet-omission-ratio-dep-boxplot.png Graphic file (type 
 QTm)
 
-<use  "chapters/COLI/imaginet-omission-ratio-dep-boxplot.png" >
-Overfull \hbox (37.71283pt too wide) in paragraph at lines 104--111
- []|   [] 
- []
-
-[65] [66] [67] [68]
+<use  "chapters/COLI/imaginet-omission-ratio-dep-boxplot.png" > [65] [66]
+[67]
 *************************************************
 * fontspec warning: "addfontfeatures-ignored"
 * 
@@ -2154,18 +2145,13 @@ pe QTm)
 File: chapters/COLI/imaginet-omission-quotient-dep-boxplot.png Graphic file (ty
 pe QTm)
 
-<use  "chapters/COLI/imaginet-omission-quotient-dep-boxplot.png" >
-Overfull \hbox (37.71283pt too wide) in paragraph at lines 181--188
- []|   [] 
- []
-
+<use  "chapters/COLI/imaginet-omission-quotient-dep-boxplot.png" > [68]
 [69]
 Overfull \hbox (18.28323pt too wide) in paragraph at lines 235--237
 []\EU1/lmr/m/sc/12 LR full\EU1/lmr/m/n/12 : word type, dependency label, positi
 on, word:dependency
  []
 
-[70]
 *************************************************
 * fontspec warning: "addfontfeatures-ignored"
 * 
@@ -2175,24 +2161,24 @@ on, word:dependency
 * The current font is "\EU1/lmss/m/n/10 ".
 * The requested feature is "RawFeature=+tnum".
 *************************************************
-[71]
+[70] [71]
 File: chapters/COLI/position-new.pdf Graphic file (type QTm)
  <use  "chapters/COLI/position-new.pdf" >
 File: chapters/COLI/top_words.pdf Graphic file (type QTm)
 
-<use  "chapters/COLI/top_words.pdf" > [72] [73]
+<use  "chapters/COLI/top_words.pdf" > [72]
 File: chapters/COLI/position-coef.pdf Graphic file (type QTm)
 
-<use  "chapters/COLI/position-coef.pdf" > [74]) (./chapters/COLI/dimensions.tex
-[75] [76]
+<use  "chapters/COLI/position-coef.pdf" > [73]) (./chapters/COLI/dimensions.tex
+[74] [75]
 File: chapters/COLI/raw_mutual.pdf Graphic file (type QTm)
- <use  "chapters/COLI/raw_mutual.pdf" > [77] [78]
+ <use  "chapters/COLI/raw_mutual.pdf" > [76] [77]
 File: chapters/COLI/bootstrappedMI.pdf Graphic file (type QTm)
 
 <use  "chapters/COLI/bootstrappedMI.pdf" >
 File: chapters/COLI/bootstrappedMI2.pdf Graphic file (type QTm)
 
-<use  "chapters/COLI/bootstrappedMI2.pdf" > [79]
+<use  "chapters/COLI/bootstrappedMI2.pdf" > [78]
 *************************************************
 * fontspec warning: "addfontfeatures-ignored"
 * 
@@ -2202,17 +2188,17 @@ File: chapters/COLI/bootstrappedMI2.pdf Graphic file (type QTm)
 * The current font is "\EU1/lmss/m/n/10 ".
 * The requested feature is "RawFeature=+tnum".
 *************************************************
-)) (./chapters/COLI/conclusions.tex [80] [81]) [82]) [83]
+)) (./chapters/COLI/conclusions.tex [79] [80])) [81] [82]
 \openout2 = `chapters/IJCNLP/emnlp2017.aux'.
 
 
-(./chapters/IJCNLP/emnlp2017.tex [84
+(./chapters/IJCNLP/emnlp2017.tex
+Chapter 4.
+(./chapters/IJCNLP/abstract.tex) (./chapters/IJCNLP/introduction.tex [83
 
 
 
 ]
-Chapter 4.
-(./chapters/IJCNLP/abstract.tex) (./chapters/IJCNLP/introduction.tex [85]
 (./chapters/IJCNLP/model_diagram.tex
 Overfull \hbox (7.92958pt too wide) in paragraph at lines 81--81
  [][][][]|\EU1/lmr/bx/n/14.4 Average 
@@ -2223,10 +2209,10 @@ Overfull \hbox (1.96516pt too wide) in paragraph at lines 82--82
  \EU1/lmr/m/sc/17.28 imaginet 
  []
 
-) [86] [87]) (./chapters/IJCNLP/problem.tex [88] [89])
-(./chapters/IJCNLP/model.tex [90] [91] [92]
+) [84] [85]) (./chapters/IJCNLP/problem.tex [86] [87])
+(./chapters/IJCNLP/model.tex [88] [89] [90]
 
-Package natbib Warning: Citation `Chrupala2017' on page 93 undefined on input l
+Package natbib Warning: Citation `Chrupala2017' on page 91 undefined on input l
 ine 101.
 
 ) (./chapters/IJCNLP/data.tex
@@ -2239,13 +2225,13 @@ ine 101.
 * The current font is "\EU1/lmr/m/n/12 ".
 * The requested feature is "RawFeature=+tnum".
 *************************************************
-[93] [94]) (./chapters/IJCNLP/experiments.tex
+[91] [92]) (./chapters/IJCNLP/experiments.tex
 Overfull \hbox (45.19516pt too wide) in paragraph at lines 31--1
 []\EU1/lmr/m/n/12 Images are represented by 2048D vectors extracted from the ‘p
 ool5/7x7_s1’
  []
 
-[95]
+[93]
 *************************************************
 * fontspec warning: "addfontfeatures-ignored"
 * 
@@ -2255,7 +2241,7 @@ ool5/7x7_s1’
 * The current font is "\EU1/lmr/m/n/12 ".
 * The requested feature is "RawFeature=+tnum".
 *************************************************
-[96]
+[94]
 *************************************************
 * fontspec warning: "addfontfeatures-ignored"
 * 
@@ -2274,7 +2260,7 @@ ool5/7x7_s1’
 * The current font is "\EU1/lmr/m/n/12 ".
 * The requested feature is "RawFeature=+tnum".
 *************************************************
-[97] [98]
+[95] [96]
 *************************************************
 * fontspec warning: "addfontfeatures-ignored"
 * 
@@ -2294,19 +2280,14 @@ Overfull \hbox (3.00945pt too wide) in paragraph at lines 129--129
 [][] 
  []
 
-
-Overfull \hbox (39.32213pt too wide) in paragraph at lines 121--135
- [][] 
- []
-
-[99] (./chapters/IJCNLP/examples.tex
+[97] (./chapters/IJCNLP/examples.tex
 *************************************************
 * fontspec warning: "addfontfeatures-ignored"
 * 
-* \addfontfeature(s) ignored on line 5; it cannot be used with a font that
+* \addfontfeature(s) ignored on line 6; it cannot be used with a font that
 * wasn't selected by a fontspec command.
 * 
-* The current font is "\EU1/lmr/m/n/12 ".
+* The current font is "\EU1/lmr/m/n/8 ".
 * The requested feature is "RawFeature=+tnum".
 *************************************************
 File: chapters/IJCNLP/images/533602654.jpg Graphic file (type QTm)
@@ -2314,29 +2295,19 @@ File: chapters/IJCNLP/images/533602654.jpg Graphic file (type QTm)
 *************************************************
 * fontspec warning: "addfontfeatures-ignored"
 * 
-* \addfontfeature(s) ignored on line 10; it cannot be used with a font that
+* \addfontfeature(s) ignored on line 11; it cannot be used with a font that
 * wasn't selected by a fontspec command.
 * 
-* The current font is "\EU1/lmr/m/n/12 ".
+* The current font is "\U/msb/m/n/5 ".
 * The requested feature is "RawFeature=+tnum".
 *************************************************
-
-Underfull \hbox (badness 1087) in paragraph at lines 13--15
-[]|\EU1/lmr/m/n/12 zwei kinder liegen bäuchlings auf dem boden unter einer
- []
-
-
-Overfull \hbox (122.30972pt too wide) in paragraph at lines 10--16
-[][] 
- []
-
 *************************************************
 * fontspec warning: "addfontfeatures-ignored"
 * 
-* \addfontfeature(s) ignored on line 22; it cannot be used with a font that
+* \addfontfeature(s) ignored on line 23; it cannot be used with a font that
 * wasn't selected by a fontspec command.
 * 
-* The current font is "\EU1/lmr/m/n/12 ".
+* The current font is "\U/msb/m/n/5 ".
 * The requested feature is "RawFeature=+tnum".
 *************************************************
 File: chapters/IJCNLP/images/3720366614.jpg Graphic file (type QTm)
@@ -2344,24 +2315,19 @@ File: chapters/IJCNLP/images/3720366614.jpg Graphic file (type QTm)
 *************************************************
 * fontspec warning: "addfontfeatures-ignored"
 * 
-* \addfontfeature(s) ignored on line 27; it cannot be used with a font that
+* \addfontfeature(s) ignored on line 28; it cannot be used with a font that
 * wasn't selected by a fontspec command.
 * 
-* The current font is "\EU1/lmr/m/n/12 ".
+* The current font is "\U/msb/m/n/5 ".
 * The requested feature is "RawFeature=+tnum".
 *************************************************
-
-Overfull \hbox (122.30972pt too wide) in paragraph at lines 27--32
-[][] 
- []
-
 *************************************************
 * fontspec warning: "addfontfeatures-ignored"
 * 
-* \addfontfeature(s) ignored on line 39; it cannot be used with a font that
+* \addfontfeature(s) ignored on line 40; it cannot be used with a font that
 * wasn't selected by a fontspec command.
 * 
-* The current font is "\EU1/lmr/m/n/12 ".
+* The current font is "\U/msb/m/n/5 ".
 * The requested feature is "RawFeature=+tnum".
 *************************************************
 File: chapters/IJCNLP/images/3325578605.jpg Graphic file (type QTm)
@@ -2369,21 +2335,16 @@ File: chapters/IJCNLP/images/3325578605.jpg Graphic file (type QTm)
 *************************************************
 * fontspec warning: "addfontfeatures-ignored"
 * 
-* \addfontfeature(s) ignored on line 44; it cannot be used with a font that
+* \addfontfeature(s) ignored on line 45; it cannot be used with a font that
 * wasn't selected by a fontspec command.
 * 
-* The current font is "\EU1/lmr/m/n/12 ".
+* The current font is "\U/msb/m/n/5 ".
 * The requested feature is "RawFeature=+tnum".
 *************************************************
 
-Overfull \hbox (122.30972pt too wide) in paragraph at lines 44--49
-[][] 
- []
-
-
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [100] [101]) (./chapters/IJCNLP/discussion.tex [102]
+) [98] [99]) (./chapters/IJCNLP/discussion.tex [100]
 File: chapters/IJCNLP/images/dev_example_notext.png Graphic file (type QTm)
 
 <use  "chapters/IJCNLP/images/dev_example_notext.png" >
@@ -2401,7 +2362,7 @@ Underfull \hbox (badness 3471) in paragraph at lines 32--32
  equal ILSVRC object recognition
  []
 
-[103]
+[101]
 *************************************************
 * fontspec warning: "addfontfeatures-ignored"
 * 
@@ -2411,16 +2372,12 @@ Underfull \hbox (badness 3471) in paragraph at lines 32--32
 * The current font is "\EU1/lmr/m/n/12 ".
 * The requested feature is "RawFeature=+tnum".
 *************************************************
-) (./chapters/IJCNLP/relatedwork.tex [104] [105] [106])
-(./chapters/IJCNLP/conclusion.tex [107]) (./chapters/IJCNLP/ack.tex) [108])
-[109]
+) (./chapters/IJCNLP/relatedwork.tex [102] [103] [104])
+(./chapters/IJCNLP/conclusion.tex) (./chapters/IJCNLP/ack.tex [105])) [106]
 \openout2 = `chapters/ConLL/conll2018.aux'.
 
- (./chapters/ConLL/conll2018.tex [110
 
-
-
-]
+(./chapters/ConLL/conll2018.tex
 Chapter 5.
 
 Overfull \hbox (4.94762pt too wide) in paragraph at lines 100--103
@@ -2428,7 +2385,11 @@ Overfull \hbox (4.94762pt too wide) in paragraph at lines 100--103
 earn better visual-semantic
  []
 
-(./chapters/ConLL/intro1.tex [111] (./chapters/ConLL/examples_figure.tex
+(./chapters/ConLL/intro1.tex [107
+
+
+
+] (./chapters/ConLL/examples_figure.tex
 File: chapters/ConLL/10459869.jpg Graphic file (type QTm)
 
 <use  "chapters/ConLL/10459869.jpg" >
@@ -2456,7 +2417,7 @@ Overfull \hbox (2.608pt too wide) in paragraph at lines 8--22
 [] [] 
  []
 
-) [112] [113]
+) [108] [109]
 Overfull \hbox (1.72655pt too wide) in paragraph at lines 26--27
 []\EU1/lmr/m/n/12 Multilingual models have not been explored
  []
@@ -2466,7 +2427,7 @@ Overfull \hbox (26.53058pt too wide) in paragraph at lines 31--32
 []\EU1/lmr/m/n/12 In Section [][]5.6.2[][] we investigate whether
  []
 
-[114]) (./chapters/ConLL/related.tex [115]
+[110]) (./chapters/ConLL/related.tex [111]
 Overfull \hbox (5.78442pt too wide) in paragraph at lines 9--12
 []\EU1/lmr/m/n/12 Grounded representations of sentences that are learned from i
 mage–
@@ -2478,13 +2439,13 @@ Overfull \hbox (6.10443pt too wide) in paragraph at lines 13--16
 ntence
  []
 
-[116]) (./chapters/ConLL/method.tex [117] [118] [119])
+[112]) (./chapters/ConLL/method.tex [113] [114] [115])
 Overfull \hbox (7.77036pt too wide) in paragraph at lines 56--109
 \EU1/lmr/m/n/12 sented by the 2048D average-pool features extracted from the Re
 sNet50
  []
 
-[120] (./chapters/ConLL/data.tex
+[116] (./chapters/ConLL/data.tex
 *************************************************
 * fontspec warning: "addfontfeatures-ignored"
 * 
@@ -2494,7 +2455,7 @@ sNet50
 * The current font is "\EU1/lmr/m/n/12 ".
 * The requested feature is "RawFeature=+tnum".
 *************************************************
-[121]) (./chapters/ConLL/bilingual.tex
+[117]) (./chapters/ConLL/bilingual.tex
 *************************************************
 * fontspec warning: "addfontfeatures-ignored"
 * 
@@ -2557,7 +2518,7 @@ Overfull \hbox (9.81642pt too wide) in paragraph at lines 86--87
 e use ResNet50
  []
 
-[122] [123] [124]
+[118] [119] [120]
 *************************************************
 * fontspec warning: "addfontfeatures-ignored"
 * 
@@ -2567,7 +2528,7 @@ e use ResNet50
 * The current font is "\EU1/lmr/m/n/12 ".
 * The requested feature is "RawFeature=+tnum".
 *************************************************
-[125]
+[121]
 Overfull \hbox (5.51965pt too wide) in paragraph at lines 132--133
 \EU1/lmr/m/n/12 German sentence for each image in the \EU1/lmr/m/it/12 comparab
 le \EU1/lmr/m/n/12 portion of Multi30K.
@@ -2588,7 +2549,7 @@ ranslation
 * The current font is "\EU1/lmr/m/n/12 ".
 * The requested feature is "RawFeature=+tnum".
 *************************************************
-[126] [127]) (./chapters/ConLL/multilingual.tex [128]
+[122] [123]) (./chapters/ConLL/multilingual.tex [124]
 *************************************************
 * fontspec warning: "addfontfeatures-ignored"
 * 
@@ -2598,7 +2559,7 @@ ranslation
 * The current font is "\EU1/lmr/m/n/12 ".
 * The requested feature is "RawFeature=+tnum".
 *************************************************
-[129]
+[125]
 *************************************************
 * fontspec warning: "addfontfeatures-ignored"
 * 
@@ -2608,62 +2569,57 @@ ranslation
 * The current font is "\EU1/lmr/m/n/12 ".
 * The requested feature is "RawFeature=+tnum".
 *************************************************
-[130]
-Overfull \hbox (109.00812pt too wide) in paragraph at lines 304--305
- [] 
- []
-
-) (./chapters/ConLL/conclusions.tex [131] [132])) [133]
+[126]) (./chapters/ConLL/conclusions.tex [127])) [128]
 \openout2 = `chapters/conclusion.aux'.
 
 
-(./chapters/conclusion.tex [134
-
-
-
-]
+(./chapters/conclusion.tex
 Chapter 6.
-) [135] [136
+) [129
+
+
+
+] [130
 
 
 ]
 \openout2 = `endmatter/summary.aux'.
 
- (./endmatter/summary.tex) [137
+ (./endmatter/summary.tex) [131
 
 
 ]
 \openout2 = `endmatter/publicationlist.aux'.
 
  (./endmatter/publicationlist.tex
-[138
+[132
 
 
 
-]) [139] (./dissertation.bbl [140
+]) [133] (./dissertation.bbl [134
 
 
-] [141] [142] [143] [144]
+] [135] [136] [137] [138]
 Underfull \hbox (badness 1072) in paragraph at lines 237--241
 []\EU1/lmr/m/n/10 Cauchy, A. (1847).  Méthode générale pour la résolution des s
 ystemes
  []
 
-[145] [146] [147] [148] [149] [150] [151] [152] [153] [154] [155] [156]
-[157] [158] [159] [160] [161] [162] [163] [164]) [165]
+[139] [140] [141] [142] [143] [144] [145] [146] [147] [148] [149] [150]
+[151] [152] [153] [154] [155] [156] [157] [158]) [159]
 \openout2 = `endmatter/ticcthesis.aux'.
 
 
-(./endmatter/ticcthesis.tex [166
+(./endmatter/ticcthesis.tex [160
 
 
-] [167]
+] [161]
 Overfull \hbox (1.67531pt too wide) in paragraph at lines 78--81
 \EU1/lmr/m/n/10 tion during playful interactions. Promotores: E.J. Krahmer, M.G
 .J. Swerts.
  []
 
-[168] [169]
+[162] [163]
 Overfull \hbox (6.7893pt too wide) in paragraph at lines 153--157
 \EU1/lmr/m/n/10 production, comprehension, and preference. Promotores: A.A. Mae
 s, M.G.J.
@@ -2675,19 +2631,19 @@ Overfull \hbox (6.53532pt too wide) in paragraph at lines 165--168
 Tilburg,
  []
 
-[170]
+[164]
 Overfull \hbox (0.6653pt too wide) in paragraph at lines 174--178
 []\EU1/lmr/m/n/10 Yevgen Matusevych, Learning constructions from bilingual expo
 sure: Com-
  []
 
-[171]
+[165]
 Overfull \hbox (13.34532pt too wide) in paragraph at lines 210--214
 []\EU1/lmr/m/n/10 Emmelyn Croes, Meeting Face-to-Face Online: The Effects of Vi
 deo-Mediated
  []
 
-) [172]
+) [166]
 
 Package natbib Warning: There were undefined citations.
 
@@ -2715,10 +2671,10 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  54462 strings out of 493638
  1208302 string characters out of 6146796
- 1430615 words of memory out of 5000000
+ 1430617 words of memory out of 5000000
  56776 multiletter control sequences out of 15000+600000
  22713 words of font info for 109 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
  69i,20n,81p,10485b,2992s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on dissertation.pdf (182 pages).
+Output written on dissertation.pdf (176 pages).

@@ -73,7 +73,8 @@ different subsamples of the benchmarks.\label{ref:small_correlation}
 \end{figure}
 
 \bgroup
-\def\arraystretch{1.5}
+\tabcolsep=0.11cm
+%\def\arraystretch{1.5}
 \begin{table}
 {\small
 \begin{tabular}{llllll}
@@ -192,8 +193,8 @@ the confidence intervals around the means using bootstrap.
 
 On these particular data sets the naive frequency
 baseline can perform particularly well: by only retrieving the
-sequence $<\mathit{wearing},\mathit{woman},\mathit{people},
-\mathit{shirt},\mathit{blue}>$, the ranking model \textsc{Freq} scores a P@5=.27
+sequence \emph{wearing, woman, people, shirt, blue} 
+the ranking model \textsc{Freq} scores a P@5=.27
 on F30k. Incorporating both the meaning representations learned by \textsc{Visual} and
 the prior probabilities of the words, the non-overlapping
 confidence intervals suggest that \textsc{Prior} significantly outperforms
