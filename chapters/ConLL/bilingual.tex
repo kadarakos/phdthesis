@@ -1,0 +1,247 @@
+\section{Bilingual Experiments}
+\label{sec:bi}
+
+
+% This table now contains the cosine similarity-trained model from Gella instead of the order embeddings results.
+%\begin{table}[t!]
+%\centering
+%\begin{tabular}{lllll}
+%\toprule
+%& \multicolumn{2}{c}{English} &  \multicolumn{2}{c}{German} \\
+%& I$\rightarrow$T & T$\rightarrow$I & I$\rightarrow$T & %T$\rightarrow$I \\
+%\midrule
+% \texttt{OE}				& 74.8  & 67.8 & 70.9 &  60.4 \\
+% \texttt{PivotAsym}		& 75.2  & 68.4 & 73.4  & 61.7 \\
+% \texttt{ParallelAsym}		& 74.7  & 66.9 & 72.8  & 62.8 \\
+%\texttt{VSE}				& 72.7  & 65.8 & 71.8  & 60.1 \\
+%\texttt{PivotSym}			& 73.8  & 65.8 & 70.0  & 59.2 \\
+%\texttt{ParallelSym}		& 74.1  & 65.7 & 71.3  & 59.3 \\
+%\midrule
+%Monolingual					& 79.8 & 67.9 & 74.0 & 60.5\\
+%Bilingual 					& 80.1 & 68.3 & 75.3 &  62.0\\
+%+ c2c     					& \bf{81.4} & \bf{70.2} & \bf{76.8}  & %\bf{64.0} \\
+%\bottomrule
+%\end{tabular}
+%\label{tab:bi:bilingual}
+%\caption{R@10 retrieval results on \emph{comparable} part of %Multi30K. Typewriter font shows numbers from %~\citep{gella2017image}.}
+%\end{table}
+
+
+
+\begin{table*}[t]
+\centering
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{llcccccc}
+\toprule
+& & \multicolumn{3}{c}{I$\rightarrow$T}  & \multicolumn{3}{c}{T$\rightarrow$I}   \\
+ 						& & R@1 & R@5 & R@10 & R@1 & R@5 & R@10 \\
+\cmidrule{3-8}
+\parbox[t]{2mm}{\multirow{3}{*}{\rotatebox[origin=c]{90}{\small Symmetric}}} & {\tt VSE}				& 31.6 & 60.4 & 72.7 & 23.3 & 53.6 & \bf{65.8}\\
+& {\tt Pivot-Sym}		    & 31.6 & 61.2 & 73.8  & 23.5 & 53.4 & \bf{65.8}\\
+& {\tt Parallel-Sym}      & \bf{31.7} & \bf{62.4} & \bf{74.1}  & \bf{24.7} & \bf{53.9} & 65.7 \\
+\midrule
+\parbox[t]{2mm}{\multirow{3}{*}{\rotatebox[origin=c]{90}{\small Asymmetric}}} & {\tt OE}				& \bf{34.8} & \bf{63.7} & 74.8 & 25.8 & \bf{56.5} & 67.8\\
+& {\tt Pivot-Asym}    	& 33.8 & 62.8 & \bf{75.2}  & 26.2 & 56.4 & \bf{68.4}\\
+& {\tt Parallel-Asym}     & 31.5 & 61.4 & 74.7  & \bf{27.1} & 56.2 & 66.9\\
+\midrule
+& Monolingual	  			& 42.4 & 69.9 & 79.8 & 30.5 & 57.8 & 67.9  \\
+& Bilingual 	  			& 42.7 & 70.7 & 80.1 & 30.6 & 58.1 & 68.3  \\
+& + c2c     	  			& \bf{43.8} & \bf{71.8} & \bf{81.4} & \bf{32.3} &  \bf{59.9} & \bf{70.2} \\
+\bottomrule
+\end{tabular}
+\caption{English Image-to-text (I$\rightarrow$T) and text-to-image (T$\rightarrow$I) retrieval results on the \emph{comparable} part of Multi30K, measured by Recall at 1, 5 at 10. {\tt Typewriter} font shows performance of two sets of symmetric and asymmetric models from \citet{gella2017image}.}
+\label{tab:bi:bilingualEng}
+\end{table*}
+
+\begin{table*}[h!]
+\centering
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{llcccccc}
+\toprule
+& & \multicolumn{3}{c}{I$\rightarrow$T}  & \multicolumn{3}{c}{T$\rightarrow$I}   \\
+ 						& & R@1 & R@5 & R@10 & R@1 & R@5 & R@10 \\
+\cmidrule{3-8}
+\parbox[t]{2mm}{\multirow{3}{*}{\rotatebox[origin=c]{90}{\small Symmetric}}} & {\tt VSE} 			 	& \bf{29.3} & \bf{58.1} & \bf{71.8} & 20.3 & \bf{47.2} & \bf{60.1}\\
+& {\tt Pivot-Sym}			& 26.9  & 56.6  & 70.0 & 20.3 & 46.4 & 59.2 \\
+& {\tt Parallel-Sym}      & 28.2  & 57.7  & 71.3 & \bf{20.9} & 46.9 & 59.3 \\
+\midrule
+\parbox[t]{2mm}{\multirow{3}{*}{\rotatebox[origin=c]{90}{\small Asymmetric}}} & {\tt OE} 				& 26.8 & 57.5 & 70.9 & 21.0 & 48.5 & 60.4 \\
+& {\tt Pivot-Asym} 		& 28.2 & \bf{61.9} & \bf{73.4} & \bf{22.5} & 49.3 & 61.7 \\
+& {\tt Parallel-Asym}     & \bf{30.2} & 60.4 & 72.8 & 21.8 & \bf{50.5} & \bf{62.3} \\
+\midrule
+& Monolingual				& 34.2 & 63.0 & 74.0 & 23.9 & 49.5 & 60.5\\
+& Bilingual 				& 35.2 & 64.3 & 75.3 & 24.6 & 50.8 & 62.0\\
+& + c2c     				& \bf{37.9} & \bf{66.1} & \bf{76.8} & \bf{26.6} & \bf{53.0} & \bf{64.0} \\
+\bottomrule
+\end{tabular}
+\caption{German Image-to-text (I$\rightarrow$T) and text-to-image (T$\rightarrow$I) retrieval results on the \emph{comparable} part of Multi30K, measured by Recall at 1, 5 at 10. {\tt Typewriter} font shows performance of two sets of symmetric and asymmetric models from \citet{gella2017image}.}
+\label{tab:bi:bilingualGer}
+\end{table*}
+
+%In this section we attempt to reproduce the results of \citep{gella2017image}, who claimed image--sentence ranking improvements from bilingual annotations. We then explore whether the the improvements are because the model sees more data or that the data it see is bilingual. We also show how the model performs when it is trained on lower-resource translation pairs than comparable pairs.
+
+\subsection{Reproducing \citet{gella2017image}}
+\label{sec:gella}
+
+We start by attempting to reproduce the findings of \citep{gella2017image}. In these experiments we train our multi-task learning model on the {\it comparable} portion of Multi30K. Our models re-implement their setups used for \texttt{VSE} (Monolingual) and bilingual models \texttt{Pivot-Sym} (Bilingual) and \texttt{Parallel-Sym} (Bilingual + c2c). The \texttt{OE}, \texttt{Pivot-Asym} and \texttt{Parallel-Asym} models are trained using the asymmetric similarity measure introduced for the order-embeddings \cite{vendrov2015order}. The main differences between our models and \citep{gella2017image} is that they use VGG-19 image features, whereas we use ResNet50 features, and we use the max-of-hinges loss instead of the more common sum-of-hinges loss.
+
+Table~\ref{tab:bi:bilingualEng} shows the results on the English comparable 2016 test set. Overall our scores are higher than \citep{gella2017image}, which is most likely due to the different image features (\citep{faghri2017vse++} also report a large performance gain when they use the ResNet instead of the VGG image features). Nevertheless, our results show a similar trend to the symmetric cosine similarity models from \citep{gella2017image}: our best results are achieved with bilingual joint training with the added c2c objective. Their models trained with an asymmetric similarity measure show a different trend: the monolingual model is stronger than the bilingual model, and the c2c loss provides no clear improvement.
+
+Table~\ref{tab:bi:bilingualGer} presents the German results. Once again, our implementation outperforms \citep{gella2017image}, and this is likely due to the different visual features and max-of-hinges loss. However, our Bilingual model with the additional c2c objective performs the best for German, whereas \citep{gella2017image} reports the overall best results for the monolingual baseline \texttt{VSE}. Their models that use the asymmetric similarity function are clearly better than the Monolingual \texttt{OE} model. In general, the results from \citep{gella2017image} indicate the benefits of bilingual joint training, however, they do not find a clear pattern between the model configurations across languages. In our implementation, we only focused on the symmetric cosine similarity function and found a systematic pattern across both languages: bilingual training improves results on all performance metrics for both languages, and the additional c2c objective always provides further improvements.
+
+%\citet{gella2017image} also finds a small
+%improvement of adding c2c when using cosine--similarity, however,
+%they do not find the clear benefit of bilingual joint training.
+%\todo{we should probably mention this earlier and justify why we didn't continue with Gella's setup.}.
+
+% We start by reproducing the findings of
+% \citep{gella2017image} using our method and multi-task learning setup. The model is trained on the comparable portion of the Multi30K dataset. Table \ref{tab:bi:bilingual} shows the results reported by \citep{gella2017image} for their \texttt{PivotAsym} model. We successfully reproduce their results, even though there are two differences between our implementations:
+% \todo{we should probably mention this earlier and justify why we didn't continue with Gella's setup.}
+% (i) their similarity function uses order-embeddings \cite{vendrov2015order}, whereas our model uses cosine similarity, and (ii) they used VGG-19 image features, whereas we use ResNet-50 features. These results show that joint training improves the performance of the German image--sentence ranking model compared to a Monolingual baseline, but it does not change the quality of the English model. Finally, if we train the Bilingual model with the caption--caption ranking loss (c2c), we find further improvements in both languages.
+
+\subsection{Translations vs.\ independent captions}
+\label{sec:bitrans}
+
+\begin{table}[t]
+\centering
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{lcccc}
+\toprule
+& \multicolumn{2}{c}{English} &  \multicolumn{2}{c}{German} \\
+ & I$\rightarrow$T & T$\rightarrow$I & I$\rightarrow$T & T$\rightarrow$I \\
+\midrule
+Monolingual			& 56.3 & 40.1 & 39.5 &  20.9\\
+\midrule
+Bi-translation 			& 67.4 &  55.1 & 58.3 & 44.6 \\
++ c2c     & 58.2 & 47.7 & 51.0 & 39.6\\
+\midrule
+Bi-comparable        & {\bf 67.9} & 55.7 & {\bf 62.0} & 48.1\\
++ c2c  & 67.6 & {\bf 56.0} & 61.9 & {\bf 49.1} \\
+\bottomrule
+\end{tabular}
+\label{tab:bilingual}
+\caption{R@10 retrieval results on the \emph{comparable} part of Multi30K. Bi-translation is trained on 29K \emph{translation pair} data; bi-comparable is trained by downsampling the \emph{comparable} data to 29K.
+%by choosing one caption per image.
+}
+\label{tab:bitrans}
+\end{table}
+%Yes we are. I have unified the text. \todo{Are you using independent and comparable to mean the same thing? Unify. (GC)}
+%Added sentence to make it clear that Gella did not conduct this experiment \todo{Not clear whether this comparison was already in Gella or not (GC)}
+We now study whether the model can be trained on either translation pairs or independently collected bilingual captions. \citep{gella2017image} only conducted experiments on independently collected captions. However, it is known that humans have equally strong preference for translated or independently collected captions of images \cite{frank_elliott_specia_2018}, which has implications for the difficulty and cost of collecting training data. Our baseline is a Monolingual model trained on 29K single-captioned images in the {\it translation} portion of Multi30K. The Bi-translation model is trained on both German and English, with shared parameters. Table~\ref{tab:bitrans} shows that there is a substantial improvement in performance for both languages in the bilingual setting. However, the additional c2c loss degrades performance here. This could be because we only have one caption per image in each language and it is easier to find a relationship between these views of the translation pairs.
+
+In the Bi-comparable setting, we randomly select an English and a German sentence for each image in the {\it comparable} portion of Multi30K. We only find a minor difference in performance between the Bi-translation and Bi-comparable models for English, but the German results are improved. Crucially, it is still better than training on monolingual data. In the Bi-comparable setting, the c2c loss does not have a detrimental effect on model performance, unlike in the Bi-translation experiment. Overall we find that the \emph{comparable} data leads to larger improvements in retrieval performance.%\footnote{I THINK TRANSLATION PAIRS ACT AS DATA AUGMENTATION AND INDEPENDENT PAIRS CONTAIN ACTUALLY MORE INFORMATION, BUT NOT ENOUGH DATA FOR THE AMOUNT OF VARIATION.}.
+
+
+
+\subsection{Overlapping vs.\ non-overlapping images}
+\label{sec:bioverlap}
+
+\begin{table}
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{lcccc}
+\toprule
+& \multicolumn{2}{c}{English} &  \multicolumn{2}{c}{German} \\
+ & I$\rightarrow$T & T$\rightarrow$I & I$\rightarrow$T & T$\rightarrow$I \\
+\midrule
+Full Monolingual			& 79.8 & 67.9 & 74.0 & 60.5\\
+Half Monolingual			& 73.7 & 61.6 & 66.4 & 53.9 \\
+\midrule
+Bi-overlap				& 73.6 & 62.2 & 67.6 &  54.9 \\
++ c2c 		& \bf{76.0} & \bf{65.9} & \bf{71.2}  & \bf{59.1}\\
+\midrule
+Bi-disjoint 	& 73.1 & 62.1 & 67.9 &  54.9\\
+\bottomrule
+\end{tabular}
+\caption{R@10 retrieval results on the \emph{comparable} part of Multi30K. Full model trained on the 29K images of the \emph{comparable} part, Half model on 14.5K images using random downsampling. For Bi-overlap, both English and German captions are used for 14.5K images. For Bi-disjoint, 14.5K images are used for English and the remaining 14.5K images for German.}
+\label{tab:half}
+\end{table}
+
+In a bilingual setting, we can improve an image-sentence ranking model by collecting more data in a second language. This can be achieved in two ways:  by collecting captions in a new language for the same overlapping set of images, or by  using a disjoint set of images and captions in a new language. We compare these two settings here.
+
+In the Bi-overlap condition, we collect captions for the existing images in a new language, i.e.\ we use all of the English and German captions paired with a random selection of 50\% of the images in {\it comparable} Multi30K. This results in a training dataset of 14.5K images with 145K bilingual captions. In the Bi-disjoint condition, we collect captions for new images in a new language, i.e.\  we use all of the English captions from a random selection of 50\% of the images, and all of the German captions for the remaining 50\% of the images. This results in a training dataset on 29K images with a total of 145K bilingual captions.
+%I simplified the language to only use Bi-overlap and Bi-disjoint \todo{Again too many ways of saying the same thing. Scenario I/II vs overlap/disjoint (GC)}
+
+Table~\ref{tab:half} shows the results of this experiment. The upper-bound is to train a Monolingual model on the full \textit{comparable} corpus. For the lower bound, we train Half Monolingual models by randomly sampling half of the 29K images and their associated captions, giving 72.5K captions over 14.5K images. Unsurprisingly, the Half Monolingual models perform worse than the Full Monolingual models. In the Bi-overlap experiment, the German model is improved by collecting captions for the existing images in English. There is no difference in the performance of the English model, echoing the results from Section~\ref{sec:gella}. The Bi-overlap model also benefits from the added c2c objective. Finally, the Bi-disjoint model performs as well as the Bi-overlap model without the c2c objective. (It was not possible to train the Bi-disjoint model with the additional c2c objective because there are no caption pairs for the same image.)
+
+Overall, these results suggest that it is best to collect additional captions in the original language, but when adding a second language, it is better to collect extra captions for existing images and exploit the additional c2c ranking objective.
+
+% In this experiment we assess the difference between the IC and TP
+% scenario. As a baseline we train monolingual models on T1, 29K images
+% with only one caption each, row 1 in Table \ref{tab:task1}.
+% Firstly the results are much lower compared to the T2 setting,
+% especially for text-to-image retrieval.
+% Contrary to the findings using T2 data
+% here the bilingual training provides clear benefits to
+% image-sentence ranking performance in both languages and the the
+% caption-caption loss is detrimental in the TP setup.
+% This is expected as the captions are only in two languages and
+% share the same content, hence it is
+% easy to find the relationship between these views. On the other hand
+% in the IC case the performance on English in improved by c2c and
+% the degradation in German is smaller. Overall the performance between
+% TP and IC is close, however, according to our results TP benefits
+% joint learning in this setting. Never the less both IC and TP settings
+% leads to a considerable improvement over the monolingual baselines.
+
+
+%\paragraph{Translation vs. independent}
+%As it is unclear if the
+%difference simply comes from the different data set sizes of the two conditions or
+%alternatively if the model exploits translation pairs and independent captions
+%differently. The bottom two rows of Table \ref{tab:task2} shows results when we downsample both T2. English and German sets by randomly
+%choosing only one caption in each language per image. Overall bilingual models using only one independent caption per image still outperform the monolingual models, but the improvements are much smaller. Adding the c2c loss in the independent condition considerably improves the
+%recall scores in English and leaves the German
+%results unchanged.
+
+%\begin{table}
+%\label{tab:task1}
+%\renewcommand{\arraystretch}{1.3}
+%\begin{tabular}{lcccc}
+%\toprule
+%& \multicolumn{2}{c}{English} &  \multicolumn{2}{c}{German} \\
+% & I$\rightarrow$T & T$\rightarrow$I & I$\rightarrow$T & T$\rightarrow$I \\
+%Monolingual		  & 46.8 & 17.0 & 38.3 &  13.6 %\\
+%\hline
+%Bilingual         & 53.5 & 19.0 & 47.3 & 18.1 \\
+%+ c2c             & 56.2 & 20.9 & 50.0 & 18.8 \\
+%+ lang. vector & 56.9 & 20.5 & 47.2 & 18.2 \\
+%\bottomrule
+%\end{tabular}
+%\caption{Recall @ 10 results using the validation split of the Multi30K Task 1 dataset.}
+%\end{table}
+
+%\begin{table}[h!]
+%\label{tab:task1}
+%\begin{tabular}{lcccccccccccccc}
+%& \multicolumn{6}{c}{English} &  \multicolumn{6}{c}{German} \\
+%   & \multicolumn{3}{c}{Caption Retrieval} &  \multicolumn{3}{c}{Image Retrieval}  & \multicolumn{3}{c}{Caption Retrieval} &  \multicolumn{3}{c}{Image Retrieval} \\
+%& R@1 & R@10 & Medr & R@1 & R@10 & Medr  & R@1 & R@10 & Medr & R@1 & R@10 & Medr\\
+%\multicolumn{13}{c}{Word-level}  \\
+%Monolingual			& 16.3   & 51.0  &  10.0  &  6.3  & 19.1 & 77.0
+%					& 10.4   & 36.6  & 20.0   & 3.2  &  13.9 & 75.0  \\
+%Bilingual 	& 24.8  & 56.9 &  7.0 & 8.8  & 19.4 & 70.0
+%					& 17.8 & 49.5  & 11.0 & 7.7 & 18.6 & 77.0 \\
+%Bilingual + c2c & 17.3 & 50.5 & 10.0 & 7.2 & 19.3 & 73.0
+%				& 17.8 & 45.5  & 13.0 &  6.9  & 17.7 & 77.0 \\
+%Bilingual ind1 &   &  &  &  &  &  &  &  &  &  &  &  \\
+%Bilingual ind2 &   &  &  &  &  &  &  &  &  &  &  &  \\
+%Bilingual ind3 &   &  &  &  &  &  &  &  &  &  &  &  \\
+%\end{tabular}
+%\caption{Results on English using data from Task 1. of Multi30K. All
+%our results are on the val set.}
+%\end{table}
+%Additional questions
+%\begin{enumerate}
+%\item Q1: Is the improvement we find from monolingual to bilingual in Table 2 due to seeing more data?
+%  \begin{itemize}
+%    \item Rationale: The current Monolingual -- Bilingual experiment only tells us that seeing more data improves image--sentence retrieval. It doesn't tell us if the model benefits from multilingual multimodal data because it sees 2x more data than the monolingual setting.
+%  \end{itemize}
+%\item Q2: Does the joint model exploit translation pairs or independently collected pairs equally well?
+%  \begin{itemize}
+%    \item Rationale: The current Bilingual %experiment learns over professionally translated <L1, L2, V> sentences. As a human language learner (an LSTM) it is unrealistic to find large collections of triple-aligned data. This type of multilingual multimodal data is very expensive to collect than independently generated <L1, L2, V> tuples.
+%  \end{itemize}
+%\item Q3: Does the c2c loss only work on independent pairs?
+%  \begin{itemize}
+%    \item This falls out from Q2.
+%  \end{itemize}
+%\end{enumerate}

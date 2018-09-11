@@ -1,0 +1,191 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: dissertation.aux
+A level-1 auxiliary file: frontmatter/personalize.aux
+A level-1 auxiliary file: frontmatter/cover.aux
+A level-1 auxiliary file: frontmatter/copyright.aux
+A level-1 auxiliary file: frontmatter/proefschrift.aux
+A level-1 auxiliary file: frontmatter/promotores.aux
+A level-1 auxiliary file: frontmatter/quote.aux
+A level-1 auxiliary file: frontmatter/acknowledgements.aux
+A level-1 auxiliary file: chapters/introduction.aux
+A level-1 auxiliary file: chapters/TAL/main.aux
+A level-1 auxiliary file: chapters/COLI/double_paper.aux
+A level-1 auxiliary file: chapters/IJCNLP/emnlp2017.aux
+A level-1 auxiliary file: chapters/ConLL/conll2018.aux
+A level-1 auxiliary file: chapters/conclusion.aux
+A level-1 auxiliary file: endmatter/summary.aux
+A level-1 auxiliary file: endmatter/publicationlist.aux
+The style file: apalike2.bst
+A level-1 auxiliary file: endmatter/ticcthesis.aux
+Reallocated field_info (elt_size=4) to 10632 items from 5000.
+Database file #1: references.bib
+"{" immediately follows a field name---line 130 of file references.bib
+ :   pages
+ :        {215--233},
+I'm skipping whatever remains of this entry
+Repeated entry---line 309 of file references.bib
+ : @inproceedings{mikolov2010recurrent
+ :                                    ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 956 of file references.bib
+ : @article{elliott2016multi30k
+ :                             ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 964 of file references.bib
+ : @article{kiela2017learning
+ :                           ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1111 of file references.bib
+ : @inproceedings{elliott2017findings
+ :                                   ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1332 of file references.bib
+ : @inproceedings{kiela2014learning
+ :                                 ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1473 of file references.bib
+ : @article{miller1991contextual
+ :                              ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1497 of file references.bib
+ : @article{bruni2014multimodal
+ :                             ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1577 of file references.bib
+ : @article{louwerse2011symbol
+ :                            ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1845 of file references.bib
+ : @article{young2014image
+ :                        ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1870 of file references.bib
+ : @article{kiros2014unifying
+ :                           ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1916 of file references.bib
+ : @inproceedings{deng2009imagenet
+ :                                ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2001 of file references.bib
+ : @article{lazaridou2015combining
+ :                                ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2020 of file references.bib
+ : @inproceedings{chrupala2017representations
+ :                                           ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2577 of file references.bib
+ : @inproceedings{kiros2015skip
+ :                             ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2600 of file references.bib
+ : @inproceedings{chung2014empirical
+ :                                  ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2652 of file references.bib
+ : @inproceedings{simonyan2013deep
+ :                                ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2669 of file references.bib
+ : @inproceedings{karpathy2015deep
+ :                                ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2837 of file references.bib
+ : @inproceedings{chrupala2015learning
+ :                                    ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2845 of file references.bib
+ : @inproceedings{lin2014microsoft
+ :                                ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2879 of file references.bib
+ : @article{bengio2003neural
+ :                          ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2896 of file references.bib
+ : @article{hochreiter1997long
+ :                            ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2930 of file references.bib
+ : @inproceedings{simonyan2014very
+ :                                ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3266 of file references.bib
+ : @article{schuster1997
+ :                      ,
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 3642 of file references.bib
+ :   
+ :   url =  "http://www.aclweb.org/anthology/E06-1040",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Repeated entry---line 3739 of file references.bib
+ : @inproceedings{koehn2007
+ :                         ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 4562 of file references.bib
+ : @inproceedings{bahdanau2015
+ :                            ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 4644 of file references.bib
+ : @inproceedings{sennrich2016b
+ :                             ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 4893 of file references.bib
+ : @inproceedings{gal2016
+ :                       ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 4922 of file references.bib
+ : @inproceedings{specia2016
+ :                          ,
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "Chrupala2017"
+Warning--empty journal in Cho2014
+Warning--empty journal in evert2005statistics
+Warning--empty publisher in Gal2016
+Warning--empty journal in nivre2015universal
+Warning--empty journal in Sennrich2017
+You've used 255 entries,
+            2229 wiz_defined-function locations,
+            1773 strings with 53401 characters,
+and the built_in function-call counts, 118157 in all, are:
+= -- 11593
+> -- 5384
+< -- 191
++ -- 1933
+- -- 1857
+* -- 9560
+:= -- 19597
+add.period$ -- 765
+call.type$ -- 255
+change.case$ -- 2186
+chr.to.int$ -- 229
+cite$ -- 260
+duplicate$ -- 4905
+empty$ -- 8065
+format.name$ -- 2228
+if$ -- 23933
+int.to.chr$ -- 27
+int.to.str$ -- 0
+missing$ -- 262
+newline$ -- 1276
+num.names$ -- 767
+pop$ -- 2506
+preamble$ -- 1
+purify$ -- 2194
+quote$ -- 0
+skip$ -- 3677
+stack$ -- 0
+substring$ -- 7562
+swap$ -- 1161
+text.length$ -- 106
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 1514
+warning$ -- 5
+while$ -- 899
+width$ -- 0
+write$ -- 3259
+(There were 30 error messages)

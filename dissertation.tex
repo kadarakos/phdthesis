@@ -1,0 +1,57 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+
+\documentclass{Dissertate}
+\usepackage{adjustbox}
+\usepgfplotslibrary{groupplots}
+
+\begin{document}
+
+%\setstretch{\dnormalspacing}
+\setstretch{\dcompressedspacing}
+\raggedbottom
+% the front matter
+\frontmatter
+\pagenumbering{Roman}
+\include{frontmatter/personalize}
+\include{frontmatter/cover}
+\include{frontmatter/copyright}
+\include{frontmatter/proefschrift}
+\include{frontmatter/promotores}
+\include{frontmatter/quote}
+\include{frontmatter/acknowledgements}
+\tableofcontents
+
+\mainmatter
+% \doublespacing
+\justify
+{ \let\cleardoublepage }
+{ \let\clearpage }
+% include each chapter...
+\setcounter{chapter}{0}  % start chapter numbering at 0
+\include{chapters/introduction}
+\include{chapters/TAL/main}
+\include{chapters/COLI/double_paper}
+\include{chapters/IJCNLP/emnlp2017}
+\include{chapters/ConLL/conll2018}
+\include{chapters/conclusion}
+
+%\setstretch{\dcompressedspacing}
+
+% the back matter
+\backmatter
+\include{endmatter/summary}
+\include{endmatter/publicationlist}
+
+\phantomsection
+\addcontentsline{toc}{chapter}{References}
+\footnotesize{
+\bibliography{references}
+\bibliographystyle{apalike2}
+}
+
+\include{endmatter/ticcthesis}
+
+
+\end{document}

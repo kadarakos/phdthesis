@@ -1,0 +1,99 @@
+%\documentclass[english, utf8]{article-hermes}
+%\usepackage{listings}
+%\usepackage[T1]{fontenc}
+%\usepackage[frenchb]{babel}
+%\usepackage{graphicx}
+%\usepackage[labelfont=bf, labelsep=period]{caption}
+%\usepackage{natbib}
+%\usepackage{todonotes}
+%\usepackage{amsmath}
+%\usepackage{amssymb}
+%\usepackage{algorithm}
+%\usepackage[noend]{algpseudocode}
+%\usepackage{hyperref}
+%\usepackage[utf-8]{inputenc}
+
+
+
+%\newcommand{\Section}[1]{section~\ref{#1}}
+%\newcommand{\Sections}[2]{sections~\ref{#1}~and~\ref{#2}}
+%\newcommand{\Figure}[1]{figure~\ref{#1}}
+%\newcommand{\Table}[1]{Table~\ref{#1}}
+%\newcommand{\Equation}[1]{Equation~(\ref{#1})}
+%\newcommand{\ignore}[1]{}
+%\providecommand{\keywords}[1]{\textbf{\textit{Keywords---}} #1}
+
+
+%\journal{TAL.\ Volume 55--n$^{\circ}$3/2014}{73}{95}
+
+\chapter{Learning word meanings from images of natural scenes}
+
+%\author{\'{A}kos K\'{a}d\'{a}r\fup{*} \andauthor Afra Alishahi\fup{*} \andauthor Grzegorz Chrupa\l{}a\fup{*}}
+%\submitted[15/06/2015]{TAL~55-3}{R}
+
+%\setcounter{page}{73}
+
+
+\paragraph{Abstract}Children early on face
+the challenge of learning the meaning of words
+from noisy and ambiguous contexts.
+Utterances that guide their learning are
+emitted in complex scenes rendering the mapping between
+visual and linguistic cues difficult. A key challenge in computational
+modeling of the acquisition of word meanings is
+to provide representations of scenes that
+contain sources of information and statistical properties
+similar in complexity to natural data. We propose a novel
+computational model of cross-situational word learning
+that takes images of natural scenes paired with
+their descriptions as input and incrementally learns
+probabilistic associations between words and image features.
+Through a set of experiments we show
+that the model learns meaning representations that correlate with human similarity
+judgments, and that given
+an image of a scene it produces words conceptually related to the image.
+
+\newpage
+
+\paragraph{This chapter is based on} Castro Ferreira, T., Krahmer, E., \& Wubben, S. (2016). Individual variation in the choice of referential form. In \textit{Proceedings of the 2016 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies}, NAACL-HLT'2016 (pp. 423-427). San Diego, California: Association for Computational Linguistics.
+
+\newpage
+
+%\keywords{Child language acquisition; Cross-situational learning; Computational cognitive modeling;
+%Multi-modal learning.}
+%\address{}
+%\motscles{Acquisition du langage par l'enfant; apprentissage inter-situationnel;
+%mod\'{e}lisation informatique et sciences cognitives; apprentissage multimodal}
+
+%\resume{Les enfants sont très tôt confrontés au défi d'apprendre la signification des mots à partir de contextes bruités et ambigus. Les énoncés qui guident leur apprentissage sont émis au sein de scènes complexes qui rendent l'appariement entre indices visuels et linguistiques difficile. Un défi important de la modélisation informatique de l'acquisition du sens des mots réside en la proposition de représentations de scènes contenant des sources d'information et des propriétés statistiques %similaires en complexité à des données naturelles. Nous proposons un nouveau modèle d'apprentissage de mots inter-situationnel qui prend en entrée des images de scènes naturelles accompagnées de leurs descriptions et apprend incrémentalement des associations probabilistes entre mots et traits visuels. Nous montrons, à travers un ensemble d'expériences, que ce modèle apprend des représentations de sens corrélées aux jugements de similarité humains, et qu'il produit, pour une image de scène %donnée, des mots qui lui sont conceptuellement liés.}
+
+
+%\address{%
+%\fup{*} Tilburg Center for Cognition and Communication, Tilburg University}
+
+%\date{31/03/2015 TAL~55-3}
+%\begin{document}
+
+%\maketitle
+
+
+
+\input{chapters/TAL/intro.tex}
+\input{chapters/TAL/models.tex}
+\input{chapters/TAL/experiments.tex}
+\input{chapters/TAL/results.tex}
+\input{chapters/TAL/discussion.tex}
+
+%\bibliographystyle{apalike}
+%\bibliography{refs}
+
+%\input{response.tex}
+
+
+
+%\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

@@ -1,0 +1,109 @@
+\section{Imagination Model}
+
+\subsection{Shared Encoder}\label{sec:model:encoder}
+
+The encoder network of our model learns a representation of a
+sequence of $N$ tokens $x_{1 \ldots n}$ in the source language with a
+bidirectional recurrent neural network \cite{Schuster1997}. This representation is shared between the different tasks. 
+Each token is represented by a one-hot vector $\mathbf{x_i}$, which is mapped into an embedding $\mathbf{e_i}$ through a learned matrix
+$\mathbf{E}$:
+%
+\begin{align}
+	\mathbf{e_i} = \mathbf{x_i} \cdot \mathbf{E}
+\end{align}
+%
+A sentence is processed by a pair of recurrent neural networks, where one captures the sequence left-to-right (forward), and the other captures the sequence right-to-left (backward). The initial state of the encoder $\mathbf{h_{-1}}$ is a learned parameter:
+%
+\begin{align}
+	\overrightarrow{\mathbf{h_i}} = \overrightarrow{\text{RNN}}(\overrightarrow{\mathbf{h_{i-1}}}, \mathbf{e_i}) \\
+    \overleftarrow{\mathbf{h_i}} = \overleftarrow{\text{RNN}}(\overleftarrow{\mathbf{h_{i-1}}}, \mathbf{e_i})
+\end{align}
+%
+Each token in the source language input sequence is represented by a concatenation of the forward and backward hidden state vectors:
+%
+\begin{align}
+	\mathbf{h_i} = [\overrightarrow{\mathbf{h_i}}; \overleftarrow{\mathbf{h_i}}]
+\end{align}
+%
+\subsection{Neural Machine Translation Decoder}
+
+The translation model decoder is an attention-based recurrent neural network \cite{Bahdanau2015}. Tokens in the decoder are 
+represented by a one-hot vector $\mathbf{y_j}$, which is mapped into an embedding  $\mathbf{e_j}$ through a learned matrix $\mathbf{E_y}$:
+%
+\begin{align}
+	\mathbf{e_j} = \mathbf{y_j} \cdot \mathbf{E_y} 
+\end{align}
+%
+The inputs to the decoder are the previously predicted token $\mathbf{y_{j-1}}$, the previous decoder state $\mathbf{d_{j-1}}$, 
+and a timestep-dependent context vector $\mathbf{c_j}$ calculated over the encoder hidden states:
+%
+\begin{align}
+    \mathbf{d_j} = \text{RNN}(\mathbf{d_{j-1}}, \mathbf{y_{j-1}},
+    \mathbf{e_j})
+\end{align}
+%
+The initial state of the decoder $\mathbf{d_{\text{-1}}}$ is a nonlinear transform of the mean of the encoder states, where $\mathbf{W}_{init}$ is a learned parameter:
+%
+\begin{align}
+	\mathbf{d_{\text{-1}}} = \text{tanh}(\mathbf{W}_{init} \cdot \frac{1}{N} \sum_{i}^{N}
+    \mathbf{h_i})\label{eqn:decoder_init}
+\end{align}
+%
+The context vector $c_j$ is a weighted sum over the encoder hidden states, where $N$ denotes the length of the source sentence:
+\begin{align}
+	\mathbf{c_j} = \sum_{i=1}^{N} \alpha_{ji}\mathbf{h_i} 
+\end{align}
+%
+The $\alpha_{ji}$ values are the proportion of which the encoder hidden state vectors $\mathbf{ h_{1 \ldots n}}$ contribute to the decoder hidden state 
+when producing the $j$th token in the translation. They are computed by a feed-forward neural network, where $\mathbf{v_a}$, 
+$\mathbf{W_a}$ and $\mathbf{U_a}$ are learned parameters:
+%
+\begin{align}
+	\alpha_{ji} &= \frac{\text{exp}(e_{ji})}{\sum_{l=1}^{N} \text{exp}(e_{li})}\\[1ex]
+	e_{ji} &= \mathbf{v_a} \cdot \text{tanh}( \mathbf{W_{a}} \cdot \mathbf{d_{j-1}}  + \mathbf{U_{a}}  \cdot \mathbf{h_i} )
+\end{align}
+%
+From the hidden state $\mathbf{d_{j}}$ the network predicts the conditional distribution of the next token $y_{j}$, given a target 
+language embedding $\mathbf{e_{j-1}}$ of the previous token, the current hidden state $\mathbf{d_j}$, and the calculated context vector 
+$\mathbf{c_j}$ . Note that at training time, $y_{j-1}$ is the 
+true observed token; whereas for unseen data we use the inferred token $\hat{y}_{j-1}$ sampled from the output of the softmax:
+%
+\begin{align}
+p(y_{j}|y_{<j}, c) = \text{softmax}(\text{tanh}( \mathbf{e_{j-1}}  + \mathbf{d_j}  + \mathbf{c_j} ))
+\end{align}
+
+The translation model is trained to minimise the negative log likelihood of predicting the target language output:
+%
+\begin{align}
+  J_{NLL}(\theta, \phi^t) = - \sum_{j} \text{log p}(y_j|y_{<j}, x)
+\end{align}
+
+\subsection{Imaginet Decoder}
+
+The image prediction decoder is trained to predict the visual feature vector of the image associated with a sentence \cite{Chrupala2015}. 
+It encourages the shared encoder to learn grounded representations for the source language. 
+
+A source language sentence is encoded using the Shared Encoder, as described in Section \ref{sec:model:encoder}. Then we transform the shared encoder representation into a single vector by taking the mean pool over the hidden state annotations, the same way we initialise the hidden state of the translation decoder (Eqn. \ref{eqn:decoder_init}). This sentence representation is the input to a feed-forward neural network that predicts the visual feature vector $\mathbf{\hat{v}}$ associated with a sentence with parameters $\mathbf{W_{vis}}$:
+%
+\begin{align}
+	\mathbf{\hat{v}}  = \text{tanh}( \mathbf{W_{vis}} \cdot \frac{1}{N} \sum_{i}^{N} 
+\mathbf{h_i})
+\end{align}
+
+% The image prediction model can be trained to minimise the mean squared error between the predicted vector $v$ and the true vector $y$:
+% \begin{align}
+% 	\begin{split}
+% 	J_{MSE}(\theta, \phi^t) = ||v - y||\label{eqn:l2imaginet}
+%     \end{split}
+% \end{align}
+
+This decoder is trained to predict the true image vector $\mathbf{v}$ with a margin-based objective, parameterised by the minimum margin
+$\alpha$, and the cosine distance $d(\cdot, \cdot)$. A margin-based objective has previously been used in grounded representation learning \cite{Vendrov2016,Chrupala2017}. The contrastive examples $\mathbf{v'}$ are drawn from the other instances in a minibatch:
+%
+\begin{align}
+	\begin{split}
+	J_{MAR}(\theta, \phi^t) = \sum_{ \mathbf{v'} \neq \mathbf{v}}
+    \text{max}\{0, \alpha & - d( \mathbf{\hat{v}}, \mathbf{v}) \\[-2ex]
+    & + d( \mathbf{\hat{v}} , \mathbf{v'})\}\label{eqn:imaginet}
+    \end{split}
+\end{align}

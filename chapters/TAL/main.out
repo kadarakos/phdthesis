@@ -1,0 +1,23 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{Cross-situational learning}{section.1}% 2
+\BOOKMARK [2][-]{subsection.1.2}{Learning meanings from images}{section.1}% 3
+\BOOKMARK [2][-]{subsection.1.3}{Our study}{section.1}% 4
+\BOOKMARK [1][-]{section.2}{Word learning model}{}% 5
+\BOOKMARK [2][-]{subsection.2.1}{Visual input}{section.2}% 6
+\BOOKMARK [2][-]{subsection.2.2}{Learning algorithm}{section.2}% 7
+\BOOKMARK [2][-]{subsection.2.3}{Baseline models}{section.2}% 8
+\BOOKMARK [1][-]{section.3}{Experiments}{}% 9
+\BOOKMARK [2][-]{subsection.3.1}{Image datasets}{section.3}% 10
+\BOOKMARK [2][-]{subsection.3.2}{Word similarity experiments}{section.3}% 11
+\BOOKMARK [2][-]{subsection.3.3}{Effect of concreteness on similarity judgments}{section.3}% 12
+\BOOKMARK [2][-]{subsection.3.4}{Word production}{section.3}% 13
+\BOOKMARK [3][-]{subsubsection.3.4.1}{Multi-word image descriptions.}{subsection.3.4}% 14
+\BOOKMARK [3][-]{subsubsection.3.4.2}{Single-concept image descriptions}{subsection.3.4}% 15
+\BOOKMARK [1][-]{section.4}{Results}{}% 16
+\BOOKMARK [2][-]{subsection.4.1}{Word similarity}{section.4}% 17
+\BOOKMARK [3][-]{subsubsection.4.1.1}{Concreteness}{subsection.4.1}% 18
+\BOOKMARK [2][-]{subsection.4.2}{Word production}{section.4}% 19
+\BOOKMARK [3][-]{subsubsection.4.2.1}{Multi-word image descriptors}{subsection.4.2}% 20
+\BOOKMARK [3][-]{subsubsection.4.2.2}{Single-concept image descriptors}{subsection.4.2}% 21
+\BOOKMARK [1][-]{section.5}{Discussion and conclusion}{}% 22
+\BOOKMARK [1][-]{section.6}{References}{}% 23

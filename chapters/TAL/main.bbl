@@ -1,0 +1,307 @@
+\begin{thebibliography}{xx}
+
+\harvarditem[Alishahi \harvardand\ Chrupa{\l}a]{Alishahi \harvardand\
+  Chrupa{\l}a}{2012}{alishahi2012concurrent}
+Alishahi A., Chrupa{\l}a G., {\og Concurrent acquisition of word meaning and
+  lexical categories\fg}, {\em Proceedings of the 2012 Joint Conference on
+  Empirical Methods in Natural Language Processing and Computational Natural
+  Language Learning}, Association for Computational Linguistics, p.~643-654,
+  2012.
+
+\harvarditem[Beekhuizen {\em et~al.}]{Beekhuizen, Fazly, Nematzadeh
+  \harvardand\ Stevenson}{2013}{beekhuizen2013word}
+Beekhuizen B., Fazly A., Nematzadeh A., Stevenson S., {\og Word learning in the
+  wild: What natural data can tell us\fg}, {\em Proceedings of the 35th Annual
+  Meeting of the Cognitive Science Society. Austin, TX: Cognitive Science
+  Society}, 2013.
+
+\harvarditem[Brown {\em et~al.}]{Brown, Pietra, Pietra \harvardand\
+  Mercer}{1993}{BrownPPM94}
+Brown P.~F., Pietra V. J.~D., Pietra S. A.~D., Mercer R.~L., {\og The
+  mathematics of statistical machine translation: Parameter estimation\fg},
+  {\em Computational linguistics}, vol. 19, \no2, p.~263-311, 1993.
+
+\harvarditem[Bruni {\em et~al.}]{Bruni, Tran \harvardand\
+  Baroni}{2014}{bruni2014multimodal}
+Bruni E., Tran N.-K., Baroni M., {\og Multimodal distributional semantics\fg},
+  {\em J. Artif. Intell. Res(JAIR)}, vol. 49, p.~1-47, 2014.
+
+\harvarditem[Carey]{Carey}{1978}{Carey1978}
+Carey S., {\og The child as word learner\fg}, {\em in} M.~Halle, J.~Bresnan,
+  G.~A. Miller (eds), {\em Linguistic Theory and Psychological Reality}, The
+  MIT Press, 1978.
+
+\harvarditem[Chen \harvardand\ Zitnick]{Chen \harvardand\
+  Zitnick}{2014}{chen2014learning}
+Chen X., Zitnick C.~L., {\og Learning a recurrent visual representation for
+  image caption generation\fg}, {\em arXiv preprint arXiv:1411.5654}, 2014.
+
+\harvarditem[Deng {\em et~al.}]{Deng, Dong, Socher, Li, Li \harvardand\
+  Fei-Fei}{2009}{deng2009imagenet}
+Deng J., Dong W., Socher R., Li L.-J., Li K., Fei-Fei L., {\og Imagenet: A
+  large-scale hierarchical image database\fg}, {\em Computer Vision and Pattern
+  Recognition, 2009. CVPR 2009. IEEE Conference on}, IEEE, p.~248-255, 2009.
+
+\harvarditem[Donahue {\em et~al.}]{Donahue, Hendricks, Guadarrama, Rohrbach,
+  Venugopalan, Saenko \harvardand\ Darrell}{2014}{donahue2014long}
+Donahue J., Hendricks L.~A., Guadarrama S., Rohrbach M., Venugopalan S., Saenko
+  K., Darrell T., {\og Long-term recurrent convolutional networks for visual
+  recognition and description\fg}, {\em arXiv preprint arXiv:1411.4389}, 2014.
+
+\harvarditem[Efron]{Efron}{1982}{efron1982jackknife}
+Efron B., {\em The Jackknife, the Bootstrap and Other Resampling Plans},
+  vol.~38, SIAM, 1982.
+
+\harvarditem[Fang {\em et~al.}]{Fang, Gupta, Iandola, Srivastava, Deng,
+  Doll{\'a}r, Gao, He, Mitchell, Platt {\em et~al.}}{2014}{fang2014captions}
+Fang H., Gupta S., Iandola F., Srivastava R., Deng L., Doll{\'a}r P., Gao J.,
+  He X., Mitchell M., Platt J. {\em et~al.}, {\og From captions to visual
+  concepts and back\fg}, {\em arXiv preprint arXiv:1411.4952}, 2014.
+
+\harvarditem[Fazly {\em et~al.}]{Fazly, Alishahi \harvardand\
+  Stevenson}{2010}{fazly.etal.10csj}
+Fazly A., Alishahi A., Stevenson S., {\og A probabilistic computational model
+  of cross-situational word learning\fg}, {\em Cognitive Science: A
+  Multidisciplinary Journal}, vol. 34, \no6, p.~1017-1063, 2010.
+
+\harvarditem[Fellbaum]{Fellbaum}{1998}{fellbaum1998wordnet}
+Fellbaum C., {\em WordNet}, Wiley Online Library, 1998.
+
+\harvarditem[Finkelstein {\em et~al.}]{Finkelstein, Gabrilovich, Matias,
+  Rivlin, Solan, Wolfman \harvardand\ Ruppin}{2001}{wordsim353}
+Finkelstein L., Gabrilovich E., Matias Y., Rivlin E., Solan Z., Wolfman G.,
+  Ruppin E., {\og Placing search in context: The concept revisited\fg}, {\em
+  Proceedings of the 10th international conference on World Wide Web}, ACM,
+  p.~406-414, 2001.
+
+\harvarditem[Fleischman \harvardand\ Roy]{Fleischman \harvardand\
+  Roy}{2005}{FleischmanRoy2005}
+Fleischman M., Roy D., {\og Intentional context in situated language
+  learning\fg}, {\em 9th Conference on Computational Natural Language
+  Learning}, 2005.
+
+\harvarditem[Frank {\em et~al.}]{Frank, Goodman \harvardand\
+  Tenenbaum}{2007}{frank.etal.07}
+Frank M.~C., Goodman N.~D., Tenenbaum J.~B., {\og A {Bayesian} framework for
+  cross-situational word-learning\fg}, {\em Advances in Neural Information
+  Processing Systems}, vol.~20, 2007.
+
+\harvarditem[Hill {\em et~al.}]{Hill, Reichart \harvardand\
+  Korhonen}{2014}{hill2014simlex}
+Hill F., Reichart R., Korhonen A., {\og Simlex-999: Evaluating semantic models
+  with (genuine) similarity estimation\fg}, {\em arXiv preprint
+  arXiv:1408.3456}, 2014.
+
+\harvarditem[Hochreiter \harvardand\ Schmidhuber]{Hochreiter \harvardand\
+  Schmidhuber}{1997}{hochreiter1997long}
+Hochreiter S., Schmidhuber J., {\og Long short-term memory\fg}, {\em Neural
+  Computation}, vol. 9, \no8, p.~1735-1780, 1997.
+
+\harvarditem[Jia {\em et~al.}]{Jia, Shelhamer, Donahue, Karayev, Long,
+  Girshick, Guadarrama \harvardand\ Darrell}{2014}{jia2014caffe}
+Jia Y., Shelhamer E., Donahue J., Karayev S., Long J., Girshick R., Guadarrama
+  S., Darrell T., {\og Caffe: Convolutional architecture for fast feature
+  embedding\fg}, {\em arXiv preprint arXiv:1408.5093}, 2014.
+
+\harvarditem[Karpathy \harvardand\ Fei-Fei]{Karpathy \harvardand\
+  Fei-Fei}{2014}{karpathy2014deep}
+Karpathy A., Fei-Fei L., {\og Deep visual-semantic alignments for generating
+  image descriptions\fg}, {\em arXiv preprint arXiv:1412.2306}, 2014.
+
+\harvarditem[Kiros {\em et~al.}]{Kiros, Salakhutdinov \harvardand\
+  Zemel}{2014}{kiros2014unifying}
+Kiros R., Salakhutdinov R., Zemel R.~S., {\og Unifying visual-semantic
+  embeddings with multimodal neural language models\fg}, {\em arXiv preprint
+  arXiv:1411.2539}, 2014.
+
+\harvarditem[Lazaridou {\em et~al.}]{Lazaridou, Pham \harvardand\
+  Baroni}{2015}{lazaridou2015combining}
+Lazaridou A., Pham N.~T., Baroni M., {\og Combining language and vision with a
+  multimodal skip-gram model\fg}, {\em arXiv preprint arXiv:1501.02598}, 2015.
+
+\harvarditem[Li {\em et~al.}]{Li, Farkas \harvardand\
+  Mac{W}hinney}{2004}{Li.etal.2004}
+Li P., Farkas I., Mac{W}hinney B., {\og Early lexical development in a
+  self-organizing neural network\fg}, {\em Neural Networks}, vol. 17,
+  p.~1345-1362, 2004.
+
+\harvarditem[Louwerse]{Louwerse}{2011}{louwerse2011symbol}
+Louwerse M.~M., {\og Symbol interdependency in symbolic and embodied
+  cognition\fg}, {\em Topics in Cognitive Science}, vol. 3, \no2, p.~273-302,
+  2011.
+
+\harvarditem[MacWhinney]{MacWhinney}{2014}{macwhinney2014childes}
+MacWhinney B., {\em The CHILDES Project: Tools for Analyzing Talk, Volume I:
+  Transcription Format and Programs}, Psychology Press, 2014.
+
+\harvarditem[Mao {\em et~al.}]{Mao, Xu, Yang, Wang \harvardand\
+  Yuille}{2014}{mao2014explain}
+Mao J., Xu W., Yang Y., Wang J., Yuille A.~L., {\og Explain images with
+  multimodal recurrent neural networks\fg}, {\em arXiv preprint
+  arXiv:1410.1090}, 2014.
+
+\harvarditem[Matusevych {\em et~al.}]{Matusevych, Alishahi \harvardand\
+  Vogt}{2013}{matusevych2013automatic}
+Matusevych Y., Alishahi A., Vogt P., {\og Automatic generation of naturalistic
+  child--adult interaction data\fg}, {\em Proceedings of the 35th Annual
+  Meeting of the Cognitive Science Society. Austin, TX: Cognitive Science
+  Society}, p.~2996-3001, 2013.
+
+\harvarditem[Mikolov {\em et~al.}]{Mikolov, Chen, Corrado \harvardand\
+  Dean}{2013a}{mikolov2013efficient}
+Mikolov T., Chen K., Corrado G., Dean J., {\og Efficient estimation of word
+  representations in vector space\fg}, {\em arXiv preprint arXiv:1301.3781},
+  2013a.
+
+\harvarditem[Mikolov {\em et~al.}]{Mikolov, Sutskever, Chen, Corrado
+  \harvardand\ Dean}{2013b}{mikolov2013distributed}
+Mikolov T., Sutskever I., Chen K., Corrado G.~S., Dean J., {\og Distributed
+  representations of words and phrases and their compositionality\fg}, {\em
+  Advances in Neural Information Processing Systems}, p.~3111-3119, 2013b.
+
+\harvarditem[Miller \harvardand\ Charles]{Miller \harvardand\
+  Charles}{1991}{miller1991contextual}
+Miller G.~A., Charles W.~G., {\og Contextual correlates of semantic
+  similarity\fg}, {\em Language and Cognitive Processes}, vol. 6, \no1,
+  p.~1-28, 1991.
+
+\harvarditem[Nelson {\em et~al.}]{Nelson, McEvoy \harvardand\
+  Schreiber}{1998}{nelsonuniversity}
+Nelson D., McEvoy C., Schreiber T., {\og The University of South Florida word
+  association, rhyme, and word fragment norms. 1998 http://www. usf. edu\fg},
+  {\em FreeAssociation.[PubMed]}, 1998.
+
+\harvarditem[Pinker]{Pinker}{1989}{pinker.89}
+Pinker S., {\em Learnability and Cognition: The Acquisition of Argument
+  Structure}, Cambridge, {MA: MIT P}ress, 1989.
+
+\harvarditem[Quine]{Quine}{1960}{Quine1960}
+Quine W., {\em {Word and Object}}, Cambridge University Press, Cambridge, MA,
+  1960.
+
+\harvarditem[Radinsky {\em et~al.}]{Radinsky, Agichtein, Gabrilovich
+  \harvardand\ Markovitch}{2011}{radinsky2011word}
+Radinsky K., Agichtein E., Gabrilovich E., Markovitch S., {\og A word at a
+  time: computing word relatedness using temporal semantic analysis\fg}, {\em
+  Proceedings of the 20th International Conference on World Wide Web}, ACM,
+  p.~337-346, 2011.
+
+\harvarditem[Rashtchian {\em et~al.}]{Rashtchian, Young, Hodosh \harvardand\
+  Hockenmaier}{2010}{rashtchian2010collecting}
+Rashtchian C., Young P., Hodosh M., Hockenmaier J., {\og Collecting image
+  annotations using Amazon's mechanical turk\fg}, {\em Proceedings of the NAACL
+  HLT 2010 Workshop on Creating Speech and Language Data with Amazon's
+  Mechanical Turk}, Association for Computational Linguistics, p.~139-147,
+  2010.
+
+\harvarditem[Recchia \harvardand\ Jones]{Recchia \harvardand\
+  Jones}{2012}{recchia2012semantic}
+Recchia G., Jones M.~N., {\og The semantic richness of abstract concepts\fg},
+  {\em Frontiers in Human Neuroscience}, 2012.
+
+\harvarditem[Regier]{Regier}{2005}{regier.05}
+Regier T., {\og The emergence of words: Attentional learning in form and
+  meaning\fg}, {\em Cognitive Science: A Multidisciplinary Journal}, vol. 29,
+  p.~819-865, 2005.
+
+\harvarditem[Rubenstein \harvardand\ Goodenough]{Rubenstein \harvardand\
+  Goodenough}{1965}{rubenstein1965contextual}
+Rubenstein H., Goodenough J.~B., {\og Contextual correlates of synonymy\fg},
+  {\em Communications of the ACM}, vol. 8, \no10, p.~627-633, 1965.
+
+\harvarditem[Russakovsky {\em et~al.}]{Russakovsky, Deng, Su, Krause, Satheesh,
+  Ma, Huang, Karpathy, Khosla, Bernstein, Berg \harvardand\
+  Fei-Fei}{2014}{ILSVRCarxiv14}
+Russakovsky O., Deng J., Su H., Krause J., Satheesh S., Ma S., Huang Z.,
+  Karpathy A., Khosla A., Bernstein M., Berg A.~C., Fei-Fei L., {\og ImageNet
+  large scale visual recognition challenge\fg}, {\em arXiv preprint
+  arXiv:1409.0575}, 2014.
+
+\harvarditem[Simonyan \harvardand\ Zisserman]{Simonyan \harvardand\
+  Zisserman}{2014}{simonyan2014very}
+Simonyan K., Zisserman A., {\og Very deep convolutional networks for
+  large-scale image recognition\fg}, {\em arXiv preprint arXiv:1409.1556},
+  2014.
+
+\harvarditem[Siskind]{Siskind}{1996}{siskind.96}
+Siskind J.~M., {\og {A computational study of cross-situational techniques for
+  learning word-to-meaning mappings}\fg}, {\em Cognition}, vol. 61, \no1-2,
+  p.~39-91, 1996.
+
+\harvarditem[Skocaj {\em et~al.}]{Skocaj, Kristan, Vrecko, Mahnic, Janicek,
+  Kruijff, Hanheide, Hawes, Keller, Zillich {\em
+  et~al.}}{2011}{skocaj2011system}
+Skocaj D., Kristan M., Vrecko A., Mahnic M., Janicek M., Kruijff G.-J.~M.,
+  Hanheide M., Hawes N., Keller T., Zillich M. {\em et~al.}, {\og A system for
+  interactive learning in dialogue with a tutor\fg}, {\em Intelligent Robots
+  and Systems (IROS), 2011 IEEE/RSJ International Conference on}, IEEE,
+  p.~3387-3394, 2011.
+
+\harvarditem[Smith \harvardand\ Yu]{Smith \harvardand\ Yu}{2008}{smith.yu.08}
+Smith L.~B., Yu C., {\og Infants rapidly learn word--referent mappings via
+  cross-situational statistics\fg}, {\em Cognition}, vol. 106, \no3,
+  p.~1558-1568, 2008.
+
+\harvarditem[Szegedy {\em et~al.}]{Szegedy, Liu, Jia, Sermanet, Reed, Anguelov,
+  Erhan, Vanhoucke \harvardand\ Rabinovich}{2014}{szegedy2014going}
+Szegedy C., Liu W., Jia Y., Sermanet P., Reed S., Anguelov D., Erhan D.,
+  Vanhoucke V., Rabinovich A., {\og Going deeper with convolutions\fg}, {\em
+  arXiv preprint arXiv:1409.4842}, 2014.
+
+\harvarditem[Turney {\em et~al.}]{Turney, Neuman, Assaf \harvardand\
+  Cohen}{2011}{turney2011literal}
+Turney P.~D., Neuman Y., Assaf D., Cohen Y., {\og Literal and metaphorical
+  sense identification through concrete and abstract context\fg}, {\em
+  Proceedings of the 2011 Conference on the Empirical Methods in Natural
+  Language Processing}, p.~680-690, 2011.
+
+\harvarditem[Venugopalan {\em et~al.}]{Venugopalan, Xu, Donahue, Rohrbach,
+  Mooney \harvardand\ Saenko}{2014}{venugopalan2014translating}
+Venugopalan S., Xu H., Donahue J., Rohrbach M., Mooney R., Saenko K., {\og
+  Translating videos to natural language using deep recurrent neural
+  networks\fg}, {\em arXiv preprint arXiv:1412.4729}, 2014.
+
+\harvarditem[Vinyals {\em et~al.}]{Vinyals, Toshev, Bengio \harvardand\
+  Erhan}{2014}{vinyals2014show}
+Vinyals O., Toshev A., Bengio S., Erhan D., {\og Show and tell: A neural image
+  caption generator\fg}, {\em arXiv preprint arXiv:1411.4555}, 2014.
+
+\harvarditem[Vouloumanos]{Vouloumanos}{2008}{vouloumanos.08}
+Vouloumanos A., {\og Fine-grained sensitivity to statistical information in
+  adult word learning\fg}, {\em Cognition}, vol. 107, p.~729-742, 2008.
+
+\harvarditem[Vouloumanos \harvardand\ Werker]{Vouloumanos \harvardand\
+  Werker}{2009}{vouloumanos.werker.09}
+Vouloumanos A., Werker J.~F., {\og Infants' learning of novel words in a
+  stochastic environment\fg}, {\em Developmental Psychology}, vol. 45,
+  p.~1611-1617, 2009.
+
+\harvarditem[Yang \harvardand\ Powers]{Yang \harvardand\
+  Powers}{2006}{yang2006verb}
+Yang D., Powers D.~M., {\em Verb Similarity on the Taxonomy of WordNet},
+  Citeseer, 2006.
+
+\harvarditem[Young {\em et~al.}]{Young, Lai, Hodosh \harvardand\
+  Hockenmaier}{2014}{young2014image}
+Young P., Lai A., Hodosh M., Hockenmaier J., {\og From image descriptions to
+  visual denotations: New similarity metrics for semantic inference over event
+  descriptions\fg}, {\em Transactions of the Association for Computational
+  Linguistics}, vol. 2, p.~67-78, 2014.
+
+\harvarditem[Yu]{Yu}{2008}{yu.08}
+Yu C., {\og A Statistical associative account of vocabulary growth in early
+  word learning\fg}, {\em Language Learning and Development}, vol. 4, \no1,
+  p.~32-62, 2008.
+
+\harvarditem[Yu \harvardand\ Ballard]{Yu \harvardand\
+  Ballard}{2007}{yu2007unified}
+Yu C., Ballard D.~H., {\og A unified model of early word learning: Integrating
+  statistical and social cues\fg}, {\em Neurocomputing}, vol. 70, \no13,
+  p.~2149-2165, 2007.
+
+\harvarditem[Yu \harvardand\ Smith]{Yu \harvardand\ Smith}{2007}{yu.smith.07}
+Yu C., Smith L.~B., {\og Rapid word learning under uncertainty via
+  cross-situational statistics\fg}, {\em Psychological Science}, vol. 18, \no5,
+  p.~414, 2007.
+
+\end{thebibliography}

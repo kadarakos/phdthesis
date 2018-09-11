@@ -1,0 +1,662 @@
+\newpage
+\pagenumbering{roman}
+
+\noindent
+Dear Dr.~Merlo,
+\newline
+
+Thank you for the very helpful suggestions and insightful questions
+posed in this review.  We apologize for the delay getting this
+revision back to you and very much appreciate the extension you 
+gave us to resubmit the manuscript.
+
+We have substantially revised the article in response to your and the reviewers' 
+comments. Specifically with regard to the two main issues you raised, we have 
+introduced a uni-modal language model (referred to as the {\sc LM} model in the text) 
+and reported the results of the experiments on this model as well. Also following 
+your recommendation, we have removed the exploratory parts of (the old) Section 6, 
+and reorganized the paper by merging previous Sections 4, 5 and the remaining of 
+Section 6 into a single section containing all the experiments (that is Section 4 in the 
+revised manuscript). We have kept and expanded the quantitative analysis of the nature of 
+n-gram contexts that trigger individual dimensions in the hidden layers; this experiment is 
+now reported in Section~\ref{sec:contexts}.
+
+Furthermore, we have made clarifications about the details of the techniques all 
+through the manuscript, expanded Introduction (Section~\ref{sec:intro}) to 
+emphasise our contributions, updated Related Work (Section~\ref{sec:related}) 
+to include relevant papers that came out while this manuscript was under review, and 
+expanded Discussion (Section~\ref{sec:conclusion}) to discuss in more detail the 
+relevance and generalizability of our techniques. 
+We reran all the experiments with a different, more reliable parser,
+which caused minor differences in the details of the figures.
+
+We believe that the revisions to the paper address your collective
+concerns, and we thank you all again for the comments that have helped
+us to improve the paper.
+\newline
+
+\noindent
+Sincerely,
+\newline
+
+\noindent
+Ákos Kádár, Grzegorz Chrupała and Afra Alishahi
+\newline
+
+
+\begin{verbatim}
+Dear Ákos Kádár:
+
+We have reached a decision regarding your submission to Computational
+Linguistics, "Representation of linguistic form and function in
+recurrent neural networks". I include here the reviews for your
+perusal.
+
+The reviewers and I like the area of work in which this paper is
+situated: model analysis. While the reviews correctly point out that
+several shortcomings remain, a discussion has identified the
+modifications that we think are really required, to make the paper
+stronger. Other ideas are suggestions that we leave to you for future
+work.
+
+The requested changes concern an added comparisons to unimodal models
+(or at least to unimodal versions of Imaginet). On the other hand, all
+the reviewers thought that Section 6 is less convincing than the rest
+of the paper, at least in the current writeup. So we think that this
+Section could be reduced in favor of adding the unimodal experiments .
+
+I would be grateful if you could provide an appropriately revised
+version of your paper by 10th February 2017. Please email the
+editorial assistant (editorialoffice@cljournal.org) within one week,
+to confirm whether you will be able to meet this target date, or to
+negotiate a new target date.
+
+You will find details of the resubmission process at
+http://cljournal.org/ojs-help.html.  When you submit your revised
+paper, please enclose a letter that responds specifically to each of
+the points made by the reviewers, outlining the changes you have made,
+and those you have not addressed, together with an electronic copy of
+the revised manuscript as a PDF file.
+
+Thank you for submitting to Computational Linguistics.
+
+
+Paola Merlo
+University of Geneva
+Paola.Merlo@unige.ch
+------------------------------------------------------
+Reviewer A:
+
+
+2 What is this paper about? [Help] :
+The paper presents methodologies for analyzing what is learned by
+recurrent neural networks. It does this by suggesting two
+methodologies, and then applying them to two similar tasks -- one that
+that is based on language modeling, and another which is based on
+visual recognition. The analysis highlights some of the things that
+are encoded and not encoded in each of the representations.
+
+
+3 Strengths and Weaknesses [Help]
+
+Strengths:
+
+The topic of understanding what is learned by neural network models,
+in particular recurrent ones, is of great importance and interest, and
+papers of this kind are very much needed. While most work tries to use
+"deep learning" and RNNs to "improve" on various language tasks,
+understanding their capabilities and inner working, and making them
+more transparent, is much more challenging, and there are not enough
+works in this area. The current work attempts to do precisely that,
+and it also delivers on its promise with an interesting methodology
+and insights. In particular, the first part (section 5) is
+particularly well done. Section 6 is somewhat less convincing, but
+still is on-par or better than any other work that attempts to deliver
+analysis and insights.
+
+
+Weaknesses:
+ 
+Some parts of the papers were not clear, and could be improved. I also
+have someissues with some of the experiments in section 6, which can
+either be presented better or even removed altogether, in my view.
+
+- In terms of clarity, I would appreciate a better description of the
+  IMAGINET model, which is being analyzed. The model is described in
+  terms of its equations, but I would like to see a better
+  presentation of what is the intent behind it -
+
+- what is being modeled and what is being learned? this is available
+  in the original IMAGINET paper, but I think the description should
+  be imported to this paper also, in order to make it self contained
+  and stronger.
+  
+\end{verbatim}  
+\begin{quote}
+\textsc{Author Response:}
+We have expanded Section~\ref{sec:imaginet} with a conceptual
+description of {\sc Imaginet} and its learning goals, and added a graphical
+representation of the structure of the model for more clarity (Figure~\ref{fig:imaginet}).
+\end{quote}
+\begin{verbatim}
+
+- Also in terms of clarity, the graphs are not described in enough
+  detail in my view. Whiel the box plots (figure 2 and others) are
+  somewhat standard, they are not mainstream in the NLP commuity, and
+  I would appreciate seeing a more detailed description in the main
+  text or the caption of what each component means, both generally and
+  in the context of the specific graph.
+\end{verbatim}  
+\begin{quote}
+\textsc{Author Response:}  We have provided an interpretation of the boxplots 
+in footnote~\ref{ft:boxplots} on page~\pageref{ft:boxplots}.
+\end{quote}
+\begin{verbatim}
+- Figure 7 is confusing -- what are the different colors between,
+  e.g., the words "in" and "tree" in the first line, and between "a"
+  and "wii" in the second? I assume this is some "gradient" between
+  two colors, but it looks like there are several data points and is
+  very confusing. Please fix this.
+\end{verbatim}  
+\begin{quote}
+\textsc{Author Response:}  Following the recommendation of the reviewers,
+we shortened the original Section 6 and removed this figure.
+\end{quote}
+\begin{verbatim}
+
+In terms of content:
+
+- In section 6.1, why is the sorting by magnitude and not by absolute
+  value? are negative activations not important?
+\end{verbatim}  
+\begin{quote}
+\textsc{Author Response:}  It was in fact the absolute value of the activations 
+that was taken into account. In the revised manuscript, we have removed this 
+and other exploratory experiments and expanded the quantitative analyses.
+\end{quote}
+\begin{verbatim}
+
+- When choosing the "top k context of each unit" (section 6.1), it is
+  not clear what a "unit" is and how it is chosen.
+\end{verbatim}  
+\begin{quote}
+\textsc{Author Response:}  A unit is one individual dimension in the final hidden layer 
+of the network. We have made this clear in the revised text.
+\end{quote}
+\begin{verbatim}
+
+- I did not understand the last sentence in section 6.1, and would
+  appreciate an elaboration on this point (or a removal).
+\end{verbatim}  
+\begin{quote}
+\textsc{Author Response:}  We removed this part and added an 
+expanded discussion of the generalizability of our techniques to 
+Discussion (Section~\ref{sec:conclusion}).
+\end{quote}
+\begin{verbatim}
+
+- In section 6.2, it is not clear how trigrams with high activations
+  are chosen. How is a trigram with high activation defined? this is
+  not clear from the description of the method.
+\end{verbatim}  
+\begin{quote}
+\textsc{Author Response:} We have removed this section in the revised manuscript. We 
+address the nature of contexts which trigger individual dimensions and a systematic
+procedure for selecting the dimensions themselves in more detail now in 
+Section~\ref{sec:contexts}.
+\end{quote}
+\begin{verbatim}
+
+- I am not convinced by the experiments in section 6.3 and their
+  importance -- either they are not described properly and I missed
+  something, or they are somewhat meaningless: when training a
+  logistic regression model to predict grammatical function, it is not
+  surprising that ones finds units that are predictive of grammatical
+  function.
+\end{verbatim}  
+\begin{quote}
+\textsc{Author Response:}  As mentioned before, we have reorganised 
+the experiments and removed the exploratory parts, including the old Section 6.3. 
+We address the issue of encoding grammatical functions in the revised manuscript in 
+Sections ~\ref{sec:beyondlexical} (specifically in \ref{sec:gramfunc}).
+\end{quote}
+\begin{verbatim}
+
+
+~ Where is section 6.4?
+
+\end{verbatim}  
+\begin{quote}
+\textsc{Author Response:} It was there, believe us! But we have removed this 
+experiment from the revised version for the sake of clarity and coherence of our analyses.
+\end{quote}
+\begin{verbatim}
+
+~ a related (unpublished, but available on arxiv) work is
+https://arxiv.org/abs/1608.04207
+
+\end{verbatim}  
+\begin{quote}
+\textsc{Author Response:}  We have expanded the discussion of related work 
+(Section~\ref{sec:related}) and included this work in addition to a few others which 
+came out while our submission was under review.
+\end{quote}
+\begin{verbatim}
+
+4 Substantive Revisions Required [Help]
+
+Complete this section if either 'Revise and Resubmit' or 'Reject' has
+been recommended.
+
+Revisions to be Required:
+: 
+
+
+
+Revisions to be Encouraged:
+: 
+
+
+
+5 Minor Revisions Required [Help]
+:
+
+See the points marked with (-) in the weaknesses above. Points marked
+with (~) are less important. For section 6.3, my recommendation is
+that it is either substantially revised, or removed altogether -- I
+believe the paper has enough merit without it.
+
+\end{verbatim}  
+\begin{quote}
+\textsc{Author Response:}  We hope we have addressed all your comments and concerns. We have removed the experiments in (the old) Section 6.3 from the revised manuscript.
+\end{quote}
+\begin{verbatim}
+
+6 Typographic Errors [Help]
+:
+
+- "by as" in the first sentence of the intro.
+
+- There are some cases of using parenthesis in citation where they
+  shouldn't be, for example the first two citations in section 2 ("of
+  (Elman 1990)" should be "of Elman (1990)").
+
+\end{verbatim}  
+\begin{quote}
+\textsc{Author Response:} The typo and the citation inconsistencies are fixed.
+\end{quote}
+\begin{verbatim}
+
+------------------------------------------------------
+
+------------------------------------------------------
+Reviewer E:
+
+
+2 What is this paper about? [Help]
+: 
+
+The paper presents a set of methods for analyzing the activations of
+recurrent neural networks from a linguistic perspective using:
+
+a) omission scores (to examine the contribution of a single token to
+the prediction of the network); and
+
+b) top k contexts (keeping the activations for the entire sequence and
+examining individual dimensions)
+
+The model used in this paper is a multimodal (text and visual)
+multi-task RNN (Imaginet). At each time step the next word is
+predicted from its current state, and an image vector is predicted
+from the model's final state. The model consists of two parallel GRUs
+with shared word embeddings.
+
+By pairing omission scores with POS and dependency relations, the
+authors show that the Visual pathway mostly focuses on noun and noun
+relations, while the textual pathway focuses more on function
+words. The textual pathway has in general a more uniform omission
+score distribution, the visual model peaks on content words (albeit
+not particularly on verbs, as the authors discuss).
+
+
+3 Strengths and Weaknesses [Help]
+
+Strengths:
+: 
+* neat idea and novel contribution (pairing activations with POS and
+dependency relations to gain further insights into RNNs)
+
+* extensive analysis; especially going beyond lexical cues (Section
+5.3), where the authors train a regression model to predict omission
+scores on a token level, showing that the network not just learns to
+rely on word types, but it also learns position information
+(particularly important for the textual pathway)
+
+
+Weaknesses:
+: 
+* the description of the top K contexts is not clear, how are top k
+contexts calculated? do you find the most active token (highest
+absolute value of hidden activation in the sequence?) and then use
+the words around it to find the trigrams? (what is meant by 'each
+unit' in Section6.1? Is the matrix actually R^nxd?); maybe you sort
+by column, not row? 
+
+\end{verbatim}  
+\begin{quote}
+\textsc{Author Response:}  You are absolutely right about the description of 
+top k contexts being confusing. We have removed this part and reorganized 
+the experiments section (Section~\ref{sec:experiments}) to make it more understandable
+and coherent. 
+\end{quote}
+\begin{verbatim}
+
+* Section 6.5 shows that the visual pathway focuses more on dependency
+relations, supporting the finding in the omission score part;
+however, the section is again very dense and Figure 7 only shows
+activations for Visual; I'd suggest to drop this part from the paper
+
+\end{verbatim}  
+\begin{quote}
+\textsc{Author Response:}  Following your and others' suggestion, we have removed this section from the revised manuscript.
+\end{quote}
+\begin{verbatim}
+
+4 Substantive Revisions Required [Help]
+
+Complete this section if either 'Revise and Resubmit' or 'Reject' has
+been recommended.
+
+Revisions to be Required:
+: 
+- clearer description of how top k contexts are obtained
+\end{verbatim}  
+\begin{quote}
+\textsc{Author Response:}  As mentioned above, we have removed this part and reorganized Section~\ref{sec:experiments} to make our analyses more concrete and clear.
+\end{quote}
+\begin{verbatim}
+
+
+Revisions to be Encouraged:
+: 
+- figures are not readable in BW printing; in addition to color, use
+  different symbols/line types
+\end{verbatim}  
+\begin{quote}
+\textsc{Author Response:}  We have reformatted many of our figures to make them more readable.
+\end{quote}
+\begin{verbatim}
+
+- Related Work: clarify better how you differ from Li et al. (2015),
+  you mention "for a comparative analysis": I interpret this as "we
+  analyze a multi-task learning model (visual / textual) and compare
+  what the two parts learn"
+\end{verbatim}  
+\begin{quote}
+\textsc{Author Response:} We have edited our related work section to make the comparison more 
+clear. In addition to taking into account tasks that rely on different modalities (language as well as vision), 
+we focus more on learning structural properties of the input, whereas Li et al. (2015) focus on single
+tokens.
+\end{quote}
+\begin{verbatim}
+
+
+5 Minor Revisions Required [Help]
+: 
+- Sec 2, clarify: what are 'negative strings'? (non-words?)
+\end{verbatim}  
+\begin{quote}
+\textsc{Author Response:}  we have reworded `positive' and `negative' as `grammatical' 
+and `ungrammatical' to avoid confusion.
+\end{quote}
+\begin{verbatim}
+- Before equation 9 missing lambda ("weighted by \lambda"; what lambda
+  is used in the exp.?)
+\end{verbatim}  
+\begin{quote}
+\textsc{Author Response:}  There was no lambda in that equation, but in 
+Section~\ref{sec:imaginet} we report the value we use for the parameter 
+$\alpha$ in Equation~(\ref{eq:losscombo}).
+\end{quote}
+\begin{verbatim}
+- it would be helpful to include a figure of model (as in original
+  paper)
+\end{verbatim}  
+\begin{quote}
+\textsc{Author Response:}  We have included an illustration of the structure of the 
+model in Figure~\ref{fig:imaginet}.
+\end{quote}
+\begin{verbatim}
+- "two minor modifications" but the first seems you also use cosine,
+  was that different previously, not clear.
+\end{verbatim}  
+\begin{quote}
+\textsc{Author Response:}  You are right, the description of the model in 
+Section~\ref{sec:imaginet} presents the version used in this paper, which uses 
+cosine distance. The original Imaginet model uses mean square error instead; 
+we clarified this issue in footnote~\ref{ft:imaginet}.  
+\end{quote}
+\begin{verbatim}
+- specify interaction features in regression model
+\end{verbatim}  
+\begin{quote}
+\textsc{Author Response:}  We have specified the interaction features used in each regression model in Section~\ref{sec:beyondlexical}.
+\end{quote}
+\begin{verbatim}
+- 5.3.1. why also 'water'?
+\end{verbatim}  
+\begin{quote}
+\textsc{Author Response:}  We have removed {\it water} from the set of examples 
+in Figure~\ref{fig:top_words}.
+\end{quote}
+\begin{verbatim}
+
+
+6 Typographic Errors [Help]
+: 
+- abstract: sentence "Based on.." way too long
+- mention multi-task in abstract
+- introduction: "this includes various" > "This can be applied to
+  various"
+- from linguistic point (missing det)
+- generally avoid long sentences (e.g., last paragraph sec 5.1,
+  sec. 5.2)
+- rephrase: "this model we refer to as SUM"
+- windowsizes
+\end{verbatim}  
+\begin{quote}
+\textsc{Author Response:}  We have fixed these issues, thanks for bringing them to our attention.
+\end{quote}
+\begin{verbatim}
+
+------------------------------------------------------
+
+------------------------------------------------------
+Reviewer F:
+
+
+2 What is this paper about? [Help]
+: 
+This paper presents an analysis of the information learned by
+recurrent neural networks. It focuses on one particular multimodal,
+multitask model, Imaginet, which is trained on images and their
+descriptions. The paper proposes a new measure, the omission score,
+which indicates how sensitive the network is to individual words in
+the input. Using this method, the authors show that the textual module
+of the model pays attention to function words, while the visual module
+pays attention to content words. The authors then propose a second
+method which can be used to analyze which n-grams the hidden units of
+the model are sensitive to; this results in meaningful syntactic and
+semantic clusters. This time, there is no clear-cut distinction
+between textual and visual modules.
+
+
+3 Strengths and Weaknesses [Help]
+
+Strengths:
+: 
+This paper makes a useful methodological contribution by proposing
+methods to analyze the knowledge learned by neural networks, which is
+an underexplored area, at least for networks trained on text data. The
+paper is well written, and technically sound.
+
+
+Weaknesses:
+: 
+The results of the paper are unfortunately fairly obvious. From the
+omission score analysis, we learn that a model trained to predict the
+next word in a sentence is sensitive to function words, while a word
+trained to associate a sentence with an image representation (which is
+essentially the output of the object detector) pays more attention to
+nouns. This is not at all surprising, it just reflects the different
+training objectives. The fact that the hidden units respond to
+specific n-grams is also expected; most people already believe that
+RNNs are good at approximating n-gram models; the question is, can
+they model more elaborate syntactic structures?
+\end{verbatim}  
+\begin{quote}
+\textsc{Author Response:}  
+The results from Figure~\ref{fig:omission-imaginet} are indeed
+unsurprising. We should expect any method which works well to recover
+such expected results. In addition, however, there are other findings
+which we consider far from obvious: for example the fact that the
+{\sc Visual} pathway assigns very different importance to the same
+word type in different grammatical functions (see See
+Section~\ref{sec:beyondlexical}). We have tried to highlight the
+non-trivial insights more in the paper. 
+
+
+%\todo[inline]{address}
+\end{quote}
+\begin{verbatim}
+
+This is really the question that the authors should explore, e.g., by
+testing whether the model can learn long distance dependencies,
+agreement, recursion, word order. An example for recent work that goes
+in this direction is Linzen et al. (2016).
+\end{verbatim}  
+\begin{quote}
+\textsc{Author Response:} We have expanded the related work 
+(Section~\ref{sec:related}) with a discussion of Linzen et al. (2016) 
+and a few other relevant articles that came out while our submission was under review.
+\end{quote}
+\begin{verbatim}
+
+Another limitation of the paper is its focus on one particular model,
+which happens to be the authors'. To be convincing, the paper would
+really need to compare results for this model with results for other
+architectures, showing that the proposed analysis methods offer real
+discriminative power.
+\end{verbatim}  
+\begin{quote}
+\textsc{Author Response:}  Due to space and time limitations we have to 
+leave the comparison with other architectures for future work; however we 
+have expanded the discussion of the generalizability of our techniques to other
+architectures in Discussion (Section~\ref{sec:conclusion}).
+\end{quote}
+\begin{verbatim}
+
+Related to this, it is not clear to me why a multimodal, multitask
+model such as Imaginet is required for the work presented
+here. Surely, similar results would be obtained if two unimodal RNN
+models were trained, one on image descriptions to predict the next
+word, and one on image representations to predict the description.
+\end{verbatim}  
+\begin{quote}
+\textsc{Author Response:}  The motivation for using {\sc Imaginet} is laid
+out in the introduction. The main point is that this model consists of
+two loosely coupled pathways: One ({\sc Textual}) is a language
+model which is a type of network widely used and reasonably well
+understood. The other one ({\sc Visual}) is a visually-grounded encoder,
+a much less commonly used and studied type of network. By using {\sc
+  Imaginet} we can apply our methods to these two network types and
+compare the results head-to-head. Thus {\sc Textual} serves
+mostly to show that our methods give reasonable, expected answers,
+while with {\sc Visual} we can generate novel, previously unfamiliar
+insights. The multitask setup is not strictly
+necessary for this; in order to abstract away from the effect of multitask
+training on {\sc Textual} we have now added experiments on a
+standalone language model {\sc LM}.
+
+%\todo[inline]{address}
+\end{quote}
+\begin{verbatim}
+
+4 Substantive Revisions Required [Help]
+
+Complete this section if either 'Revise and Resubmit' or 'Reject' has
+been recommended.
+
+Revisions to be Required:
+: 
+(1) Add comparisons to unimodal models (or at least to unimodal
+versions of Imaginet).
+\end{verbatim}  
+\begin{quote}
+\textsc{Author Response:}  In the revised manuscript we have introduced a uni-modal language model, and updated all of our experiments to include this model as well.
+\end{quote}
+\begin{verbatim}
+
+(2) Add comparisons to other architectures (LSTMs, etc.)
+\end{verbatim}  
+\begin{quote}
+\textsc{Author Response:}  As we mentioned before, we are very interested in 
+applying our proposed techniques to other tasks and architectures in future work. 
+For the sake of this manuscript, we have included a theoretical discussion of how 
+these techniques can be implemented for a number of other architectures (see 
+Section~\ref{sec:conclusion}).
+\end{quote}
+\begin{verbatim}
+
+(3) Sec. 5.3.2 should be cut. You don't have connected discourse, just
+isolated sentences. So it is purely speculative to say these
+observations are due to topic/content structure, rather than just to
+linear order.
+\end{verbatim}  
+\begin{quote}
+\textsc{Author Response:}  Our explanation of the aim of this experiment in the original version might have been misleading; we have rewritten this section to make it clear that we are examining the information structure within a single sentence and not in a dialogue. We do believe that the results we report in this section are interesting and nontrivial, especially the fact that the position usually occupied by the subject of the sentence is the most important for the {\sc Visual} model despite the common recency bias in RNNs.
+\end{quote}
+\begin{verbatim}
+
+(4) The paper relies too much on impressionistic evaluation based on
+suggestive figures, rather than on quantitative analysis. An exception
+is Fig. 8. There should be more of this type of analysis.
+\end{verbatim}  
+\begin{quote}
+\textsc{Author Response:}  We have removed the exploratory parts of (the old) Section 6, and expanded the quantitative analysis of the nature of triggering contexts in Section~\ref{sec:contexts}. 
+\end{quote}
+\begin{verbatim}
+
+(5) The authors should discuss the recent paper by Linzen et
+al. (2016). This is a good example for an attempt to evaluate
+linguistic structure learned by an RNN that goes beyond individual
+words or n-grams.
+\end{verbatim}  
+\begin{quote}
+\textsc{Author Response:}  As mentioned before, we have included a discussion of
+this paper in our related work.
+\end{quote}
+\begin{verbatim}
+
+Reference
+
+Assessing the Ability of LSTMs to Learn Syntax-Sensitive
+Dependencies. Tal Linzen, Emmanuel Dupoux, Yoav Goldberg. To appear in
+TACL 2016. https://arxiv.org/abs/1611.01368v1
+
+
+Revisions to be Encouraged:
+: 
+
+
+
+5 Minor Revisions Required [Help]
+: 
+
+
+
+6 Typographic Errors [Help]
+: 
+
+------------------------------------------------------
+\end{verbatim}

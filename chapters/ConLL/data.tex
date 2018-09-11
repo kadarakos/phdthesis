@@ -1,0 +1,36 @@
+% DE: I really like the signposting in this section. It's great!
+
+\section{Experimental setup}
+\label{sec:data}
+
+\begin{table}
+    \centering
+    \renewcommand{\arraystretch}{1.3}
+	\begin{tabular}{ccccc}
+     \toprule
+	 & En & De & Fr & Cz \\
+     \midrule
+     En & 1.0 & 0.04 & 0.06 & 0.02 \\
+     De & --  & 1.0  & 0.03  & 0.01 \\
+     Fr & --  & --   & 1.0   & 0.01 \\
+     Cz & --  & --   & --    & 1.0\\
+     \bottomrule
+	\end{tabular}
+   \caption{Vocabulary overlap as measured by the Jaccard coefficient between the different languages on the translation portion of the Multi30K dataset.}\label{tab:data:vocab_overlap}
+   %The total vocabulary across all languages is 17571, when taking the union it is 16553 leading to a 6\% reduction in vocabulary size. On the comparable portion the total vocabulary between English and German contains 18337 words while the union is 17667, which is a 4\% reduction. DUNNO IF WE SHOULD INCLUDE IT ITS ONLY FOR REVIEWER
+\end{table}
+
+\paragraph{Datasets.}
+We train and evaluate our models on the {\it translation} and {\it comparable} portions of the Multi30K dataset \cite{elliott2016multi30k,elliott2017findings}. The translation portion (a low-resource dataset) contains 29K images, each  described in one English caption with German, French, and Czech translations. The comparable portion (a higher-resource dataset) contains the same 29K images paired with five English and five German descriptions collected independently. Figure \ref{fig:data:example} presents an example of the translation and comparable portions of the data. We used the preprocessed version of the dataset, in which the text is lowercased, punctuation is normalized, and the text is tokenized\footnote{\url{https://github.com/multi30k/dataset}}. To reduce the vocabulary size of the joint models, we replace all words occurring fewer than four times with a special ``UNK'' symbol. Table \ref{tab:data:vocab_overlap} shows the overlap between the vocabularies of the \emph{translation} portion of the Multi30K dataset. The total number of tokens across all four languages is 17,571, and taking the union of the tokens in these four languages results in vocabulary of 16,553 tokens -- a 6\% reduction in vocabulary size. On the \emph{comparable} portion of the dataset, the total vocabulary between English and German contains 18,337 tokens, with a union of 17,667, which is a 4\% reduction in vocabulary size.
+
+%DE: I dropped the (henceforth) wording
+\paragraph{Evaluation.}
+We evaluate our models on the 1K images of the 2016 test set of Multi30K either using the 5K captions from the comparable data or the 1K translation pairs. We evaluate on image-to-text (I$\rightarrow$ T) and text-to-image (T$\rightarrow$ I) retrieval tasks. For most experiments we  report Recall at 1 (R@1), 5 (R@5) and 10 (R@10) scores averaged over 10 randomly initialised models. However, in Section~\ref{sec:multi} we only report R@10 due to space limitations and because it has less variance than R@1 or R@5.
+
+%\paragraph{Additional languages.} In Section~\ref{sec:bi}, we report experiments on English and German. In Section~\ref{sec:multi}, we extend our experiments to include French and Czech data as well. In Section~\ref{sec:bivsmult}, we investigate the contribution of adding more than one language.
+
+%\paragraph{Data alignment.} In Section~\ref{sec:bitrans}, we compare the impact of using bilingual captions that are direct translations of each other versus those collected independently ({\it translation} vs. {\it comparable} portions of Multi30K). Section~\ref{sec:bioverlap} looks at the effect of using overlapping versus non-overlapping images for German and English. Sections~\ref{sec:multitrans} and \ref{sec:multioverlap} repeat these experiments in a multilingual setting.
+
+%\paragraph{High to low-resource transfer.} Section~\ref{sec:multitransfer} investigates how using data from high-resource languages such as English and German affects performance on lower-resource languages such as French and Czech.
+
+%\paragraph{Objective.} In all experiments, we compare the performance under the {\bf c2i} objective (that is, mapping images to captions) versus the {\bf c2i} and {\bf c2c} objectives (i.e., also mapping multilingual captions of the same image into the same space).

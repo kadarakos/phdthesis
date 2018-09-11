@@ -1,0 +1,100 @@
+\paragraph{abstract}
+  We present novel methods for analyzing the activation patterns of
+  RNNs from a linguistic point of view and explore the types of
+  linguistic structure they learn. As a case study, we use a standard
+  standalone language model, and a multi-task gated
+  recurrent network architecture consisting of two parallel pathways with
+  shared word embeddings; The {\sc Visual} pathway is trained on predicting the
+  representations of the visual scene corresponding to an input
+  sentence, whereas the {\sc Textual} pathway is trained to predict the
+  next word in the same sentence.
+  We propose a method for estimating the amount of contribution
+  of individual tokens in the input to the final prediction of the networks.
+  Using this method, we show that the {\sc Visual} pathway pays
+  selective attention to lexical categories and grammatical functions
+  that carry semantic information, and learns to treat word types
+  differently depending on their grammatical function and their position
+  in the sequential structure of the sentence. In contrast, the language
+  models are comparatively more sensitive to words with a syntactic
+  function. Further analysis of the most informative n-gram contexts for
+  each model shows that in comparison to the {\sc Visual} pathway,
+  the language models react more strongly to abstract contexts
+  that represent syntactic constructions.
+
+
+\section{Introduction}
+\label{sec:intro}
+Recurrent neural networks (RNNs) were introduced by
+\citep{elman1990finding}
+as a connectionist architecture with the
+ability to model the temporal dimension. They have proved popular for
+modeling language data as they learn representations of words and
+larger linguistic units directly from the input data, without feature
+engineering. Variations of the RNN architecture have been applied in
+several NLP domains such as parsing \cite{vinyals2015grammar} and
+machine translation \cite{bahdanau2014neural}, as well as in computer
+vision applications such as image generation \cite{gregor2015draw} and
+object segmentation \cite{visin2015reseg}. RNNs are also important
+components of systems integrating vision and language, e.g.\ image
+\cite{karpathy2015deep} and video captioning \cite{yu2015video}.
+
+These networks can represent variable-length linguistic expressions by
+encoding them into a fixed-size low-dimensional vector. The nature and
+the role of the components of these representations are not directly
+interpretable as they are a complex, non-linear function of the
+input. There have recently been numerous efforts to visualize deep
+models such as convolutional neural networks in the domain of computer
+vision, but much less so for variants of RNNs and for language
+processing.
+
+The present paper develops novel methods for uncovering abstract
+linguistic knowledge encoded by the distributed representations of RNNs,
+with a specific focus on analyzing the hidden activation patterns rather
+than word embeddings and on the syntactic generalizations
+that models learn to capture. In the current work we apply our methods
+to a specific architecture trained on specific tasks, but also provide
+pointers about how to generalize the proposed analysis to other settings.
+
+As our case study we picked the {\sc Imaginet} model introduced by \label{explainimaginet}
+\citep{chrupala2015learning}. It is a multi-task, multi-modal
+architecture consisting of two Gated-Recurrent Unit (GRU)
+\cite{cho2014properties,chung2014empirical} pathways and
+a shared word embedding matrix. One of the GRUs ({\sc Visual}) is
+trained to predict image vectors given image descriptions, while the other
+pathway ({\sc Textual}) is a language model, trained to sequentially predict each
+word in the descriptions. This particular
+architecture allows a comparative analysis of the hidden activation
+patterns between networks trained on two different tasks, while
+keeping the training data and the word embeddings fixed. Recurrent neural
+language models akin to {\sc Textual} which are trained to predict the
+next symbol in a sequence are relatively well understood, and there
+have been some attempts to analyze their internal states
+\cite[among others]{elman1991distributed,karpathy2015visualizing}. In
+constrast, {\sc Visual} maps a complete sequence of words to
+a representation of a corresponding visual scene and is a less
+commonly encountered, but a more interesting model from the point of
+view of representing meaning conveyed via linguistic structure.
+For comparison, we also consider a standard standalone language model.
+
+We report a thorough quantitative analysis to provide a linguistic
+interpretation of the networks' activation patterns. We present a
+series of experiments using a novel method we call \emph{omission score}
+to measure the importance of input tokens to the final prediction of models
+that compute distributed representations of sentences.
+Furthermore, we introduce a more global measure for estimating the
+informativeness of various types of n-gram contexts for each model.
+These techniques can be applied to various RNN architectures, Recursive
+Neural Networks and Convolutional Neural Networks.
+
+Our experiments show that the {\sc Visual} pathway in general
+pays special attention to syntactic categories which carry semantic
+content, and particularly to nouns. More surprisingly, this pathway also
+learns to treat word types differently depending on their
+grammatical function and their position in the sequential structure of
+the sentence. In contrast, the {\sc Textual} pathway and the standalone
+language model are especially sensitive to the local syntactic
+characteristics of the input sentences.  Further analysis of the most
+informative n-gram contexts for each model shows that while the
+{\sc Visual} pathway is mostly sensitive to lexical (i.e., token n-gram)
+contexts, the language models react more strongly to abstract contexts
+(i.e., dependency relation n-grams) that represent syntactic constructions.

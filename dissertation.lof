@@ -1,0 +1,29 @@
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Syntactic trees for (\ref {fig:genre}) \textit {genre} with verb phrase in the past tense (\textit {PST}), simple aspect (\textit {S}), indicative mood (\textit {IND}) and active voice (\textit {ACT}); and (\ref {fig:influence}) \textit {influence} with verb phrase in the past tense (\textit {PST}), simple aspect (\textit {S}), indicative mood (\textit {IND}) and passive voice (\textit {PASS}).\relax }}{11}{figure.caption.5}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Aggregating syntactic trees for \textit {genre} and \textit {influence} triples.\relax }}{12}{figure.caption.6}
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Referring expressions for (\ref {fig:regsinger}) NP$_{singer}\delimiter "3223379 $, (\ref {fig:reggenre}) NP$_{genre}\delimiter "3223379 $ and (\ref {fig:reginfluence}) NP$_{influence}\delimiter "3223379 $.\relax }}{13}{figure.caption.7}
+\contentsline {figure}{\numberline {1.4}{\ignorespaces Semantic Representation as a set of \textit {event-attribute-values} for the sentence \textit {``A 20 percent chance of showers after midnight. Increasing clouds, with a low around 48 southwest wind between 5 and 10 mph''}. \texttt {WEATHERGOV} instance extracted from \cite {angeli2010}.\relax }}{23}{figure.caption.8}
+\contentsline {figure}{\numberline {1.5}{\ignorespaces Semantic Representation as a set of attributes for the sentence \textit {``Mathias Tuomi, (born September 30, 1985 in Espoo) is a professional squash player who represents Finland.''}. Instance extracted from \cite {chisholm2017}.\relax }}{23}{figure.caption.9}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Average entropy per gap as a function of text genre. The error bars represent the 95\% confidence intervals.\relax }}{38}{figure.caption.10}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Average entropy per gap as a function of: (\ref {chap1:fig:syntax}) syntactic position, (\ref {chap1:fig:status}) referential status, (\ref {chap1:fig:recency}) recency. Error bars represent 95\% confidence intervals. In Figure \ref {chap1:fig:recency}, the bars represent the average entropies for the group of references where the most recent prior reference is 10 or less words away, between 11 and 20 words, between 21 and 30 words, between 31 and 40 words and more than 40 words away.\relax }}{39}{figure.caption.11}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Jensen-Shannon divergence of NB+Syntax+Status$-$Recency (NB) and RNN+Syntax+Status$-$Recency (RNN) by genre in Experiment 1. Error bars represent 95\% confidence intervals.\relax }}{56}{figure.caption.15}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Average Jensen-Shannon divergence of NB+Syntax+Status$-$Recency (NB) and RNN+Syntax+Status-Recency (RNN) by genre in Experiment 2. Error bars represent 95\% confidence intervals.\relax }}{59}{figure.caption.17}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Average coherence (\ref {chap2:fig:coherence}) and comprehensibility (\ref {chap2:fig:comprehensibility}) of the texts with the original, randomized and generated referring expressions. Error bars represent 95\% confidence intervals.\relax }}{61}{figure.caption.19}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Average length of the proper names in tokens by sentence.\relax }}{74}{figure.caption.20}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Average length of the proper names as a function of: (\ref {chap3:fig:syntax}) syntactic position and (\ref {chap3:fig:status}) referential status. Error bars represent 95\% confidence intervals.\relax }}{75}{figure.caption.22}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces String edit distance in the overall corpus. Error bars represent 95\% confidence intervals.\relax }}{94}{figure.caption.27}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces String edit distances of the models in the (\ref {chap4:fig:blog}) blog, (\ref {chap4:fig:news}) news, (\ref {chap4:fig:wiki}) wiki and (\ref {chap4:fig:others}) in other domains which are not the previous ones. Error bars represent 95\% confidence intervals.\relax }}{95}{figure.caption.28}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Example of a set of triples (top) and corresponding text (bottom).\relax }}{105}{figure.caption.29}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Mapping between tags and entities for the related delexicalized/wikified templates.\relax }}{109}{figure.caption.30}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Example of an AMR\relax }}{132}{figure.caption.35}
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Example of a \textit {Delexicalized}, \textit {Compressed} and \textit {Linearized} AMR\relax }}{135}{figure.caption.36}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {8.1}{\ignorespaces Example of a set of triples and its respective text.\relax }}{157}{figure.caption.39}
+\contentsline {figure}{\numberline {8.2}{\ignorespaces Mapping between tags and entities and the resulting template.\relax }}{159}{figure.caption.40}
+\addvspace {10\p@ }

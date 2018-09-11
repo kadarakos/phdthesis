@@ -1,0 +1,461 @@
+<IMAGINATION>	<COCO_train2014_000000117071.jpg#367178>	<ich nähert sich , dass der grüne pfeil zu sehen zeigt .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000398076.jpg#657409>	<eine frau zeigt auf die kamera , während sie in die kamera liegt .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000060155.jpg#646058>	<ein finger zeigt auf einen hotdog mit chilli und gabel .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000260595.jpg#588644>	<ein sehr überfüllten straßen schild zeigt , in der verschiedene richtungen in china zeigt .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000489853.jpg#378363>	<mehrere personen befinden sich an einem strand mit nebel und zwei von ihnen zeigen auf das wasser .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000333337.jpg#338865>	<ein mann mit brille und anzug zeigt auf den finger .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000121535.jpg#402526>	<ein paar von jemandem in verschiedenen richtungen .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000015220.jpg#166854>	<eine person hält eine schleifmaschine , die sich an einem fernseher ausgestellt ist .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000252443.jpg#520147>	<auf einer welle zeigt ein blick auf eine welle .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000060624.jpg#400803>	<eine hand zeigt einer schwarz-weißen schaufel auf ein großes bildschirm .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000063337.jpg#461906>	<eine frau zeigt auf den himmel und spricht dabei mit einem mann .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000014392.jpg#420462>	<ein mann zeigt auf die entgegengesetzten richtung des platzes .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000201032.jpg#638611>	<ein mann posiert für das bild , während er auf seinem laptop zeigt .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000384136.jpg#184768>	<eine frau zeigt , wie sie eine pistole macht .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000389419.jpg#249523>	<ein junger mann steht und zeigt auf das bild .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000076572.jpg#344777>	<eine frau zeigt für die kamera auf die kamera .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000416482.jpg#67235>	<ein mann zeigt die füße eines kleinen jungen .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000214869.jpg#824111>	<die frau zeigt auf eine tafel und zeigt auf ein telefon .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000512307.jpg#670875>	<ein streichquartett zeigt auf eine kamera und hält ein mikrofon in der hand .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000157771.jpg#2282>	<ein dj auf der bühne zeigt auf seinem kino .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000220793.jpg#799944>	<zwei personen bauen einen tisch mit essen .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000243955.jpg#750942>	<mehrere personen sonnen sich im strand in der nähe des meeres .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000183456.jpg#56543>	<ein tisch , das für eine abendessen angeboten wird .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000425114.jpg#28230>	<ein tisch ist mit wein brille und einen kuchen hoch .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000119621.jpg#165899>	<zwei essen und ein getränk , die an dem klaren tisch sitzen .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000553942.jpg#134910>	<ein mann auf einem skateboard vor einer kamera .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000242007.jpg#733573>	<eine kamera macht vor einer schlafenden katze .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000523332.jpg#133044>	<eine hochzeit wird mit einem von den regenschirmen zu sehen .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000333034.jpg#40537>	<zwei stühle sonnen sich am strand am strand .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000020908.jpg#135680>	<an einem tisch , das mit verschiedenen obst essen und sich gefüllt ist .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000150763.jpg#608448>	<ein esszimmer tisch in einem edlen abendessen .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000035395.jpg#726089>	<eine lange tisch mit vielen obst , gemüse und schmuck .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000158924.jpg#148098>	<eine person befindet sich in der luft über einem skateboard , während die sonne untergeht .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000012146.jpg#213344>	<viele große soldaten , die neben großen löffeln angeboten werden .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000429980.jpg#238530>	<das spielzeug zug ist fotografiert und wird zu .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000164100.jpg#23987>	<ein mann zeigt eine frau einen großen geburtstagskuchen .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000349530.jpg#617591>	<ein pferd wird zu einer kleinen gruppe von menschen zu .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000249532.jpg#210933>	<ein mann zeigt einem braunen pferd vor einer gruppe von menschen .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000356184.jpg#44543>	<eine frau zeigt ihr sandwich in die kamera .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000209246.jpg#663949>	<eine gruppe von menschen , die mit ihren handys in einer gruppe sitzt .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000010130.jpg#769026>	<mehrere frau , die mit einer frau , wie sie auf einem telefon zeigt .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000308722.jpg#31649>	<eine frau wird zu , wie man in einem raum einen golf spiel zu spielen .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000575280.jpg#103958>	<ein mann zeigt einem jüngeren jungen , wie man auf einem ruderboot zu fahren .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000342367.jpg#671034>	<ein fernseher zeigt zwei männern mit hüten und frauen .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000175484.jpg#676509>	<vier bilder aus einem raum , die bilder , bilder und einem laptop auf einem schreibtisch .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000487118.jpg#15442>	<eine frau zeigt einem mann eine flasche wein .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000044298.jpg#108177>	<eine schöne junge frau in einem grünen kleid zieht ihren kleid vor eine show .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000080725.jpg#91141>	<eine person mit handschuhen zeigt die zeit auf seiner uhr .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000223643.jpg#789641>	<ein mann und eine frau zeigen ihr essen .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000144372.jpg#442375>	<zwei große männer schütteln sich in einer sitzung .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000078836.jpg#346918>	<ein mann und eine frau schütteln sich eine menschenmenge an einem kuchen .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000122093.jpg#268937>	<einige freunde schütteln in den ball stadion .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000445192.jpg#5542>	<ein mann auf einem motorrad fährt an einem anderen fahrzeug vorbei .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000354027.jpg#402215>	<verärgert unterrichtet rot und weiße bus in der nacht durch eine stadt .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000510768.jpg#673478>	<ein rotes zug auf einem weg an einem gebäude .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000483569.jpg#225309>	<ein bus fährt an einem fahrrad und einem motorrad vorbei .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000481563.jpg#268186>	<wasser in der nähe eines brücke , die auf einer brücke fährt .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000404546.jpg#483801>	<ein skifahrer geht an zwei personen auf einem motor hügel vorbei .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000223755.jpg#630626>	<ein zug mit eiswagen fährt durch einen bahnhof .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000369726.jpg#81503>	<eine ältere person , die von tellern mit essen aus .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000346445.jpg#302682>	<der straße fährt die straße entlang , die durch die verkehr kommt .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000098279.jpg#461284>	<ein auto fährt durch die kreuzung einer belebten straße .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000486186.jpg#431590>	<ein roter zug fährt über das wasser auf einer brücke .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000276263.jpg#797653>	<mehrere personen stehen auf dem boden eines badezimmer , in der sich und eine toilette sind .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000400702.jpg#346695>	<eine gruppe von menschen auf motorrädern fährt an gebäuden vorbei .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000215677.jpg#176913>	<eine person geht über eine frisbee zwischen ihren beinen .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000107565.jpg#72324>	<ein kleiner junge greift in die spüle .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000321390.jpg#598861>	<das kleine mädchen greift nach einem stück kuchen .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000423537.jpg#805528>	<ein hund greift in die luft , um eine fliegende frisbeescheibe zu fangen .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000014575.jpg#401512>	<einige hände kommt von den händen und greifen nach einer schlafenden frau .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000350358.jpg#276128>	<zwei junge männer greifen hoch , um die gleichen scheibe zu erreichen .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000359833.jpg#573838>	<ein kleiner junge greift nach einem roten apfel .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000112604.jpg#333956>	<eine frau greift , um einen tennisball mit einem schläger zu schlagen .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000021903.jpg#112459>	<ein mann greift , um den elefanten zu bekommen .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000083013.jpg#39754>	<ein baby elefant greift nach einer tasche in einem zoo .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000400880.jpg#140287>	<leute , die sich in einen umgestürzten garten garten halten und brokkoli .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000577416.jpg#296346>	<ein kunst handhandhandhand greift nach einem plastikspielzeug stück .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000250614.jpg#102258>	<ein mann greift bei einer pizzeria in ein gericht .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000398609.jpg#261714>	<eine person greift hoch , um einen fußball zu greifen .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000117302.jpg#653770>	<eine person greift nach einer axt .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000439386.jpg#46901>	<ein tennisspieler greift mit seinem schläger , um einen tennisball zu schlagen .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000166310.jpg#302838>	<das mädchen streckt sich , um den tennisball mit ihrem schläger zu erreichen .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000568205.jpg#310770>	<eine frau greift in den ofen für ihr brot .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000186646.jpg#465508>	<ein mann , der sich nach etwas in einer kiste greift .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000369838.jpg#737046>	<ein elefant greift mit seinem stamm über die absperrung .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000142225.jpg#170838>	<ein mann greift mit einem schläger gegen einen tennisball .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000035128.jpg#767293>	<ein kind greift nach einer orangefarbenen frisbee .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000470700.jpg#382957>	<eine frau in roten schuhen greift nach dem tennisschläger und greift nach ihrem tennisball .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000223701.jpg#173297>	<ein mann auf einer leiter versucht , um ein buch zu erreichen .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000551752.jpg#740270>	<eine frau streckt ihren arm aus , nachdem sie einen tennisball schlägt .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000288761.jpg#494946>	<eine frau greift mit einem schläger hoch in die luft , um einen baseballschläger zu gelangen .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000272159.jpg#38526>	<ein pferd greift über einen zaun und isst durch das gras .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000140843.jpg#615899>	<eine gruppe fußballspieler spielt ein spiel .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000470350.jpg#371035>	<eine person spielt in einem tennis spiel .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000402514.jpg#1706>	<ein mann spielt in seiner küche geige .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000477655.jpg#542498>	<ein paar kinder spielen mit einem fußball .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000479866.jpg#375580>	<zwei frauen und vier männer spielen mit einer weißen frisbee .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000130699.jpg#68645>	<mehrere männer spielen auf einem feld in der nähe von einigen bäumen , daneben und mehreren gebäuden im hintergrund .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000262862.jpg#100502>	<ein mann ruht sich auf einer holz parkbank .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000401836.jpg#44431>	<ein hund legt seinen kopf auf dem schoß .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000292945.jpg#360191>	<kinder ruhen sich auf bänken auf den pier über die stadt .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000573640.jpg#39060>	<zwei kinder posieren mit ihren köpfen auf ihren händen .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000493439.jpg#396868>	<ein mann ruht sich nach einem langen tag mit den füßen auf seinen gepäck .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000443243.jpg#367956>	<eine frau legt ihren kopf auf die rechten hand .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000184672.jpg#738636>	<ein skifahrer macht sich mitten in einem rennen .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000045222.jpg#54967>	<ein bier sitzt auf dem sitz eines motorrad .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000203976.jpg#160626>	<mehrere hände , die sich auf einem stuhl neben einer schwarzen katze ruht .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000304557.jpg#55687>	<menschen gehen durch ein einkaufszentrum mit vielen geschäften .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000529215.jpg#8858>	<zwei personen gehen mit regenschirmen über die straße .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000219909.jpg#573885>	<ein paar frauen gehen unter einem pinkfarbenen schirm eine straße entlang .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000045175.jpg#255925>	<ein mann fährt skateboard und geht mit seinem hund gassi .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000444343.jpg#233468>	<zwei personen gehen in der küche , während ein mann neben einem großen teddybär trinkt .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000560613.jpg#39962>	<zwei personen gehen mit regenschirmen am wasser entlang .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000053754.jpg#348282>	<ein junger mann mit einer badehose geht von dem wasser weg .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000044621.jpg#189982>	<eine schwarze kuh kommt in der nähe einer gruppe von menschen .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000360624.jpg#566977>	<eine person geht nachts einen bürgersteig entlang einer belebten straße entlang .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000106900.jpg#23972>	<zwei personen laufen durch den schnee .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000412437.jpg#455074>	<ein paar leute gehen an einem roten empanadas-geschäft vorbei .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000484166.jpg#215244>	<ein mann geht an einem bahnhof an einem zug vorbei .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000433618.jpg#713353>	<eine frau bekommt in einer pizzeria einen tomaten .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000280450.jpg#177758>	<das kleine mädchen , das eine mütze trägt , auf dem kopf seines hundes .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000277003.jpg#643054>	<eine frau sitzt auf einer jacke und schaut auf eine uhr .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000208646.jpg#328217>	<eine köchin schneidet essen auf einem teller .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000312003.jpg#655652>	<dieser mann stellt in einer haarstylistin .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000182455.jpg#47715>	<eine person schneidet in einem ofen mit einem bratenwender .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000575652.jpg#213925>	<ein kleiner junge zieht zutaten in einen teller .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000280951.jpg#662020>	<ein mann stellt sich auf einem baum auf .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000462151.jpg#774504>	<ein mann schneidet in einer küche etwas in einem wagen .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000099599.jpg#563611>	<menschen ziehen kerzen auf einem kuchen , das auf einem teller sitzt .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000544623.jpg#679941>	<ein mann zieht eine krawatte .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000064868.jpg#351721>	<ein mann macht so , wie er seinen hund in einem ofen zieht .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000035241.jpg#412267>	<ein skifahrer auf skiern im schnee in der nähe eines gebäudes .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000385705.jpg#574608>	<ein mann zieht eine tasse in einem händen .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000238048.jpg#782003>	<ein mann zieht eine pizzeria in einem ofen .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000305709.jpg#728392>	<ein mann zieht einen truthahn in den ofen .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000438497.jpg#606983>	<eine frau schminkt sich auf einem selbstgebackenen kuchen .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000165050.jpg#670998>	<eine frau , die in einem restaurant mit einer pizzeria trägt , macht eine speisekarte .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000524249.jpg#240003>	<ein falke legt gepäck auf einem wagen in einem zug .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000419410.jpg#230081>	<ein mann schneidet etwas auf seinem teller und eine frau gießt wein .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000512451.jpg#487368>	<ein mann in einem zimmer zieht einen weißen drachen zusammen .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000269983.jpg#203162>	<eine junge frau auf einem snowboard mit handschuhen .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000385016.jpg#4656>	<ein mann versucht einen großen roten stuhl mit einem unechten pferd zu klettern .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000303592.jpg#325108>	<eine schwarze katze klettert in eine badewanne .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000382107.jpg#73481>	<ein mann versucht , einen stoppschild zu klettern .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000256533.jpg#113224>	<ein kleines mädchen klettert aus einem koffer auf dem boden .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000536720.jpg#299624>	<ein mädchen klettert die stufen zu , während sie den hals auf ihr hals hat .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000437282.jpg#492402>	<ein kleiner junge klettert in einem sprungbrett hoch .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000290080.jpg#822676>	<zwei personen klettern auf ihren blick einen berg hinauf .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000424551.jpg#523238>	<leute klettern auf skiern einen schneebedeckten berg hinauf .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000053591.jpg#740833>	<ein mann erklimmt einen elefanten mit einem sattel .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000314855.jpg#362609>	<ein mann klettert ein talent , weil sein lkw gefüllt ist .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000011696.jpg#155052>	<ein hund klettert auf eine person , die auf einem sofa schläft .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000187177.jpg#368052>	<ein hund holt die zähne neben einem mann .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000542928.jpg#452863>	<eine katze , die zähne geputzt .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000273279.jpg#435913>	<ein kind hat die haare eines erwachsenen geputzt .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000020417.jpg#549498>	<eine frau versucht , ihre zähne mit einer riesigen bürste in einem geschäft ab .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000277389.jpg#252352>	<ein baseballspieler hat gerade den ball hinterher .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000396696.jpg#776661>	<ein zelt mit bäumen und skiern in der nähe von bäumen und skiern .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000204537.jpg#293877>	<ein baseballspieler rennt , um einen ball zu fangen .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000167169.jpg#451026>	<eine frau bereitet sich auf einen softball ball aus .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000020179.jpg#633343>	<ein weißhaariger mann mit tätowierungen trägt sein surfbrett an der küste .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000368820.jpg#575120>	<drei männer tragen mehrere reparieren einen bürgersteig entlang .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000121839.jpg#482608>	<ein erwachsener trägt ein kind in voller ausrüstung , darunter von oben auf einem hang hang .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000377422.jpg#684967>	<ein schwarzer hund läuft auf einem feld .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000432169.jpg#584437>	<der mann und der mädchen rennen über den sand .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000256221.jpg#343864>	<ein tennisspieler läuft in die küche , um den ball zu schlagen .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000419235.jpg#422559>	<eine gruppe von soldaten läuft zu einem schulbus zu .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000418152.jpg#14434>	<eine zement betonmauer läuft über den gleisen .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000351451.jpg#307812>	<zwei personen laufen nach einem fußball auf einer wiese nach einem fußball .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000125351.jpg#682784>	<eine frau läuft auf einem gehweg , während ein hund auf einem skateboard befindet .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000019446.jpg#575680>	<mehrere männer und frauen in fußball trikots rennen um ein feld mit vielen leuten und stehen auf der seitenlinie .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000401897.jpg#591182>	<ein surfer rennt mit seinem surfbrett in die wellen .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000261805.jpg#18153>	<leute mit gepäck schauen sich und lächeln .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000245818.jpg#52569>	<ein bus hat sich auf seiner seite eines kontrabasses .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000387401.jpg#168619>	<ein großer gelb verhaftet auf einer straße in der stadt .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000311471.jpg#41154>	<ein taxi auf der straße hat sich auf einer belebten straße .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000296775.jpg#296879>	<ein blau-grünen bus dreht sich eine straße entlang .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000168287.jpg#21281>	<eine sehr attraktive junge frau dreht sich am wasser .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000246491.jpg#713510>	<ein techniker , der sich auf einem holz haus zu sehen ist .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000246057.jpg#2105>	<ein feuer lastwagen dreht sich an der ecke einer straße .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000548726.jpg#232353>	<ein mann dreht sich an einem hydranten in der nähe eines bewaldeten hügel .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000450357.jpg#198847>	<ein mann dreht seinen rücken nach seinem spiegelbild in einem spiegel .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000224825.jpg#93332>	<blick auf eine hand auf einem weißen bullen .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000552380.jpg#467831>	<ein mann in einem schwarzen hemd öffnet eine ofen und blickt auf den ofen .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000025394.jpg#119037>	<ein mann , der mit einer flasche wein eine flasche hochhält .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000054091.jpg#540779>	<eine frau , die auf ihrem wohnzimmer ein laptop öffnet .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000053870.jpg#805358>	<eine person öffnet eine pizzeria in einem wohnzimmer .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000471136.jpg#440587>	<ein elefant öffnet seinen mund , während zwei männer zuschauen .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000231838.jpg#648615>	<ein kleines gerät öffnet einen anderen raum .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000273198.jpg#495194>	<ein mann öffnet einen feuer hydranten in einem rostigen wasser in eine straße .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000079591.jpg#40600>	<ein mann macht einen freiwurf , während er sein neues computer öffnet .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000242047.jpg#190124>	<ein kleines boot mit obst auf einem fluss voller booten .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000547944.jpg#590993>	<ein gang in einem lebensmittelgeschäft mit vielen vielen gemüse .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000054989.jpg#642759>	<das tisch ist mit essen vom grill ab .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000091911.jpg#651946>	<eine frau füllt eine brille mit eis .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000117721.jpg#264390>	<die schulklasse , die mit ruhigen studenten gefüllt ist .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000374049.jpg#351837>	<ein junges mädchen vor einem hydranten bläst seifenblasen .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000561013.jpg#778063>	<ein mann bläst vor einer frau etwas aus einem kuchen .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000014537.jpg#15951>	<ein baseballspieler macht eine seifenblase mit blättern .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000391603.jpg#277548>	<eine frau in einem sitz mit haar bläst im internet .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000327507.jpg#4841>	<ein kleiner feuerwehrmann , der eine staubwolke bläst .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000474554.jpg#557243>	<ein mann bläst in einen plastik korb .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000092020.jpg#251979>	<ein hund , der an einem mann befestigt wird .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000489088.jpg#9116>	<ein jockey führt sein pferd , während er fotos machen .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000559463.jpg#715129>	<eine ansammlung von tiere wird von einem platz über die straße versammelt .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000351710.jpg#565524>	<ein polizist führt die straße für andere leute auf motorrädern .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000169340.jpg#807896>	<ein mann mit fahnen führt eine parade eine straße entlang .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000558581.jpg#54364>	<ein pferd wird von seiner uhr abgeworfen .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000381683.jpg#372986>	<eine menschenmenge steht und beobachtet , wie ein mann auf einem pferd bei einem pferden auf dem pferd führt .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000319579.jpg#599416>	<mehrere personen sitzen an einem tisch in einem kleinen raum mit einem laptop und bücher .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000160190.jpg#694289>	<ein mann sitzt in der wüste auf seinem motorrad .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000093773.jpg#537234>	<ein boot , der im wasser sitzt .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000497875.jpg#436812>	<eine gruppe von kleinen lederkleidung sitzt auf einem fest .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000150091.jpg#693487>	<ein zug sitzt auf den gleisen an einer plattform .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000060700.jpg#278768>	<ein mann in einem blauen hemd sitzt auf einem haufen gepäck .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000075636.jpg#385265>	<eine pizzeria sitzt neben einer schüssel .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000242605.jpg#493985>	<mehrere kinder sitzen auf einer geburtstagsfeier .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000140865.jpg#236448>	<ein mann steht auf einem stuhl und zeigt auf einen bild , während er auf einem stuhl lehnt .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000019714.jpg#811236>	<ein mann lehnt sich mit einem tennisschläger in der hand auf dem kopf .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000401416.jpg#497773>	<ein kleines kind steht in einer küche mit der linken tür , und der kind lehnt sich in den schritt mit ihrem rücken .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000240596.jpg#127209>	<ein geschlossenen regenschirm lehnt an einer wand wand .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000095100.jpg#596765>	<ein mädchen mit armen lehnt sich an einer rotisserie , an der vorderseite einer wand und behälter und behälter steht .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000318203.jpg#604781>	<ein mann lehnt sich an einem schreibtisch in einem hotel raum .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000161634.jpg#829304>	<ein mann lehnt sich herum und bereitet sich darauf vor , während eines spiels zu fallen .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000124466.jpg#321153>	<ein verkehr verkehr steht an der ecke mit der aufschrift &quot; -schild .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000016173.jpg#382375>	<ein mann mit brille im anzug lehnt sich um um etwas an einem kuchen aus .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000326428.jpg#18356>	<ein schild lehnt an einer kreuzung und lehnt gegen seine seite .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000513311.jpg#609102>	<ein kleiner junge lehnt über einen zaun , um mehrere schafe zu sehen .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000355975.jpg#374199>	<ein mädchen in einem kleid lehnt sich auf einer kuh , die einen strohhut trägt .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000416386.jpg#755964>	<eine betonmauer lehnt über einen zaun in einem zoo .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000352660.jpg#121944>	<eine frau lehnt an einer spüle und putzt die zähne mit einer elektrischen zahnbürste .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000487568.jpg#535424>	<ein straßenkünstler lehnt sich auf den boden .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000511145.jpg#97088>	<ein motorrad rennfahrer auf einer rennstrecke lehnt sich in eine kurve .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000007952.jpg#162159>	<ein lkw fährt in der nähe einer schneebedeckten zugs .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000480140.jpg#530421>	<fußgänger auf einem fußgängerübergang in einer überfüllten stadt .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000538249.jpg#265192>	<zwei autos und ein motorrad auf einer straße wird von vielen elefanten umgeben .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000491223.jpg#417810>	<ein mann überquert seine augen mit einer axt im mund .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000070403.jpg#662546>	<ein mann paddelt ein kleines boot auf einem fluss .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000014835.jpg#660818>	<eine frau surft auf einem surfbrett im wasser .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000575519.jpg#17683>	<zwei fischer paddeln mit ihren booten an einem ruhigen gewässer .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000214703.jpg#626053>	<einige surfer paddeln aus dem meer .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000471182.jpg#614302>	<eine person sitzt an einem tisch und schreibt auf ein blatt papier .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000435205.jpg#542146>	<diese weibliche frau schreibt auf ihren bauch und hält einen gelben teddybär .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000072988.jpg#268117>	<ein mann schreibt etwas an , während er auf einem handy steht .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000338987.jpg#323416>	<der feuer hydranten steht am straßenrand auf der straße .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000211978.jpg#89722>	<einige kühe tragen rosa und lila kleidung .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000579226.jpg#258855>	<eine wartehalle auf einem gebäude mit menschen .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000454177.jpg#105690>	<ein feuer , der wie eine amerikanische flagge gemalt ist .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000391539.jpg#244908>	<es ist in der mitte einer küche .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000534122.jpg#622085>	<ein mann macht skimboarden am strand in der sonne .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000117838.jpg#542676>	<mehrere personen in einem straßen geschäft auf einer belebten straße .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000421536.jpg#549507>	<ein bus wartet , um eine person auf der straße zu .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000222074.jpg#415461>	<ein mann in engen schwarzen hemden fährt schnee .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000298692.jpg#711901>	<das kleine mädchen wischt in dem bus zur schule .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000484714.jpg#509012>	<ein mann taucht in der nähe einer riesigen wellen im meer .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000343753.jpg#587370>	<mehrere kinder fahren in einem skateboard unter einer brücke mit graffiti .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000248610.jpg#144686>	<eine junge frau , die in einem herd mit einem topf rührt .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000326584.jpg#145810>	<ein kleines kind rührt einen topf aus essen .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000495013.jpg#443921>	<sie und der in der hand ist , ist in einem feuer hydranten aus .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000320693.jpg#550343>	<eine straßen straße mit bildern , die sich aufgestellt ist .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000540933.jpg#694087>	<ein holz haufen von jemandem , die etwas hat .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000435963.jpg#392870>	<ein junge und ein mädchen an einem tisch und malen mit sprühfarbe .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000229618.jpg#297308>	<ein mann bewegt sich in einem haus ab .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000337575.jpg#286731>	<ein mann bewegt einen ofen mit einem wagen .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000541251.jpg#659967>	<ein silbernes zug fährt durch eine stadt .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000097391.jpg#284108>	<acht personen helfen sich zu , wie jemand in einem neuen haus zu machen .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000258395.jpg#718188>	<feuer lastwagen fahren eine straße in der stadt , während kinder in der nähe spielen .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000504873.jpg#443131>	<ein alter handwerker fährt auf den gleisen .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000014677.jpg#344245>	<drei skifahrer fahren auf einem hügel mit zwei geschwindigkeit den hügel hinunter und eine davon fährt den hügel hoch .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000163273.jpg#638006>	<zwei männer bewegen holz mit einem roten lastwagen .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000502414.jpg#604403>	<eine angebotstafel mit donuts durch die hocke .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000565108.jpg#148923>	<die menschen bewegen sich in der öffentlichen bereich neben dem großen weißen zelt .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000042743.jpg#473567>	<ein tennisspieler bewegt sich an der seite und hält seinen schläger mit beiden händen .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000566908.jpg#642108>	<ein mann schlägt einen tennisball auf einem platz .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000426182.jpg#23351>	<eine person fährt skateboard und hat gerade einen weißen kegel zu .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000093985.jpg#803623>	<ein kleiner junge , der einen schlag schuh trägt , macht dabei , um einen ball zu schlagen .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000579056.jpg#267841>	<ein mann macht mit einem schläger etwas mit einem schläger .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000227607.jpg#257370>	<zwei männer in anzügen geben einen rahmen mit drähten .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000316377.jpg#243511>	<ein wagen mit mehreren leuten wird von zwei pferden gezogen .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000136433.jpg#739240>	<ein mann zieht gepäck auf dem flughafen .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000441132.jpg#651001>	<ein chevrolet , der auf einem bahnsteig macht .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000390000.jpg#148191>	<ein roter bus , der auf einer straßenecke zu ziehen .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000277990.jpg#445017>	<eine frau zieht frisches essen aus dem ofen .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000371176.jpg#566885>	<ein rotes schlepper zieht an einer felsigen küste hoch .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000406188.jpg#203048>	<ein gelb-blaues zug zieht in einen bahnhof .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000435308.jpg#259579>	<ein boot zieht an einem see an einem see .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000076595.jpg#390498>	<die stadt bus ist auf der seite der straße gezogen .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000427111.jpg#106196>	<ein quad boot , um sich nach , wie er zwei nicht hinter ihm zieht .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000119845.jpg#32556>	<ein zug zieht sich in den bahnhof .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000251314.jpg#525972>	<ein zug zieht an einem haus gebäude und einem bürgersteig vorbei .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000014353.jpg#200990>	<ein mann zieht eine pizzeria aus einem ofen .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000141557.jpg#362333>	<ein mann liest ein buch , ein anderer hält einen hund .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000473499.jpg#728428>	<eine frau sitzt unter einem schirm und liest ein buch .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000068277.jpg#461762>	<ein mann liest ein buch in einem bett .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000274108.jpg#284452>	<ein kleiner junge im bett liest ein buch vor seinem kleinen stämmen .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000468704.jpg#733933>	<eine frau stellt die stirn , während mehrere leute zuschauen .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000252018.jpg#43739>	<zuschauer in einem zoo beobachten einen afrikanischen elefanten .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000375285.jpg#631484>	<eine gruppe von surfern am strand .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000516034.jpg#480344>	<leute schauen zu , wie andere ein spiel spielen .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000564491.jpg#311456>	<leute schauen sich hinter einem zaun aus .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000332625.jpg#138762>	<ein mann sitzt auf einem flugzeug und schaut fern .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000296159.jpg#597345>	<ein bootsführer ist in hilfe aus ton ist .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000235314.jpg#8905>	<eine junge frau ist in einem bunten gestreiften strand hoch .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000499552.jpg#804655>	<eine frau ist in einem handtuch und putzt sich die haare .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000186997.jpg#299122>	<ein kunst stoffstoffstoff karren , das mit plüschtieren und andere gegenstände gefüllt ist .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000478080.jpg#291845>	<eine hand , die einen hotdog mit der hand trägt , trägt und trocknet kleidung , die sich unter holz bedeckt ist .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000379180.jpg#676177>	<eine alte dame , die in einer decke gewickelt ist , isst essen .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000315964.jpg#317480>	<ein kleines kind befindet sich in einem handtuch auf einem bett .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000331520.jpg#139371>	<ein mensch legt das gesicht um ein stück stoff herum .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000372413.jpg#29575>	<ein motorradfahrer fährt auf einer ecke , während sein feuerwehrmann von dem fahrrad hängt .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000242582.jpg#518612>	<ein geschäft mit mehreren bananen hängt an einem drahtseil .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000412483.jpg#366511>	<eine gruppe familie entspannt sich über eine feuerstelle .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000424596.jpg#376302>	<einige bunte drachen an einem alten gebäude .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000099422.jpg#544557>	<eine dame hängt an einem braunen jeep .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000310588.jpg#389598>	<ein mann auf einem feld wirft einen baseballschläger .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000016486.jpg#768628>	<ein altes bild von einem müll laster am straßenrand .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000174071.jpg#341863>	<ein junge , der eine toilette trägt , mit einem kleinen hammer .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000074466.jpg#486206>	<eine straßenszene , die sich auf dem rasen auf dem rasen befindet .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000465936.jpg#629774>	<eine person befindet sich in der luft und fällt von einem surfbrett auf einer großen welle .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000065632.jpg#375249>	<ein fußballspieler fällt zum boden und ein anderer fällt über ihn .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000394677.jpg#491367>	<eine frau schläft neben einem mann , der beide sitzen .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000408288.jpg#617834>	<ein mann fällt ins wasser , während die welle von seinem surfbrett ab .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000213034.jpg#613613>	<eine person fährt mit einem skateboard auf einem skateboard .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000373007.jpg#163984>	<eine person macht kunststücke auf einem skateboard .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000218319.jpg#651596>	<eine person auf einem snowboard ist gerade auf den schnee herab .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000251511.jpg#636956>	<ein mann fällt , während er eine welle zu fangen .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000046003.jpg#64860>	<eine person mit skiern fällt auf einem schneebedeckten hang hinunter .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000385154.jpg#30597>	<ein mann fällt mit seinem hut über den snowboard , während er mit seinem snowboard fährt .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000455717.jpg#522801>	<zwei männer fahren ski und einer davon ist ab .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000015451.jpg#454220>	<eine gruppe von rollern steht auf einer straße .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000038923.jpg#29542>	<einige leute stehen in der mitte der straße mit motorrädern .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000498639.jpg#742170>	<ein paar schulkinder , die vor einem mikrophon in der hand stehen , sind aufgereiht stehen .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000355967.jpg#790291>	<eine gruppe von motorrädern , die zusammen aufgereiht sind .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000485123.jpg#333688>	<autos , die auf einem belebten bürgersteig an einem belebten gehweg zeigt .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000099567.jpg#683501>	<pendler stehen auf der straße an der straße .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000110330.jpg#518514>	<leute stehen an einem sonnigen tag an einem bus an .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000047757.jpg#368990>	<viele motorräder stehen an der schlange .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000276055.jpg#801871>	<eine junge frau hält eine frisch ziege hoch in der luft .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000459752.jpg#540542>	<ein mann mit freiem oberkörper hält einen violetten pinsel .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000478664.jpg#70285>	<ein mann steht mit geschlossenen augen in der hand und hält dabei an einer erdkonstruktion .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000115521.jpg#600895>	<zwei männer halten die verwendung eines abbruchhauses .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000391642.jpg#762397>	<ein kleiner junge sitzt auf dem boden und hält einen schirm .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000504621.jpg#735102>	<ein mädchen mit verweintem haut in einem kapuzenpulli hält eine zahnbürste hoch .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000094174.jpg#588937>	<ein baby in gelb hält sich an ihrem teddybär fest .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000530284.jpg#285672>	<ein mann mit einem hut sitzt unter einem fernseher und arbeitet an einer wand .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000040711.jpg#767255>	<ein altes gebäudekomplex mit einer uhr , der auf der seite steht .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000491255.jpg#163561>	<ein mann mit helm repariert sein wunderschönes radrennen .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000214737.jpg#719568>	<eine große uhr , die an der seite eines gebäudes steht .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000442785.jpg#716992>	<ein flachen bildschirm landet an der treppe .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000072793.jpg#297297>	<ein mann in tarnkleidung und einem schwarzen hut bedient ein pferd .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000301011.jpg#57259>	<eine große menschenmenge beobachtet einen tennisball , während er einen ball schlägt .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000346089.jpg#88860>	<ein tisch mit zwei kuchen und hosenträgern und zwei frauen serviert kuchen .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000004587.jpg#145125>	<zwei uniformierte personen servieren essen .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000014773.jpg#303016>	<ein flauschiger hund isst in einem lieferwagen und wird von einem auto aus .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000039467.jpg#150436>	<eine frau auf einem tennisplatz ist kurz davor , den ball zu schlagen .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000029114.jpg#650852>	<eine pizzeria , die gerade auf einem teller serviert .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000539596.jpg#206988>	<drei arbeiter in einer großküche servieren kuchen .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000076978.jpg#378907>	<frauen basteln eine blaue art zeit essen .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000313066.jpg#412332>	<eine gruppe von menschen serviert hotdogs und brownies .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000092914.jpg#291217>	<ein lebensmittel laster , der sich zwischen anderen essen wagen beladen ist .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000432161.jpg#344923>	<eine person zündet sich eine kerze auf einem stück kuchen .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000209935.jpg#259519>	<ein großes uhr , der an der küste steht , befindet sich in einer küste .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000540790.jpg#69981>	<ein mann in einer blauen jacke zündet sich eine zigarette vor .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000223751.jpg#53797>	<zwei personen auf surfbrettern mit einer welle auf einer welle in die anderen .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000145750.jpg#596647>	<ein surfer reitet auf einer großen welle im meer .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000465973.jpg#765541>	<ein mann reitet auf einem pferd mit einem pferd .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000344862.jpg#788721>	<die zwei personen fahren auf einem schwarzen fahrrad .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000144333.jpg#642099>	<eine frau fährt ihr fahrrad auf ihrem handy .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000196565.jpg#67976>	<ein mann reitet auf dem meer die wellen auf einem surfbrett .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000233815.jpg#191151>	<menschen mit hüten fahren auf einem großen elefanten .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000520043.jpg#63404>	<ein lastwagen , der mit graffiti bemalt ist , sitzt auf einer straße mit anderen fahrzeugen .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000308777.jpg#632485>	<eine gruppe von männern fährt mit skiern einen schneebedeckten hang hinunter .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000566923.jpg#781032>	<ein mann mit einer flüssigkeit in der nähe eines hydranten .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000565975.jpg#239535>	<ein fahrzeug fährt eine müllbedeckte straße entlang .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000055637.jpg#485871>	<ein mann hält seine augen von der sonne auf einem motorrad .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000527029.jpg#88998>	<ein mann legt seine augen neben einer bananen stand .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000223165.jpg#676419>	<ein teller mit einer baskenmütze und einem aschenbecher .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000050034.jpg#20167>	<ein paar von ureinwohnern , die gut pflückt .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000446539.jpg#53433>	<eine person , die von einem blauen laken bedeckt ist , liegt auf ihrer seite .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000531286.jpg#566994>	<in einem bus fährt eine belebte straße entlang .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000491793.jpg#51741>	<eine gruppe von fahrgästen fährt auf einer straße mit autos .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000458613.jpg#353934>	<zwei autos fahren eine straße neben einem grünen bus entlang .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000368663.jpg#586945>	<eine person fährt ein auto auf eine unteführung zu .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000038540.jpg#252943>	<ein bus fährt von einer bushaltestelle .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000194756.jpg#132736>	<ein mann fährt ein boot am fluss entlang .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000138730.jpg#316707>	<ein lastwagen , der sich in einer wüstenähnlichen gegend fährt , fährt in einer wüste .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000555050.jpg#33895>	<ein kleiner hund mit dem auto fährt an einem möbelstück vorbei .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000450223.jpg#289878>	<autos auf einer tankstelle mit einem großen schild .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000220795.jpg#351644>	<die frau gießt ein wein in ein glas .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000109077.jpg#441460>	<ein mädchen gießt ein getränk aus einem soldaten .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000242847.jpg#714841>	<ein getränk wird in eine weiße tasse .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000093587.jpg#35406>	<ein mann gießt etwas an einer imbissbude .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000300542.jpg#675057>	<ein koch in einer küche gießt sich auf eine von mehreren tellern mit essen .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000470685.jpg#501143>	<jemand gießen essen zum essen mit essen .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000250008.jpg#601091>	<ein zement laster gießt frischen zement auf die straße .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000545033.jpg#254150>	<eine person gießt einen teig in eine pfanne mit einem messer .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000093030.jpg#95348>	<eine junge frau gießt ein glas wein .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000500871.jpg#417837>	<ein bier wird in einem behälter voller grill .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000438071.jpg#508652>	<eine frau gießt ein mann ein glas wein .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000408989.jpg#471986>	<eine frau in einem grauen tanktop gießt tomaten in einen teller .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000164366.jpg#340912>	<eine frau spricht in ihr mikrofon , während sie auf die kuh schaut .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000510579.jpg#371567>	<zwei surfer blicken auf den dunklen kuthhoop-hotel .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000535137.jpg#670531>	<eine junge frau schaut auf ihr handy .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000054335.jpg#146903>	<eine dame blickt auf die stadt von einer riesigen uhr aus der stadt .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000340321.jpg#551291>	<eine frau schaut in den spiegel und putzt sich die zähne .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000344127.jpg#299971>	<ein hund mit heraushängender zunge blickt auf eine frisbee neben einem mann .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000296946.jpg#100921>	<eine person blickt auf seinen schuhen und der hand eines hundes .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000216972.jpg#514010>	<einige schilder für einen essen , während einer davon ein schild aussieht .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000054001.jpg#173800>	<eine frau auf skiern , die sich um die person hinter ihr steht .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000302716.jpg#133923>	<ein junger mann schaut in die innenseite eines abbruchhauses .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000134169.jpg#611376>	<ein mann in einem anzug schaut zu , wie er eine kunstausstellung aussieht .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000431012.jpg#109718>	<zwei motorradfahrer fahren bei einer rennstrecke eine rennstrecke entlang .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000228914.jpg#747129>	<zwei jockeys rennen auf ihren pferden eine strecke entlang .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000538115.jpg#347985>	<zwei personen auf skiern fahren einen hang hinunter und leute schauen zu .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000094319.jpg#468533>	<ein mann fährt ein schwarzes motorrad auf einer rennstrecke .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000123627.jpg#166600>	<zwei männer fahren ein rennen auf einer rennstrecke .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000211189.jpg#207664>	<eine gruppe von radfahrern fährt eine rennstrecke entlang .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000361460.jpg#289138>	<ein jockey fährt auf einem pferd im regen .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000396687.jpg#70261>	<eine frau in einem lilafarbenen skianzug fährt mit zwei anderen mädchen auf skiern .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000265186.jpg#710336>	<eine gruppe von polizisten steht vor einem umzug .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000165862.jpg#479094>	<eine gruppe von männern steht nebeneinander auf einer bühne .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000342255.jpg#288509>	<mehrere personen stehen herum und eine frau wird mit zwei riesigen hunden ab .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000419767.jpg#290505>	<eine gruppe von männern unterhält sich zusammen .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000535212.jpg#566177>	<ein mann auf einem feld schwingt einen schläger bei einem ball .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000129568.jpg#287963>	<ein mann schwingt seinen schläger auf dem tennisplatz .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000240295.jpg#617960>	<ein baseballspieler bereitet sich auf einen wurf vor .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000525381.jpg#106575>	<ein mann schwingt einen baseball mit einem schiedsrichter hinter ihm .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000065245.jpg#759859>	<mehrere personen schieben einen lastwagen von dem erde auf die straße .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000286544.jpg#795999>	<ein mann schiebt einen rollstuhl auf der straße .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000233968.jpg#113222>	<zwei fußballspieler schieben einander nach dem ball .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000097946.jpg#22890>	<eine gruppe von männern mit gewehren auf skateboards .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000266773.jpg#341445>	<eine person auf einem skateboard schiebt den bürgersteig entlang .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000173391.jpg#434328>	<eine person schiebt einen brille auf dem fernseher .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000423096.jpg#669217>	<eine frau hält ihre hände hoch , um eine frisbee zu fangen .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000548361.jpg#9819>	<ein baseballspieler fängt einen ball auf einem baseballfeld .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000002613.jpg#388973>	<ein surfer reitet auf einer welle auf dem meer .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000470417.jpg#209801>	<zwei männer auf surfbrettern fangen eine brechenden welle .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000480116.jpg#130551>	<ein mann und sein skateboard ist in der luft .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000571842.jpg#562174>	<ein geschäft zeigt verschiedene farbe an einer wand .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000239347.jpg#804486>	<ein bild eines frisch verheiratetes paar vor einem glas .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000516866.jpg#595942>	<ein metall bild zeigt eine uhr in der mitte eines boden .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000143870.jpg#637742>	<ein oldtimer fahrer ist in der mitte der straße an .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000123842.jpg#257147>	<hier stellen eine kuh in einem waldgebiet .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000478781.jpg#81570>	<ein schaufenster laden zeigt die viel waren in der fenstern .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000083972.jpg#71553>	<ein foto von menschen in militärkleidung auf einem gehweg .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000142879.jpg#92289>	<ein strand ende von sich nach sich , um sich an einer reihe von tellern vor .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000156302.jpg#46709>	<ein lebensmittel verkäufer und gemüse auf einem markt .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000549361.jpg#684927>	<ein junger mann steht an einer wand und telefoniert mit einem handy .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000118697.jpg#6281>	<ein mann und eine frau halten kaffee und reden mit einer frau in der stadt , während sie mit ihrem hund gassi geht .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000113147.jpg#181730>	<ein mann spricht an einem esstisch und telefoniert .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000380828.jpg#251775>	<eine frau mit einem hund spricht zu zwei personen , die auf einer bank sitzen .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000200597.jpg#680496>	<ein mann im anzug spricht in ein mikrofon .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000061175.jpg#362633>	<zwei college-footballspieler auf dem feld .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000468263.jpg#532463>	<ein polizist auf einem pferd spricht mit einem polizist auf einem fahrrad .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000380500.jpg#423579>	<ein paar leute und eine reklametafel streckt die zunge heraus .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000204329.jpg#72798>	<ein blau-gelb-grüner surfbrett hält aus einem sandstrand heraus .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000269790.jpg#403680>	<ein elefanten hält den stamm durch einen zaun .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000369452.jpg#296426>	<mehrere gitarristen halten eine orangefarbene werkzeug kiste aus .>	<1>	<C>
+<IMAGINATION>	<COCO_train2014_000000407279.jpg#537496>	<ein junge mit schwarzer krawatte , der seine zunge heraus streckt .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000501429.jpg#169555>	<ein baby hält eine zahnbürste im mund .>	<1>	<C>
+<IMAGINATION>	<COCO_val2014_000000310227.jpg#624774>	<ein schwarz und weißer mädchen , die sich aus dem bett eines kindes heraus streckt .>	<1>	<C>

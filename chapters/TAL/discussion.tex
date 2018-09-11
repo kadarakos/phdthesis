@@ -1,0 +1,60 @@
+\section{Discussion and conclusion}
+\label{sec:discussion}
+
+We have presented a computational cross-situational word
+learning model that learns word meanings from pairs
+images and their natural language descriptions. Unlike
+previous word learning studies which often rely on artificially
+generated perceptual input, the visual features we extract from images
+of natural scenes offers a more realistic simulation of the cognitive
+tasks humans face, since our data includes a significant level of
+ambiguity and referential uncertainty.
+
+Our results suggest that the proposed model can learn meaningful
+representations for individual words from varied scenes and their
+multiword descriptions. Learning takes place incrementally and without
+assuming access to single-word unambiguous utterances or corrective
+feedback.  When using the learned visual vector representations for
+simulating human ratings of word-pair similarity, our model shows
+significant correlation with human similarity judgments on a number of
+benchmarks. Moreover, it moderately outperforms other models that only
+rely on word-word co-occurrence statistics to learn word meaning.
+
+The comparable performance of visual versus word-based models seems to
+be in line with \citep{louwerse2011symbol}, who argues that linguistic
+and perceptual information show a strong correlation, and therefore
+meaning representations solely based on linguistic data are not
+distinguishable from representations learned from perceptual
+information. However, an analysis of the impact of word concreteness
+on the performance of our model shows that visual features are
+especially useful when estimating the similarity of more concrete word
+pairs. In contrast, models that rely on word-based cues do not show such improvement
+when judging the similarity of concrete word pairs. These results
+suggest that these two sources of information might best be viewed as
+complementary, as also argued by \citep{bruni2014multimodal}.
+
+We also used the word meaning representations that our model learns
+from visual input to predict the best label for a given image. This
+task is similar to word production in language learners. Our
+quantitative and qualitative analyses show that the learned
+representations are informative and the model can produce intuitive
+labels for the images in our dataset. However, as discussed in the
+previous section, the available image collections and their labels
+are not developed to suit our purpose, as most of the ImageNet
+labels are too detailed and at a taxonomic level which is not
+compatible with how language learners name a visual concept.
+
+% In the future, we plan to collect a dataset of pictures labeled by
+% humans ???\todo{I don't know what to promise here!}.
+
+Finally, a natural next step for this model is to also take into
+account cues from sentence structure. For example,
+\citep{alishahi2012concurrent} try to include basic syntactic
+structure by introducing a separate category learning module into
+their model.  Alternatively, learning sequential structure and visual
+features could be modeled in an integrated rather than modular
+fashion, as done by the multimodal captioning systems based on
+recurrent neural nets (see section~\ref{subsec:meanings-from-images}).
+We are currently developing this style of integrated model
+to investigate the impact of structure on word learning from a
+cognitive point of view.

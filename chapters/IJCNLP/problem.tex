@@ -1,0 +1,29 @@
+\section{Problem Formulation}\label{sec:problem}
+
+Multimodal translation is the task of producing target language translation $y$, given the source language sentence $x$ and additional context, such as an image $v$ \cite{Specia2016}. Let $x$ be a source language sentence consisting of $N$ tokens: x$_1$, x$_2$, $\ldots$, x$_n$ and let $y$ be a target language sentence consisting of $M$ tokens: y$_1$, y$_2$, $\ldots$, y$_m$. The training data consists of tuples $\mathcal{D} \in (x, y, v)$, where $x$ is a description of image $v$, and $y$ is a translation of $x$.
+
+Multimodal translation has previously been framed as minimising the negative log-likelihood of a translation model that is additionally conditioned on the image, i.e. $J(\theta) = - \sum_{j} \text{log p}(y_j|y_{<j}, x, v)$. Here, we decompose the problem into learning to translate and learning visually grounded representations. The decomposition is based on sharing parameters $\theta$ between these two tasks, and learning task-specific parameters $\phi$. We learn the parameters in a multitask model with shared parameters in the source language encoder. The translation model has task-specific parameters $\phi^t$ in the attention-based decoder, which are optimized through the translation loss $J_{T}(\theta, \phi^t)$.
+Grounded representations are learned through an image prediction model with task-specific parameters $\phi^g$ in the image-prediction
+decoder by minimizing $J_{G}(\theta, \phi^g)$. The joint objective is given by mixing the translation and image prediction tasks with the parameter $w$:
+%
+\begin{align}
+	J(\theta, \phi) = w J_{T}(\theta, \phi^{t}) +  (1 - w) J_G(\theta, \phi^{g})
+\end{align}
+%
+Our decomposition of the problem makes it straightforward to optimise this objective without paired tuples, e.g. where we have an external dataset of described images $\mathcal{D}_{image} \in (x, v)$ or an external parallel corpus $\mathcal{D}_{text} \in (x, y)$.
+
+% \SetAlCapSkip{1ex}
+% \begin{algorithm}[t]
+%  \textbf{Tasks}: \{P, A$_1$, $\ldots$, A$_a$\}\\
+%  \textbf{Weights}: \{t$_1$, t$_2$, $\ldots$, t$_{a+1}$\}\\
+%  \textbf{Shared}: [W$_1$, $\ldots$, W$_w$]\\[1ex]
+%  Build computational graph for P\\
+%  Build computational graphs for A$_1$, $\ldots$, A$_a$ including the shared parameters from P\\[1ex]
+%  \While{P is not converged}{
+% 	Perform a minibatch of updates for task t$_i$ with probability p$_i$ = $\frac{t_i}{\sum_i t_i}$
+%  }
+%  \caption{Multitask training procedure for a primary task P, auxiliary tasks A$_1$ $\ldots$ A$_a$, weights for performing each task, and a list of parameters to share between the tasks.}\label{alg:training}
+% \end{algorithm}
+
+We train our multitask model following the approach of \citep{Luong2016}. We define a primary task and an auxiliary task, and a set of parameters $\theta$ to be shared between the tasks. A minibatch of updates is performed for the primary task with probability $w$, and for the auxiliary task with $1-w$. The primary task is trained until convergence and weight $w$ 
+determines the frequency of parameter updates for the auxiliary task.

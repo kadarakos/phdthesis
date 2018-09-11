@@ -1,0 +1,73 @@
+\section{Multilingual grounded learning}
+\begin{figure}
+\begin{algorithmic}
+% DE: I reformatted this to make it easier to read. The original version is immediately below, if we need the space.
+
+%\Require Set of datasets $\mathcal{D}_{c2i}$ containing data sets $D_1, \dots, D_k$ of image-caption pairs $<c, i>$ for all languages $k$. Dataset $D_{c2c}$ containing all possible pairs $<c_a, c_b>$ for all languages. Task switching probability $p$. Initialized caption and image encoders $\phi (c, \theta_\phi)$ and $\psi (i, \theta_\phi)$.
+\Require $p$: task switching probability.\\
+
+$\mathcal{D}_{c2i}$: datasets $D_1 \dots D_k$ of image-caption pairs \\\hspace{2.5em}$<c, i>$ for all $k$ languages.\\
+
+$D_{c2c}$: data set of all possible caption pairs \\\hspace{2.5em}$<c_a, c_b>$ for all $k$ languages. \\
+
+ $\phi (c, \theta_\phi)$: caption encoder\\
+$\psi (i, \theta_\phi)$: image encoder
+\State
+\While {not stopping criterion}
+
+  \State  $T \sim \text{Bern}(p)$
+  \If {$T = 1$ }
+  	  \State $D_n \sim \mathcal{D}_{c2i}$
+      \State $<c, i> \sim D_n$
+      \State $\mathbf{a} \gets \phi (c, \theta_\phi)$
+      \State $\mathbf{b} \gets \psi (i, \theta_\psi)$
+  \Else
+      \State $<c_a, c_b> \sim D_{c2c}$
+      \State $\mathbf{a} \gets \phi (c_a, \theta_\phi)$
+      \State $\mathbf{b} \gets \phi (c_b, \theta_\phi)$
+  \EndIf
+  \State $[\theta_\phi; \theta_\psi] \gets \text{SGD}(\nabla_{[\theta_\phi; \theta_\psi]} \mathcal{J}(\mathbf{a}, \mathbf{b}))$
+\EndWhile
+\end{algorithmic}
+\caption{Pseudo-code of the training procedure used to train our multilingual multi-task model.}
+\label{fig:algo}
+\end{figure}
+
+
+We train a standard model of grounded language learning which  projects images and their textual descriptions into the same space \cite{kiros2014unifying,karpathy2015deep}.
+The training procedure is illustrated by the pseudo-code in Figure~\ref{fig:algo}.
+Images $i$ are encoded by a fixed pre-trained CNN followed by a learned affine transformation $\psi(i, \theta_\psi)$, and captions $c$ are encoded by a randomly initialized RNN $\phi(c, \theta_\phi)$.
+The model learns to minimize the distance between pairs $\textrm{<}a,b\textrm{>}$ using a max-of-hinges ranking loss \cite{faghri2017vse++}:
+%
+\begin{equation*}
+\begin{split}
+\mathcal{J}(a, b) = \max_{<\hat{a}, b>}[\text{max}(0, \alpha - s(a,b) + s(\hat{a}, b))] \;+ \\ \max_{<a, \hat{b}>}[\text{max}(0, \alpha - s(a,b) + s(a, \hat{b}))]
+\end{split}
+\end{equation*}
+%
+where $<a, b>$ are the true pairs, and $<a, \hat{b}>$ and $<\hat{a}, b>$ are all possible contrastive pairs in the mini-batch.
+The pairs either consists of image-caption pairs $<i , c>$, where the model solves a caption-image  {\bf c2i} ranking task, or pairs of
+captions in multiple languages belonging to the same image $<c_a, c_b>$, where the model solves a caption-caption {\bf c2c} ranking task \cite{gella2017image}.
+Our monolingual models are trained to minimize the caption-image
+ranking objective {\bf c2i} on the training set.
+The multilingual models are trained to minimize the ranking loss for the set of all languages $\mathcal{L}$ in the collection: at each iteration the model is either updated for the {\bf c2i} objective or the caption-caption {\bf c2c} objective given either $<c^l, i>$ or a  $<c^k_a, c^m_b>$ pair in languages $l,k,m, \ldots \in \mathcal{L}$. All models are trained by first selecting a task, either {\bf c2i} or {\bf c2c}. In the {\bf c2i} case, a language is sampled at random followed by sampling a random batch; in the {\bf c2c} case, all possible $<c_a, c_b>$ pairs across all languages are treated as a single data set. All of the model parameters are shared across all tasks and languages.
+
+\paragraph{Implementation.}
+We build our model on the PyTorch implementation\footnote{Code to reproduce our results is available at\\ \url{https://github.com/kadarakos/mulisera}.}
+%\footnote{\url{https://github.com/fartashf/vsepp}}
+of the VSE++ model \cite{faghri2017vse++}.
+Images are represented by the 2048D average-pool features
+extracted from the ResNet50 architecture \cite{he2016deep} trained on ImageNet \cite{deng2009imagenet}; this is followed by a trained linear layer
+$\mathbf{W}_{I} \in \mathbb{R}^{2048 \times 1024}$. Other implementation details follow \cite{faghri2017vse++}: sentences are represented as the final hidden state of a GRU \cite{chung2014empirical} with 1024 units and 300 dimensional word-embeddings trained from scratch. We use a single word embedding matrix containing  the union of all words in all considered languages.
+%For the linguistic typology experiments we use the pre-trained 64D continuous language typology features of \cite{ostling2016continuous} or the 103D \texttt{syntax\_knn} features of URIEL through the \texttt{lang2vec} framework \cite{littell2017uriel}.  An extra token is prepended to each sentence representing the language as in \cite{malaviya2017learning}.  After the embedding lookup operation the typology-vectors are transformed by a linear layer to have the same dimensionality as the word-embeddings: $\mathbf{W_e} \in \mathbb{R}^{64 \times 300}$ or  $\mathbf{W_e} \in \mathbb{R}^{103 \times 300}$.
+The similarity function $s$ in the ranking loss is cosine similarity. We $\ell_2$ normalize both the caption and
+image representations. The model is trained
+with the Adam optimizer \cite{kingma2014adam}
+using default parameters and learning-rate of \mbox{2e-4}.
+We train the model with an early stopping criterion, which is to maximise the
+sum of the image--sentence recall scores R@1, R@5, R@10 on the validation set with patience of 10 evaluations.
+In the monolingual setting the stopping criterion is evaluated at the end of each epoch, whereas in the multilingual setup it is evaluated every 500 iterations.
+The probability of switching between the {\bf c2i} and {\bf c2c} tasks is set to $0.5$. Batches from all data sets are sampled by shuffling the full dataset, going through each batch and re-shuffling when exhausted.
+The sentence-pair dataset used to train the {\bf c2c} ranking model for $\ell$ languages is generated as follows.
+For a given image $i$, a set of languages $1 \cdots$ $\ell$, and a set of captions $C^i_1, \ldots, C^i_\ell$ associated with an image $i$, we generate the set of all possible combinations of size~2 from caption sets $\mathcal{C}^i$ and add the Cartesian product between all resulting pairs $C^i_m \times C^i_n$ in $\mathcal{C}^i$ to the training set.
+%In other words, for all pairs $\textrm{<}C^i_i, C^i_j\textrm{>} \; \in \mathcal{C}^i$ we compute the Cartesian product $C^i_i \times C^i_j$.

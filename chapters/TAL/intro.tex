@@ -1,0 +1,163 @@
+\section{Introduction}
+
+Children learn most of their vocabulary from hearing words in noisy
+and ambiguous contexts, where there are often many possible mappings
+between words and concepts. They attend to the visual environment to
+establish such mappings, but given that the visual context is often
+very rich and dynamic, elaborate cognitive processes are required for
+successful word learning from observation. Consider a language learner
+hearing the utterance {\it ``the gull took my sandwich''} while
+watching a bird stealing someone's food. For the word {\it gull}, such
+information suggests potential mappings to the bird, the person, the
+action, or any other part of the observed scene. Further exposure to
+usages of this word and relying on structural cues from the sentence structure
+is necessary to narrow down the range of its possible meanings.
+
+%------------
+\subsection{Cross-situational learning}
+A well-established account of word learning from perceptual context is
+called cross-situational learning, a bottom-up strategy in which the
+learner draws on the patterns of co-occurrence between a word and its
+referent across situations in order to reduce the number of possible
+mappings \cite{Quine1960,Carey1978,pinker.89}. Various experimental
+studies have shown that both children and adults use cross-situational
+evidence for learning new words
+\cite{yu.smith.07,smith.yu.08,vouloumanos.08,vouloumanos.werker.09}.
+
+Cognitive word learning models have been extensively used to study how
+children learn robust word-meaning associations despite the high rate
+of noise and ambiguity in the input they receive. Most of the existing
+models are either simple associative networks that gradually learn to
+predict a word form based on a set of semantic features
+\cite{Li.etal.2004,regier.05}, or are rule-based or
+probabilistic implementations which use statistical regularities
+observed in the input to detect associations between linguistic labels
+and visual features or concepts
+\cite{siskind.96,frank.etal.07,yu.08,fazly.etal.10csj}.
+These models all implement different (implicit or explicit) variations
+of the cross-situational learning mechanism, and demonstrate its
+efficiency in learning robust mappings between words and meaning
+representations in presence of noise and perceptual ambiguity.
+
+However, a main obstacle to developing realistic models of child word
+learning is lack of resources for reconstructing perceptual
+context. The input to a usage-based cognitive model must contain the
+same information components and statistical properties as
+naturally-occurring data children are exposed to. A large collection
+of transcriptions and video recordings of child-adult interactions has
+been accumulated over the years \cite{macwhinney2014childes}, but few
+of these resources provide adequate semantic annotations that can be
+automatically used by a computational model. As a result, the existing
+models of word learning have relied on artificially generated
+input \cite{siskind.96}. The meaning of each word is represented as a symbol or a set of
+semantic features that are selected arbitrarily or from lexical
+resources such as WordNet \cite{fellbaum1998wordnet}, and the visual
+context is built by sampling these symbols. Some models add additional noise
+to data by randomly adding or removing meaning symbols to/from the perceptual
+input \cite{fazly.etal.10csj}.
+
+Carefully constructed artificial input is useful in testing the
+plausibility of a learning mechanism, but comparisons with manually
+annotated visual scenes show that these artificially generated data
+sets often do not show the same level of complexity and ambiguity as
+naturally occurring perceptual context
+\cite{matusevych2013automatic,beekhuizen2013word}.
+
+%------------
+\subsection{Learning meanings from images}
+\label{subsec:meanings-from-images}
+To investigate the plausibility of cross-situational learning in a
+more naturalistic setting, we propose to use visual features from
+collections of images and their captions as input to a word learning
+model.
+%
+In the domain of human-computer interaction (HCI) and robotics, a
+number of models have investigated the acquisition of terminology for
+visual concepts such as color and shape from visual data. Such
+concepts are learned based on communication with human users
+\cite{FleischmanRoy2005,skocaj2011system}.  Because of the HCI
+setting, they need to make simplifying assumptions about the level of
+ambiguity and uncertainty about the visual context.
+
+The input data we exploit in this research has been used for much
+recent work in NLP and machine learning whose goal is to develop
+multimodal systems for practical tasks such as automatic image
+captioning. This is a fast-growing field and a detailed discussion of
+it is beyond the scope of this paper. Recent systems include
+\citep{karpathy2014deep}, \citep{mao2014explain},
+\citep{kiros2014unifying}, \citep{donahue2014long}, \citep{vinyals2014show},  \citep{venugopalan2014translating}, \citep{chen2014learning},  \citep{fang2014captions}. The majority of these
+approaches rely on convolutional neural networks for deriving
+representations of visual input, and then generate the captions using
+various versions of recurrent neural network language models
+conditioned on image representations. For example
+\citep{vinyals2014show} use the deep convolutional neural network of
+\citep{szegedy2014going} trained on ImageNet to encode the image into a
+vector. This representation is then decoded into a sentence using a
+Long Short-Term Memory recurrent neural network
+\cite{hochreiter1997long}. Words are represented by embedding them
+into a multidimensional space where similar words are close to each
+other. The parameters of this embedding are trainable together with
+the rest of the model, and are analogous to the vector representations
+learned by the model proposed in this paper. The authors show some
+example embeddings but do not analyze or evaluate them quantitatively,
+as their main focus is on the captioning performance.
+
+Perhaps the approach most similar to ours is the model of
+\citep{bruni2014multimodal}. In their work, they train multimodal
+distributional semantics models on both textual information and
+bag-of-visual-words features extracted from captioned images. They use
+the induced semantic vectors for simulating word similarity judgments
+by humans, and show that a combination of text and image-based vectors
+can replicate human judgments better than using uni-modal
+vectors. This is a batch model and is not meant to simulate human word
+learning from noisy context, but their evaluation scheme is suitable
+for our purposes.
+
+\citep{lazaridou2015combining} propose a multimodal model which learns
+word representations from both word co-occurrences and from visual
+features of images associated with words. Their input data consists of
+a large corpus of text (without visual information) and additionally
+of the ImageNet dataset \cite{deng2009imagenet} where images are
+labeled with WordNet synsets.\label{rev:synset}\footnote{The synsets
+of WordNet are groups of synonyms that represent an abstract concept.}
+Thus, strictly speaking their model does
+not implement cross-situational learning because a subset of words is
+unambiguously associated with certain images.
+
+
+%------------
+\subsection{Our study}
+\label{sec:out-study}
+
+In this paper we investigate the plausibility of cross-situational
+learning of word meanings in a more naturalistic setting. Our goal is
+to simulate this mechanism under the same constraints that humans face
+when learning a language, most importantly by learning in a piecemeal
+and incremental fashion, and facing noise and ambiguity in their
+perceptual environment. (We do not investigate the role of sentence structure on word learning in this study, but we discuss this issue in Section~\ref{sec:discussion}).
+\label{why-incremental}
+
+For simulation of the visual context we use two collections of images
+of natural scenes, Flickr8K (F8k) \cite{rashtchian2010collecting} and
+Flickr30K (F30k) \cite{young2014image}, where each image is associated with
+several captions describing the scene. We extract visual features from
+the images and learn to associate words with probability distributions
+over these features. This has the advantage that we do not need to
+simulate ambiguity or referential uncertainty -- the data has these
+characteristics naturally.
+
+The challenge is that, unlike in much previous work on
+cross-situational learning of word meanings, we do not know the
+ground-truth word meanings, and thus cannot directly measure the
+progress and effectiveness of learning. Instead, we use indirect
+measures such as (i) the correlation of the similarity of learned word
+meanings to word similarities as judged by humans, and (ii) the
+accuracy of producing words in response to an image. Our results show
+that from pairings of scenes and descriptions it is feasible to learn
+meaning representations that approximate human similarity
+judgments. Furthermore, we show that our model is able to name image
+descriptors considerably better than the frequency baseline and names
+a large variety of these target concepts. In addition we present a
+pilot experiment for word production using the ImageNet data set and
+qualitatively show that our model names words that are conceptually
+related to the images.

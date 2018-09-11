@@ -1,0 +1,41 @@
+\section{Related work}
+
+%Our work brings together topics in multilingual multimodal natural language processing, language and vision, and multi-task learning.
+
+% \textbf{Multilingual Multimodal NLP} is an emerging topic at the intersection of multilinguality and multimodality in language. The problems studied thus-far include image--sentence ranking \cite{Rajendran2016} and the related tasks of multilingual image description and multimodal translation \cite{ElliottFrankHasler2015,Hitschler2016}
+
+Initial work on multimodal translation used semantic or spatially-preserving image features as inputs to a translation model. Semantic image features are typically extracted from the final layer of a pre-trained object recognition CNN, e.g.
+`pool5/7x7\_s1' in GoogLeNet \cite{Szegedy2015}. This type of vector has been used as input to the encoder \cite{ElliottFrankHasler2015,Huang2016}, the decoder \cite{Libovicky2016}, or as features in a phrase-based
+translation model \cite{Shah2016,Hitschler2016}.
+Spatially-preserving image features are extracted from deeper inside a CNN, where the position of a feature is related to its position in the image. These features have
+been used in ``double-attention models'', which calculate independent context vectors for the source language and a
+convolutional image features
+\cite{Calixto2016,Caglayan2016b,Calixto2017c}.
+We use an attention-based translation model but our multitask model does not use images for translation.
+
+More related to our work is an extension of Variational Neural Machine Translation %\cite{zhang2016variational}
+to infer latent variables to \emph{explicitly} model the semantics of source sentences from visual and linguistic information \cite{toyama2016neural}. They report improvements on the Multi30K data set but their model needs additional parameters in the ``neural inferrer'' modules. In our model, the grounded semantics are represented \emph{implicitly} in the shared encoder. They assume Source-Target-Image training data, whereas our approach achieves equally good results if we train on separate Source-Image and Source-Target datasets. \citep{Saha2016} study cross-lingual image description where the task is to generate a sentence in language $L_{1}$ given the image, using only Image-$L_{2}$ and $L_{1}$-$L_{2}$ training corpora.
+They propose a Correlational Encoder-Decoder to model the Image-$L_{2}$ and $L_{1}$-$L_{2}$ data, which learns
+correlated representations for paired Image-$L_{2}$ data and decodes
+$L_{1}$ from the joint representation. Similar to our work,
+the encoder is trained by minimizing two loss functions: the Image-$L_{2}$ correlation loss, and the $L_{1}$ decoding cross-entropy loss. \citep{Nakayama2016} consider a zero-resource problem,
+where the task is to translate from $L_{1}$ to $L_{2}$ with only Image-$L_{1}$ and Image-$L_{2}$ corpora.
+Their model embeds the image, $L_{1}$, and $L_{2}$ in a joint multimodal space learned by minimizing a multi-task ranking loss
+between both pairs of examples. In this paper, we focus on
+\emph{enriching} source language representations with visual
+information instead of zero-resource learning.
+
+Multitask Learning improves the
+generalisability of a model by requiring it to be useful for more than one task \cite{Caruana1997}.
+This approach has recently been used to improve
+the performance of sentence compression using eye gaze as an
+auxiliary task \cite{Klerke2016}, and to improve shallow parsing
+accuracy through the auxiliary task of predicting keystrokes in an
+out-of-domain corpus \cite{Plank2016}.
+%These works hypothesise a relationship between
+%specific biometric measurements and specific NLP tasks motivated by cognitive-linguistic theories.
+More recently, \citep{Bingel2017} analysed the beneficial relationships between primary and auxiliary sequential prediction tasks.
+In the translation literature, multitask learning has been used to learn a one-to-many 
+languages translation model \cite{Dong2015}, a multi-lingual translation model with a single attention mechanism shared across multiple languages \cite{Firat2016}, and in multitask sequence-to-sequence learning without an attention-based decoder \cite{Luong2016}. We explore the benefits of grounded learning in the specific case of multimodal translation. We combine sequence prediction with continuous (image) vector prediction, compared to previous work which multitasks different sequence prediction tasks.
+
+Visual representation prediction has been studied using static images or videos. \citep{Lin2015} use a conditional random field to imagine the composition of a clip-art scene for visual paraphrasing and fill-in-the-blank tasks. \citep{Chrupala2015} predict the image vector associated with a sentence using an L2 loss; they found this improves multi-modal word similarity compared to text-only baselines. \citep{Gelderloos2016} predict the image vector associated with a sequence of phonemes using a max-margin loss, similar to our image prediction objective. \citep{Collell2017} learn to predict the visual feature vector associated with a word for word similarity and relatedness tasks. As a video reconstruction problem, \citep{Srivastava2015} propose an LSTM Autoencoder to predict video frames as a reconstruction task or as a future prediction task. \citep{Pasunuru2017} propose a multitask model for video description that combines unsupervised video reconstruction, lexical entailment, and video description. They find improvements from using out-of-domain resources for entailment and video prediction, similar to the improvements we find from using out-of-domain parallel text and described images.

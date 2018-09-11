@@ -1,0 +1,127 @@
+%
+% File conll2018.tex
+%
+%% Based on the style files for CoNLL 2018, which were
+%% Based on the style files for EMNLP 2018, which were
+%% Based on the style files for ACL 2018, which were
+%% Based on the style files for ACL-2015, with some improvements
+%%  taken from the NAACL-2016 style
+%% Based on the style files for ACL-2014, which were, in turn,
+%% based on ACL-2013, ACL-2012, ACL-2011, ACL-2010, ACL-IJCNLP-2009,
+%% EACL-2009, IJCNLP-2008...
+%% Based on the style files for EACL 2006 by
+%%e.agirre@ehu.es or Sergi.Balari@uab.es
+%% and that of ACL 08 by Joakim Nivre and Noah Smith
+
+%\documentclass[11pt,a4paper]{article}
+%\usepackage[draft]{hyperref}  % Uncomment to fix pdflink nesting problems
+%\usepackage[hyperref]{conll2018}
+%\usepackage{times}
+%\usepackage{latexsym}
+
+%\usepackage{url}
+
+%\usepackage{multirow}
+
+%\usepackage{booktabs}
+
+%% Language and font encodings
+%\usepackage[english]{babel}
+%\usepackage[utf8x]{inputenc}
+%\usepackage[T1]{fontenc}
+%\usepackage{microtype}
+
+%% Useful packages
+%\usepackage{amsmath}
+%\usepackage{graphicx}
+%\usepackage{amssymb}
+%\usepackage{pgfplots, tikz}
+%\usepgfplotslibrary{groupplots}
+%\usepackage[colorinlistoftodos]{todonotes}
+%\usepackage{algpseudocode}
+%\usepackage{subcaption}
+%\pgfplotsset{compat=newest}
+%\usetikzlibrary{decorations.pathmorphing}
+
+%\aclfinalcopy % Uncomment this line for the final submission
+
+%\setlength\titlebox{5cm}
+% You can expand the titlebox if you need extra space
+% to show all the authors. Please do not make the titlebox
+% smaller than 5cm (the original size); we will check this
+% in the camera-ready version and ask you to change it back.
+
+%\newcommand\BibTeX{B{\sc ib}\TeX}
+%\newcommand\confname{CoNLL 2018}
+%\newcommand\conforg{SIGNLL}
+
+\chapter{Lessons learned in multilingual grounded language learning}
+
+% Desmond Elliott
+% Department of Computer Science
+% University of Copenhagen
+% de@di.ku.dk
+
+%\author{Ákos Kádár \\
+%	Tilburg University \\
+%   {\tt a.kadar@uvt.nl}\\\And
+%   Desmond Elliott\footnotemark[1] \\
+%	University of Copenhagen \\
+%   {\tt de@di.ku.dk}\\\And
+%   Marc-Alexandre Côté \\
+%   Microsoft Research Montreal\\
+%      {\tt macote@microsoft.com} \\\AND
+%      Grzegorz Chrupała\\
+%      Tilburg University \\
+%      {\tt g.chrupala@uvt.nl } \\\And
+%      Afra Alishahi\\
+%      Tilburg University \\
+%      {\tt a.alishahi@uvt.nl}\\
+%}
+
+%\author{First Author \\
+%  Affiliation / Address line 1 \\
+%  Affiliation / Address line 2 \\
+%  Affiliation / Address line 3 \\
+%  {\tt email@domain} \\\And
+%  Second Author \\
+%  Affiliation / Address line 1 \\
+%  Affiliation / Address line 2 \\
+%  Affiliation / Address line 3 \\
+%  {\tt email@domain} \\}
+
+%\date{}
+
+%\begin{document}
+%\maketitle
+
+\paragraph{abstract}
+
+Recent work has shown how to learn better visual-semantic embeddings by leveraging image descriptions in more than one language. Here, we investigate in detail which conditions affect the performance of this type of grounded language learning model. We show that multilingual training improves over bilingual training, and that low-resource languages benefit from training with higher-resource languages. We demonstrate that a multilingual model can be trained equally well on either translations or comparable sentence pairs, and that annotating the same set of images in multiple language enables further improvements via an additional caption-caption ranking objective.
+%Both of these results have important implications for the availability of multilingual multimodal data.
+%Our experiments set strong baselines for future work in multilingual image-sentence ranking.
+
+\input{chapters/ConLL/intro1}
+
+\input{chapters/ConLL/related}
+
+\input{chapters/ConLL/method}
+
+\input{chapters/ConLL/data}
+
+\input{chapters/ConLL/bilingual}
+% \input{chapters/ConLL/charts}
+\input{chapters/ConLL/multilingual}
+
+
+\input{chapters/ConLL/conclusions}
+\section*{Acknowledgements}
+Desmond Elliott was supported by an Amazon Research Award.
+
+%\input{highlowchart}
+
+%\bibliographystyle{apalike}
+%\bibliography{biblio}
+
+%\input{supplementary}
+%\end{document}

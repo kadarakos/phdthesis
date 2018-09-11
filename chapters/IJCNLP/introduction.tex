@@ -1,0 +1,35 @@
+\section{Introduction}
+
+Multimodal machine translation is the task of translating sentences in context, such as images paired with a parallel text \cite{Specia2016}. This is an emerging task in the area of multilingual multimodal natural language processing. Progress on this task may prove useful for translating the captions of the images illustrating online news articles, and for multilingual closed captioning in international television and cinema.
+
+Initial efforts have not convincingly demonstrated that visual context can improve translation quality.
+In the results of the First Multimodal Translation Shared Task, only three systems outperformed an off-the-shelf text-only phrase-based machine translation model, and the best performing system was equally effective with or without the visual features \cite{Specia2016}. There remains an open question about how translation models should take advantage of visual context.
+
+\input{chapters/IJCNLP/model_diagram}
+
+We present a multitask learning model that decomposes multimodal translation into learning a translation model and learning visually grounded representations. This decomposition means that our model can be trained over external datasets of parallel text or described images, making it possible to take advantage of existing resources. Figure \ref{fig:model} presents an overview of our model, Imagination, in which source language representations are shared between tasks
+through the Shared Encoder. The translation decoder is an
+attention-based neural machine translation model \cite{Bahdanau2015}, and the
+image prediction decoder is trained to predict a global feature vector of an
+image that is associated with a sentence \cite[{\sc imaginet}]{Chrupala2015}. This decomposition encourages grounded learning in the shared encoder because the {\sc imaginet} decoder is trained to imagine the image associated with a sentence.
+It has been shown that grounded representations are qualitatively different from their text-only counterparts \cite{Kadar2016} and correlate better with human similarity judgements \cite{Chrupala2015}.
+We assess the success of the grounded learning
+ by evaluating the image prediction model on an image--sentence ranking task to determine if the shared representations are useful for image retrieval \cite{Hodosh2013}. In contrast with most previous work, our model does not take images as input at translation time, rather it learns grounded representations in the shared encoder.
+
+We evaluate Imagination on the Multi30K dataset \cite{ElliottFrankSimaanSpecia2016} using a combination of in-domain and out-of-domain data. In the in-domain experiments, we find that multitasking translation with image prediction is competitive with the state of the art. Our model achieves 55.8 Meteor as a single model trained on multimodal in-domain data, and 57.6 Meteor as an ensemble.
+
+In the experiments with out-of-domain resources, we find that the improvement in translation quality holds when training the {\sc imaginet} decoder on the MS COCO dataset of described images \cite{Chen2015}.
+Furthermore, if we significantly improve our text-only baseline using out-of-domain parallel text from the News Commentary corpus \cite{Tiedemann2012}, we still find improvements in translation quality from the auxiliary image prediction task. Finally, we report a state-of-the-art result of 59.3 Meteor on the Multi30K corpus when ensembling models trained on in- and out-of-domain resources.
+
+The main contributions of this paper are:
+%
+\begin{itemize}
+\item We show how to apply multitask learning to multimodal translation. This makes it possible to train models for this task using external resources alongside the expensive triple-aligned source-target-image data.
+
+\item We decompose multimodal translation into two tasks: learning to translate and learning grounded representations. We show that each task can be trained on large-scale external resources, e.g. parallel news text or images described in a single language.
+
+\item We present a model that achieves state of the art results without using images as an input. Instead, our model learns visually grounded source language representations using an auxiliary image prediction objective. Our model does not need any additional parameters to translate unseen sentences.
+
+%\item We also report strong results when our model is trained using separate source-target and source-image datasets, which shows that triple-aligned data is not necessary for this task.
+
+\end{itemize}

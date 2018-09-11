@@ -1,0 +1,308 @@
+\section{Multilingual experiments}
+\label{sec:multi}
+
+%\begin{table*}
+%\centering
+%\renewcommand{\arraystretch}{1.3}
+%\begin{tabular}{lcccccccc}
+%\toprule
+%& \multicolumn{2}{c}{En} &  \multicolumn{2}{c}{Ge}  &  \multicolumn{2}{c}{Fr}  &  \multicolumn{2}{c}{Cz}  \\
+% & I$\rightarrow$T & T$\rightarrow$I & I$\rightarrow$T & T$\rightarrow$I & I$\rightarrow$T & T$\rightarrow$I & I$\rightarrow$T & T$\rightarrow$I \\
+%\midrule
+%Monolingual			& 48.3 & 17.8 & 37.3  & 12.7 & 47.1 & 16.0 & 43.4 & 16.4\\
+%\midrule
+%Multi-translation 	& 56.0  & 19.9 & 47.0  & 18.5 & 55.9 & 19.4 & 48.9 & 18.7 \\
+%+ c2c     			& 56.2 & 20.4 & 50.0  & 19.2  & 56.5 & 20.1 & 53.7 & 19.8\\
+%\midrule
+%Multi-independent        & 55.7 & 20.0 & 47.0 & 17.9 & 56.2 & 19.9 & 49.7 & 18.8\\
+%+ c2c  			& 61.4 & 20.4 & 48.5 & 18.6 & 58.5 & 19.7 & 55.0 & 19.6 \\
+%\bottomrule
+%\end{tabular}
+%\caption{The Mono- and joint Multi-lingual-translation models trained on 
+%\emph{translation pairs}, and Multi-comparable trained on the downsampled \emph{comparable} set with one caption per image.}
+%\label{tab:bitrans}
+%\end{table*}
+
+%\begin{table}[t!]
+%\centering
+%\renewcommand{\arraystretch}{1.3}
+%\begin{tabular}{lcccc}
+%\toprule
+%& En & De & Fr & Cz \\
+%\cmidrule{2-5}
+%Monolingual & 48.3 & 37.3 &  47.1 & 43.4 \\
+%\midrule
+%Multi-translation & 56.0 &  47.0 & 55.9 & 48.9 \\
+%+ c2c & 56.2 & \bf{50.0} & 56.5 & 53.7\\
+%\midrule
+%Multi-comparable & 55.7 & 47.0 & 56.2 & 49.7 \\
+% + c2c & \bf{61.4} &  48.5 & \bf{58.5} & \bf{55.0}\\
+%\bottomrule
+%\end{tabular}
+%\caption{The Monolingual and joint Multi-translation models trained on \emph{translation pairs}, and the Multi-comparable trained on the downsampled \emph{comparable} set with one caption per image.}
+%\label{tab:multilingual}
+%\end{table}
+% \begin{table}
+% \centering
+% \renewcommand{\arraystretch}{1.2}
+% \begin{tabular}{lcccc}
+% \toprule
+% & \multicolumn{2}{c}{French} &  \multicolumn{2}{c}{Czech} \\
+%  & I$\rightarrow$T & T$\rightarrow$I & I$\rightarrow$T & T$\rightarrow$I \\
+% \hline
+% Monolingual    & 47.1 & 16.0 & 43.4 & 16.4\\
+% Multilingual   & 55.9 & 19.4 & 48.9 & 18.7\\
+% + Comparable   & 58.1 & 19.7 & 51.7 & 19.2\\
+% + c2c          & \textbf{60.0 }& \textbf{20.4} & \textbf{58.9} & \textbf{19.9}\\
+% \bottomrule
+% \end{tabular}
+% \caption{The low-resource French and Czech multilingual models benefit from training with the additional 155K English and German sentences from the \emph{comparable} Multi30K dataset.}
+% \label{tab:multilingual-highlow}
+% \end{table} 
+We now turn out attention to multilingual learning using the English, German, French and Czech annotations in the {\it translation} portion of Multi30K. We only report the text-to-image (T$\rightarrow$I) R@10 results due to space limitations. 
+
+We did not repeat the overlapping vs.\ non-overlapping experiments from Section~\ref{sec:bioverlap} in a multilingual setting because this would introduce too much data sparsity. In order to conduct this experiment, we would have to downsample the already low-resource French and Czech captions by 50\%, or even further for multi-way experiments.
+
+%, however the Text $\rightarrow$ Image and Image $\rightarrow$ Text results are strongly correlated (Spearman's $\rho$ = 0.92, p < 0.001). The complete set of results are available in the Supplementary Material. 
+
+% On top of using the English and German data here we also add French 
+% and Czech. Here we apply the same training procedure as in Section \ref{sec:bilingual} to train jointly on four languages. We proceed 
+% by comparing the TP and IC settings along with the contribution of 
+% the c2c objective in the different setups. 
+% Since French and Czech languages are only available 
+% in T1 results are reported on the \texttt{test2016} portion of Task1. 
+% Furthermore, in the comparable case English and German captions still come from downsampling the T2 data, however, the French and Czech captions are translations of each other due to the lack of available comparable data. We chose
+% to only report R@10 for I$\rightarrow$T and not T$\rightarrow$I in Table \ref{tab:multilingual} for easier readability, motivated by the high correlation
+% between the two scores - Spearmann's R=.92, p < .001 across the 20 cases in Table \ref{tab:multilingual}. The full results are included in the Supplementary material. 
+
+
+\subsection{Translation vs.\ independent captions}
+\label{sec:multitrans}
+
+%\todo[inline]{Akos: There are two equally plausible tables for this section: Table 6 and Table 7. Which one is it? The text refers to Multi-independent, which does not exist in referenced Table 7. Please go over this section again.}
+
+Table~\ref{tab:multilingual} shows the results of repeating the translations vs.\ comparable captions experiment from Section~\ref{sec:bitrans} with data in four languages. The Multi-translation models are trained on 29K images paired with a single caption in each language. These models perform better than their Monolingual counterparts, and the German, French, and Czech models are further improved  with the c2c objective. The Multi-comparable models are trained by randomly sampling one English and one German caption from the {\it comparable} dataset, alongside the French and Czech translation pairs. These models perform as well as the Multi-translation models, and the c2c objective brings further improvements for all languages in this setting.
+
+These results clearly demonstrate the advantage of jointly training on more than two languages. Text-to-image retrieval performance increases by more than 11 R@10 points for each of the four languages in our experiment.
+
+%This seems to have been addressed in the first sentence.\todo{Mu-translation never defined. Can you just say multi(lingual) (GC)}
+% As in the case of bilingual models a.) both the addition of translation pairs or comparable captions provide a large improvement over monolingual models and
+% b.) adding translation pairs improves performance overall more than comparable
+% captions. The first notable difference, however, is that in the 
+% multilingual case the c2c objective does improve performance even in the 
+% TP case.  The most obvious explanation is that the caption-caption 
+% data set inc image-sentence training set consists of 29K * 4 samples, 
+% whereas the caption-caption data set size is 29 * 6. Secondly, the best
+% for all languages except for German are achieved by the comparable + c2c setup.
+% As mentioned earlier here the comparable setup does contain translation pairs.
+% However, we ran two additional sets of experiments where we downsample 
+% T2 English and German and jointly train with either French or Czech. 
+% In both cases for English French and Czech the best results are achieved 
+% in the comparable + c2c setup. The results for these experiments are available in the Supplementary material.
+ 
+
+%Move this to the Conclusion?
+%Future work can assess our findings using sources 
+%of data such the English MS-COCO \cite{lin2014microsoft} with the
+%added Japanese captions of \cite{P16-1168} or the Chinese version \cite{li2016adding} of the Flickr8K \cite{hodosh2013framing}.
+
+
+\subsection{High-to-low resource transfer}
+\label{sec:multitransfer}
+
+% AK: CORRECTED TABLE
+\begin{table}[t]
+\centering
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{lcccc}
+\toprule
+& En & De & Fr & Cz \\
+\cmidrule{2-5}
+Monolingual & 50.4 & 39.5 & 47.0 & 42.0 \\
+\midrule
+Multi-translation & 58.7 & 51.2 &  57.0 & 51.0\\
++ c2c & 56.3  & 52.2 & 55.0 & 51.6\\
+\midrule
+Multi-comparable & 59.2 & 49.6 & 57.2 & 50.8 \\
+ + c2c & \bf{61.8}  & \bf{52.7} & \bf{59.2} & \bf{55.2} \\
+\bottomrule
+\end{tabular}
+\caption{The Monolingual and joint Multi-translation models trained on \emph{translation pairs}, and the Multi-comparable trained on the downsampled \emph{comparable} set with one caption per image.}
+\label{tab:multilingual}
+\end{table}
+
+We now examine whether the lower-resource French and Czech models benefit from training with the full complement of the higher-resource English and German comparable data. Therefore we train a joint model on the \textit{translation} as well as \textit{comparable} portions of Multi30K, and examine the performance on French and Czech.
+
+Table~\ref{tab:multilingual-highlow} shows the results of this experiment. We find that the French and Czech models improve by 8.8 and 5.5 R@10 points respectively when they are only trained on the multilingual translation pairs (compared to the monolingual version), and by another 2.2 and 2.8 points if trained on the extra 155K English and German \textit{comparable} descriptions. We also find that the additional c2c objective improves the Czech model by a further 4.8 R@10 points (this improvement is likely caused by training the model on 46 possible caption pairs). Our results show the impact of jointly training with the larger English and German resources, which demonstrates the benefits of high-to-low resource transfer.
+
+% Table \ref{tab:multilingual-highlow} 
+% shows the impact of mixing in the larger English and German resources
+% from Task 2. In this case early stopping is
+% performed on the sum of recall scores of the lower resource languages French and Czech. Mixing in both the larger English and German resources improves  Czech and French results considerably. 
+% The caption ranking loss in this setting 
+% further improves performance by a large margin. Note that here we 
+% have 5 English, 5 German, 1 Czech and 1 French caption per image resulting in 46 possible pairs. 
+% This results in large cross-lingual paraphrasing data set,
+% which seems to provide great training signal for multilingual image-sentence ranking.
+
+
+
+
+\subsection{Bilingual vs. multilingual}
+\label{sec:bivsmult}
+
+%AK: Corrected version
+\begin{table}
+\centering
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{lcc}
+\toprule
+& French & Czech \\
+\cmidrule{2-3}
+Monolingual    & 47.0 & 42.0\\
+Multilingual   & 56.3 & 51.3 \\
++ Comparable   & 58.9 & 52.4 \\
++ c2c          & \bf{61.6} & \bf{57.2} \\
+\bottomrule
+\end{tabular}
+%DE: I dropped the word full because I think it is already clear that we would use the full comparable dataset, unless otherwise specified.
+\caption{Multilingual is trained on all \emph{translation pairs}, 
++ Comparable adds the \emph{comparable} data set.}
+\label{tab:multilingual-highlow}
+\end{table}
+
+Finally, we investigate how useful it is to train on four languages instead of two. Figure~\ref{fig:chart} presents the image-to-text and text-to-image retrieval results of training Monolingual, Bilingual, or Multilingual models. The Monolingual and Bilingual models are trained on a random single-caption-image subsample of the {\it comparable} dataset with the additional c2c objective, as this configuration provided the overall best results in Sections~\ref{sec:bitrans} and \ref{sec:multitrans}. The Multilingual models are trained with the additional French and Czech {\it translation} data. As can be seen in Figure~\ref{fig:chart}, the performance on both tasks and for both languages improves as we move from using data from one to two to four languages.
+
+% Finally we investigate to what extent adding more languages improves performance. For comparison we choose the comparable captions with added c2c loss as this setting achieves the highest overall scores across the bilingual and multilingual scenarios.  We train the Bilingual model on the downsampled comparable English-German data. For the Multilingual models we use the same training set, but add the French and Czech translations. Table~\ref{tab:bivsmulti} shows that adding two more languages greatly improves performance on English and German.
+
+%\begin{table}
+%\centering
+%\begin{tabular}{lcc}
+%\toprule
+%& English &  German \\
+%\hline
+%Monolingual	   & 56.3 & 39.5 \\
+%Bilingual  	   & 67.6 & 61.9 \\
+%Multilingual   & \bf{71.9} & \bf{65.1}\\
+%\bottomrule
+%\end{tabular}
+%\caption{Bilingual model trained on 
+%downsampled \emph{comparable} English and German sets 
+%with c2c objective. 
+%Same setting used for Multilingual with added
+%French and Czech translation pairs.}
+%\label{tab:bivsmulti}
+%\end{table}
+
+% The charts are temporarily commented out.
+%\input{charts}
+%\input{highlowchart}
+
+% \begin{table*}
+% \label{tab:multilingual}
+% \begin{tabular}{llcccc}
+% 		&	& En &  De & Fr & Cz \\
+
+% 1 & Monolingual & 132.7 &  96.4 & 125.3 & 127.9 \\
+% 2 & Multilingual & 161.3 & 134.0  & 154.8 &  142.0 \\
+% 3 & Multilingual + c2c & 156.5 & 144.8 & 160.6 & 158.4 \\
+% 4 & Multilingual independent & 165.6  & 140.8  & 167.7 & 152.9   \\
+% \hline
+% 5 & T2 En + T2 DE       & &       & 171.5 &  157.6\\
+% 6 & T2 En + T2 DE + c2c & &       & 188.0 &  173.8 \\
+% \hline
+% 7 & Multilingual + Learned Typology & 159.2 & 134.7 & 155.6 & 139.8 \\
+% 8 & Multilingual + Pretrained Typology & 162.9 & 139.7 & 159.0 & 142.9\\
+% 9 & Multilingual + URIEL Typology & 165.3 & 141.2 & 166.0 & 145.0\\
+% \end{tabular}
+% \caption{R@1 + R@5 + R@10 for caption retrieval + image retrieval}
+% \end{table*}
+
+%\paragraph{Multilingual models with typology information}
+%We incorporate typological information 
+%in our model in the form of extra input and test whether it improves 
+%performance in our multilingual-multimodal domain. An extra token
+%is pre-pended to each sentence representing the language.
+%Similarly to \cite{ammar2016many} as a baseline we train our model
+%with randomly initialized language embeddings. Recall that the language id is included as an additional token at the start a sequence. Line 7 in Table \ref{tab:multilingual} shows that the randomly
+%initialized language-type embeddings do not provide a consistent improvement across languages. On the other hand, in line 8 suggest that the pre-trained typology vectors from \cite{ostling2016continuous}  
+%provide helpful cues to our multilingual model. The results are further improved
+%using the \texttt{syntax\_knn} features of URIEL through the \texttt{lang2vec}
+%framework \cite{littell2017uriel}.
+
+
+
+%\begin{table*}
+%\centering
+%\renewcommand{\arraystretch}{1.3}
+%\label{tab:multilingual-typology}
+%\begin{tabular}{lccccccccc}
+%\toprule
+%& \multicolumn{2}{c}{English} &  \multicolumn{2}{c}{German} & \multicolumn{2}{c}{French} & \multicolumn{2}{c}{Czech}\\
+%& I$\rightarrow$T & T$\rightarrow$I & I$\rightarrow$T & T$\rightarrow$I  & I$\rightarrow$T & T$\rightarrow$I & I$\rightarrow$T & T$\rightarrow$I \\
+%\hline
+%Multilingual & & & & & & & & \\
+%+ learned typology & & & & & & & & \\
+%+ pretrained typology & & & & & & & & \\
+%+ URIEL typology & & & & & & & & \\
+%\bottomrule
+%\end{tabular}
+%\caption{Recall@10 results of training multilingual models with language type information. Language type is either an additional learned parameter, initialised from a language type vector \cite{ostling2016continuous}, or learned from a many-hot URIEL vector \cite{littell2017uriel}.}
+%\end{table*}
+
+
+
+\begin{figure*}
+\begin{center}
+\begin{tikzpicture}[yscale=1.1, xscale=1.05]
+
+\begin{groupplot}[
+   group style={
+       group size=2 by 1,
+       x descriptions at=edge bottom,
+       y descriptions at=edge left,
+       vertical sep=0pt,
+       horizontal sep=15pt},
+  ybar,
+  x=2.3cm,
+  every node near coord/.append style={font=\normalsize},
+  nodes near coords,
+  nodes near coords align=vertical,
+  enlarge x limits=0.2,
+  %xmajorgrids = true,
+  point meta=y * 1, % The displayed number.
+  ylabel={\textbf{R@10}},
+  tick align=outside,
+  ytick={0,20,...,100}, 
+  xtick={1,...,3},
+  xticklabels={
+    Monolingual,
+    Bilingual,
+    Multilingual},
+  x tick label style={align=left},
+  ymin=0,
+  ymax=100
+]
+
+\nextgroupplot[bar width=18pt]
+\addplot[draw=red,fill=red!50]
+coordinates {(1,56.3) (2,67.6) (3,71.9)};
+\addplot[draw=blue, fill=blue!50] 
+coordinates {(1,40.1) (2,56.0) (3,61.0)};
+\node at (rel axis cs:0.5,0.9) {English};
+
+\nextgroupplot[bar width=18pt,legend style={at={(-0.05,1)},anchor=north}]
+\addplot[draw=red,fill=red!50]
+coordinates {(1,39.5) (2,61.9) (3,65.1)};
+\addlegendentry{Image $\rightarrow$ Text}
+\addplot[draw=blue, fill=blue!50] 
+coordinates {(1,20.9) (2,49.1) (3,52.6)};
+\addlegendentry{Text $\rightarrow$ Image}
+
+\node at (rel axis cs:0.5,0.9) {German};
+\end{groupplot}
+\end{tikzpicture}
+\caption{Comparing models from the Monolingual,  Bilingual and Multilingual settings. The Monolingual and Bilingual models are trained on the downsampled English and German \emph{comparable} sets with additional c2c objective. The Multilingual model uses the French and Czech \emph{translation pairs} as additional data. The results are reported on the full 2016 test set of the \emph{comparable} portion of Multi30K.}
+\label{fig:chart}
+\end{center}
+\end{figure*}

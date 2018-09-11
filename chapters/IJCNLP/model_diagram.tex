@@ -1,0 +1,132 @@
+% colours from http://colorbrewer2.org/?type=qualitative&scheme=Set1&n=5
+\definecolor{myred}{RGB}{228,26,28}
+\definecolor{myorange}{RGB}{255,127,0}
+\definecolor{mypurple}{RGB}{152,78,163}
+\definecolor{mygreen}{RGB}{77,175,74}
+\definecolor{myblue}{RGB}{55,126,184}
+\definecolor{mymagenta}{RGB}{231,41,138}
+\tikzstyle{every pin edge}=[<-,shorten <=1pt]
+\tikzstyle{neuron}=[circle,fill=black!25,minimum size=8pt,inner sep=0pt]
+\tikzstyle{visual neuron}=[neuron, draw=myred, fill=myred]
+\tikzstyle{source neuron}=[neuron, draw=mypurple, fill=mypurple]
+\tikzstyle{sentence neuron}=[neuron, draw=myblue, fill=myblue]
+\tikzstyle{hidden neuron}=[neuron, draw=mygreen, fill=mygreen]
+\tikzstyle{output neuron}=[neuron, draw=gray, fill=gray]
+\tikzstyle{word neuron}=[neuron, draw=myred, fill=myred]
+\tikzstyle{dense neuron}=[neuron, draw=mypurple, fill=mypurple]
+\tikzstyle{empty word neuron}=[neuron, draw=myred, fill=white]
+\tikzstyle{annot} = [text width=6em, text centered]
+\tikzstyle{connection}=[opacity=1]
+\tikzstyle{conn}=[opacity=1, draw=gray, line width=0.1ex, shorten >= 0.15 cm, shorten <= 0.15cm]
+\tikzstyle{sconn}=[opacity=1, draw=gray, line width=0.1ex, shorten >= 0.15 cm, shorten <= 0.05cm]
+\tikzstyle{fithidneuron}=[draw=mygreen, rounded corners=8pt]
+\tikzstyle{sourcefit}=[draw=myblue, rounded corners=8pt]
+\tikzstyle{visualfit}=[draw=myred, rounded corners=8pt]
+
+\begin{center}
+\begin{figure}
+\centering
+\adjustbox{max width=0.45\textwidth}{
+\begin{tikzpicture}[font=\Large\bfseries]
+
+\def\initX{1}
+\def\initY{1}
+\def\layerD{3}
+\def\times{5}
+\def\imgt{10}
+\def\dtimes{3}
+\def\dinitX{5}
+\def\dinitY{4}
+\def\src{{"A","girl","eats","a","pancake"}}%
+\def\tgt{{"","Ein","Mädchen"}}%
+
+    % T=0
+    % Draw the source bidir lstm
+    \foreach \time / \x in {1,...,\times}
+      {
+      \foreach \name / \y in {1,...,\layerD} {
+         \node[source neuron] (H\time-\name) at (\initX+2.25+\x, 0.5*\y*\initY) {};
+        }
+        \node[fithidneuron] (HiddenFit\time) [fit= (H\time-1) (H\time-3)] {};
+    \node[below=2em of HiddenFit\time] (x\time) {\normalsize \strut \pgfmathparse{\src[\time-1]}\pgfmathresult};
+    \draw[conn, ->] (x\time) to (HiddenFit\time);   
+    }
+
+    \node [below=4em of HiddenFit3] (enclabel) {\Large Shared Encoder};
+    \node[sourcefit, line width=0.4ex] (SourceFit) [fit=(HiddenFit1) (HiddenFit5)] {};
+
+    \draw [conn, ->] (HiddenFit1.40) to (HiddenFit2.140);
+    \draw [conn, ->] (HiddenFit4.40) to (HiddenFit5.140);
+    \draw [conn, ->] (HiddenFit2.40) to (HiddenFit3.140);
+    \draw [conn, ->] (HiddenFit3.40) to (HiddenFit4.140);
+    \draw [conn, <-] (HiddenFit1.320) to (HiddenFit2.220);
+    \draw [conn, <-] (HiddenFit4.320) to (HiddenFit5.220);
+    \draw [conn, <-] (HiddenFit2.320) to (HiddenFit3.220);
+    \draw [conn, <-] (HiddenFit3.320) to (HiddenFit4.220);
+
+
+    \node [source neuron, above=3em of HiddenFit3] (s-attn) {};% at (\initX+2.25+2.5, \initY+2) {};
+    \node [annot, above=0.5ex of s-attn, text width=12em] {\large Attention};
+    \draw [sconn, ->] ([yshift=1ex]HiddenFit1.90) to (s-attn);
+    \draw [sconn, ->] ([yshift=1ex]HiddenFit2.90) to (s-attn);
+    \draw [sconn, ->] ([yshift=1ex]HiddenFit3.90) to (s-attn);
+    \draw [sconn, ->] ([yshift=1ex]HiddenFit4.90) to (s-attn);
+    \draw [sconn, ->] ([yshift=1ex]HiddenFit5.90) to (s-attn);
+
+    % Draw the Imaginet decoder
+    \foreach \name / \y in {1,...,\layerD} {
+       \node[sentence neuron] (M-\name) at (\initX+2.25+7, 0.5*\y*\initY) {};
+    }
+    \node[sourcefit] (SFit) [fit= (M-1) (M-3)] {};
+    \node [annot, above=0.8ex of SFit, text width=4em] {\large \strut Average Pool};
+    \node [below right=4.5ex and -4ex of SFit, text width=14ex] (enclabel) {\Large \begin{center}\centering  {\sc imaginet} Decoder\end{center}};
+
+    \foreach \name / \y in {1,...,\layerD} {
+       \node[visual neuron] (V-\name) at (\initX+2.25+9, 0.5*\y*\initY) {};
+    }
+    \node[visualfit] (VFit) [fit= (V-1) (V-3)] {};
+    % Arrow from the Average Pool to the Image Vector
+    \draw [conn, ->] (SFit) to (VFit);
+    % Arrow from the encoder to the Average Pool
+    \draw [conn, ->, draw=myblue] (SourceFit) to (SFit);
+    \node [annot, above=0.5ex of VFit, text width=6em] {\large \strut Image};
+
+
+    % Visual attention
+    %\foreach \ix in {1,...,\imgt}
+    %  {
+    %    \draw (\initX+12-0.1*\ix, \initY-1+ 0.1*\ix) node[minimum
+    %    size=2cm, draw=myblue, fill=myblue]{};
+    %  }
+    %\node [rectangle, minimum size=2cm, draw=myblue, fill=white] (c54) at
+    %(\initX+12-0.1*\imgt, \initY-1+0.1*\imgt) {\LARGE conv$_{54}$};
+
+    %\node [visual neuron] (v-attn) at (\initX+12, \initY+2) {};
+    %\node [annot, above=1em of v-attn, text width=12em] {\Large Image Attention};
+    %\foreach \ang in {1,...,5}{
+    %\draw [conn] (c54.30+\ang*10*2) to (v-attn);
+    %}
+
+      % Decoder
+      \foreach \time / \x in {1,...,\dtimes}
+      {
+        \foreach \name / \y in {1,...,\layerD}
+        {  
+           \node[hidden neuron] (DH\time-\name) at (\dinitX+\x*2, \dinitY+0.5*\y) {};
+        }
+        \node[fithidneuron] (DFit\time) [fit= (DH\time-1) (DH\time-3)] {};
+        \ifthenelse{\x > 1}{\node[above=2em of DFit\time, text height=2ex] (y\x) {\small \strut \pgfmathparse{\tgt[\time-1]}\pgfmathresult};}{}
+        \ifthenelse{\x > 1}{\draw[conn, ->] (DFit\time) to (y\time);}{}
+      }
+
+      \draw [conn, ->] (DFit1) to (DFit2);
+      \draw [conn, ->] (DFit2) to (DFit3);
+      \draw [conn, ->] (s-attn) to (DFit3.270);
+      \draw [conn, ->] (y2) to (DFit3);
+
+   \node [above=0.5ex of y2] (declabel) {\Large Translation Decoder};
+\end{tikzpicture}
+}
+\caption{The Imagination model learns visually-grounded representations by sharing the encoder network between the Translation Decoder with image prediction in the {\sc imaginet} Decoder.}\label{fig:model}
+\end{figure}
+\end{center}
