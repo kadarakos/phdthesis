@@ -52,6 +52,12 @@ Antol, S., Agrawal, A., Lu, J., Mitchell, M., Batra, D., Lawrence~Zitnick, C.,
 \newblock In {\em Proceedings of the IEEE International Conference on Computer
   Vision}  (pp.\ 2425--2433).
 
+\bibitem[Arras et~al., 2017]{arras2017explaining}
+Arras, L., Montavon, G., M{\"u}ller, K.-R., \& Samek, W. (2017).
+\newblock Explaining recurrent neural network predictions in sentiment
+  analysis.
+\newblock {\em arXiv preprint arXiv:1706.07206}.
+
 \bibitem[Bach et~al., 2015]{bach2015pixel}
 Bach, S., Binder, A., Montavon, G., Klauschen, F., M{\"u}ller, K.-R., \& Samek,
   W. (2015).
@@ -130,12 +136,30 @@ Bernardi, R., Cakici, R., Elliott, D., Erdem, A., Erdem, E., Ikizler-Cinbis,
   datasets, and evaluation measures.
 \newblock {\em Journal of Artificial Intelligence Research}, 55, 409--442.
 
+\bibitem[Bernardy \& Lappin, 2017]{bernardy2017using}
+Bernardy, J.-P. \& Lappin, S. (2017).
+\newblock Using deep neural networks to learn syntactic agreement.
+\newblock {\em LiLT (Linguistic Issues in Language Technology)}, 15.
+
+\bibitem[Binder et~al., 2016]{binder2016layer}
+Binder, A., Montavon, G., Lapuschkin, S., M{\"u}ller, K.-R., \& Samek, W.
+  (2016).
+\newblock Layer-wise relevance propagation for neural networks with local
+  renormalization layers.
+\newblock In {\em International Conference on Artificial Neural Networks}
+  (pp.\ 63--71).: Springer.
+
 \bibitem[{Bingel} \& {S{\o}gaard}, 2017]{Bingel2017}
 {Bingel}, J. \& {S{\o}gaard}, A. (2017).
 \newblock {Identifying beneficial task relations for multi-task learning in
   deep neural networks}.
 \newblock In {\em Proceedings of the 15th Conference of the European Chapter of
   the Association for Computational Linguistics}  (pp.\ 164--169).
+
+\bibitem[Bock \& Miller, 1991]{bock1991broken}
+Bock, K. \& Miller, C.~A. (1991).
+\newblock Broken agreement.
+\newblock {\em Cognitive psychology}, 23(1), 45--93.
 
 \bibitem[Brown et~al., 1993]{BrownPPM94}
 Brown, P.~F., Pietra, V. J.~D., Pietra, S. A.~D., \& Mercer, R.~L. (1993).
@@ -452,6 +476,11 @@ Elman, J.~L. (1991).
   grammatical structure.
 \newblock {\em Machine learning}, 7(2-3), 195--225.
 
+\bibitem[Enguehard et~al., 2017]{enguehard2017exploring}
+Enguehard, E., Goldberg, Y., \& Linzen, T. (2017).
+\newblock Exploring the syntactic abilities of rnns with multi-task learning.
+\newblock {\em arXiv preprint arXiv:1706.03542}.
+
 \bibitem[Erhan et~al., 2009]{erhan2009visualizing}
 Erhan, D., Bengio, Y., Courville, A., \& Vincent, P. (2009).
 \newblock Visualizing higher-layer features of a deep network.
@@ -605,6 +634,11 @@ Graham, Y., Baldwin, T., Moffat, A., \& Zobel, J. (2017).
 Gregor, K., Danihelka, I., Graves, A., \& Wierstra, D. (2015).
 \newblock Draw: A recurrent neural network for image generation.
 \newblock In {\em International Conference on Machine Learning (ICML)}.
+
+\bibitem[Gulordava et~al., 2018]{gulordava2018colorless}
+Gulordava, K., Bojanowski, P., Grave, E., Linzen, T., \& Baroni, M. (2018).
+\newblock Colorless green recurrent networks dream hierarchically.
+\newblock {\em arXiv preprint arXiv:1803.11138}.
 
 \bibitem[Harris, 1954]{harris1954distributional}
 Harris, Z.~S. (1954).
@@ -949,8 +983,7 @@ Lin, X. \& Parikh, D. (2015).
 Linzen, T., Dupoux, E., \& Goldberg, Y. (2016).
 \newblock Assessing the ability of lstms to learn syntax-sensitive
   dependencies.
-\newblock {\em Transactions of the Association for Computational Linguistics},
-  4, 521--535.
+\newblock {\em arXiv preprint arXiv:1611.01368}.
 
 \bibitem[Lopopolo \& Miltenburg, 2015]{lopopolo2015sound}
 Lopopolo, A. \& Miltenburg, E. (2015).
@@ -1165,6 +1198,14 @@ Plank, B. (2016).
 \newblock In {\em 26th International Conference on Computational Linguistics}
   (pp.\ 609--619).
 
+\bibitem[Poerner et~al., 2018]{poerner2018evaluating}
+Poerner, N., Sch{\"u}tze, H., \& Roth, B. (2018).
+\newblock Evaluating neural network explanation methods using hybrid documents
+  and morphosyntactic agreement.
+\newblock In {\em Proceedings of the 56th Annual Meeting of the Association for
+  Computational Linguistics (Volume 1: Long Papers)}, volume~1  (pp.\
+  340--350).
+
 \bibitem[Quine, 1960]{Quine1960}
 Quine, W. (1960).
 \newblock {\em {Word and Object}}.
@@ -1204,6 +1245,13 @@ Reed, S., Akata, Z., Yan, X., Logeswaran, L., Schiele, B., \& Lee, H. (2016).
 Regier, T. (2005).
 \newblock The emergence of words: Attentional learning in form and meaning.
 \newblock {\em Cognitive Science: A Multidisciplinary Journal}, 29, 819--865.
+
+\bibitem[Ribeiro et~al., 2016]{ribeiro2016should}
+Ribeiro, M.~T., Singh, S., \& Guestrin, C. (2016).
+\newblock Why should i trust you?: Explaining the predictions of any
+  classifier.
+\newblock In {\em Proceedings of the 22nd ACM SIGKDD international conference
+  on knowledge discovery and data mining}  (pp.\ 1135--1144).: ACM.
 
 \bibitem[Riordan \& Jones, 2011]{riordan2011redundancy}
 Riordan, B. \& Jones, M.~N. (2011).
@@ -1294,6 +1342,12 @@ Shah, K., Wang, J., \& Specia, L. (2016).
 \newblock Shef-multimodal: Grounding machine translation on images.
 \newblock In {\em Proceedings of the First Conference on Machine Translation}
   (pp.\ 660--665).
+
+\bibitem[Shrikumar et~al., 2017]{shrikumar2017learning}
+Shrikumar, A., Greenside, P., \& Kundaje, A. (2017).
+\newblock Learning important features through propagating activation
+  differences.
+\newblock {\em arXiv preprint arXiv:1704.02685}.
 
 \bibitem[Simonyan et~al., 2013]{simonyan2013deep}
 Simonyan, K., Vedaldi, A., \& Zisserman, A. (2013).

@@ -8,15 +8,15 @@
 \contentsline {subsection}{\numberline {1.1.5}Visually grounded multilingual sentences representations}{10}{subsection.1.1.5}
 \contentsline {subsection}{\numberline {1.1.6}Grounding and other modalities}{10}{subsection.1.1.6}
 \contentsline {subsection}{\numberline {1.1.7}Interpreting continuous representations}{10}{subsection.1.1.7}
-\contentsline {section}{\numberline {1.2}Integrating Vision and Language}{11}{section.1.2}
-\contentsline {section}{\numberline {1.3}Methods}{12}{section.1.3}
-\contentsline {subsection}{\numberline {1.3.1}Data sets}{12}{subsection.1.3.1}
-\contentsline {subsection}{\numberline {1.3.2}Architectures}{13}{subsection.1.3.2}
-\contentsline {subsubsection}{Recurrent network}{13}{subsection.1.3.2}
-\contentsline {subsubsection}{Convolutional network}{13}{subsection.1.3.2}
-\contentsline {subsubsection}{Optimization}{14}{subsection.1.3.2}
-\contentsline {subsection}{\numberline {1.3.3}Transfer learning}{14}{subsection.1.3.3}
-\contentsline {subsection}{\numberline {1.3.4}Multi-task learning}{14}{subsection.1.3.4}
+\contentsline {section}{\numberline {1.2}Vision and Language applications}{12}{section.1.2}
+\contentsline {section}{\numberline {1.3}Methods}{13}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}Data sets}{13}{subsection.1.3.1}
+\contentsline {subsection}{\numberline {1.3.2}Architectures}{14}{subsection.1.3.2}
+\contentsline {subsubsection}{Recurrent network}{14}{subsection.1.3.2}
+\contentsline {subsubsection}{Convolutional network}{14}{subsection.1.3.2}
+\contentsline {subsubsection}{Optimization}{15}{subsection.1.3.2}
+\contentsline {subsection}{\numberline {1.3.3}Transfer learning}{15}{subsection.1.3.3}
+\contentsline {subsection}{\numberline {1.3.4}Multi-task learning}{15}{subsection.1.3.4}
 \contentsline {chapter}{\numberline {2}Learning word meanings from images of natural scenes}{17}{chapter.2}
 \contentsline {paragraph}{Abstract}{17}{chapter.2}
 \contentsline {paragraph}{This chapter is based on}{19}{chapter.2}
@@ -105,4 +105,4 @@
 \contentsline {chapter}{Summary}{131}{section*.47}
 \contentsline {chapter}{Publication list}{132}{section*.49}
 \contentsline {chapter}{References}{134}{section*.51}
-\contentsline {chapter}{TiCC PhD Series}{160}{section*.53}
+\contentsline {chapter}{TiCC PhD Series}{161}{section*.53}
