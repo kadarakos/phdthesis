@@ -161,6 +161,13 @@ Bock, K. \& Miller, C.~A. (1991).
 \newblock Broken agreement.
 \newblock {\em Cognitive psychology}, 23(1), 45--93.
 
+\bibitem[Bornstein et~al., 2004]{bornstein2004cross}
+Bornstein, M.~H., Cote, L.~R., Maital, S., Painter, K., Park, S.-Y., Pascual,
+  L., P{\^e}cheux, M.-G., Ruel, J., Venuti, P., \& Vyt, A. (2004).
+\newblock Cross-linguistic analysis of vocabulary in young children: Spanish,
+  dutch, french, hebrew, italian, korean, and american english.
+\newblock {\em Child Development}, 75(4), 1115--1139.
+
 \bibitem[Brown et~al., 1993]{BrownPPM94}
 Brown, P.~F., Pietra, V. J.~D., Pietra, S. A.~D., \& Mercer, R.~L. (1993).
 \newblock The mathematics of statistical machine translation: Parameter
@@ -640,6 +647,11 @@ Gulordava, K., Bojanowski, P., Grave, E., Linzen, T., \& Baroni, M. (2018).
 \newblock Colorless green recurrent networks dream hierarchically.
 \newblock {\em arXiv preprint arXiv:1803.11138}.
 
+\bibitem[Harnad, 1990]{harnad1990symbol}
+Harnad, S. (1990).
+\newblock The symbol grounding problem.
+\newblock {\em Physica D: Nonlinear Phenomena}, 42(1-3), 335--346.
+
 \bibitem[Harris, 1954]{harris1954distributional}
 Harris, Z.~S. (1954).
 \newblock Distributional structure.
@@ -896,6 +908,11 @@ Krizhevsky, A., Sutskever, I., \& Hinton, G.~E. (2012).
 \newblock In {\em Advances in neural information processing systems}  (pp.\
   1097--1105).
 
+\bibitem[Landau et~al., 1998]{landau1998object}
+Landau, B., Smith, L., \& Jones, S. (1998).
+\newblock Object perception and object naming in early development.
+\newblock {\em Trends in cognitive sciences}, 2(1), 19--24.
+
 \bibitem[Landauer \& Dumais, 1997]{landauer1997solution}
 Landauer, T.~K. \& Dumais, S.~T. (1997).
 \newblock A solution to plato's problem: The latent semantic analysis theory of
@@ -1067,6 +1084,11 @@ McCann, B., Bradbury, J., Xiong, C., \& Socher, R. (2017).
 \newblock In {\em Advances in Neural Information Processing Systems}  (pp.\
   6294--6305).
 
+\bibitem[Mikolov, 2012]{mikolov2012statistical}
+Mikolov, T. (2012).
+\newblock Statistical language models based on neural networks.
+\newblock {\em Presentation at Google, Mountain View, 2nd April}.
+
 \bibitem[Mikolov et~al., 2013a]{mikolov2013efficient}
 Mikolov, T., Chen, K., Corrado, G., \& Dean, J. (2013a).
 \newblock Efficient estimation of word representations in vector space.
@@ -1174,6 +1196,12 @@ Papineni, K., Roukos, S., Ward, T., \& Zhu, W.-J. (2002).
 \newblock In {\em Proceedings of the 55th Annual Meeting of the Association for
   Computational Linguistics (Volume 1: Long Papers)}  (pp.\ 1273--1283).
 
+\bibitem[Pennington et~al., 2014]{pennington2014glove}
+Pennington, J., Socher, R., \& Manning, C. (2014).
+\newblock Glove: Global vectors for word representation.
+\newblock In {\em Proceedings of the 2014 conference on empirical methods in
+  natural language processing (EMNLP)}  (pp.\ 1532--1543).
+
 \bibitem[Peters et~al., 2017]{peters2017massively}
 Peters, B., Dehdari, J., \& van Genabith, J. (2017).
 \newblock Massively multilingual neural grapheme-to-phoneme conversion.
@@ -1205,6 +1233,11 @@ Poerner, N., Sch{\"u}tze, H., \& Roth, B. (2018).
 \newblock In {\em Proceedings of the 56th Annual Meeting of the Association for
   Computational Linguistics (Volume 1: Long Papers)}, volume~1  (pp.\
   340--350).
+
+\bibitem[Pulverm{\"u}ller, 2005]{pulvermuller2005brain}
+Pulverm{\"u}ller, F. (2005).
+\newblock Brain mechanisms linking language and action.
+\newblock {\em Nature Reviews Neuroscience}, 6(7), 576.
 
 \bibitem[Quine, 1960]{Quine1960}
 Quine, W. (1960).
@@ -1264,6 +1297,12 @@ Rockt{\"a}schel, T., Grefenstette, E., Hermann, K.~M., Ko{\v{c}}isk{\`y}, T.,
   \& Blunsom, P. (2016).
 \newblock Reasoning about entailment with neural attention.
 \newblock In {\em International Conference on Learning Representations (ICLR)}.
+
+\bibitem[Roy, 2002]{roy2002learning}
+Roy, D.~K. (2002).
+\newblock Learning visually grounded words and syntax for a scene description
+  task.
+\newblock {\em Computer speech \& language}, 16(3-4), 353--385.
 
 \bibitem[Rubenstein \& Goodenough, 1965]{rubenstein1965contextual}
 Rubenstein, H. \& Goodenough, J.~B. (1965).
@@ -1537,6 +1576,13 @@ Weston, J., Bengio, S., \& Usunier, N. (2010).
   embeddings.
 \newblock {\em Machine learning}, 81(1), 21--35.
 
+\bibitem[Williams \& Zipser, 1995]{williams1995gradient}
+Williams, R.~J. \& Zipser, D. (1995).
+\newblock Gradient-based learning algorithms for recurrent networks and their
+  computational complexity.
+\newblock {\em Backpropagation: Theory, architectures, and applications}, 1,
+  433--486.
+
 \bibitem[Xing et~al., 2015]{xing2015normalized}
 Xing, C., Wang, D., Liu, C., \& Lin, Y. (2015).
 \newblock Normalized word embedding and orthogonal transform for bilingual word
@@ -1575,6 +1621,12 @@ Young, P., Lai, A., Hodosh, M., \& Hockenmaier, J. (2014).
   for semantic inference over event descriptions.
 \newblock {\em Transactions of the Association for Computational Linguistics},
   2, 67--78.
+
+\bibitem[Yu, 2005]{yu2005emergence}
+Yu, C. (2005).
+\newblock The emergence of links between lexical acquisition and object
+  categorization: A computational study.
+\newblock {\em Connection science}, 17(3-4), 381--397.
 
 \bibitem[Yu, 2008]{yu.08}
 Yu, C. (2008).
