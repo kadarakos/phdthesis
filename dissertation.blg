@@ -18,149 +18,174 @@ A level-1 auxiliary file: endmatter/summary.aux
 A level-1 auxiliary file: endmatter/publicationlist.aux
 The style file: apalike2.bst
 A level-1 auxiliary file: endmatter/ticcthesis.aux
-Reallocated field_info (elt_size=4) to 11050 items from 5000.
+Reallocated field_info (elt_size=4) to 11248 items from 5000.
 Database file #1: references.bib
-"{" immediately follows a field name---line 414 of file references.bib
+"{" immediately follows a field name---line 546 of file references.bib
  :   pages
  :        {215--233},
 I'm skipping whatever remains of this entry
-Repeated entry---line 593 of file references.bib
+Repeated entry---line 725 of file references.bib
  : @inproceedings{mikolov2010recurrent
  :                                    ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1240 of file references.bib
+Repeated entry---line 1250 of file references.bib
+ : @article{yoo2017improving
+ :                          ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1372 of file references.bib
  : @article{elliott2016multi30k
  :                             ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1248 of file references.bib
+Repeated entry---line 1380 of file references.bib
  : @article{kiela2017learning
  :                           ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1395 of file references.bib
- : @inproceedings{elliott2017findings
- :                                   ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 1616 of file references.bib
- : @inproceedings{kiela2014learning
- :                                 ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 1634 of file references.bib
- : @inproceedings{lazaridou2016multimodal
- :                                       ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 1757 of file references.bib
- : @article{miller1991contextual
- :                              ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 1781 of file references.bib
- : @article{bruni2014multimodal
- :                             ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 1844 of file references.bib
- : @article{mikolov2013efficient
- :                              ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 1861 of file references.bib
- : @article{louwerse2011symbol
- :                            ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 2099 of file references.bib
- : @book{macwhinney2014childes
- :                            ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 2129 of file references.bib
- : @article{young2014image
- :                        ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 2154 of file references.bib
+Repeated entry---line 1466 of file references.bib
  : @article{kiros2014unifying
  :                           ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 2200 of file references.bib
- : @inproceedings{deng2009imagenet
- :                                ,
+Repeated entry---line 1527 of file references.bib
+ : @inproceedings{elliott2017findings
+ :                                   ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 2285 of file references.bib
- : @article{lazaridou2015combining
- :                                ,
+Repeated entry---line 1748 of file references.bib
+ : @inproceedings{kiela2014learning
+ :                                 ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 2304 of file references.bib
- : @inproceedings{chrupala2017representations
- :                                           ,
+Repeated entry---line 1766 of file references.bib
+ : @inproceedings{lazaridou2016multimodal
+ :                                       ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 2861 of file references.bib
- : @inproceedings{kiros2015skip
- :                             ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 2884 of file references.bib
- : @inproceedings{chung2014empirical
- :                                  ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 2936 of file references.bib
- : @inproceedings{simonyan2013deep
- :                                ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 2953 of file references.bib
- : @inproceedings{karpathy2015deep
- :                                ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 3121 of file references.bib
+Repeated entry---line 1813 of file references.bib
  : @inproceedings{chrupala2015learning
  :                                    ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 3129 of file references.bib
- : @inproceedings{lin2014microsoft
+Repeated entry---line 1889 of file references.bib
+ : @article{miller1991contextual
+ :                              ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1913 of file references.bib
+ : @article{bruni2014multimodal
+ :                             ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1976 of file references.bib
+ : @article{mikolov2013efficient
+ :                              ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1993 of file references.bib
+ : @article{louwerse2011symbol
+ :                            ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2231 of file references.bib
+ : @book{macwhinney2014childes
+ :                            ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2261 of file references.bib
+ : @article{young2014image
+ :                        ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2286 of file references.bib
+ : @article{kiros2014unifying
+ :                           ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2332 of file references.bib
+ : @inproceedings{deng2009imagenet
  :                                ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 3163 of file references.bib
- : @article{bengio2003neural
- :                          ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 3180 of file references.bib
+Repeated entry---line 2350 of file references.bib
  : @article{hochreiter1997long
  :                            ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 3214 of file references.bib
+Repeated entry---line 2417 of file references.bib
+ : @article{lazaridou2015combining
+ :                                ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2436 of file references.bib
+ : @inproceedings{chrupala2017representations
+ :                                           ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2993 of file references.bib
+ : @inproceedings{kiros2015skip
+ :                             ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3016 of file references.bib
+ : @inproceedings{chung2014empirical
+ :                                  ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3023 of file references.bib
+ : @inproceedings{cho2014properties
+ :                                 ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3068 of file references.bib
+ : @inproceedings{simonyan2013deep
+ :                                ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3085 of file references.bib
+ : @inproceedings{karpathy2015deep
+ :                                ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3253 of file references.bib
+ : @inproceedings{chrupala2015learning
+ :                                    ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3261 of file references.bib
+ : @inproceedings{lin2014microsoft
+ :                                ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3284 of file references.bib
+ : @article{elman1991distributed
+ :                              ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3295 of file references.bib
+ : @article{bengio2003neural
+ :                          ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3312 of file references.bib
+ : @article{hochreiter1997long
+ :                            ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3346 of file references.bib
  : @inproceedings{simonyan2014very
  :                                ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 3228 of file references.bib
+Repeated entry---line 3360 of file references.bib
  : @article{li2016understanding
  :                             ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 3235 of file references.bib
+Repeated entry---line 3367 of file references.bib
  : @article{linzen2016assessing
  :                             ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 3550 of file references.bib
+Repeated entry---line 3682 of file references.bib
  : @article{schuster1997
  :                      ,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 3926 of file references.bib
+I was expecting a `,' or a `}'---line 4058 of file references.bib
  :   
  :   url =  "http://www.aclweb.org/anthology/E06-1040",
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Repeated entry---line 4023 of file references.bib
+Repeated entry---line 4155 of file references.bib
  : @inproceedings{koehn2007
  :                         ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 4846 of file references.bib
+Repeated entry---line 4978 of file references.bib
  : @inproceedings{bahdanau2015
  :                            ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 4928 of file references.bib
+Repeated entry---line 5060 of file references.bib
  : @inproceedings{sennrich2016b
  :                             ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 5177 of file references.bib
+Repeated entry---line 5309 of file references.bib
  : @inproceedings{gal2016
  :                       ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 5206 of file references.bib
+Repeated entry---line 5338 of file references.bib
  : @inproceedings{specia2016
  :                          ,
 I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "goller1996learning.socher2011parsing"
 Warning--I didn't find a database entry for "Chrupala2017"
 Warning--empty journal in Cho2014
 Warning--can't use both volume and number fields in csurka2004visual
@@ -169,45 +194,45 @@ Warning--empty publisher in Gal2016
 Warning--empty journal in nivre2015universal
 Warning--empty journal in perfetti1998limits
 Warning--empty journal in Sennrich2017
-You've used 274 entries,
+You've used 282 entries,
             2229 wiz_defined-function locations,
-            1871 strings with 57090 characters,
-and the built_in function-call counts, 126676 in all, are:
-= -- 12457
-> -- 5705
-< -- 210
-+ -- 2049
-- -- 1965
-* -- 10249
-:= -- 20995
-add.period$ -- 821
-call.type$ -- 274
-change.case$ -- 2335
-chr.to.int$ -- 248
-cite$ -- 281
-duplicate$ -- 5255
-empty$ -- 8657
-format.name$ -- 2363
-if$ -- 25661
-int.to.chr$ -- 27
+            1903 strings with 58374 characters,
+and the built_in function-call counts, 129379 in all, are:
+= -- 12711
+> -- 5843
+< -- 211
++ -- 2101
+- -- 2011
+* -- 10468
+:= -- 21508
+add.period$ -- 845
+call.type$ -- 282
+change.case$ -- 2398
+chr.to.int$ -- 254
+cite$ -- 289
+duplicate$ -- 5355
+empty$ -- 8816
+format.name$ -- 2419
+if$ -- 26157
+int.to.chr$ -- 29
 int.to.str$ -- 0
-missing$ -- 281
-newline$ -- 1370
-num.names$ -- 824
-pop$ -- 2643
+missing$ -- 289
+newline$ -- 1410
+num.names$ -- 848
+pop$ -- 2696
 preamble$ -- 1
-purify$ -- 2343
+purify$ -- 2406
 quote$ -- 0
-skip$ -- 3973
+skip$ -- 4055
 stack$ -- 0
-substring$ -- 8210
-swap$ -- 1253
-text.length$ -- 115
+substring$ -- 8329
+swap$ -- 1260
+text.length$ -- 114
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1628
+type$ -- 1676
 warning$ -- 7
-while$ -- 971
+while$ -- 989
 width$ -- 0
-write$ -- 3505
-(There were 35 error messages)
+write$ -- 3602
+(There were 41 error messages)
