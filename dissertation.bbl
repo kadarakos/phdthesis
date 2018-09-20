@@ -134,6 +134,13 @@ Bengio, Y., Simard, P., \& Frasconi, P. (1994).
 \newblock Learning long-term dependencies with gradient descent is difficult.
 \newblock {\em IEEE transactions on neural networks}, 5(2), 157--166.
 
+\bibitem[Bergsma \& Van~Durme, 2011]{bergsma2011learning}
+Bergsma, S. \& Van~Durme, B. (2011).
+\newblock Learning bilingual lexicons using the visual similarity of labeled
+  web images.
+\newblock In {\em IJCAI Proceedings-International Joint Conference on
+  Artificial Intelligence}, volume~22  (pp.\ 1764).
+
 \bibitem[Bernardi et~al., 2016]{bernardi2016automatic}
 Bernardi, R., Cakici, R., Elliott, D., Erdem, A., Erdem, E., Ikizler-Cinbis,
   N., Keller, F., Muscat, A., \& Plank, B. (2016).
@@ -662,6 +669,11 @@ Harris, Z.~S. (1954).
 \newblock Distributional structure.
 \newblock {\em Word}, 10(2-3), 146--162.
 
+\bibitem[Hartmann \& S{\o}gaard, 2017]{hartmann2017limitations}
+Hartmann, M. \& S{\o}gaard, A. (2017).
+\newblock Limitations of cross-lingual learning from image search.
+\newblock {\em arXiv preprint arXiv:1709.05914}.
+
 \bibitem[Harwath et~al., 2018a]{harwath2018vision}
 Harwath, D., Chuang, G., \& Glass, J. (2018a).
 \newblock Vision as an interlingua: Learning multilingual semantic embeddings
@@ -692,6 +704,15 @@ He, K., Zhang, X., Ren, S., \& Sun, J. (2016b).
 \newblock Deep residual learning for image recognition.
 \newblock In {\em Proceedings of the IEEE conference on computer vision and
   pattern recognition}  (pp.\ 770--778).
+
+\bibitem[Hewitt et~al., 2018]{hewitt2018learning}
+Hewitt, J., Ippolito, D., Callahan, B., Kriz, R., Wijaya, D.~T., \&
+  Callison-Burch, C. (2018).
+\newblock Learning translations via images with a massively multilingual image
+  dataset.
+\newblock In {\em Proceedings of the 56th Annual Meeting of the Association for
+  Computational Linguistics (Volume 1: Long Papers)}, volume~1  (pp.\
+  2566--2576).
 
 \bibitem[Hill et~al., 2016]{hill2016learning}
 Hill, F., Cho, K., \& Korhonen, A. (2016).
@@ -1355,6 +1376,14 @@ Rockt{\"a}schel, T., Grefenstette, E., Hermann, K.~M., Ko{\v{c}}isk{\`y}, T.,
 \newblock Reasoning about entailment with neural attention.
 \newblock In {\em International Conference on Learning Representations (ICLR)}.
 
+\bibitem[Rotman et~al., 2018]{rotman2018bridging}
+Rotman, G., Vuli{\'c}, I., \& Reichart, R. (2018).
+\newblock Bridging languages through images with deep partial canonical
+  correlation analysis.
+\newblock In {\em Proceedings of the 56th Annual Meeting of the Association for
+  Computational Linguistics (Volume 1: Long Papers)}, volume~1  (pp.\
+  910--921).
+
 \bibitem[Roy, 2002]{roy2002learning}
 Roy, D.~K. (2002).
 \newblock Learning visually grounded words and syntax for a scene description
@@ -1614,6 +1643,12 @@ Vouloumanos, A. (2008).
 Vouloumanos, A. \& Werker, J.~F. (2009).
 \newblock Infants' learning of novel words in a stochastic environment.
 \newblock {\em Developmental Psychology}, 45, 1611--1617.
+
+\bibitem[Vuli{\'c} et~al., 2016]{vulic2016multi}
+Vuli{\'c}, I., Kiela, D., Clark, S., \& Moens, M.-F. (2016).
+\newblock Multi-modal representations for improved bilingual lexicon learning.
+\newblock In {\em Proceedings of the 54th Annual Meeting of the Association for
+  Computational Linguistics}  (pp.\ 188--194).: ACL.
 
 \bibitem[Waibel et~al., 1990]{waibel1990phoneme}
 Waibel, A., Hanazawa, T., Hinton, G., Shikano, K., \& Lang, K.~J. (1990).

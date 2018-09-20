@@ -6,17 +6,18 @@
 \label{introduction}
 
 Traditional distributional representations of linguistic units consider features extracted from large text-corpora in a single language.
-The aim of the presented work is to learn representations of words, phrases up to sentences from multiple sources of information. Specifically I focus on jointly learning
-representations for multiple languages, grounding in visual modality and the interaction of these two views.
-Grounding in visual modality is largely motivated by evidence of perceptual grounding in human concept acquisition and representation \cite{barsalou2003grounding}
-and as such it brings computational language learning systems closer to human-like learning. Harnessing the visual modality to learn language representations that link linguistic knowledge
+The aim of the presented work is to learn representations of words, phrases up to sentences from multiple sources of information.
+Specifically I focus on jointly learning representations for multiple languages, grounding in visual modality and the interaction of these
+two views. Grounding in visual modality is largely motivated by evidence of perceptual grounding in human concept acquisition and
+representation \cite{barsalou2003grounding} and as such it brings computational language learning systems closer to human-like
+learning. Harnessing the visual modality to learn language representations that link linguistic knowledge
 to the external world \cite{kiela2014improving,baroni2016grounding,elliott2017imagination,kiela2017learning,yoo2017improving}  has been empirically shown to
-improve performance on several semantic tasks such as paraphrase identification, semantic entailment \cite{dolan2004unsupervised,marelli2014sick}.
+improve performance on several semantic tasks.
 Traditionally, given a task for each language separate corpora are created and separate sets of parameters are learned.
 Learning shared cross-lingual representations, however, allows researchers and practitioners
 to train a single model allowing to transfer knowledge between languages leading to practical consequences such as mitigating the low-resource problem, cross-lingual
-applications and processing data with code-mixing. Multilingual systems also offer a fertile ground computational typology as shared models are forced to exploit cross-lingual
-regularities.
+applications and processing data with code-mixing.
+%Multilingual systems also offer a fertile ground computational typology as shared models are forced to exploit cross-lingual regularities.
 The first part of the thesis Chapter 1 and 2. focuses on learning grounded representations for a single language.
 In Chapter 1. we start by learning visual representations for words  using a novel computational cognitive model of cross-situational word learning that takes words
 and high-level continuous image representations as input. Chapter 2. introduces a modern recurrent and convolutional neural network based model that learns from both
@@ -97,6 +98,7 @@ word co-occurence statistics collected from corpora.
 
 \subsection{Visually grounded representations of words}\todo{The references outline what i want i need to expand them still.}
 \label{sec:visualwords}
+\todo{ADD MORE FROM THIS https://arxiv.org/pdf/1806.06371.pdf}
 The approaches to learn distributed representations discussed so far focus on extracting information exclusively
 from text corpora. To human language learners, however, a plethora of perceptual information is available to aid the
 learning process and to enrich the representations. The link between human word and concept representation and acquistion
@@ -264,8 +266,15 @@ used by \cite{faruqui2014improving}, which was later improved by the application
 in a source language by their translation and train an embedding model on the resulting corpus
 The uber multilingual word-embedding \cite{ammar2016massively}.
 
-\subsection{Visually grounded multilingual sentences representations}\todo{not much work here so this will be easy.}
-Now do the multi-lingual multimodal stuff and put the IJCNLP and ConLL papers
+\subsection{Visually grounded multilingual representations}\todo{not much work here so this will be easy.}
+Image similarity for multilingual lexicon induction using images as pivot.
+Super large-scale image-based word translation \cite{hewitt2018learning}.
+First guys who did it \cite{bergsma2011learning}. These guys use VGG features and this image dispersion nonsense \cite{kiela2014improving}.
+This is newer and different somehow \cite{vulic2016multi}.
+Learning the meanings of nouns from image-search + similarity based techniques is fine, but verbs and adjectives
+suck \cite{hartmann2017limitations}. Deep partial canonical correlation analysis for \cite{rotman2018bridging}
+multilingual image-sentence embddings, using the multi-view idea.
+
 
 \subsection{Grounding and other modalities}
 Grounding words in auditory signals \cite{kiela2015multi,lopopolo2015sound} and
