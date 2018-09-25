@@ -300,6 +300,12 @@ Chen, X. \& Zitnick, C.~L. (2014).
   generation.
 \newblock {\em arXiv preprint arXiv:1411.5654}.
 
+\bibitem[Chen et~al., 2018]{chen2018zero}
+Chen, Y., Liu, Y., \& Li, V.~O. (2018).
+\newblock Zero-resource neural machine translation with multi-agent
+  communication game.
+\newblock {\em arXiv preprint arXiv:1802.03116}.
+
 \bibitem[Cho et~al., 2014a]{cho2014properties}
 Cho, K., Van~Merri{\"e}nboer, B., Bahdanau, D., \& Bengio, Y. (2014a).
 \newblock On the properties of neural machine translation: Encoder-decoder
@@ -971,12 +977,17 @@ Lazaridou, A., Pham, N.~T., \& Baroni, M. (2015b).
 \newblock Combining language and vision with a multimodal skip-gram model.
 \newblock {\em arXiv preprint arXiv:1501.02598}.
 
-\bibitem[Lee et~al., 2017]{lee2017fully}
-Lee, J., Cho, K., \& Hofmann, T. (2017).
+\bibitem[Lee et~al., 2017a]{lee2017fully}
+Lee, J., Cho, K., \& Hofmann, T. (2017a).
 \newblock Fully character-level neural machine translation without explicit
   segmentation.
 \newblock {\em Transactions of the Association for Computational Linguistics},
   5, 365--378.
+
+\bibitem[Lee et~al., 2017b]{lee2017emergent}
+Lee, J., Cho, K., Weston, J., \& Kiela, D. (2017b).
+\newblock Emergent translation in multi-agent communication.
+\newblock {\em arXiv preprint arXiv:1710.06922}.
 
 \bibitem[Leong \& Mihalcea, 2011a]{leong2011going}
 Leong, C.~W. \& Mihalcea, R. (2011a).
