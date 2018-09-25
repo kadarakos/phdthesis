@@ -737,8 +737,13 @@ Hill, F., Reichart, R., \& Korhonen, A. (2015).
   estimation.
 \newblock {\em Computational Linguistics}, 41(4), 665--695.
 
-\bibitem[Hitschler et~al., 2016]{Hitschler2016}
-Hitschler, J., Schamoni, S., \& Riezler, S. (2016).
+\bibitem[Hitschler et~al., 2016a]{hitschler2016multimodal}
+Hitschler, J., Schamoni, S., \& Riezler, S. (2016a).
+\newblock Multimodal pivots for image caption translation.
+\newblock {\em arXiv preprint arXiv:1601.03916}.
+
+\bibitem[Hitschler et~al., 2016b]{Hitschler2016}
+Hitschler, J., Schamoni, S., \& Riezler, S. (2016b).
 \newblock {Multimodal Pivots for Image Caption Translation}.
 \newblock In {\em Proceedings of the 54th Annual Meeting of the Association for
   Computational Linguistics}  (pp.\ 2399--2409).
@@ -1207,8 +1212,15 @@ Mitchell, J. \& Lapata, M. (2008).
 \newblock Vector-based models of semantic composition.
 \newblock {\em proceedings of ACL-08: HLT}, (pp.\ 236--244).
 
-\bibitem[Miyazaki \& Shimizu, 2016]{P16-1168}
-Miyazaki, T. \& Shimizu, N. (2016).
+\bibitem[Miyazaki \& Shimizu, 2016a]{miyazaki2016cross}
+Miyazaki, T. \& Shimizu, N. (2016a).
+\newblock Cross-lingual image caption generation.
+\newblock In {\em Proceedings of the 54th Annual Meeting of the Association for
+  Computational Linguistics (Volume 1: Long Papers)}, volume~1  (pp.\
+  1780--1790).
+
+\bibitem[Miyazaki \& Shimizu, 2016b]{P16-1168}
+Miyazaki, T. \& Shimizu, N. (2016b).
 \newblock Cross-lingual image caption generation.
 \newblock In {\em Proceedings of the 54th Annual Meeting of the Association for
   Computational Linguistics (Volume 1: Long Papers)}  (pp.\ 1780--1790).:

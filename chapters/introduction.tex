@@ -297,9 +297,20 @@ to a sampled list of candidate translations from a translation model given the s
 \cite{hitschler2016multimodal} consider the setting of image-caption translation where an
 image-caption pair is given on the source side and on top of the parallel source-target sentence corpus
 additional target-side image-caption corpus is available. The show that using the images in the re-ranking
-pipeline improves translation performance upon using solely textual-similarity. 
-Deep partial canonical correlation analysis for \cite{rotman2018bridging}
-multilingual image-sentence embddings, using the multi-view idea.
+pipeline improves translation performance upon using solely textual-similarity.
+\cite{nakayama2017zero} apply image-pivoting in the zero-resource machine translation setting.
+The task is to translate from English to German without aligned parallel corpora, however,
+separate image-description data sets are available in both languages. They solve the problem by
+training two components: 1.) visual-sentence encoder that matches images and their descriptions,
+2.) image-description generator maximizing the likelihood of gold standard captions given the images.
+At test time the visual-sentence encoder representation of the source sentence is fed to the
+image-description generator to produce the translation. There results were improved later by modeling
+the image-pivot based zero-resource translation setup as a multi-agent communication game between
+encoder and decoder \cite{chen2018zero,lee2017emergent}.
+These guys transfer knowledge from the larger original English COCO to smaller collected
+corpus \cite{miyazaki2016cross}. Deep partial canonical correlation analysis for \cite{rotman2018bridging}
+multilingual image-sentence embddings, using the multi-view idea. NOW DO SOME MULTIMODAL TRANSLATION FAIL
+AND THEN THE DESMOND PAPER AND THEN THE LESSONS LEARNED.
 
 
 \subsection{Grounding and other modalities}
