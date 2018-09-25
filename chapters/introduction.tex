@@ -267,12 +267,38 @@ in a source language by their translation and train an embedding model on the re
 The uber multilingual word-embedding \cite{ammar2016massively}.
 
 \subsection{Visually grounded multilingual representations}\todo{not much work here so this will be easy.}
-Image similarity for multilingual lexicon induction using images as pivot.
-Super large-scale image-based word translation \cite{hewitt2018learning}.
-First guys who did it \cite{bergsma2011learning}. These guys use VGG features and this image dispersion nonsense \cite{kiela2014improving}.
-This is newer and different somehow \cite{vulic2016multi}.
-Learning the meanings of nouns from image-search + similarity based techniques is fine, but verbs and adjectives
-suck \cite{hartmann2017limitations}. Deep partial canonical correlation analysis for \cite{rotman2018bridging}
+On top of the visual modality anchoring linguistic representations to perceptual reality it
+also provides a universal representation to bridge languages of varying typological distance.
+On word level images as a common ground have been applied to induce bilingual lexicons without parallel corpora.
+The lack of bi-text in this setting have been traditionally solved by methods relying on textual features
+such as ortographic similarity \cite{haghighi2008learning} or similar diachronic distributional
+statistical trends between words \cite{schafer2002inducing}.
+However, images tagged with various labels in a multitude of languages are available on the internet
+and given a model of image-similarity can act as pivot to find translations between such tags.
+The first approach to construct a dictionary based on image similarity was developed by \cite{bergsma2011learning}.
+They use Google image search to find relevant images for the names of physical objects in multiple languages.
+These images are then represent by bag-of-visual-words vectors based  on SIFT and color features.
+Their results are vastly improved by applying pre-trained convolutional neural networks to represent words
+in the visual space \cite{kiela2014improving}. However, \cite{hartmann2017limitations} present a negative result
+showing that such techniques scale poorly to non-nouns such as adjectives or verbs.
+\cite{vulic2016multi} combine image-pivot based bilingual word-representations with more traditional multi-lingual
+word-embedding techniques and show that the combined multi-modal representations are superior compared to
+their uni-modal counterparts. At the time of writing this thesis the first large-scale vision based bilinigual
+dictionary induction data set and method was put forward by \cite{hewitt2018learning}. They create a data set
+of \~200K words and 100 images per each using Google Image Search and perform experiments with 32 languages.
+They confirm the finding of \cite{hartmann2017limitations} that image-pivoting is most effective for
+nouns, however, find that using their larger data set adjectives can also be translated reliably. They also
+show through combining visual and textual word-representations for word-translation through a re-ranking
+experiment that visual representations improve the state-of-the-art text-only methods in the case of
+\emph{concrete} concepts.
+Images have been also used as a pivot to aid translation of visually descriptive sentences.
+A common technique in statistical machine translation is to apply a heuristic re-ranking algorithm
+to a sampled list of candidate translations from a translation model given the source sentence.
+\cite{hitschler2016multimodal} consider the setting of image-caption translation where an
+image-caption pair is given on the source side and on top of the parallel source-target sentence corpus
+additional target-side image-caption corpus is available. The show that using the images in the re-ranking
+pipeline improves translation performance upon using solely textual-similarity. 
+Deep partial canonical correlation analysis for \cite{rotman2018bridging}
 multilingual image-sentence embddings, using the multi-view idea.
 
 

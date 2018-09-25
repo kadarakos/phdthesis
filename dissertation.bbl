@@ -659,6 +659,11 @@ Gulordava, K., Bojanowski, P., Grave, E., Linzen, T., \& Baroni, M. (2018).
 \newblock Colorless green recurrent networks dream hierarchically.
 \newblock {\em arXiv preprint arXiv:1803.11138}.
 
+\bibitem[Haghighi et~al., 2008]{haghighi2008learning}
+Haghighi, A., Liang, P., Berg-Kirkpatrick, T., \& Klein, D. (2008).
+\newblock Learning bilingual lexicons from monolingual corpora.
+\newblock {\em Proceedings of ACL-08: Hlt}, (pp.\ 771--779).
+
 \bibitem[Harnad, 1990]{harnad1990symbol}
 Harnad, S. (1990).
 \newblock The symbol grounding problem.
@@ -1424,6 +1429,13 @@ Saha, A., Khapra, M.~M., Chandar, S., Rajendran, J., \& Cho, K. (2016).
   generation.
 \newblock In {\em 26th International Conference on Computational Linguistics:
   Technical Papers}  (pp.\ 109--118).
+
+\bibitem[Schafer \& Yarowsky, 2002]{schafer2002inducing}
+Schafer, C. \& Yarowsky, D. (2002).
+\newblock Inducing translation lexicons via diverse similarity measures and
+  bridge languages.
+\newblock In {\em proceedings of the 6th conference on Natural language
+  learning-Volume 20}  (pp.\ 1--7).: Association for Computational Linguistics.
 
 \bibitem[Schuster \& Nakajima, 2012]{Schuster2012}
 Schuster, M. \& Nakajima, K. (2012).

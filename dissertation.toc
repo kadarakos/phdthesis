@@ -7,17 +7,17 @@
 \contentsline {subsection}{\numberline {1.1.4}Visually grounded sentence representations}{13}{subsection.1.1.4}
 \contentsline {subsection}{\numberline {1.1.5}Multilingual representations of words and sentences}{14}{subsection.1.1.5}
 \contentsline {subsection}{\numberline {1.1.6}Visually grounded multilingual representations}{15}{subsection.1.1.6}
-\contentsline {subsection}{\numberline {1.1.7}Grounding and other modalities}{15}{subsection.1.1.7}
+\contentsline {subsection}{\numberline {1.1.7}Grounding and other modalities}{16}{subsection.1.1.7}
 \contentsline {subsection}{\numberline {1.1.8}Interpreting continuous representations}{16}{subsection.1.1.8}
-\contentsline {section}{\numberline {1.2}Vision and Language applications}{18}{section.1.2}
-\contentsline {section}{\numberline {1.3}Methods}{18}{section.1.3}
-\contentsline {subsection}{\numberline {1.3.1}Data sets}{18}{subsection.1.3.1}
-\contentsline {subsection}{\numberline {1.3.2}Architectures}{19}{subsection.1.3.2}
-\contentsline {subsubsection}{Recurrent network}{20}{subsection.1.3.2}
-\contentsline {subsubsection}{Convolutional network}{20}{subsection.1.3.2}
-\contentsline {subsubsection}{Optimization}{20}{subsection.1.3.2}
-\contentsline {subsection}{\numberline {1.3.3}Transfer learning}{20}{subsection.1.3.3}
-\contentsline {subsection}{\numberline {1.3.4}Multi-task learning}{20}{subsection.1.3.4}
+\contentsline {section}{\numberline {1.2}Vision and Language applications}{19}{section.1.2}
+\contentsline {section}{\numberline {1.3}Methods}{19}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}Data sets}{19}{subsection.1.3.1}
+\contentsline {subsection}{\numberline {1.3.2}Architectures}{20}{subsection.1.3.2}
+\contentsline {subsubsection}{Recurrent network}{21}{section*.14}
+\contentsline {subsubsection}{Convolutional network}{21}{section*.14}
+\contentsline {subsubsection}{Optimization}{21}{section*.14}
+\contentsline {subsection}{\numberline {1.3.3}Transfer learning}{21}{subsection.1.3.3}
+\contentsline {subsection}{\numberline {1.3.4}Multi-task learning}{21}{subsection.1.3.4}
 \contentsline {chapter}{\numberline {2}Learning word meanings from images of natural scenes}{23}{chapter.2}
 \contentsline {paragraph}{Abstract}{23}{chapter.2}
 \contentsline {paragraph}{This chapter is based on}{25}{chapter.2}
@@ -34,14 +34,14 @@
 \contentsline {subsection}{\numberline {2.3.2}Word similarity experiments}{38}{subsection.2.3.2}
 \contentsline {subsection}{\numberline {2.3.3}Effect of concreteness on similarity judgments}{39}{subsection.2.3.3}
 \contentsline {subsection}{\numberline {2.3.4}Word production}{41}{subsection.2.3.4}
-\contentsline {subsubsection}{Multi-word image descriptions.}{41}{subsection.2.3.4}
-\contentsline {subsubsection}{Single-concept image descriptions}{42}{figure.caption.17}
+\contentsline {subsubsection}{Multi-word image descriptions.}{41}{section*.18}
+\contentsline {subsubsection}{Single-concept image descriptions}{42}{figure.caption.19}
 \contentsline {section}{\numberline {2.4}Results}{45}{section.2.4}
 \contentsline {subsection}{\numberline {2.4.1}Word similarity}{45}{subsection.2.4.1}
-\contentsline {subsubsection}{Concreteness}{46}{table.caption.20}
+\contentsline {subsubsection}{Concreteness}{46}{table.caption.22}
 \contentsline {subsection}{\numberline {2.4.2}Word production}{49}{subsection.2.4.2}
-\contentsline {subsubsection}{Multi-word image descriptors}{50}{subsection.2.4.2}
-\contentsline {subsubsection}{Single-concept image descriptors}{51}{table.caption.23}
+\contentsline {subsubsection}{Multi-word image descriptors}{50}{section*.25}
+\contentsline {subsubsection}{Single-concept image descriptors}{51}{table.caption.26}
 \contentsline {section}{\numberline {2.5}Discussion and conclusion}{54}{section.2.5}
 \contentsline {chapter}{\numberline {3}Representation of linguistic form and function in recurrent neural networks}{57}{chapter.3}
 \contentsline {paragraph}{abstract}{57}{chapter.3}
@@ -56,8 +56,8 @@
 \contentsline {subsection}{\numberline {3.4.1}Computing Omission Scores}{69}{subsection.3.4.1}
 \contentsline {subsection}{\numberline {3.4.2}Omission score distributions}{71}{subsection.3.4.2}
 \contentsline {subsection}{\numberline {3.4.3}Beyond Lexical Cues}{75}{subsection.3.4.3}
-\contentsline {subsubsection}{Sensitivity to grammatical function}{78}{figure.caption.32}
-\contentsline {subsubsection}{Sensitivity to linear structure}{80}{figure.caption.33}
+\contentsline {subsubsection}{Sensitivity to grammatical function}{78}{figure.caption.35}
+\contentsline {subsubsection}{Sensitivity to linear structure}{80}{figure.caption.36}
 \contentsline {subsection}{\numberline {3.4.4}Lexical versus abstract contexts}{81}{subsection.3.4.4}
 \contentsline {section}{\numberline {3.5}Discussion}{86}{section.3.5}
 \contentsline {subsection}{\numberline {3.5.1}Generalizing to other architectures}{86}{subsection.3.5.1}
@@ -89,10 +89,10 @@
 \contentsline {section}{\numberline {5.1}Introduction}{114}{section.5.1}
 \contentsline {section}{\numberline {5.2}Related work}{117}{section.5.2}
 \contentsline {section}{\numberline {5.3}Multilingual grounded learning}{120}{section.5.3}
-\contentsline {paragraph}{Implementation.}{122}{figure.caption.48}
+\contentsline {paragraph}{Implementation.}{122}{figure.caption.51}
 \contentsline {section}{\numberline {5.4}Experimental setup}{123}{section.5.4}
-\contentsline {paragraph}{Datasets.}{123}{table.caption.49}
-\contentsline {paragraph}{Evaluation.}{124}{table.caption.49}
+\contentsline {paragraph}{Datasets.}{123}{table.caption.52}
+\contentsline {paragraph}{Evaluation.}{124}{table.caption.52}
 \contentsline {section}{\numberline {5.5}Bilingual Experiments}{124}{section.5.5}
 \contentsline {subsection}{\numberline {5.5.1}Reproducing \citet {gella2017image}}{124}{subsection.5.5.1}
 \contentsline {subsection}{\numberline {5.5.2}Translations vs.\ independent captions}{127}{subsection.5.5.2}
@@ -103,7 +103,7 @@
 \contentsline {subsection}{\numberline {5.6.3}Bilingual vs. multilingual}{132}{subsection.5.6.3}
 \contentsline {section}{\numberline {5.7}Conclusions}{133}{section.5.7}
 \contentsline {chapter}{\numberline {6}General discussion and conclusion}{135}{chapter.6}
-\contentsline {chapter}{Summary}{137}{section*.57}
-\contentsline {chapter}{Publication list}{138}{section*.59}
-\contentsline {chapter}{References}{140}{section*.61}
-\contentsline {chapter}{TiCC PhD Series}{169}{section*.63}
+\contentsline {chapter}{Summary}{137}{section*.60}
+\contentsline {chapter}{Publication list}{138}{section*.62}
+\contentsline {chapter}{References}{140}{section*.64}
+\contentsline {chapter}{TiCC PhD Series}{169}{section*.66}
