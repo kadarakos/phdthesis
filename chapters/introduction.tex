@@ -5,25 +5,35 @@
 \chapter{Introduction}
 \label{introduction}
 
-Traditional distributional representations of linguistic units consider features extracted from large text-corpora in a single language.
-The aim of the presented work is to learn representations of words, phrases up to sentences from multiple sources of information.
-Specifically I focus on jointly learning representations for multiple languages, grounding in visual modality and the interaction of these
-two views. Grounding in visual modality is largely motivated by evidence of perceptual grounding in human concept acquisition and
-representation \cite{barsalou2003grounding} and as such it brings computational language learning systems closer to human-like
-learning. Harnessing the visual modality to learn language representations that link linguistic knowledge
-to the external world \cite{kiela2014improving,baroni2016grounding,elliott2017imagination,kiela2017learning,yoo2017improving}  has been empirically shown to
-improve performance on several semantic tasks.
+Traditional distributional representations of linguistic units consider features extracted
+from large text-corpora in a single language. The aim of the presented work is to learn representations
+of words, phrases up to sentences from multiple sources of information.
+Specifically I focus on jointly learning representations for multiple languages, grounding in visual modality and
+the beneficial interaction of these two views. Grounding in visual modality is largely motivated by evidence of
+perceptual grounding in human concept acquisition and representation \cite{barsalou2003grounding} and as such
+it brings computational language learning systems closer to human-like learning.
+Harnessing the visual modality to learn language representations that link linguistic knowledge
+to the external world \cite{kiela2014improving,baroni2016grounding,elliott2017imagination,kiela2017learning,yoo2017improving}
+has been empirically shown to improve performance on several semantic tasks.
+The first part of the thesis -- Chapter 1 and 2. -- focuses on learning grounded representations for a single language.
+In Chapter 1. we start by learning visual representations for words using a novel computational
+cognitive model of cross-situational word learning that takes words and high-level continuous image
+representations as input. Chapter 2. introduces a modern recurrent and convolutional neural network based
+model that learns from both visual-grounding signals and word-word co-occurrences.
+Furthermore, we introduce a technique to interpret the learned representations of such an
+architecture and investigate if certain linguistic phenomena is encoded in the learned model.
+The second part of the thesis focuses on multimodal multilingual models.
 Traditionally, given a task for each language separate corpora are created and separate sets of parameters are learned.
 Learning shared cross-lingual representations, however, allows researchers and practitioners
-to train a single model allowing to transfer knowledge between languages leading to practical consequences such as mitigating the low-resource problem, cross-lingual
-applications and processing data with code-mixing.
+to train a single model allowing to transfer knowledge between languages leading to practical consequences
+such as mitigating the low-resource problem, cross-lingual applications and processing data with code-mixing.
+Multilingual and multi-modal representations have their separate benefits, however, they can be beneficial
+to each other as well. In my work I view the visual world as a natural common meaning representation briding
+between languages. Chapter 3. provides empirical evidence that grounded learning can improve machine
+translation quality and in Chapter 4. we show under what conditions multilinguality an help improve grounded
+representations. Finally in Chapter REFERENCE 5 WE HOPEFULLY IMPROVE ZERO-SHOT TRANSLATION USING IMAGES AS A BRIDGE.
+
 %Multilingual systems also offer a fertile ground computational typology as shared models are forced to exploit cross-lingual regularities.
-The first part of the thesis Chapter 1 and 2. focuses on learning grounded representations for a single language.
-In Chapter 1. we start by learning visual representations for words  using a novel computational cognitive model of cross-situational word learning that takes words
-and high-level continuous image representations as input. Chapter 2. introduces a modern recurrent and convolutional neural network based model that learns from both
-visual-grounding signals and word-word co-occurrences. Furthermore, we introduce a technique to interpret the learned representations of such architecture and investigate
-if certain linguistic phenomena is encoded in the learned model. The second part of the thesis focuses on multimodal multilingual models. Chapter 3. provides evidence
-that grounded learning can potentially improve machine translation and  in Chapter 4. we show under what conditions multilinguality an help improve grounded representations.
 
 \section{Distributed representations of language}
 My work focuses on learning grounded distributed sentence representations.
@@ -310,7 +320,7 @@ encoder and decoder \cite{chen2018zero,lee2017emergent}.
 These guys transfer knowledge from the larger original English COCO to smaller collected
 corpus \cite{miyazaki2016cross}. Deep partial canonical correlation analysis for \cite{rotman2018bridging}
 multilingual image-sentence embddings, using the multi-view idea. NOW DO SOME MULTIMODAL TRANSLATION FAIL
-AND THEN THE DESMOND PAPER AND THEN THE LESSONS LEARNED.
+AND THEN THE DESMOND PAPER. FOLLOW UP BY IACER AND GELLA AND THEN OUR LESSONS LEARNED.
 
 
 \subsection{Grounding and other modalities}
