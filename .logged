@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2018.9.11)  26 SEP 2018 16:19
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2018.9.11)  26 SEP 2018 16:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1852,28 +1852,28 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 Chapter 1.
 [1] [2] [3]
 Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
-ine 80.
+ine 83.
 
 
-LaTeX Warning: Reference `TAL' on page 4 undefined on input line 127.
+LaTeX Warning: Reference `TAL' on page 4 undefined on input line 130.
 
 [4] [5] [6] [7]
-Overfull \hbox (103.67122pt too wide) in paragraph at lines 149--149
+Overfull \hbox (103.67122pt too wide) in paragraph at lines 152--152
 \EU1/lmr/m/n/12 https://arxiv.org/pdf/1806.06371.pdf  
  []
 
 
-Overfull \hbox (103.67122pt too wide) in paragraph at lines 149--149
+Overfull \hbox (103.67122pt too wide) in paragraph at lines 152--152
 \EU1/lmr/m/n/12 https://arxiv.org/pdf/1806.06371.pdf  
  []
 
 
-Overfull \hbox (103.67122pt too wide) in paragraph at lines 149--149
+Overfull \hbox (103.67122pt too wide) in paragraph at lines 152--152
 \EU1/lmr/m/n/12 https://arxiv.org/pdf/1806.06371.pdf  
  []
 
 
-Overfull \hbox (103.67122pt too wide) in paragraph at lines 149--149
+Overfull \hbox (103.67122pt too wide) in paragraph at lines 152--152
 \EU1/lmr/m/n/12 https://arxiv.org/pdf/1806.06371.pdf  
  []
 
@@ -1883,10 +1883,10 @@ LaTeX Warning: Marginpar on page 8 moved.
 [8] [9] [10] [11]
 
 Package natbib Warning: Citation `goller1996learning.socher2011parsing' on page
- 12 undefined on input line 257.
+ 12 undefined on input line 260.
 
 [12] [13]
-Overfull \hbox (13.57965pt too wide) in paragraph at lines 280--297
+Overfull \hbox (13.57965pt too wide) in paragraph at lines 283--300
 \EU1/lmr/m/n/12 we train a multi-task architecture consisting of a shared word-
 embedding
  []
@@ -1894,7 +1894,7 @@ embedding
 [14] [15] [16] [17] [18] [19] [20] [21] [22]
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 424.
+(hyperref)                be the same. Added a new anchor on input line 427.
 
 [23]) [24] [25]
 \openout2 = `chapters/TAL/main.aux'.
@@ -2771,7 +2771,7 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  54999 strings out of 493638
  1220779 string characters out of 6146796
- 1455071 words of memory out of 5000000
+ 1456059 words of memory out of 5000000
  57306 multiletter control sequences out of 15000+600000
  22713 words of font info for 109 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
