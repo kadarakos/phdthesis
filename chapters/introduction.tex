@@ -1,18 +1,56 @@
 %!TEX root = ../dissertation.tex
 
 %EK: edits November 28
-
+serval
 \chapter{Introduction}
 \label{introduction}
-
-Traditional distributional representations of linguistic units consider features extracted
-from large text-corpora in a single language. The aim of the presented work is to learn representations
-of words, phrases up to sentences from multiple sources of information.
-Specifically I focus on jointly learning representations for multiple languages, grounding in visual modality and
-the beneficial interaction of these two views. Grounding in visual modality is largely motivated by evidence of
+As opposed to the continous nature of the visual world linguistic units are inherently
+discrete, which reflected in the techniques used in the computational processing
+of natural language. Information in linguistic utterrances is traditionally encoded
+in sparse high-dimensional count vectors, where each
+dimension corresponds to the number of times a specfic feature occurs in a sample.
+For each word in a sentence common features to consider take the form of:
+``this token is a noun'', ``the preceding word is cat'',
+``the following token has dependency label direct object''.
+More often then not these vectors do not even hold counts, but 0-1 indicator features singaling
+the presence or absence of a particular property.
+In such a setting the relationships between features are not handled and
+as a result machine learning algorithms are presented with an input representation where
+``the preceding word is cat'' and ``the preceding word is dog''
+are completely independent properties. Furthermore, interactions between features has to be
+explicitly represented as a separate entry in the vector, which once again has no clear
+relationship to its parts as far as the learning algorithms are concerned. Consider the problem
+of language modeling, where the aim is to find a probabilistic model that assigns high probability
+to likely sequences and low probability to gibberish.
+Imagine that there were a number of sentences expressing the concept of ``someone is walking a dog'',
+a little less mentions of ``someone walking a cat'' and no occurrence of ``someone walking a serval'',
+but the word ``serval'' did occur in the training set.
+I have never seen anyone walking a serval, however, as a human I do know that it is a dog-sized
+feline creature and as a consequence I can imagine someone taking a walk with one. However, a language
+model trained with discrete symbolic representation cannot \emph{generalize} in such a way as the
+relationship between the words ``dog'', ``cat'' and ``serval'' is not represented. Consider now the
+case of walking a dolphin. Both ``walking a serval'' and ``walking a dolphin'' would be impossilbe
+by the hypothesized language model, however, us humans would say that walking the serval is
+kind of possible, but walking the dolphin is just surreal. We know it from reading about both animals
+that they can be domesticated, however, by their physical properties one affords to be walked
+and the other does not. Dogs, cats, servals and dolphins are similar in some dimensions whereas
+different in others.
+What the present thesis is concerned about is \emph{learning representations}
+of words, phrases up to sentences from multiple sources of information to encode such useful properties.
+Such representations allow machine learning algorithms to represent smooth functions over linguistic
+inputs where the local neighborhoods of words and phrases correspond to syntactic and semantic regularities.
+The well establised tradition of conituous word representations consider features extracted
+from large text-corpora in a single language focusing on co-occurence statstics between words.
+My thesis focuses integrating the \emph{visual modality} and jointly learning representations for
+\emph{multiple languages}. Furthermore, I study the the beneficial interaction of
+visually grounded and multilingual representation learning.
+Grounding in visual modality is largely motivated by evidence of
 perceptual grounding in human concept acquisition and representation \cite{barsalou2003grounding} and as such
-it brings computational language learning systems closer to human-like learning.
-Harnessing the visual modality to learn language representations that link linguistic knowledge
+it brings computational language learning systems closer to human-like learning. As pointed out by the
+dolphin versus serval example above certain aspects of meaning are better captured by \emph{encyclopedic}
+knowledge such as domestication, however, perceptual information can provide valuable insight into
+physical properties rarely mentioned in texts. In practice harnessing the visual modality to learn language
+representations that link linguistic knowledge
 to the external world \cite{kiela2014improving,baroni2016grounding,elliott2017imagination,kiela2017learning,yoo2017improving}
 has been empirically shown to improve performance on several semantic tasks.
 The first part of the thesis -- Chapter 1 and 2. -- focuses on learning grounded representations for a single language.
@@ -318,7 +356,8 @@ image-description generator to produce the translation. There results were impro
 the image-pivot based zero-resource translation setup as a multi-agent communication game between
 encoder and decoder \cite{chen2018zero,lee2017emergent}.
 These guys transfer knowledge from the larger original English COCO to smaller collected
-corpus \cite{miyazaki2016cross}. Deep partial canonical correlation analysis for \cite{rotman2018bridging}
+corpus \cite{miyazaki2016cross}.
+Deep partial canonical correlation analysis for \cite{rotman2018bridging}
 multilingual image-sentence embddings, using the multi-view idea. NOW DO SOME MULTIMODAL TRANSLATION FAIL
 AND THEN THE DESMOND PAPER. FOLLOW UP BY IACER AND GELLA AND THEN OUR LESSONS LEARNED.
 
