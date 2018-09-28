@@ -51,8 +51,9 @@ perceptual grounding in human concept acquisition and representation \cite{barsa
 it brings computational language learning systems closer to human-like learning.
 Furthermore, as pointed out by the dolphin versus serval example above,
 certain aspects of meaning are better captured by \emph{encyclopedic}
-knowledge such as domestication, however, perceptual information can provide valuable insight into
-physical properties rarely mentioned in texts. In practice harnessing the visual modality to learn language
+knowledge such as domestication abundant in textual data, however, perceptual information
+can provide complementary valuable insights into physical properties rarely mentioned in texts such as size,
+shape and color. In practice harnessing the visual modality to learn language
 representations that link linguistic knowledge
 to the external world \cite{kiela2014improving,baroni2016grounding,elliott2017imagination,kiela2017learning,yoo2017improving}
 has been empirically shown to improve performance on several semantic tasks.
@@ -358,11 +359,35 @@ At test time the visual-sentence encoder representation of the source sentence i
 image-description generator to produce the translation. There results were improved later by modeling
 the image-pivot based zero-resource translation setup as a multi-agent communication game between
 encoder and decoder \cite{chen2018zero,lee2017emergent}.
-These guys transfer knowledge from the larger original English COCO to smaller collected
-corpus \cite{miyazaki2016cross}.
-Deep partial canonical correlation analysis for \cite{rotman2018bridging}
-multilingual image-sentence embddings, using the multi-view idea. NOW DO SOME MULTIMODAL TRANSLATION FAIL
-AND THEN THE DESMOND PAPER. FOLLOW UP BY IACER AND GELLA AND THEN OUR LESSONS LEARNED.
+Images and their descriptions in multiple languages can be taken as different views of the
+same underlying semantic concepts. From this multi-view perspective learning common representations
+of multiple languages and perceptual stimuli can potentially exploit the complementary information
+between views to learn better representations, but also leads to practical applications such as
+cross-modal and cross-lingual retrieval or similarity. The deep partial canonical correlation
+analysis approach learns multilingual English-German sentence embeddings conditioned on the
+representation of the images they are aligned to \cite{rotman2018bridging}. They show that their model using
+the visual modality as an extra view finds better mulilingual sentence and word representations
+as demonstrated by cross-lingual paraphrasing and word-similarity results.
+The bridge correlational neural network approach \cite{rajendran2015bridge} learns common representations
+even when the different views only need to be aligned with one pivot view.
+In the vision and language domain they preform image-sentence retrieval experiments in French or German where
+the image-caption data set is only available for English, however, there is parallel corpora between German
+or French and English. In other words English acts as a pivot.
+\cite{gella2017image} considers images as a pivot bridging English and German and train a multilingual
+image-sentence ranking model -- recurrent-convolutional architecture as in Chapters \ref{ch:COLI,ch:IJCNLP,ch:ConLL}.
+There results suggest that the multilingual models outperform the monolingual ones on image-sentence
+ranking, however, they do not show consistent gains across languages and model settings.
+In Chapter \ref{ch:ConLL} we implement a similar setup and do show that both English and German image-sentence
+ranking performance is reliably improved by bilingual joint training. We expand the results further and
+provide evidence that more gains can be achieved by adding more views: on top of English and German, we
+add French and Czech captions. Revisiting the issue of alignment we find that the unlike in previous
+experiments \cite{gella2017image,calixto2017multilingual,rotman2018bridging} image-pivoting leads to
+better visual-sentence embeddings even when the images are not matched between languages. Finally
+the performance on the lower resource French and Czech languages is improved when we add the larger
+English and German image-caption sets, showing successfull multilingual transfer in the vision-language
+domain. A similar experiment was conducted in the image-captioning domain where \cite{miyazaki2016cross}
+transfer knowledge from the larger original English corpus to smaller Japanese.
+
 
 
 \subsection{Grounding and other modalities}

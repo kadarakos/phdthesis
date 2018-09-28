@@ -1,23 +1,23 @@
 \contentsline {chapter}{Acknowledgements}{VI}{section*.1}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Distributed representations of language}{4}{section.1.1}
-\contentsline {subsection}{\numberline {1.1.1}Distributed word-representations}{4}{subsection.1.1.1}
+\contentsline {subsection}{\numberline {1.1.1}Distributed word-representations}{5}{subsection.1.1.1}
 \contentsline {subsection}{\numberline {1.1.2}Visually grounded representations of words}{8}{subsection.1.1.2}
 \contentsline {subsection}{\numberline {1.1.3}From words to sentences}{12}{subsection.1.1.3}
 \contentsline {subsection}{\numberline {1.1.4}Visually grounded sentence representations}{14}{subsection.1.1.4}
 \contentsline {subsection}{\numberline {1.1.5}Multilingual representations of words and sentences}{16}{subsection.1.1.5}
-\contentsline {subsection}{\numberline {1.1.6}Visually grounded multilingual representations}{16}{subsection.1.1.6}
-\contentsline {subsection}{\numberline {1.1.7}Grounding and other modalities}{19}{subsection.1.1.7}
-\contentsline {subsection}{\numberline {1.1.8}Interpreting continuous representations}{19}{subsection.1.1.8}
-\contentsline {section}{\numberline {1.2}Vision and Language applications}{21}{section.1.2}
-\contentsline {section}{\numberline {1.3}Methods}{22}{section.1.3}
-\contentsline {subsection}{\numberline {1.3.1}Data sets}{22}{subsection.1.3.1}
-\contentsline {subsection}{\numberline {1.3.2}Architectures}{23}{subsection.1.3.2}
-\contentsline {subsubsection}{Recurrent network}{23}{section*.14}
-\contentsline {subsubsection}{Convolutional network}{23}{section*.14}
-\contentsline {subsubsection}{Optimization}{24}{section*.14}
-\contentsline {subsection}{\numberline {1.3.3}Transfer learning}{24}{subsection.1.3.3}
-\contentsline {subsection}{\numberline {1.3.4}Multi-task learning}{24}{subsection.1.3.4}
+\contentsline {subsection}{\numberline {1.1.6}Visually grounded multilingual representations}{17}{subsection.1.1.6}
+\contentsline {subsection}{\numberline {1.1.7}Grounding and other modalities}{20}{subsection.1.1.7}
+\contentsline {subsection}{\numberline {1.1.8}Interpreting continuous representations}{20}{subsection.1.1.8}
+\contentsline {section}{\numberline {1.2}Vision and Language applications}{23}{section.1.2}
+\contentsline {section}{\numberline {1.3}Methods}{23}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}Data sets}{23}{subsection.1.3.1}
+\contentsline {subsection}{\numberline {1.3.2}Architectures}{24}{subsection.1.3.2}
+\contentsline {subsubsection}{Recurrent network}{25}{section*.14}
+\contentsline {subsubsection}{Convolutional network}{25}{section*.14}
+\contentsline {subsubsection}{Optimization}{25}{section*.14}
+\contentsline {subsection}{\numberline {1.3.3}Transfer learning}{25}{subsection.1.3.3}
+\contentsline {subsection}{\numberline {1.3.4}Multi-task learning}{25}{subsection.1.3.4}
 \contentsline {chapter}{\numberline {2}Learning word meanings from images of natural scenes}{27}{chapter.2}
 \contentsline {paragraph}{Abstract}{27}{chapter.2}
 \contentsline {paragraph}{This chapter is based on}{29}{chapter.2}
