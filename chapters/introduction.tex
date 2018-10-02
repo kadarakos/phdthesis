@@ -92,13 +92,26 @@ can be constructed based on co-occurrence statistics.
 \cite{cruse1986lexical} writes that 'It is  assumed  that  the  semantic properties  of
 a lexical  item  are  fully  reflected  in  the  appropriate  aspects  of  the  relations
 it  contracts  with  actual  and  potential  contexts' and that 'the  meaning  of  a word
-is constituted  by  its  contextual  relations'. One of the first computational verification
-attempts of  this distributional hypothesis was put forward in \cite{miller1991contextual} \todo{say something about the paper man}.
-Here we discuss computational models of distributional word representations using the 'count-based' vs.
-'prediction-based' distinction borrowed from \cite{baroni2014don}.
-Early computational linguistics models of distributional semantics fall in the category of count-based approaches:
-they count the number of times target words appear occur in different contexts resulting in a co-occurence matrix.
-To these matrices various re-weighting schemes are applied usually followed by some matrix factorization algorithm.
+is constituted  by  its  contextual  relations'. Computational models of distributional
+semantics implement this intuition learn real-valued word vectors based on co-occurence
+statistics on large text corpora. Here we discuss such representations using the \emph{count-based}
+vs. \emph{prediction-based} distinction borrowed from \cite{baroni2014don}.
+%One of the first computational verification
+%attempts of  this distributional hypothesis was put forward in \cite{miller1991contextual} \todo{say something about the paper man}.
+
+\paragraph{Count-based approahces}
+Early computational linguistics models of distributional semantics fall in the category of
+count-based approaches: they count the number of times target words appear occur in different
+contexts resulting in a co-occurence matrix. In the co-occurence matrix
+$M$ each row $M_i$ represents a word $i$ and each column $M_{,j}$ a context. It has size
+is a $M \in \mathbb{N}^{|V| \times |C|}$ where $V$ is the set of words and $C$ is
+the set of contexts.
+The entry $M_{i,j}$ is the number of times word $i$ appears in context $j$.
+Contexts are typically words appearing within a certain window size or text documents.
+To the counts in $M$ various re-weighting schemes are applied followed by some matrix factorization algorithm
+resulting in a lower dimensional dense reprentation $M \in \mathbb{R}^{|V| \times d}$, where $d < |C|$.
+Both re-weighting and low-rank approximation reduces the dimensionality of the sparse matrix and leads
+to faster compute and better generalization.
 The earliest approaches include Hyperspace Analogue to Language \cite{lund1996producing},
 which constructs a term-term co-occurrence matrix and Latent Semantic Analysis \cite{dumais2004latent},
 which applies the tf-idf re-weighting scheme on a term-document matrix followed by singular-value decomposition.
@@ -106,20 +119,45 @@ More recent approaches apply different re-weighting schemes such as pointwise mu
 information \cite{evert2005statistics} or different matrix factorization algorithms such as non-negative
 matrix factorization \cite{baroni2014don}. For a comprehensive set of empirical experiments on count-based
 approaches please consult \cite{bullinaria2007extracting} and \cite{bullinaria2012extracting}.
-In more recent years -- and more related to the present thesis --
+
+\paragraph{Prediction-based approaches}
+In more recent years
+%-- and more related to the present thesis --
 various deep learning methods have been applied to learn distributed word-representations usually referred to
 as ´word-embeddings´ in the literature. Contrary to count-based methods prediction-based approaches fit into the
 standard supervised learning pipeline: they optimize a set of parameters to maximize the probability of words
 given contexts or contexts given words where the word-embeddings themselves form a subset of the parameters
-of the full model. The first modern approach to neural language models on realistic data sets was introduced
-in \cite{bengio2003neural}. It is a feed-forward multilayer perceptron with continuous word-embeddings,
-a single hidden layer and a softmax output layer. The model is trained to maximize the probability of
-the target word given the previous two words as context -- 2-gram language model -- trained by stochastic
-gradient descent \cite{cauchy1847methode} through the backpropagation  algorithm \cite{rumelhart1985learning}.
+of the full model.
+
+\paragraph{Neural language models}
+The first modern approach to neural language models on realistic data sets was introduced
+in \cite{bengio2003neural} laying down the framework for recent developments.
+It is a feed-forward multilayer perceptron with continuous word-embeddings,
+a single hidden layer and a softmax output layer.
+More precisely the model is parametrized by a 1.) word-embedding matrix
+$\mathbf{W} \in \mathbb{R}^{|V| \times d}$, where each row corresponds to a word-vector
+$\mathbf{W_i}$ of size $d$ and each column $\mathbf{W_i,j}$ to a learned feature, 2.)
+learned hidden and output weight-matrices $\mathbf{H}$ and $\mathbf{U}$. Similarly
+to the case of count-based embeddings $d < |V|$.
+The network takes as input the concatenation of $n$ word-vectors preceding the target word as context
+representation $\hat{\mathbf{w}} = [\mathbf{w_1}; \ldots; \mathbf{w_{n-1}}]$
+and outputs the probability distribution over the current word $w_n$.
+The computation of the network is shown in Equation~\ref{eq:bengion}:
+
+\begin{equation}
+\label{eq:bengio}
+P(w_n|w_{n<n}) \approx \text{softmax}(\mathbf{U} \text{tanh}(\mathbf{H} \mathbf{\hat{w}} + b_h ) + b_u)
+\end{equation}
+The model is trained to maximize the probability of
+the target word given the previous fixed number of words as context over a training corpus
+-- $n$-gram language model -- trained with stochastic gradient descent \cite{cauchy1847methode}
+through the backpropagation algorithm \cite{rumelhart1985learning}.
 The superior performance of the feed-forward neural language model has soon been shown to
 improve performance in speech recognition \cite{schwenk2005training}.
-The later convolutional architecture of  \cite{collobert2008unified} based on the time-delay neural network
-model \cite{waibel1990phoneme} takes several steps towards the by now standard practices in neural NLP.
+
+Following a similar recipe the convolutional architecture of  \cite{collobert2008unified}
+based on the time-delay neural network model \cite{waibel1990phoneme} took several steps towards the
+by now standard practices in deep NLP.
 Contrary to the simple feed-forward network language model the convolution over-time structure can handle
 sequences of variable length essential in NLP applications with sentences containing varying number of words.
 The paper also introduces the idea of jointly learning many tasks at the same time such as part-of-speech
@@ -127,26 +165,85 @@ tagging, chunking, named entity recognition and semantic role labeling through m
 Finally \cite{collobert2008unified} were the first to show the utility of pre-trained word-embeddings
 in other tasks. Their architecture was later refined in \cite{collobert2011natural} and the pre-trained
 full model was made available alongside the standalone word-embeddings in the SENNA toolkit.
-The architecture, however, that arguably became most popular in NLP and is used in all my papers except
-for Chapter~\ref{TAL}. is the recurrent neural network. It was argued that the simple recurrent network
-architecture introduced by Elman is difficult to train for practical applications on longer sequences
-\cite{bengio1994learning}, never the less the RNNLM implementation \cite{mikolov2010recurrent} established
-a new state-of-the-art. It is worth noting here that to successfully
-apply the standard backpropagation through time algorithm  \cite{williams1995gradient} to simple recurrent
-networks on real world language modeling \cite{mikolov2012statistical} only needed to add the now
-widely used gradient clipping trick. Later the word-embeddings learned by the recurrent language model were
-shown to represent intriguing syntactic and semantic regularities \cite{mikolov2013linguistic} \todo{like what???}.
+
+The architecture, however, that arguably became most popular in NLP and is used in
+Chapters~\ref{ch:COLI,ch:IJCNLP,ch:ConLL} is the recurrent neural network. The architecture was
+first introduced by the late Jeffrey L. Elman in his seminal paper \citep{elman1990finding}
+as a model of human language learning and processing. Recurrent neural networks
+take a variable length sequence as input perform a stateful computation over the it's elements.
+In case of language modeling at each timestep $t$ the network takes an input word $w_t$
+and its hidden state $\mathbf{h_{t-1}}$ maintained through previous timesteps to compute the current
+state $\mathbf{h_t}$ and to predict the probability distribution over the following word $w_t$. It is
+parametrized a word-embedding matrix $\mathbf{W} \in \mathbb{R}^{|V| \times d}$, input to hidden weight
+matrix $\mathbf{W_i}$, hidden to hidden weight matrix $\mathbf{W_h}$ and finally the hidden to output
+weight matrix $\mathbf{U}$ used to predict the unnormalized probabilities over the vocabulary entries:
+\begin{align}
+P(w_n|w_{n<n}) &\approx \text{softmax}(\mathbf{U} \mathbf{h_t} + \mathbf{b_o}) \\
+\mathbf{h_t} &= \text{tanh}(\mathbf{W_h}\mathbf{h_{t-1}} + \mathbf{W_i}\mathbf{w_t} + \mathbf{b_h})
+\end{align}
+In \cite{elman1991distributed} shows when trained on simple natural language like input the
+hidden states of the network $\mathbf{h_t}$ encode grammatical relations and hierarchical
+constituent structure. Despite the early successes it turned out to be difficult to train
+Elman networks on practical applications with longer sequences
+\cite{bengio1994learning}. Never the less the RNNLM implementation of \cite{mikolov2010recurrent}
+established a new state-of-the-art and interestingly the successfully
+application the standard backpropagation through time algorithm  \cite{williams1995gradient}
+to simple recurrent networks on real world language modeling \cite{mikolov2012statistical}
+seems to only have required more computational resources and the now widely used gradient clipping trick.
+
+\paragraph{Efficient linear models}
+It wasn't until the introduction of the much simpler and faster continuous bag-of-words
+and skip-gram with negative sampling (SGNS) algorithms \cite{mikolov2013efficient}
+packaged into the easy to use \texttt{word2vec} toolkit that
+word-embeddings became ubiquitous in computational linguistics and NLP research.
+These algorithms rely on simple log-linear models as opposed to the more expensive
+neural networks leading to faster training on larger corpora. The more successful SGNS
+model has two word embeddings matrices one for the words
+$\mathbf{W_w}  \in \mathbb{R}^{|V| \times d}$
+and a separate one for the contexts $\mathbf{W_c} \in \mathbb{R}^{|V| \times d}$.
+The model is trained to maximize the dot product $\mathbf{w}^T\mathbf{c}$
+between true word-context pairs $(w,c)$ appearing in corpus and minimize the
+dot product $\mathbf{w}^T\mathbf{\hat{c}}$ between randomly
+samples contrastive examples $(w,\hat{c})$.
+
+Finally the GloVe \cite{pennington2014glove} is another simple linear model
+with word $\mathbf{W_w}  \in \mathbb{R}^{|V| \times d}$ and context
+$\mathbf{W_c} \in \mathbb{R}^{|V| \times d}$ embeddings, which
+represents a hybrid between count- and prediction-based techniques:
+it optimizes word-embeddings to predict the re-weighted
+$\log$ co-occurence counts $\log(\#(w,c))$ collected from corpora $D$:
+
+\begin{equation}
+\label{eq:glove}
+\mathbf{w}^T\mathbf{c} + b_w + b_c = \log(\#(w,c))\;\;\; \forall (w,c \in D)
+\end{equation}
+
+where $b_w$ and $b_c$ are context specific bias terms.
+Now let express the Glove model in the traditional re-weighted
+co-occurence matrix factorization form.
+Let the matrix $M \in \mathbb{R}^{|V| \times |C|}$ store the log-weighted
+weighted counts and $\mathbf{b_w}$ and $\mathbf{b_c}$ be the vectors of all
+$b_w$ and $b_c$ scalars, then
+
+\begin{equation}
+\label{eq:glove2}
+M \approx \mathbf{W} \cdot \mathbf{C^T} + \mathbf{b_w} + \mathbf{b_c}
+\end{equation}
+
+In fact there has been work on finding relationships between
+count- and prediction-based methods \cite{levy2014neural} and
+using insights from both to develop novel improved
+variants \cite{levy2015improving}.
+
+\paragraph{Transferring word representations}
+
+Later the word-embeddings $\mathbf{W}$ learned by recurrent language models were
+shown to represent intriguing syntactic and semantic regularities \cite{mikolov2013linguistic}.
+
 In earlier work where pre-trained word-embeddings were also shown for the first time through a
 larger-scale empirical investigation by \cite{turian2010word} to transfer to sequence prediction tasks
 when used as features in state-of-the-art systems.
-However, it wasn't until the introduction of the much simpler and faster continuous bag-of-words and skip-thought
-algorithms \cite{mikolov2013efficient} packaged into the easy to use word2vec toolkit that
-word-embeddings became ubiquitous in computational linguistics and NLP research.
-These algorithms rely on simple log-linear models as opposed to the more expensive
-neural networks leading to faster training on larger corpora. The GloVe \cite{pennington2014glove}
-model represents a hybrid between count- and prediction-based techniques;
-it is a bi-linear model that optimizes word-embeddings to predict the re-weighted
-word co-occurence statistics collected from corpora.
+
 
 \subsection{Visually grounded representations of words}\todo{The references outline what i want i need to expand them still.}
 \label{sec:visualwords}

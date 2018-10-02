@@ -1003,6 +1003,19 @@ Leong, C.~W. \& Mihalcea, R. (2011b).
   Computational Semantics}  (pp.\ 185--194).: Association for Computational
   Linguistics.
 
+\bibitem[Levy \& Goldberg, 2014]{levy2014neural}
+Levy, O. \& Goldberg, Y. (2014).
+\newblock Neural word embedding as implicit matrix factorization.
+\newblock In {\em Advances in neural information processing systems}  (pp.\
+  2177--2185).
+
+\bibitem[Levy et~al., 2015]{levy2015improving}
+Levy, O., Goldberg, Y., \& Dagan, I. (2015).
+\newblock Improving distributional similarity with lessons learned from word
+  embeddings.
+\newblock {\em Transactions of the Association for Computational Linguistics},
+  3, 211--225.
+
 \bibitem[Li et~al., 2016a]{li2015visualizing}
 Li, J., Chen, X., Hovy, E., \& Jurafsky, D. (2016a).
 \newblock Visualizing and understanding neural models in {NLP}.
