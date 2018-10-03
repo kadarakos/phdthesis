@@ -430,12 +430,20 @@ Dolan, B., Quirk, C., \& Brockett, C. (2004).
   Computational Linguistics}  (pp.\ 350).: Association for Computational
   Linguistics.
 
-\bibitem[Donahue et~al., 2014]{donahue2014long}
+\bibitem[Donahue et~al., 2014a]{donahue2014long}
 Donahue, J., Hendricks, L.~A., Guadarrama, S., Rohrbach, M., Venugopalan, S.,
-  Saenko, K., \& Darrell, T. (2014).
+  Saenko, K., \& Darrell, T. (2014a).
 \newblock Long-term recurrent convolutional networks for visual recognition and
   description.
 \newblock {\em arXiv preprint arXiv:1411.4389}.
+
+\bibitem[Donahue et~al., 2014b]{donahue2014decaf}
+Donahue, J., Jia, Y., Vinyals, O., Hoffman, J., Zhang, N., Tzeng, E., \&
+  Darrell, T. (2014b).
+\newblock Decaf: A deep convolutional activation feature for generic visual
+  recognition.
+\newblock In {\em International conference on machine learning}  (pp.\
+  647--655).
 
 \bibitem[Dong et~al., 2015]{Dong2015}
 Dong, D., Wu, H., He, W., Yu, D., \& Wang, H. (2015).
@@ -649,6 +657,13 @@ Giles, C.~L., Miller, C.~B., Chen, D., Sun, G., Chen, H., \& Lee, Y. (1991).
   networks.
 \newblock In {\em Advances in Neural Information Processing Systems}  (pp.\
   317--324).
+
+\bibitem[Girshick et~al., 2014]{girshick2014rich}
+Girshick, R., Donahue, J., Darrell, T., \& Malik, J. (2014).
+\newblock Rich feature hierarchies for accurate object detection and semantic
+  segmentation.
+\newblock In {\em Proceedings of the IEEE conference on computer vision and
+  pattern recognition}  (pp.\ 580--587).
 
 \bibitem[Graham et~al., 2017]{Graham2017}
 Graham, Y., Baldwin, T., Moffat, A., \& Zobel, J. (2017).
@@ -1515,6 +1530,12 @@ Shah, K., Wang, J., \& Specia, L. (2016).
 \newblock Shef-multimodal: Grounding machine translation on images.
 \newblock In {\em Proceedings of the First Conference on Machine Translation}
   (pp.\ 660--665).
+
+\bibitem[Sharif~Razavian et~al., 2014]{sharif2014cnn}
+Sharif~Razavian, A., Azizpour, H., Sullivan, J., \& Carlsson, S. (2014).
+\newblock Cnn features off-the-shelf: an astounding baseline for recognition.
+\newblock In {\em Proceedings of the IEEE conference on computer vision and
+  pattern recognition workshops}  (pp.\ 806--813).
 
 \bibitem[Shrikumar et~al., 2017]{shrikumar2017learning}
 Shrikumar, A., Greenside, P., \& Kundaje, A. (2017).
