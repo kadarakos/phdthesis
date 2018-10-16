@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2018.9.11)  9 OCT 2018 16:41
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2018.10.12)  16 OCT 2018 11:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1850,99 +1850,98 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 Chapter 1.
 [1
 
-] [2] [3]
-Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
-ine 84.
- [4] [5]
-Overfull \hbox (37.82764pt too wide) in paragraph at lines 124--131
+] [2] [3] [4] [5]
+Overfull \hbox (37.82764pt too wide) in paragraph at lines 159--166
 \EU1/lmr/m/n/12 learning methods have been applied to learn distributed word-re
 presentations
  []
 
 
-LaTeX Warning: Reference `eq:bengion' on page 6 undefined on input line 145.
+LaTeX Warning: Reference `eq:bengion' on page 6 undefined on input line 180.
 
 
-Overfull \hbox (1.4676pt too wide) in paragraph at lines 133--146
+Overfull \hbox (1.4676pt too wide) in paragraph at lines 168--181
 \EU1/lmr/m/n/12 feed-forward multilayer perceptron with continuous word-embeddi
 ngs,
  []
 
-[6] [7]
+[6]
+
+LaTeX Warning: Reference `ch:COLI,ch:IJCNLP,ch:ConLL' on page 7 undefined on in
+put line 200.
+
+[7]
 
 LaTeX Warning: Reference `ch:COLI,ch:IJCNLP,ch:ConLL' on page 8 undefined on in
-put line 170.
+put line 206.
 
 [8]
-LaTeX Font Info:    Try loading font information for EU1+lmtt on input line 197
+
+LaTeX Warning: Reference `ch:COLI,ch:IJCNLP,ch:ConLL' on page 9 undefined on in
+put line 237.
+
+LaTeX Font Info:    Try loading font information for EU1+lmtt on input line 242
 .
- (/usr/share/texlive/texmf-dist/tex/latex/euenc/eu1lmtt.fd
+(/usr/share/texlive/texmf-dist/tex/latex/euenc/eu1lmtt.fd
 File: eu1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 Package microtype Info: Loading generic settings for font family
 (microtype)             `lmtt' (encoding: EU1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [9]
-Overfull \hbox (6.07243pt too wide) in paragraph at lines 243--246
-[]\EU1/lmr/m/n/12 In earlier work where pre-trained word-embeddings were also s
-hown
- []
 
 
-Overfull \hbox (103.67122pt too wide) in paragraph at lines 250--250
-\EU1/lmr/m/n/12 https://arxiv.org/pdf/1806.06371.pdf  
- []
+LaTeX Warning: Reference `ch:IJCNLP,ch:ConLL' on page 9 undefined on input line
+ 253.
 
-
-Overfull \hbox (103.67122pt too wide) in paragraph at lines 250--250
-\EU1/lmr/m/n/12 https://arxiv.org/pdf/1806.06371.pdf  
- []
-
-
-Overfull \hbox (103.67122pt too wide) in paragraph at lines 250--250
-\EU1/lmr/m/n/12 https://arxiv.org/pdf/1806.06371.pdf  
- []
-
-
-Overfull \hbox (103.67122pt too wide) in paragraph at lines 250--250
-\EU1/lmr/m/n/12 https://arxiv.org/pdf/1806.06371.pdf  
- []
-
-
-LaTeX Warning: Marginpar on page 10 moved.
-
-[10] [11] [12]
-Overfull \hbox (4.51247pt too wide) in paragraph at lines 321--343
+[9] [10] [11] [12]
+Overfull \hbox (4.51247pt too wide) in paragraph at lines 370--395
 []\EU1/lmr/m/n/12 The perceptually grounded word representations [][]Bruni et a
 l.[][] ([][]2012[][])
  []
 
-[13] [14] [15] [16] [17] [18]
+[13] [14] [15]
+Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
+ine 460.
+ [16]
+Overfull \hbox (0.61963pt too wide) in paragraph at lines 484--498
+\EU1/lmr/m/n/12 up to sentences using additive and multiplicative interactions 
+of count-
+ []
+
+
+Overfull \hbox (6.29562pt too wide) in paragraph at lines 484--498
+\EU1/lmr/m/n/12 combine symbolic and continuous representations with tensor-pro
+ducts
+ []
+
+[17]
 
 Package natbib Warning: Citation `goller1996learning.socher2011parsing' on page
- 19 undefined on input line 472.
+ 18 undefined on input line 523.
 
+[18]
 
 LaTeX Warning: Reference `ch:COLI,ch:IJCNLP,ch:ConLL' on page 19 undefined on i
-nput line 480.
+nput line 532.
 
 [19] [20] [21]
 
 LaTeX Warning: Reference `ch:COLI,ch:IJCNLP,ch:ConLL' on page 22 undefined on i
-nput line 552.
+nput line 609.
 
-[22] [23]
-Overfull \hbox (11.90448pt too wide) in paragraph at lines 615--623
+[22]
+Overfull \hbox (11.90448pt too wide) in paragraph at lines 669--677
 []\EU1/lmr/m/n/12 In Chapter [][]4[][] we show that in the domain of image-capt
 ions grounded
  []
 
+[23] [24] [25]
 
-LaTeX Warning: Reference `ch:COLI,ch:IJCNLP,ch:ConLL' on page 24 undefined on i
-nput line 691.
+LaTeX Warning: Reference `ch:COLI,ch:IJCNLP,ch:ConLL' on page 26 undefined on i
+nput line 797.
 
-[24] [25] [26] [27] [28] [29]) [30] [31]
+[26] [27] [28] [29] [30]) [31]
 \openout2 = `chapters/TAL/main.aux'.
 
  (./chapters/TAL/main.tex [32
@@ -2727,7 +2726,7 @@ Chapter 6.
 
 
 ] [151] [152] [153] [154]
-Underfull \hbox (badness 1072) in paragraph at lines 274--278
+Underfull \hbox (badness 1072) in paragraph at lines 279--283
 []\EU1/lmr/m/n/10 Cauchy, A. (1847).  Méthode générale pour la résolution des s
 ystemes
  []
@@ -2799,10 +2798,10 @@ LaTeX Warning: There were multiply-defined labels.
 ### simple group (level 1) entered at line 75 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 54974 strings out of 493638
- 1220054 string characters out of 6146796
- 1452929 words of memory out of 5000000
- 57281 multiletter control sequences out of 15000+600000
+ 54934 strings out of 493638
+ 1219023 string characters out of 6146795
+ 1442531 words of memory out of 5000000
+ 57241 multiletter control sequences out of 15000+600000
  22713 words of font info for 109 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
  69i,20n,81p,10485b,3003s stack positions out of 5000i,500n,10000p,200000b,80000s

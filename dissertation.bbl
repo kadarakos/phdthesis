@@ -168,6 +168,11 @@ Binder, A., Montavon, G., Lapuschkin, S., M{\"u}ller, K.-R., \& Samek, W.
 \newblock In {\em Proceedings of the 15th Conference of the European Chapter of
   the Association for Computational Linguistics}  (pp.\ 164--169).
 
+\bibitem[Blei et~al., 2003]{blei2003latent}
+Blei, D.~M., Ng, A.~Y., \& Jordan, M.~I. (2003).
+\newblock Latent dirichlet allocation.
+\newblock {\em Journal of machine Learning research}, 3(Jan), 993--1022.
+
 \bibitem[Bock \& Miller, 1991]{bock1991broken}
 Bock, K. \& Miller, C.~A. (1991).
 \newblock Broken agreement.
@@ -306,9 +311,16 @@ Cho, K., Van~Merri{\"e}nboer, B., Bahdanau, D., \& Bengio, Y. (2014a).
   approaches.
 \newblock {\em arXiv preprint arXiv:1409.1259}.
 
-\bibitem[Cho et~al., 2014b]{Cho2014}
+\bibitem[Cho et~al., 2014b]{cho2014learning}
 Cho, K., Van~Merri{\"e}nboer, B., Gulcehre, C., Bahdanau, D., Bougares, F.,
   Schwenk, H., \& Bengio, Y. (2014b).
+\newblock Learning phrase representations using rnn encoder-decoder for
+  statistical machine translation.
+\newblock {\em arXiv preprint arXiv:1406.1078}.
+
+\bibitem[Cho et~al., 2014c]{Cho2014}
+Cho, K., Van~Merri{\"e}nboer, B., Gulcehre, C., Bahdanau, D., Bougares, F.,
+  Schwenk, H., \& Bengio, Y. (2014c).
 \newblock {Learning phrase representations using RNN encoder-decoder for
   statistical machine translation}.
 \newblock (pp.\ 1724--1734).
@@ -638,6 +650,10 @@ Gella, S., Sennrich, R., Keller, F., \& Lapata, M. (2017).
 \newblock Image pivoting for learning multilingual multimodal representations.
 \newblock {\em arXiv preprint arXiv:1707.07601}.
 
+\bibitem[Gers et~al., 1999]{gers1999learning}
+Gers, F.~A., Schmidhuber, J., \& Cummins, F. (1999).
+\newblock Learning to forget: Continual prediction with lstm.
+
 \bibitem[Giles et~al., 1991]{giles1992extracting}
 Giles, C.~L., Miller, C.~B., Chen, D., Sun, G., Chen, H., \& Lee, Y. (1991).
 \newblock Extracting and learning an unknown grammar with recurrent neural
@@ -732,13 +748,8 @@ Hill, F., Reichart, R., \& Korhonen, A. (2015).
   estimation.
 \newblock {\em Computational Linguistics}, 41(4), 665--695.
 
-\bibitem[Hitschler et~al., 2016a]{hitschler2016multimodal}
-Hitschler, J., Schamoni, S., \& Riezler, S. (2016a).
-\newblock Multimodal pivots for image caption translation.
-\newblock {\em arXiv preprint arXiv:1601.03916}.
-
-\bibitem[Hitschler et~al., 2016b]{Hitschler2016}
-Hitschler, J., Schamoni, S., \& Riezler, S. (2016b).
+\bibitem[Hitschler et~al., 2016]{Hitschler2016}
+Hitschler, J., Schamoni, S., \& Riezler, S. (2016).
 \newblock {Multimodal Pivots for Image Caption Translation}.
 \newblock In {\em Proceedings of the 54th Annual Meeting of the Association for
   Computational Linguistics}  (pp.\ 2399--2409).
@@ -863,6 +874,12 @@ Kiela, D., Ver\H{o}, A.~L., \& Clark, S. (2016).
 \newblock In {\em {Proceedings of the Conference on Empirical Methods in
   Natural Language Processing (EMNLP-16)}}  (pp.\ 447--456).
 
+\bibitem[Kiela et~al., 2015]{kiela2015visual}
+Kiela, D., Vulic, I., \& Clark, S. (2015).
+\newblock Visual bilingual lexicon induction with transferred convnet features.
+\newblock In {\em Proceedings of the 2015 Conference on Empirical Methods in
+  Natural Language Processing (EMNLP 2015)}: ACL.
+
 \bibitem[Kim, 2014]{yoonneural2014}
 Kim, Y. (2014).
 \newblock Convolutional neural networks for sentence classification.
@@ -929,19 +946,6 @@ Landauer, T.~K. \& Dumais, S.~T. (1997).
 \newblock A solution to plato's problem: The latent semantic analysis theory of
   acquisition, induction, and representation of knowledge.
 \newblock {\em Psychological review}, 104(2), 211.
-
-\bibitem[Lazaridou et~al., 2016]{lazaridou2016multimodal}
-Lazaridou, A., Chrupa{\l}a, G., Fern{\'a}ndez, R., \& Baroni, M. (2016).
-\newblock Multimodal semantic learning from child-directed input.
-\newblock In {\em Proceedings of the 2016 Conference of the North American
-  Chapter of the Association for Computational Linguistics: Human Language
-  Technologies}  (pp.\ 387--392).
-
-\bibitem[Lazaridou et~al., 2017]{lazaridou2017multimodal}
-Lazaridou, A., Marelli, M., \& Baroni, M. (2017).
-\newblock Multimodal word meaning induction from minimal exposure to natural
-  text.
-\newblock {\em Cognitive science}, 41, 677--705.
 
 \bibitem[Lazaridou et~al., 2015]{lazaridou2015combining}
 Lazaridou, A., Pham, N.~T., \& Baroni, M. (2015).
@@ -1173,13 +1177,6 @@ Mikolov, T., Sutskever, I., Chen, K., Corrado, G.~S., \& Dean, J. (2013b).
 \newblock In {\em Advances in Neural Information Processing Systems}  (pp.\
   3111--3119).
 
-\bibitem[Mikolov et~al., 2013c]{mikolov2013linguistic}
-Mikolov, T., Yih, W.-t., \& Zweig, G. (2013c).
-\newblock Linguistic regularities in continuous space word representations.
-\newblock In {\em Proceedings of the 2013 Conference of the North American
-  Chapter of the Association for Computational Linguistics: Human Language
-  Technologies}  (pp.\ 746--751).
-
 \bibitem[Miller \& Charles, 1991]{miller1991contextual}
 Miller, G.~A. \& Charles, W.~G. (1991).
 \newblock Contextual correlates of semantic similarity.
@@ -1190,15 +1187,8 @@ Mitchell, J. \& Lapata, M. (2008).
 \newblock Vector-based models of semantic composition.
 \newblock {\em proceedings of ACL-08: HLT}, (pp.\ 236--244).
 
-\bibitem[Miyazaki \& Shimizu, 2016a]{miyazaki2016cross}
-Miyazaki, T. \& Shimizu, N. (2016a).
-\newblock Cross-lingual image caption generation.
-\newblock In {\em Proceedings of the 54th Annual Meeting of the Association for
-  Computational Linguistics (Volume 1: Long Papers)}, volume~1  (pp.\
-  1780--1790).
-
-\bibitem[Miyazaki \& Shimizu, 2016b]{P16-1168}
-Miyazaki, T. \& Shimizu, N. (2016b).
+\bibitem[Miyazaki \& Shimizu, 2016]{P16-1168}
+Miyazaki, T. \& Shimizu, N. (2016).
 \newblock Cross-lingual image caption generation.
 \newblock In {\em Proceedings of the 54th Annual Meeting of the Association for
   Computational Linguistics (Volume 1: Long Papers)}  (pp.\ 1780--1790).:
@@ -1546,13 +1536,6 @@ Srivastava, N., Mansimov, E., \& Salakhudinov, R. (2015).
 \newblock In {\em International Conference on Machine Learning}  (pp.\
   843--852).
 
-\bibitem[Strobelt et~al., 2018]{strobelt2018lstmvis}
-Strobelt, H., Gehrmann, S., Pfister, H., \& Rush, A.~M. (2018).
-\newblock Lstmvis: A tool for visual analysis of hidden state dynamics in
-  recurrent neural networks.
-\newblock {\em IEEE transactions on visualization and computer graphics},
-  24(1), 667--676.
-
 \bibitem[Subramanian et~al., 2018]{subramanian2018learning}
 Subramanian, S., Trischler, A., Bengio, Y., \& Pal, C.~J. (2018).
 \newblock Learning general purpose distributed sentence representations via
@@ -1598,14 +1581,6 @@ Tiedemann, J. (2012).
 Toyama, J., Misono, M., Suzuki, M., Nakayama, K., \& Matsuo, Y. (2016).
 \newblock Neural machine translation with latent semantic of image and text.
 \newblock {\em CoRR}, abs/1611.08459.
-
-\bibitem[Turian et~al., 2010]{turian2010word}
-Turian, J., Ratinov, L., \& Bengio, Y. (2010).
-\newblock Word representations: a simple and general method for semi-supervised
-  learning.
-\newblock In {\em Proceedings of the 48th annual meeting of the association for
-  computational linguistics}  (pp.\ 384--394).: Association for Computational
-  Linguistics.
 
 \bibitem[Turney et~al., 2011]{turney2011literal}
 Turney, P.~D., Neuman, Y., Assaf, D., \& Cohen, Y. (2011).
