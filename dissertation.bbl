@@ -409,6 +409,12 @@ Csurka, G., Dance, C., Fan, L., Willamowski, J., \& Bray, C. (2004).
 \newblock In {\em Workshop on statistical learning in computer vision, ECCV},
   volume~1  (pp.\ 1--2).: Prague.
 
+\bibitem[Dempster et~al., 1977]{dempster1977maximum}
+Dempster, A.~P., Laird, N.~M., \& Rubin, D.~B. (1977).
+\newblock Maximum likelihood from incomplete data via the em algorithm.
+\newblock {\em Journal of the royal statistical society. Series B
+  (methodological)}, (pp.\ 1--38).
+
 \bibitem[Deng et~al., 2009]{deng2009imagenet}
 Deng, J., Dong, W., Socher, R., Li, L.-J., Li, K., \& Fei-Fei, L. (2009).
 \newblock Imagenet: A large-scale hierarchical image database.

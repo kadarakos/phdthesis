@@ -1,20 +1,19 @@
 %!TEX root = ../dissertation.tex
 
 %EK: edits November 28
-serval
 \chapter{Introduction}
-\label{introduction}
-As opposed to the continous nature of the visual world, linguistic units
+\label{introducion}
+As opposed to the continuous nature of the visual world, linguistic units
 are inherently discrete. This is reflected in the techniques used in the
 computational processing of natural language.
-Information in linguistic utterrances is traditionally encoded
+Information in linguistic utterances is traditionally encoded
 in sparse high-dimensional count vectors, where each
-dimension corresponds to the number of times a specfic feature occurs in a
+dimension corresponds to the number of times a specific feature occurs in a
 sample. For each word in a sentence common features to consider take the form of:
 ``this token is a noun'', ``the preceding word is cat'',
 ``the following token has dependency label direct object''.
 More often then not these vectors do not even hold counts, but 0-1
-indicator features singaling the presence or absence of a particular property.
+indicator features signaling the presence or absence of a particular property.
 
 In such a setting the relationships between features are not handled.
 As a result machine learning algorithms are presented with an input representation where
@@ -39,7 +38,7 @@ However, a language model trained with discrete symbolic representation cannot
 relationship between the words ``dog'', ``cat'' and ``serval'' is not represented.
 
 Consider now the case of walking a dolphin.
-Both ``walking a serval'' and ``walking a dolphin'' would be impossilbe
+Both ``walking a serval'' and ``walking a dolphin'' would be impossible
 by the hypothesized language model, however, us humans would say that walking the serval is
 kind of possible, but walking the dolphin is just surreal.
 We know it from reading about both animals that they can be domesticated
@@ -47,22 +46,22 @@ We know it from reading about both animals that they can be domesticated
 the other does not. Dogs, cats, servals and dolphins are similar in some
 dimensions and different in others.
 What the present thesis is concerned about is
-\emph{learning continous representations} of words, phrases up to sentences
+\emph{learning continuous representations} of words, phrases up to sentences
 from multiple sources of information to encode such useful properties.
 Such representations allow machine learning algorithms to represent smooth
 functions over linguistic inputs where the local neighborhoods of linguistic
 units correspond to syntactic and semantic regularities.
 
-\paragraph{Preceptual grounding}
+\paragraph{Perceptual grounding}
 
-The well establised tradition of conituous word representations consider
+The well established tradition of continuous word representations consider
 features extracted from large text-corpora in a single language focusing on
-co-occurence statstics between words.
+co-occurrence statistics between words.
 My thesis focuses integrating the \emph{visual modality} and jointly learning representations for
-\emph{multiple languages}. Furthermore, I study the the beneficial interaction of
+\emph{multiple languages}. Furthermore, I study the beneficial interaction of
 visually grounded and multilingual representation learning.
-Grounding in visual modality is largely motivated by evidence of
-perceptual grounding in human concept acquisition and representation \cite{barsalou2003grounding} and as such
+Grounding in visual modality is largely motivated by evidence receive
+perceptual grounding in human concept acquisition and representation \citep{barsalou2003grounding} and as such
 it brings computational language learning systems closer to human-like learning.
 Furthermore, as pointed out by the dolphin versus serval example above,
 certain aspects of meaning are better captured by \emph{encyclopedic}
@@ -70,7 +69,7 @@ knowledge such as domestication abundant in textual data, however, perceptual in
 can provide complementary valuable insights into physical properties rarely mentioned in texts such as size,
 shape and color. In practice harnessing the visual modality to learn language
 representations that link linguistic knowledge
-to the external world \cite{kiela2014improving,baroni2016grounding,elliott2017imagination,kiela2017learning,yoo2017improving}
+to the external world \citep{kiela2014improving,baroni2016grounding,elliott2017imagination,kiela2017learning,yoo2017improving}
 has been empirically shown to improve performance on several semantic tasks.
 
 \paragraph{Images bridging languages}
@@ -87,7 +86,7 @@ however, they can be beneficial to each other as well.
 In my work I view images as universal meaning representations, a natural common
 ground bridging between languages. From another perspective images and multiple
 languages can be seen as multiple latent views of the same underlying semantic
-concepts. This approach allows us to take advantage of complentary information
+concepts. This approach allows us to take advantage of complementary information
 and potential transfer between these views.
 
 \paragraph{Contributions}
@@ -97,7 +96,7 @@ takes words and high-level continuous image representations as input. Our approa
 unifies recent advances in computer vision and incremental cognitive models
 of language learning. We show that on the data sets that we consider our model
 is competitive with state-of-the-art distributional semantics models (word2vec)
-on word-similarity benchmarks. Furthemore we show that our model is able to
+on word-similarity benchmarks. Furthermore we show that our model is able to
 name relevant concepts given images.
 
 Chapter~\ref{ch:COLI} introduces a recurrent and convolutional neural network
@@ -119,40 +118,40 @@ representations.
 \subsection{Distributed word-representations}
 \label{sec:words}
 The distributional approach to word meaning hypothesizes that semantically related words
-tend to appear in similar contexts. This idea goes back in linguistics tradition to the the
-earlier days of American structuralism \cite{nevin2002legacy}. In the seminal paper
-"Distributional structure" \cite{harris1954distributional} back in 1954 Harris already claims
+tend to appear in similar contexts. This idea goes back in linguistics tradition to the
+earlier days of American structuralism \citep{nevin2002legacy}. In the seminal paper
+"Distributional structure" \citep{harris1954distributional} back in 1954 Harris already claims
 that distribution should be taken as an explanation for word meaning and that similarity classes
 can be constructed based on co-occurrence statistics.
 \cite{cruse1986lexical} writes that 'It is  assumed  that  the  semantic properties  of
 a lexical  item  are  fully  reflected  in  the  appropriate  aspects  of  the  relations
 it  contracts  with  actual  and  potential  contexts' and that 'the  meaning  of  a word
 is constituted  by  its  contextual  relations'. Computational models of distributional
-semantics implement this intuition and learn real-valued word vectors based on co-occurence
+semantics implement this intuition and learn real-valued word vectors based on co-occurrence
 statistics in large text corpora. Here we discuss such representations using the \emph{count-based}
 versus \emph{prediction-based} distinction borrowed from \cite{baroni2014don}.
 %One of the first computational verification
 %attempts of  this distributional hypothesis was put forward in \cite{miller1991contextual} \todo{say something about the paper man}.
 
-\paragraph{Count-based approahces}
+\paragraph{Count-based approaches}
 Early computational linguistics models of distributional semantics fall in the category of
 count-based approaches: they count the number of times target words appear occur in different
-contexts resulting in a co-occurence matrix. In the co-occurence matrix
+contexts resulting in a co-occurrence matrix. In the co-occurrence matrix
 $W$ each row $W_i$ represents a word $i$ and each column $W_{,j}$ a context. It has size
 is a $W \in \mathbb{N}^{|V| \times |C|}$ where $V$ is the set of words and $C$ is
 the set of contexts.
 The entry $W_{i,j}$ is the number of times word $i$ appears in context $j$.
 Contexts are typically words appearing within a certain window size or text documents.
 To the counts in $W$ various re-weighting schemes are applied followed by some matrix factorization algorithm
-resulting in a lower dimensional dense reprentation $W \in \mathbb{R}^{|V| \times d}$, where $d < |C|$.
+resulting in a lower dimensional dense representation $W \in \mathbb{R}^{|V| \times d}$, where $d < |C|$.
 %Both re-weighting and low-rank approximation reduces the dimensionality of the sparse matrix and leads
 %to faster compute and better generalization.
-The earliest approaches include Hyperspace Analogue to Language \cite{lund1996producing},
-which constructs a term-term co-occurrence matrix and Latent Semantic Analysis \cite{dumais2004latent},
+The earliest approaches include Hyperspace Analogue to Language \citep{lund1996producing},
+which constructs a term-term co-occurrence matrix and Latent Semantic Analysis \citep{dumais2004latent},
 which applies the tf-idf re-weighting scheme on a term-document matrix followed by singular-value decomposition.
-More recent approaches apply different re-weighting schemes such as pointwise mutual information and local mutual
-information \cite{evert2005statistics} or different matrix factorization algorithms such as non-negative
-matrix factorization \cite{baroni2014don}. For a comprehensive set of empirical experiments on count-based
+More recent approaches apply different re-weighting schemes such as point wise mutual information and local mutual
+information \citep{evert2005statistics} or different matrix factorization algorithms such as non-negative
+matrix factorization \citep{baroni2014don}. For a comprehensive set of empirical experiments on count-based
 approaches please consult \cite{bullinaria2007extracting} and \cite{bullinaria2012extracting}.
 
 \paragraph{Prediction-based approaches}
@@ -177,7 +176,7 @@ to the case of count-based embeddings $d < |V|$.
 The network takes as input the concatenation of $n$ word-vectors preceding the target word as context
 representation $\hat{\mathbf{w}} = [\mathbf{w_1}; \ldots; \mathbf{w_{n-1}}]$
 and outputs the probability distribution over the current word $w_n$.
-The computation of the network is shown in Equation~\ref{eq:bengion}:
+The computation of the network is shown in Equation~\ref{eq:bengio}:
 
 \begin{equation}
 \label{eq:bengio}
@@ -185,30 +184,30 @@ P(w_n|w_{n<n}) \approx \text{softmax}(\mathbf{U} \text{tanh}(\mathbf{H} \mathbf{
 \end{equation}
 The model is trained to maximize the probability of
 the target word given the previous fixed number of words as context over a training corpus
--- $n$-gram language model -- trained with stochastic gradient descent \cite{cauchy1847methode}
-through the backpropagation algorithm \cite{rumelhart1985learning}.
+-- $n$-gram language model -- trained with stochastic gradient descent \citep{cauchy1847methode}
+through the backpropagation algorithm \citep{rumelhart1985learning}.
 The superior performance of the feed-forward neural language model has soon been shown to
-improve performance in speech recognition \cite{schwenk2005training}.
+improve performance in speech recognition \citep{schwenk2005training}.
 
-Following a similar recipe the convolutional architecture of  \cite{collobert2008unified}
-based on the time-delay neural network model \cite{waibel1990phoneme} took several steps towards the
+Following a similar recipe the convolutional architecture of \cite{collobert2008unified}
+based on the time-delay neural network model \citep{waibel1990phoneme} took several steps towards the
 by now standard practices in deep NLP.
 Contrary to the simple feed-forward network language model the convolution over-time structure can handle
 sequences of variable length essential in NLP applications with sentences containing varying number of words.
 The paper also introduces the idea of jointly learning many tasks at the same time such as part-of-speech
 tagging, chunking, named entity recognition and semantic role labeling through \emph{multi-task learning}.
-We also make use of the multi-task learning strategy in Chapters~\ref{ch:COLI,ch:IJCNLP,ch:ConLL}.
-Finally \cite{collobert2008unified} were the first to show the utility of pre-trained word-embeddings
+We also make use of the multi-task learning strategy in Chapters~\ref{ch:TAL}, \ref{ch:IJCNLP}, \ref{ch:ConLL}.
+Finally, \cite{collobert2008unified} were the first to show the utility of pre-trained word-embeddings
 in other tasks. Their architecture was later refined in \cite{collobert2011natural} and the pre-trained
 full model was made available alongside the standalone word-embeddings in the SENNA toolkit.
 
 The architecture, however, that arguably became most popular in NLP and is used in
-Chapters~\ref{ch:COLI,ch:IJCNLP,ch:ConLL} is the recurrent neural network. The architecture was
+Chapters~\ref{ch:COLI}, \ref{ch:IJCNLP}, \ref{ch:ConLL} is the recurrent neural network. The architecture was
 first introduced by the late Jeffrey L. Elman in his seminal paper \citep{elman1990finding}
 as a model of human language learning and processing. Recurrent neural networks
 take a variable length sequence as input and perform a stateful computation over the it's elements.
-In case of language modeling at each timestep $t$ the network takes an input word $w_t$
-and the previous hidden state $\mathbf{h_{t-1}}$ maintained through previous timesteps to compute the current
+In case of language modeling at each time-step $t$ the network takes an input word $w_t$
+and the previous hidden state $\mathbf{h_{t-1}}$ maintained through previous time-steps to compute the current
 state $\mathbf{h_t}$ and to predict the probability distribution over the following word $w_t$.
 It is parametrized a word-embedding matrix $\mathbf{W} \in \mathbb{R}^{|V| \times d}$, input to hidden weight
 matrix $\mathbf{W_i}$, hidden to hidden weight matrix $\mathbf{W_h}$ and finally the hidden to output
@@ -223,18 +222,18 @@ constituent structure. In Chapter~\ref{ch:COLI} we train recurrent network archi
 on real-world data and explore similar questions about the learned opaque representations.
 Despite the early successes, however, it turned out to be difficult to train
 Elman networks on practical applications with longer sequences
-\cite{bengio1994learning} due to the vanishing and exploding gradient phenomena.
+due to the vanishing and exploding gradient phenomena \citep{bengio1994learning}.
 Never the less the RNNLM implementation of \cite{mikolov2010recurrent}
 established a new state-of-the-art and interestingly the successfully
-application the standard backpropagation through time algorithm  \cite{williams1995gradient}
+application the standard backpropagation through time algorithm  \citep{williams1995gradient}
 to simple recurrent networks on real world language modeling \cite{mikolov2012statistical}
 seems to only have required more computational resources and the now widely used gradient clipping trick.
 
 At the time of writing this thesis an overwhelming amount of empirical evidence
-shows that long short-term memory \cite{hochreiter1997long,gers1999learning}
-and gated recurrent units \cite{cho2014learning}
+shows that long short-term memory \citep{hochreiter1997long,gers1999learning}
+and gated recurrent units \citep{cho2014learning}
 vastly outperform the simple Elman network in practice. We use the latter in
-Chapters~\ref{ch:COLI,ch:IJCNLP,ch:ConLL}.
+Chapters~\ref{ch:COLI}, \ref{ch:IJCNLP}, \ref{ch:ConLL}.
 
 \paragraph{Efficient linear models}
 It wasn't until the introduction of the much simpler and faster continuous bag-of-words
@@ -250,15 +249,15 @@ The model is trained to maximize the dot product $\mathbf{w}^T\mathbf{c}$
 between true word-context pairs $(w,c)$ appearing in corpus and minimize the
 dot product $\mathbf{w}^T\mathbf{\hat{c}}$ between randomly
 samples contrastive examples $(w,\hat{c})$. This kind of negative-sampling or
-constrastive-sampling strategy is used in Chapters~\ref{ch:IJCNLP,ch:ConLL} to
+contrastive-sampling strategy is used in Chapters~\ref{ch:IJCNLP} and \ref{ch:ConLL} to
 match images and corresponding sentences.
 
-Finally the GloVe \cite{pennington2014glove} is another simple linear model
+Finally the GloVe approach \citep{pennington2014glove} is another simple linear model
 with word $\mathbf{W_w}  \in \mathbb{R}^{|V| \times d}$ and context
 $\mathbf{W_c} \in \mathbb{R}^{|V| \times d}$ embeddings, which
 represents a hybrid between count- and prediction-based techniques:
 it optimizes word-embeddings to predict the re-weighted
-$\log$ co-occurence counts $\log(\#(w,c))$ collected from corpora $D$:
+$\log$ co-occurrence counts $\log(\#(w,c))$ collected from corpora $D$:
 
 \begin{equation}
 \label{eq:glove}
@@ -267,7 +266,7 @@ $\log$ co-occurence counts $\log(\#(w,c))$ collected from corpora $D$:
 
 where $b_w$ and $b_c$ are context specific bias terms.
 Now let us express the Glove model in the traditional re-weighted
-co-occurence matrix factorization form.
+co-occurrence matrix factorization form.
 Let the matrix $M \in \mathbb{R}^{|V| \times |C|}$ store the log-weighted
 weighted counts and $\mathbf{b_w}$ and $\mathbf{b_c}$ be the vectors of all
 $b_w$ and $b_c$ scalars, then
@@ -278,9 +277,9 @@ M \approx \mathbf{W} \cdot \mathbf{C^T} + \mathbf{b_w} + \mathbf{b_c}
 \end{equation}
 
 In fact there has been work on finding relationships between
-count- and prediction-based methods \cite{levy2014neural} and
+count- and prediction-based methods \citep{levy2014neural} and
 using insights from both to develop novel improved
-variants \cite{levy2015improving}.
+variants \citep{levy2015improving}.
 
 %\paragraph{Transferring word representations}
 
@@ -300,39 +299,39 @@ variants \cite{levy2015improving}.
 The approaches to learn distributed representations discussed so far focus on extracting information exclusively
 from text corpora. To human language learners, however, a plethora of perceptual information is available to aid the
 learning process and to enrich the representations. The link between human word and concept representation
-and acquistion and the perceptual-motor systems has been well established through behavioral
-neuroscientific experiments \cite{pulvermuller2005brain}.
-The earliest words in children's language acquistion tend to be names of concrete perceptual phenomena
-such as objects, colors and simple actions \cite{bornstein2004cross}. Furthermore, children generalize to
-the names of novel objects based on perceptual cues such as shape \cite{landau1998object}.
+and acquisition and the perceptual-motor systems has been well established through behavioral
+neuroscientific experiments \citep{pulvermuller2005brain}.
+The earliest words in children's language acquisition tend to be names of concrete perceptual phenomena
+such as objects, colors and simple actions \citep{bornstein2004cross}. Furthermore, children generalize to
+the names of novel objects based on perceptual cues such as shape \citep{landau1998object}.
 In general, the \emph{embodiment} based theories of concept representation and acquisition in the
 cognitive scientific literature put forward the view that a wide variety of cognitive processes
-are grounded in preception and action \cite{meteyard2008role}. That said the precise role of
+are grounded in perception and action \citep{meteyard2008role}. That said the precise role of
 sensori-motor information in language acquisition and representation is a highly
-debated topic \cite{meteyard2012coming}.
+debated topic \citep{meteyard2012coming}.
 
-Various computational cognitive models of child language acquistion investigate the issue
+Various computational cognitive models of child language acquisition investigate the issue
 by learning word meanings from small scale or synthetic multi-modal data. The model presented by
 \cite{yu2005emergence} uses visual information to learn the meanings of object
-names whereasa the architecture of \cite{roy2002learning} learn to associate word sequences
+names whereas the architecture of \cite{roy2002learning} learn to associate word sequences
 with simple shapes in a synthetically generated data setting.
 
 Interestingly even the articles introducing Latent Semantic Analysis
-\cite{landauer1997solution} and Hyperspace Analogue to Language \cite{lund1996producing} mention
+\citep{landauer1997solution} and Hyperspace Analogue to Language \citep{lund1996producing} mention
 that a possible limitation of the presented distributional semantic models is the lack of
 grounding in extra-linguistic reality. \cite{landauer1997solution} puts it as "But still, to be more than
 an abstract system like mathematics words must touch reality at least occasionally."
 The lack of relationship between symbols and the external reality is usually referred
-to as the \emph{grounding problem} in the literature \cite{harnad1990symbol,perfetti1998limits}.
+to as the \emph{grounding problem} in the literature \citep{harnad1990symbol,perfetti1998limits}.
 On the defense of purely textual models \cite{louwerse2011symbol} argues that the corpora
 used to train distributional semantic models are generated by humans and as such reflect the perceptual world.
 For a counter argument consider how many pieces of text to states obvious perceptual
-facts such as "bananas are yellow" \cite{bruni2014multimodal}.
+facts such as "bananas are yellow" \citep{bruni2014multimodal}.
 In practice much work on multi-modal distributional semantics have found that text-only spaces tend to
 represent more encyclopedic knowledge, whereas mutli-modal representations capture more concrete aspects
-\cite{andrews2009integrating,baroni2008concepts}. However, one does not necessarily need to
+\citep{andrews2009integrating,baroni2008concepts}. However, one does not necessarily need to
 reach a conclusion on whether grounded or distributional models are superior, rather combining their merits in a
-pragmatic way is an attractive alternative \cite{riordan2011redundancy}. Learning representations
+pragmatic way is an attractive alternative \citep{riordan2011redundancy}. Learning representations
 from both linguistic and visual input is a step towards realistic models of language learners.
 %Note however, it is as close as assuming children learn language by sitting still and watching TV.
 
@@ -347,16 +346,16 @@ is a pair $<D, I>$ comprised of a text document $D$ and image $I$.
 The generative story starts by sampling mutli-modal topics,
 which then generate both the text document $D$ and the corresponding images $I$.
 To be able to apply topic models \cite{feng2010visual} represents images
-in a discrete space using the bag-of-visual-words approach \cite{csurka2004visual},
+in a discrete space using the bag-of-visual-words approach \citep{csurka2004visual},
 a popular computer vision method at the time.
 They apply difference-of-Gaussians point detector to segment images
-into local regions, each of which are represented by SIFT features \cite{lowe1999object}.
+into local regions, each of which are represented by SIFT features \citep{lowe1999object}.
 These features are then clustered with K-means, which leads to a
 bag-of-visual-words (BoVW) representation i.e.
 a vector of counts, where each entry is the number of regions on the image that
 corresponds to certain SIFT-cluster. Given count-based representations for both
 text documents and their paired images the standard
-Latent Dirichlet Allocation topic modeling algorithm is applied \cite{blei2003latent}.
+Latent Dirichlet Allocation topic modeling algorithm is applied \citep{blei2003latent}.
 For the algorithm each pair $<D, I>$ is represented by the concatenation
 $[\psi(D);\phi(I)]$ of textual $\psi(D)$ and visual features $\phi(I)$.
 After convergence word is represented by a vector,
@@ -367,7 +366,7 @@ visual-textual multimodal space. \cite{feng2010visual}
 shows that the multi-modal LDA model outperforms the text-only LDA representations by a
 large-margin on word association and word-similarity experiments.
 
-The perceptually grounded word representations \cite{bruni2012distributional}
+The perceptually grounded word representations of \cite{bruni2012distributional}
 also combines distributional semantic models and BoVW pipelines.
 Rather than having a collection of documents $<D, I>$ they consider a set of words for, which
 both distributional and image features are available. For visual word representations
@@ -388,16 +387,16 @@ models perform poorly on finding the typical colors of concrete nouns,
 whereas the visual and multi-modal models perform perfectly. In these experiments
 distributional semantics models fail to capture the obvious fact that ``the grass is green''
 providing evidence against the theoretical argument that perceptual information is available in
-large collections of texts and so grounded representations are superfluos \cite{louwerse2011symbol}.
+large collections of texts and so grounded representations are superfluous \citep{louwerse2011symbol}.
 Combining BoVW and count-based distributed word-representations was the standard methodology
 in many other works on multi-modal word representations at the time
-\cite{bruni2011distributional,leong2011going,leong2011measuring}.
+\citep{bruni2011distributional,leong2011going,leong2011measuring}.
 
 \cite{bruni2014multimodal} frames multi-modal distributional semantics under a general framework
 : taking as input separate textual and visual features for words followed by
 re-weighting and matrix factorization. Researchers can apply vector-space
 models to create the distributional space $W^d$ and computer vision techniques to create
-visual feature representations for the same words $W^v$. The sepaprate feature spaces
+visual feature representations for the same words $W^v$. The separate feature spaces
 are mixed together by first concatenation $W = [W^d;W^v]$ optionally followed by singular value decomposition
 to combines the visual and textual features.
 
@@ -413,16 +412,16 @@ deep CNNs trained across various data sets and tasks tend to learn filter maps
 that resemble Gabor-filters and color-blobs. Intuitively these low-level features appear to be general
 and as such afford \emph{transfer}. Around the time there was extensive work on exploring the transferability
 of CNN features to various computer vision tasks through fine-tuning
- \cite{donahue2014decaf,oquab2014learning} or simply taking the last layer representation of CNNs
-as high-level features as inputs to linear classifiers \cite{girshick2014rich,sharif2014cnn}.
+ \citep{donahue2014decaf,oquab2014learning} or simply taking the last layer representation of CNNs
+as high-level features as inputs to linear classifiers \citep{girshick2014rich,sharif2014cnn}.
 Given such successes in vision it is natural to apply CNNs in the visually grounded language learning
-community as black-box image feature extractors. Similary to \cite{bruni2014multimodal} in
+community as black-box image feature extractors. Similarly to \cite{bruni2014multimodal} in
 \cite{kiela2014learning} the visual features of words are computed as the summary the feature vectors
 extracted from all images they co-occur with $\mathbf{I} \in \mathbb{R}^{|V| \times i}$, where $i$ is
 the size of the CNN image-embedding.
 Applying the simple concatenation operation to the two spaces $[\mathbf{W};\mathbf{I}]$
 they show that CNN features outperform BoVW features on word-similarity
-experiments with the multi-modal word-representaitons.
+experiments with the multi-modal word-representations.
 
 %All approaches described so far require both visual and textual information for the same concepts.
 %The multi-modal skip-gram \cite{lazaridou2015combining} model was developed to alleviate such limiation:
@@ -438,26 +437,27 @@ Chapter~\ref{ch:TAL} presents a computational cognitive model of word learning u
 visual information developed at the same time as the multi-modal skip-gram approach.
 Similarly to \cite{feng2010visual} we assume pairs of text and images
 $<D, I>$. However, in our data set images represent every day scenes and are paired with descriptive
-sentences to mimic the langauge environment of children on a high level.
+sentences to mimic the language environment of children on a high level.
 Our model implements the extreme approach of cross-situational language
-learning and assumes that the representations of words are learned exclusively through the co-occurences
-between visual features and words. Contrary to \cite{kiela2014learning} rather than building a
-matrix of image-features per word and then summarizing, we run an online expectation-maximization based
-algorithm to align words with image features mimicing child lanuage learning.
+learning and assumes that the representations of words are learned exclusively through the co-occurrences
+between visual features and words. Rather than building a
+matrix of image-features per word and then summarizing as in \cite{kiela2014learning},
+we run an online expectation-maximization \citep{dempster1977maximum} based
+algorithm to align words with image features mimicking child language learning.
 In essence, our approach combines the cross-situational incremental word-learning model
 of \cite{fazly.etal.10csj} with the modern convolutional image representations.
 The result of the learning process is a word embedding matrix $\mathbf{W_i}$,
-where each row $\mathbf{W_i}$ corresponts to a word, each column $\mathbf{W_{,j}}$
+where each row $\mathbf{W_i}$ corresponds to a word, each column $\mathbf{W_{,j}}$
 to a CNN feature and each entry $\mathbf{W_{i,j}}$ to the strength
 of the relationship between the word $i$ and image-feature $j$.
 We show through word-similarity experiments that, while our approach performs on
-par with the SGNS trained on the same data set, there is a qualitiative difference between
+par with the SGNS trained on the same data set, there is a qualitative difference between
 the learned embeddings: our visual word-embeddings represent concrete nouns closer to human
 judgements then abstract nouns. As each word embedding $\mathbf{W_i}$ is represented in the
 image-feature space we conduct show that our model can label images with related nouns through
 simple nearest neighbor search.
 
-\subsection{From words to sentences}\todo{This section is very weak now gappy.}
+\subsection{From words to sentences}
 \label{sec:sentences}
 Applying the distributional intuition to model the meaning of sentences is not as straightforward
 as it is for words.
@@ -479,61 +479,61 @@ $f_{enc}(\mathit{John \; loves \; Mary}) \neq f_{enc}(\mathit{Mary \; loves \; J
 As such we seek to learn a sentence encoder $f_{enc}$ that is sensitive to
 syntactic structure or in other words \emph{compositionality} i.e.:
 the notion that the meaning of an expression is
-a function of its parts and the rules combining them \cite{montague1970english}.
+a function of its parts and the rules combining them \citep{montague1970english}.
 
 Earlier work developed under the framework of compositional distributional semantics produce
 continuous representations for phrases up to sentences using additive and multiplicative interactions
-of count-based distributed word-representations \cite{mitchell2008vector} or combine symbolic and
-continuous representations with tensor-products \cite{clark2007combining}.
+of count-based distributed word-representations \citep{mitchell2008vector} or combine symbolic and
+continuous representations with tensor-products \citep{clark2007combining}.
 The latter line of work culminated in a number of unified theories of
 distributional semantics and formal type logical and categorical grammars
-\cite{coecke2010mathematical,clarke2012context,baroni2014frege}.
+\citep{coecke2010mathematical,clarke2012context,baroni2014frege}.
 These approaches assume that words are represented by distributional word embeddings
 and define compositional operations on top of them motivated by particular formal
 semantic considerations. This line of work have not resulted in
 machine learning approaches to solve natural language tasks
 on real world data probably due to the different scope and
 the computationally expensive high-order
-tensor operations involved \cite{bowman2016modeling}.
+tensor operations involved \citep{bowman2016modeling}.
 
 Finally, before going forward with the more recent neural models,
 it is only fair to mention that bag-of-words
 based representations bypassing the issue of compositionality form a set of strong baselines
-for a number of sentence level tasks \cite{hill2016learning}.
+for a number of sentence level tasks \citep{hill2016learning}.
 These simple baselines include unigram tf-idf vectors, which represent sentences as
 smoothed word-count vectors or the sum/average of SGNS/GloVe word-embeddings.
 
 \paragraph{Transferable sentence representations}
 \label{sec:sentence}
 
-Section \ref{sec:words} discusses the feed-forward \cite{bengio2003neural}
-and recurrent network based models \cite{mikolov2010recurrent} from the perspective
-of learning word-representaitons. However, both architectures learn embeddings
+Section \ref{sec:words} discusses the feed-forward \citep{bengio2003neural}
+and recurrent network based models \citep{mikolov2010recurrent} from the perspective
+of learning word-representations. However, both architectures learn embeddings
 of sequences of larger sizes as such they do not only learn to represent
 words, but phrases and potentially full sentences. When learning transferable
 sentence representations there are two main considerations we will discuss:
 1.) which architecture to choose and 2.) what objective to optimize.
 
-Various neural network architectures have been proposed that 
+Various neural network architectures have been proposed that
 handle variable sized data structures: recurrent networks such as
 take the input sequentially
 b.) convolutional neural networks
-\cite{kalchbrenner2014convolutional,zhang2015character,conneau2016very,chen2013learning}
+\citep{kalchbrenner2014convolutional,zhang2015character,conneau2016very,chen2013learning}
 process fixed sized n-gram patterns up to a large window,
-c.) recursive neural networks \cite{goller1996learning.socher2011parsing,tai2015improved}
+c.) recursive neural networks \citep{goller1996learning.socher2011parsing,tai2015improved}
 take a tree data structure as input such as a sentence according to the traversal of a
-constituency tree d.) graph neural networks operate on graphs \cite{marcheggiani2017encoding} such as
+constituency tree d.) graph neural networks operate on graphs \citep{marcheggiani2017encoding} such as
 syntactic/semantic-dependency representations.
 These architectures take word-embeddings as input compute a fixed size representations of
 sentences. These representations are tuned to a specific task such as sequence tagging,
 sentence classification, machine translation or the aforementioned language modeling.
 
 
-In Chapters \ref{ch:COLI,ch:IJCNLP,ch:ConLL} we decided to apply
+In Chapters \ref{ch:COLI}, \ref{ch:IJCNLP}, \ref{ch:ConLL} we decided to apply
 recurrent neural networks as sentence encoders.
 Recursive neural networks provide a principled approach to
-compute representations along the nodes of contituency
-\cite{socher2013recursive} or dependency \cite{socher2014grounded} parse trees.
+compute representations along the nodes of constituency
+\citep{socher2013recursive} or dependency \citep{socher2014grounded} parse trees.
 In practice, however, these architectures require parse trees as input,
 which makes them impractical for our mission of learning visually grounded
 representations for multiple languages.
@@ -544,51 +544,52 @@ afford straightforward batched computation directly and tend to run dramatically
 slower than recurrent or convolutional models. In terms of performance the jury
 is still out, however, so far only modest improvements have been observed
 over recurrent models on specific tasks in specific settings
-\cite{li2015tree,tai2015improved}. For graph structures neural networks the
+\citep{li2015tree,tai2015improved}. For graph structures neural networks the
 same argument holds. Two equally practical alternatives to RNNs
 that operate on raw sequences are convolutional neural networks
-\cite{bai2018empirical} and transformers \cite{vaswani2017attention}.
+\citep{bai2018empirical} and transformers \citep{vaswani2017attention}.
 
 
 Contrary to word-embeddings the representations
 and the composition function these models learn are task specific and not \emph{universal}.
 For learning transferable and general distributed sentence representations the first notable approach is the
-skip-thought vectors model \cite{kiros2015skip}.
+skip-thought vectors model \citep{kiros2015skip}.
 This approach extends distributional intuition of the skip-gram approach to the sentence level.
 They train their a sentence encoder on contiguous sentence sequences
--- such as books -- which learnes representations predictive of the sentences around it.
+-- such as books -- which learns representations predictive of the sentences around it.
 More specifically
 they train a recurrent encoder to encode sentence $s_i$ and use two separate recurrent decoders to
 generate the pre- $s_{i-1}$ and post-contexts $s_{i+1}$.
 This method was confirmed to be a successful self-supervised method for transfer
 learning in a number of sentence
 classifications tasks beating simpler approaches such as bag-of-words approaches based on skip-gram
-or CBOW embeddings, tf-idf vectors and auto-encoders \cite{hill2016learning}. A convolutional
+or CBOW embeddings, tf-idf vectors and auto-encoders \citep{hill2016learning}. A convolutional
 variant of the encoder was introduced in \cite{gan2016unsupervised} and several other works
 train simple sum/average pre-trained word-embedding encoders using the same context prediction-style
-loss \cite{kenter2016siamese,hill2016learning}. The larger context of paragraphs are
+loss \citep{kenter2016siamese,hill2016learning}. The larger context of paragraphs are
 explored in \cite{jernite2017discourse} where the task is to predict discourse coherence
 labels in a self-supervised fashion.
 
 Later approaches have also focused on moving away from distributional clues
 and identifying supervised tasks that lead to representations that transfer
-well to a wide variety of other tasks. Natural language inference as an objetive
-was idetified to learn good sentence embeddings \cite{conneau-EtAl:2017:EMNLP2017}
-and \cite{subramanian2018learning} combinea a number of other supervised tasks
+well to a wide variety of other tasks. Natural language inference as an objective
+was identified to learn good sentence embeddings \citep{conneau-EtAl:2017:EMNLP2017}
+and \cite{subramanian2018learning} combines a number of other supervised tasks
 with self-supervised training through multi-task learning.
-The state-of-the-art in learning universal sentence representations
+
+The state-of-the-art in learning universal sentence representations \todo{This paragraph is a bit broken}
 at the time of writing the present thesis is
-represented by neural language models with an extreme number of paramteres
-trained over huge corpora. huge ELMo approach \cite{peters2018deep}. This approach goes back to
+represented by neural language models with an extreme number of parameters
+trained over huge corpora \citep{peters2018deep}. This approach goes back to
 exploiting distributional cues and trains a stack convolution and recurrent layers
 on large-scale bidirectional language modeling.
 For each task the forward and backward representations are extracted from the model
 for each word position and then fed to a task specific recurrent network.
 Such contextualized word-representations have been explored before ELMo using
-the LSTM states of machine translation encoders \cite{mccann2017learned}.
+the LSTM states of machine translation encoders \citep{mccann2017learned}.
 This approach poses a powerful alternative to universal sentence encoders.
 
-\subsection{Visually grounded sentence representations}\todo{super difficult}
+\subsection{Visually grounded sentence representations}
 \label{sec:visualsentences}
 
 When aiming to learn general sentence representations text-only tasks
@@ -602,24 +603,24 @@ predict their context. This intuition can be adopted to visual grounding i.e:
 train sentence embeddings to be predictive of their visual context. The
 structure of the data sets required for such a setup has the same form
 as the visual-textual MixLDA approach of \cite{feng2010visual} or our
-cross-situational word learning model \cite{kadar2015learning}:
+cross-situational word learning model \citep{kadar2015learning}:
 pairs of sentences $s$ and images $i$ $<s, i>$.
 
 The architecture we chose in
-Chapters \ref{ch:COLI,ch:IJCNLP,ch:ConLL} trains a recurrent neural network to
+Chapters \ref{ch:COLI}, \ref{ch:IJCNLP}, \ref{ch:ConLL} trains a recurrent neural network to
 represent variable length sentences and extract image features using pre-trained
 convolutional neural networks. In Chapter \ref{ch:COLI} our loss function
 is quite straightforward: the objective is to minimize the cosine distance
 between the learned sentence and image representations. In later chapters we
 apply a loss function similar to the negative sampling
-in the skip-gram model \cite{mikolov2013distributed}: it minimizes the cosine
+in the skip-gram model \citep{mikolov2013distributed}: it minimizes the cosine
 distance between true sentence-image pairs $<s, i>$ and maximizes the distance
-between random constrastive pairs $<\hat{s}, i>$ and $<s, \hat{i}>$.
-Representations learned by such a model has been shown \cite{kiela2017learning}
-to improve perfomance when combined with skip-thought embeddings
+between random contrastive pairs $<\hat{s}, i>$ and $<s, \hat{i}>$.
+Representations learned by such a model has been shown \citep{kiela2017learning}
+to improve performance when combined with skip-thought embeddings
 on a large number of semantic sentence classifications tasks compared to
 skip-thought only. Their findings were confirmed and improved upon using a
-self-attention mechanism \cite{yoo2017improving}.
+self-attention mechanism \citep{yoo2017improving}.
 
 \paragraph{Note on data sets}
 
@@ -636,7 +637,7 @@ many \emph{abstract} notions about images such as mood and finally the descripti
 are not \emph{specific} meaning that they do not mention the names of cities,
 people or brands of objects.
 What they do end up mentioning are entities depicted in the images
-(frizbee, dog, boy) their attributes (yellow, fluffy, young) and the
+(frisbee, dog, boy) their attributes (yellow, fluffy, young) and the
 relations between them.
 The images depict common real-life scenes such as bus turning left or people
 playing soccer in the park. As such annotation collected independently from
@@ -648,7 +649,7 @@ please consult \cite{bernardi2016automatic}}.
 \paragraph{Our contribution}
 
 
-In \cite{chrupala2015learning} we train a multi-task architecture consisting
+In \citep{chrupala2015learning} we train a multi-task architecture consisting
 of a shared word-embedding matrix and two pathways: 1.) common recurrent language
 model trained to maximize the probability of a word given the history,
 2.) grounded representation learning model predicting the image representation paired with the sentences.
@@ -656,14 +657,14 @@ This model combines the distributional hypothesis for learning the meaning of wo
 and the grounded learning on the sentence level.
 We show that the word-representations learned by the two path architecture
 predict human word-similarity judgements with higher accuracy then the one-path
-architecutres. Furthermore, the combined model is more sensitive to word-order than
+architectures. Furthermore, the combined model is more sensitive to word-order than
 the visual-only model.  Lastly we show that images act as an
 anchor and the architecture performs paraphrase retrieval well above chance
 level.
 
 Chapter~\ref{ch:COLI} is dedicated to develop techniques to interpret the
 opaque continuous representations of this model. It provides an in-depth
-comparative analyisis of the linguistic knowledge represented by the
+comparative analysis of the linguistic knowledge represented by the
 language-model and visual-pathways of this architecture.
 
 In Chapter~\ref{ch:IJCNLP} we show that in the domain of image-captions
@@ -673,7 +674,7 @@ This lead to the hypothesis that much of the observed improvements of
 multi-modal translation models over text-only baselines is due to grounded
 learning and not to the effective use of visual context. This was later confirmed
 in CITE DESMOND where only one of the considered three state-of-the-art multi-modals
-shown sensitivity to the input image. SOMEOW MENTION THE FOLLOWUP HUMAN STUDY TOO.
+shown sensitivity to the input image. 
 
 
 %\subsection{Multilingual representations of words and sentences}\todo{this will be challenging, not sure yet how to build it up.}
@@ -697,12 +698,12 @@ within similar perceptual contexts.
 On word level images as a common ground have been applied to induce bilingual
 lexicons without parallel corpora. The lack of bi-text in this setting have
 been traditionally solved by methods relying on textual features
-such as ortographic similarity \cite{haghighi2008learning} or similar diachronic distributional
-statistical trends between words \cite{schafer2002inducing}.
+such as orographic similarity \citep{haghighi2008learning} or similar diachronic distributional
+statistical trends between words \citep{schafer2002inducing}.
 However, images tagged with various labels in a multitude of languages are
 available on the internet and a model of image-similarity can be used to exploit
 images as pivots to find translations between such tags. Alternatively visual representations
-for words are computed through summarizing the image-features co-occuring with them
+for words are computed through summarizing the image-features co-occurring with them
 -- as discussed in Section~\ref{sec:visualwords}. This leads to representing
 words in multiple languages within the same image-feature space.
 
@@ -720,8 +721,8 @@ similarity is chosen.
 
 This method is vastly improved upon by a later approach applying
 pre-trained convolutional neural networks to represent words
-in the visual space \cite{kiela2015visual}. Their approach closely follows
-the monolingual visual-word represetnations of \cite{kiela2014improving}:
+in the visual space \citep{kiela2015visual}. Their approach closely follows
+the monolingual visual-word representations of \cite{kiela2014improving}:
 each word is represented as the summary of CNN representations of images they
 co-occur with. Given a word in the source word the candidate translation is found
 simply by performing nearest neighbor search on the target vocabulary.
@@ -733,8 +734,8 @@ adjectives or verbs. However, combining image-pivot based bilingual
 word-representations with more traditional multi-lingual word-embedding
 techniques lead to superior performance compared to their uni-modal
 counterparts \cite{vulic2016multi}. At the time of writing this thesis
-the first large-scale vision based bilinigual dictionary induction data set
-was put forward by \cite{hewitt2018learning}. They create a data set
+the first large-scale vision based bilingual dictionary induction data set
+was put forward by \citep{hewitt2018learning}. They create a data set
 of \~200K words and 100 images per each using Google Image Search and perform
 experiments with 32 languages.
 They confirm the finding of \cite{hartmann2017limitations} that image-pivoting
@@ -769,7 +770,7 @@ image-description generator to produce the translation.
 There results were improved later by modeling
 the image-pivot based zero-resource translation setup as a
 multi-agent communication game between encoder and decoder
-\cite{chen2018zero,lee2017emergent}.
+\citep{chen2018zero,lee2017emergent}.
 
 
 \paragraph{The multi-view perspective}
@@ -780,21 +781,21 @@ of multiple languages and perceptual stimuli can potentially exploit the complem
 between views to learn better representations. This also leads to practical applications such as
 cross-modal and cross-lingual retrieval or similarity.
 One of the angles taken by recent multi-view learning approaches to the problem
-is to maximize the correlation between the representaitons of different views.
+is to maximize the correlation between the representations of different views.
 The deep partial canonical correlation
 analysis approach learns multilingual English-German sentence embeddings conditioned on the
-representation of the images they are aligned to \cite{rotman2018bridging}.
+representation of the images they are aligned to \citep{rotman2018bridging}.
 They show that their model using the visual modality as an extra view finds
-better mulilingual sentence and word representations as demonstrated by
+better multilingual sentence and word representations as demonstrated by
 cross-lingual paraphrasing and word-similarity results.
-The bridge correlational neural network approach \cite{rajendran2015bridge}
+The bridge correlational neural network approach \citep{rajendran2015bridge}
 learns common representations even when the different views only need to be
 aligned with one pivot view. In the vision and language domain they preform
 image-sentence retrieval experiments in French or German where
 the image-caption data set is only available for English, however,
 there is parallel corpora between German or French and English. In other words English acts as a pivot.
 \cite{gella2017image} considers images as a pivot bridging English and German and train a multilingual
-image-sentence ranking model -- recurrent-convolutional architecture as in Chapters \ref{ch:COLI,ch:IJCNLP,ch:ConLL}.
+image-sentence ranking model -- recurrent-convolutional architecture as in Chapters~\ref{ch:COLI}, \ref{ch:IJCNLP} and \ref{ch:ConLL}.
 There results suggest that the multilingual models outperform the monolingual ones on image-sentence
 ranking, however, they do not show consistent gains across languages and model settings.
 
@@ -806,16 +807,16 @@ ranking performance is reliably improved by bilingual joint training.
 We expand the results further and provide evidence that more gains can be
 achieved by adding more views: on top of English and German, we
 add French and Czech captions. Revisiting the issue of alignment we find that
-the unlike in previous experiments \cite{gella2017image,calixto2017multilingual,rotman2018bridging}
+the unlike in previous experiments \citep{gella2017image,calixto2017multilingual,rotman2018bridging}
 image-pivoting leads to better visual-sentence embeddings even when the images
 are not matched between languages. Finally the performance on the lower resource
 French and Czech languages is improved when we add the larger
-English and German image-caption sets, showing successfull multilingual
+English and German image-caption sets, showing successful multilingual
 transfer in the vision-language domain.
 
 Chapter~\ref{ch:IJCNLP}, where we show that grounded learning improves the translation
 of image descriptions is also related to the multi-view learning topic: we use
-images as an addtional view that helps us learn better sentence representaitons.
+images as an additional view that helps us learn better sentence representations.
 
 
 %\subsection{Grounding and other modalities}
@@ -827,7 +828,7 @@ images as an addtional view that helps us learn better sentence representaitons.
 %Mention semantic parsing and the WebNLG paper i did with Thiago. Mention the TextWorld thing. Grzegorz
 %and Afra´s work speech, plus the fail paper that im on too.
 
-\subsection{Interpreting continuous representations}\todo{This section could be infinite, but i tried to give a consice view on the matter.}
+\subsection{Interpreting continuous representations}
 \label{sec:interpret}
 The word, phrase and sentence representations learned through neural architectures are notoriously opaque.
 Contrary to count-based methods the features extracted by deep networks from text input
@@ -847,7 +848,7 @@ This is what Chapter \ref{ch:COLI} is dedicated to.
 Developing techniques for interpreting machine learning models have multiple goals.
 From the practical point of view as learning algorithms make their way into critical applications
 such as medicine humans and machines need to be able to co-operate to avoid catastrophic
-outcomes \cite{caruana2015intelligible}. As such there is a growing interest in deriving methods
+outcomes \citep{caruana2015intelligible}. As such there is a growing interest in deriving methods
 to \emph{explain} the decision of such architectures.
 These methods assign a real-valued "relevance" score to each unit in the input signal,
 which signifies how much impact it had on the final prediction of the model.
@@ -855,53 +856,53 @@ One of the first paradigms in generating such relevance scores is gradient based
 they take the gradient of the output of the network with respect to the input \cite{simonyan2013deep}.
 Deep neural models of language tasks learn distributed representations of input symbols
 and as such further operations have to applied to reduce the resulting gradient vectors to
-single scalars e.g.: using $\ell_2$ norm \cite{bansal2016ask}.
+single scalars e.g.: using $\ell_2$ norm \citep{bansal2016ask}.
 
 Another prominent and well studied
 approach still based on gradient information is layerwise
-relevance propagation (LRP) \cite{bach2015pixel}. The output of the final layer
+relevance propagation (LRP) \citep{bach2015pixel}. The output of the final layer
 is written as the sum of the relevance-scores from the input and similarly to the back-propagation
 algorithm the relevance of each neuron
 recursively depends on the lower-layer all the way down to the input signal.
 Different versions of LRP run the backward pass with different rules taking as
 input gradient information and activation values. It was later theoretically analyzed and generalized
-into the deep taylor decomposition method \cite{binder2016layer}.
+into the deep Taylor decomposition method \citep{binder2016layer}.
 This has been shown to be equivalent to taking the
-gradients with respect to the input as in \citep{simonyan2013deep} and multiplying it elementwise
-with the input itself \cite{shrikumar2017learning}.
-LRP was also later derived for recurrent architectures \cite{arras2017explaining} to describe
+gradients with respect to the input as in \cite{simonyan2013deep} and multiplying it elementwise
+with the input itself \citep{shrikumar2017learning}.
+LRP was also later derived for recurrent architectures \citep{arras2017explaining} to describe
 sentiment classifiers. Another backpropagation based algorithm is DeepLIFT, which instead of
 using the gradients for computing the relevance scores it uses the difference between the activations
 that result from a specific value compared to a baseline input.
 
 Perturbation based methods are also gradient free: these involve generating
-pseudo-samples according to some precedure and comparing measuring how the models
+pseudo-samples according to some procedure and comparing measuring how the models
 react differently to these samples versus the real one.
-LIME \cite{ribeiro2016should} and its NLP specific extension LIMSSE
-\cite{poerner2018evaluating} perturbs the
+LIME \citep{ribeiro2016should} and its NLP specific extension LIMSSE
+\citep{poerner2018evaluating} perturbs
 the input creating a local neighborhood around it and fits interpretable linear models to explain
 the predictions of any complex black box classifier.
 Even simpler perturbation based techniques apply perturbations to the input and measure the
 difference between the original input and the various perturbed candidates such as the erasure
-\cite{li2016understanding} and our omission \cite{Kadar2016} method.
+\citep{li2016understanding} and our omission \citep{Kadar2016} method.
 
 Apart from practical considerations training a complex opaque models
 from close to raw input then can shed help discover patterns in the
 input data that are crucial in solving the task.
 Deep neural networks learn to solve tasks from close to raw input, similar to
-what humans receieve. As such
+what humans receive. As such
 uncovering the regularities they learn can also shed light into the patterns
 humans might extract from data to cope with certain tasks.
 Recent methodology in probing the learned representations of LSTM language models,
 in fact, resemble psycholinguistic studies.
 A number of experiments using the agreement prediction paradigm
-\cite{bock1991broken} suggest that LSTM language models successfully learn
+\citep{bock1991broken} suggest that LSTM language models successfully learn
 syntactic regularities as opposed to memorizing surface patterns
-\cite{linzen2016assessing,enguehard2017exploring,bernardy2017using,gulordava2018colorless}.
+\citep{linzen2016assessing,enguehard2017exploring,bernardy2017using,gulordava2018colorless}.
 
 \paragraph{Our contribution}
 The \emph{omission} method we develop in Chapter~\ref{ch:COLI} removes words
-from the input while the \emph{occlusion} \cite{li2016understanding}
+from the input while the \emph{occlusion} \citep{li2016understanding}
 method replaces these inputs with a baseline.
 However, our aim in Chapter~\ref{ch:COLI} was not to develop a method for explanation, but to
 shed light on the linguistic characteristics of the input grounded learning
