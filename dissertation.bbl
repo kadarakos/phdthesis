@@ -428,6 +428,12 @@ Denkowski, M. \& Lavie, A. (2014).
 \newblock In {\em Proceedings of the EACL 2014 Workshop on Statistical Machine
   Translation}.
 
+\bibitem[Devlin et~al., 2018]{devlin2018bert}
+Devlin, J., Chang, M.-W., Lee, K., \& Toutanova, K. (2018).
+\newblock Bert: Pre-training of deep bidirectional transformers for language
+  understanding.
+\newblock {\em arXiv preprint arXiv:1810.04805}.
+
 \bibitem[Dolan et~al., 2004]{dolan2004unsupervised}
 Dolan, B., Quirk, C., \& Brockett, C. (2004).
 \newblock Unsupervised construction of large paraphrase corpora: Exploiting

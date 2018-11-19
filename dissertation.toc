@@ -41,14 +41,14 @@
 \contentsline {subsection}{\numberline {2.3.2}Word similarity experiments}{48}{subsection.2.3.2}
 \contentsline {subsection}{\numberline {2.3.3}Effect of concreteness on similarity judgments}{49}{subsection.2.3.3}
 \contentsline {subsection}{\numberline {2.3.4}Word production}{51}{subsection.2.3.4}
-\contentsline {subsubsection}{Multi-word image descriptions.}{51}{section*.8}
-\contentsline {subsubsection}{Single-concept image descriptions}{52}{figure.caption.9}
+\contentsline {subsubsection}{Multi-word image descriptions.}{51}{section*.7}
+\contentsline {subsubsection}{Single-concept image descriptions}{52}{figure.caption.8}
 \contentsline {section}{\numberline {2.4}Results}{55}{section.2.4}
 \contentsline {subsection}{\numberline {2.4.1}Word similarity}{55}{subsection.2.4.1}
-\contentsline {subsubsection}{Concreteness}{56}{table.caption.12}
+\contentsline {subsubsection}{Concreteness}{56}{table.caption.11}
 \contentsline {subsection}{\numberline {2.4.2}Word production}{59}{subsection.2.4.2}
-\contentsline {subsubsection}{Multi-word image descriptors}{60}{section*.15}
-\contentsline {subsubsection}{Single-concept image descriptors}{61}{table.caption.16}
+\contentsline {subsubsection}{Multi-word image descriptors}{60}{section*.14}
+\contentsline {subsubsection}{Single-concept image descriptors}{61}{table.caption.15}
 \contentsline {section}{\numberline {2.5}Discussion and conclusion}{64}{section.2.5}
 \contentsline {chapter}{\numberline {3}Representation of linguistic form and function in recurrent neural networks}{67}{chapter.3}
 \contentsline {paragraph}{abstract}{67}{chapter.3}
@@ -63,8 +63,8 @@
 \contentsline {subsection}{\numberline {3.4.1}Computing Omission Scores}{79}{subsection.3.4.1}
 \contentsline {subsection}{\numberline {3.4.2}Omission score distributions}{81}{subsection.3.4.2}
 \contentsline {subsection}{\numberline {3.4.3}Beyond Lexical Cues}{85}{subsection.3.4.3}
-\contentsline {subsubsection}{Sensitivity to grammatical function}{88}{figure.caption.25}
-\contentsline {subsubsection}{Sensitivity to linear structure}{90}{figure.caption.26}
+\contentsline {subsubsection}{Sensitivity to grammatical function}{88}{figure.caption.24}
+\contentsline {subsubsection}{Sensitivity to linear structure}{90}{figure.caption.25}
 \contentsline {subsection}{\numberline {3.4.4}Lexical versus abstract contexts}{91}{subsection.3.4.4}
 \contentsline {section}{\numberline {3.5}Discussion}{96}{section.3.5}
 \contentsline {subsection}{\numberline {3.5.1}Generalizing to other architectures}{96}{subsection.3.5.1}
@@ -96,10 +96,10 @@
 \contentsline {section}{\numberline {5.1}Introduction}{124}{section.5.1}
 \contentsline {section}{\numberline {5.2}Related work}{127}{section.5.2}
 \contentsline {section}{\numberline {5.3}Multilingual grounded learning}{130}{section.5.3}
-\contentsline {paragraph}{Implementation.}{132}{figure.caption.41}
+\contentsline {paragraph}{Implementation.}{132}{figure.caption.40}
 \contentsline {section}{\numberline {5.4}Experimental setup}{133}{section.5.4}
-\contentsline {paragraph}{Datasets.}{133}{table.caption.42}
-\contentsline {paragraph}{Evaluation.}{134}{table.caption.42}
+\contentsline {paragraph}{Datasets.}{133}{table.caption.41}
+\contentsline {paragraph}{Evaluation.}{134}{table.caption.41}
 \contentsline {section}{\numberline {5.5}Bilingual Experiments}{134}{section.5.5}
 \contentsline {subsection}{\numberline {5.5.1}Reproducing \citet {gella2017image}}{134}{subsection.5.5.1}
 \contentsline {subsection}{\numberline {5.5.2}Translations vs.\ independent captions}{137}{subsection.5.5.2}
@@ -110,7 +110,7 @@
 \contentsline {subsection}{\numberline {5.6.3}Bilingual vs. multilingual}{142}{subsection.5.6.3}
 \contentsline {section}{\numberline {5.7}Conclusions}{143}{section.5.7}
 \contentsline {chapter}{\numberline {6}General discussion and conclusion}{145}{chapter.6}
-\contentsline {chapter}{Summary}{147}{section*.50}
-\contentsline {chapter}{Publication list}{148}{section*.52}
-\contentsline {chapter}{References}{150}{section*.54}
-\contentsline {chapter}{TiCC PhD Series}{179}{section*.56}
+\contentsline {chapter}{Summary}{147}{section*.49}
+\contentsline {chapter}{Publication list}{148}{section*.51}
+\contentsline {chapter}{References}{150}{section*.53}
+\contentsline {chapter}{TiCC PhD Series}{179}{section*.55}

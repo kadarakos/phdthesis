@@ -577,17 +577,17 @@ was identified to learn good sentence embeddings \citep{conneau-EtAl:2017:EMNLP2
 and \cite{subramanian2018learning} combines a number of other supervised tasks
 with self-supervised training through multi-task learning.
 
-The state-of-the-art in learning universal sentence representations \todo{This paragraph is a bit broken}
+The state-of-the-art in learning universal sentence representations %\todo{This paragraph is a bit broken}
 at the time of writing the present thesis is
 represented by neural language models with an extreme number of parameters
-trained over huge corpora \citep{peters2018deep}. This approach goes back to
-exploiting distributional cues and trains a stack convolution and recurrent layers
-on large-scale bidirectional language modeling.
-For each task the forward and backward representations are extracted from the model
+trained over huge corpora \citep{peters2018deep,devlin2018bert}.
+These approaches go back to
+exploiting only distributional cues and train a stack convolutional, recurrent layers
+and/or transfomer layers on large-scale bidirectional language modeling.
+For each task the forward and backward representations are extracted from the models
 for each word position and then fed to a task specific recurrent network.
-Such contextualized word-representations have been explored before ELMo using
+Such contextualized word-representations have been explored also using
 the LSTM states of machine translation encoders \citep{mccann2017learned}.
-This approach poses a powerful alternative to universal sentence encoders.
 
 \subsection{Visually grounded sentence representations}
 \label{sec:visualsentences}
@@ -674,7 +674,7 @@ This lead to the hypothesis that much of the observed improvements of
 multi-modal translation models over text-only baselines is due to grounded
 learning and not to the effective use of visual context. This was later confirmed
 in CITE DESMOND where only one of the considered three state-of-the-art multi-modals
-shown sensitivity to the input image. 
+shown sensitivity to the input image.
 
 
 %\subsection{Multilingual representations of words and sentences}\todo{this will be challenging, not sure yet how to build it up.}
