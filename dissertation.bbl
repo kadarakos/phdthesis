@@ -325,6 +325,11 @@ Cho, K., Van~Merri{\"e}nboer, B., Gulcehre, C., Bahdanau, D., Bougares, F.,
   statistical machine translation}.
 \newblock (pp.\ 1724--1734).
 
+\bibitem[Chrupala et~al., 2018]{chrupala2018difficulty}
+Chrupala, G., Gelderloos, L., K{\'a}d{\'a}r, {\'A}., \& Alishahi, A. (2018).
+\newblock On the difficulty of a distributional semantics of spoken language.
+\newblock {\em arXiv preprint arXiv:1803.08869}.
+
 \bibitem[Chrupa{\l}a et~al., 2015a]{chrupala2015learning}
 Chrupa{\l}a, G., K{\'a}d{\'a}r, A., \& Alishahi, A. (2015a).
 \newblock Learning language through pictures.
@@ -397,6 +402,12 @@ Conneau, A., Kiela, D., Schwenk, H., Barrault, L., \& Bordes, A. (2017).
 Conneau, A., Schwenk, H., Barrault, L., \& Lecun, Y. (2016).
 \newblock Very deep convolutional networks for natural language processing.
 \newblock {\em arXiv preprint}.
+
+\bibitem[C{\^o}t{\'e} et~al., 2018]{cote2018textworld}
+C{\^o}t{\'e}, M.-A., K{\'a}d{\'a}r, {\'A}., Yuan, X., Kybartas, B., Barnes, T.,
+  Fine, E., Moore, J., Hausknecht, M., El~Asri, L., Adada, M., et~al. (2018).
+\newblock Textworld: A learning environment for text-based games.
+\newblock {\em arXiv preprint arXiv:1806.11532}.
 
 \bibitem[Cruse \& Cruse, 1986]{cruse1986lexical}
 Cruse, D.~A. \& Cruse, D.~A. (1986).
@@ -578,6 +589,12 @@ Feng, Y. \& Lapata, M. (2010).
 \newblock In {\em Human Language Technologies: The 2010 Annual Conference of
   the North American Chapter of the Association for Computational Linguistics}
   (pp.\ 91--99).: Association for Computational Linguistics.
+
+\bibitem[Ferreira et~al., 2018]{ferreira2018neuralreg}
+Ferreira, T.~C., Moussallem, D., K{\'a}d{\'a}r, {\'A}., Wubben, S., \& Krahmer,
+  E. (2018).
+\newblock Neuralreg: An end-to-end approach to referring expression generation.
+\newblock {\em arXiv preprint arXiv:1805.08093}.
 
 \bibitem[Finkelstein et~al., 2001a]{wordsim353}
 Finkelstein, L., Gabrilovich, E., Matias, Y., Rivlin, E., Solan, Z., Wolfman,
@@ -830,6 +847,32 @@ K{\'a}d{\'a}r, A., Chrupa{\l}a, G., \& Alishahi, A. (2016).
 \newblock Representation of linguistic form and function in recurrent neural
   networks.
 \newblock {\em arXiv preprint arXiv:1602.08952}.
+
+\bibitem[K{\'a}d{\'a}r et~al., 2017]{kadar2017representation}
+K{\'a}d{\'a}r, A., Chrupa{\l}a, G., \& Alishahi, A. (2017).
+\newblock Representation of linguistic form and function in recurrent neural
+  networks.
+\newblock {\em Computational Linguistics}, 43(4), 761--780.
+
+\bibitem[K{\'a}d{\'a}r et~al., 2018a]{kadar2018revisiting}
+K{\'a}d{\'a}r, {\'A}., C{\^o}t{\'e}, M.-A., Chrupa{\l}a, G., \& Alishahi, A.
+  (2018a).
+\newblock Revisiting the hierarchical multiscale lstm.
+\newblock In {\em Proceedings of the 27th International Conference on
+  Computational Linguistics}  (pp.\ 3215--3227).
+
+\bibitem[K{\'a}d{\'a}r et~al., 2018b]{kadar2018lessons}
+K{\'a}d{\'a}r, {\'A}., Elliott, D., C{\^o}t{\.e}, M.-A., Chrupa{\l}a, G., \&
+  Alishahi, A. (2018b).
+\newblock Lessons learned in multilingual grounded language learning.
+\newblock In {\em Proceedings of the 22nd Conference on Computational Natural
+  Language Learning}  (pp.\ 402--412).
+
+\bibitem[Kahou et~al., 2017]{kahou2017figureqa}
+Kahou, S.~E., Michalski, V., Atkinson, A., Kadar, A., Trischler, A., \& Bengio,
+  Y. (2017).
+\newblock Figureqa: An annotated figure dataset for visual reasoning.
+\newblock {\em arXiv preprint arXiv:1710.07300}.
 
 \bibitem[Kalchbrenner et~al., 2014]{kalchbrenner2014convolutional}
 Kalchbrenner, N., Grefenstette, E., \& Blunsom, P. (2014).
@@ -1600,6 +1643,12 @@ Turney, P.~D., Neuman, Y., Assaf, D., \& Cohen, Y. (2011).
   abstract context.
 \newblock In {\em Proceedings of the 2011 Conference on the Empirical Methods
   in Natural Language Processing}  (pp.\ 680--690).
+
+\bibitem[van Miltenburg et~al., 2018]{van2018didec}
+van Miltenburg, E., K{\'a}dar, A., Koolen, R., \& Krahmer, E. (2018).
+\newblock Didec: The dutch image description and eye-tracking corpus.
+\newblock In {\em Proceedings of the 27th International Conference on
+  Computational Linguistics}  (pp.\ 3658--3669).
 
 \bibitem[Vaswani et~al., 2017]{vaswani2017attention}
 Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A.~N.,
