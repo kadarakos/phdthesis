@@ -3,12 +3,22 @@
 %EK: edits November 28
 \chapter{Introduction}
 
+\section{Learning}
 The ability to understand natural languages plays a central role in humans' conception of intelligent machines.
 Already Alan Turing in the 1950s in his now famous Turing Test(s) gives natural language understanding a 
 key role in tricking humans into thinking that they are interracting with their fellow specimen rather 
 than rooms full of transistors. One of the goals of Natural Language Processing (NLP) is to develop algorithms
-and build systems that help machines understand what humans are talking about; to make sense of human 
-intentions conveyed through language and of large amounts of records stored as texts. 
+and build systems that help machines understand what humans are talking about; to 
+understand the \emph{meaning} of natural language utterrances. 
+In this thesis I explore \textbf{learning the meaning of words, phrases up to sentences}
+considering the \textbf{visual world} as a naturally occuring 
+\textbf{meaning representation briding between langauages}.
+The methods presented in this thesis seek to find relationships between \textbf{images} and 
+\textbf{natural language utterrances}. The main Chapters of the thesis follow a progression 
+starting with a single language at the word-level and arriving to multilingual visually grounded
+representations.
+
+The main foundational methodology applied in all chapters is statistical learning. 
 The approach taken during the earlier days of NLP was characterized by rule-based systems building on such 
 foundations as Chomskyan theories of grammar or Montegue Semantics. 
 Since the 1980s partly due to such theories falling out of fashion, but also to the increase in the amount 
@@ -28,8 +38,10 @@ Intuitively, different applications such as machine translation or goal-oriented
 require different input representations. Furthermore, one would assume that various languages require 
 different feature-extraction pipelines reflecting the typological differences across languages. 
 
+\section{Learning representations of words}
+
 \begin{quote}
-Is there a way, however, to represent text in a universal way?
+Is there a way, however, to represent text in a more general way?
 \end{quote}
 
 To this day most attempts to build such general representations for words are based on the 
@@ -39,26 +51,28 @@ words appear in similar contexts. Section~\ref{sec:count} introduces earlier \em
 methods building word-context co-occurrence vectors-spaces. 
 Most of the work presented in this thesis, however, apply the \emph{prediction-based} framework,
 presented in greater detail in Section~\ref{sec:pred}. 
-This line of work fits in the \textbf{representation learning} framework, which consits of
-machine learning approaches that learn useful representations for various tasks from raw input.
+This line of work, as well as the approaches presented in the thesis, fit in the \textbf{representation learning} 
+framework, which consits of machine learning approaches that learn useful representations for various tasks from raw input.
 
 The expression "representation learning" is more or less synonymous with "deep learning" at the time
 of writing this thesis. When mentioning representation learning in the deep learning context
 it is usually meant that the goal is to learn a function from raw input to target labels. In the 
 context of my thesis the, however, emphasis is on learning representations of words, phrases and 
-senteces that are \emph{general}, meaning 
+senteces that are potentially \emph{generally useful}, meaning 
 that they can be used as input to in many tasks. This is sometimes referred to as 
 \emph{transfer-learning} where we seek to indentify unsupervised learning objectives, 
 supervised tasks, self-supervision schemes and their combinations that lead to representations that
 perform well on a large variety of problems. 
 
-Word-representations within the this framework are usually learned by
+Word-representations within this framework are usually learned by
 optimizing model parameters to predict contexts from words or words from contexts.
-Such learned word-representations have been proved successful in many applications especially 
+Such learned word-representations have proven successful in many applications especially 
 in recent-years, however, they are not \emph{realistic} in a certain sense. 
 
+\section{Visually grounded word representations}
+
 \begin{quote}
-Can we learn universal linguistic representations just by reading texts?
+Can we learn useful linguistic representations just by reading texts?
 \end{quote}
 
 As detailed in Section~\ref{sec:visualwords} many theories of cognition supported by empirical
@@ -66,28 +80,55 @@ evidence state that human language and concept representation and acquistion is 
 in perceptual and sensori-motor experiences. Cross-situational word learning for example is 
 a influential cognitive account to human word-learning, which supposes that humans learn the
 meanings of words exploiting repeated exposure to linguistic contexts paired with preceptual reality.
+Also consider the applicability of such language represenations in the larger scope of Artificial 
+Intelligence. One of the dreams of AI is to develop technology to power intelligent embodied agents
+taking the form of office assistants or emergency aid robots. These machines cannot implement natural
+language as a arbitrary symbol manipulation system akin to a calculator's understanding of quantities or slopes. 
+Similarly to humans they need
+to link linguistic knowledge to the extra-linguistic world. Both these cognitive and practical considerations
+drove many works, including the present thesis, to explore grounded linguistic representations.
 
 In terms of computional modeling the jump from 
 distributional to grounded models is simple to summarize: one needs to collect data where
 the \emph{contexts} of linguistic units are \emph{extra-linguistic} and represent these contexts such
 that they can be provided as input to representation learning methods.
 More concretely in terms of extra-linguistic context the present thesis focuses on \emph{visual-modality}.
-Linguistic-visual multi-modal representations of words have a well established albeit somewhat breif history 
+
+Linguistic-visual multi-modal representations on the word-level have a well established albeit somewhat breif history 
 detailed in Section~\ref{sec:distvis}. Such methods fall in both the \emph{count-based}
 and \emph{prediction-based} framework combining computer-vision techniques to represent the \emph{visual
-modality} and NLP methods to represent texts. In Chapter~\ref{ch:TAL} we present a incremental cross-situational
+modality} and NLP methods to represent texts. 
+
+As the first contribtuion of the thesis in Chapter~\ref{ch:TAL} we present an incremental cross-situational
 model of word-learning introducing modern computer-vision techniques to computational cross-situational modeling of 
 human language learning. Through our experiments we show that our presented model is competitive with state-of-the-art
-\emph{prediction-based} distributional models, however, the learned representations are more focused on
-\emph{concrete} aspects of words. 
+\emph{prediction-based} distributional models and that our model can name relevant concepts given images. 
 
-All other Chapters -- Chapters~\ref{ch:COLI}, \ref{ch:IJCNLP}, \ref{ch:ConLL} -- 
-move from word-level to learning representations of full sentences. All these Chapters apply
-the Gated Recurrent Unit architecture to represent sentences. Section~\ref{sec:sentences}
-provides the reader with a historical background and motivation behind this choice. 
+\section{Visually grounded sentence representations}
+
+When moving from \emph{atomic} words to the \emph{compositional} world of sentences we need flexible
+models that can represent word-order and hierarchical relationships. As such in Chapters~\ref{ch:COLI}, \ref{ch:IJCNLP} and \ref{ch:ConLL} 
+we use Recurrent Neural Networks as to learn to represent sentences. Section~\ref{sec:sentences} provides the reader with 
+historical and technical background to the modeling considerations behind this choice.
+The study of general sentence representation learning has a much briefer history then word-representations
+and Section~\ref{sec:trans-sentence} situates the reader in the area. Most of these approahces to date are 
+based also on the distributional hypohtesis and formulate general purpose representation learning as a sort of
+linguistic context prediction, but on the sentence level. Section~\ref{sec:visualsentences}
+describes the general framework of earning visually-grounded sentence representations and their utility. 
+The basic idea is still context-prediction, however, we association between sentences and their \emph{visual} 
+contexts. 
+In Chapter~\ref{ch:COLI} we train such and architecture and explore the representations learned by such an architecture.
+Our main contribution here is that we develop general techniques to \emph{interpret} linguistic representations learned by
+Recurrent Neural Networks. Furthermore, we use these tools to contrast text-only language models with their grounded
+counter-parts trained on the same sentences.
+
+\section{Visual grounding to bridge between languages}
 
 
-\section{Distributed linguistic representations}
+
+
+
+\section{Background: Distributed linguistic representations}
 \label{introducion}
 As opposed to the continuous nature of the visual world, linguistic units
 are inherently discrete. This is reflected in the techniques used in the
@@ -1028,32 +1069,54 @@ However, our aim in Chapter~\ref{ch:COLI} was not to develop a method for explan
 shed light on the linguistic characteristics of the input grounded learning
 models learn in contrast to text-only language models.
 
-\section{List of publications}
+\section{Published work}
 
-\subsection{Publications per Chapter}
+\subsection{Chapters}
 
-\begin{enumerate}
-	\item \bibentry{kadar2015learning}
-	\item \bibentry{kadar2017representation}
-	\item \bibentry{elliott2017imagination}
-	\item \bibentry{kadar2018lessons}
-	\item \bibentry{}
-\end{enumerate}
+Each of the following Chapters was presented before as a published long-paper. These are included with
+the only modification of re-aligning and re-sizing a few figures.
+
+\begin{description}
+	\item[Chapter~\ref{ch:TAL}] \bibentry{kadar2015learning}
+	\item[Chapter~\ref{ch:COLI}] \bibentry{kadar2017representation}
+	\item[Chapter~\ref{ch:IJCNLP}] \bibentry{elliott2017imagination}
+	\item[Chapter~\ref{ch:ConLL}] \bibentry{kadar2018lessons}
+	\item[Chapter ] 
+\end{description}
 
 \subsection{Other publications completed during my PhD}
 
-Within the Vision and Language domain:
+Worked on some of the experiments for the visually grounded sentence representation learning
+model \texttt{IMAGINET}, which formed the basis in the investigations of Chapter~\ref{ch:COLI}:
 
-\begin{enumerate}
+\begin{itemize}
 \item \bibentry{chrupala2015learning}
-\item \bibentry{kahou2017figureqa}
-\item \bibentry{van2018didec}
-\item \bibentry{chrupala2018difficulty}
-\end{enumerate}
+\end{itemize}
 
-Other than this I explored a couple of my other interests in
-related fields. I am quite interested in methodology and reproducibility
-in particular. We published a paper about attemtping reproduce a 
+Other than methods I also contributed to two corpora within the vision and language domain.
+During my internship at Microsoft Research Montreal my side-project was a synthetically generated visual-reasoning
+dataset named FigureQA:
+
+\begin{itemize}
+\item \bibentry{kahou2017figureqa}
+\end{itemize}
+
+The second corpus I worked on was with our sister group in the communications department and a collaborations with 
+Vrije Universiteit Amsterdam:  a data set of native Dutch spoken image-description with eye-tracking recordings.
+The goal of this project was to provide a large data set for the community interested in referring-expression research
+with rich annotations already existing in the Visual Genome data set:
+
+\begin{itemize}
+\item \bibentry{van2018didec}
+\end{itemize}
+
+Outside of the vision and language domain I worked in a couple of other fields.
+Within our research group, we published on learning unsupervised sentence represenations
+from speech signals:
+
+\item \bibentry{chrupala2018difficulty}
+
+Furthermore, we published a paper about attemtping reproduce a 
 recurrent architecture for language modeling:
 
 \begin{itemize}
@@ -1068,7 +1131,7 @@ generation in the context of referring-expression generation:
 \end{itemize}
 
 Finally, the largest project other than my main PhD project I worked
-on was during my internship at Microsoft Research Monteral.
+on was during my main project during my Microsoft Research Montreal internship.
 It is linear-logic programming based system for 
 generating text-based adventure games to test
 generalization in (deep) reinforcement learning:

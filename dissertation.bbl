@@ -1,5 +1,11 @@
 \begin{thebibliography}{}
 
+\bibitem[Abadi et~al., 2016]{abadi2016tensorflow}
+Abadi, M., Barham, P., Chen, J., Chen, Z., Davis, A., Dean, J., Devin, M.,
+  Ghemawat, S., Irving, G., Isard, M., et~al. (2016).
+\newblock Tensorflow: A system for large-scale machine learning.
+\newblock In {\em OSDI}, volume~16  (pp.\ 265--283).
+
 \bibitem[Adi et~al., 2017]{adi2016fine}
 Adi, Y., Kermany, E., Belinkov, Y., Lavi, O., \& Goldberg, Y. (2017).
 \newblock Fine-grained analysis of sentence embeddings using auxiliary
@@ -20,6 +26,12 @@ Agirre, E., Banea, C., Cardie, C., Cer, D., Diab, M., Gonzalez-Agirre, A., Guo,
 \newblock Semeval-2014 task 10: Multilingual semantic textual similarity.
 \newblock In {\em Proceedings of the 8th international workshop on semantic
   evaluation (SemEval 2014)}  (pp.\ 81--91).
+
+\bibitem[Alishahi et~al., 2017]{alishahi2017encoding}
+Alishahi, A., Barking, M., \& Chrupa{\l}a, G. (2017).
+\newblock Encoding of phonology in a recurrent neural model of grounded speech.
+\newblock In {\em Proceedings of the 21st Conference on Computational Natural
+  Language Learning (CoNLL 2017)}  (pp.\ 368--378).
 
 \bibitem[Alishahi \& Chrupa{\l}a, 2012]{alishahi2012concurrent}
 Alishahi, A. \& Chrupa{\l}a, G. (2012).
@@ -52,6 +64,11 @@ Arras, L., Montavon, G., M{\"u}ller, K.-R., \& Samek, W. (2017).
   analysis.
 \newblock {\em arXiv preprint arXiv:1706.07206}.
 
+\bibitem[Ba et~al., 2016]{ba2016layer}
+Ba, J.~L., Kiros, J.~R., \& Hinton, G.~E. (2016).
+\newblock Layer normalization.
+\newblock {\em arXiv preprint arXiv:1607.06450}.
+
 \bibitem[Bach et~al., 2015]{bach2015pixel}
 Bach, S., Binder, A., Montavon, G., Klauschen, F., M{\"u}ller, K.-R., \& Samek,
   W. (2015).
@@ -76,6 +93,11 @@ Bai, S., Kolter, J.~Z., \& Koltun, V. (2018).
 \newblock An empirical evaluation of generic convolutional and recurrent
   networks for sequence modeling.
 \newblock {\em arXiv preprint arXiv:1803.01271}.
+
+\bibitem[Baker, 2016]{baker20161}
+Baker, M. (2016).
+\newblock 1,500 scientists lift the lid on reproducibility.
+\newblock {\em Nature News}, 533(7604), 452.
 
 \bibitem[Bansal et~al., 2016]{bansal2016ask}
 Bansal, T., Belanger, D., \& McCallum, A. (2016).
@@ -124,10 +146,21 @@ Beekhuizen, B., Fazly, A., Nematzadeh, A., \& Stevenson, S. (2013).
 \newblock In {\em Proceedings of the 35th Annual Meeting of the Cognitive
   Science Society. Austin, TX: Cognitive Science Society}.
 
+\bibitem[Begley \& Ellis, 2012]{begley2012drug}
+Begley, C.~G. \& Ellis, L.~M. (2012).
+\newblock Drug development: Raise standards for preclinical cancer research.
+\newblock {\em Nature}, 483(7391), 531.
+
 \bibitem[Bengio et~al., 2003]{bengio2003neural}
 Bengio, Y., Ducharme, R., Vincent, P., \& Jauvin, C. (2003).
 \newblock A neural probabilistic language model.
 \newblock {\em Journal of machine learning research}, 3(Feb), 1137--1155.
+
+\bibitem[Bengio et~al., 2013]{bengio2013estimating}
+Bengio, Y., L{\'e}onard, N., \& Courville, A. (2013).
+\newblock Estimating or propagating gradients through stochastic neurons for
+  conditional computation.
+\newblock {\em arXiv preprint arXiv:1308.3432}.
 
 \bibitem[Bengio et~al., 1994]{bengio1994learning}
 Bengio, Y., Simard, P., \& Frasconi, P. (1994).
@@ -189,6 +222,12 @@ Bornstein, M.~H., Cote, L.~R., Maital, S., Painter, K., Park, S.-Y., Pascual,
 Bowman, S.~R. (2016).
 \newblock {\em Modeling natural language semantics in learned representations}.
 \newblock PhD thesis, Ph. D. thesis, Stanford University.
+
+\bibitem[Bowman et~al., 2016]{bowman2016fast}
+Bowman, S.~R., Gauthier, J., Rastogi, A., Gupta, R., Manning, C.~D., \& Potts,
+  C. (2016).
+\newblock A fast unified model for parsing and sentence understanding.
+\newblock {\em arXiv preprint arXiv:1603.06021}.
 
 \bibitem[Brown et~al., 1993]{BrownPPM94}
 Brown, P.~F., Pietra, V. J.~D., Pietra, S. A.~D., \& Mercer, R.~L. (1993).
@@ -263,6 +302,13 @@ Carey, S. (1978).
 \newblock In M. Halle, J. Bresnan, \& G.~A. Miller (Eds.), {\em Linguistic
   Theory and Psychological Reality}. The MIT Press.
 
+\bibitem[Carlson et~al., 2003]{carlson2003building}
+Carlson, L., Marcu, D., \& Okurowski, M.~E. (2003).
+\newblock Building a discourse-tagged corpus in the framework of rhetorical
+  structure theory.
+\newblock In {\em Current and new directions in discourse and dialogue}  (pp.\
+  85--112). Springer.
+
 \bibitem[Caruana, 1997]{Caruana1997}
 Caruana, R. (1997).
 \newblock Multitask learning.
@@ -325,6 +371,17 @@ Cho, K., Van~Merri{\"e}nboer, B., Gulcehre, C., Bahdanau, D., Bougares, F.,
   statistical machine translation}.
 \newblock (pp.\ 1724--1734).
 
+\bibitem[Choi et~al., 2017]{choi2017learning}
+Choi, J., Yoo, K.~M., \& goo Lee, S. (2017).
+\newblock :
+\newblock AAAI.
+
+\bibitem[Chrupa{\l}a et~al., 2017]{chrupala2017representations}
+Chrupa{\l}a, G., Gelderloos, L., \& Alishahi, A. (2017).
+\newblock Representations of language in a model of visually grounded speech
+  signal.
+\newblock {\em arXiv preprint arXiv:1702.01991}.
+
 \bibitem[Chrupala et~al., 2018]{chrupala2018difficulty}
 Chrupala, G., Gelderloos, L., K{\'a}d{\'a}r, {\'A}., \& Alishahi, A. (2018).
 \newblock On the difficulty of a distributional semantics of spoken language.
@@ -342,8 +399,13 @@ Chrupa{\l}a, G., K\'{a}d\'{a}r, A., \& Alishahi, A. (2015b).
   Computational Linguistics and the 7th International Joint Conference on
   Natural Language Processing}  (pp.\ 112--118).
 
-\bibitem[Chung et~al., 2016]{chung2016character}
-Chung, J., Cho, K., \& Bengio, Y. (2016).
+\bibitem[Chung et~al., 2016a]{chung2016hierarchical}
+Chung, J., Ahn, S., \& Bengio, Y. (2016a).
+\newblock Hierarchical multiscale recurrent neural networks.
+\newblock {\em arXiv preprint arXiv:1609.01704}.
+
+\bibitem[Chung et~al., 2016b]{chung2016character}
+Chung, J., Cho, K., \& Bengio, Y. (2016b).
 \newblock A character-level decoder without explicit segmentation for neural
   machine translation.
 \newblock {\em arXiv preprint arXiv:1603.06147}.
@@ -486,6 +548,11 @@ Dumais, S.~T. (2004).
 \newblock Latent semantic analysis.
 \newblock {\em Annual review of information science and technology}, 38(1),
   188--230.
+
+\bibitem[Dyer et~al., 2016]{dyer2016recurrent}
+Dyer, C., Kuncoro, A., Ballesteros, M., \& Smith, N.~A. (2016).
+\newblock Recurrent neural network grammars.
+\newblock {\em arXiv preprint arXiv:1602.07776}.
 
 \bibitem[Efron, 1982]{efron1982jackknife}
 Efron, B. (1982).
@@ -697,6 +764,11 @@ Girshick, R., Donahue, J., Darrell, T., \& Malik, J. (2014).
 \newblock In {\em Proceedings of the IEEE conference on computer vision and
   pattern recognition}  (pp.\ 580--587).
 
+\bibitem[Golub \& He, 2016]{golub2016character}
+Golub, D. \& He, X. (2016).
+\newblock Character-level question answering with attention.
+\newblock {\em arXiv preprint arXiv:1604.00727}.
+
 \bibitem[Graham et~al., 2017]{Graham2017}
 Graham, Y., Baldwin, T., Moffat, A., \& Zobel, J. (2017).
 \newblock Can machine translation systems be evaluated by the crowd alone.
@@ -706,6 +778,12 @@ Graham, Y., Baldwin, T., Moffat, A., \& Zobel, J. (2017).
 Gregor, K., Danihelka, I., Graves, A., \& Wierstra, D. (2015).
 \newblock Draw: A recurrent neural network for image generation.
 \newblock In {\em International Conference on Machine Learning (ICML)}.
+
+\bibitem[Gulcehre et~al., 2016]{gulcehre2016noisy}
+Gulcehre, C., Moczulski, M., Denil, M., \& Bengio, Y. (2016).
+\newblock Noisy activation functions.
+\newblock In {\em International Conference on Machine Learning}  (pp.\
+  3059--3068).
 
 \bibitem[Gulordava et~al., 2018]{gulordava2018colorless}
 Gulordava, K., Bojanowski, P., Grave, E., Linzen, T., \& Baroni, M. (2018).
@@ -794,11 +872,21 @@ Hodosh, M., Young, P., \& Hockenmaier, J. (2013).
   evaluation metrics.
 \newblock {\em Journal of Artificial Intelligence Research}, 47, 853--899.
 
+\bibitem[Horsmann \& Zesch, 2017]{horsmann2017lstms}
+Horsmann, T. \& Zesch, T. (2017).
+\newblock Do lstms really work so well for pos tagging?--a replication study.
+\newblock In {\em Proceedings of the 2017 Conference on Empirical Methods in
+  Natural Language Processing}  (pp.\ 727--736).
+
 \bibitem[Huang et~al., 2016]{Huang2016}
 Huang, P.-Y., Liu, F., Shiang, S.-R., Oh, J., \& Dyer, C. (2016).
 \newblock Attention-based multimodal neural machine translation.
 \newblock In {\em Proceedings of the First Conference on Machine Translation}
   (pp.\ 639--645).
+
+\bibitem[Hutchinson \& Kirk, 2011]{hutchinson2011high}
+Hutchinson, L. \& Kirk, R. (2011).
+\newblock High drug attrition rates—where are we going wrong?
 
 \bibitem[Jabri et~al., 2016a]{Jabri2016}
 Jabri, A., Joulin, A., \& van~der Maaten, L. (2016a).
@@ -991,6 +1079,12 @@ Krizhevsky, A., Sutskever, I., \& Hinton, G.~E. (2012).
 \newblock In {\em Advances in neural information processing systems}  (pp.\
   1097--1105).
 
+\bibitem[Kuncoro et~al., 2016]{kuncoro2016recurrent}
+Kuncoro, A., Ballesteros, M., Kong, L., Dyer, C., Neubig, G., \& Smith, N.~A.
+  (2016).
+\newblock What do recurrent neural network grammars learn about syntax?
+\newblock {\em arXiv preprint arXiv:1611.05774}.
+
 \bibitem[Landau et~al., 1998]{landau1998object}
 Landau, B., Smith, L., \& Jones, S. (1998).
 \newblock Object perception and object naming in early development.
@@ -1155,6 +1249,11 @@ Mahendran, A. \& Vedaldi, A. (2016).
   pre-images.
 \newblock {\em International Journal of Computer Vision}, 120(3), 233--255.
 
+\bibitem[Mahoney, 2011]{mahoney2011large}
+Mahoney, M. (2011).
+\newblock Large text compression benchmark.
+\newblock {\em URL: http://www. mattmahoney. net/text/text. html}.
+
 \bibitem[Malaviya et~al., 2017]{malaviya2017learning}
 Malaviya, C., Neubig, G., \& Littell, P. (2017).
 \newblock Learning language representations for typology prediction.
@@ -1176,12 +1275,23 @@ Marcheggiani, D. \& Titov, I. (2017).
   role labeling.
 \newblock {\em arXiv preprint arXiv:1703.04826}.
 
+\bibitem[Marcus et~al., 1993]{marcus1993building}
+Marcus, M.~P., Marcinkiewicz, M.~A., \& Santorini, B. (1993).
+\newblock Building a large annotated corpus of english: The penn treebank.
+\newblock {\em Computational linguistics}, 19(2), 313--330.
+
 \bibitem[Marelli et~al., 2014]{marelli2014sick}
 Marelli, M., Menini, S., Baroni, M., Bentivogli, L., Bernardi, R., Zamparelli,
   R., et~al. (2014).
 \newblock A sick cure for the evaluation of compositional distributional
   semantic models.
 \newblock In {\em LREC}  (pp.\ 216--223).
+
+\bibitem[Marrese-Taylor \& Matsuo, 2017]{marrese2017replication}
+Marrese-Taylor, E. \& Matsuo, Y. (2017).
+\newblock Replication issues in syntax-based aspect extraction for opinion
+  mining.
+\newblock {\em arXiv preprint arXiv:1701.01565}.
 
 \bibitem[Matusevych et~al., 2013]{matusevych2013automatic}
 Matusevych, Y., Alishahi, A., \& Vogt, P. (2013).
@@ -1208,6 +1318,12 @@ Meteyard, L. \& Vigliocco, G. (2008).
 \newblock {\em Handbook of cognitive science: An embodied approach}, (pp.\
   293--312).
 
+\bibitem[Mieskes, 2017]{mieskes2017quantitative}
+Mieskes, M. (2017).
+\newblock A quantitative study of data in the nlp community.
+\newblock In {\em Proceedings of the First ACL Workshop on Ethics in Natural
+  Language Processing}  (pp.\ 23--29).
+
 \bibitem[Mikolov, 2012]{mikolov2012statistical}
 Mikolov, T. (2012).
 \newblock Statistical language models based on neural networks.
@@ -1232,6 +1348,12 @@ Mikolov, T., Sutskever, I., Chen, K., Corrado, G.~S., \& Dean, J. (2013b).
 \newblock In {\em Advances in Neural Information Processing Systems}  (pp.\
   3111--3119).
 
+\bibitem[Mikolov et~al., 2012]{mikolovsubword}
+Mikolov, T., Sutskever, I., Deoras, A., Le, H.-S., Kombrink, S., \& Cernocky,
+  J. (2012).
+\newblock Subword language modeling with neural networks.
+\newblock {\em preprint (http://www. fit. vutbr. cz/imikolov/rnnlm/char. pdf)}.
+
 \bibitem[Miller \& Charles, 1991]{miller1991contextual}
 Miller, G.~A. \& Charles, W.~G. (1991).
 \newblock Contextual correlates of semantic similarity.
@@ -1252,6 +1374,13 @@ Miyazaki, T. \& Shimizu, N. (2016).
 \bibitem[Montague, 1970]{montague1970english}
 Montague, R. (1970).
 \newblock English as a formal language.
+
+\bibitem[Morey et~al., 2017]{morey2017much}
+Morey, M., Muller, P., \& Asher, N. (2017).
+\newblock How much progress have we made on rst discourse parsing? a
+  replication study of recent results on the rst-dt.
+\newblock In {\em Proceedings of the 2017 Conference on Empirical Methods in
+  Natural Language Processing}  (pp.\ 1319--1324).
 
 \bibitem[Nakayama \& Nishida, 2017a]{nakayama2017zero}
 Nakayama, H. \& Nishida, N. (2017a).
@@ -1289,6 +1418,11 @@ Nivre, J., Agi{\'c}, {\v{Z}}., Aranzabe, M.~J., Asahara, M., Atutxa, A.,
   Ballesteros, M., Bauer, J., Bengoetxea, K., Bhat, R.~A., Bosco, C., et~al.
   (2015).
 \newblock Universal dependencies 1.2.
+
+\bibitem[{Open Science Collaboration}, 2015]{open2015estimating}
+{Open Science Collaboration} (2015).
+\newblock Estimating the reproducibility of psychological science.
+\newblock {\em Science}, 349(6251), aac4716.
 
 \bibitem[Oquab et~al., 2014]{oquab2014learning}
 Oquab, M., Bottou, L., Laptev, I., \& Sivic, J. (2014).
@@ -1347,6 +1481,12 @@ Plank, B. (2016).
 \newblock Keystroke dynamics as signal for shallow syntactic parsing.
 \newblock In {\em 26th International Conference on Computational Linguistics}
   (pp.\ 609--619).
+
+\bibitem[Plank et~al., 2016]{plank2016multilingual}
+Plank, B., S{\o}gaard, A., \& Goldberg, Y. (2016).
+\newblock Multilingual part-of-speech tagging with bidirectional long
+  short-term memory models and auxiliary loss.
+\newblock {\em arXiv preprint arXiv:1604.05529}.
 
 \bibitem[Poerner et~al., 2018]{poerner2018evaluating}
 Poerner, N., Sch{\"u}tze, H., \& Roth, B. (2018).
@@ -1482,6 +1622,12 @@ Schwenk, H. \& Gauvain, J.-L. (2005).
 \newblock In {\em Proceedings of the conference on Human Language Technology
   and Empirical Methods in Natural Language Processing}  (pp.\ 201--208).:
   Association for Computational Linguistics.
+
+\bibitem[Sennrich, 2016]{sennrich2016grammatical}
+Sennrich, R. (2016).
+\newblock How grammatical is character-level neural machine translation?
+  assessing mt quality with contrastive translation pairs.
+\newblock {\em arXiv preprint arXiv:1612.04629}.
 
 \bibitem[{Sennrich} et~al., 2017]{Sennrich2017}
 {Sennrich}, R., {Firat}, O., {Cho}, K., {Birch}, A., {Haddow}, B., {Hitschler},
@@ -1657,6 +1803,12 @@ Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A.~N.,
 \newblock In {\em Advances in Neural Information Processing Systems}  (pp.\
   5998--6008).
 
+\bibitem[Venables et~al., 1993]{venables1993respiratory}
+Venables, K., Farrer, N., Sharp, L., Graneek, B., \& Taylor, A.~N. (1993).
+\newblock Respiratory symptoms questionnaire for asthma epidemiology: validity
+  and reproducibility.
+\newblock {\em Thorax}, 48(3), 214--219.
+
 \bibitem[Vendrov et~al., 2015]{vendrov2015order}
 Vendrov, I., Kiros, R., Fidler, S., \& Urtasun, R. (2015).
 \newblock Order-embeddings of images and language.
@@ -1721,6 +1873,25 @@ Waibel, A., Hanazawa, T., Hinton, G., Shikano, K., \& Lang, K.~J. (1990).
 \newblock Phoneme recognition using time-delay neural networks.
 \newblock In {\em Readings in speech recognition}  (pp.\ 393--404). Elsevier.
 
+\bibitem[Waltemath et~al., 2011]{waltemath2011reproducible}
+Waltemath, D., Adams, R., Bergmann, F.~T., Hucka, M., Kolpakov, F., Miller,
+  A.~K., Moraru, I.~I., Nickerson, D., Sahle, S., Snoep, J.~L., et~al. (2011).
+\newblock Reproducible computational biology experiments with sed-ml-the
+  simulation experiment description markup language.
+\newblock {\em BMC systems biology}, 5(1), 198.
+
+\bibitem[Willett et~al., 1985]{willett1985reproducibility}
+Willett, W.~C., Sampson, L., Stampfer, M.~J., Rosner, B., Bain, C., Witschi,
+  J., Hennekens, C.~H., \& Speizer, F.~E. (1985).
+\newblock Reproducibility and validity of a semiquantitative food frequency
+  questionnaire.
+\newblock {\em American journal of epidemiology}, 122(1), 51--65.
+
+\bibitem[Williams et~al., 2017]{williams2017learning}
+Williams, A., Drozdov, A., \& Bowman, S.~R. (2017).
+\newblock Learning to parse from a semantic objective: It works. is it syntax?
+\newblock {\em arXiv preprint arXiv:1709.01121}.
+
 \bibitem[Williams \& Zipser, 1995]{williams1995gradient}
 Williams, R.~J. \& Zipser, D. (1995).
 \newblock Gradient-based learning algorithms for recurrent networks and their
@@ -1740,6 +1911,11 @@ Xu, K., Ba, J., Kiros, R., Cho, K., Courville, A., Salakhudinov, R., Zemel, R.,
 Yang, D. \& Powers, D.~M. (2006).
 \newblock {\em Verb Similarity on the Taxonomy of WordNet}.
 \newblock Citeseer.
+
+\bibitem[Yogatama et~al., 2016]{yogatama2016learning}
+Yogatama, D., Blunsom, P., Dyer, C., Grefenstette, E., \& Ling, W. (2016).
+\newblock Learning to compose words into sentences with reinforcement learning.
+\newblock {\em arXiv preprint arXiv:1611.09100}.
 
 \bibitem[Yoo et~al., 2017]{yoo2017improving}
 Yoo, K.~M., Shin, Y., \& Lee, S.-g. (2017).

@@ -1,119 +1,157 @@
 \contentsline {chapter}{Acknowledgements}{VI}{section*.1}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
-\contentsline {section}{\numberline {1.1}Distributed linguistic representations}{4}{section.1.1}
-\contentsline {section}{\numberline {1.2}Grounded and multilingual representations}{6}{section.1.2}
-\contentsline {paragraph}{Images bridging languages}{7}{section.1.2}
-\contentsline {paragraph}{Contributions}{8}{section.1.2}
-\contentsline {section}{\numberline {1.3}Distributed word-representations}{9}{section.1.3}
-\contentsline {subsection}{\numberline {1.3.1}Count-based approaches}{9}{subsection.1.3.1}
-\contentsline {subsection}{\numberline {1.3.2}Prediction-based approaches}{10}{subsection.1.3.2}
-\contentsline {subsubsection}{Neural language models}{10}{section*.4}
-\contentsline {subsubsection}{Efficient linear models}{13}{equation.1.3.3}
-\contentsline {section}{\numberline {1.4}Visually grounded representations of words}{14}{section.1.4}
-\contentsline {subsection}{\numberline {1.4.1}Language and perception}{14}{subsection.1.4.1}
-\contentsline {subsection}{\numberline {1.4.2}Combined distributional and visual spaces}{16}{subsection.1.4.2}
-\contentsline {paragraph}{Our contribution}{19}{subsection.1.4.2}
-\contentsline {section}{\numberline {1.5}From words to sentences}{20}{section.1.5}
-\contentsline {paragraph}{Transferable sentence representations}{22}{section.1.5}
-\contentsline {section}{\numberline {1.6}Visually grounded sentence representations}{25}{section.1.6}
-\contentsline {paragraph}{Note on data sets}{26}{section.1.6}
-\contentsline {paragraph}{Our contribution}{27}{section.1.6}
-\contentsline {section}{\numberline {1.7}Visually grounded multilingual representations}{28}{section.1.7}
-\contentsline {paragraph}{Bilingual lexicon induction}{28}{section.1.7}
-\contentsline {paragraph}{Image pivots for translation}{30}{section.1.7}
-\contentsline {paragraph}{The multi-view perspective}{30}{section.1.7}
-\contentsline {paragraph}{Our contribution}{31}{section.1.7}
-\contentsline {section}{\numberline {1.8}Interpreting continuous representations}{32}{section.1.8}
-\contentsline {paragraph}{Our contribution}{35}{section.1.8}
-\contentsline {section}{\numberline {1.9}List of publications}{35}{section.1.9}
-\contentsline {subsection}{\numberline {1.9.1}Publications per Chapter}{35}{subsection.1.9.1}
-\contentsline {subsection}{\numberline {1.9.2}Other publications completed during my PhD}{36}{subsection.1.9.2}
-\contentsline {chapter}{\numberline {2}Learning word meanings from images of natural scenes}{39}{chapter.2}
-\contentsline {paragraph}{Abstract}{39}{chapter.2}
-\contentsline {paragraph}{This chapter is based on}{41}{chapter.2}
-\contentsline {section}{\numberline {2.1}Introduction}{42}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}Cross-situational learning}{42}{subsection.2.1.1}
-\contentsline {subsection}{\numberline {2.1.2}Learning meanings from images}{44}{subsection.2.1.2}
-\contentsline {subsection}{\numberline {2.1.3}Our study}{46}{subsection.2.1.3}
-\contentsline {section}{\numberline {2.2}Word learning model}{47}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Visual input}{48}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Learning algorithm}{50}{subsection.2.2.2}
-\contentsline {subsection}{\numberline {2.2.3}Baseline models}{52}{subsection.2.2.3}
-\contentsline {section}{\numberline {2.3}Experiments}{53}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Image datasets}{53}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Word similarity experiments}{54}{subsection.2.3.2}
-\contentsline {subsection}{\numberline {2.3.3}Effect of concreteness on similarity judgments}{55}{subsection.2.3.3}
-\contentsline {subsection}{\numberline {2.3.4}Word production}{57}{subsection.2.3.4}
-\contentsline {subsubsection}{Multi-word image descriptions.}{57}{section*.8}
-\contentsline {subsubsection}{Single-concept image descriptions}{58}{figure.caption.9}
-\contentsline {section}{\numberline {2.4}Results}{61}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Word similarity}{61}{subsection.2.4.1}
-\contentsline {subsubsection}{Concreteness}{62}{table.caption.12}
-\contentsline {subsection}{\numberline {2.4.2}Word production}{65}{subsection.2.4.2}
-\contentsline {subsubsection}{Multi-word image descriptors}{66}{section*.15}
-\contentsline {subsubsection}{Single-concept image descriptors}{67}{table.caption.16}
-\contentsline {section}{\numberline {2.5}Discussion and conclusion}{70}{section.2.5}
-\contentsline {chapter}{\numberline {3}Representation of linguistic form and function in recurrent neural networks}{73}{chapter.3}
-\contentsline {paragraph}{abstract}{73}{chapter.3}
-\contentsline {section}{\numberline {3.1}Introduction}{74}{section.3.1}
-\contentsline {section}{\numberline {3.2}Related work}{76}{section.3.2}
-\contentsline {section}{\numberline {3.3}Models}{80}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Gated Recurrent Neural Networks}{81}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Imaginet}{82}{subsection.3.3.2}
-\contentsline {subsection}{\numberline {3.3.3}Unimodal language model}{84}{subsection.3.3.3}
-\contentsline {subsection}{\numberline {3.3.4}Sum of word embeddings}{84}{subsection.3.3.4}
-\contentsline {section}{\numberline {3.4}Experiments}{84}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Computing Omission Scores}{85}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}Omission score distributions}{87}{subsection.3.4.2}
-\contentsline {subsection}{\numberline {3.4.3}Beyond Lexical Cues}{91}{subsection.3.4.3}
-\contentsline {subsubsection}{Sensitivity to grammatical function}{94}{figure.caption.25}
-\contentsline {subsubsection}{Sensitivity to linear structure}{96}{figure.caption.26}
-\contentsline {subsection}{\numberline {3.4.4}Lexical versus abstract contexts}{97}{subsection.3.4.4}
-\contentsline {section}{\numberline {3.5}Discussion}{102}{section.3.5}
-\contentsline {subsection}{\numberline {3.5.1}Generalizing to other architectures}{102}{subsection.3.5.1}
-\contentsline {subsection}{\numberline {3.5.2}Future directions}{103}{subsection.3.5.2}
-\contentsline {chapter}{\numberline {4}Imagination Improves Multimodal Translation}{105}{chapter.4}
-\contentsline {paragraph}{abstract}{105}{chapter.4}
-\contentsline {section}{\numberline {4.1}Introduction}{106}{section.4.1}
-\contentsline {section}{\numberline {4.2}Problem Formulation}{109}{section.4.2}
-\contentsline {section}{\numberline {4.3}Imagination Model}{110}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Shared Encoder}{110}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}Neural Machine Translation Decoder}{111}{subsection.4.3.2}
-\contentsline {subsection}{\numberline {4.3.3}Imaginet Decoder}{113}{subsection.4.3.3}
-\contentsline {section}{\numberline {4.4}Data}{114}{section.4.4}
-\contentsline {section}{\numberline {4.5}Experiments}{115}{section.4.5}
-\contentsline {subsection}{\numberline {4.5.1}Hyperparameters}{115}{subsection.4.5.1}
-\contentsline {subsection}{\numberline {4.5.2}In-domain experiments}{116}{subsection.4.5.2}
-\contentsline {subsection}{\numberline {4.5.3}External described image data}{117}{subsection.4.5.3}
-\contentsline {subsection}{\numberline {4.5.4}External parallel text data}{119}{subsection.4.5.4}
-\contentsline {subsection}{\numberline {4.5.5}Ensemble results}{120}{subsection.4.5.5}
-\contentsline {subsection}{\numberline {4.5.6}Multi30K 2017 results}{121}{subsection.4.5.6}
-\contentsline {subsection}{\numberline {4.5.7}Qualitative examples}{122}{subsection.4.5.7}
-\contentsline {section}{\numberline {4.6}Discussion}{122}{section.4.6}
-\contentsline {subsection}{\numberline {4.6.1}Does the model learn grounded representations?}{122}{subsection.4.6.1}
-\contentsline {subsection}{\numberline {4.6.2}The effect of visual feature vectors}{123}{subsection.4.6.2}
-\contentsline {section}{\numberline {4.7}Related work}{125}{section.4.7}
-\contentsline {section}{\numberline {4.8}Conclusion}{127}{section.4.8}
-\contentsline {chapter}{\numberline {5}Lessons learned in multilingual grounded language learning}{129}{chapter.5}
-\contentsline {paragraph}{abstract}{129}{chapter.5}
-\contentsline {section}{\numberline {5.1}Introduction}{130}{section.5.1}
-\contentsline {section}{\numberline {5.2}Related work}{133}{section.5.2}
-\contentsline {section}{\numberline {5.3}Multilingual grounded learning}{136}{section.5.3}
-\contentsline {paragraph}{Implementation.}{138}{figure.caption.41}
-\contentsline {section}{\numberline {5.4}Experimental setup}{139}{section.5.4}
-\contentsline {paragraph}{Datasets.}{139}{table.caption.42}
-\contentsline {paragraph}{Evaluation.}{140}{table.caption.42}
-\contentsline {section}{\numberline {5.5}Bilingual Experiments}{140}{section.5.5}
-\contentsline {subsection}{\numberline {5.5.1}Reproducing \citet {gella2017image}}{140}{subsection.5.5.1}
-\contentsline {subsection}{\numberline {5.5.2}Translations vs.\ independent captions}{143}{subsection.5.5.2}
-\contentsline {subsection}{\numberline {5.5.3}Overlapping vs.\ non-overlapping images}{144}{subsection.5.5.3}
-\contentsline {section}{\numberline {5.6}Multilingual experiments}{146}{section.5.6}
-\contentsline {subsection}{\numberline {5.6.1}Translation vs.\ independent captions}{147}{subsection.5.6.1}
-\contentsline {subsection}{\numberline {5.6.2}High-to-low resource transfer}{147}{subsection.5.6.2}
-\contentsline {subsection}{\numberline {5.6.3}Bilingual vs. multilingual}{148}{subsection.5.6.3}
-\contentsline {section}{\numberline {5.7}Conclusions}{149}{section.5.7}
-\contentsline {chapter}{\numberline {6}General discussion and conclusion}{151}{chapter.6}
-\contentsline {chapter}{Summary}{153}{section*.50}
-\contentsline {chapter}{Publication list}{154}{section*.52}
-\contentsline {chapter}{References}{156}{section*.54}
-\contentsline {chapter}{TiCC PhD Series}{186}{section*.56}
+\contentsline {section}{\numberline {1.1}Learning}{1}{section.1.1}
+\contentsline {section}{\numberline {1.2}Learning representations of words}{3}{section.1.2}
+\contentsline {section}{\numberline {1.3}Visually grounded word representations}{4}{section.1.3}
+\contentsline {section}{\numberline {1.4}Visually grounded sentence representations}{5}{section.1.4}
+\contentsline {section}{\numberline {1.5}Visual grounding to bridge between languages}{6}{section.1.5}
+\contentsline {section}{\numberline {1.6}Background: Distributed linguistic representations}{6}{section.1.6}
+\contentsline {section}{\numberline {1.7}Grounded and multilingual representations}{8}{section.1.7}
+\contentsline {paragraph}{Images bridging languages}{10}{section.1.7}
+\contentsline {paragraph}{Contributions}{10}{section.1.7}
+\contentsline {section}{\numberline {1.8}Distributed word-representations}{11}{section.1.8}
+\contentsline {subsection}{\numberline {1.8.1}Count-based approaches}{11}{subsection.1.8.1}
+\contentsline {subsection}{\numberline {1.8.2}Prediction-based approaches}{12}{subsection.1.8.2}
+\contentsline {subsubsection}{Neural language models}{12}{section*.4}
+\contentsline {subsubsection}{Efficient linear models}{15}{equation.1.8.3}
+\contentsline {section}{\numberline {1.9}Visually grounded representations of words}{16}{section.1.9}
+\contentsline {subsection}{\numberline {1.9.1}Language and perception}{16}{subsection.1.9.1}
+\contentsline {subsection}{\numberline {1.9.2}Combined distributional and visual spaces}{18}{subsection.1.9.2}
+\contentsline {paragraph}{Our contribution}{21}{subsection.1.9.2}
+\contentsline {section}{\numberline {1.10}From words to sentences}{23}{section.1.10}
+\contentsline {paragraph}{Transferable sentence representations}{24}{section.1.10}
+\contentsline {section}{\numberline {1.11}Visually grounded sentence representations}{27}{section.1.11}
+\contentsline {paragraph}{Note on data sets}{28}{section.1.11}
+\contentsline {paragraph}{Our contribution}{29}{section.1.11}
+\contentsline {section}{\numberline {1.12}Visually grounded multilingual representations}{30}{section.1.12}
+\contentsline {paragraph}{Bilingual lexicon induction}{30}{section.1.12}
+\contentsline {paragraph}{Image pivots for translation}{32}{section.1.12}
+\contentsline {paragraph}{The multi-view perspective}{33}{section.1.12}
+\contentsline {paragraph}{Our contribution}{34}{section.1.12}
+\contentsline {section}{\numberline {1.13}Interpreting continuous representations}{34}{section.1.13}
+\contentsline {paragraph}{Our contribution}{37}{section.1.13}
+\contentsline {section}{\numberline {1.14}Published work}{37}{section.1.14}
+\contentsline {subsection}{\numberline {1.14.1}Chapters}{37}{subsection.1.14.1}
+\contentsline {subsection}{\numberline {1.14.2}Other publications completed during my PhD}{38}{subsection.1.14.2}
+\contentsline {chapter}{\numberline {2}Learning word meanings from images of natural scenes}{41}{chapter.2}
+\contentsline {paragraph}{Abstract}{41}{chapter.2}
+\contentsline {paragraph}{This chapter is based on}{43}{chapter.2}
+\contentsline {section}{\numberline {2.1}Introduction}{44}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Cross-situational learning}{44}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Learning meanings from images}{46}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.3}Our study}{48}{subsection.2.1.3}
+\contentsline {section}{\numberline {2.2}Word learning model}{49}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Visual input}{50}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Learning algorithm}{52}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}Baseline models}{54}{subsection.2.2.3}
+\contentsline {section}{\numberline {2.3}Experiments}{55}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Image datasets}{55}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Word similarity experiments}{56}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Effect of concreteness on similarity judgments}{57}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.4}Word production}{59}{subsection.2.3.4}
+\contentsline {subsubsection}{Multi-word image descriptions.}{59}{section*.8}
+\contentsline {subsubsection}{Single-concept image descriptions}{60}{figure.caption.9}
+\contentsline {section}{\numberline {2.4}Results}{63}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Word similarity}{63}{subsection.2.4.1}
+\contentsline {subsubsection}{Concreteness}{64}{table.caption.12}
+\contentsline {subsection}{\numberline {2.4.2}Word production}{67}{subsection.2.4.2}
+\contentsline {subsubsection}{Multi-word image descriptors}{68}{section*.15}
+\contentsline {subsubsection}{Single-concept image descriptors}{69}{table.caption.16}
+\contentsline {section}{\numberline {2.5}Discussion and conclusion}{72}{section.2.5}
+\contentsline {chapter}{\numberline {3}Representation of linguistic form and function in recurrent neural networks}{75}{chapter.3}
+\contentsline {paragraph}{abstract}{75}{chapter.3}
+\contentsline {section}{\numberline {3.1}Introduction}{76}{section.3.1}
+\contentsline {section}{\numberline {3.2}Related work}{78}{section.3.2}
+\contentsline {section}{\numberline {3.3}Models}{82}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Gated Recurrent Neural Networks}{83}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Imaginet}{84}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Unimodal language model}{86}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.4}Sum of word embeddings}{86}{subsection.3.3.4}
+\contentsline {section}{\numberline {3.4}Experiments}{86}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Computing Omission Scores}{87}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Omission score distributions}{89}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.3}Beyond Lexical Cues}{93}{subsection.3.4.3}
+\contentsline {subsubsection}{Sensitivity to grammatical function}{96}{figure.caption.25}
+\contentsline {subsubsection}{Sensitivity to linear structure}{98}{figure.caption.26}
+\contentsline {subsection}{\numberline {3.4.4}Lexical versus abstract contexts}{99}{subsection.3.4.4}
+\contentsline {section}{\numberline {3.5}Discussion}{104}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Generalizing to other architectures}{104}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}Future directions}{105}{subsection.3.5.2}
+\contentsline {chapter}{\numberline {4}Imagination Improves Multimodal Translation}{107}{chapter.4}
+\contentsline {paragraph}{abstract}{107}{chapter.4}
+\contentsline {section}{\numberline {4.1}Introduction}{108}{section.4.1}
+\contentsline {section}{\numberline {4.2}Problem Formulation}{111}{section.4.2}
+\contentsline {section}{\numberline {4.3}Imagination Model}{112}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Shared Encoder}{112}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Neural Machine Translation Decoder}{113}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}Imaginet Decoder}{115}{subsection.4.3.3}
+\contentsline {section}{\numberline {4.4}Data}{116}{section.4.4}
+\contentsline {section}{\numberline {4.5}Experiments}{117}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}Hyperparameters}{117}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {4.5.2}In-domain experiments}{118}{subsection.4.5.2}
+\contentsline {subsection}{\numberline {4.5.3}External described image data}{119}{subsection.4.5.3}
+\contentsline {subsection}{\numberline {4.5.4}External parallel text data}{121}{subsection.4.5.4}
+\contentsline {subsection}{\numberline {4.5.5}Ensemble results}{122}{subsection.4.5.5}
+\contentsline {subsection}{\numberline {4.5.6}Multi30K 2017 results}{123}{subsection.4.5.6}
+\contentsline {subsection}{\numberline {4.5.7}Qualitative examples}{124}{subsection.4.5.7}
+\contentsline {section}{\numberline {4.6}Discussion}{124}{section.4.6}
+\contentsline {subsection}{\numberline {4.6.1}Does the model learn grounded representations?}{124}{subsection.4.6.1}
+\contentsline {subsection}{\numberline {4.6.2}The effect of visual feature vectors}{125}{subsection.4.6.2}
+\contentsline {section}{\numberline {4.7}Related work}{127}{section.4.7}
+\contentsline {section}{\numberline {4.8}Conclusion}{129}{section.4.8}
+\contentsline {chapter}{\numberline {5}Lessons learned in multilingual grounded language learning}{131}{chapter.5}
+\contentsline {paragraph}{abstract}{131}{chapter.5}
+\contentsline {section}{\numberline {5.1}Introduction}{132}{section.5.1}
+\contentsline {section}{\numberline {5.2}Related work}{135}{section.5.2}
+\contentsline {section}{\numberline {5.3}Multilingual grounded learning}{138}{section.5.3}
+\contentsline {paragraph}{Implementation.}{140}{figure.caption.41}
+\contentsline {section}{\numberline {5.4}Experimental setup}{141}{section.5.4}
+\contentsline {paragraph}{Datasets.}{141}{table.caption.42}
+\contentsline {paragraph}{Evaluation.}{142}{table.caption.42}
+\contentsline {section}{\numberline {5.5}Bilingual Experiments}{142}{section.5.5}
+\contentsline {subsection}{\numberline {5.5.1}Reproducing \citet {gella2017image}}{142}{subsection.5.5.1}
+\contentsline {subsection}{\numberline {5.5.2}Translations vs.\ independent captions}{145}{subsection.5.5.2}
+\contentsline {subsection}{\numberline {5.5.3}Overlapping vs.\ non-overlapping images}{146}{subsection.5.5.3}
+\contentsline {section}{\numberline {5.6}Multilingual experiments}{148}{section.5.6}
+\contentsline {subsection}{\numberline {5.6.1}Translation vs.\ independent captions}{149}{subsection.5.6.1}
+\contentsline {subsection}{\numberline {5.6.2}High-to-low resource transfer}{149}{subsection.5.6.2}
+\contentsline {subsection}{\numberline {5.6.3}Bilingual vs. multilingual}{150}{subsection.5.6.3}
+\contentsline {section}{\numberline {5.7}Conclusions}{151}{section.5.7}
+\contentsline {chapter}{\numberline {6}Revisiting the Hierarchical Multiscale LSTM}{153}{chapter.6}
+\contentsline {section}{\numberline {6.1}Pre-amble}{153}{section.6.1}
+\contentsline {paragraph}{Abstract}{156}{table.caption.51}
+\contentsline {section}{\numberline {6.2}Introduction}{157}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}The importance of reproducibility}{158}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}The importance of interpretability}{159}{subsection.6.2.2}
+\contentsline {section}{\numberline {6.3}Hierarchical Multiscale LSTM}{162}{section.6.3}
+\contentsline {paragraph}{HMLSTM --}{163}{AMS.57}
+\contentsline {paragraph}{Bottom Layer --}{163}{AMS.57}
+\contentsline {paragraph}{Top Layer --}{164}{equation.6.3.2}
+\contentsline {paragraph}{Middle layers --}{164}{equation.6.3.4}
+\contentsline {paragraph}{Output gate --}{165}{equation.6.3.6}
+\contentsline {section}{\numberline {6.4}Experiments}{166}{section.6.4}
+\contentsline {subsection}{\numberline {6.4.1}Experimental setup}{166}{subsection.6.4.1}
+\contentsline {paragraph}{Character-level Penn Treebank --}{168}{subsection.6.4.1}
+\contentsline {paragraph}{Text8 --}{169}{subsection.6.4.1}
+\contentsline {subsection}{\numberline {6.4.2}Ablation factors}{169}{subsection.6.4.2}
+\contentsline {section}{\numberline {6.5}Experimental Results}{172}{section.6.5}
+\contentsline {subsection}{\numberline {6.5.1}Reproducing language modeling results}{172}{subsection.6.5.1}
+\contentsline {subsection}{\numberline {6.5.2}Ablation results}{174}{subsection.6.5.2}
+\contentsline {paragraph}{Layer normalization and learning-rate schedule --}{174}{table.caption.59}
+\contentsline {paragraph}{Sensitivity to alpha --}{175}{table.caption.59}
+\contentsline {paragraph}{Architectural modification: top-down connection and simpler output --}{175}{table.caption.59}
+\contentsline {paragraph}{Alternative architecture: HMRNN --}{175}{table.caption.59}
+\contentsline {subsection}{\numberline {6.5.3}Segmentation results}{176}{subsection.6.5.3}
+\contentsline {section}{\numberline {6.6}Conclusion}{177}{section.6.6}
+\contentsline {section}{\numberline {.1}Vectorized formulation of the HMLSTM}{180}{section.Alph0.1}
+\contentsline {paragraph}{}{180}{equation.Alph0.1.12}
+\contentsline {section}{\numberline {.2}Vectorized formulation of the HMRNN}{181}{section.Alph0.2}
+\contentsline {paragraph}{Bottom layer}{181}{section.Alph0.2}
+\contentsline {paragraph}{Top layer}{181}{equation.Alph0.2.13}
+\contentsline {paragraph}{Middle layer}{181}{equation.Alph0.2.14}
+\contentsline {paragraph}{}{181}{equation.Alph0.2.15}
+\contentsline {chapter}{\numberline {A}General discussion and conclusion}{183}{appendix.A}
+\contentsline {chapter}{Summary}{185}{section*.62}
+\contentsline {chapter}{Publication list}{186}{section*.64}
+\contentsline {chapter}{References}{188}{section*.66}
+\contentsline {chapter}{TiCC PhD Series}{221}{section*.68}

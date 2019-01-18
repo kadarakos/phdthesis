@@ -1,0 +1,69 @@
+\appendix
+\section{Vectorized formulation of the HMLSTM}
+\label{sect:appendix:vectorized_HMLSTM}
+
+Here are the vectorized equations for the bottom, middle and top layers of the HMLSTM. Note, the computation process should be executed from top to bottom and left to right when there are multiple equations.
+
+\subsection*{Bottom layer}
+\begin{equation}
+   \mathbf{c}_t = (1 - z_{t-1}) \mathbf{c}_{t-1} \odot \sigma (\mathbf{f}_t) + \text{tanh}(\mathbf{u}_t) \odot \sigma (\mathbf{i}_t) 
+\end{equation}
+
+\subsection*{Top layer}
+\begin{equation}
+\begin{aligned}[c]
+\mathbf{\hat{c}}_t &:= \mathbf{c}_{t-1} \odot \sigma (\mathbf{f}_t) + \text{tanh}(\mathbf{u}_t) \odot \sigma (\mathbf{i}_t) \\
+ \mathbf{c}_t &:= z_{t} \mathbf{\hat{c}}_t + (1 - z_t)  \mathbf{c}_{t-1}  \\
+\end{aligned}
+\qquad
+\begin{aligned}[c]
+\mathbf{\hat{h}}_t &:= \sigma (\mathbf{o}_t) \odot \text{tanh}(\mathbf{c}_t) \\
+\mathbf{h}_t &:= z_{t} \mathbf{\hat{h}}_t + (1 - z_t) \odot \mathbf{h}_{t-1}
+\end{aligned}
+\end{equation}
+
+\subsection*{Middle layer}
+\begin{equation}
+\begin{aligned}[c]
+\mathrm{c}_m &= (1 - z^\ell_{t-1})   (1 - z^{\ell-1}_t) \\
+\mathrm{u}_m &= (1 - z^\ell_{t-1})   z^{\ell-1}_t \\
+\mathbf{u}_g &= \sigma(\mathbf{i_t}) \odot \mathrm{tanh}(\mathbf{u_t})
+\end{aligned}
+\qquad
+\begin{aligned}[c]
+\mathbf{c}_t &= \mathbf{u}_g + \mathrm{c}_m(\mathbf{c}_{t-1} - \mathbf{u}_g) + \mathrm{u}_m (\sigma(\mathbf{f_t}) \odot \mathbf{c}_{t-1}  ) ) \\
+ \mathbf{h}_t &:= \sigma (\mathbf{o}_t) \odot \mathrm{tanh}(\mathbf{c}_t) \\
+\mathbf{h}_t &:= \mathrm{c}_m  \mathbf{h}_t + \mathrm{c}_m \odot \mathbf{h}_{t-1}
+\end{aligned}
+\end{equation}
+\paragraph{} Variables $\mathrm{c}_m, \mathrm{u}_m$ and $\mathbf{u}_g$ stand for copy-mask, update-mask and gated-candidate activation respectively.
+
+
+\section{Vectorized formulation of the HMRNN}
+\label{sect:appendix:vectorized_HMRNN}
+
+Here are the vectorized equations for the bottom, middle and top layers of the HMRNN. Note, the computation process should be executed from top to bottom and left to right when there are multiple equations.
+
+\paragraph{Bottom layer}
+\begin{equation}
+\mathbf{h}_t = \text{tanh}(W \mathbf{x}_t + (1-z^l_{t-1}) U \mathbf{h}^{l}_{t-1} + z^l_{t-1} \times V\mathbf{h}^{l+1}_{t-1})
+\end{equation}
+
+\paragraph{Top layer}
+\begin{equation}
+\mathbf{h}_t = (1-z^{l-1}_t) \times \mathbf{h}_{t-1} + z^{l-1}_t \times  \text{tanh}(W \mathbf{x}_t +  U \mathbf{h}^{l}_{t-1})
+\end{equation}
+
+\paragraph{Middle layer}
+\begin{equation}
+\begin{aligned}[c]
+\mathrm{c}_m &= (1 - z^\ell_{t-1})  (1 - z^{\ell-1}_t) \\
+\mathrm{u}_m &= (1 - z^\ell_{t-1})   z^{\ell-1}_t \\
+\mathbf{h}_t &=  \mathrm{c}_m  \mathbf{h}_{t-1} + (1-\mathrm{c}_m)  \text{tanh}((1-\mathrm{u}_m)  \mathrm{h}_f + \mathrm{u}_m \mathrm{h}_u )) \\
+\end{aligned}
+\begin{aligned}[c]
+\mathrm{h}_f &= W \mathbf{h}^{l-1}_t + V \mathbf{h}^{l+1}_{t-1}\\
+\mathrm{h}_u &= W \mathbf{h}^{l-1}_t + U \mathbf{h}^{l}_{t-1} \\
+\end{aligned}
+\end{equation}
+\paragraph{} Variables $\mathrm{c}_m$ and $\mathrm{u}_m$ stand for copy-mask and update-mask activation respectively.
