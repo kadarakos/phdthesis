@@ -3,56 +3,48 @@
 %EK: edits November 28
 \chapter{Introduction}
 
-\section{Learning}
-The ability to understand natural languages plays a central role in humans' conception of intelligent machines.
-Already Alan Turing in the 1950s in his now famous Turing Test(s) gives natural language understanding a 
+\section{General introduction}
+
+The ability to understand natural language plays a central role in humans' conception of intelligent machines.
+Alan Turing already in the 1950s in his now famous Turing Test(s) gives natural language understanding a 
 key role in tricking humans into thinking that they are interracting with their fellow specimen rather 
 than rooms full of transistors. One of the goals of Natural Language Processing (NLP) is to develop algorithms
-and build systems that help machines understand what humans are talking about; to 
+and build systems to help machines understand what humans are talking about; to 
 understand the \emph{meaning} of natural language utterrances. 
-In this thesis I explore \textbf{learning the meaning of words, phrases up to sentences}
+In this thesis I explore computational techniques to \textbf{learn the meaning of words, phrases up to sentences}
 considering the \textbf{visual world} as a naturally occuring 
 \textbf{meaning representation briding between langauages}.
 The methods presented in this thesis seek to find relationships between \textbf{images} and 
-\textbf{natural language utterrances}. The main Chapters of the thesis follow a progression 
-starting with a single language at the word-level and arriving to multilingual visually grounded
+\textbf{natural utterrances} in various languages. The  Chapters of the thesis follow a progression 
+starting with a single language at the word-level and arriving to multilingual visually grounded sentence
 representations.
 
-The main foundational methodology applied in all chapters is statistical learning. 
+\subsection{Learning representations}
+The main foundational methodology applied in all chapters is \emph{statistical learning}. 
 The approach taken during the earlier days of NLP was characterized by rule-based systems building on such 
 foundations as Chomskyan theories of grammar or Montegue Semantics. 
 Since the 1980s partly due to such theories falling out of fashion, but also to the increase in the amount 
 of available computational power Machine Learning (ML) approahces revolutionized
-the field. 
-
-\textbf{Learning} in general proved to be a crucial component to Artifically Intelligence.
-ML algorithms are designed with the goal that given an increasing 
-number of examples the systems improves its performance according to some measure of performance.
+the field.  \textbf{Learning} in general proved to be a crucial component to Artifically Intelligence and also
+specifically to NLP. ML algorithms are designed with the goal that given an increasing 
+number of examples a system improves its performance according to some measure of success.
 Reflecting the structure of ML itself and the popularity of ML within the field, NLP research follows
 a task-oriented methodology: researchers collect data sets, define measures of success and develop or
-apply learning algorithms.
-Rather than "engineering grammars" researchers moved onto "engineering features"
+apply learning algorithms. In Chapters~\ref{ch:TAL}, \ref{ch:IJCNLP} and \ref{ch:ConLL} closely follow this blueprint.
+
+From the rules based times of "engineering grammars" lot of researchers moved onto "engineering features"
 to \textbf{represent} the textual data fed to general purpose pattern-recognition algorithms such as
-decision-trees, suport-vector machines or hidden Markov models. 
+decision-trees, suport-vector machines or hidden Markov models. A large set of these features are still based on
+various formal-linguistic theories.
 Intuitively, different applications such as machine translation or goal-oriented dialogue systems 
 require different input representations. Furthermore, one would assume that various languages require 
 different feature-extraction pipelines reflecting the typological differences across languages. 
-
-\section{Learning representations of words}
-
-\begin{quote}
-Is there a way, however, to represent text in a more general way?
-\end{quote}
-
-To this day most attempts to build such general representations for words are based on the 
-distributional hypothesis of word-meaning, which states that the degree to which words are similar 
-is a function of the similarity of the linguistic conctexts they appear in. In other words similar 
-words appear in similar contexts. Section~\ref{sec:count} introduces earlier \emph{count-based} 
-methods building word-context co-occurrence vectors-spaces. 
-Most of the work presented in this thesis, however, apply the \emph{prediction-based} framework,
-presented in greater detail in Section~\ref{sec:pred}. 
-This line of work, as well as the approaches presented in the thesis, fit in the \textbf{representation learning} 
-framework, which consits of machine learning approaches that learn useful representations for various tasks from raw input.
+The direction of \emph{linguistic representation learning} challenges this intuition and is interested in finding
+ways to \emph{learn} representations linguistic representaitons from \emph{data}, which are more-or-less
+generally applicable. This line of work, as well as the approaches presented in the thesis,
+fit in general with the \textbf{representation learning} 
+framework, which consits of machine learning approaches that learn useful representations 
+for various tasks from (close to) raw input.
 
 The expression "representation learning" is more or less synonymous with "deep learning" at the time
 of writing this thesis. When mentioning representation learning in the deep learning context
@@ -61,32 +53,51 @@ context of my thesis the, however, emphasis is on learning representations of wo
 senteces that are potentially \emph{generally useful}, meaning 
 that they can be used as input to in many tasks. This is sometimes referred to as 
 \emph{transfer-learning} where we seek to indentify unsupervised learning objectives, 
-supervised tasks, self-supervision schemes and their combinations that lead to representations that
+supervised tasks or self-supervision schemes and their combinations that lead to representations that
 perform well on a large variety of problems. 
 
-Word-representations within this framework are usually learned by
+\subsection{Learning representations of words}
+
+%\begin{quote}
+%Is there a way, however, to represent text in a more general way?
+%\end{quote}
+
+Most attempts to build  general representations for words are based on the 
+\emph{distributional hypothesis} of word-meaning, which states that the degree to which words are similar 
+is a function of the similarity of the linguistic contexts they appear in. In other words similar 
+words appear in similar contexts. To aid the readerr with techincal and historical context 
+on the topic Section~\ref{sec:count} introduces earlier \emph{count-based} methods building word-context co-occurrence vectors-spaces, 
+while  Section~\ref{sec:pred} presents the  \emph{prediction-based} framework in more detail as it closely related
+to the approaches presented in this thesis.
+
+Word-representations within the latter framework are an instance on \emph{representation learning}:
+word representations are usually learned through
 optimizing model parameters to predict contexts from words or words from contexts.
 Such learned word-representations have proven successful in many applications especially 
 in recent-years, however, they are not \emph{realistic} in a certain sense. 
+This leads us to the main topic of the thesis namely \emph{visual grounding} introduced in the
+following section.
 
-\section{Visually grounded word representations}
+\subsection{Visually grounded word representations}
 
-\begin{quote}
-Can we learn useful linguistic representations just by reading texts?
-\end{quote}
+%\begin{quote}
+%Can we learn useful linguistic representations just by reading texts?
+%\end{quote}
 
-As detailed in Section~\ref{sec:visualwords} many theories of cognition supported by empirical
+As exposed in more detail in Section~\ref{sec:visualwords} many theories of human cognition supported by empirical
 evidence state that human language and concept representation and acquistion is \emph{grounded}
-in perceptual and sensori-motor experiences. Cross-situational word learning for example is 
-a influential cognitive account to human word-learning, which supposes that humans learn the
+in perceptual and sensori-motor experiences. Cross-situational word learning, 
+an influential cognitive account to human word-learning, supposes that humans learn the
 meanings of words exploiting repeated exposure to linguistic contexts paired with preceptual reality.
-Also consider the applicability of such language represenations in the larger scope of Artificial 
+
+Furthermore, consider the applicability of distributional language represenations in the larger scope of Artificial 
 Intelligence. One of the dreams of AI is to develop technology to power intelligent embodied agents
 taking the form of office assistants or emergency aid robots. These machines cannot implement natural
-language as a arbitrary symbol manipulation system akin to a calculator's understanding of quantities or slopes. 
+language as an arbitrary symbol manipulation system akin to a calculator's understanding of quantities or slopes. 
 Similarly to humans they need
-to link linguistic knowledge to the extra-linguistic world. Both these cognitive and practical considerations
-drove many works, including the present thesis, to explore grounded linguistic representations.
+to link linguistic knowledge to the extra-linguistic world. Together the aforementioned cognitive 
+and these practical considerations drove many works, including the Chapters of the present thesis, 
+to explore grounded linguistic representations.
 
 In terms of computional modeling the jump from 
 distributional to grounded models is simple to summarize: one needs to collect data where
@@ -96,34 +107,63 @@ More concretely in terms of extra-linguistic context the present thesis focuses 
 
 Linguistic-visual multi-modal representations on the word-level have a well established albeit somewhat breif history 
 detailed in Section~\ref{sec:distvis}. Such methods fall in both the \emph{count-based}
-and \emph{prediction-based} framework combining computer-vision techniques to represent the \emph{visual
-modality} and NLP methods to represent texts. 
+and \emph{prediction-based} framework using computer-vision techniques to represent the \emph{visual
+modality} and NLP methods to represent texts. These separate spaces are then combined into a single multi-modal representation.
 
-As the first contribtuion of the thesis in Chapter~\ref{ch:TAL} we present an incremental cross-situational
+As the \textbf{first contribtuion} of the thesis in Chapter~\ref{ch:TAL} we present an incremental cross-situational
 model of word-learning introducing modern computer-vision techniques to computational cross-situational modeling of 
 human language learning. Through our experiments we show that our presented model is competitive with state-of-the-art
-\emph{prediction-based} distributional models and that our model can name relevant concepts given images. 
+\emph{prediction-based} distributional models and that our model can name relevant concepts given images.
 
-\section{Visually grounded sentence representations}
+\subsection{Visually grounded sentence representations}
 
 When moving from \emph{atomic} words to the \emph{compositional} world of sentences we need flexible
-models that can represent word-order and hierarchical relationships. As such in Chapters~\ref{ch:COLI}, \ref{ch:IJCNLP} and \ref{ch:ConLL} 
-we use Recurrent Neural Networks as to learn to represent sentences. Section~\ref{sec:sentences} provides the reader with 
+models that can represent word-order and hierarchical relationships.  In Chapters~\ref{ch:COLI}, \ref{ch:IJCNLP} and \ref{ch:ConLL} 
+we use Recurrent Neural Networks to represent sentences; a powerful class of models to represent sequences.
+Section~\ref{sec:sentences} provides the reader with 
 historical and technical background to the modeling considerations behind this choice.
+
 The study of general sentence representation learning has a much briefer history then word-representations
 and Section~\ref{sec:trans-sentence} situates the reader in the area. Most of these approahces to date are 
 based also on the distributional hypohtesis and formulate general purpose representation learning as a sort of
-linguistic context prediction, but on the sentence level. Section~\ref{sec:visualsentences}
-describes the general framework of earning visually-grounded sentence representations and their utility. 
-The basic idea is still context-prediction, however, we association between sentences and their \emph{visual} 
-contexts. 
-In Chapter~\ref{ch:COLI} we train such and architecture and explore the representations learned by such an architecture.
-Our main contribution here is that we develop general techniques to \emph{interpret} linguistic representations learned by
-Recurrent Neural Networks. Furthermore, we use these tools to contrast text-only language models with their grounded
+linguistic context prediction, but on the sentence level. 
+
+Section~\ref{sec:visualsentences}
+describes the general framework of learning visually-grounded sentence representations and their utility. 
+The basic idea is still context-prediction, however, we learn associations between sentences and their \emph{visual} 
+contexts i.e model parameters are optimized such that realted image--sentence pairs get pushed close together and 
+unrelated pairs far from each other in a learned joint space.
+
+As the \textbf{second contribution} of this thesis in Chapter~\ref{ch:COLI} 
+we train such an architecture and more importantly explore the learned representations learned by such an architecture.
+Our main interest and contribution here the development general techniques to \emph{interpret} linguistic representations learned by
+Recurrent Neural Networks and the use these tools to contrast text-only language models with their grounded
 counter-parts trained on the same sentences.
 
-\section{Visual grounding to bridge between languages}
+\subsection{Visual grounding to bridge between languages}
 
+One of the intriguing aspects of using the visual modality as a natural occuring meaning representation is that it
+is also naturally universal across languages. 
+In other words visual modality anchoring linguistic representations to perceptual reality, but also
+also provides a natural bridge betweem languages of various languages. Linguistic utterrances that are similar 
+to each other, intuitively, appear in perceptually similar scenes across languages. 
+Using this intuition on the word-level the visual modality can be used to find possible translations 
+for words when no dictionary is available. Section~\ref{sec:bilinglex} provides the reader with more
+detail on bilingual lexicon induction. Extending this idea to sentence level gives rise to techniques that
+use the visual modality as a pivot to translate full sentences. Approahces in this direction are discussed
+in Section~\ref{sec:imgpivot}. 
+
+From another point of view utterrances in multiple languages corresponding perceptual representataions 
+can be conceptualized as \emph{mutliple-views} of the same underlying \emph{ideal datapoint}.
+Learning to map these multiple views in the same feature-space can lead to better representations as
+they have to be more \emph{general} due to the model having to solve multiple tasks at the same time. 
+This \emph{multi-view learning} perspective is explained in more detail in Section~\ref{sec:multiview} 
+focusing on the specific case of multi-modal and multi-lingual representations.
+
+The \textbf{third contribution} in the thesis combines visually grounded sentence representation learning
+with machine translation. More specifically in Chapter~\ref{ch:IJCNLP} we present a \emph{multi-task} 
+learning architecture that jointly learns to associate English sentences with images and to translate from
+English to German. 
 
 
 
@@ -849,12 +889,15 @@ shown sensitivity to the input image.
 %The uber multilingual word-embedding \cite{ammar2016massively}.
 
 \section{Visually grounded multilingual representations}
+\label{sec:vismulti}
+
 On top of the visual modality anchoring linguistic representations to perceptual reality it
 also provides a universal representation to bridge languages of varying typological distance.
 The basic intuition being that words or sentences with similar meanings appear
 within similar perceptual contexts.
 
-\paragraph{Bilingual lexicon induction}
+\subsection{Bilingual lexicon induction}
+\label{sec:bilinglex}
 
 On word level images as a common ground have been applied to induce bilingual
 lexicons without parallel corpora. The lack of bi-text in this setting have
@@ -907,7 +950,9 @@ visual and textual word-representations through a re-ranking
 experiment that visual representations improve the state-of-the-art
 text-only methods in the case of \emph{concrete} concepts.
 
-\paragraph{Image pivots for translation}
+\subsection{Image pivots for translation}
+\label{sec:imgpivot}
+
 Images have also been used as a pivot to aid translation of visually
 descriptive sentences. In machine translation a pivot based approach is applied
 when there are parallel corpora available between language pairs $A\rightarrow C$
@@ -934,7 +979,8 @@ multi-agent communication game between encoder and decoder
 \citep{chen2018zero,lee2017emergent}.
 
 
-\paragraph{The multi-view perspective}
+\subsection{Multi-view perspective}
+\label{sec:multiview}
 
 Images and their descriptions in multiple languages can be taken as different views of the
 same underlying semantic concepts. From this multi-view perspective learning common representations
