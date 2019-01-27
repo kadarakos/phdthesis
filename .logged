@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2018.10.12)  23 JAN 2019 17:24
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2018.10.12)  27 JAN 2019 11:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1818,13 +1818,8 @@ File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-ppl.cfg
 File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
-) [7]
-Overfull \hbox (0.11244pt too wide) in paragraph at lines 29--34
-\EU1/lmr/m/n/12 pumped with endorphins by the wonderful sextet of Miniperson, A
-nin,
- []
-
-) [8] (./dissertation.toc
+) [7]) [8]
+(./dissertation.toc
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
@@ -1865,18 +1860,18 @@ Overfull \hbox (4.28761pt too wide) in paragraph at lines 113--117
 ional
  []
 
-[5] [6]
-Overfull \hbox (5.35225pt too wide) in paragraph at lines 171--171
+[5] [6] [7]
+Overfull \hbox (5.35225pt too wide) in paragraph at lines 175--175
 |\EU1/lmr/bx/n/14.4 Background: Distributed linguistic representations| 
  []
 
-[7] [8] [9] [10] [11] [12] [13]
+[8] [9] [10] [11] [12] [13]
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 361.
+(hyperref)                be the same. Added a new anchor on input line 365.
 
-[14] [15]
-LaTeX Font Info:    Try loading font information for EU1+lmtt on input line 438
+[14] [15] [16]
+LaTeX Font Info:    Try loading font information for EU1+lmtt on input line 442
 .
  (/usr/share/texlive/texmf-dist/tex/latex/euenc/eu1lmtt.fd
 File: eu1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1885,56 +1880,56 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `lmtt' (encoding: EU1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [16]
+
 [17] [18] [19] [20]
-Overfull \hbox (17.48634pt too wide) in paragraph at lines 570--595
+Overfull \hbox (17.48634pt too wide) in paragraph at lines 574--599
 \EU1/lmr/m/n/12 ([][]2012[][]) also combines distributional semantic models and
  BoVW pipelines.
  []
 
 [21] [22] [23] [24]
-Overfull \hbox (0.61963pt too wide) in paragraph at lines 685--699
+Overfull \hbox (0.61963pt too wide) in paragraph at lines 689--703
 \EU1/lmr/m/n/12 up to sentences using additive and multiplicative interactions 
 of count-
  []
 
 [25]
-Overfull \hbox (1.63962pt too wide) in paragraph at lines 710--717
+Overfull \hbox (1.63962pt too wide) in paragraph at lines 714--721
 [] []\EU1/lmr/bx/n/12 Transferable sentence representations[] \EU1/lmr/m/n/12 S
 ection [][]1.4[][] discusses the
  []
 
 
 Package natbib Warning: Citation `goller1996learning.socher2011parsing' on page
- 26 undefined on input line 724.
+ 26 undefined on input line 728.
 
 [26] [27] [28]
 
-LaTeX Warning: Reference `sec:sentence' on page 29 undefined on input line 801.
+LaTeX Warning: Reference `sec:sentence' on page 29 undefined on input line 805.
 
 
 [29] [30]
-Overfull \hbox (11.90448pt too wide) in paragraph at lines 871--879
+Overfull \hbox (11.90448pt too wide) in paragraph at lines 875--883
 []\EU1/lmr/m/n/12 In Chapter [][]4[][] we show that in the domain of image-capt
 ions grounded
  []
 
 [31] [32] [33] [34] [35] [36] [37] [38] [39]
-Overfull \hbox (4.09962pt too wide) in paragraph at lines 1150--1154
+Overfull \hbox (4.09962pt too wide) in paragraph at lines 1154--1158
 \EU1/lmr/m/n/12 siteit Amsterdam: a data set of native Dutch spoken image-descr
 iption
  []
 
-[40]) [41]
+[40] [41]) [42]
 \openout2 = `chapters/TAL/main.aux'.
 
- (./chapters/TAL/main.tex [42
-
-
-
-]
+ (./chapters/TAL/main.tex
 Chapter 2.
-[43] [44] [45] (./chapters/TAL/intro.tex [46] [47] [48] [49])
+[43
+
+
+
+] [44] [45] (./chapters/TAL/intro.tex [46] [47] [48] [49])
 (./chapters/TAL/models.tex [50] [51]
 *************************************************
 * fontspec warning: "addfontfeatures-ignored"
