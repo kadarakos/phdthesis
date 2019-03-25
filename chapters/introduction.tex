@@ -994,8 +994,7 @@ fixed feature extractors \citep{howard2018universal,peters2019tune}.
 \section{Visually grounded sentence representations}
 \label{sec:visualsentences}
 
-As discussed in Section~\ref{sec:trans-sentence}
-universal sentence representations are in general learned from text-only corpora. The most 
+Universal sentence representations are in general learned from text-only corpora. The most 
 successful current trend being large-scale language modeling based on
 the distributional semantics intuition of the general usefulness of linguistic context prediction.
 However, this leaves the resulting sentence representations blind to the language-external 
@@ -1007,14 +1006,30 @@ embeddings. The idea of context prediction coming from the distributional
 hypothesis can be adopted to visual grounding in a conceptualy straightforward manner:
 train sentence embeddings to be predictive of their visual context. 
 
-The structure of the data sets required for such a setup has the same form
-as the visual-textual multi-modal LDA approach of \cite{feng2010visual} or our
-cross-situational word learning model \citep{kadar2015learning}:
-pairs of sentences $s$ and images $i$ $<s, i>$.
-In particular the standardized benchmark data sets used for this purpose 
-in all chapters were originally introduced for automatic image-captioning.
-These data sets annotate images found in online resources with descriptions
-through crowd-sourcing.
+The larger family of techniques that our visually grounded sentence learning
+approach technically belongs to is \emph{learning to rank} \citep{li2011learning}. 
+Some of the earlier attempts at multi-modal ranking did not consider full sentences rather 
+images paired with (mostly) noun tags such as \citep{weston2010large}.
+%Another influential framework is the multimodal deep 
+%boltzmann machine \citep{srivastava2012multimodal}; 
+%a generartive model that can infer joint representations of images and tags or generate 
+%tags given images. 
+Framing the learning of multi-modal vision and language spaces as a ranking problem 
+from images to descriptions and conversely from descriptions to images was 
+put forward by \citep{hodosh2013framing}.  They argue that the evaluating visually grounded
+image understanding through generation is plagued by the lack of straightforward performance measures.
+This issue was later discussed by \citep{elliott2014comparing} showing low to moderate correlation
+between automatic measures such as BLUE, METEOR and ROUGE with human judgements.
+From the image--sentence ranking perspective  a joint space between 
+language and vision reflects accurately 
+the underlying semantics if given one modality as \emph{query} the other modality
+can be accurately \emph{retrieved}.  This leads to a straighforward evaluation process
+adopting metrics from information retrieval literature such as Recall@N, Precision@N, Mean Reciprocal
+Rank, Median Rank or Mean Rank. From the practical point of view it also unifies image--annotation
+and image--search.
+
+The standard benchmark data sets  we used for this purpose 
+annotate images found in online resources with descriptions through crowd-sourcing.
 These descriptions are largely \emph{conceptual}, \emph{concrete}
 and \emph{generic}.
 This means that descriptions do not focus too much on \emph{perceptual}
@@ -1030,15 +1045,24 @@ playing soccer in the park}. As such, annotation collected independently from
 different crowd-source workers end up focusing on different aspects of 
 these scenes\footnote{For a comprehensive overview on image-description data sets
 please consult \cite{bernardi2016automatic}}.
-.
 
-To learn to predict images from these captions -- and conversely caption rom the images --
+Following the ranking formulation of grounded learning by \citep{hodosh2013framing}
+the earliest works applying a combination of sentence and image encoder neural networks
+to image--sentence ranking was put forward by \cite{kiros2014unifying} and \cite{socher2014grounded}:
+they both apply pre-trained convolutional neural networks as image encoders and while 
+\cite{socher2014grounded} use recursive neural network variants to encode sentences 
+\cite{kiros2014unifying} apply recurrent networks. Rather than mathcing whole images with full
+sentences the alternative approach of learning latent alignments between image--regions and
+sentence fragments have also been explored concurrently \citep{karpathy2014deep,karpathy2015deep}.
+
+
+To predict images from the sentences -- and conversely sentences from the images --
 the architecture we chose in
 Chapters \ref{ch:COLI}, \ref{ch:IJCNLP}, \ref{ch:ConLL} and \ref{EMNLP}  combines 
 a recurrent neural network $\phi(s, \theta)$ to
 represent sentences $s$ and a pre-trained convolutional neural networks 
 followed by an affine transformation we train for the task  $\psi(i, \theta)$ 
-to extract features from images $i$ . 
+to extract features from images $i$  as in \citep{kiros2014unifying}. 
 The image-context prediction from sentences in 
 Chapter \ref{ch:COLI} is formulated  as minimizing the cosine distance
 between the learned sentence $\mathbf{s} = \phi(s, \theta)$ and image representations 
@@ -1048,11 +1072,13 @@ $\mathbf{i} = \psi(i, \theta)$ in a training set of image--caption pairs $<i,s> 
 J_{cos}(\theta) = \sum_{<i,s> \in D} 1 - \frac{\mathbf{i} \cdot \mathbf{s}}{\| \mathbf{i}\| \| \mathbf{s} \|} \\
 \end{equation}
 
-In later Chapters~\ref{ch:IJCNLP} we turn to the sum-of-hinges, while in \ref{ch:ConLL} 
-and \ref{ch:EMNLP} to the max-of-hinges ranking objectives. These loss functions 
+Later we follow the formulation of \citep{vendrov2015order,faghri2017vse++} and apply 
+the sum-of-hinges loss in Chapter~\ref{ch:IJCNLP} and max-of-hinges ranking objective
+in Chapters~\ref{ch:ConLL} and \ref{ch:EMNLP} to the . These loss functions 
 push relevant pairs $<i, s>$ close, while contrastive pairs  $<i, \hat{s}>$ and $<\hat{i}, s>$
-far from each other in a joint embeddings space. Let us overload the notation $<i, s>$ 
-let it also refer to a batch of pairs:
+far from each other in a joint embeddings space. Given a mini-batch of a 100 samples, for each sample
+the contrastive pairs are generated by taking the wrong pairings from that batch leading to 
+99 contrastive pair per sample. The ranking losses are minimized in both directitons:
 
 \begin{equation}
 J_{rank}(\theta) = \sum_{<i,s> \in D} f_{rank}(\mathbf{i}, \mathbf{s}) + f_{rank}(\mathbf{s}, \mathbf{i}) 
@@ -1062,57 +1088,58 @@ where the $f_{rank}$ is either the sum-of-hinges loss $J_{sum}$
 
 \begin{equation}
 \label{eq:sumviol}
-\begin{split}
-J_{sum}(\theta) = \sum_{<\hat{i}, s>}[\max(0, \alpha - s(\mathbf{i},\mathbf{s}) + s(\hat{\mathbf{i}}, \mathbf{s}))] \;+ \\ \sum_{<i, \hat{s}>}[\max(0, \alpha - s(\mathbf{i},\mathbf{s}) + s(\mathbf{i}, \hat{\mathbf{s}}))]
-\end{split}
+J_{sum}(\theta) = \sum_{<\hat{a},b>}[\max(0, \alpha - s(\mathbf{a},\mathbf{b}) + s(\hat{\mathbf{a}}, \mathbf{b}))] 
 \end{equation}
 
 or the max-of-hinges objective the sum-of-hinges loss $J_{max}$:
 
 \begin{equation}
 \label{eq:maxviol}
-\begin{split}
-J_{sum}(\theta) = \max_{<\hat{i}, s>}[\max(0, \alpha - s(\mathbf{i},\mathbf{s}) + s(\hat{\mathbf{i}}, \mathbf{s}))] \;+ \\ \max_{<i, \hat{s}>}[\max(0, \alpha - s(\mathbf{i},\mathbf{s}) + s(\mathbf{i}, \hat{\mathbf{s}}))]
-\end{split}
+J_{sum}(\theta) = \max_{<\hat{a}, b>}[\max(0, \alpha - s(\mathbf{a},\mathbf{b}) + s(\hat{\mathbf{a}}, \mathbf{b}))]
 \end{equation}
 
-At each batch the positive pairs come from the ground truth data whereas contrastive pairs are taken
-as all possible not true pairs in a batch. The $\alpha$ is the margin parameter for both loss functions.
+where $\alpha$ is the margin parameter for both loss functions and $s(a, b)$ is the cosine similarity
+function.
 We empirically found both ranking losses to perform better than $J_{cos}$ and $J_{max}$ to perform
 consistently better in our experiments than $J_{sum}$. The use of these various objetctives across
 chapters is somewhat arbitrary and reflect the evolving common practices in the field at the time. 
 
-Similarly in Chapter~\ref{ch:COLI} as the pre-trained CNN image-feature extractor we apply the VGG-16 
-architecture \citep{conneau2016very},  in Chapter~\ref{ch:IJCNLP} the Inception-V3 \citep{Szegedy2015},
-while in ~\ref{ch:ConLL} and ~\ref{ch:EMNLP} the ResNet-50 \citep{he2016deep}. These choices are
-again somewhat arbitrary. Chapter~\ref{ch:COLI} is based our Imaginet model \citep{chrupala2015learning}
-and VGG features were the standard choice at that time.  For Chapter~\ref{ch:IJCNLP} we empirically 
-determined Inception-V3 to give the best performance, while for Chapters~\ref{ch:ConLL} and \ref{ch:EMNLP}
-we used ResNet-50 as the features extracted from this architecture were given as part of  
-a Shared Task based on the data set we used.
+%Similarly in Chapter~\ref{ch:COLI} as the pre-trained CNN image-feature extractor we apply the VGG-16 
+%architecture \citep{conneau2016very},  in Chapter~\ref{ch:IJCNLP} the Inception-V3 \citep{Szegedy2015},
+%while in ~\ref{ch:ConLL} and ~\ref{ch:EMNLP} the ResNet-50 \citep{he2016deep}. These choices are
+%again somewhat arbitrary. Chapter~\ref{ch:COLI} is based our Imaginet model \citep{chrupala2015learning}
+%and VGG features were the standard choice at that time.  For Chapter~\ref{ch:IJCNLP} we empirically 
+%determined Inception-V3 to give the best performance, while for Chapters~\ref{ch:ConLL} and \ref{ch:EMNLP}
+%we used ResNet-50 as the features extracted from this architecture were given as part of  
+%a Shared Task based on the data set we used.
 
-Other than image--sentence context prediction we also apply the $J_{max}$ 
-objective for sentence--sentence ranking in Chapters~\ref{ch:ConLL} and \ref{ch:EMNLP}.
-The data for this objective are sentences that belong to the same image.
+%Other than image--sentence context prediction we also apply the $J_{max}$ 
+%objective for sentence--sentence ranking in Chapters~\ref{ch:ConLL} and \ref{ch:EMNLP}.
+%The data for this objective are sentences that belong to the same image.
 
 %Note the similarity between the ranking losses and the negative sampling
 %in the skip-gram model \citep{mikolov2013distributed}.
 
-The representations learned by such image--sentence and sentence--sentence ranking models have 
+The representations learned by such image--sentence  ranking models have 
 been shown \citep{kiela2017learning}
 to improve performance when combined with skip-thought embeddings
 on a large number of semantic sentence classifications tasks compared to
 skip-thought only. These findings were confirmed and improved upon using a
 self-attention mechanism on top of the RNN encoder \citep{yoo2017improving}.
-Furthermore, in Chapter~\ref{ch:IJCNLP} we show that in the visually descriptive domain 
-grounded learning improves translation quality and that learning multi-modal
-representations provides gains on top of learning from larger bilingual corpora.
-In later chapters --  Chapters~\ref{ch:ConLL} and \ref{ch:EMNLP} -- we demonstrate
+
+
+In Chapter~\ref{ch:COLI} we develop methods to 
+to investigate the difference between the representations learned by (text-only) language
+models and image--sentence ranking models.
+Next in Chapter~\ref{ch:IJCNLP} we show that incorporating
+the visually grounded learning through an image--sentence ranking objective 
+leads to better translatios in the visually descriptive domain. Furthermore, 
+we show that learning multi-modal representations provides gains on top of learning 
+from larger bilingual corpora.
+Finally in Chapters~\ref{ch:ConLL} and \ref{ch:EMNLP} we apply this 
+framework in the multi-lingual setting and demonstrate
 that better visually grounded representations can be learned when training on multiple
-languages jointly.
-
-
-
+languages jointly. 
 
 %For our multi-lingual experiments we use the Multi30K data set \cite{elliott2016multi30k,elliott2017findings}; a multilingual extension of Flickr30K. It consists of a {\it translation} and a {\it comparable} portions both containing all images from the original Flickr30K. The \emph{translation} portion annotates a single English description with a German, French and Czech caption, while the \emph{comparable} the original 5 English and additional 5 German descriptions collected independently using the same crowd-sourcing process.
 
@@ -1156,38 +1183,154 @@ languages jointly.
 On top of the visual modality anchoring linguistic representations to perceptual reality it
 also provides a universal meaning representation bridging between languages.
 The  intuition being that words or sentences with similar meanings appear
-within similar perceptual contexts independently of the language. We first discuss
-images used as pivots for translation on word-level in Section~\ref{sec:bilinglex} and on 
-sentence-level in Section~\ref{sec:imgpivot}.  
-In automatic machine translation a pivot based approach is applied
-when there are parallel corpora available between language pairs 
-and $C \rightarrow B$, but there is no data for $A\rightarrow B$. The problem is
-solved by first translating $A$ to $C$ and then $C$ to $B$. 
-Image--pivoting the refers to a setup where we assume the exitence of image--caption 
-data sets $A \leftrightarrow I_A$ and 
-$B \leftrightarrow I_B$ and translate the images are used as pivots for translation 
-going $A \rightarrow I$ then $I \rightarrow C$. In Section~\ref{sec:multiview} we discuss
-the multi-view learning perspective of considering images annotated with multiple descriptions in
-different langauges as multiple views on the underlying semantic concepts.
+within similar perceptual contexts independently of the language. 
+First in Section~\ref{sec:multiview} we discuss
+the multi-view representation learning perspective of considering images annotated 
+with multiple descriptions in different langauges as multiple views of the 
+same underlying semantic concepts.
 Our aim in Chapters~\ref{ch:ConLL} and \ref{ch:EMNLP} is to learn 
 better visually grounded sentence representations by learning from these multiple-views 
-simultanuously. 
+simultanuously. Furthermore, in Chapter~\ref{ch:IJCNLP} we show that we can improve
+translation performance by learning better sentence representations through  adding the visual
+modality as an additional view.
+Next we discuss how images can be used as pivots in practice for translation on word-level in 
+Section~\ref{sec:bilinglex} and on sentence-level in Section~\ref{sec:imgpivot}.  
+
+\subsection{Multi-view representation learning perspective}
+\label{sec:multiview}
+
+
+Images and their descriptions in multiple languages can be taken as different views of the
+same underlying semantic concepts. From this multi-view perspective learning common representations
+of multiple languages and perceptual stimuli can potentially exploit the complementary information
+between views to learn better representations. Being able to extract
+a shared representation from only a single view also leads to practical applications such as
+cross-modal and cross-lingual retrieval or similarity calculation.
+
+Multi-view learning traditionally considers paired samples $\mathbf{X}$ and $\mathbf{Y}$,
+where each pair of rows $<\mathbf{x_i} \in \mathbf{X}, \mathbf{y_i} \in \mathbf{Y}>$ 
+are two measurements of the same
+underlying phenomena. In other words we assume two sets of variables representing the 
+same data point. The two main multi-view learning paradigms put forward in recent literature are based on 
+autoencoders and canonical correlation analyisis (CCA) \citep{wang2015deep}.
+
+To illustrate the autoencoder approach let us consider \cite{ngiam2011multimodal} who introduced the idea
+of multi-modal autoencoders to learn multi-modal joint representations of audio and video. Let
+$\phi$ be an encoder neural network extracting features from both modalities and $\psi$ and $\chi$ be 
+modality specific decoders. Their model performs the following optimization:
+
+\begin{equation}
+\min_ {\theta_{\phi}, \theta_{\psi}, \theta_{\chi}} \frac{1}{N} \sum^N_i (||X_i - \psi(\phi(X_i))||^2 +||Y_i - \chi(\phi(Y_i))||^2)
+\end{equation}
+
+where $\theta_{\phi}, \theta_{\psi}, \theta_{\chi}$ are the encoder and decoder paramters and $N$
+is the size of the training set.
+This approach learns shared representations such the one view can be reconstructed from another.
+Autoencoder approaches  remain one of the standard family of models
+to study the learning of visual-linguistic multi-modal spaces \citep{silberer2014learning,silberer2017visually,wang2018associative}.
+
+For the discussion of CCA based approahces let us consider the deep canonical correlation analysis (DCCA) 
+put forward by \cite{andrew2013deep}.  In this approach view
+specific networks $\psi$ and $\phi$ are applied to extract non-linear features
+and the canonical correlation between these representations is maximized:
+
+\begin{align}
+\max_ {\theta_{\phi}, \theta_{\psi}, \mathbf{U}, \mathbf{V}} \; \; &  \frac{1}{N} \text{tr}(\mathbf{U}^T \phi(\mathbf{X}) \psi(\mathbf{Y})  \mathbf{V}^T) \\
+\text{subject to} \; \; & \mathbf{U}^T \left(\frac{1}{N} \phi(\mathbf{X}) \phi(\mathbf{X})^T + r_x \mathbf{I} \right) = \mathbf{I} \\
+& \mathbf{V}^T \left(\frac{1}{N} \psi(\mathbf{Y}) \psi(\mathbf{Y})^T + r_y \mathbf{I} \right) = \mathbf{I} \\
+& \mathbf{u}_i^T  \phi(\mathbf{X}) \psi(\mathbf{Y})  \mathbf{v}_j = 0, \; \; \forall_{i,j} \;  i \neq j
+\end{align}
+
+Here $\theta_{\phi}, \theta_{\psi}$ are neural network parameters, $r_x, r_y$
+are regularization paramteres \citep{de2003regularization} and $\mathbf{U}, \mathbf{V}$
+are projection matrices or \emph{directions} of the CCA. This optimization process amounts to maximizing
+the correlation between the projections of the two data views subject to the contraint that 
+the projected dimensions are uncorrelated. 
+
+The \emph{workhorse} of the image--sentence ranking experiments of  \citep{hodosh2013framing}
+was in fact the Kernel CCA method\citep{akaho2006kernel}. Other CCA 
+based approaches were also applied to the image--sentence data sets we consider in our work \citep{ ,gong2014improving,Klein2015AssociatingNW,eisenschtat2017linking}.
+
+A third direction that is also explored is combining the reconstruction objective of autoencoders 
+with an additional correlation loss, but without the whitening constraints of CCA 
+ \citep{ap2014autoencoder,chandar2016correlational}.
+ 
+
+ In the multi-lingual multi-modal setting \cite{funaki2015image} applies Generalized CCA \citep{horst1961generalized} -- a variant of CCA 
+generalized to multiple views as opposed to two -- to 
+learn correlated representations of images and multiple languages. 
+The deep partial canonical correlation analysis approach 
+ -- a deep learning extension of the partial canonical correlation  \citep{rao1969partial} --
+learns multilingual English-German sentence embeddings conditioned on the
+representation of the images they are aligned to \citep{rotman2018bridging}.
+They show that their model using the visual modality as an extra view finds
+better multilingual sentence and word representations as demonstrated by
+cross-lingual paraphrasing and word-similarity results.
+
+The bridge correlational neural network approach \citep{rajendran2015bridge}
+combines autoencoders and correlation objectives to 
+learn common representations in a setting when the different views only need to be
+aligned with one pivot view. They preform
+image-sentence retrieval experiments in French or German where
+the image-caption data set is only available for English, however,
+there is parallel corpora between German or French and English. In other words English acts as a pivot.
+A similar combination of autencoder and correlational training was applied to \emph{bridge}
+image--captioning \citep{saha2016correlational}.
+
+Our formulation of the problem does not fall in the set of approaches generally 
+considered as multi-view learning.  However, it is similar to the CCA based techniques in that we
+train two sub-networks -- one for the linguistic $\psi$ and another for the image modality $\phi$ --
+and do not rely on decoder networks to compute a reconstruction  loss as in the autoencoder approaches.
+Furthermore in Chapter~\ref{ch:COLI} we minimize the cosine distance between the learned representations
+which is related to the CCA objective: when the matrices $\mathbf{X}$ and  $\mathbf{Y}$ are not centered
+the CCA objective corresponds to maximizing the cosine similarity instead of the correlation.
+
+One of the main benefits of the learning to rank approach we opted for is
+its flexibility: 1.) in Chapter~\ref{ch:COLI} we train an image--sentence ranking model in a single 
+language, 2.) we apply the same building blocks to train on multiple languages where 
+the same images are shared between languages in Chapter~\ref{ch:ConLL}, 3.) in 
+Chapter~\ref{ch:EMNLP} we explore the setup without such an alignment and finally 4.) 
+in Chapter~\ref{ch:IJCNLP} we improve the automatic translation  performance 
+by adding the image--sentence ranking objective, incorporating an additional view 
+to help us learn better sentence representations. In our setup additional views are simply 
+added by multi-task learning: given multiple image--caption data sets at each iteration we sample 
+a batch from one of them and perform an update using the ranking loss function.
+\citep{gella2017image} applies the image--sentence ranking framework in the multilingual setup
+considering images as a pivot bridging English and German and train a multilingual
+image--sentence ranking model.
+Their results suggest that the multilingual models outperform the monolingual ones on image-sentence
+ranking, however, they do not show consistent gains across languages and model settings.
+In Chapter \ref{ch:ConLL} we implement a similar setup to \cite{gella2017image}
+and  show that both English and German image-sentence
+ranking performance is reliably improved by bilingual joint training using our setup.
+We expand on the results further and provide evidence that more gains can be
+achieved by adding more views: on top of English and German, we
+add French and Czech captions and show the the monolingual model is outperformed by the bilingual
+and the latter by the multilingual. 
+%Revisiting the issue of alignment we find that
+t%he unlike in previous experiments \citep{gella2017image,calixto2017multilingual,rotman2018bridging}
+%image-pivoting leads to better visual-sentence embeddings even when the images
+%are not matched between languages. 
+We apply the same approach to improve the performance on the lower resource
+French and Czech languages is by adding the larger
+English and German image-caption sets, showing successful multilingual
+transfer in the vision-language domain.
 
 
 \subsection{Bilingual lexicon induction}
 \label{sec:bilinglex}
 
-On word level images as a common ground have been applied to induce bilingual
+On word level images have been used to link languages and induce bilingual
 lexicons without parallel corpora. The lack of bi-text in this setting have
 been traditionally solved by methods relying on textual features
 such as orographic similarity \citep{haghighi2008learning} or similar diachronic distributional
 statistical trends between words \citep{schafer2002inducing}.
 However, images tagged with various labels in a multitude of languages are
 available on the internet and a model of image-similarity can be used to exploit
-images as pivots to find translations between such tags. Alternatively visual representations
-for words are computed through summarizing the image-features co-occurring with them
--- as discussed in Section~\ref{sec:visualwords}. This leads to representing
-words in multiple languages within the same image-feature space.
+images as pivots to find translations between such tags. Alternatively representing words in multiple
+languages in a joint space with images 
+-- as discussed in Section~\ref{sec:visualwords} for the monolingual case --
+allows word translation to be simply performed through nearest neighbour search.
 
 The first approach to construct a dictionary based on image similarity was
 developed by \cite{bergsma2011learning}. They use Google image search to find
@@ -1225,7 +1368,7 @@ experiments with 32 languages.
 They confirm the finding of \cite{hartmann2017limitations} that image-pivoting
 is most effective for nouns, however, find that using their larger data set
 adjectives can also be translated reliably. Similarly to \cite{vulic2016multi}
-they also show through combining
+they also show that combining
 visual and textual word-representations through a re-ranking
 experiment that visual representations improve the state-of-the-art
 text-only methods in the case of \emph{concrete} concepts.
@@ -1233,8 +1376,14 @@ text-only methods in the case of \emph{concrete} concepts.
 \subsection{Image pivots for translation}
 \label{sec:imgpivot}
 
-Images have also been used as a pivot to aid translation of visually
-descriptive sentences.
+In automatic machine translation a pivot based approach is applied
+when there are parallel corpora available between language pairs $A\rightarrow C$.
+and $C \rightarrow B$, but there is no data for $A\rightarrow B$. The problem is
+solved by first translating $A$ to $C$ and then $C$ to $B$. 
+Image--pivoting the refers to a setup where we assume the exitence of a data set
+of images paired with words or sentences in different langauges $A \leftrightarrow I_A$ and 
+$B \leftrightarrow I_B$ and translation is done through the image space 
+going  through $A \rightarrow I$ to $I \rightarrow C$. 
 %A common technique in statistical machine translation
 %is to apply a heuristic re-ranking algorithm
 %to a sampled list of candidate translations from a translation model given the source sentence.
@@ -1256,101 +1405,9 @@ multi-agent communication game between encoder and decoder
 \citep{chen2018zero,lee2017emergent}.
 
 
-\subsection{Multi-view perspective}
-\label{sec:multiview}
 
 
-Images and their descriptions in multiple languages can be taken as different views of the
-same underlying semantic concepts. From this multi-view perspective learning common representations
-of multiple languages and perceptual stimuli can potentially exploit the complementary information
-between views to learn better representations. Being able to extract
-a shared representation from only a single view leads to practical applications such as
-cross-modal and cross-lingual retrieval or similarity calculation.
 
-Multi-view learning traditionally considers paired samples $\mathbf{X}$ and $\mathbf{Y}$,
-where each pair of rows $<\mathbf{X_i}, \mathbf{Y_i}>$ are two measurements of the same
-underlying phenomena. The two main approaches put forward in recent literature are based on 
-autoencoders, canonical correlation analyisis \citep{wang2015deep}.
-
-To illustrate the autoencoder approach let us consider \cite{ngiam2011multimodal} who introduce the idea
-of multi-modal autoencoders to learn multi-modal joint representations of audio and video. Let
-$\phi$ be an encoder neural network extracting features from both modalities and $\psi$ and $\chi$ be 
-modality specific decoder. Their model performs the following optimization:
-
-\begin{equation}
-\min_ {\theta_{\phi}, \theta_{\psi}, \theta_{\chi}} \frac{1}{N} \sum^N_i (||X_i - \psi(\phi(X_i))||^2 +||Y_i - \chi(\phi(Y_i))||^2)
-\end{equation}
-
-where $\theta_{\phi}, \theta_{\psi}, \theta_{\chi}$ are the encoder and decoder paramters and $N$
-is the size of the training set.
-This approach learns shared representations such the one view can be reconstructed from another.
-
-In the deep canonical correlation analysis (DCCA) based approaches \cite{andrew2013deep} a modality or view
-specific networks $\psi$ and $\phi$ are applied to extract non-linear features 
-and the canonical correlation between (CCA) these representations is maximized:
-
-\begin{align}
-\max_ {\theta_{\phi}, \theta_{\psi}, \mathbf{U}, \mathbf{V}} \; \; &  \frac{1}{N} \text{tr}(\mathbf{U}^T \phi(\mathbf{X}) \psi(\mathbf{Y})  \mathbf{V}^T) \\
-\text{subject to} \; \; & \mathbf{U}^T \left(\frac{1}{N} \phi(\mathbf{X}) \phi(\mathbf{X})^T + r_x \mathbf{I} \right) = \mathbf{I} \\
-& \mathbf{V}^T \left(\frac{1}{N} \psi(\mathbf{Y}) \psi(\mathbf{Y})^T + r_x \mathbf{I} \right) = \mathbf{I} \\
-& \mathbf{u}_i^T  \phi(\mathbf{X}) \psi(\mathbf{Y})  \mathbf{v}_j = 0, \; \; \forall_{i,j} \;  i \neq j
-\end{align}
-
-Where $\theta_{\phi}, \theta_{\psi}$ are neural network parameters and $\mathbf{U}, \mathbf{V}$
-are projection matrices or \emph{directions} of the CCA. This optimization process amounts to maximizing
-the correlation between the projections of the  two data views subject to the contraint that 
-the projected dimensions are uncorrelated.
-
-A third direction that is also explored is combining the reconstruction objective of autoencoders 
-with an additional correlation loss, but without the whitening constraints of CCA 
- \cite{ap2014autoencoder,rajendran2015bridge,chandar2016correlational}.
-
-
-The deep partial canonical correlation
-analysis approach learns multilingual English-German sentence embeddings conditioned on the
-representation of the images they are aligned to \citep{rotman2018bridging}.
-They show that their model using the visual modality as an extra view finds
-better multilingual sentence and word representations as demonstrated by
-cross-lingual paraphrasing and word-similarity results.
-The bridge correlational neural network approach \citep{rajendran2015bridge}
-learns common representations even when the different views only need to be
-aligned with one pivot view. In the vision and language domain they preform
-image-sentence retrieval experiments in French or German where
-the image-caption data set is only available for English, however,
-there is parallel corpora between German or French and English. In other words English acts as a pivot.
-\cite{gella2017image} considers images as a pivot bridging English and German and train a multilingual
-image-sentence ranking model -- recurrent-convolutional architecture as in Chapters~\ref{ch:COLI}, \ref{ch:IJCNLP} and \ref{ch:ConLL}.
-There results suggest that the multilingual models outperform the monolingual ones on image-sentence
-ranking, however, they do not show consistent gains across languages and model settings.
-
-\paragraph{Our contribution}
-
-In Chapter \ref{ch:ConLL} we implement a similar setup to \cite{gella2017image}
-and do show that both English and German image-sentence
-ranking performance is reliably improved by bilingual joint training.
-We expand the results further and provide evidence that more gains can be
-achieved by adding more views: on top of English and German, we
-add French and Czech captions. Revisiting the issue of alignment we find that
-the unlike in previous experiments \citep{gella2017image,calixto2017multilingual,rotman2018bridging}
-image-pivoting leads to better visual-sentence embeddings even when the images
-are not matched between languages. Finally the performance on the lower resource
-French and Czech languages is improved when we add the larger
-English and German image-caption sets, showing successful multilingual
-transfer in the vision-language domain.
-
-Chapter~\ref{ch:IJCNLP}, where we show that grounded learning improves the translation
-of image descriptions is also related to the multi-view learning topic: we use
-images as an additional view that helps us learn better sentence representations.
-
-
-%\section{Grounding and other modalities}
-%Grounding words in auditory signals \cite{kiela2015multi,lopopolo2015sound} and
-% olfactory perception \cite{kiela2015grounding}r. Growing body of literature in learning joint representations
-% of speech and images \cite{harwath2016unsupervised,chrupala2017representations,harwath2018jointly}
-
-
-%Mention semantic parsing and the WebNLG paper i did with Thiago. Mention the TextWorld thing. Grzegorz
-%and Afra´s work speech, plus the fail paper that im on too.
 
 \section{Interpreting continuous representations}
 \label{sec:interpret}

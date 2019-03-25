@@ -18,9 +18,9 @@
 \BOOKMARK [1][-]{section.2.4}{Neural\040sentence\040representations}{chapter.2}% 18
 \BOOKMARK [1][-]{section.2.5}{Visually\040grounded\040sentence\040representations}{chapter.2}% 19
 \BOOKMARK [1][-]{section.2.6}{Visually\040grounded\040multilingual\040representations}{chapter.2}% 20
-\BOOKMARK [2][-]{subsection.2.6.1}{Bilingual\040lexicon\040induction}{section.2.6}% 21
-\BOOKMARK [2][-]{subsection.2.6.2}{Image\040pivots\040for\040translation}{section.2.6}% 22
-\BOOKMARK [2][-]{subsection.2.6.3}{Multi-view\040perspective}{section.2.6}% 23
+\BOOKMARK [2][-]{subsection.2.6.1}{Multi-view\040representation\040learning\040perspective}{section.2.6}% 21
+\BOOKMARK [2][-]{subsection.2.6.2}{Bilingual\040lexicon\040induction}{section.2.6}% 22
+\BOOKMARK [2][-]{subsection.2.6.3}{Image\040pivots\040for\040translation}{section.2.6}% 23
 \BOOKMARK [1][-]{section.2.7}{Interpreting\040continuous\040representations}{chapter.2}% 24
 \BOOKMARK [1][-]{section.2.8}{Published\040work}{chapter.2}% 25
 \BOOKMARK [2][-]{subsection.2.8.1}{Chapters}{section.2.8}% 26
