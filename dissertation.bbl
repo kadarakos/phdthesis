@@ -76,12 +76,6 @@ AP, S.~C., Lauly, S., Larochelle, H., Khapra, M., Ravindran, B., Raykar, V.~C.,
 \newblock In {\em Advances in Neural Information Processing Systems}  (pp.\
   1853--1861).
 
-\bibitem[Arras et~al., 2017]{arras2017explaining}
-Arras, L., Montavon, G., M{\"u}ller, K.-R., \& Samek, W. (2017).
-\newblock Explaining recurrent neural network predictions in sentiment
-  analysis.
-\newblock {\em arXiv preprint arXiv:1706.07206}.
-
 \bibitem[Asher, 2011]{asher2011lexical}
 Asher, N. (2011).
 \newblock {\em Lexical meaning in context: A web of words}.
@@ -233,6 +227,12 @@ Blei, D.~M., Ng, A.~Y., \& Jordan, M.~I. (2003).
 Bock, K. \& Miller, C.~A. (1991).
 \newblock Broken agreement.
 \newblock {\em Cognitive psychology}, 23(1), 45--93.
+
+\bibitem[Bojanowski et~al., 2017]{bojanowski2017enriching}
+Bojanowski, P., Grave, E., Joulin, A., \& Mikolov, T. (2017).
+\newblock Enriching word vectors with subword information.
+\newblock {\em Transactions of the Association for Computational Linguistics},
+  5, 135--146.
 
 \bibitem[Bornstein et~al., 2004]{bornstein2004cross}
 Bornstein, M.~H., Cote, L.~R., Maital, S., Painter, K., Park, S.-Y., Pascual,
@@ -1421,6 +1421,12 @@ Marrese-Taylor, E. \& Matsuo, Y. (2017).
   mining.
 \newblock {\em arXiv preprint arXiv:1701.01565}.
 
+\bibitem[Martens \& Sutskever, 2011]{martens2011learning}
+Martens, J. \& Sutskever, I. (2011).
+\newblock Learning recurrent neural networks with hessian-free optimization.
+\newblock In {\em Proceedings of the 28th International Conference on Machine
+  Learning (ICML-11)}  (pp.\ 1033--1040).: Citeseer.
+
 \bibitem[Matusevych et~al., 2013]{matusevych2013automatic}
 Matusevych, Y., Alishahi, A., \& Vogt, P. (2013).
 \newblock Automatic generation of naturalistic child--adult interaction data.
@@ -1810,12 +1816,6 @@ Sharif~Razavian, A., Azizpour, H., Sullivan, J., \& Carlsson, S. (2014).
 \newblock Cnn features off-the-shelf: an astounding baseline for recognition.
 \newblock In {\em Proceedings of the IEEE conference on computer vision and
   pattern recognition workshops}  (pp.\ 806--813).
-
-\bibitem[Shrikumar et~al., 2017]{shrikumar2017learning}
-Shrikumar, A., Greenside, P., \& Kundaje, A. (2017).
-\newblock Learning important features through propagating activation
-  differences.
-\newblock {\em arXiv preprint arXiv:1704.02685}.
 
 \bibitem[Silberer et~al., 2017]{silberer2017visually}
 Silberer, C., Ferrari, V., \& Lapata, M. (2017).

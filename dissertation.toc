@@ -10,22 +10,21 @@
 \contentsline {subsection}{\numberline {2.1.1}Count-based approaches}{12}{subsection.2.1.1}
 \contentsline {subsection}{\numberline {2.1.2}Prediction-based approaches}{13}{subsection.2.1.2}
 \contentsline {subsubsection}{Neural language models}{13}{section*.4}
-\contentsline {subsubsection}{Efficient linear models}{17}{equation.2.1.6}
-\contentsline {section}{\numberline {2.2}Visually grounded representations of words}{19}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Language and perception}{19}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Combined distributional and visual spaces}{21}{subsection.2.2.2}
-\contentsline {section}{\numberline {2.3}From words to sentences}{26}{section.2.3}
-\contentsline {section}{\numberline {2.4}Neural sentence representations}{28}{section.2.4}
-\contentsline {section}{\numberline {2.5}Visually grounded sentence representations}{31}{section.2.5}
-\contentsline {section}{\numberline {2.6}Visually grounded multilingual representations}{36}{section.2.6}
-\contentsline {subsection}{\numberline {2.6.1}Multi-view representation learning perspective}{36}{subsection.2.6.1}
-\contentsline {subsection}{\numberline {2.6.2}Bilingual lexicon induction}{41}{subsection.2.6.2}
-\contentsline {subsection}{\numberline {2.6.3}Image pivots for translation}{42}{subsection.2.6.3}
-\contentsline {section}{\numberline {2.7}Interpreting continuous representations}{43}{section.2.7}
-\contentsline {paragraph}{Our contribution}{46}{section.2.7}
-\contentsline {section}{\numberline {2.8}Published work}{46}{section.2.8}
-\contentsline {subsection}{\numberline {2.8.1}Chapters}{46}{subsection.2.8.1}
-\contentsline {subsection}{\numberline {2.8.2}Other publications completed during my PhD}{47}{subsection.2.8.2}
+\contentsline {subsubsection}{Efficient linear models}{18}{equation.2.1.6}
+\contentsline {section}{\numberline {2.2}Visually grounded representations of words}{20}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Language and perception}{20}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Combined distributional and visual spaces}{22}{subsection.2.2.2}
+\contentsline {section}{\numberline {2.3}From words to sentences}{27}{section.2.3}
+\contentsline {section}{\numberline {2.4}Neural sentence representations}{29}{section.2.4}
+\contentsline {section}{\numberline {2.5}Visually grounded sentence representations}{32}{section.2.5}
+\contentsline {section}{\numberline {2.6}Visually grounded multilingual representations}{37}{section.2.6}
+\contentsline {subsection}{\numberline {2.6.1}Multi-view representation learning perspective}{37}{subsection.2.6.1}
+\contentsline {subsection}{\numberline {2.6.2}Bilingual lexicon induction}{42}{subsection.2.6.2}
+\contentsline {subsection}{\numberline {2.6.3}Image pivots for translation}{44}{subsection.2.6.3}
+\contentsline {section}{\numberline {2.7}Interpreting continuous representations}{44}{section.2.7}
+\contentsline {section}{\numberline {2.8}Published work}{47}{section.2.8}
+\contentsline {subsection}{\numberline {2.8.1}Chapters}{47}{subsection.2.8.1}
+\contentsline {subsection}{\numberline {2.8.2}Other publications completed during my PhD}{48}{subsection.2.8.2}
 \contentsline {chapter}{\numberline {3}Learning word meanings from images of natural scenes}{51}{chapter.3}
 \contentsline {paragraph}{Abstract}{51}{chapter.3}
 \contentsline {paragraph}{This chapter is based on}{53}{chapter.3}
