@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2018.10.12)  28 MAR 2019 17:18
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2018.10.12)  28 MAR 2019 17:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1957,43 +1957,49 @@ LaTeX Warning: Reference `EMNLP' on page 30 undefined on input line 963.
 
 LaTeX Warning: Reference `ch:EMNLP' on page 30 undefined on input line 982.
 
-[30] [31] [32] [33]
+[30] [31] [32]
+Overfull \hbox (17.35164pt too wide) in paragraph at lines 1050--1057
+\EU1/lmr/m/n/12 They argue that evaluating grounded learning through image–desc
+ription
+ []
 
-LaTeX Warning: Reference `EMNLP' on page 34 undefined on input line 1093.
+[33]
+
+LaTeX Warning: Reference `EMNLP' on page 34 undefined on input line 1097.
 
 [34]
 
-LaTeX Warning: Reference `ch:EMNLP' on page 35 undefined on input line 1109.
+LaTeX Warning: Reference `ch:EMNLP' on page 35 undefined on input line 1113.
 
 [35]
-Overfull \hbox (8.01161pt too wide) in paragraph at lines 1155--1161
+Overfull \hbox (8.01161pt too wide) in paragraph at lines 1159--1165
 \EU1/lmr/m/n/12 These findings were confirmed and improved upon using a self-at
 tention
  []
 
 
-LaTeX Warning: Reference `ch:EMNLP' on page 36 undefined on input line 1171.
+LaTeX Warning: Reference `ch:EMNLP' on page 36 undefined on input line 1175.
 
 
-LaTeX Warning: Reference `ch:EMNLP' on page 36 undefined on input line 1223.
+LaTeX Warning: Reference `ch:EMNLP' on page 36 undefined on input line 1227.
 
 [36] [37] [38]
-Overfull \hbox (7.40445pt too wide) in paragraph at lines 1291--1301
+Overfull \hbox (7.40445pt too wide) in paragraph at lines 1295--1305
 []\EU1/lmr/m/n/12 In the multi-lingual multi-modal setting [][]Funaki & Nakayam
 a[][] ([][]2015[][])
  []
 
 [39]
-Overfull \hbox (5.77245pt too wide) in paragraph at lines 1302--1311
+Overfull \hbox (5.77245pt too wide) in paragraph at lines 1306--1315
 []\EU1/lmr/m/n/12 The bridge correlational neural network approach ([][]Rajendr
 an et al.[][],
  []
 
 
-LaTeX Warning: Reference `ch:EMNLP' on page 40 undefined on input line 1324.
+LaTeX Warning: Reference `ch:EMNLP' on page 40 undefined on input line 1328.
 
 [40] [41] [42] [43] [44] [45] [46] [47]
-Overfull \hbox (4.09962pt too wide) in paragraph at lines 1560--1563
+Overfull \hbox (4.09962pt too wide) in paragraph at lines 1564--1567
 \EU1/lmr/m/n/12 siteit Amsterdam: a data set of native Dutch spoken image-descr
 iption
  []
