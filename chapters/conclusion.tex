@@ -1,4 +1,63 @@
 %!TEX root = ../dissertation.tex
-\chapter{General discussion and conclusion}
-\label{conclusion}
+\chapter{Conclusion and discussion}
+\label{ch:conclusion}
+
+Here we go though the findings of the thesis and incorporate some general discussion on the related 
+topics.
+
+\section{Grounded learning in humans and machines}
+The first  work completed during my PhD project presented in Chapter~\ref{ch:TAL} is dedicated
+to studying the computational modeling of word learning of humans. We implement a model based on 
+the cross-situational account to word acquisition.  In this framework the lexical developement
+is based on the process of children repeatedly being exposed to pairs of linguistic utterrances and 
+perceptual stimuli. Throughout the process of learning they learning a mapping between linguistic 
+units and referents through updating their hypothesis based on a stream of co-occorrence statistics
+between modalities as evidence. There has been a large number of experimental studies showing
+that children use cross-situational evidence for word learning to learn this mapping 
+fast \citep{smith.yu.08} and under a high level of \emph{referential uncertainty}
+\citep{vouloumanos.werker.09}. 
+
+Our main contribution here was to implement a computational cognitive model of cross-situational
+word learning in a more naturalistic setting. Firstly we use a large image--description data sets 
+developed for applied machine learning purposes.  Secondly our work uses continuous scene
+representations in contrast to most cross-situational word learning models  \citep{siskind.96,fontanari2009cross,fazly.etal.10,kachergis2012associative,matusevych2013automatic}. 
+Moreover our work is also in contrast with previous work 
+using small scale controlled naturalisitic data \citep{yu2013grounded}.
+ 
+The approach we implement adapts the cross-situational word learning model of \citep{fazly.etal.10},
+which is an online version of the IBM Model 1. word-translation model \citep{BrownPPM94} to take
+continuous image feautres to represent scenes coming from pre-trained convolutional neural networks.
+Even more unorthodox in the cross-stuational literature our model does not learn a mapping between objects 
+\citep{fazly.etal.10,lazaridou2016multimodal}, but strength of relationship between words and high-level
+global image features. As such our experimental protocol is related to the
+from the word-object retrieval evaluation usually performed on the CHILDES data set \citep{goodman2008bayesian,kievit2013naturalistic,lazaridou2016multimodal}, but more similar
+to performing image--tagging \citep{weston2010large}. 
+
+In another experiment we measure the
+correlation between word similarities under our model and according to human participants.  
+Word-similarity benchmark experiments originate from \citep{rubenstein1965contextual} who 
+intended to provide empirical evidence for the distributional hypothesis of  \citep{harris1954distributional}.
+Later they became standard in comparing various approaches of computational using such 
+similarity judgements \citep{faruqui2014community}, however, many problems with the validity and
+consistency of this methodology have been raised around that time \citep{faruqui2016problems}.
+Using this protocol allows us to directly compare a cross-situational and visually grounded computational
+model of child word learning to the state of the art distributional word2vec approach of the time. 
+The models perform on the same level, however, more interestingly by creating
+\emph{abstract} and  \emph{concrete} portions of word similarity benchmarks we find that
+the distributional word2vec is better on the \emph{abstract}, while the cross-situational model on the 
+\emph{concrete} set.   
+
+A major limitation of our approach, however, is 
+the lack of integration of social cues and visual attention, both of which 
+have been shown to boost learning in children 
+\citep{gleitman1990structural,tomasello1995two} and in computational models of cross situational
+models of word learning \citep{yu2007unified,lazazaridou2016multimodal}.
+
+
+
+\section{Raw input}
+I've focused on words, but char level processing is great. Works on speech too.
+
+\section{Grounding in practice}
+Does groudned learning improve anything really?
 

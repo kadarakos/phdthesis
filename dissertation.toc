@@ -142,7 +142,7 @@
 \contentsline {paragraph}{Top layer}{191}{equation.Alph0.2.13}
 \contentsline {paragraph}{Middle layer}{191}{equation.Alph0.2.14}
 \contentsline {paragraph}{}{191}{equation.Alph0.2.15}
-\contentsline {chapter}{\numberline {A}General discussion and conclusion}{193}{appendix.A}
+\contentsline {chapter}{\numberline {A}Conclusion and discussion}{193}{appendix.A}
 \contentsline {chapter}{Summary}{195}{section*.70}
 \contentsline {chapter}{Publication list}{196}{section*.72}
 \contentsline {chapter}{References}{198}{section*.74}
