@@ -143,7 +143,10 @@
 \contentsline {paragraph}{Middle layer}{191}{equation.Alph0.2.14}
 \contentsline {paragraph}{}{191}{equation.Alph0.2.15}
 \contentsline {chapter}{\numberline {A}Conclusion and discussion}{193}{appendix.A}
-\contentsline {chapter}{Summary}{195}{section*.70}
-\contentsline {chapter}{Publication list}{196}{section*.72}
-\contentsline {chapter}{References}{198}{section*.74}
-\contentsline {chapter}{TiCC PhD Series}{234}{section*.76}
+\contentsline {section}{\numberline {A.1}Grounded learning in humans and machines}{193}{section.A.1}
+\contentsline {section}{\numberline {A.2}Raw input}{195}{section.A.2}
+\contentsline {section}{\numberline {A.3}Grounding in practice}{195}{section.A.3}
+\contentsline {chapter}{Summary}{197}{section*.70}
+\contentsline {chapter}{Publication list}{198}{section*.72}
+\contentsline {chapter}{References}{200}{section*.74}
+\contentsline {chapter}{TiCC PhD Series}{237}{section*.76}

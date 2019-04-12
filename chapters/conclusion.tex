@@ -61,3 +61,21 @@ I've focused on words, but char level processing is great. Works on speech too.
 \section{Grounding in practice}
 Does groudned learning improve anything really?
 
+\section{Implications on Multimodal machine translation}
+Multimodal machine translation has been introduced as a shared task \citep{specia2016shared} in the
+First Conference of Machine Translation (WMT16) initially with German and English  \citep{elliott2016multi30k}
+later with added French and Czech data \citep{elliott2017findings,barrault2018findings}. The task is 
+machine translation with added side information in the form of images. 
+We observe in Chapter~\ref{ch:IJCNLP} that the multi-modal and text-only versions of 
+the top performing systems during the first competition
+have very similar performances \citep{specia2016observed}.
+Given this results, apart from exploring visually grounded learning as an inductive bias for translation,
+we intended to provide empirical evidence that in the way the challenge was setup the images are not
+necessarily useful contexts. In fact, our model has achieved state-of-the-art level performance without 
+conditioning translation on image input. On the 2017 Multimodal Translation Shared Task for some
+systems the multi-modal variant achieves better performance \citep{caglayan2017lium}, while the
+text-only is better for others \citep{ma2017osu}. In a followup work \cite{elliott2018adversarial} introduces
+a measure of the image awereness of multi-modal translation models. They conclude that the current 
+version of the Multi30K data set probably does not contain many training samples where the models 
+need to take the visual modality into account for translation.
+

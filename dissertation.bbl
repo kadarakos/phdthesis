@@ -689,8 +689,28 @@ Fang, H., Gupta, S., Iandola, F., Srivastava, R., Deng, L., Doll{\'a}r, P.,
 \newblock From captions to visual concepts and back.
 \newblock {\em arXiv preprint arXiv:1411.4952}.
 
-\bibitem[Fazly et~al., 2010]{fazly.etal.10csj}
-Fazly, A., Alishahi, A., \& Stevenson, S. (2010).
+\bibitem[Faruqui \& Dyer, 2014]{faruqui2014community}
+Faruqui, M. \& Dyer, C. (2014).
+\newblock Community evaluation and exchange of word vectors at wordvectors.
+  org.
+\newblock In {\em Proceedings of 52nd Annual Meeting of the Association for
+  Computational Linguistics: System Demonstrations}  (pp.\ 19--24).
+
+\bibitem[Faruqui et~al., 2016]{faruqui2016problems}
+Faruqui, M., Tsvetkov, Y., Rastogi, P., \& Dyer, C. (2016).
+\newblock Problems with evaluation of word embeddings using word similarity
+  tasks.
+\newblock {\em arXiv preprint arXiv:1605.02276}.
+
+\bibitem[Fazly et~al., 2010a]{fazly.etal.10}
+Fazly, A., Ahmadi-fakhr, F., Alishahi, A., \& Stevenson, S. (2010a).
+\newblock Cross-situational learning of low frequency words: The role of
+  context familiarity and age of exposure.
+\newblock In {\em Proceedings of the 32{\it nd} Annual Conference of the
+  Cognitive Science Society}  (pp.\ 2615--20).
+
+\bibitem[Fazly et~al., 2010b]{fazly.etal.10csj}
+Fazly, A., Alishahi, A., \& Stevenson, S. (2010b).
 \newblock A probabilistic computational model of cross-situational word
   learning.
 \newblock {\em Cognitive Science: A Multidisciplinary Journal}, 34(6),
@@ -740,6 +760,13 @@ Firat, O., Cho, K., \& Bengio, Y. (2016).
 Fleischman, M. \& Roy, D. (2005).
 \newblock Intentional context in situated language learning.
 \newblock In {\em 9th Conference on Computational Natural Language Learning}.
+
+\bibitem[Fontanari et~al., 2009]{fontanari2009cross}
+Fontanari, J.~F., Tikhanoff, V., Cangelosi, A., Ilin, R., \& Perlovsky, L.~I.
+  (2009).
+\newblock Cross-situational learning of object--word mapping using neural
+  modeling fields.
+\newblock {\em Neural Networks}, 22(5-6), 579--585.
 
 \bibitem[Frank et~al., 2007]{frank.etal.07}
 Frank, M.~C., Goodman, N.~D., \& Tenenbaum, J.~B. (2007).
@@ -815,6 +842,11 @@ Girshick, R., Donahue, J., Darrell, T., \& Malik, J. (2014).
 \newblock In {\em Proceedings of the IEEE conference on computer vision and
   pattern recognition}  (pp.\ 580--587).
 
+\bibitem[Gleitman, 1990]{gleitman1990structural}
+Gleitman, L. (1990).
+\newblock The structural sources of verb meanings.
+\newblock {\em Language acquisition}, 1(1), 3--55.
+
 \bibitem[Goller \& Kuchler, 1996]{goller1996learning}
 Goller, C. \& Kuchler, A. (1996).
 \newblock Learning task-dependent distributed representations by
@@ -832,6 +864,12 @@ Gong, Y., Wang, L., Hodosh, M., Hockenmaier, J., \& Lazebnik, S. (2014).
   photo collections.
 \newblock In {\em European conference on computer vision}  (pp.\ 529--545).:
   Springer.
+
+\bibitem[Goodman et~al., 2008]{goodman2008bayesian}
+Goodman, N., Tenenbaum, J.~B., \& Black, M.~J. (2008).
+\newblock A bayesian framework for cross-situational word-learning.
+\newblock In {\em Advances in neural information processing systems}  (pp.\
+  457--464).
 
 \bibitem[Graham et~al., 2017]{Graham2017}
 Graham, Y., Baldwin, T., Moffat, A., \& Zobel, J. (2017).
@@ -1013,6 +1051,12 @@ Joulin, A., Grave, E., Bojanowski, P., \& Mikolov, T. (2016).
 \newblock Bag of tricks for efficient text classification.
 \newblock {\em arXiv preprint arXiv:1607.01759}.
 
+\bibitem[Kachergis et~al., 2012]{kachergis2012associative}
+Kachergis, G., Yu, C., \& Shiffrin, R.~M. (2012).
+\newblock An associative model of adaptive inference for learning
+  word--referent mappings.
+\newblock {\em Psychonomic bulletin \& review}, 19(2), 317--324.
+
 \bibitem[K{\'a}d{\'a}r et~al., 2015]{kadar2015learning}
 K{\'a}d{\'a}r, {\'A}., Alishahi, A., \& Chrupa{\l}a, G. (2015).
 \newblock Learning word meanings from images of natural scenes.
@@ -1111,6 +1155,12 @@ Kiela, D., Vulic, I., \& Clark, S. (2015).
 \newblock Visual bilingual lexicon induction with transferred convnet features.
 \newblock In {\em Proceedings of the 2015 Conference on Empirical Methods in
   Natural Language Processing (EMNLP 2015)}: ACL.
+
+\bibitem[Kievit-Kylar et~al., 2013]{kievit2013naturalistic}
+Kievit-Kylar, B., Kachergis, G., \& Jones, M. (2013).
+\newblock Naturalistic word-concept pair learning with semantic spaces.
+\newblock In {\em Proceedings of the Annual Meeting of the Cognitive Science
+  Society}, volume~35.
 
 \bibitem[Kim, 2014]{yoonneural2014}
 Kim, Y. (2014).
@@ -1949,6 +1999,12 @@ Tiedemann, J. (2012).
 \newblock In {\em Eight International Conference on Language Resources and
   Evaluation (LREC'12)}.
 
+\bibitem[Tomasello \& Akhtar, 1995]{tomasello1995two}
+Tomasello, M. \& Akhtar, N. (1995).
+\newblock Two-year-olds use pragmatic cues to differentiate reference to
+  objects and actions.
+\newblock {\em Cognitive Development}, 10(2), 201--224.
+
 \bibitem[Toyama et~al., 2016]{toyama2016neural}
 Toyama, J., Misono, M., Suzuki, M., Nakayama, K., \& Matsuo, Y. (2016).
 \newblock Neural machine translation with latent semantic of image and text.
@@ -2161,13 +2217,19 @@ Yu, C. (2008).
 Yu, C. \& Ballard, D.~H. (2007).
 \newblock A unified model of early word learning: Integrating statistical and
   social cues.
-\newblock {\em Neurocomputing}, 70(13), 2149--2165.
+\newblock {\em Neurocomputing}, 70(13-15), 2149--2165.
 
 \bibitem[Yu \& Smith, 2007]{yu.smith.07}
 Yu, C. \& Smith, L.~B. (2007).
 \newblock Rapid word learning under uncertainty via cross-situational
   statistics.
 \newblock {\em Psychological Science}, 18(5), 414.
+
+\bibitem[Yu \& Siskind, 2013]{yu2013grounded}
+Yu, H. \& Siskind, J.~M. (2013).
+\newblock Grounded language learning from video described with sentences.
+\newblock In {\em Proceedings of the 51st Annual Meeting of the Association for
+  Computational Linguistics (Volume 1: Long Papers)}, volume~1  (pp.\ 53--63).
 
 \bibitem[Yu et~al., 2015]{yu2015video}
 Yu, H., Wang, J., Huang, Z., Yang, Y., \& Xu, W. (2015).

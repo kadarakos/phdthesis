@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2018.10.12)  2 APR 2019 11:07
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2018.10.12)  10 APR 2019 14:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1850,14 +1850,14 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 \tf@toc=\write6
 \openout6 = `dissertation.toc'.
 
- [13] [14
-
-]
+ [13] [14]
 \openout2 = `chapters/introduction.aux'.
 
  (./chapters/introduction.tex
 Chapter 1.
-[1]
+[1
+
+]
 
 LaTeX Warning: Reference `ch:CL' on page 2 undefined on input line 35.
 
@@ -2976,47 +2976,52 @@ Overfull \hbox (18.66354pt too wide) detected at line 68
 
 ]
 Appendix A.
-) [193] [194
+[193] [194]
+
+Package natbib Warning: Citation `lazazaridou2016multimodal' on page 195 undefi
+ned on input line 54.
+
+) [195] [196
 
 
 ]
 \openout2 = `endmatter/summary.aux'.
 
- (./endmatter/summary.tex) [195
+ (./endmatter/summary.tex) [197
 
 
 ]
 \openout2 = `endmatter/publicationlist.aux'.
 
  (./endmatter/publicationlist.tex
-[196
+[198
 
 
 
-]) [197] (./dissertation.bbl [198
+]) [199] (./dissertation.bbl [200
 
 
-] [199] [200] [201] [202] [203]
+] [201] [202] [203] [204] [205]
 Underfull \hbox (badness 1072) in paragraph at lines 353--357
 []\EU1/lmr/m/n/10 Cauchy, A. (1847).  Méthode générale pour la résolution des s
 ystemes
  []
 
-[204] [205] [206] [207] [208] [209] [210] [211] [212] [213] [214] [215]
-[216] [217] [218] [219] [220] [221] [222] [223] [224] [225] [226] [227]
-[228] [229] [230] [231] [232]) [233]
+[206] [207] [208] [209] [210] [211] [212] [213] [214] [215] [216] [217]
+[218] [219] [220] [221] [222] [223] [224] [225] [226] [227] [228] [229]
+[230] [231] [232] [233] [234] [235]) [236]
 \openout2 = `endmatter/ticcthesis.aux'.
 
- (./endmatter/ticcthesis.tex [234
+ (./endmatter/ticcthesis.tex [237
 
 
-] [235]
+]
 Overfull \hbox (1.67531pt too wide) in paragraph at lines 78--81
 \EU1/lmr/m/n/10 tion during playful interactions. Promotores: E.J. Krahmer, M.G
 .J. Swerts.
  []
 
-[236] [237]
+[238] [239]
 Overfull \hbox (6.7893pt too wide) in paragraph at lines 153--157
 \EU1/lmr/m/n/10 production, comprehension, and preference. Promotores: A.A. Mae
 s, M.G.J.
@@ -3028,19 +3033,19 @@ Overfull \hbox (6.53532pt too wide) in paragraph at lines 165--168
 Tilburg,
  []
 
-[238]
+[240]
 Overfull \hbox (0.6653pt too wide) in paragraph at lines 174--178
 []\EU1/lmr/m/n/10 Yevgen Matusevych, Learning constructions from bilingual expo
 sure: Com-
  []
 
-[239]
+[241]
 Overfull \hbox (13.34532pt too wide) in paragraph at lines 210--214
 []\EU1/lmr/m/n/10 Emmelyn Croes, Meeting Face-to-Face Online: The Effects of Vi
 deo-Mediated
  []
 
-) [240]
+) [242]
 
 Package natbib Warning: There were undefined citations.
 
@@ -3070,12 +3075,12 @@ LaTeX Warning: There were multiply-defined labels.
 ### simple group (level 1) entered at line 75 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 55578 strings out of 493638
- 1233575 string characters out of 6146795
- 1515420 words of memory out of 5000000
- 57862 multiletter control sequences out of 15000+600000
+ 55620 strings out of 493638
+ 1234652 string characters out of 6146795
+ 1517801 words of memory out of 5000000
+ 57904 multiletter control sequences out of 15000+600000
  22713 words of font info for 109 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
  69i,20n,81p,10485b,3002s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on dissertation.pdf (254 pages).
+Output written on dissertation.pdf (256 pages).
