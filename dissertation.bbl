@@ -152,6 +152,13 @@ Baroni, M. \& Lenci, A. (2008).
 \newblock Concepts and properties in word spaces.
 \newblock {\em Italian Journal of Linguistics}, 20(1), 55--88.
 
+\bibitem[Barrault et~al., 2018]{barrault2018findings}
+Barrault, L., Bougares, F., Specia, L., Lala, C., Elliott, D., \& Frank, S.
+  (2018).
+\newblock Findings of the third shared task on multimodal machine translation.
+\newblock In {\em THIRD CONFERENCE ON MACHINE TRANSLATION (WMT18)}, volume~2
+  (pp.\ 308--327).
+
 \bibitem[Barsalou et~al., 2003]{barsalou2003grounding}
 Barsalou, L.~W., Simmons, W.~K., Barbey, A.~K., \& Wilson, C.~D. (2003).
 \newblock Grounding conceptual knowledge in modality-specific systems.
@@ -168,13 +175,19 @@ Begley, C.~G. \& Ellis, L.~M. (2012).
 \newblock Drug development: Raise standards for preclinical cancer research.
 \newblock {\em Nature}, 483(7391), 531.
 
+\bibitem[Bengio et~al., 2013a]{bengio2013representation}
+Bengio, Y., Courville, A., \& Vincent, P. (2013a).
+\newblock Representation learning: A review and new perspectives.
+\newblock {\em IEEE transactions on pattern analysis and machine intelligence},
+  35(8), 1798--1828.
+
 \bibitem[Bengio et~al., 2003]{bengio2003neural}
 Bengio, Y., Ducharme, R., Vincent, P., \& Jauvin, C. (2003).
 \newblock A neural probabilistic language model.
 \newblock {\em Journal of machine learning research}, 3(Feb), 1137--1155.
 
-\bibitem[Bengio et~al., 2013]{bengio2013estimating}
-Bengio, Y., L{\'e}onard, N., \& Courville, A. (2013).
+\bibitem[Bengio et~al., 2013b]{bengio2013estimating}
+Bengio, Y., L{\'e}onard, N., \& Courville, A. (2013b).
 \newblock Estimating or propagating gradients through stochastic neurons for
   conditional computation.
 \newblock {\em arXiv preprint arXiv:1308.3432}.
@@ -294,6 +307,12 @@ Bullinaria, J.~A. \& Levy, J.~P. (2012).
   statistics: stop-lists, stemming, and svd.
 \newblock {\em Behavior research methods}, 44(3), 890--907.
 
+\bibitem[Caglayan et~al., 2017]{caglayan2017lium}
+Caglayan, O., Aransa, W., Bardet, A., Garc{\'\i}a-Mart{\'\i}nez, M., Bougares,
+  F., Barrault, L., Masana, M., Herranz, L., \& Van~de Weijer, J. (2017).
+\newblock Lium-cvc submissions for wmt17 multimodal translation task.
+\newblock {\em arXiv preprint arXiv:1707.04481}.
+
 \bibitem[Caglayan et~al., 2016]{Caglayan2016b}
 Caglayan, O., Barrault, L., \& Bougares, F. (2016).
 \newblock Multimodal attention for neural machine translation.
@@ -408,6 +427,10 @@ Cho, K., Van~Merri{\"e}nboer, B., Gulcehre, C., Bahdanau, D., Bougares, F.,
 Choi, J., Yoo, K.~M., \& goo Lee, S. (2017).
 \newblock :
 \newblock AAAI.
+
+\bibitem[Chomsky, 1957]{chomsky2002syntactic}
+Chomsky, N. (1957).
+\newblock {\em Syntactic structures}.
 
 \bibitem[Chrupa{\l}a et~al., 2017]{chrupala2017representations}
 Chrupa{\l}a, G., Gelderloos, L., \& Alishahi, A. (2017).
@@ -609,6 +632,12 @@ Eisenschtat, A. \& Wolf, L. (2017).
 \newblock Linking image and text with 2-way nets.
 \newblock In {\em Proceedings of the IEEE conference on computer vision and
   pattern recognition}  (pp.\ 4601--4611).
+
+\bibitem[Elliott, 2018]{elliott2018adversarial}
+Elliott, D. (2018).
+\newblock Adversarial evaluation of multimodal machine translation.
+\newblock In {\em Proceedings of the 2018 Conference on Empirical Methods in
+  Natural Language Processing}  (pp.\ 2974--2978).
 
 \bibitem[Elliott et~al., 2017a]{Elliott2017}
 Elliott, D., Frank, S., Barrault, L., Bougares, F., \& Specia, L. (2017a).
@@ -1409,6 +1438,11 @@ Luong, M., Le, Q.~V., Sutskever, I., Vinyals, O., \& Kaiser, L. (2016).
 \newblock Multi-task sequence to sequence learning.
 \newblock In {\em ICLR}.
 
+\bibitem[Ma et~al., 2017]{ma2017osu}
+Ma, M., Li, D., Zhao, K., \& Huang, L. (2017).
+\newblock Osu multimodal machine translation system report.
+\newblock {\em arXiv preprint arXiv:1710.02718}.
+
 \bibitem[MacWhinney, 2014]{macwhinney2014childes}
 MacWhinney, B. (2014).
 \newblock {\em The CHILDES project: Tools for analyzing talk, Volume II: The
@@ -1552,6 +1586,7 @@ Miyazaki, T. \& Shimizu, N. (2016).
 \bibitem[Montague, 1970]{montague1970english}
 Montague, R. (1970).
 \newblock English as a formal language.
+\newblock {\em Linguaggi nella Societa e nella Tecnica}.
 
 \bibitem[Morey et~al., 2017]{morey2017much}
 Morey, M., Muller, P., \& Asher, N. (2017).
@@ -1678,13 +1713,24 @@ Plank, B., S{\o}gaard, A., \& Goldberg, Y. (2016).
   short-term memory models and auxiliary loss.
 \newblock {\em arXiv preprint arXiv:1604.05529}.
 
-\bibitem[Poerner et~al., 2018]{poerner2018evaluating}
-Poerner, N., Sch{\"u}tze, H., \& Roth, B. (2018).
+\bibitem[Poerner et~al., 2018a]{poerner2018interpretable}
+Poerner, N., Roth, B., \& Sch{\"u}tze, H. (2018a).
+\newblock Interpretable textual neuron representations for nlp.
+\newblock {\em arXiv preprint arXiv:1809.07291}.
+
+\bibitem[Poerner et~al., 2018b]{poerner2018evaluating}
+Poerner, N., Sch{\"u}tze, H., \& Roth, B. (2018b).
 \newblock Evaluating neural network explanation methods using hybrid documents
   and morphosyntactic agreement.
 \newblock In {\em Proceedings of the 56th Annual Meeting of the Association for
   Computational Linguistics (Volume 1: Long Papers)}, volume~1  (pp.\
   340--350).
+
+\bibitem[Pratt, 1993]{pratt1993discriminability}
+Pratt, L.~Y. (1993).
+\newblock Discriminability-based transfer between neural networks.
+\newblock In {\em Advances in neural information processing systems}  (pp.\
+  204--211).
 
 \bibitem[Pulverm{\"u}ller, 2005]{pulvermuller2005brain}
 Pulverm{\"u}ller, F. (2005).
@@ -1867,6 +1913,12 @@ Sharif~Razavian, A., Azizpour, H., Sullivan, J., \& Carlsson, S. (2014).
 \newblock In {\em Proceedings of the IEEE conference on computer vision and
   pattern recognition workshops}  (pp.\ 806--813).
 
+\bibitem[Shrikumar et~al., 2017]{shrikumar2017learning}
+Shrikumar, A., Greenside, P., \& Kundaje, A. (2017).
+\newblock Learning important features through propagating activation
+  differences.
+\newblock {\em arXiv preprint arXiv:1704.02685}.
+
 \bibitem[Silberer et~al., 2017]{silberer2017visually}
 Silberer, C., Ferrari, V., \& Lapata, M. (2017).
 \newblock Visually grounded meaning representations.
@@ -1952,6 +2004,13 @@ Specia, L., Frank, S., Sima'an, K., \& Elliott, D. (2016b).
 \newblock In {\em Proceedings of the First Conference on Machine Translation}
   (pp.\ 543--553).  Berlin, Germany: Association for Computational Linguistics.
 
+\bibitem[Specia et~al., 2016c]{specia2016shared}
+Specia, L., Frank, S., Sima'an, K., \& Elliott, D. (2016c).
+\newblock A shared task on multimodal machine translation and crosslingual
+  image description.
+\newblock In {\em Proceedings of the First Conference on Machine Translation:
+  Volume 2, Shared Task Papers}, volume~2  (pp.\ 543--553).
+
 \bibitem[Srivastava et~al., 2015]{Srivastava2015}
 Srivastava, N., Mansimov, E., \& Salakhudinov, R. (2015).
 \newblock {Unsupervised learning of video representations using LSTMs}.
@@ -2009,6 +2068,11 @@ Tomasello, M. \& Akhtar, N. (1995).
 Toyama, J., Misono, M., Suzuki, M., Nakayama, K., \& Matsuo, Y. (2016).
 \newblock Neural machine translation with latent semantic of image and text.
 \newblock {\em CoRR}, abs/1611.08459.
+
+\bibitem[Turing, 1950]{machinery1950computing}
+Turing, A.~M. (1950).
+\newblock {I.—COMPUTING MACHINERY AND INTELLIGENCE}.
+\newblock {\em Mind}, LIX(236), 433--460.
 
 \bibitem[Turney et~al., 2011]{turney2011literal}
 Turney, P.~D., Neuman, Y., Assaf, D., \& Cohen, Y. (2011).

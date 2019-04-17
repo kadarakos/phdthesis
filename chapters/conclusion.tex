@@ -2,44 +2,51 @@
 \chapter{Conclusion and discussion}
 \label{ch:conclusion}
 
-Here we go though the findings of the thesis and incorporate some general discussion on the related 
-topics.
+Traditional techniques to learn representations of words and sentences only consider 
+linguistic context as a source of information and focus on the representation of a single language.
+The aim of this thesis was to study make advances towards learning 
+and understanding \emph{visually grounded} and \emph{multilingual} representations. 
+This final chapter is dedicated not only to briefly summarize our main findings, but also to 
+point to some of the limitations and implications of our work.
 
-\section{Grounded learning in humans and machines}
-The first  work completed during my PhD project presented in Chapter~\ref{ch:TAL} is dedicated
-to studying the computational modeling of word learning of humans. We implement a model based on 
-the cross-situational account to word acquisition.  In this framework the lexical developement
-is based on the process of children repeatedly being exposed to pairs of linguistic utterrances and 
-perceptual stimuli. Throughout the process of learning they learning a mapping between linguistic 
-units and referents through updating their hypothesis based on a stream of co-occorrence statistics
+
+\section{Visually grounded word representations}
+The starting point of the thesis is visual grounding on the word level for a single language.
+Chapter~\ref{ch:TAL} is dedicated to learning word-representations based on the co-occurrences between 
+words and high-level image features. We implemented a model taking inspiration from
+the cross-situational account to word acquisition; a framework of lexical developement
+based on the process of children repeatedly being exposed to pairs of linguistic utterrances and 
+perceptual stimuli.  Throughout this process they learn a mapping between linguistic 
+units and their referents updating their hypothesis based on a stream of co-occurrence statistics
 between modalities as evidence. There has been a large number of experimental studies showing
 that children use cross-situational evidence for word learning to learn this mapping 
 fast \citep{smith.yu.08} and under a high level of \emph{referential uncertainty}
 \citep{vouloumanos.werker.09}. 
 
-Our main contribution here was to implement a computational cognitive model of cross-situational
-word learning in a more naturalistic setting. Firstly we use a large image--description data sets 
-developed for applied machine learning purposes.  Secondly our work uses continuous scene
-representations in contrast to most cross-situational word learning models  \citep{siskind.96,fontanari2009cross,fazly.etal.10,kachergis2012associative,matusevych2013automatic}. 
-Moreover our work is also in contrast with previous work 
-using small scale controlled naturalisitic data \citep{yu2013grounded}.
- 
-The approach we implement adapts the cross-situational word learning model of \citep{fazly.etal.10},
+We depart in two major ways from the canonical computational cross-situational models 
+ \citep{siskind.96,fontanari2009cross,fazly.etal.10,kachergis2012associative,matusevych2013automatic,yu2013grounded}: 
+1.) we use large image--description benchmark data sets developed for machine learning purposes, 
+which naturally presents a high level of referential uncetainty and ambiguity
+2.) take continous image representations rather than artificial symbolic scene descriptors.
+More concretely approach adapts the cross-situational word learning model of \citep{fazly.etal.10},
 which is an online version of the IBM Model 1. word-translation model \citep{BrownPPM94} to take
 continuous image feautres to represent scenes coming from pre-trained convolutional neural networks.
-Even more unorthodox in the cross-stuational literature our model does not learn a mapping between objects 
-\citep{fazly.etal.10,lazaridou2016multimodal}, but strength of relationship between words and high-level
-global image features. As such our experimental protocol is related to the
-from the word-object retrieval evaluation usually performed on the CHILDES data set \citep{goodman2008bayesian,kievit2013naturalistic,lazaridou2016multimodal}, but more similar
-to performing image--tagging \citep{weston2010large}. 
+Even more unorthodox in the cross-stuational literature our model does not learn a mapping between 
+words and objects 
+\citep{fazly.etal.10,lazaridou2016multimodal}, but the strength of the relationship between words and high-level
+global image feature descriptors. As such our main experimental protocol is related departs from
+the standard word-object retrieval evaluation performed on the CHILDES data set \citep{goodman2008bayesian,kievit2013naturalistic,lazaridou2016multimodal} and is more similar
+to performing image--tagging \citep{weston2010large}. Through these retrieval experiments we find that
+our model tags images with relevant concepts.
 
 In another experiment we measure the
-correlation between word similarities under our model and according to human participants.  
+correlation between word similarities under our model and according to human participants and comapre
+the results to state-of-the-art distributional model trained on the same sentences.
 Word-similarity benchmark experiments originate from \citep{rubenstein1965contextual} who 
 intended to provide empirical evidence for the distributional hypothesis of  \citep{harris1954distributional}.
 Later they became standard in comparing various approaches of computational using such 
-similarity judgements \citep{faruqui2014community}, however, many problems with the validity and
-consistency of this methodology have been raised around that time \citep{faruqui2016problems}.
+similarity judgements \citep{faruqui2014community}.\footnote{That said many problems with the validity and
+consistency of this methodology have been raised around that time \citep{faruqui2016problems}.}
 Using this protocol allows us to directly compare a cross-situational and visually grounded computational
 model of child word learning to the state of the art distributional word2vec approach of the time. 
 The models perform on the same level, however, more interestingly by creating
@@ -47,21 +54,118 @@ The models perform on the same level, however, more interestingly by creating
 the distributional word2vec is better on the \emph{abstract}, while the cross-situational model on the 
 \emph{concrete} set.   
 
-A major limitation of our approach, however, is 
-the lack of integration of social cues and visual attention, both of which 
+The first main result of Chapter~\ref{ch:TAL} is that our cross-situational word learning model learns
+meaningful word representations as demonstrated by our image--word matching experiments. 
+Secondy, we train a distributional model and our visually grounded model on the same same sentences;
+the former learning word representations from linguistic the second from visual contexts. 
+They perform on a similar level in terms of approximating human similarity judgements, however,
+the visual context is more informative in the case of concrete words, whereas distributional cues 
+are more helpful for learning the meaning of abstract words. Our result highlights the complementarity
+between these different sources of learning signals.
+
+Note, however, that even though our algorithm introduced in Chapter~\ref{ch:TAL} is incremental
+and is based on well established models of word-learning \citep{fazly.etal.10} it is not intended as a
+complete account of child lexical developement e.g.: consider 
+the lack of integration of social cues or parent directed attention, both of which 
 have been shown to boost learning in children 
 \citep{gleitman1990structural,tomasello1995two} and in computational models of cross situational
 models of word learning \citep{yu2007unified,lazazaridou2016multimodal}.
 
+\section{Visually grounded sentence representations}
+Moving from representations of words to full sentences in Chapter~\ref{ch:COLI} we contineou 
+our comparative study between distributional and visually grounded representations. 
+Concretely, in Chapter~\ref{ch:COLI} we analyze the patterns of hidden activations of 
+our recurrent visually grounded sentence representations learning model 
+\texttt{IMAGINET} \citep{chrupala2015learning}. This architecture consists of two separate gated
+recurrent unit networks coupled through a shared word embedding matrix. The \texttt{VISUAL}
+pathway performs visually grounded learning through the image--sentence ranking objective, 
+while \texttt{TEXTUAL} is trained as a language model to maximize the likelihood of the following word
+given the history.
+
+In  \citep{chrupala2015learning} we compare the word representations learned by only training one
+of the subnetworks as compared to training them jointly and find that the word-similarity judgements 
+of \texttt{VISUAL} correlate better with human similarity judgements than \texttt{TEXTUAL} and that 
+the joint \texttt{MultiTask} model is superior to both. On the task of image--sentence ranking 
+\texttt{VISUAL} outperforms our bag-of-words-baseline, but bya large margin. This led us test
+whether the \texttt{VISUAL} trained on caption with randomly permutated word order can perform 
+on equal evel to it trained on the original captions. We find that the model trained on the original
+captions does perform better suggesting that it successfully exploit word order information.
+
+Chapter~\ref{ch:COLI} is dedicated to a more in depth investigation
+of the kind of linguistic structure that is encoded in the hidden activations of the learned representations. 
+Crucially, we perform a controlled comparison between the grounded \texttt{VISUAL} and the distributional 
+ \texttt{TEXTUAL} pathway: both models have the same architecture and share word-embeddings.
+ As the linguistic interpretation of representations learned by recurrent networks did not enjoy a 
+ large amount of  attention at the time we introduced two novel techniques. 
+ 
+ Firstly, we introduced the \emph{omission score}, an input perturbation based saliency metric assigning a 
+ real-valued improtance score to each input token signaling how much impact did it have on 
+ the final sentence representation. Through computing the 
+ log ratios of the omission score distribution over part-of-speech and dependency labels  between
+ \texttt{VISUAL} and \texttt{TEXTUAL} we find that 	the former payes more attention to categories
+ usually filled with semantically contentful words, while the attention distribution of \texttt{TEXTUAL}
+ is fairly uniform.
+ 
+ To disintangle word forms from their functions we fit ridge regression models 
+ to predict omission scores for tokens using the word
+ identity as predictor and adding dependency relation ( \texttt{+dep}) or
+ sentence position variables or both and their interactions. 
+ We find that the word-identity is much less predictive of omission score for \texttt{TEXTUAL}
+ than it is for  \texttt{VISUAL} and that position is most informative for \texttt{TEXTUAL},
+ while for \texttt{VISUAL} dependency relation and position variables provide similar increases
+ in $R^2$. In a more fine-grained analysis we examined the omission distributions
+ computed for the \texttt{VISUAL} pathway of words for which the increase in 
+ $R^2$ from the word-identity regression model to the \texttt{+dep} model is the highest.
+ We find a general pattern that words generally produce the highest omission scores
+ when they fill the noun subject or root function in a sentence and smallest when they appear 
+ as conjuncts.
+
+Lastly we turn to contrasting what the individual dimensions of the two pathways encode.
+To do so we compute the mutual information between the binned activation values and different
+type of contexts. For these contexts we consider word and dependency relation n-grams up to
+order three. This results in distributions of mutual information values between activations and
+contexts. We take the median of these distributions to compare the types of contexts that
+are more related to the activation patters in  \texttt{VISUAL} than  \texttt{TEXTUAL}. We find
+the significant difference between the pathways that features encoded by  \texttt{TEXTUAL} are
+more related to dependency labels while that of \texttt{VISUAL} are more related to words.
+We can also use these mutual informatiton scores to find for each dimension of the hidden states
+of the recurrent networks, which contexts they are most related to. 
+On visual inspection we find that  for both 
+\texttt{VISUAL} and \texttt{TEXTUAL} that these contexts
+tend to be a combination of semantic/syntactic constructions. Consider for example two of these
+top contexts for one of the hidden units of  \texttt{TEXTUAL}: \emph{male on a}, \emph{person rides a}.
+For \texttt{VISUAL} we find contexts to be more topically than syntactically related, however.
+
+Through the developement and application of the omission score and 
+mutual information based interpretation techniques we have found similarities and differences between
+the sentence representations learned by a image--sentence ranking model 
+and a language model. 
+
+Since our work, however, there have been a large number input token saliency 
+measures introduced as discussed in Section~\ref{sec:interpret}. \cite{shrikumar2017learning}
+points out that perturbation based techniques struggle due to the limited perturbation window i.e.: the
+important context might be larger than the scope of the perturbation function. 
+On the explanation evaluation benchmark experiments of \cite{poerner2018evaluating} 
+perturbation based methods (including ours) lead to inconsistent results and backpropagation style
+methods \citep{bach2015pixel,shrikumar2017learning} have a stronger performance in general.
+
+To find typical inputs to hidden units \cite{poerner2018interpretable} develops an alternative
+to our mutual information based approach and applies it to our \texttt{IMAGINET} architecture.
+They perform gradient ascent on maximizing the activation values for particular dimensions.
+Their results reproduce our findings that the hidden units of \texttt{TEXTUAL} tend to be more 
+syntax aware than that of \texttt{VISUAL}.
+
+Interpretation of deep models of language have become a subfield of NLP in its' own right
+with dedicated venues such as the BlackboxNLP Workshop at EMNLP 2018
+\citep{alishahi2019analyzing}. Future work in the field linguistic representation learning
+can benefit from these analysis methods by shedding more light onto the differences between
+learning from different cues such as the linguistic versus perceptual contexts we considered in 
+this thesis.
 
 
-\section{Raw input}
-I've focused on words, but char level processing is great. Works on speech too.
 
-\section{Grounding in practice}
-Does groudned learning improve anything really?
+\section{Improving translation with visual grounding}
 
-\section{Implications on Multimodal machine translation}
 Multimodal machine translation has been introduced as a shared task \citep{specia2016shared} in the
 First Conference of Machine Translation (WMT16) initially with German and English  \citep{elliott2016multi30k}
 later with added French and Czech data \citep{elliott2017findings,barrault2018findings}. The task is 
@@ -69,13 +173,51 @@ machine translation with added side information in the form of images.
 We observe in Chapter~\ref{ch:IJCNLP} that the multi-modal and text-only versions of 
 the top performing systems during the first competition
 have very similar performances \citep{specia2016observed}.
-Given this results, apart from exploring visually grounded learning as an inductive bias for translation,
-we intended to provide empirical evidence that in the way the challenge was setup the images are not
-necessarily useful contexts. In fact, our model has achieved state-of-the-art level performance without 
-conditioning translation on image input. On the 2017 Multimodal Translation Shared Task for some
-systems the multi-modal variant achieves better performance \citep{caglayan2017lium}, while the
-text-only is better for others \citep{ma2017osu}. In a followup work \cite{elliott2018adversarial} introduces
-a measure of the image awereness of multi-modal translation models. They conclude that the current 
+On the 2017 Multimodal Translation Shared Task for some
+systems the multi-modal variant achieves better performance
+\citep{caglayan2017lium}, while the text-only is better for others \citep{ma2017osu}. 
+\cite{elliott2018adversarial} introduces
+a measure of the image awereness of multi-modal translation models and conclude that the current 
 version of the Multi30K data set probably does not contain many training samples where the models 
 need to take the visual modality into account for translation.
+
+In Chapter~\ref{ch:IJCNLP} rather than taking images as input to aid translation we 
+ask the question whether learning visually grounded representations jointly with translation
+provides a useful inductive bias to improve translation quality. More precisely we train a shared
+encoder which provides input representation to an image--sentence ranking and a
+attentional translation decoder. The two sub-models are trained jointly with multi-task learning, much
+like \texttt{IMAGINET} in \cite{chrupala2015learning}.
+
+We considered two setups:
+1.) \emph{aligned} setting where the input is triplets composed of an English sentence, 
+it's German translation and a corresponding image, 2.) \emph{disjoint} where we have a
+separate English-German parallell corpus and an image--sentence corpus in English.
+We find no significant difference in performance between the \emph{aligned} and \emph{disjoint}
+settings. 
+
+We performed a follow up experiment where we improved our text-only baseline with 
+training on an additional English-German parallell corpus. We observed that even when
+extra translation data is available visual grounding still provided improvements in performance.
+
+
+
+%Given this results, apart from exploring visually grounded learning as an inductive bias for translation,
+%we intended to provide empirical evidence that in the way the challenge was setup the images are not
+%necessarily useful contexts. In fact, our model has achieved state-of-the-art level performance without 
+%conditioning translation on image input.
+
+
+%In fact, we observe consistent benefits of visually grounded 
+l%earning for translation in the Multi30K challenge. 
+
+\section{Future directions}
+
+
+\subsection{Raw input}
+I've focused on words, but char level processing is great. Works on speech too.
+
+\subsection{Trasnferring grounded representations}
+Does groudned learning improve anything really?
+
+
 
