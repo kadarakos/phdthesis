@@ -168,22 +168,18 @@ this thesis.
 
 Multimodal machine translation has been introduced as a shared task \citep{specia2016shared} in the
 First Conference of Machine Translation (WMT16) initially with German and English  \citep{elliott2016multi30k}
-later with added French and Czech data \citep{elliott2017findings,barrault2018findings}. The task is 
+later with added French and Czech data \citep{elliott2017findings}. The task is 
 machine translation with added side information in the form of images. 
-We observe in Chapter~\ref{ch:IJCNLP} that the multi-modal and text-only versions of 
+Through a review of the state-of-the-art we observe in Chapter~\ref{ch:IJCNLP} 
+that the multi-modal and text-only versions of 
 the top performing systems during the first competition
-have very similar performances \citep{specia2016observed}.
-On the 2017 Multimodal Translation Shared Task for some
-systems the multi-modal variant achieves better performance
-\citep{caglayan2017lium}, while the text-only is better for others \citep{ma2017osu}. 
-\cite{elliott2018adversarial} introduces
-a measure of the image awereness of multi-modal translation models and conclude that the current 
-version of the Multi30K data set probably does not contain many training samples where the models 
-need to take the visual modality into account for translation.
+have very similar performances \citep{specia2016observed}. 
+Furthermore, when systems do perform better it is unclear if they successfully use images as 
+context to aid translation or they learn better representations though visual grounding.
 
-In Chapter~\ref{ch:IJCNLP} rather than taking images as input to aid translation we 
-ask the question whether learning visually grounded representations jointly with translation
-provides a useful inductive bias to improve translation quality. More precisely we train a shared
+In Chapter~\ref{ch:IJCNLP} rather than conditioning translation on the additional image context we 
+introduce an architecture to learn visually grounded representations jointly with translation.
+More precisely we train a shared
 encoder which provides input representation to an image--sentence ranking and a
 attentional translation decoder. The two sub-models are trained jointly with multi-task learning, much
 like \texttt{IMAGINET} in \cite{chrupala2015learning}.
@@ -193,11 +189,70 @@ We considered two setups:
 it's German translation and a corresponding image, 2.) \emph{disjoint} where we have a
 separate English-German parallell corpus and an image--sentence corpus in English.
 We find no significant difference in performance between the \emph{aligned} and \emph{disjoint}
-settings. 
+settings. This result provides evidence that visual grounding can provide a useful inductive bias to 
+improve translation quality.
 
-We performed a follow up experiment where we improved our text-only baseline with 
+We also performed a follow up experiment where we improved our text-only baseline with 
 training on an additional English-German parallell corpus. We observed that even when
 extra translation data is available visual grounding still provided improvements in performance.
+Finally, our full system with the extra parallell corpus and an additional image--sentence data set achieved
+2nd place according the human judgements in the WMT Shared Task on Multimodal Translation 
+and Multilingual Image Description \citep{elliott2017findings} 
+on the unconstrained task out of 16 submissions. 
+
+On this Shared Task for some
+systems the multi-modal variant achieves better performance
+\citep{caglayan2017lium}, while the text-only is better for others \citep{ma2017osu}. 
+The results of the thrid shared task are in line with the previous years:
+adding images as extra context to translation systems result in marginal 
+differences in translation quality \citep{barrault2018findings}.
+\cite{elliott2018adversarial} investigate the issue further and introduces
+a measure of the image awereness of multi-modal translation models and conclude that the current 
+version of the Multi30K data set probably does not contain many training samples where the models 
+need to take the visual modality into account for translation. The role of visual context in translation
+remains an active area of research at the time of writing this thesis: the "Best Short Paper" title
+at the North American Chapter of Association for Computational Linguistics 2019 was awarded to
+\citep{caglayan2019probing} who show that multi-modal systems are insensitive to images in general
+, however, the visual contexts can help models recover from corruptions to the source sentences.
+
+
+\section{Multilingual visually grounded sentence representations}
+
+We show in Chapter~\ref{ch:IJCNNLP} that visually grounded sentence representation learning
+provides a useful inductive bias for machine translation. \cite{kiros2018illustrative} also report 
+improved translation performance on the English--German and English--French Multi30K 
+and IWSLT 2014 German-English  \citep{cettolo2014report} translation tasks, when initializing
+the translation models with their grounded Picturebook word-embeddings. They also show that
+combining pre-trained GloVe \citep{pennington2014glove} and Picturebook embeddings lead 
+to improvements on natural language inference on the SNLI 
+\citep{bowman2015large} and MultiNLI \cite{williams2017broad} data sets and on predicting
+semantic relatedness on the SICK data set \citep{marelli2014semeval}. 
+\citep{kiela2017learning} through transfer experiments on
+entailement and sentence classification tasks find that the representations learned an 
+image--sentence ranking model train on COCO -- similar to the ones trained in Chapters~\ref{ch:IJCNLP}, 
+\ref{ch:ConLL}, \ref{ch: EMNLP}  -- outperform that of their SkipThought \citep{kiros2015skip} 
+implementation. They conclude that visual grounding leads to qualitatively different representations, which
+can be beneficial many tasks.
+
+Given the promising results on the benefit of visual grounding on sentence level tasks it seems
+to be an important avenue to explore techniques to learn better quality and more 
+general multi-modal representations. To this end in Chapters~\ref{ch:ConLL} and ~\ref{ch:EMNLP} 
+we turned to learning grounded representations for multipe languages jointly. 
+The benefit of multilingual joint learning have been demonstrated for example in dependency parsing
+ \citep{ammar2016many}, machine translation \citep{johnson2016google} and grapheme-to-phoneme
+ conversion \citep{peters2017massively}. 
+ In the visually grounded representation learning \citep{gella2017image} showed improved 
+ performance in some cases for image--sentence ranking and semantic textual similarity when training
+ on two languages jointly.
+ 
+  In Chapter~\ref{ch:ConLL} we improve and expand the results of 
+ \cite{gella2017image}. Firstly, contrary to their results we report consistent performance gains in the
+ bilingual setting in our setup: bilingual joint training improves for on both English and German image--sentence
+ ranking experiments and the cross--lingual caption--caption ranking objective provides further benefits
+ in both cases. Furthermore, we show that the results of the bilingual model can be improved by training
+ with two additional langauges: French and Czech. We 
+
+
 
 
 

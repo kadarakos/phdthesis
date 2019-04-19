@@ -318,6 +318,12 @@ Caglayan, O., Barrault, L., \& Bougares, F. (2016).
 \newblock Multimodal attention for neural machine translation.
 \newblock {\em CoRR}, abs/1609.03976.
 
+\bibitem[Caglayan et~al., 2019]{caglayan2019probing}
+Caglayan, O., Madhyastha, P., Specia, L., \& Barrault, L. (2019).
+\newblock Probing the need for visual context in multimodal machine
+  translation.
+\newblock {\em arXiv preprint arXiv:1903.08678}.
+
 \bibitem[Calixto et~al., 2016]{Calixto2016}
 Calixto, I., Elliott, D., \& Frank, S. (2016).
 \newblock {DCU-UvA Multimodal MT System Report}.
@@ -373,6 +379,13 @@ Cauchy, A. (1847).
 \newblock M{\'e}thode g{\'e}n{\'e}rale pour la r{\'e}solution des systemes
   d’{\'e}quations simultan{\'e}es.
 \newblock {\em Comp. Rend. Sci. Paris}, 25(1847), 536--538.
+
+\bibitem[Cettolo et~al., 2014]{cettolo2014report}
+Cettolo, M., Niehues, J., St{\"u}ker, S., Bentivogli, L., \& Federico, M.
+  (2014).
+\newblock Report on the 11th iwslt evaluation campaign, iwslt 2014.
+\newblock In {\em Proceedings of the International Workshop on Spoken Language
+  Translation, Hanoi, Vietnam}  (pp.\~57).
 
 \bibitem[Chandar et~al., 2016]{chandar2016correlational}
 Chandar, S., Khapra, M.~M., Larochelle, H., \& Ravindran, B. (2016).
@@ -1214,6 +1227,13 @@ Kiros, J. \& Chan, W. (2018).
 \newblock In {\em Proceedings of the 2018 Conference on Empirical Methods in
   Natural Language Processing}  (pp.\ 4868--4874).
 
+\bibitem[Kiros et~al., 2018]{kiros2018illustrative}
+Kiros, J., Chan, W., \& Hinton, G. (2018).
+\newblock Illustrative language understanding: Large-scale visual grounding
+  with image search.
+\newblock In {\em Proceedings of the 56th Annual Meeting of the Association for
+  Computational Linguistics (Volume 1: Long Papers)}  (pp.\ 922--933).
+
 \bibitem[Kiros et~al., 2014]{kiros2014unifying}
 Kiros, R., Salakhutdinov, R., \& Zemel, R.~S. (2014).
 \newblock Unifying visual-semantic embeddings with multimodal neural language
@@ -1492,9 +1512,18 @@ Marcus, M.~P., Marcinkiewicz, M.~A., \& Santorini, B. (1993).
 \newblock Building a large annotated corpus of english: The penn treebank.
 \newblock {\em Computational linguistics}, 19(2), 313--330.
 
-\bibitem[Marelli et~al., 2014]{marelli2014sick}
+\bibitem[Marelli et~al., 2014a]{marelli2014semeval}
+Marelli, M., Bentivogli, L., Baroni, M., Bernardi, R., Menini, S., \&
+  Zamparelli, R. (2014a).
+\newblock Semeval-2014 task 1: Evaluation of compositional distributional
+  semantic models on full sentences through semantic relatedness and textual
+  entailment.
+\newblock In {\em Proceedings of the 8th international workshop on semantic
+  evaluation (SemEval 2014)}  (pp.\ 1--8).
+
+\bibitem[Marelli et~al., 2014b]{marelli2014sick}
 Marelli, M., Menini, S., Baroni, M., Bentivogli, L., Bernardi, R., Zamparelli,
-  R., et~al. (2014).
+  R., et~al. (2014b).
 \newblock A sick cure for the evaluation of compositional distributional
   semantic models.
 \newblock In {\em LREC}  (pp.\ 216--223).

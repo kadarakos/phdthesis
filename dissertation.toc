@@ -146,10 +146,11 @@
 \contentsline {section}{\numberline {A.1}Visually grounded word representations}{193}{section.A.1}
 \contentsline {section}{\numberline {A.2}Visually grounded sentence representations}{196}{section.A.2}
 \contentsline {section}{\numberline {A.3}Improving translation with visual grounding}{200}{section.A.3}
-\contentsline {section}{\numberline {A.4}Future directions}{201}{section.A.4}
-\contentsline {subsection}{\numberline {A.4.1}Raw input}{201}{subsection.A.4.1}
-\contentsline {subsection}{\numberline {A.4.2}Trasnferring grounded representations}{201}{subsection.A.4.2}
-\contentsline {chapter}{Summary}{203}{section*.70}
-\contentsline {chapter}{Publication list}{204}{section*.72}
-\contentsline {chapter}{References}{206}{section*.74}
-\contentsline {chapter}{TiCC PhD Series}{244}{section*.76}
+\contentsline {section}{\numberline {A.4}Multilingual visually grounded sentence representations}{202}{section.A.4}
+\contentsline {section}{\numberline {A.5}Future directions}{203}{section.A.5}
+\contentsline {subsection}{\numberline {A.5.1}Raw input}{203}{subsection.A.5.1}
+\contentsline {subsection}{\numberline {A.5.2}Trasnferring grounded representations}{203}{subsection.A.5.2}
+\contentsline {chapter}{Summary}{205}{section*.70}
+\contentsline {chapter}{Publication list}{206}{section*.72}
+\contentsline {chapter}{References}{208}{section*.74}
+\contentsline {chapter}{TiCC PhD Series}{246}{section*.76}
