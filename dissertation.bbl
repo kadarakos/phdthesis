@@ -76,11 +76,6 @@ AP, S.~C., Lauly, S., Larochelle, H., Khapra, M., Ravindran, B., Raykar, V.~C.,
 \newblock In {\em Advances in Neural Information Processing Systems}  (pp.\
   1853--1861).
 
-\bibitem[Asher, 2011]{asher2011lexical}
-Asher, N. (2011).
-\newblock {\em Lexical meaning in context: A web of words}.
-\newblock Cambridge University Press.
-
 \bibitem[Ba et~al., 2016]{ba2016layer}
 Ba, J.~L., Kiros, J.~R., \& Hinton, G.~E. (2016).
 \newblock Layer normalization.
@@ -164,6 +159,11 @@ Barsalou, L.~W., Simmons, W.~K., Barbey, A.~K., \& Wilson, C.~D. (2003).
 \newblock Grounding conceptual knowledge in modality-specific systems.
 \newblock {\em Trends in cognitive sciences}, 7(2), 84--91.
 
+\bibitem[Baxter, 2000]{baxter2000model}
+Baxter, J. (2000).
+\newblock A model of inductive bias learning.
+\newblock {\em Journal of artificial intelligence research}, 12, 149--198.
+
 \bibitem[Beekhuizen et~al., 2013]{beekhuizen2013word}
 Beekhuizen, B., Fazly, A., Nematzadeh, A., \& Stevenson, S. (2013).
 \newblock Word learning in the wild: What natural data can tell us.
@@ -230,6 +230,12 @@ Binder, A., Montavon, G., Lapuschkin, S., M{\"u}ller, K.-R., \& Samek, W.
   deep neural networks}.
 \newblock In {\em Proceedings of the 15th Conference of the European Chapter of
   the Association for Computational Linguistics}  (pp.\ 164--169).
+
+\bibitem[Bingel \& S{\o}gaard, 2017]{bingel2017identifying}
+Bingel, J. \& S{\o}gaard, A. (2017).
+\newblock Identifying beneficial task relations for multi-task learning in deep
+  neural networks.
+\newblock {\em arXiv preprint arXiv:1702.08303}.
 
 \bibitem[Blei et~al., 2003]{blei2003latent}
 Blei, D.~M., Ng, A.~Y., \& Jordan, M.~I. (2003).
@@ -362,8 +368,13 @@ Carlson, L., Marcu, D., \& Okurowski, M.~E. (2003).
 \newblock In {\em Current and new directions in discourse and dialogue}  (pp.\
   85--112). Springer.
 
-\bibitem[Caruana, 1997]{Caruana1997}
-Caruana, R. (1997).
+\bibitem[Caruana, 1997a]{caruana1997multitask}
+Caruana, R. (1997a).
+\newblock Multitask learning.
+\newblock {\em Machine learning}, 28(1), 41--75.
+
+\bibitem[Caruana, 1997b]{Caruana1997}
+Caruana, R. (1997b).
 \newblock Multitask learning.
 \newblock {\em Machine Learning}, 28(1), 41--75.
 
@@ -581,6 +592,11 @@ Devlin, J., Chang, M.-W., Lee, K., \& Toutanova, K. (2018).
   understanding.
 \newblock {\em arXiv preprint arXiv:1810.04805}.
 
+\bibitem[Dinu et~al., 2014]{dinu2014improving}
+Dinu, G., Lazaridou, A., \& Baroni, M. (2014).
+\newblock Improving zero-shot learning by mitigating the hubness problem.
+\newblock {\em arXiv preprint arXiv:1412.6568}.
+
 \bibitem[Dolan et~al., 2004]{dolan2004unsupervised}
 Dolan, B., Quirk, C., \& Brockett, C. (2004).
 \newblock Unsupervised construction of large paraphrase corpora: Exploiting
@@ -622,6 +638,15 @@ Dumais, S.~T. (2004).
 \newblock Latent semantic analysis.
 \newblock {\em Annual review of information science and technology}, 38(1),
   188--230.
+
+\bibitem[Duong et~al., 2015]{duong2015low}
+Duong, L., Cohn, T., Bird, S., \& Cook, P. (2015).
+\newblock Low resource dependency parsing: Cross-lingual parameter sharing in a
+  neural network parser.
+\newblock In {\em Proceedings of the 53rd Annual Meeting of the Association for
+  Computational Linguistics and the 7th International Joint Conference on
+  Natural Language Processing (Volume 2: Short Papers)}, volume~2  (pp.\
+  845--850).
 
 \bibitem[Dyer et~al., 2016]{dyer2016recurrent}
 Dyer, C., Kuncoro, A., Ballesteros, M., \& Smith, N.~A. (2016).
@@ -1047,6 +1072,13 @@ Huang, P.-Y., Liu, F., Shiang, S.-R., Oh, J., \& Dyer, C. (2016).
 \newblock In {\em Proceedings of the First Conference on Machine Translation}
   (pp.\ 639--645).
 
+\bibitem[Huang et~al., 2017]{huang2017instance}
+Huang, Y., Wang, W., \& Wang, L. (2017).
+\newblock Instance-aware image and sentence matching with selective multimodal
+  lstm.
+\newblock In {\em Proceedings of the IEEE Conference on Computer Vision and
+  Pattern Recognition}  (pp.\ 2310--2318).
+
 \bibitem[Hutchinson \& Kirk, 2011]{hutchinson2011high}
 Hutchinson, L. \& Kirk, R. (2011).
 \newblock High drug attrition rates—where are we going wrong?
@@ -1220,6 +1252,12 @@ Kingma, D.~P. \& Ba, J. (2015).
 \newblock Adam: {A} method for stochastic optimization.
 \newblock {\em International Conference on Learning Representations}.
 
+\bibitem[Kiperwasser \& Ballesteros, 2018]{kiperwasser2018scheduled}
+Kiperwasser, E. \& Ballesteros, M. (2018).
+\newblock Scheduled multi-task learning: From syntax to translation.
+\newblock {\em Transactions of the Association of Computational Linguistics},
+  6, 225--240.
+
 \bibitem[Kiros \& Chan, 2018]{kiros2018inferlite}
 Kiros, J. \& Chan, W. (2018).
 \newblock Inferlite: Simple universal sentence representations from natural
@@ -1274,6 +1312,12 @@ Koehn, P., Hoang, H., Birch, A., Callison-Burch, C., Federico, M., Bertoldi,
 \newblock Moses: Open source toolkit for statistical machine translation.
 \newblock In {\em Proceedings of the 45th Annual meeting of Association for
   Computational Linguistics}  (pp.\ 177--180).
+
+\bibitem[Krioukov et~al., 2010]{krioukov2010hyperbolic}
+Krioukov, D., Papadopoulos, F., Kitsak, M., Vahdat, A., \& Bogun{\'a}, M.
+  (2010).
+\newblock Hyperbolic geometry of complex networks.
+\newblock {\em Physical Review E}, 82(3), 036106.
 
 \bibitem[Krizhevsky et~al., 2012]{krizhevsky2012imagenet}
 Krizhevsky, A., Sutskever, I., \& Hinton, G.~E. (2012).
@@ -1546,6 +1590,11 @@ Matusevych, Y., Alishahi, A., \& Vogt, P. (2013).
 \newblock In {\em Proceedings of the 35th Annual Meeting of the Cognitive
   Science Society. Austin, TX: Cognitive Science Society}  (pp.\ 2996--3001).
 
+\bibitem[Maurer, 2006]{maurer2006bounds}
+Maurer, A. (2006).
+\newblock Bounds for linear multi-task learning.
+\newblock {\em Journal of Machine Learning Research}, 7(Jan), 117--139.
+
 \bibitem[Meteyard et~al., 2012]{meteyard2012coming}
 Meteyard, L., Cuadrado, S.~R., Bahrami, B., \& Vigliocco, G. (2012).
 \newblock Coming of age: A review of embodiment and the neuroscience of
@@ -1605,12 +1654,19 @@ Mitchell, J. \& Lapata, M. (2008).
 \newblock Vector-based models of semantic composition.
 \newblock {\em proceedings of ACL-08: HLT}, (pp.\ 236--244).
 
-\bibitem[Miyazaki \& Shimizu, 2016]{P16-1168}
-Miyazaki, T. \& Shimizu, N. (2016).
+\bibitem[Miyazaki \& Shimizu, 2016a]{P16-1168}
+Miyazaki, T. \& Shimizu, N. (2016a).
 \newblock Cross-lingual image caption generation.
 \newblock In {\em Proceedings of the 54th Annual Meeting of the Association for
   Computational Linguistics (Volume 1: Long Papers)}  (pp.\ 1780--1790).:
   Association for Computational Linguistics.
+
+\bibitem[Miyazaki \& Shimizu, 2016b]{miyazaki2016cross}
+Miyazaki, T. \& Shimizu, N. (2016b).
+\newblock Cross-lingual image caption generation.
+\newblock In {\em Proceedings of the 54th Annual Meeting of the Association for
+  Computational Linguistics (Volume 1: Long Papers)}, volume~1  (pp.\
+  1780--1790).
 
 \bibitem[Montague, 1970]{montague1970english}
 Montague, R. (1970).
@@ -1635,6 +1691,12 @@ Nakayama, H. \& Nishida, N. (2017b).
 \newblock Zero-resource machine translation by multimodal encoder-decoder
   network with multimedia pivot.
 \newblock {\em Machine Translation}, 31(1-2), 49--64.
+
+\bibitem[Nam et~al., 2017]{nam2017dual}
+Nam, H., Ha, J.-W., \& Kim, J. (2017).
+\newblock Dual attention networks for multimodal reasoning and matching.
+\newblock In {\em Proceedings of the IEEE Conference on Computer Vision and
+  Pattern Recognition}  (pp.\ 299--307).
 
 \bibitem[Nelson et~al., 1998]{nelsonuniversity}
 Nelson, D., McEvoy, C., \& Schreiber, T. (1998).
@@ -1778,6 +1840,12 @@ Radinsky, K., Agichtein, E., Gabrilovich, E., \& Markovitch, S. (2011).
 \newblock In {\em Proceedings of the 20th International Conference on World
   Wide Web}  (pp.\ 337--346).: ACM.
 
+\bibitem[Radovanovi{\'c} et~al., 2010]{radovanovic2010existence}
+Radovanovi{\'c}, M., Nanopoulos, A., \& Ivanovi{\'c}, M. (2010).
+\newblock On the existence of obstinate results in vector space models.
+\newblock In {\em Proceedings of the 33rd international ACM SIGIR conference on
+  Research and development in information retrieval}  (pp.\ 186--193).: ACM.
+
 \bibitem[Rajendran et~al., 2015]{rajendran2015bridge}
 Rajendran, J., Khapra, M.~M., Chandar, S., \& Ravindran, B. (2015).
 \newblock Bridge correlational neural networks for multilingual multimodal
@@ -1855,6 +1923,12 @@ Rubenstein, H. \& Goodenough, J.~B. (1965).
 \newblock Contextual correlates of synonymy.
 \newblock {\em Communications of the ACM}, 8(10), 627--633.
 
+\bibitem[Ruder et~al., 2017]{ruder2017sluice}
+Ruder, S., Bingel, J., Augenstein, I., \& S{\o}gaard, A. (2017).
+\newblock Sluice networks: Learning what to share between loosely related
+  tasks.
+\newblock {\em arXiv preprint arXiv:1705.08142}.
+
 \bibitem[Rumelhart et~al., 1985]{rumelhart1985learning}
 Rumelhart, D.~E., Hinton, G.~E., \& Williams, R.~J. (1985).
 \newblock {\em Learning internal representations by error propagation}.
@@ -1879,6 +1953,12 @@ Saha, A., Khapra, M.~M., Chandar, S., Rajendran, J., \& Cho, K. (2016b).
   generation.
 \newblock In {\em 26th International Conference on Computational Linguistics:
   Technical Papers}  (pp.\ 109--118).
+
+\bibitem[Sanh et~al., 2018]{sanh2018hierarchical}
+Sanh, V., Wolf, T., \& Ruder, S. (2018).
+\newblock A hierarchical multi-task approach for learning embeddings from
+  semantic tasks.
+\newblock {\em arXiv preprint arXiv:1811.06031}.
 
 \bibitem[Schafer \& Yarowsky, 2002]{schafer2002inducing}
 Schafer, C. \& Yarowsky, D. (2002).
@@ -2081,6 +2161,13 @@ Tai, K.~S., Socher, R., \& Manning, C.~D. (2015b).
   short-term memory networks.
 \newblock {\em arXiv preprint arXiv:1503.00075}.
 
+\bibitem[Tay et~al., 2018]{tay2018hyperbolic}
+Tay, Y., Tuan, L.~A., \& Hui, S.~C. (2018).
+\newblock Hyperbolic representation learning for fast and efficient neural
+  question answering.
+\newblock In {\em Proceedings of the Eleventh ACM International Conference on
+  Web Search and Data Mining}  (pp.\ 583--591).: ACM.
+
 \bibitem[Tiedemann, 2012]{Tiedemann2012}
 Tiedemann, J. (2012).
 \newblock Parallel data, tools and interfaces in opus.
@@ -2092,6 +2179,20 @@ Tomasello, M. \& Akhtar, N. (1995).
 \newblock Two-year-olds use pragmatic cues to differentiate reference to
   objects and actions.
 \newblock {\em Cognitive Development}, 10(2), 201--224.
+
+\bibitem[Toma{\v{s}}ev et~al., 2011a]{tomavsev2011influence}
+Toma{\v{s}}ev, N., Brehar, R., Mladeni{\'c}, D., \& Nedevschi, S. (2011a).
+\newblock The influence of hubness on nearest-neighbor methods in object
+  recognition.
+\newblock In {\em 2011 IEEE 7th International Conference on Intelligent
+  Computer Communication and Processing}  (pp.\ 367--374).: IEEE.
+
+\bibitem[Toma{\v{s}}ev et~al., 2011b]{tomavsev2011probabilistic}
+Toma{\v{s}}ev, N., Radovanovic, M., Mladenic, D., \& Ivanovic, M. (2011b).
+\newblock A probabilistic approach to nearest-neighbor classification: Naive
+  hubness bayesian knn.
+\newblock In {\em Proc. 20th ACM Int. Conf. on Information and Knowledge
+  Management (CIKM)}  (pp.\ 2173--2176).
 
 \bibitem[Toyama et~al., 2016]{toyama2016neural}
 Toyama, J., Misono, M., Suzuki, M., Nakayama, K., \& Matsuo, Y. (2016).
@@ -2145,6 +2246,11 @@ Venugopalan, S., Xu, H., Donahue, J., Rohrbach, M., Mooney, R., \& Saenko, K.
 \newblock Translating videos to natural language using deep recurrent neural
   networks.
 \newblock {\em arXiv preprint arXiv:1412.4729}.
+
+\bibitem[Vilnis \& McCallum, 2014]{vilnis2014word}
+Vilnis, L. \& McCallum, A. (2014).
+\newblock Word representations via gaussian embedding.
+\newblock {\em arXiv preprint arXiv:1412.6623}.
 
 \bibitem[Vinyals et~al., 2015a]{vinyals2015grammar}
 Vinyals, O., Kaiser, {\L}., Koo, T., Petrov, S., Sutskever, I., \& Hinton, G.
@@ -2270,6 +2376,11 @@ Xu, K., Ba, J., Kiros, R., Cho, K., Courville, A., Salakhudinov, R., Zemel, R.,
 Yang, D. \& Powers, D.~M. (2006).
 \newblock {\em Verb Similarity on the Taxonomy of WordNet}.
 \newblock Citeseer.
+
+\bibitem[Yang \& Hospedales, 2016]{yang2016trace}
+Yang, Y. \& Hospedales, T.~M. (2016).
+\newblock Trace norm regularised deep multi-task learning.
+\newblock {\em arXiv preprint arXiv:1606.04038}.
 
 \bibitem[Yogatama et~al., 2016]{yogatama2016learning}
 Yogatama, D., Blunsom, P., Dyer, C., Grefenstette, E., \& Ling, W. (2016).
