@@ -562,11 +562,6 @@ Csurka, G., Dance, C., Fan, L., Willamowski, J., \& Bray, C. (2004).
 \newblock In {\em Workshop on statistical learning in computer vision, ECCV},
   volume~1  (pp.\ 1--2).: Prague.
 
-\bibitem[De~Bie \& De~Moor, 2003]{de2003regularization}
-De~Bie, T. \& De~Moor, B. (2003).
-\newblock On the regularization of canonical correlation analysis.
-\newblock {\em Int. Sympos. ICA and BSS}, (pp.\ 785--790).
-
 \bibitem[Dempster et~al., 1977]{dempster1977maximum}
 Dempster, A.~P., Laird, N.~M., \& Rubin, D.~B. (1977).
 \newblock Maximum likelihood from incomplete data via the em algorithm.

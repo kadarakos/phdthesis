@@ -19,7 +19,7 @@ A level-1 auxiliary file: endmatter/summary.aux
 A level-1 auxiliary file: endmatter/publicationlist.aux
 The style file: apalike2.bst
 A level-1 auxiliary file: endmatter/ticcthesis.aux
-Reallocated field_info (elt_size=4) to 14042 items from 5000.
+Reallocated field_info (elt_size=4) to 14020 items from 5000.
 Database file #1: references.bib
 Repeated entry---line 425 of file references.bib
  : @inproceedings{kievit2013naturalistic
@@ -488,45 +488,45 @@ Warning--can't use both volume and number fields in kievit2013naturalistic
 Warning--empty journal in nivre2015universal
 Warning--empty journal in perfetti1998limits
 Warning--empty journal in Sennrich2017
-You've used 406 entries,
+You've used 405 entries,
             2229 wiz_defined-function locations,
-            2471 strings with 80777 characters,
-and the built_in function-call counts, 185416 in all, are:
-= -- 18231
-> -- 8313
-< -- 311
-+ -- 2987
-- -- 2857
-* -- 14995
-:= -- 30834
-add.period$ -- 1214
-call.type$ -- 406
-change.case$ -- 3436
-chr.to.int$ -- 370
-cite$ -- 418
-duplicate$ -- 7671
-empty$ -- 12599
-format.name$ -- 3437
-if$ -- 37467
+            2466 strings with 80640 characters,
+and the built_in function-call counts, 184920 in all, are:
+= -- 18177
+> -- 8300
+< -- 309
++ -- 2983
+- -- 2853
+* -- 14960
+:= -- 30760
+add.period$ -- 1211
+call.type$ -- 405
+change.case$ -- 3429
+chr.to.int$ -- 369
+cite$ -- 417
+duplicate$ -- 7648
+empty$ -- 12564
+format.name$ -- 3430
+if$ -- 37359
 int.to.chr$ -- 37
 int.to.str$ -- 0
-missing$ -- 412
-newline$ -- 2027
-num.names$ -- 1220
-pop$ -- 3819
+missing$ -- 411
+newline$ -- 2022
+num.names$ -- 1217
+pop$ -- 3813
 preamble$ -- 1
-purify$ -- 3447
+purify$ -- 3440
 quote$ -- 0
-skip$ -- 5874
+skip$ -- 5851
 stack$ -- 0
-substring$ -- 11991
-swap$ -- 1836
-text.length$ -- 173
+substring$ -- 11947
+swap$ -- 1826
+text.length$ -- 172
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 2416
+type$ -- 2410
 warning$ -- 12
-while$ -- 1424
+while$ -- 1419
 width$ -- 0
-write$ -- 5181
+write$ -- 5168
 (There were 112 error messages)

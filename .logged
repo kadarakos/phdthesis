@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2018.10.12)  25 APR 2019 20:32
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2018.10.12)  26 APR 2019 12:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1895,6 +1895,11 @@ LaTeX Warning: Reference `ch:EMNLP' on page 7 undefined on input line 196.
 LaTeX Warning: Reference `ch:EMNLP' on page 8 undefined on input line 235.
 
 [8]
+
+LaTeX Warning: Reference `sec:bilinglex' on page 9 undefined on input line 238.
+
+
+
 Overfull \hbox (11.72362pt too wide) in paragraph at lines 250--259
 \EU1/lmr/m/n/12 grounded sentence representations learned for multiple language
 s jointly.
@@ -1959,76 +1964,81 @@ del
  []
 
 
-Overfull \hbox (26.89114pt too wide) in paragraph at lines 796--809
+Overfull \hbox (26.89114pt too wide) in paragraph at lines 795--808
 []\EU1/lmr/m/n/12 Combining BoVW and count-based distributional word-representa
 tions
  []
 
 [22] [23] [24] [25] [26] [27] [28]
 
-LaTeX Warning: Reference `EMNLP' on page 29 undefined on input line 969.
+LaTeX Warning: Reference `EMNLP' on page 29 undefined on input line 963.
 
 
-LaTeX Warning: Reference `ch:EMNLP' on page 29 undefined on input line 988.
+LaTeX Warning: Reference `ch:EMNLP' on page 29 undefined on input line 982.
 
 [29] [30]
-Overfull \hbox (17.35164pt too wide) in paragraph at lines 1056--1063
+Overfull \hbox (17.35164pt too wide) in paragraph at lines 1049--1056
 \EU1/lmr/m/n/12 They argue that evaluating grounded learning through image–desc
 ription
  []
 
 [31] [32]
 
-LaTeX Warning: Reference `EMNLP' on page 33 undefined on input line 1103.
+LaTeX Warning: Reference `EMNLP' on page 33 undefined on input line 1096.
 
 
-LaTeX Warning: Reference `ch:EMNLP' on page 33 undefined on input line 1119.
+LaTeX Warning: Reference `ch:EMNLP' on page 33 undefined on input line 1109.
 
 [33]
-Overfull \hbox (8.01161pt too wide) in paragraph at lines 1165--1171
+Overfull \hbox (8.01161pt too wide) in paragraph at lines 1137--1143
 \EU1/lmr/m/n/12 These findings were confirmed and improved upon using a self-at
 tention
  []
 
-[34]
 
-LaTeX Warning: Reference `ch:EMNLP' on page 35 undefined on input line 1181.
+LaTeX Warning: Reference `ch:EMNLP' on page 34 undefined on input line 1152.
 
 
-LaTeX Warning: Reference `ch:EMNLP' on page 35 undefined on input line 1233.
+LaTeX Warning: Reference `ch:EMNLP' on page 34 undefined on input line 1204.
 
-[35] [36] [37]
-Overfull \hbox (7.40445pt too wide) in paragraph at lines 1301--1311
+[34] [35] [36]
+Overfull \hbox (7.40445pt too wide) in paragraph at lines 1268--1278
 []\EU1/lmr/m/n/12 In the multi-lingual multi-modal setting [][]Funaki & Nakayam
 a[][] ([][]2015[][])
  []
 
 
-Overfull \hbox (5.77245pt too wide) in paragraph at lines 1312--1321
+Overfull \hbox (5.77245pt too wide) in paragraph at lines 1279--1288
 []\EU1/lmr/m/n/12 The bridge correlational neural network approach ([][]Rajendr
 an et al.[][],
  []
 
-[38]
+[37]
 
-LaTeX Warning: Reference `ch:EMNLP' on page 39 undefined on input line 1334.
+LaTeX Warning: Reference `ch:EMNLP' on page 38 undefined on input line 1301.
 
-[39] [40] [41] [42] [43] [44] [45] [46]
-Overfull \hbox (4.09962pt too wide) in paragraph at lines 1570--1573
+[38] [39] [40]
+Overfull \hbox (0.23164pt too wide) in paragraph at lines 1399--1411
+\EU1/lmr/m/n/12 improved later by modeling the image-pivot based zero-resource 
+trans-
+ []
+
+[41] [42] [43] [44]
+Overfull \hbox (4.09962pt too wide) in paragraph at lines 1525--1528
 \EU1/lmr/m/n/12 siteit Amsterdam: a data set of native Dutch spoken image-descr
 iption
  []
 
-[47]) [48]
+[45] [46]) [47]
 \openout2 = `chapters/TAL/main.aux'.
 
- (./chapters/TAL/main.tex
+ (./chapters/TAL/main.tex [48
+
+
+
+]
 Chapter 3.
-[49
-
-
-
-] [50] [51] (./chapters/TAL/intro.tex [52] [53] [54] [55])
+[49] [50] [51] (./chapters/TAL/intro.tex [52] [53] [54] [55])
 (./chapters/TAL/models.tex [56] [57]
 *************************************************
 * fontspec warning: "addfontfeatures-ignored"
@@ -3155,10 +3165,10 @@ LaTeX Warning: There were multiply-defined labels.
 ### simple group (level 1) entered at line 75 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 55758 strings out of 493638
- 1238183 string characters out of 6146795
- 1525458 words of memory out of 5000000
- 58042 multiletter control sequences out of 15000+600000
+ 55752 strings out of 493638
+ 1238050 string characters out of 6146795
+ 1525071 words of memory out of 5000000
+ 58036 multiletter control sequences out of 15000+600000
  22713 words of font info for 109 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
  69i,20n,81p,10485b,3002s stack positions out of 5000i,500n,10000p,200000b,80000s
