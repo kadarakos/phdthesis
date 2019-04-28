@@ -35,13 +35,13 @@ the thesis.
 \item[Chapter~\ref{ch:TAL}] presents
 a cognitive model of language learning that learns \emph{visually grounded word representations}.
 
-\item[Chapter~\ref{ch:CL} ] focuses on \emph{visually grounded sentence representations} and their
+\item[Chapter~\ref{ch:COLI} ] focuses on \emph{visually grounded sentence representations} and their
 interpretations from a linguistic perspective using the architecture that is the basis
 for the chapters to follow: combination of a Convolutional Neural Network to extract visual features and
 a Recurrent Neural Network to learn sentence embeddings.
 
 \item[Chapter~\ref{ch:IJCNLP}] applies visually grounded representation learning approach that forms the
-basis of Chapter~\ref{ch:CL} to \emph{improve machine translation} in the domain of visually descriptive language.
+basis of Chapter~\ref{ch:COLI} to \emph{improve machine translation} in the domain of visually descriptive language.
 
 \item[Chapter~\ref{ch:ConLL}] shows the clear benefits of learning visually grounded representations
 for multiple languages jointly.
@@ -235,11 +235,9 @@ focusing on the specific case of multi-modal and multi-lingual representations w
 Chapter~\ref{ch:ConLL} and \ref{ch:EMNLP}.
 
 The visual modality as pivot on the word-level can be used to find possible translations
-for words when no dictionary is available. Section~\ref{sec:bilinglex} provides the reader with more
-detail on bilingual lexicon induction using the visual modality.
-Extending this idea from word to sentence level gives rise to techniques that
-use the visual modality as a pivot to translate full sentences. Approaches in this direction are discussed
-in Section~\ref{sec:imgpivot}.
+for words when no dictionary is available. Extending this idea from word to sentence level gives rise to techniques that
+use the visual modality as a pivot to translate full sentences. 
+Approaches in this direction are discussed in Section~\ref{sec:imgpivot}.
 
 The \textbf{third contribution} in the thesis combines visually grounded sentence representation learning
 with machine translation. More specifically in Chapter~\ref{ch:IJCNLP} we present a \emph{multi-task}
@@ -1036,7 +1034,7 @@ These representations are tuned to a specific task such as sequence tagging,
 sentence classification, machine translation, parsing or language modeling.
 
 
-In Chapters \ref{ch:COLI}, \ref{ch:IJCNLP}, \ref{ch:ConLL} and \ref{EMNLP} we decided to apply
+In Chapters \ref{ch:COLI}, \ref{ch:IJCNLP}, \ref{ch:ConLL} and \ref{ch:EMNLP} we decided to apply
 recurrent neural networks as sentence encoders.
 Recursive neural networks provide a principled approach to
 compute representations along the nodes of constituency
@@ -1169,7 +1167,7 @@ sentence fragments have also been explored concurrently \citep{karpathy2014deep,
 Following \cite{kiros2014unifying} to predict images from the sentences
 -- and conversely sentences from the images --
 the architecture we chose in
-Chapters \ref{ch:COLI}, \ref{ch:IJCNLP}, \ref{ch:ConLL} and \ref{EMNLP}  combines
+Chapters \ref{ch:COLI}, \ref{ch:IJCNLP}, \ref{ch:ConLL} and \ref{ch:EMNLP}  combines
 a recurrent neural network to
 represent sentences and a pre-trained convolutional neural networks
 followed by an affine transformation we train for the task

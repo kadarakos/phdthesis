@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2018.10.12)  28 APR 2019 17:34
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2018.10.12)  28 APR 2019 18:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1870,13 +1870,6 @@ Chapter 1.
 [1
 
 ]
-
-LaTeX Warning: Reference `ch:CL' on page 2 undefined on input line 38.
-
-
-LaTeX Warning: Reference `ch:CL' on page 2 undefined on input line 44.
-
-
 Overfull \hbox (10.79855pt too wide) in paragraph at lines 43--45
 []\EU1/lmr/m/n/12 applies visually grounded representation learning approach
  []
@@ -1910,12 +1903,7 @@ Overfull \hbox (16.81912pt too wide) in paragraph at lines 221--221
  []
 
 [8]
-
-LaTeX Warning: Reference `sec:bilinglex' on page 9 undefined on input line 238.
-
-
-
-Overfull \hbox (11.72362pt too wide) in paragraph at lines 250--259
+Overfull \hbox (11.72362pt too wide) in paragraph at lines 248--257
 \EU1/lmr/m/n/12 grounded sentence representations learned for multiple language
 s jointly.
  []
@@ -1923,7 +1911,7 @@ s jointly.
 [9] [10]
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 291.
+(hyperref)                be the same. Added a new anchor on input line 289.
 
 [11] [12] Excluding 'comment' comment. [13] [14
 
@@ -1932,16 +1920,16 @@ Chapter 2.
 [15] [16]
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 542.
+(hyperref)                be the same. Added a new anchor on input line 540.
 
 [17] [18]
-Overfull \hbox (0.27037pt too wide) in paragraph at lines 623--626
+Overfull \hbox (0.27037pt too wide) in paragraph at lines 621--624
 \EU1/lmr/m/n/12 (BPTT) ([][]Robinson & Fallside[][], [][]1987[][]; [][]Werbos[]
 [], [][]1988[][]; [][]Williams & Zipser[][],
  []
 
 [19]
-LaTeX Font Info:    Try loading font information for EU1+lmtt on input line 695
+LaTeX Font Info:    Try loading font information for EU1+lmtt on input line 693
 .
  (/usr/share/texlive/texmf-dist/tex/latex/euenc/eu1lmtt.fd
 File: eu1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1951,67 +1939,59 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
  [20]
-Overfull \hbox (11.38455pt too wide) in paragraph at lines 720--725
+Overfull \hbox (11.38455pt too wide) in paragraph at lines 718--723
 \EU1/lmr/m/n/12 optimizes word-embeddings to predict the re-weighted $[]$ co-oc
 currence
  []
 
 
-Overfull \hbox (10.07993pt too wide) in paragraph at lines 758--758
+Overfull \hbox (10.07993pt too wide) in paragraph at lines 756--756
 |\EU1/lmr/bx/n/17.28 Visually grounded representations of words| 
  []
 
 [21] [22] [23]
-Overfull \hbox (17.48634pt too wide) in paragraph at lines 848--861
+Overfull \hbox (17.48634pt too wide) in paragraph at lines 846--859
 \EU1/lmr/m/n/12 ([][]2012[][]) also combines distributional semantic models and
  BoVW pipelines.
  []
 
 [24]
-Overfull \hbox (26.89114pt too wide) in paragraph at lines 871--884
+Overfull \hbox (26.89114pt too wide) in paragraph at lines 869--882
 []\EU1/lmr/m/n/12 Combining BoVW and count-based distributional word-representa
 tions
  []
 
-[25] [26] [27] [28] [29] [30]
-
-LaTeX Warning: Reference `EMNLP' on page 31 undefined on input line 1039.
-
-[31] [32]
-Overfull \hbox (11.96344pt too wide) in paragraph at lines 1101--1101
+[25] [26] [27] [28] [29] [30] [31] [32]
+Overfull \hbox (11.96344pt too wide) in paragraph at lines 1099--1099
 |\EU1/lmr/bx/n/17.28 Visually grounded sentence representations| 
  []
 
 [33]
-Overfull \hbox (17.35164pt too wide) in paragraph at lines 1125--1132
+Overfull \hbox (17.35164pt too wide) in paragraph at lines 1123--1130
 \EU1/lmr/m/n/12 They argue that evaluating grounded learning through image–desc
 ription
  []
 
 [34] [35]
-
-LaTeX Warning: Reference `EMNLP' on page 36 undefined on input line 1172.
-
-
-Overfull \hbox (8.01161pt too wide) in paragraph at lines 1213--1219
+Overfull \hbox (8.01161pt too wide) in paragraph at lines 1211--1217
 \EU1/lmr/m/n/12 These findings were confirmed and improved upon using a self-at
 tention
  []
 
 [36] [37] [38]
-Overfull \hbox (7.40445pt too wide) in paragraph at lines 1344--1354
+Overfull \hbox (7.40445pt too wide) in paragraph at lines 1342--1352
 []\EU1/lmr/m/n/12 In the multi-lingual multi-modal setting [][]Funaki & Nakayam
 a[][] ([][]2015[][])
  []
 
 [39]
-Overfull \hbox (5.77245pt too wide) in paragraph at lines 1355--1364
+Overfull \hbox (5.77245pt too wide) in paragraph at lines 1353--1362
 []\EU1/lmr/m/n/12 The bridge correlational neural network approach ([][]Rajendr
 an et al.[][],
  []
 
 [40] [41] [42]
-Overfull \hbox (0.23164pt too wide) in paragraph at lines 1475--1487
+Overfull \hbox (0.23164pt too wide) in paragraph at lines 1473--1485
 \EU1/lmr/m/n/12 improved later by modeling the image-pivot based zero-resource 
 trans-
  []
@@ -2938,13 +2918,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: Text page 172 contains only floats.
 
-[172] Excluding 'comment' comment.
-! Undefined control sequence.
-l.144 ... because the disjoint setting in \newcite
-                                                  {kadar2018conll} is artifi...
-
-? 
-[173] Excluding 'comment' comment.
+[172] Excluding 'comment' comment. [173] Excluding 'comment' comment.
 Overfull \hbox (2.72499pt too wide) in paragraph at lines 196--202
 \EU1/lmr/m/n/12 combination of \EU1/lmr/m/it/12 disjoint \EU1/lmr/m/n/12 and \E
 U1/lmr/m/it/12 aligned \EU1/lmr/m/n/12 data settings. We train an English-
@@ -3024,13 +2998,7 @@ LaTeX Warning: No positions in optional float specifier.
 * The current font is "\EU1/lmr/m/n/12 ".
 * The requested feature is "RawFeature=+tnum".
 *************************************************
-[178]
-! Undefined control sequence.
-l.27 ...he best approaches as reported by \newcite
-                                                  {rotman2018bridging}. Our ...
-
-? 
-[179] Excluding 'comment' comment.)
+[178] [179] Excluding 'comment' comment.)
 (./chapters/EMNLP/discussion-pseudoanalysis.tex
 
 Package natbib Warning: Citation `zipf1949human' on page 180 undefined on input
@@ -3052,51 +3020,17 @@ File: chapters/EMNLP/assets/8.png Graphic file (type QTm)
 <use  "chapters/EMNLP/assets/8.png" >
 File: chapters/EMNLP/assets/2.png Graphic file (type QTm)
  <use  "chapters/EMNLP/assets/2.png" >
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.27 ...1\textwidth]{chapters/EMNLP/assets/2.png}}
-                                                   &
-? 
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.27 ...1\textwidth]{chapters/EMNLP/assets/2.png}}
-                                                   &
-? 
 File: chapters/EMNLP/assets/9.png Graphic file (type QTm)
+
 <use  "chapters/EMNLP/assets/9.png" >
 File: chapters/EMNLP/assets/5.png Graphic file (type QTm)
  <use  "chapters/EMNLP/assets/5.png" >
-Overfull \hbox (7.92355pt too wide) in paragraph at lines 23--41
+Overfull \hbox (7.92355pt too wide) in paragraph at lines 23--50
  [] 
  []
 
 Excluding 'comment' comment.) Excluding 'comment' comment.)
-(./chapters/EMNLP/related.tex
-! Undefined control sequence.
-l.14 For example, \newcite
-                          {rotman2018bridging} improves bilingual sentence r...
-
-? 
-! Undefined control sequence.
-l.16 \newcite
-             {D17-1303}, propose a convolutional-recurrent architecture with...
-
-? 
-! Undefined control sequence.
-l.18 ...oved by the approach presented in \newcite
-                                                  {kadar2018conll}, who also
-? 
-[182] [183]) (./chapters/EMNLP/conclusions.tex)
+(./chapters/EMNLP/related.tex [182] [183]) (./chapters/EMNLP/conclusions.tex)
 Overfull \hbox (0.56761pt too wide) in paragraph at lines 3--115
 \EU1/lmr/m/n/12 performance when training models jointly on multiple languages 
 [][]Gella
@@ -3268,10 +3202,10 @@ LaTeX Warning: There were multiply-defined labels.
 ### simple group (level 1) entered at line 75 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 55761 strings out of 493638
- 1237737 string characters out of 6146795
- 1523386 words of memory out of 5000000
- 58018 multiletter control sequences out of 15000+600000
+ 55758 strings out of 493638
+ 1237708 string characters out of 6146795
+ 1523350 words of memory out of 5000000
+ 58015 multiletter control sequences out of 15000+600000
  24648 words of font info for 118 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
  69i,20n,81p,10485b,3002s stack positions out of 5000i,500n,10000p,200000b,80000s
