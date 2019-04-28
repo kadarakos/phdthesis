@@ -13,13 +13,13 @@ A level-1 auxiliary file: chapters/TAL/main.aux
 A level-1 auxiliary file: chapters/COLI/double_paper.aux
 A level-1 auxiliary file: chapters/IJCNLP/emnlp2017.aux
 A level-1 auxiliary file: chapters/ConLL/conll2018.aux
-A level-1 auxiliary file: chapters/COLING/main.aux
+A level-1 auxiliary file: chapters/EMNLP/naaclhlt2019.aux
 A level-1 auxiliary file: chapters/conclusion.aux
 A level-1 auxiliary file: endmatter/summary.aux
 A level-1 auxiliary file: endmatter/publicationlist.aux
 The style file: apalike2.bst
 A level-1 auxiliary file: endmatter/ticcthesis.aux
-Reallocated field_info (elt_size=4) to 13998 items from 5000.
+Reallocated field_info (elt_size=4) to 13580 items from 5000.
 Database file #1: references.bib
 Repeated entry---line 425 of file references.bib
  : @inproceedings{kievit2013naturalistic
@@ -201,10 +201,6 @@ Repeated entry---line 3705 of file references.bib
  : @article{lazaridou2015combining
  :                                ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 3724 of file references.bib
- : @inproceedings{chrupala2017representations
- :                                           ,
-I'm skipping whatever remains of this entry
 Reallocated str_pool (elt_size=1) to 130000 items from 65000.
 Repeated entry---line 4281 of file references.bib
  : @inproceedings{kiros2015skip
@@ -331,10 +327,6 @@ Repeated entry---line 7191 of file references.bib
  : @article{kadar2017representation
  :                                 ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 7201 of file references.bib
- : @inproceedings{chrupala2017representations
- :                                           ,
-I'm skipping whatever remains of this entry
 Repeated entry---line 7260 of file references.bib
  : @article{li2016understanding
  :                             ,
@@ -403,12 +395,12 @@ Repeated entry---line 7550 of file references.bib
  : @inproceedings{nam2017dual
  :                           ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 7558 of file references.bib
- : @inproceedings{chrupala2017representations
- :                                           ,
-I'm skipping whatever remains of this entry
 Repeated entry---line 7567 of file references.bib
  : @inproceedings{cho2014properties
+ :                                 ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 7575 of file references.bib
+ : @article{russakovsky2015imagenet
  :                                 ,
 I'm skipping whatever remains of this entry
 Repeated entry---line 7586 of file references.bib
@@ -435,6 +427,10 @@ Repeated entry---line 7633 of file references.bib
  : @article{lee2017emergent
  :                         ,
 I'm skipping whatever remains of this entry
+Repeated entry---line 7640 of file references.bib
+ : @article{hitschler2016multimodal
+ :                                 ,
+I'm skipping whatever remains of this entry
 Repeated entry---line 7689 of file references.bib
  : @inproceedings{karpathy2015deep
  :                                ,
@@ -460,17 +456,13 @@ Repeated entry---line 7740 of file references.bib
  :                          ,
 I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "Chrupala2017"
+Warning--I didn't find a database entry for "zipf1949human"
 Warning--I didn't find a database entry for "lazazaridou2016multimodal"
 Warning--I didn't find a database entry for "alishahi2019analyzing"
 Warning--I didn't find a database entry for "specia2016observed"
 Warning--I didn't find a database entry for "alonso2016multitas"
 Warning--can't use both volume and number fields in bergsma2011learning
 Warning--empty journal in Cho2014
-Warning--empty booktitle in choi2017learning
-ptr=1, stack=
-Learning to compose task-specific tree structures
----the literal stack isn't empty for entry choi2017learning
-while executing---line 1266 of file apalike2.bst
 Warning--empty publisher in chomsky2002syntactic
 Warning--can't use both volume and number fields in csurka2004visual
 Warning--empty journal in evert2005statistics
@@ -481,45 +473,45 @@ Warning--can't use both volume and number fields in kievit2013naturalistic
 Warning--empty journal in nivre2015universal
 Warning--empty journal in perfetti1998limits
 Warning--empty journal in Sennrich2017
-You've used 404 entries,
+You've used 384 entries,
             2229 wiz_defined-function locations,
-            2462 strings with 80556 characters,
-and the built_in function-call counts, 185422 in all, are:
-= -- 18245
-> -- 8293
-< -- 312
-+ -- 2981
-- -- 2851
-* -- 15002
-:= -- 30771
-add.period$ -- 1207
-call.type$ -- 404
-change.case$ -- 3423
-chr.to.int$ -- 368
-cite$ -- 417
-duplicate$ -- 7680
-empty$ -- 12623
-format.name$ -- 3427
-if$ -- 37512
-int.to.chr$ -- 37
+            2363 strings with 76428 characters,
+and the built_in function-call counts, 178005 in all, are:
+= -- 17551
+> -- 7943
+< -- 300
++ -- 2862
+- -- 2733
+* -- 14389
+:= -- 29434
+add.period$ -- 1148
+call.type$ -- 384
+change.case$ -- 3264
+chr.to.int$ -- 345
+cite$ -- 396
+duplicate$ -- 7392
+empty$ -- 12140
+format.name$ -- 3281
+if$ -- 36100
+int.to.chr$ -- 40
 int.to.str$ -- 0
-missing$ -- 410
-newline$ -- 2016
-num.names$ -- 1214
-pop$ -- 3819
+missing$ -- 391
+newline$ -- 1917
+num.names$ -- 1154
+pop$ -- 3669
 preamble$ -- 1
-purify$ -- 3434
+purify$ -- 3275
 quote$ -- 0
-skip$ -- 5877
+skip$ -- 5648
 stack$ -- 0
-substring$ -- 12064
-swap$ -- 1854
-text.length$ -- 176
+substring$ -- 11669
+swap$ -- 1819
+text.length$ -- 173
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 2404
-warning$ -- 13
-while$ -- 1428
+type$ -- 2284
+warning$ -- 12
+while$ -- 1374
 width$ -- 0
-write$ -- 5159
-(There were 110 error messages)
+write$ -- 4917
+(There were 108 error messages)

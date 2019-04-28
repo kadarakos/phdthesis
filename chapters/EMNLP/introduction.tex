@@ -1,0 +1,83 @@
+\section{Introduction}
+
+The perceptual-motor system plays an important role 
+in concept acquisition and representation, 
+and in learning the meaning of linguistic expressions
+\citep{pulvermuller2005brain}. In natural language 
+processing, many approaches have been proposed that
+integrate visual information in the learning of 
+word and sentence representations, highlighting
+the benefits of visually grounded representations
+\cite{lazaridou2015combining,baroni2016grounding,kiela2017learning,elliott2017imagination}.
+In these approaches the visual world is
+taken as a naturally occurring meaning representation for 
+linguistic utterances, grounding language in perceptual
+reality.
+
+ Recent work has shown that we can learn better 
+ visually grounded representations for sentences by
+ jointly training image--sentence ranking models on 
+ multiple languages \cite{D17-1303,R17-1020,kadar2018conll}. 
+ %The main
+ %advantage of multilingual training is that the model
+ %can be jointly optimized for image--sentence ranking and sentence--sentence ranking across languages.
+  This line of research has
+ focused on training models on datasets where the same 
+ images are annotated with sentences in multiple languages. 
+ This \emph{alignment} has
+ either been in the form of the translation pairs 
+ (e.g. the German, English, French, and Czech data in
+ Multi30K \cite{W16-3210}) or independently collected
+ sentences (English and Japanese captions in STAIR
+ \cite{Yoshikawa2017}). 
+ %\todo[inline]{Has anyone actually trained a model for image--sentence retrieval on STAIR Captions? If not, we can expect that training an En-Jp model would work similarly to training an En-De model on the Multi30K.}
+ 
+  In this paper, we consider the problem of training an image--sentence ranking model using image-caption collections 
+ in different languages with non-overlapping images drawn from different sources. 
+ We call these collections \emph{disjoint} datasets, as opposed to
+ \emph{aligned} datasets. \cite{kadar2018conll} showed that a
+ model trained on disjoint datasets performs on-par with a model
+ trained on aligned data. However, the disjoint datasets in their paper are artificial because they were formed by randomly splitting the Multi30K dataset into two halves. We examine whether the ranking model
+ can benefit from multilingual supervision when it is
+ trained using disjoint datasets drawn from different
+ sources. In experiments with the Multi30K and COCO datasets,
+ we find substantial benefits from training with these disjoint sources, but the best performance 
+ comes from training on aligned datasets.
+ 
+ %Furthermore, the model with overlapping data can be improved with an additional caption--caption retrieval objective, which is not available when a model is trained with disjoint data. 
+ %and further improvements are possible by sentence--sentence ranking \cite{D17-1303,kadar2018conll}. 
+ 
+ Given the empirical benefits of training on aligned datasets, 
+ we explore two approaches to creating synthetically 
+ aligned training data in the \emph{disjoint} scenario. 
+ One approach to creating synthetically aligned data is to use an
+ off-the-shelf machine translation system to generate 
+ new image-caption pairs by translating the original
+ captions.
+ This approach is very simple, but has the limitation 
+ that an external system needs to be trained, which requires additional data. 
+ 
+ The second approach is to generate synthetically aligned data that are \emph{pseudopairs}. We assume the existence of image--caption datasets in different languages where the images do not overlap between the datasets. Pseudopairs are created by annotating the images of one dataset with the captions from another dataset. This can be achieved by leveraging the sentence similarities predicted by an image-sentence ranking model trained on the original image--caption datasets. 
+ One advantage of this approach is that does not
+ require additional models or datasets because it uses the 
+ trained model to create new pairs. 
+ The resulting pseudopairs can then be used 
+ to re-train or fine-tune the original model. 
+%given two image--caption datasets data sets $D_1$ and $D_2$, 
+%consisting of image-caption pairs $<i_1, c_1>$ and $<i_2, c_2>$, we create new pairs either in the direction $D_1 \rightarrow D_2$ leading 
+%to pairs $<i_2, c_1>$, or vice-versa $D_2 \rightarrow D_1$ 
+%yielding pairs of $<i_1, c_2>$. 
+
+In experiments on the Multi30K and COCO datasets, we find that the pseudopair approach consistently improves 
+performance compared to training on the disjoint datasets, but the improvements less than using the translation approach. Nevertheless, the results show the potential for model-based data synthesis to improve the learning of visually grounded sentence representations. %\todo[inline]{Draw some kind of early conclusion for the reader here? What are the implications of these findings?}
+
+%We hypothesise that \emph{sufficiently high-quality} pseudo-pairs can improve the quality of a multilingual image--sentence ranking model that is trained over disjoint datasets.
+
+
+%as noisy data to train the caption--caption ranking model, and caption$_i$--image$_j$ and caption$_j$--image$_i$ ranking models. We expect that the additional training data extracted from the unaligned datasets will improve image--sentence ranking performance compared to training monolingual models.
+%In this paper, we use distant supervision to train CNN-RNN multilingual image--sentence ranking models with unaligned datasets.
+
+
+
+%Given  D$_i$ and D$_j$, our approach is to find pairs caption$_i$--image$_i$ --- caption$_j$--image$_j$ in the unaligned datasets using the learned image representation model. 
+

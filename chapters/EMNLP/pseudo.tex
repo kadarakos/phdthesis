@@ -1,0 +1,156 @@
+
+\begin{table}[t]
+    \centering
+    \renewcommand{\arraystretch}{1.0}
+    \begin{tabular}{lccc}
+        \toprule
+         & \multicolumn{3}{c}{German}\\
+         & I $\rightarrow$ T & T $\rightarrow$ I & Sum\\
+         \midrule
+         De + COCO &  36.4  & 25.7 & 319.7\\
+         \: \: + pseudo &  37.3 & 25.2 &  319.9\\
+          \: \: \: + fine-tune &  \textbf{38.0} & 25.6 & \textbf{322.9}\\
+          \: \: + pseudo 25\% &  37.3 & \textbf{25.9}  &  320.9\\
+          \: \: \: + fine-tune &  37.2 & 25.7 &  320.7 \\
+          \: \: + pseudo 75\% & 36.8  & 25.1 &  316.3\\
+          \: \: \: + fine-tune &  36.5  & 25.5 &  317.5 \\
+
+         \bottomrule
+    \end{tabular}
+    \caption{A \emph{disjoint} model is trained on the De+COCO datasets and used
+    to generate pseudopairs. Then the full pseudopair set (+pseudo) or the filtered versions (+pseudo 25\% and +pseudo 75\%) are used as an extra data set to either re-train the moddel from scratch or fine-tune the original De+COCO model (+fine-tune).}
+    \label{tab:gerpseudodisjoint}
+\end{table}
+
+\begin{table*}[ht]
+    \centering
+    \renewcommand{\arraystretch}{1.0}
+    \begin{tabular}{lccccccc}
+        \toprule
+         & \multicolumn{3}{c}{English}  & \multicolumn{3}{c}{German}\\
+         \cmidrule(lr){2-4} \cmidrule(lr){5-7}
+         & I $\rightarrow$ T & T $\rightarrow$ I & Sum 
+         & I $\rightarrow$ T & T $\rightarrow$ I & Sum & Sum(Sum)\\
+         \midrule
+         En+De+COCO+c2c & 46.5 & 34.8 & 378.9 & 40.6 & 28.8 & 344.6 & 723.5\\
+         \: \: + pseudo & \textbf{48.1}  & 35.6 & \textbf{382.3} & \textbf{41.8}  & 29.0  & 345.6 & 727.8 \\
+          \: \: \: + fine-tune & 47.0 & \textbf{35.7}  & 381.5  & 40.9  & 28.7 & 346.8 & \textbf{728.2} \\
+          \: \: + pseudo 25\% &  47.5  & 34.9 &  380.2 &  41.5 & 28.9 &  345.5 & 725.7\\
+           \: \: \: + fine-tune &  46.1 & 35.4 &  379.7  &  41.6 & \textbf{29.1} & \textbf{347.8} & 727.5\\
+          \: \: + pseudo 75\% &  45.9  & 34.0 & 373.6  & 40.3  & 27.9 &  339.1 & 712.7\\
+          \: \: \: + fine-tune & 46.2  & 35.1 & 378.6  &  41.0 & \textbf{29.1}  &  345.1 & 723.6\\
+         \bottomrule
+    \end{tabular}
+    \caption{We train the \emph{aligned plus disjoint} model with 
+    c2c loss and add the full pseudopair set (+pseudo) or the filtered versions (+pseudo 25\% and +pseudo 75\%) is added as an extra data set. The model is either re-trained from scratch or fine-tuned (+fine-tune).}
+    \label{tab:pseudoalignedplus}
+\end{table*}
+
+\section{Training with Pseudopairs}
+\label{sec:pseudo}
+
+In this section we turn our attention to creating a synthetic English-German \emph{aligned} data set from the English COCO using the pseudopair method (Section \ref{sec:method:synthetic}). The synthetic data set is used to train an image-sentence ranking model either from scratch or by fine-tuning the original model; in addition, we also explore the effect of using all of the pseudopairs or by filtering the psuedopairs.
+
+\begin{comment}
+We first train either 
+the \emph{disjoint} (De+COCO) or the 
+\emph{algined plus disjoint} (En+De+COCO) model 
+and use it do generate pseudopairs creating a synthetic
+German-COCO set:
+for each sentence in COCO we retrieve the most similar 
+German M30K
+caption and label the COCO images with this new set of sentences.
+We also investigate the effect of filtering the pseudopairs 
+by training
+on the full synthetic data set or only keeping
+samples from the 75\% or 25\% percentiles. 
+Lastly, we compare training our models from scratch 
+with the added generated pseudopair set or 
+continue training the "parent" model (fine-tune).
+\end{comment}
+
+\paragraph{Disjoint}
+
+We generate pseudopairs using the 
+\emph{disjoint} bilingual model trained on 
+the German M30K and the English COCO.
+Table~\ref{tab:gerpseudodisjoint} reports the results
+when evaluating on the M30K German data.
+Line 2 shows that using the full pseudopair set
+and re-training the model does not lead to 
+noticeable improvements. However, line 3 shows that performance increases when we train with all pseudopairs and fine-tuning the original disjoint bilingual model. Filtering the pseudopairs at either the 25\% and 75\% percentile is 
+detrimental to the final performance.\footnote{
+We did not find any improvements
+in the \emph{disjoint} setting when training with pseudopairs and the additional c2c loss.}
+
+
+\paragraph{Aligned plus disjoint}
+
+\begin{comment}
+
+\begin{table}[t]
+    \centering
+    \renewcommand{\arraystretch}{1.0}
+    \begin{tabular}{lccc}
+        \toprule
+         & \multicolumn{3}{c}{English}\\
+         & I $\rightarrow$ T & T $\rightarrow$ I & Sum\\
+         \midrule
+         En+De+COCO+c2c & 46.5 & 34.8 & 378.86\\
+         \hdashline
+         \: \: + pseudo & \textbf{48.1}  & 35.6 & \textbf{382.26}  \\
+          \: \: \: + fine-tune & 47.0 & \textbf{35.7}  & 381.46\\
+          \: \: + pseudo 25\% &  47.5  & 34.9 &  380.20\\
+           \: \: \: + fine-tune&  46.1 & 35.4 &  379.72\\
+          \: \: + pseudo 75\% &  45.9  & 34.0 & 373.61 \\
+          \: \: \: + fine-tune & 46.2  & 35.1 & 378.55 \\
+
+         \bottomrule
+    \end{tabular}
+    \caption{English}
+    \label{tab:engpseudoalignedplus}
+\end{table}
+
+
+\begin{table}[t]
+    \centering
+    \renewcommand{\arraystretch}{1.0}
+    \begin{tabular}{lccc}
+        \toprule
+         & \multicolumn{3}{c}{German}\\
+         & I $\rightarrow$ T & T $\rightarrow$ I & Sum\\
+         \midrule
+         En+De+COCO+c2c & 40.6 & 28.8 & 344.58 \\
+         \hdashline
+         \: \: + pseudo & \textbf{41.8}  & 29.0  & 345.58 \\
+          \: \: \: + fine-tune & 40.9  & 28.7 & 346.78\\
+          \: \: + pseudo 25\% &  41.5 & 28.9 &  345.54\\
+          \: \: \: + fine-tune &  41.6 & \textbf{29.1} & \textbf{347.81}\\
+          \: \: + pseudo 75\%  & 40.3  & 27.9 &  339.05 \\
+          \: \: \: + fine-tune &  41.0 & \textbf{29.1}  &  345.05 \\
+
+         \bottomrule
+    \end{tabular}
+    \caption{German}
+    \label{tab:gerpseudoalignedplus}
+\end{table}
+
+\end{comment}
+
+
+
+We generate pseudopairs using a model trained on M30K English-German data with the c2c objective and the English
+COCO data set. The results for both English and German are reported in Table~\ref{tab:pseudoalignedplus}; note that when we train with the pseudopairs we also train with the c2c loss on both data sets.  
+Overall we find that pseudopairs 
+improve performance, however, we do not achieve the 
+best results for English and German in the same conditions. The best results for German are to filter at 25\% percentile and apply fine-tuning, 
+while for English the best results are without filtering or fine-tuning. The best overall model is trained with
+all the pseudopairs with fine-tuning, according to the Sum of the Sum-of-recall scores across 
+both English and German.
+The performance across both data sets is increased from 723.5 to 728.2 using the pseudopair method.
+
+\paragraph{Summary}
+In both \emph{aligned} and \emph{disjoint} training with the 
+additional pseudopairs improve performance and in both cases the 
+best performance is achieved when applying the 
+fine-tuning strategy and no filtering of the samples.

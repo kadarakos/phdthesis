@@ -1,0 +1,33 @@
+set term png enhanced font "helvetica,12"
+set output 'summax.png'
+
+set style data histogram
+set style histogram cluster gap 3
+
+set style fill solid border rgb "black"
+
+set linetype  1 lc rgb "#009e73" lw 1
+set linetype  2 lc rgb "#56b4e9" lw 1
+set linetype  3 lc rgb "#ff6666" lw 1
+set linetype  4 lc rgb "#f0e442" lw 1
+set linetype  5 lc rgb "#0072b2" lw 1
+set linetype  6 lc rgb "#ff69b4" lw 1
+set linetype cycle  5
+
+set tic scale 0
+set grid ytics
+unset border
+
+set auto x
+set yrange [0:*]
+set ylabel "{/*1.5 Recall at 10}"
+set xtics font "helvetica,16"
+set ytics font "helvetica,16"
+set key outside rmargin
+
+plot 'summax.dat' using 2:xtic(1) title col, \
+        '' using 3:xtic(1) title col, \
+        '' using 4:xtic(1) title col, \
+        '' using 5:xtic(1) title col, \
+        '' using 6:xtic(1) title col, \
+        '' using 7:xtic(1) title col

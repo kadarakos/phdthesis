@@ -1,0 +1,218 @@
+\section{Baseline Results}\label{sec:results}
+
+The experiments presented here set the baseline performance 
+for the visually grounded bilingual models
+and introduces the data settings that we will use in the 
+later sections.
+
+\paragraph{Aligned}
+%\todo[inline]{Results of training the model on only the M30K}
+
+\begin{table}[t]
+    \centering
+    \renewcommand{\arraystretch}{1.0}
+    \begin{tabular}{lccc}
+        \toprule
+         & \multicolumn{3}{c}{English}\\
+         \cmidrule(lr){2-4}
+         & I $\rightarrow$ T & T $\rightarrow$ I & Sum\\
+         \midrule
+         En & 40.5 & 28.8 & 346.4 \\
+         \; + De & 41.4 & 29.9  & 352.8\\
+         \; \; + c2c & 42.8  & 32.1 & 361.6\\
+         COCO & 34.4 & 24.8 & 304.0 \\
+         \; + En & \textbf{46.2} & \textbf{33.4} & \textbf{374.4}\\
+         \bottomrule
+    \end{tabular}
+    %\caption{Recall @ 1 and Sum-of-Recall-Scores for Image-to-Text (I$\rightarrow$T) and 
+    %Text-to-Image (T$\rightarrow$I) on the English
+    %M30K 2016 test set in the \emph{aligned setting}: 
+    %only the M30K English (En), M30K German and English (+De), 
+    %and with the additional caption ranking objective (+c2c).}
+    \caption{Performance on the English
+    M30K 2016 test set in the \emph{aligned setting} for models trained on 
+    M30K English (En), both M30K German and English (+De), 
+    and with caption ranking (+c2c).}
+    \label{tab:engbaseline}
+\end{table}
+
+
+
+\begin{table}
+    \centering
+    \renewcommand{\arraystretch}{1.0}   
+    \begin{tabular}{lccc}
+        \toprule
+         & \multicolumn{3}{c}{German} \\
+         \cmidrule(lr){2-4}
+         & I $\rightarrow$ T & T $\rightarrow$ I & Sum\\
+         \midrule
+         De & 34.9 & 24.6 & 311.2 \\
+         \; + En & \textbf{38.6} & 26.0 & 324.6\\
+         \; \; + c2c & 38.3 & \textbf{27.7} &   \textbf{334.0} \\
+         \; + COCO & 36.4 & 25.7 & 319.7\\
+         \bottomrule
+    \end{tabular}
+        \caption{Performance on the German
+    M30K 2016 test set in the \emph{aligned setting} for models trained on 
+    M30K German (De), both M30K German and English (+En), 
+    and with caption ranking (+c2c).}
+    \label{tab:gerbaseline}
+\end{table}
+
+\begin{table*}[h!]
+    \centering
+    \renewcommand{\arraystretch}{1.0}
+    \begin{tabular}{lcccccc}
+        \toprule
+         & \multicolumn{3}{c}{English} & \multicolumn{3}{c}{German}\\
+        \cmidrule(lr){2-4} \cmidrule(lr){5-7}
+         & I $\rightarrow$ T & T $\rightarrow$ I & Sum & I $\rightarrow$ T & T $\rightarrow$ I & Sum \\
+         \midrule
+         En+De+c2c & 42.8 & 28.6 & 361.6 & 38.3 & 27.7 & 334.0 \\
+         \; + COCO & \textbf{46.5} & \textbf{34.8} &  \textbf{378.9}  & \textbf{40.6} & \textbf{28.8} & \textbf{344.6}\\
+         \bottomrule
+    \end{tabular}
+    \caption{Recall @ 1 and Sum-of-Recall-Scores for Image-to-Text (I $\rightarrow$ T) and Text-to-Image (T $\rightarrow$ I) baseline results on the English and German
+    M30K 2016 test in the \emph{aligned plus disjoint} setting}\label{tab:alignedplus}
+\end{table*}
+
+In these experiments we only use the \emph{aligned} English-German data from M30K. 
+%This is the setting was studied before in \newcite{D17-1303} and \newcite{kadar2018conll}.
+Tables~\ref{tab:engbaseline} and \ref{tab:gerbaseline} present the result for English and German, respectively. The Sum-of-recall scores for both languages show that the best approach is the bilingual model with the c2c loss (En+De+c2c, and De+En+c2c). These results reproduce the findings of
+\cite{kadar2018conll}.
+
+
+\paragraph{Disjoint}\label{sec:baseline_results:disjoint}
+%\todo[inline]{Results of training the model on only the M30K}
+
+\begin{comment}
+\begin{table}
+    \centering
+    \renewcommand{\arraystretch}{1.0}
+    \begin{tabular}{lccc}
+        \toprule
+         & \multicolumn{3}{c}{English}\\
+         & I $\rightarrow$ T & T $\rightarrow$ I & Sum\\
+         \midrule
+          COCO & 34.4 & 24.8 & 304.0 \\
+         En & 40.5 & 28.8 & 346.4 \\
+         \; + COCO & \textbf{46.2} & \textbf{33.4} & \textbf{374.4}\\
+         \bottomrule
+    \end{tabular}
+     \caption{Measuring \emph{domain shift} by testing models trained on
+     COCO (COCO), M30K English (En) and both (+COCO) on
+     the English M30K 2016 test set.}
+    \label{tab:engdisjoint}
+\end{table}
+\end{comment}
+
+%\begin{table}[t]
+%    \centering
+%    \renewcommand{\arraystretch}{1.0}
+%    \begin{tabular}{lccc}
+%        \toprule
+%         & \multicolumn{3}{c}{German}\\
+%         & I $\rightarrow$ T & T $\rightarrow$ I & Sum\\
+%         \midrule
+%         De & 34.9 & 24.6 & 311.2 \\
+%         \; + COCO & \textbf{36.4} & \textbf{25.7} & \textbf{319.7}\\
+%         \bottomrule
+%    \end{tabular}
+%    \caption{Improving the performance of the German (De) model trained on the M30K German set in the \emph{disjoint} setting by adding COCO (+COCO). Results reported on the German M30K 2016 test set.}\label{tab:gerdisjoint}
+%\end{table}
+
+
+We now determine the performance of the model when it is trained on data drawn from different data sets with no overlapping images.
+
+First we train two English \emph{monolingual}
+models: one on the M30K English dataset and one on the English COCO dataset. Both models are evaluated on image--sentence ranking performance on the M30K English test 2016 set. The results in Table~\ref{tab:engbaseline} show that there is a substantial difference in performance in both text-to-image and image-to-text retrieval, depending on whether the model is trained on the M30K or the COCO dataset.
+The final row of Table~\ref{tab:engbaseline} shows, however, 
+that jointly training on both data sets improves over 
+only using the M30K English training data.
+
+We also conduct experiments in the \emph{bilingual disjoint} setting, 
+where we study whether it is possible to improve the performance of a German model using the
+out-of-domain English COCO data. Table~\ref{tab:gerbaseline}
+shows that there is an increase in performance when the model is trained on the disjoint sets, as opposed to
+only the in-domain M30K German (compare De against De+COCO). This result is not too surprising as we have observed both the advantage of joint training on both languages in the \emph{aligned} setting and the overlap between the different datasets. 
+
+Finally, we compare the performance of a German model trained in the \emph{aligned}
+and \emph{disjoint} settings. We find that a model trained in the \emph{aligned}
+setting (De+En) is better than a model trained in the \emph{disjoint} setting (De+COCO), as shown in Table \ref{tab:gerbaseline}.
+This finding contradicts the conclusion of \citet{kadar2018conll}, who claimed that the
+\emph{aligned} and \emph{disjoint} conditions lead to comparable performance. This is most likely because the disjoint setting in \newcite{kadar2018conll} is artificial, in the sense that they used different 50\% subsets of M30K. In our experiments the disjoint image--caption sets are real, in the sense that we trained the models on the two different datasets.
+ 
+%Comparing line 1. and
+%line 2, in Table~\ref{tab:engbaseline} we observe that training on COCO results in much lower
+%performance then training on M30K, showing a considerable difference in domains. However, 
+%line 3. shows that there is a considerable overlap too and jointly training on COCO and M30K 
+%results in much higher performance than only training on English M30K. This result is reflected
+%in line 2. in Table~\ref{tab:gerdisjoint}, where we see that training jointly on COCO and 
+%the German M30K improves over the German M30K monolingual model. However, comparing the 
+%results between line 2. in Table~\ref{tab:gerbaseline} and line 2. in Table~\ref{tab:gerdisjoint}
+%shows that training on \emph{aligned} data is much more beneficial than on \emph{disjoint}.
+
+\paragraph{Aligned plus disjoint}
+\begin{comment}
+
+\begin{table}[t]
+    \centering
+    \renewcommand{\arraystretch}{1.0}
+    \begin{tabular}{lccc}
+        \toprule
+         & \multicolumn{3}{c}{English}\\
+         & I $\rightarrow$ T & T $\rightarrow$ I & Sum\\
+         \midrule
+         En+De+c2c & 42.8 & 28.6 & 361.6 \\
+         \; + COCO & \textbf{46.5} & \textbf{34.8} &  \textbf{378.9}\\
+         \bottomrule
+    \end{tabular}
+    \caption{Recall @ 1 and Sum-of-Recall-Scores for Image-to-Text (I$\rightarrow$T) and 
+    Text-to-Image (T$\rightarrow$I) baseline results on the English
+    M30K 2016 test set for models in the \emph{aligned plus disjoint} setting: 
+    M30K German-English model with c2c loss  ( En+De+c2c) and the same model with CO (+COCO)}\label{tab:engalignedplus}
+\end{table}
+
+
+\begin{table}[ht]
+    \centering
+    \renewcommand{\arraystretch}{1.0}
+    \begin{tabular}{lccc}
+        \toprule
+         & \multicolumn{3}{c}{English}\\
+         & I $\rightarrow$ T & T $\rightarrow$ I & Sum\\
+         \midrule
+        En+De+c2c & 38.3 & 27.7 & 334.0 \\
+         \; + COCO & \textbf{40.6} & \textbf{28.8} & \textbf{344.6} \\
+             \bottomrule
+    \end{tabular}
+    \caption{Recall @ 1 Image-to-Text and Text-to-Image baseline results  on the German
+    M30K 2016 test set.}\label{tab:geralignedplus}
+\end{table}
+\end{comment}
+
+
+Our final baseline experiments explore the combination of 
+\emph{disjoint} and \emph{aligned} data settings. We train an English-German bilingual model with the c2c
+objective on M30K, and we also train on the English COCO data. Table~\ref{tab:alignedplus} shows that adding the 
+\emph{disjoint} data improves performance for
+both English and German compared to training 
+solely the \emph{aligned} model. 
+
+\paragraph{Summary}
+First we reproduced the findings of \cite{kadar2018conll} 
+showing that bilingual joint
+training improves over monolingual and using c2c loss
+further improves performance. 
+Furthermore, we have found that adding the COCO as 
+additional training data both when only training on German, and training on both German-English from 
+M30K improves performance 
+even if the model is trained on data drawn from a different dataset.
+
+
+
+
+%\subsection{Domain shift}
+
+%\todo[inline]{Results of training of model on only COCO and evaluating on M30K.}

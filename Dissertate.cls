@@ -77,7 +77,7 @@
 \RequirePackage{pgfplotstable}
 \RequirePackage{url}
 \pgfplotsset{compat=1.8}
-\RequirePackage[justification=centering]{subcaption}
+\RequirePackage{subcaption}
 \RequirePackage{rotating}
 
 \RequirePackage{cleveref}
@@ -128,7 +128,7 @@
                 margin=0pt,
                 figurewithin=chapter,
                 tablewithin=chapter]{caption}
-\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+%\renewcommand{\thefootnote}{\fnsymbol{footnote}}
 \RequirePackage{microtype}
 
 
@@ -136,7 +136,7 @@
 \RequirePackage{fancyhdr}
 \RequirePackage{titlesec}
 %\titleformat{\chapter}[display]{\normalfont\LARGE\bfseries}
-\titleformat*{\section}{\normalfont\large\bfseries}
+%\titleformat*{\%%section}{\normalfont\large\bfseries}
 \titleformat*{\subsection}{\normalfont\bfseries}
 
 %\setlength{\headheight}{15pt}

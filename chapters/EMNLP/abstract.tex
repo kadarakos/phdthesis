@@ -1,0 +1,52 @@
+\begin{abstract}
+
+Recent work has highlighted the advantage of jointly learning grounded sentence representations 
+from multiple languages. 
+However, the data used in these studies has 
+been limited to an \emph{aligned} scenario, in which
+the same images are annotated with sentences 
+in multiple languages. In this paper, we focus on the more realistic 
+\emph{disjoint} scenario using English and German
+image--caption data sets where the images
+do not overlap between languages. 
+We observe that training with aligned data provides larger gains than training with disjoint data, which may be caused by the lack of coherence between the disjoint data sets. 
+%\todo{The problem that we solve is not cross-domain is just the lack
+%of alignment.}
+To address the lack of coherence, we propose a
+\emph{pseudopairing} method, in which we create \emph{synthetically aligned} 
+English--German--Image triplets from the disjoint sets. The pseudopairs are created in a two-step process:
+first we train a model on the 
+\emph{disjoint} data, then we create novel pairs across data sets using sentence similarity 
+under the learned model.
+Experiments show that the pseudopair method improves 
+image--sentence retrieval performance, 
+%both when \emph{aligned} and \emph{disjoint} sets are available, 
+%or when there are only \emph{disjoint} sets, 
+despite requiring no external training data or models. 
+We do find, however, that using an external machine translation model to generate the synthetic data sets results
+in better performance.
+\end{abstract}
+ 
+ 
+ %\begin{comment}
+ 
+ %Recent work on learning grounded sentence representations has
+ %been explored in the multilingual setting. 
+% However, the data in these studies has been limited to a setup where
+% the same images  $\mathcal{I}$ are annotated with sentences in 
+% multiple languages:
+% $\mathcal{I}$-$\mathcal{L}_1$-$\mathcal{L}_2$. We are interested
+% in improving these representations using out-of-domain data as it is
+%monolingual \emph{disjoint} datasets are more likely to be found:
+% $\mathcal{I}_1$-$\mathcal{L}_1$ and $\mathcal{I}_2$-$\mathcal{L}_2$. 
+% In our experiments we find that training on out-of-domain data is 
+% only useful when a model is co-trained with in-domain data. 
+% To improve performance in this \emph{disjoint} setting we automatically extend these disjoint datasets into and generated \emph{aligned} datasets in order to benefit from a cross-lingual caption--caption ranking objective, as well as the image--caption ranking objective. We introduce a method for generating $\mathcal{I}_2$-$\hat{\mathcal{L}_1}$ pseudo-pairs using a pre-trained $\mathcal{I}$-$\mathcal{L}_1$-$\mathcal{L}_2$ model. Given an $\mathcal{I}_2$-$\mathcal{L}_2$ dataset, our method creates the pseudo-pairs by transferring the most similar $\mathcal{L}_1$ sentences from the $\mathcal{I}$-$\mathcal{L}_1$-$\mathcal{L}_2$ training data. 
+% We evaluate our approach by creating Image-German pseudopairs for the English MS COCO dataset, using a model trained on the Multi30K English-German dataset. We find that our introduced pseudopair method 
+% improves performance even though it does not require us to introduces any new data or models. Nevertheless, we do find that our approach falls short of using a good quality pre-trained translation system 
+% to automatically create annotations in the other language.
+% \end{comment}
+ 
+% \begin{abstract}
+%Previous work have looked at learning multilingual visually grounded sentence embeddings and have shown the benefit of multilingual joint training. However, in these works the same images were annotated with sentences from multiple languages. We argue that a more realistic scenario is when such an alignment is not available. Here we explore how the multilingual visually grounded sentence embedding methods perform in such a disjoint setting. Furthermore, we assess the possibility if improving the results in this setup with distant supervision 1.) by using off-the-shelf machine translation to obtain more bi-lingual data, 2.) we introduce a method to generate new image-sentence pseudo-pairs between data sets without the use of extrnal models or data sets.
+%\end{abstract}

@@ -1,0 +1,82 @@
+\begin{table}[t]
+    \centering
+    \renewcommand{\arraystretch}{1.0}
+    \begin{tabular}{lccc}
+        \toprule
+         & \multicolumn{3}{c}{German}\\
+         & I $\rightarrow$ T & T $\rightarrow$ I & Sum\\
+         \midrule
+         De + COCO & 36.4 & 25.7 & 319.7\\
+         %\: + Translation & 37.4 & 26.3 & 324.0\\
+         \: \: + Translation & 37.7 & 26.3 & 327.2\\
+         %\: \: + COCO & 37.7 & 26.3 & 327.2\\
+         \: \: \: + c2c      & {\bf 39.9} & {\bf 26.7} & {\bf 335.5}\\
+         %\hdashline
+         %De + En + c2c & 38.3 & 27.7 & 334.0 \\
+         \bottomrule
+    \end{tabular}
+    \caption{Results on the German
+    M30K 2016 test set with the \emph{aligned plus disjoint} 
+    (En+De+COCO+c2c) model, the additional automatically translated COCO (+Translation) and with the c2c on the synthetic pairs.
+    %Last row shows the results for the \emph{aligned} model (De+En+c2c)
+    %or comparison.}
+    }
+    \label{tab:german_translation_disjoint}
+\end{table}
+
+\begin{table*}[ht]
+    \centering
+    \renewcommand{\arraystretch}{1.0}
+    \begin{tabular}{lccccccc}
+        \toprule
+         & \multicolumn{3}{c}{English} & \multicolumn{3}{c}{German}\\
+         \cmidrule(lr){2-4} \cmidrule(lr){5-7}
+         & I $\rightarrow$ T & T $\rightarrow$ I & Sum  & I $\rightarrow$ T & T $\rightarrow$ I & Sum & Sum(Sum)\\
+         \midrule
+         En+De+COCO+c2c & 46.5 & 34.8 & 378.87 & 40.6 & 28.8 & 344.59 & 723.45 \\
+         \: + Translation & \textbf{47.5} & \textbf{36.2} & \textbf{384.50} & \textbf{43.5} & \textbf{30.5} & \textbf{357.90} & \textbf{742.40}\\
+         \bottomrule
+    \end{tabular}
+    \caption{Performance measured on the English and German
+    M30K 2016 test set for the \emph{aligned plus disjoint} (En+De+COCO+c2c) model and with the additional automatically translated (+Translation).}
+    \label{tab:translation_alignedplusdisjoint}
+\end{table*}
+
+\section{Training with Translations}\label{sec:transaltion}
+
+We now focus on our second approach to creating an 
+English-German \textit{aligned} dataset 
+using the translation method described in Section \ref{sec:method:synthetic}.
+
+\paragraph{Disjoint}
+
+We first report the results of disjoint bilingual
+model trained on the German M30K, the English COCO data, 
+and the translated German COCO in Table \ref{tab:german_translation_disjoint}. 
+The results show that retrieval performance is improved when the model is trained on the translated German 
+COCO data in addition to the English COCO data. 
+We find the best performance when we jointly train on the 
+M30K German, the Translated German COCO and 
+the English COCO with the additional c2c objective 
+over the COCO datasets (Line 4). 
+We note that this setup leads to a better model, as measured by the sum-of-recall-scores, than training on the aligned M30K data (compare De+COCO+Translation+c2c in Table \ref{tab:german_translation_disjoint} to De+En+c2c in Table \ref{tab:gerbaseline}).
+
+\paragraph{Aligned plus Disjoint}
+
+In these experiments, we train models with the {\it aligned} M30K  
+data, the {\it disjoint} English COCO data, and the translated German COCO data. 
+Table \ref{tab:translation_alignedplusdisjoint} 
+presents the results for the English and German evaluation. 
+We find that training on the German Translated COCO data and 
+using the c2c loss over the COCO data results in improvements for both languages. 
+
+%Table \ref{tab:german_translation_alignedplusdisjoint} 
+%present the results for the German evaluation mirroring 
+%the English results.
+
+\paragraph{Summary}
+
+In both the \emph{disjoint} and 
+\emph{aligned plus disjoint} settings, we find that training 
+with the translations of COCO improves 
+performance over training with only the English COCO data. 

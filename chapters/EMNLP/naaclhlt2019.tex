@@ -1,0 +1,138 @@
+%
+% File naacl2019.tex
+%
+%% Based on the style files for ACL 2018 and NAACL 2018, which were
+%% Based on the style files for ACL-2015, with some improvements
+%%  taken from the NAACL-2016 style
+%% Based on the style files for ACL-2014, which were, in turn,
+%% based on ACL-2013, ACL-2012, ACL-2011, ACL-2010, ACL-IJCNLP-2009,
+%% EACL-2009, IJCNLP-2008...
+%% Based on the style files for EACL 2006 by 
+%%e.agirre@ehu.es or Sergi.Balari@uab.es
+%% and that of ACL 08 by Joakim Nivre and Noah Smith
+
+% THE LINK https://www.overleaf.com/3661239131qwycrvwrdbsx
+
+%\documentclass[11pt,a4paper]{article}
+%\usepackage[draft]{hyperref}
+%\usepackage{naaclhlt2019}
+%\usepackage{times}
+%\usepackage{latexsym}
+%\usepackage[utf8]{inputenc}
+%\usepackage{tikz}
+%\def\checkmark{\tikz\fill[scale=0.4](0,.35) -- (.25,0) -- (1,.7) -- (.25,.15) -- cycle;} 
+ %\usepackage{algpseudocode}
+ %\usepackage{algorithm}
+%\usepackage{amssymb}
+ %\usepackage{comment}
+ %\usepackage{booktabs}
+ %\usepackage{amsmath}
+ %\usepackage{arydshln}
+% \usepackage{subcaption}
+ %\usepackage{amsfonts}
+ %\usepackage{subfig}
+ %\usepackage{float}
+
+
+
+
+
+%\usepackage{url}
+%\usepackage{todonotes}
+%\aclfinalcopy % Uncomment this line for the final submission
+%\def\aclpaperid{***} %  Enter the acl Paper ID here
+
+%\setlength\titlebox{5cm}
+% You can expand the titlebox if you need extra space
+% to show all the authors. Please do not make the titlebox
+% smaller than 5cm (the original size); we will check this
+% in the camera-ready version and ask you to change it back.
+
+%\newcommand\BibTeX{B{\sc ib}\TeX}
+
+\chapter{Synthetic Pairs for Multilingual Grounded Language Learning}
+\label{ch:EMNLP}
+
+\paragraph{abstract}
+
+Recent work has highlighted the advantage of jointly learning grounded sentence representations 
+from multiple languages. 
+However, the data used in these studies has 
+been limited to an \emph{aligned} scenario, in which
+the same images are annotated with sentences 
+in multiple languages. In this paper, we focus on the more realistic 
+\emph{disjoint} scenario using English and German
+image--caption data sets where the images
+do not overlap between languages. 
+We observe that training with aligned data provides larger gains than training with disjoint data, which may be caused by the lack of coherence between the disjoint data sets. 
+%\todo{The problem that we solve is not cross-domain is just the lack
+%of alignment.}
+To address the lack of coherence, we propose a
+\emph{pseudopairing} method, in which we create \emph{synthetically aligned} 
+English--German--Image triplets from the disjoint sets. The pseudopairs are created in a two-step process:
+first we train a model on the 
+\emph{disjoint} data, then we create novel pairs across data sets using sentence similarity 
+under the learned model.
+Experiments show that the pseudopair method improves 
+image--sentence retrieval performance, 
+%both when \emph{aligned} and \emph{disjoint} sets are available, 
+%or when there are only \emph{disjoint} sets, 
+despite requiring no external training data or models. 
+We do find, however, that using an external machine translation model to generate the synthetic data sets results
+in better performance.
+
+ %\captionsetup[subfigure]{labelformat=empty}
+
+%\author{First Author \\
+ % Affiliation / Address line 1 \\
+ % Affiliation / Address line 2 \\
+ % Affiliation / Address line 3 \\
+ % {\tt email@domain} \\\And
+ % Second Author \\
+ % Affiliation / Address line 1 \\
+  %Affiliation / Address line 2 \\
+  %Affiliation / Address line 3 \\
+  %{\tt email@domain} \\}
+
+%\date{}
+
+
+
+%\input{chapters/EMNLP/abstract}
+
+\input{chapters/EMNLP/introduction}
+\input{chapters/EMNLP/method}
+\input{chapters/EMNLP/protocol}
+\input{chapters/EMNLP/results_baseline}
+%\input{results_disjoint}
+%\input{results_joint-synthetic}
+\input{chapters/EMNLP/pseudo}
+\input{chapters/EMNLP/translation}
+\input{chapters/EMNLP/discussion}
+%\input{sentence_similarity_results}
+\input{chapters/EMNLP/related}
+\input{chapters/EMNLP/conclusions}
+
+%\section{Introduction}
+%\section{Method}
+%\subsection{Synthetic by Translation}
+%\subsection{Synthetic by Pseudopairs}
+%\section{Experimental Protocol}
+%\subsection{Datasets}
+%\subsection{Hyperparameters} % I always call this implementation details si think
+%\section{Results}
+%\subsection{Baselines}
+%\subsection{Domain Shift}
+%\subsection{Caption-Caption Retrieval} 
+% This i was thinking is in the last bit to part with 
+%\section{Training with Disjoint Data}
+%\section{Joint Training with Synthetic Data}
+%\section{Discussion}
+%\section{Related Work}
+%\section{Conclusion}
+
+%\bibliography{naaclhlt2019}
+%\bibliographystyle{acl_natbib}
+
+%\input{those_tables}
+

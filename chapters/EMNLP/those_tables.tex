@@ -1,0 +1,101 @@
+\begin{table*}[]
+    \centering
+    \renewcommand{\arraystretch}{1.0}
+    \begin{tabular}{c|cccccc|cccccc}
+        \hline
+            &&&&&&& \multicolumn{3}{c}{I $\rightarrow$ T} & \multicolumn{3}{c}{T $\rightarrow$ I} \\
+         & \rotatebox{90}{De} & \rotatebox{90}{En} & \rotatebox{90}{COCO} & 
+         \rotatebox{90}{OpenNMT-De} & \rotatebox{90}{Pseudo-De} & \rotatebox{90}{c2c}  & R@1 & R@5 & R@10 & R@1 & R@5 & R@10 \\
+         \hline
+         & \multicolumn{11}{l}{\textit{In-domain Multi30K}} \\
+         \hline
+         1 &  \checkmark  & & & & & & 34.9 & 64.1  & 76.2  & 24.6 & 50.1 & 61.3 \\
+         2 & \checkmark & \checkmark & & & &  & \textbf{38.6}  & 66.9  &  77.9 & 26.0 & 52.2  & 63.0\\
+         3 & \checkmark & \checkmark &  & & & \checkmark & 38.3 & \textbf{68.3} & \textbf{78.8} & \textbf{27.7} & \textbf{54.9} & \textbf{66.0}  \\
+         \hline
+         & \multicolumn{11}{l}{\textit{In-domain and out-of-domain COCO}} \\
+         \hline
+         4 & \checkmark & & \checkmark & &  &  & 36.4 & 65.9  & 77.6 & 25.7  & 51.6 & 62.6 \\
+         5 & \checkmark & \checkmark & \checkmark & & & & 39.2  & 67.8  & 79.1 & 27.1 & 53.2  &  64.0  \\
+         6 & \checkmark & \checkmark & \checkmark & & & \checkmark  & \textbf{40.6} & \textbf{70.5}  & \textbf{81.1}  & \textbf{28.8} & \textbf{56.3}  & \textbf{67.3} \\
+         \hline
+         & \multicolumn{11}{l}{\textit{In-domain and distant supervision: translation}} \\
+         \hline
+         7 & \checkmark & &  & \checkmark & & & 38.5 & 68.4 & 79.6 & 26.6 & 53.7 & 64.4\\
+         8 & \checkmark & & \checkmark  & \checkmark & & & 39.1 & 69.8 & 80.2 & 27.5 & 54.2 & 64.7 \\
+         9 & \checkmark & \checkmark &  & \checkmark & & & 39.8 & 69.6 & 81.0 & 27.6 & 54.8 & 65.5 \\
+         10 & \checkmark & \checkmark &  & \checkmark & & \checkmark & 38.2 & 66.3 & 77.0 & 27.2 & 54.2 & 65.5 \\
+         11 & \checkmark & \checkmark & \checkmark  & \checkmark & & & 40.2 & 71.2 & 81.9 & 28.3 & 55.6 & 66.1 \\
+         12 & \checkmark & \checkmark & \checkmark  & \checkmark & & \checkmark & \textbf{43.5} & \textbf{73.3} & \textbf{82.5} & \textbf{30.5} & \textbf{58.8} & \textbf{69.3} \\
+
+         \hline
+         & \multicolumn{11}{l}{\textit{Distant supervision: psuedopairs}} \\
+          \hline
+         13 &\checkmark & & \checkmark  &  & \checkmark & & 36.7 &  65.1  & 76.3  & 25.2  & 51.3 &   62.2\\
+         13 &\checkmark & & \checkmark  &  & 25\% & & 36.6 &  65.2  & 76.8  & 25.0  & 51.6 &   62.9\\
+         13 &\checkmark & & \checkmark  &  & 75\% & & 36.7 &  63.8  & 75.8   & 24.6  & 51.1 &   62.1\\
+         \hdashline
+         14 & \checkmark & & \checkmark  &  & \checkmark & \checkmark  & 35.6  & 65.3 & 75.6  & 25.0  &  51.2 & 62.4 \\
+         14 & \checkmark & & \checkmark  &  & 25\% & \checkmark  & 33.6  & 63.5 & 75.6 & 23.9 &  50.3 & 61.5 \\
+         14 & \checkmark & & \checkmark  &  & 75\% & \checkmark  &  &  &  &  &  & \\
+         \hdashline
+         15 & \checkmark & \checkmark & \checkmark  &  & \checkmark &  & 37.9  &  68.3  & 78.8 &  26.8 & 53.9 & 64.6 \\
+        15 & \checkmark & \checkmark & \checkmark  &  & 25\% &  &  38.4 & 68.9 & 78.9 &  26.8 & 53.3 & 64.4  \\
+         15 & \checkmark & \checkmark & \checkmark  &  & 75\% &  & 37.7 & 66.8 & 78.7 & 26.2  & 53.1 & 63.6 \\
+         \hdashline
+         16 & \checkmark & \checkmark & \checkmark  &  & \checkmark & \checkmark  & 39.9 & 69.9  & 80.2 & 29.6 &  57.3 &  67.8 \\
+         16 & \checkmark & \checkmark & \checkmark  &  & 25\% & \checkmark  & 41.5 & 70.4 & 80.8  & 28.9  & 56.8  & 67.2\\
+         16 & \checkmark & \checkmark & \checkmark  &  & 75\% & \checkmark  & 40.3  &  69.3 &    79.1  &  27.9 & 55.6 & 66.8\\
+    \end{tabular}
+    \caption{Results reported on German}
+    \label{tab:German}
+\end{table*}
+
+
+
+\begin{table*}[]
+    \centering
+    \renewcommand{\arraystretch}{1.0}
+    \begin{tabular}{c|cccccc|cccccc}
+        \hline
+            &&&&&& \multicolumn{3}{c}{I $\rightarrow$ T} & \multicolumn{3}{c}{T $\rightarrow$ I} \\
+         & \rotatebox{90}{De} & \rotatebox{90}{En} & \rotatebox{90}{COCO} & 
+         \rotatebox{90}{OpenNMT-De} & \rotatebox{90}{Pseudo-De} & \rotatebox{90}{c2c}  & R@1 & R@5 & R@10 & R@1 & R@5 & R@10 \\
+         \hline
+         & \multicolumn{11}{l}{\textit{In-domain Multi30K}} \\
+         \hline
+         1 &  & \checkmark & & & &  & 40.5  &  69.6  &  79.9   & 28.8 & 58.3 & 69.4  \\
+         2 &  &  & \checkmark & & & & 34.4  & 61.4  &  72.1 & 24.8 & 50.3  & 61.1\\
+         3 & \checkmark & \checkmark & & & &   & 41.4 & 70.9 & 81.0 & 29.9 & 59.6 & 70.0 \\
+         4 & \checkmark & \checkmark &  & & & \checkmark & \textbf{42.8} & \textbf{72.0} & \textbf{81.2}  & \textbf{32.1} & \textbf{61.4} & 
+          \textbf{72.2} \\
+         \hline
+         & \multicolumn{11}{l}{\textit{In-domain + out-of-domain COCO}} \\
+         \hline
+         5 & & \checkmark & \checkmark & &  &  & 46.2 & 75.6 & 83.6 & 33.4 & 62.5  & 73.1  \\
+         6 & \checkmark & \checkmark & \checkmark & & &  & 46.0  & 75.3 & 83.9  &33.6 & 62.7 &  73.3  \\
+         7 & \checkmark & \checkmark & \checkmark & & & \checkmark  & \textbf{46.5} & \textbf{75.2} & \textbf{83.8} & \textbf{34.8} & \textbf{64.4}  & \textbf{74.3} \\
+         \hline
+         & \multicolumn{11}{l}{\textit{Distant supervision: translation}} \\
+         \hline
+         8 & & \checkmark &  & \checkmark & & & 42.2 & 71.1 & 80.6 & 30.5 & 57.8 & 68.7 \\
+         9 & & \checkmark & \checkmark  & \checkmark & & & 45.6 & 72.9 & 81.1 & 33.0 & 61.0 & 71.8  \\
+         10 & \checkmark & \checkmark &  & \checkmark & & & 43.8 & 72.0 & 81.4 & 30.9 & 60.1 & 70.9 \\
+         11 & \checkmark & \checkmark &  & \checkmark & & \checkmark & 44.9 & 73.2 & 82.1 & 33.8 & 61.7 & 72.2 \\
+         12 & \checkmark & \checkmark & \checkmark  & \checkmark & & & 46.8 & 74.7 & 83.4 & 33.6 & 62.9 & 73.2 \\
+         13 & \checkmark & \checkmark & \checkmark  & \checkmark & & \checkmark & \textbf{47.5} & \textbf{75.7} & \textbf{84.1} & \textbf{36.2} & \textbf{65.6} & \textbf{75.6} \\
+
+         \hline
+         \multicolumn{12}{l}{\textit{Distant supervision: psuedopairs}} \\
+         \hline
+         14 & \checkmark & \checkmark & \checkmark  &  & \checkmark &  & 46.4  & 75.4  & 83.2  &  33.3 & 62.5 & 73.1\\
+         15 & \checkmark & \checkmark & \checkmark  &  & 25\% &  & 46.9  & 74.9  & 83.4   &  33.7 & 62.8 & 73.1\\
+        17 & \checkmark & \checkmark & \checkmark  &  & 75\% &  & 46.1  & 75.1 & 83.7  &  33.5  & 62.9  & 73.3 \\
+        \hdashline
+         18 & \checkmark & \checkmark & \checkmark  &  & \checkmark & \checkmark  &  47.7 & 75.3   &   83.7 & 35.3 & 65.1 & 75.2 \\
+        19 & \checkmark & \checkmark & \checkmark  &  & 25\% & \checkmark  & 47.5  & 75.3 & 83.8 & 34.9  & 64.2 &  74.4 \\
+        20 & \checkmark & \checkmark & \checkmark  &  & 75\% & \checkmark  & 45.9 & 73.5  & 82.6  & 34.0 & 63.6 & 74.0  \\
+    \end{tabular}
+    \caption{Results reported on English}
+    \label{tab:English}
+\end{table*}
