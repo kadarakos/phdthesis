@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2018.10.12)  28 APR 2019 18:03
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2018.10.12)  28 APR 2019 18:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1626,7 +1626,6 @@ LaTeX Warning: Label `sec:experiments' multiply defined.
 LaTeX Warning: Label `sec:data' multiply defined.
 
 ) (./chapters/EMNLP/naaclhlt2019.aux) (./chapters/conclusion.aux)
-(./endmatter/summary.aux) (./endmatter/publicationlist.aux)
 (./endmatter/ticcthesis.aux))
 \openout1 = `dissertation.aux'.
 
@@ -3099,52 +3098,34 @@ LaTeX Warning: Reference `ch: EMNLP' on page 193 undefined on input line 253.
 Package natbib Warning: Citation `alonso2016multitas' on page 198 undefined on 
 input line 361.
 
-) [198] [199] [200
+) [198] [199] (./dissertation.bbl [200
 
 
-]
-\openout2 = `endmatter/summary.aux'.
-
- (./endmatter/summary.tex) [201
-
-
-]
-\openout2 = `endmatter/publicationlist.aux'.
-
-
-(./endmatter/publicationlist.tex [202
-
-
-
-]) [203] (./dissertation.bbl [204
-
-
-]
-[205] [206] [207] [208] [209]
+] [201] [202] [203] [204] [205]
 Underfull \hbox (badness 1072) in paragraph at lines 350--354
 []\EU1/lmr/m/n/10 Cauchy, A. (1847).  Méthode générale pour la résolution des s
 ystemes
  []
 
-[210] [211] [212] [213] [214] [215] [216] [217] [218] [219] [220] [221]
-[222] [223] [224]
+[206] [207] [208] [209] [210] [211] [212] [213] [214] [215] [216] [217]
+[218] [219] [220]
 Invalid UTF-8 byte or sequence at line 1284 replaced by U+FFFD.
 Missing character: There is no � in font [lmroman10-regular]:mapping=tex-text!
- [225] [226] [227] [228] [229] [230] [231] [232] [233]
-[234] [235] [236] [237] [238] [239] [240]) [241]
+ [221] [222] [223] [224] [225] [226] [227] [228] [229]
+[230] [231] [232] [233] [234] [235] [236]) [237]
 \openout2 = `endmatter/ticcthesis.aux'.
 
  (./endmatter/ticcthesis.tex
-[242
+[238
 
 
-] [243]
+] [239]
 Overfull \hbox (1.67531pt too wide) in paragraph at lines 78--81
 \EU1/lmr/m/n/10 tion during playful interactions. Promotores: E.J. Krahmer, M.G
 .J. Swerts.
  []
 
-[244] [245]
+[240] [241]
 Overfull \hbox (6.7893pt too wide) in paragraph at lines 153--157
 \EU1/lmr/m/n/10 production, comprehension, and preference. Promotores: A.A. Mae
 s, M.G.J.
@@ -3156,19 +3137,19 @@ Overfull \hbox (6.53532pt too wide) in paragraph at lines 165--168
 Tilburg,
  []
 
-[246]
+[242]
 Overfull \hbox (0.6653pt too wide) in paragraph at lines 174--178
 []\EU1/lmr/m/n/10 Yevgen Matusevych, Learning constructions from bilingual expo
 sure: Com-
  []
 
-[247]
+[243]
 Overfull \hbox (13.34532pt too wide) in paragraph at lines 210--214
 []\EU1/lmr/m/n/10 Emmelyn Croes, Meeting Face-to-Face Online: The Effects of Vi
 deo-Mediated
  []
 
-) [248]
+) [244]
 
 Package natbib Warning: There were undefined citations.
 
@@ -3181,7 +3162,6 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 73.
 (./chapters/TAL/main.aux) (./chapters/COLI/double_paper.aux)
 (./chapters/IJCNLP/emnlp2017.aux) (./chapters/ConLL/conll2018.aux)
 (./chapters/EMNLP/naaclhlt2019.aux) (./chapters/conclusion.aux)
-(./endmatter/summary.aux) (./endmatter/publicationlist.aux)
 (./endmatter/ticcthesis.aux))
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 73.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 73.
@@ -3202,12 +3182,12 @@ LaTeX Warning: There were multiply-defined labels.
 ### simple group (level 1) entered at line 75 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 55758 strings out of 493638
- 1237708 string characters out of 6146795
- 1523350 words of memory out of 5000000
- 58015 multiletter control sequences out of 15000+600000
+ 55742 strings out of 493638
+ 1237326 string characters out of 6146795
+ 1521622 words of memory out of 5000000
+ 58013 multiletter control sequences out of 15000+600000
  24648 words of font info for 118 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
  69i,20n,81p,10485b,3002s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on dissertation.pdf (262 pages).
+Output written on dissertation.pdf (258 pages).

@@ -15,8 +15,6 @@ A level-1 auxiliary file: chapters/IJCNLP/emnlp2017.aux
 A level-1 auxiliary file: chapters/ConLL/conll2018.aux
 A level-1 auxiliary file: chapters/EMNLP/naaclhlt2019.aux
 A level-1 auxiliary file: chapters/conclusion.aux
-A level-1 auxiliary file: endmatter/summary.aux
-A level-1 auxiliary file: endmatter/publicationlist.aux
 The style file: apalike2.bst
 A level-1 auxiliary file: endmatter/ticcthesis.aux
 Reallocated field_info (elt_size=4) to 13580 items from 5000.
@@ -475,7 +473,7 @@ Warning--empty journal in perfetti1998limits
 Warning--empty journal in Sennrich2017
 You've used 384 entries,
             2229 wiz_defined-function locations,
-            2363 strings with 76428 characters,
+            2361 strings with 76378 characters,
 and the built_in function-call counts, 178005 in all, are:
 = -- 17551
 > -- 7943
