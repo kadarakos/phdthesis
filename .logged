@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2018.10.12)  28 APR 2019 18:42
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2018.10.12)  29 APR 2019 14:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1921,14 +1921,8 @@ Chapter 2.
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
 (hyperref)                be the same. Added a new anchor on input line 540.
 
-[17] [18]
-Overfull \hbox (0.27037pt too wide) in paragraph at lines 621--624
-\EU1/lmr/m/n/12 (BPTT) ([][]Robinson & Fallside[][], [][]1987[][]; [][]Werbos[]
-[], [][]1988[][]; [][]Williams & Zipser[][],
- []
-
-[19]
-LaTeX Font Info:    Try loading font information for EU1+lmtt on input line 693
+[17] [18] [19]
+LaTeX Font Info:    Try loading font information for EU1+lmtt on input line 690
 .
  (/usr/share/texlive/texmf-dist/tex/latex/euenc/eu1lmtt.fd
 File: eu1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1937,60 +1931,61 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `lmtt' (encoding: EU1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [20]
-Overfull \hbox (11.38455pt too wide) in paragraph at lines 718--723
+
+[20]
+Overfull \hbox (11.38455pt too wide) in paragraph at lines 714--719
 \EU1/lmr/m/n/12 optimizes word-embeddings to predict the re-weighted $[]$ co-oc
 currence
  []
 
 
-Overfull \hbox (10.07993pt too wide) in paragraph at lines 756--756
+Overfull \hbox (10.07993pt too wide) in paragraph at lines 752--752
 |\EU1/lmr/bx/n/17.28 Visually grounded representations of words| 
  []
 
 [21] [22] [23]
-Overfull \hbox (17.48634pt too wide) in paragraph at lines 846--859
+Overfull \hbox (17.48634pt too wide) in paragraph at lines 842--855
 \EU1/lmr/m/n/12 ([][]2012[][]) also combines distributional semantic models and
  BoVW pipelines.
  []
 
 [24]
-Overfull \hbox (26.89114pt too wide) in paragraph at lines 869--882
+Overfull \hbox (26.89114pt too wide) in paragraph at lines 865--878
 []\EU1/lmr/m/n/12 Combining BoVW and count-based distributional word-representa
 tions
  []
 
 [25] [26] [27] [28] [29] [30] [31] [32]
-Overfull \hbox (11.96344pt too wide) in paragraph at lines 1099--1099
+Overfull \hbox (11.96344pt too wide) in paragraph at lines 1096--1096
 |\EU1/lmr/bx/n/17.28 Visually grounded sentence representations| 
  []
 
 [33]
-Overfull \hbox (17.35164pt too wide) in paragraph at lines 1123--1130
+Overfull \hbox (17.35164pt too wide) in paragraph at lines 1120--1127
 \EU1/lmr/m/n/12 They argue that evaluating grounded learning through image–desc
 ription
  []
 
 [34] [35]
-Overfull \hbox (8.01161pt too wide) in paragraph at lines 1211--1217
+Overfull \hbox (8.01161pt too wide) in paragraph at lines 1208--1214
 \EU1/lmr/m/n/12 These findings were confirmed and improved upon using a self-at
 tention
  []
 
 [36] [37] [38]
-Overfull \hbox (7.40445pt too wide) in paragraph at lines 1342--1352
+Overfull \hbox (7.40445pt too wide) in paragraph at lines 1339--1349
 []\EU1/lmr/m/n/12 In the multi-lingual multi-modal setting [][]Funaki & Nakayam
 a[][] ([][]2015[][])
  []
 
 [39]
-Overfull \hbox (5.77245pt too wide) in paragraph at lines 1353--1362
+Overfull \hbox (5.77245pt too wide) in paragraph at lines 1350--1359
 []\EU1/lmr/m/n/12 The bridge correlational neural network approach ([][]Rajendr
 an et al.[][],
  []
 
 [40] [41] [42]
-Overfull \hbox (0.23164pt too wide) in paragraph at lines 1473--1485
+Overfull \hbox (0.23164pt too wide) in paragraph at lines 1470--1482
 \EU1/lmr/m/n/12 improved later by modeling the image-pivot based zero-resource 
 trans-
  []
