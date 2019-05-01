@@ -5,7 +5,7 @@
 Latest existing cross-situational models formulate word learning as a
 translation problem, where the learner must decide which words in an
 utterance correspond to which symbols (or potential referents) in the
-perceptual context \cite{yu2007unified,fazly.etal.10csj}. For each new
+perceptual context \citep{yu2007unified,fazly.etal.10csj}. For each new
 utterance paired with a symbolic representation of the visual scene,
 first the model decides which word is {\it aligned} with which symbol
 based on previous associations between the two. Next, it uses the
@@ -20,23 +20,23 @@ features extracted from the image. In this setting, the model learns
 word representations by taking images and their descriptions one pair
 at a time. To learn correspondences between English words and image
 features, we borrow and adapt the translation-table estimation
-component of the IBM Model 1 \cite{BrownPPM94}. The learning results
+component of the IBM Model 1 \citep{BrownPPM94}. The learning results
 in a translation table between words and image-features, i.e.\ a list
 of probabilities of image-features given a word.
 
 \subsection{Visual input}
 The features of the images are extracted by training a 16-layer
-convolutional neural network (CNN) \cite{simonyan2014very} on an
+convolutional neural network (CNN) \citep{simonyan2014very} on an
 object recognition task.\label{rev:cnndetail}\footnote{We used the F8k
   and F30k features available at
   \url{http://cs.stanford.edu/people/karpathy/deepimagesent/} and the
   data handling utilities from
   \url{https://github.com/karpathy/neuraltalk} for our
   experiments. The pre-trained CNN can be used through the Caffe
-  framework \cite{jia2014caffe} and is available at the ModelZoo
+  framework \citep{jia2014caffe} and is available at the ModelZoo
   \url{https://github.com/BVLC/caffe/wiki/Model-Zoo}.} The network is
 trained to discriminate among 1,000 different object labels on the
-ImageNet dataset \cite{deng2009imagenet}. The last layer of the CNN
+ImageNet dataset \citep{deng2009imagenet}. The last layer of the CNN
 before the classification layer contains high level visual features of
 the images, invariant to particulars such as position, orientation or
 size.  We use the activation vector from this layer as a
@@ -86,7 +86,7 @@ to water, 2,000 to dogs or perhaps grass, and 3,000 to children.
  We adapt the IBM model 1 estimation algorithm in the following
  ways\footnote{The source code for our model is available at
    \url{https://github.com/kadarakos/IBMVisual}.}: (i) like
- \citep{fazly.etal.10csj} we run it in an online fashion, and (ii)
+ \cite{fazly.etal.10csj} we run it in an online fashion, and (ii)
  instead of two sequences of words, our input consists of one sequence
  of words on one side, and a vector of real values representing the
  image on the other side. The dimensions are indexes into the visual
@@ -178,7 +178,7 @@ performance in a set of tasks to the following baselines:
       to itself, that is probabilities of the form $t(w|w)$.}.
   \item \textsc{Word2Vec:} for comparison we also report results with the skip-gram embedding model, also known as \textsc{word2vec} which builds word
     representations based on word-word co-occurrences as well
-    \cite{mikolov2013efficient,mikolov2013distributed}. \textsc{Word2vec}
+    \citep{mikolov2013efficient,mikolov2013distributed}. \textsc{Word2vec}
     learns a vector representation (embedding) of a word which
     maximizes performance on predicting words in a small window around
     it.
