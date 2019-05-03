@@ -4,31 +4,31 @@
 
 Learning visually grounded word-representations has been an active area of research in the fields of multi-modal semantics %\cite{kiela2014learning,lazaridou2015combining,bruni2014multimodal,kottur2016visualword2vec} 
 and cross-situational word-learning. %\cite{kadar2015learning,lazaridou2016multimodal}. 
-Such perceptually-grounded word representations have been shown to lead to higher correlation with human judgements on word-similarity benchmarks such as WordSim353 \cite{finkelstein2001placing} or SimLex999 \cite{hill2015simlex} compared to uni-modal representations \cite{kadar2015learning,bruni2014multimodal,kiela2014learning}. 
+Such perceptually-grounded word representations have been shown to lead to higher correlation with human judgements on word-similarity benchmarks such as WordSim353 \citep{finkelstein2001placing} or SimLex999 \citep{hill2015simlex} compared to uni-modal representations \citep{kadar2015learning,bruni2014multimodal,kiela2014learning}. 
 
-Grounded representations of sentences that are learned from image--caption data sets also improve performance on a number of sentence-level tasks \cite{kiela2017learning,yoo2017improving} when used as additional features to skip-thought vectors \cite{kiros2015skip}. 
-The model architectures used for these studies  have the same overall structure as our model and coincide with image--sentence retrieval systems \cite{kiros2014unifying,karpathy2015deep}: a pre-trained CNN is fixed or fine-tuned as image feature extractor, followed by a learned transformation, while sentence representations are learned by a randomly initialized recurrent neural network. 
+Grounded representations of sentences that are learned from image--caption data sets also improve performance on a number of sentence-level tasks \citep{kiela2017learning,yoo2017improving} when used as additional features to skip-thought vectors \citep{kiros2015skip}. 
+The model architectures used for these studies  have the same overall structure as our model and coincide with image--sentence retrieval systems \citep{kiros2014unifying,karpathy2015deep}: a pre-trained CNN is fixed or fine-tuned as image feature extractor, followed by a learned transformation, while sentence representations are learned by a randomly initialized recurrent neural network. 
 These models are trained to push the true image--caption pairs closer together, and the false image--caption pairs further from each other, in a joint embedding space. 
 
-In addition to learning grounded representations for image-sentence ranking, joint vision and language systems have been proposed to solve a wide range of tasks across modalities such as image captioning \cite{mao2014deep,vinyals2015show,xu2015show}, visual question answering \cite{antol2015vqa,fukui2016multimodal,jabri2016revisiting}, 
-text-to-image synthesis \cite{reed2016generative} 
-and multimodal machine translation \cite{biblio732461325667051835,elliott2017imagination}. 
+In addition to learning grounded representations for image-sentence ranking, joint vision and language systems have been proposed to solve a wide range of tasks across modalities such as image captioning \citep{mao2014deep,vinyals2015show,xu2015show}, visual question answering \citep{antol2015vqa,fukui2016multimodal,jabri2016revisiting}, 
+text-to-image synthesis \citep{reed2016generative} 
+and multimodal machine translation \citep{biblio732461325667051835,elliott2017imagination}. 
 
 
 Our work is also closely related to multilingual joint representation learning. 
 In this scenario, a single model is trained to solve a task across multiple languages. 
-\citet{ammar2016many} train a multilingual dependency parser on the Universal Dependencies treebank \cite{nivre2015universal} and show that on average the single multilingual model outperforms the monolingual baselines.  
-\citet{johnson2016google} present a zero-shot neural machine translation model that is 
+\cite{ammar2016many} train a multilingual dependency parser on the Universal Dependencies treebank \citep{nivre2015universal} and show that on average the single multilingual model outperforms the monolingual baselines.  
+\cite{johnson2016google} present a zero-shot neural machine translation model that is 
 jointly trained on language pairs
 $A \leftrightarrow B$ and $B \leftrightarrow C$ and show that the model is capable of performing well on the unseen
 language pair $A \leftrightarrow C$. 
-\citet{lee2017fully} find that jointly training a many-languages-to-one translation model on unsegmented character sequences improves BLEU scores compared to monolingual training. 
+\cite{lee2017fully} find that jointly training a many-languages-to-one translation model on unsegmented character sequences improves BLEU scores compared to monolingual training. 
 They also show evidence that the model can handle intra-sentence code-switching. 
-\citet{peters2017massively} train a multilingual sequence-to-sequence translation architecture on grapheme-to-phoneme conversion using more than 300 languages. 
+\cite{peters2017massively} train a multilingual sequence-to-sequence translation architecture on grapheme-to-phoneme conversion using more than 300 languages. 
 They report better performance when adding multiple languages, even those which are not present in the test data. 
 %
-Finally, massively multilingual language representations trained on over 900 languages have been shown to resemble language families \cite{ostling2016continuous} and can successfully predict linguistic typology features \cite{malaviya2017learning}. 
+Finally, massively multilingual language representations trained on over 900 languages have been shown to resemble language families \citep{ostling2016continuous} and can successfully predict linguistic typology features \citep{malaviya2017learning}. 
 
-In the vision and language domain, multilingual-multimodal sentence representation learning has been limited so far to two languages. The joint training of models on English and German data has been shown to outperform monolingual baselines on image-sentence ranking and semantic textual similarity tasks \cite{gella2017image,calixto2017multilingual}. 
-Recently \citet{harwath2018vision} also showed the benefit of joint bilingual training in the domain of speech-to-image and image-to-speech retrieval using English and Hindi data.   
+In the vision and language domain, multilingual-multimodal sentence representation learning has been limited so far to two languages. The joint training of models on English and German data has been shown to outperform monolingual baselines on image-sentence ranking and semantic textual similarity tasks \citep{gella2017image,calixto2017multilingual}. 
+Recently \citep{harwath2018vision} also showed the benefit of joint bilingual training in the domain of speech-to-image and image-to-speech retrieval using English and Hindi data.   
 

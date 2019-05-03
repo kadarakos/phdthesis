@@ -69,7 +69,7 @@ where $\mathbf{W}$, $\mathbf{U}$, $\mathbf{W}_z$, $\mathbf{U}_z$, $\mathbf{W}_r$
 
 
 
-{\sc Imaginet} introduced in \citep{chrupala2015learning} is a
+{\sc Imaginet} introduced in \cite{chrupala2015learning} is a
 multi-modal GRU network architecture that learns visually grounded
 meaning representations from textual and visual input.  It acquires
 linguistic knowledge through language comprehension, by receiving a
@@ -107,7 +107,7 @@ At each time step {\sc Textual} predicts the next word in the sentence
 $S$ from its current hidden state $\mathbf{h}^{T}_t$, while {\sc
   Visual} predicts the image-vector\footnote{Representing the full image,
   extracted from the pre-trained Convolutional Neural Network of
-  \citep{simonyan2014very}. \label{edit:dumdumeddy}}
+  \cite{simonyan2014very}. \label{edit:dumdumeddy}}
 $\hat{\mathbf{i}}$ from its last
 hidden representation $\mathbf{h}^{V}_t$.
 %
@@ -123,7 +123,7 @@ the visual and the textual targets simultaneously. The objective
 combines cross-entropy loss $L^{T}$ for the word predictions
 and cosine distance $L^V$ for the image
 predictions\footnote{Note that the original formulation in
-  \citep{chrupala2015learning} uses mean squared error instead; as the performance of
+  \cite{chrupala2015learning} uses mean squared error instead; as the performance of
 {\sc Visual} is measured on image-retrieval which is based on cosine
 distances, we use cosine distance as the visual loss here.\label{ft:imaginet}}, weighting them with the parameter $\alpha$ (set to $0.1$).
 
@@ -136,7 +136,7 @@ distances, we use cosine distance as the visual loss here.\label{ft:imaginet}}, 
 
 \noindent
 For more details about the {\sc Imaginet} model and its performance
-see \citep{chrupala2015learning}. Note that we introduce a small change in
+see \cite{chrupala2015learning}. Note that we introduce a small change in
 the image representation: we observe that using standardized image
 vectors, where each dimension is transformed by subtracting the mean
 and dividing by standard deviation, improves performance.

@@ -46,6 +46,37 @@
 %\begin{document}
 %\maketitle
 
+\paragraph{abstract}
+  We present novel methods for analyzing the activation patterns of
+  RNNs from a linguistic point of view and explore the types of
+  linguistic structure they learn. As a case study, we use a standard
+  standalone language model, and a multi-task gated
+  recurrent network architecture consisting of two parallel pathways with
+  shared word embeddings; The {\sc Visual} pathway is trained on predicting the
+  representations of the visual scene corresponding to an input
+  sentence, whereas the {\sc Textual} pathway is trained to predict the
+  next word in the same sentence.
+  We propose a method for estimating the amount of contribution
+  of individual tokens in the input to the final prediction of the networks.
+  Using this method, we show that the {\sc Visual} pathway pays
+  selective attention to lexical categories and grammatical functions
+  that carry semantic information, and learns to treat word types
+  differently depending on their grammatical function and their position
+  in the sequential structure of the sentence. In contrast, the language
+  models are comparatively more sensitive to words with a syntactic
+  function. Further analysis of the most informative n-gram contexts for
+  each model shows that in comparison to the {\sc Visual} pathway,
+  the language models react more strongly to abstract contexts
+  that represent syntactic constructions.
+
+\newpage
+
+\paragraph{This chapter is based on} Kádár, Á., Chrupała, G., \& Alishahi, A. (2017).
+Representation of linguistic form and function in recurrent neural networks. \textit{Computational Linguistics}, 
+43(4), 761-780.
+
+\newpage
+
 \input{chapters/COLI/intro}
 \input{chapters/COLI/related}
 \input{chapters/COLI/models}

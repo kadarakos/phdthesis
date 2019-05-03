@@ -4,7 +4,7 @@
 
 We would like to further analyze the kinds of linguistic features that the
 hidden dimensions of RNNs encode. Previous work
-\cite{karpathy2015visualizing,li2015convergent} has shown that in response
+\citep{karpathy2015visualizing,li2015convergent} has shown that in response
 to the task the networks are trained for, individual dimensions in the hidden layers of
 RNNs can become {\it specialised} in responding to certain types of triggers, including
 the tokens or token types at each time step, as well as the preceding context of
@@ -28,7 +28,7 @@ by their mutual information:
 \begin{equation}
 \mathrm{I}(A_i;C) = \sum_{a\in{A_i}}\sum_{c\in{C}} p(a,c)\log\left(\frac{p(a,c)}{p(a)p(c)}\right)
 \end{equation}
-Similarly to \citep{li2015convergent}, the activation value
+Similarly to \cite{li2015convergent}, the activation value
 distributions are discretized into percentile bins per dimension, such
 that each bin contains 5\% of the marginal density. For context types,
 we used unigrams, bigrams and trigrams of both dependency labels and

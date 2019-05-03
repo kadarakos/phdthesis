@@ -49,7 +49,7 @@
 & + c2c     	  			& \bf{43.8} & \bf{71.8} & \bf{81.4} & \bf{32.3} &  \bf{59.9} & \bf{70.2} \\
 \bottomrule
 \end{tabular}
-\caption{English Image-to-text (I$\rightarrow$T) and text-to-image (T$\rightarrow$I) retrieval results on the \emph{comparable} part of Multi30K, measured by Recall at 1, 5 at 10. {\tt Typewriter} font shows performance of two sets of symmetric and asymmetric models from \citet{gella2017image}.}
+\caption{English Image-to-text (I$\rightarrow$T) and text-to-image (T$\rightarrow$I) retrieval results on the \emph{comparable} part of Multi30K, measured by Recall at 1, 5 at 10. {\tt Typewriter} font shows performance of two sets of symmetric and asymmetric models from \cite{gella2017image}.}
 \label{tab:bi:bilingualEng}
 \end{table*}
 
@@ -74,20 +74,20 @@
 & + c2c     				& \bf{37.9} & \bf{66.1} & \bf{76.8} & \bf{26.6} & \bf{53.0} & \bf{64.0} \\
 \bottomrule
 \end{tabular}
-\caption{German Image-to-text (I$\rightarrow$T) and text-to-image (T$\rightarrow$I) retrieval results on the \emph{comparable} part of Multi30K, measured by Recall at 1, 5 at 10. {\tt Typewriter} font shows performance of two sets of symmetric and asymmetric models from \citet{gella2017image}.}
+\caption{German Image-to-text (I$\rightarrow$T) and text-to-image (T$\rightarrow$I) retrieval results on the \emph{comparable} part of Multi30K, measured by Recall at 1, 5 at 10. {\tt Typewriter} font shows performance of two sets of symmetric and asymmetric models from \cite{gella2017image}.}
 \label{tab:bi:bilingualGer}
 \end{table*}
 
 %In this section we attempt to reproduce the results of \citep{gella2017image}, who claimed image--sentence ranking improvements from bilingual annotations. We then explore whether the the improvements are because the model sees more data or that the data it see is bilingual. We also show how the model performs when it is trained on lower-resource translation pairs than comparable pairs.
 
-\subsection{Reproducing \citet{gella2017image}}
+\subsection{Reproducing \cite{gella2017image}}
 \label{sec:gella}
 
-We start by attempting to reproduce the findings of \citep{gella2017image}. In these experiments we train our multi-task learning model on the {\it comparable} portion of Multi30K. Our models re-implement their setups used for \texttt{VSE} (Monolingual) and bilingual models \texttt{Pivot-Sym} (Bilingual) and \texttt{Parallel-Sym} (Bilingual + c2c). The \texttt{OE}, \texttt{Pivot-Asym} and \texttt{Parallel-Asym} models are trained using the asymmetric similarity measure introduced for the order-embeddings \cite{vendrov2015order}. The main differences between our models and \citep{gella2017image} is that they use VGG-19 image features, whereas we use ResNet50 features, and we use the max-of-hinges loss instead of the more common sum-of-hinges loss.
+We start by attempting to reproduce the findings of \cite{gella2017image}. In these experiments we train our multi-task learning model on the {\it comparable} portion of Multi30K. Our models re-implement their setups used for \texttt{VSE} (Monolingual) and bilingual models \texttt{Pivot-Sym} (Bilingual) and \texttt{Parallel-Sym} (Bilingual + c2c). The \texttt{OE}, \texttt{Pivot-Asym} and \texttt{Parallel-Asym} models are trained using the asymmetric similarity measure introduced for the order-embeddings \cite{vendrov2015order}. The main differences between our models and \citep{gella2017image} is that they use VGG-19 image features, whereas we use ResNet50 features, and we use the max-of-hinges loss instead of the more common sum-of-hinges loss.
 
 Table~\ref{tab:bi:bilingualEng} shows the results on the English comparable 2016 test set. Overall our scores are higher than \citep{gella2017image}, which is most likely due to the different image features (\citep{faghri2017vse++} also report a large performance gain when they use the ResNet instead of the VGG image features). Nevertheless, our results show a similar trend to the symmetric cosine similarity models from \citep{gella2017image}: our best results are achieved with bilingual joint training with the added c2c objective. Their models trained with an asymmetric similarity measure show a different trend: the monolingual model is stronger than the bilingual model, and the c2c loss provides no clear improvement.
 
-Table~\ref{tab:bi:bilingualGer} presents the German results. Once again, our implementation outperforms \citep{gella2017image}, and this is likely due to the different visual features and max-of-hinges loss. However, our Bilingual model with the additional c2c objective performs the best for German, whereas \citep{gella2017image} reports the overall best results for the monolingual baseline \texttt{VSE}. Their models that use the asymmetric similarity function are clearly better than the Monolingual \texttt{OE} model. In general, the results from \citep{gella2017image} indicate the benefits of bilingual joint training, however, they do not find a clear pattern between the model configurations across languages. In our implementation, we only focused on the symmetric cosine similarity function and found a systematic pattern across both languages: bilingual training improves results on all performance metrics for both languages, and the additional c2c objective always provides further improvements.
+Table~\ref{tab:bi:bilingualGer} presents the German results. Once again, our implementation outperforms \cite{gella2017image}, and this is likely due to the different visual features and max-of-hinges loss. However, our Bilingual model with the additional c2c objective performs the best for German, whereas \cite{gella2017image} reports the overall best results for the monolingual baseline \texttt{VSE}. Their models that use the asymmetric similarity function are clearly better than the Monolingual \texttt{OE} model. In general, the results from \cite{gella2017image} indicate the benefits of bilingual joint training, however, they do not find a clear pattern between the model configurations across languages. In our implementation, we only focused on the symmetric cosine similarity function and found a systematic pattern across both languages: bilingual training improves results on all performance metrics for both languages, and the additional c2c objective always provides further improvements.
 
 %\citet{gella2017image} also finds a small
 %improvement of adding c2c when using cosine--similarity, however,
@@ -127,7 +127,7 @@ Bi-comparable        & {\bf 67.9} & 55.7 & {\bf 62.0} & 48.1\\
 \end{table}
 %Yes we are. I have unified the text. \todo{Are you using independent and comparable to mean the same thing? Unify. (GC)}
 %Added sentence to make it clear that Gella did not conduct this experiment \todo{Not clear whether this comparison was already in Gella or not (GC)}
-We now study whether the model can be trained on either translation pairs or independently collected bilingual captions. \citep{gella2017image} only conducted experiments on independently collected captions. However, it is known that humans have equally strong preference for translated or independently collected captions of images \cite{frank_elliott_specia_2018}, which has implications for the difficulty and cost of collecting training data. Our baseline is a Monolingual model trained on 29K single-captioned images in the {\it translation} portion of Multi30K. The Bi-translation model is trained on both German and English, with shared parameters. Table~\ref{tab:bitrans} shows that there is a substantial improvement in performance for both languages in the bilingual setting. However, the additional c2c loss degrades performance here. This could be because we only have one caption per image in each language and it is easier to find a relationship between these views of the translation pairs.
+We now study whether the model can be trained on either translation pairs or independently collected bilingual captions. \cite{gella2017image} only conducted experiments on independently collected captions. However, it is known that humans have equally strong preference for translated or independently collected captions of images \citep{frank_elliott_specia_2018}, which has implications for the difficulty and cost of collecting training data. Our baseline is a Monolingual model trained on 29K single-captioned images in the {\it translation} portion of Multi30K. The Bi-translation model is trained on both German and English, with shared parameters. Table~\ref{tab:bitrans} shows that there is a substantial improvement in performance for both languages in the bilingual setting. However, the additional c2c loss degrades performance here. This could be because we only have one caption per image in each language and it is easier to find a relationship between these views of the translation pairs.
 
 In the Bi-comparable setting, we randomly select an English and a German sentence for each image in the {\it comparable} portion of Multi30K. We only find a minor difference in performance between the Bi-translation and Bi-comparable models for English, but the German results are improved. Crucially, it is still better than training on monolingual data. In the Bi-comparable setting, the c2c loss does not have a detrimental effect on model performance, unlike in the Bi-translation experiment. Overall we find that the \emph{comparable} data leads to larger improvements in retrieval performance.%\footnote{I THINK TRANSLATION PAIRS ACT AS DATA AUGMENTATION AND INDEPENDENT PAIRS CONTAIN ACTUALLY MORE INFORMATION, BUT NOT ENOUGH DATA FOR THE AMOUNT OF VARIATION.}.
 
@@ -137,6 +137,7 @@ In the Bi-comparable setting, we randomly select an English and a German sentenc
 \label{sec:bioverlap}
 
 \begin{table}
+\centering
 \renewcommand{\arraystretch}{1.3}
 \begin{tabular}{lcccc}
 \toprule

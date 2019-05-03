@@ -1,10 +1,10 @@
 \section{Experiments}
 
-We evaluate our multitasking approach with in- and out-of-domain resources. We start by reporting results of models trained using only the Multi30K dataset. We also report the results of training the {\sc imaginet} decoder with the COCO dataset. Finally, we report results on incorporating the external News Commentary parallel text into our model. Throughout, we report performance of the  En$\rightarrow$De translation using Meteor \cite{denkowski:lavie:meteor-wmt:2014} and BLEU \cite{Papineni:2002:BMA:1073083.1073135} against lowercased tokenized references.
+We evaluate our multitasking approach with in- and out-of-domain resources. We start by reporting results of models trained using only the Multi30K dataset. We also report the results of training the {\sc imaginet} decoder with the COCO dataset. Finally, we report results on incorporating the external News Commentary parallel text into our model. Throughout, we report performance of the  En$\rightarrow$De translation using Meteor \citep{denkowski:lavie:meteor-wmt:2014} and BLEU \citep{Papineni:2002:BMA:1073083.1073135} against lowercased tokenized references.
 
 \subsection{Hyperparameters}
 
-The encoder is a 1000D Gated Recurrent Unit bidirectional recurrent neural network \cite[GRU]{Cho2014} with 620D embeddings. We share all of the encoder parameters between the primary and auxiliary task. The translation decoder is a 1000D GRU recurrent neural network, with a 2000D context vector over the encoder states, and 620D word embeddings \cite{Sennrich2017}. The Imaginet decoder is a single-layer feed-forward network, where we learn the parameters $\mathbf{W_{vis}} \in \mathbb{R}^{2048\text{x}2000}$ to predict the true image vector with $\alpha = 0.1$ for the Imaginet objective (Equation \ref{eqn:imaginet}). The models are trained using the Adam optimiser with the default hyperparameters \cite{Kingma2015} in minibatches of 80 instances. The translation task is defined as the primary task and convergence is reached when BLEU has not increased for five epochs on the validation data. Gradients are clipped when their norm exceeds 1.0. Dropout is set to 0.2 for the embeddings and the recurrent connections in both tasks \cite{Gal2016}. Translations are decoded using beam search with 12 hypotheses.
+The encoder is a 1000D Gated Recurrent Unit bidirectional recurrent neural network \citep[GRU]{Cho2014} with 620D embeddings. We share all of the encoder parameters between the primary and auxiliary task. The translation decoder is a 1000D GRU recurrent neural network, with a 2000D context vector over the encoder states, and 620D word embeddings \citep{Sennrich2017}. The Imaginet decoder is a single-layer feed-forward network, where we learn the parameters $\mathbf{W_{vis}} \in \mathbb{R}^{2048\text{x}2000}$ to predict the true image vector with $\alpha = 0.1$ for the Imaginet objective (Equation \ref{eqn:imaginet}). The models are trained using the Adam optimiser with the default hyperparameters \citep{Kingma2015} in minibatches of 80 instances. The translation task is defined as the primary task and convergence is reached when BLEU has not increased for five epochs on the validation data. Gradients are clipped when their norm exceeds 1.0. Dropout is set to 0.2 for the embeddings and the recurrent connections in both tasks \citep{Gal2016}. Translations are decoded using beam search with 12 hypotheses.
 
 \subsection{In-domain experiments}\label{sec:in_domain_all}
 
@@ -33,11 +33,11 @@ The encoder is a 1000D Gated Recurrent Unit bidirectional recurrent neural netwo
 & Meteor & BLEU \\
 \cmidrule(l{5pt}r{5pt}){1-3}
 NMT & 54.0 $\pm$ 0.6 & 35.5 $\pm$ 0.8\\
-\citep{Calixto2017c} & 55.0 & 36.5 \\
-\citep{Calixto2017b} & 55.1 & 37.3 \\
+\cite{Calixto2017c} & 55.0 & 36.5 \\
+\cite{Calixto2017b} & 55.1 & 37.3 \\
 Imagination & 55.8 $\pm$ 0.4 & 36.8 $\pm$ 0.8\\
-\citep{toyama2016neural} & 56.0  & 36.5 \\
-\citep{Hitschler2016} & 56.1 & 34.3 \\
+\cite{toyama2016neural} & 56.0  & 36.5 \\
+\cite{Hitschler2016} & 56.1 & 34.3 \\
 Moses & 56.9 & 36.9\\
 \cmidrule[0.08em](l{5pt}r{5pt}){1-3}
 \end{tabular}
@@ -46,15 +46,15 @@ Moses & 56.9 & 36.9\\
 \end{table}
 
 We start by presenting the results of our multitask
-model trained using only the Multi30K dataset. We compare against state-of-the-art approaches and text-only baselines. Moses is the phrase-based machine translation model \cite{Koehn2007} reported in \cite{Specia2016}. NMT is a text-only neural machine translation model.
-\citep{Calixto2017c} is a double-attention model over the source language and the image.
-\citep{Calixto2017b} is a multimodal translation model that conditions the decoder on semantic image vector extracted from the VGG-19 CNN.
-\citep{Hitschler2016} uses visual features in a target-side retrieval model for translation. \citep{toyama2016neural} is most comparable to our approach: it is a multimodal variational NMT model that infers latent variables to represent the source language semantics from the image and linguistic data.
+model trained using only the Multi30K dataset. We compare against state-of-the-art approaches and text-only baselines. Moses is the phrase-based machine translation model \citep{Koehn2007} reported in \cite{Specia2016}. NMT is a text-only neural machine translation model.
+\cite{Calixto2017c} is a double-attention model over the source language and the image.
+\cite{Calixto2017b} is a multimodal translation model that conditions the decoder on semantic image vector extracted from the VGG-19 CNN.
+\cite{Hitschler2016} uses visual features in a target-side retrieval model for translation. \cite{toyama2016neural} is most comparable to our approach: it is a multimodal variational NMT model that infers latent variables to represent the source language semantics from the image and linguistic data.
 
 Table \ref{tab:results:in-domain} shows the results of this experiment.
 We can see that the combination of the attention-based translation model and the image
 prediction model is a 1.8 Meteor point improvement over the NMT
-baseline, but it is 1.1 Meteor points worse than the strong Moses baseline. Our approach is competitive with previous approaches that use visual features as inputs to the decoder and the target-side reranking model. It also competitive with \citep{toyama2016neural}, which also only uses images for training.  These results confirm that our multitasking approach uses the image prediction task to improve the encoder of the translation model.
+baseline, but it is 1.1 Meteor points worse than the strong Moses baseline. Our approach is competitive with previous approaches that use visual features as inputs to the decoder and the target-side reranking model. It also competitive with \cite{toyama2016neural}, which also only uses images for training.  These results confirm that our multitasking approach uses the image prediction task to improve the encoder of the translation model.
 
 \begin{table}[t]
 \centering
@@ -84,7 +84,7 @@ NMT & 52.8 $\pm$ 0.6 & 33.4 $\pm$ 0.6\\
 + NC & 56.7 $\pm$ 0.3 & 37.2 $\pm$ 0.7 \\
 + Imagination & 56.7 $\pm$ 0.1 & 37.4 $\pm$ 0.3 \\
 + Imagination (COCO) & 57.1 $\pm$ 0.2 & 37.8 $\pm$ 0.7 \\
-\citep{Calixto2017c} & 56.8 & 39.0 \\
+\cite{Calixto2017c} & 56.8 & 39.0 \\
 \cmidrule[0.08em](l{1pt}r{5pt}){1-3}
 \end{tabular}
 	\caption{Translation results with out-of-domain parallel text and described images. We find further improvements when we multitask with the News Commentary (NC) and COCO datasets.}\label{tab:results:ood-both}
@@ -136,7 +136,7 @@ We find that there is no significant difference between training the {\sc imagin
 \end{table*}
 
 
-We now experiment with training our model on a combination of the Multi30K and the News Commentary English-German data. In these experiments, we concatenate the Multi30K and News Commentary datasets into a single $\mathcal{D}_{text}$ training dataset, similar to \citep{Freitag2016}. We compare our model against \citep{Calixto2017c}, who pre-train their model on the WMT'15 English-German parallel text and back-translate \cite{Sennrich2016b} additional sentences from the bilingual independent descriptions in the Multi30K dataset (Footnote 2).
+We now experiment with training our model on a combination of the Multi30K and the News Commentary English-German data. In these experiments, we concatenate the Multi30K and News Commentary datasets into a single $\mathcal{D}_{text}$ training dataset, similar to \cite{Freitag2016}. We compare our model against \cite{Calixto2017c}, who pre-train their model on the WMT'15 English-German parallel text and back-translate \citep{Sennrich2016b} additional sentences from the bilingual independent descriptions in the Multi30K dataset (Footnote 2).
 
 %\footnote{We tried creating an additional auxiliary task for the external data but the model underfits the external data before training converges on the Multi30K dataset.}
 
@@ -150,8 +150,8 @@ Table \ref{tab:results:ensemble} presents the results of ensembling different ra
 
 \subsection{Multi30K 2017 results}
 
-We also evaluate our approach against 16 submissions to the WMT Shared Task on Multimodal Translation and Multilingual Image Description \cite{Elliott2017}. This shared task features a new evaluation dataset: Multi30K Test 2017 \cite{Elliott2017}, which contains 1,000 new evaluation images. The shared task submissions are evaluated with Meteor and human direct assessment \cite{Graham2017}. We submitted two systems, based on whether they used only the Multi30K dataset (constrained) or used additional external resources (unconstrained). Our constrained submission is an ensemble of three Imagination models trained over only the Multi30K training data. This achieves a Meteor score of 51.2, and a joint 3rd place ranking according to human assessment. Our unconstrained submission is an ensemble of three Imagination models trained with the Multi30K, News Commentary, and MS COCO datasets. It achieves a Meteor score of 53.5, and 2nd place in the human assessment.
+We also evaluate our approach against 16 submissions to the WMT Shared Task on Multimodal Translation and Multilingual Image Description \citep{Elliott2017}. This shared task features a new evaluation dataset: Multi30K Test 2017 \citep{Elliott2017}, which contains 1,000 new evaluation images. The shared task submissions are evaluated with Meteor and human direct assessment \citep{Graham2017}. We submitted two systems, based on whether they used only the Multi30K dataset (constrained) or used additional external resources (unconstrained). Our constrained submission is an ensemble of three Imagination models trained over only the Multi30K training data. This achieves a Meteor score of 51.2, and a joint 3rd place ranking according to human assessment. Our unconstrained submission is an ensemble of three Imagination models trained with the Multi30K, News Commentary, and MS COCO datasets. It achieves a Meteor score of 53.5, and 2nd place in the human assessment.
 
 \subsection{Qualitative examples}
 
-Table \ref{tab:results:examples} shows examples of where the multitasking model improves or worsens translation performance compared to the baseline model\footnote{We used MT-ComparEval \cite{Klejch2015}}. The first example shows that the baseline model makes a significant error in translating the pose of the children, translating ``on their stomachs'' as ``on their faces''). The middle example demonstrates that the baseline model translates the dog as walking (``läuft'') and then makes grammatical and sense errors after the clause marker. Both models neglect to translate the word ``dangling'', which is a low-frequency word in the training data. There are instances where the baseline produces better translations than the multitask model: In the bottom example, our model translates a bird flying through the water (``durch'') instead of ``over'' the water.
+Table \ref{tab:results:examples} shows examples of where the multitasking model improves or worsens translation performance compared to the baseline model\footnote{We used MT-ComparEval \citep{Klejch2015}}. The first example shows that the baseline model makes a significant error in translating the pose of the children, translating ``on their stomachs'' as ``on their faces''). The middle example demonstrates that the baseline model translates the dog as walking (``läuft'') and then makes grammatical and sense errors after the clause marker. Both models neglect to translate the word ``dangling'', which is a low-frequency word in the training data. There are instances where the baseline produces better translations than the multitask model: In the bottom example, our model translates a bird flying through the water (``durch'') instead of ``over'' the water.

@@ -34,10 +34,10 @@ $\psi (i, \theta_\phi)$: image encoder
 \end{figure}
 
 
-We train a standard model of grounded language learning which  projects images and their textual descriptions into the same space \cite{kiros2014unifying,karpathy2015deep}.
+We train a standard model of grounded language learning which  projects images and their textual descriptions into the same space \citep{kiros2014unifying,karpathy2015deep}.
 The training procedure is illustrated by the pseudo-code in Figure~\ref{fig:algo}.
 Images $i$ are encoded by a fixed pre-trained CNN followed by a learned affine transformation $\psi(i, \theta_\psi)$, and captions $c$ are encoded by a randomly initialized RNN $\phi(c, \theta_\phi)$.
-The model learns to minimize the distance between pairs $\textrm{<}a,b\textrm{>}$ using a max-of-hinges ranking loss \cite{faghri2017vse++}:
+The model learns to minimize the distance between pairs $\textrm{<}a,b\textrm{>}$ using a max-of-hinges ranking loss \citep{faghri2017vse++}:
 %
 \begin{equation*}
 \begin{split}
@@ -47,7 +47,7 @@ The model learns to minimize the distance between pairs $\textrm{<}a,b\textrm{>}
 %
 where $<a, b>$ are the true pairs, and $<a, \hat{b}>$ and $<\hat{a}, b>$ are all possible contrastive pairs in the mini-batch.
 The pairs either consists of image-caption pairs $<i , c>$, where the model solves a caption-image  {\bf c2i} ranking task, or pairs of
-captions in multiple languages belonging to the same image $<c_a, c_b>$, where the model solves a caption-caption {\bf c2c} ranking task \cite{gella2017image}.
+captions in multiple languages belonging to the same image $<c_a, c_b>$, where the model solves a caption-caption {\bf c2c} ranking task \citep{gella2017image}.
 Our monolingual models are trained to minimize the caption-image
 ranking objective {\bf c2i} on the training set.
 The multilingual models are trained to minimize the ranking loss for the set of all languages $\mathcal{L}$ in the collection: at each iteration the model is either updated for the {\bf c2i} objective or the caption-caption {\bf c2c} objective given either $<c^l, i>$ or a  $<c^k_a, c^m_b>$ pair in languages $l,k,m, \ldots \in \mathcal{L}$. All models are trained by first selecting a task, either {\bf c2i} or {\bf c2c}. In the {\bf c2i} case, a language is sampled at random followed by sampling a random batch; in the {\bf c2c} case, all possible $<c_a, c_b>$ pairs across all languages are treated as a single data set. All of the model parameters are shared across all tasks and languages.
@@ -55,14 +55,14 @@ The multilingual models are trained to minimize the ranking loss for the set of 
 \paragraph{Implementation.}
 We build our model on the PyTorch implementation\footnote{Code to reproduce our results is available at\\ \url{https://github.com/kadarakos/mulisera}.}
 %\footnote{\url{https://github.com/fartashf/vsepp}}
-of the VSE++ model \cite{faghri2017vse++}.
+of the VSE++ model \citep{faghri2017vse++}.
 Images are represented by the 2048D average-pool features
-extracted from the ResNet50 architecture \cite{he2016deep} trained on ImageNet \cite{deng2009imagenet}; this is followed by a trained linear layer
-$\mathbf{W}_{I} \in \mathbb{R}^{2048 \times 1024}$. Other implementation details follow \cite{faghri2017vse++}: sentences are represented as the final hidden state of a GRU \cite{chung2014empirical} with 1024 units and 300 dimensional word-embeddings trained from scratch. We use a single word embedding matrix containing  the union of all words in all considered languages.
+extracted from the ResNet50 architecture \citep{he2016deep} trained on ImageNet \citep{deng2009imagenet}; this is followed by a trained linear layer
+$\mathbf{W}_{I} \in \mathbb{R}^{2048 \times 1024}$. Other implementation details follow \citep{faghri2017vse++}: sentences are represented as the final hidden state of a GRU \citep{chung2014empirical} with 1024 units and 300 dimensional word-embeddings trained from scratch. We use a single word embedding matrix containing  the union of all words in all considered languages.
 %For the linguistic typology experiments we use the pre-trained 64D continuous language typology features of \cite{ostling2016continuous} or the 103D \texttt{syntax\_knn} features of URIEL through the \texttt{lang2vec} framework \cite{littell2017uriel}.  An extra token is prepended to each sentence representing the language as in \cite{malaviya2017learning}.  After the embedding lookup operation the typology-vectors are transformed by a linear layer to have the same dimensionality as the word-embeddings: $\mathbf{W_e} \in \mathbb{R}^{64 \times 300}$ or  $\mathbf{W_e} \in \mathbb{R}^{103 \times 300}$.
 The similarity function $s$ in the ranking loss is cosine similarity. We $\ell_2$ normalize both the caption and
 image representations. The model is trained
-with the Adam optimizer \cite{kingma2014adam}
+with the Adam optimizer \citep{kingma2014adam}
 using default parameters and learning-rate of \mbox{2e-4}.
 We train the model with an early stopping criterion, which is to maximise the
 sum of the image--sentence recall scores R@1, R@5, R@10 on the validation set with patience of 10 evaluations.

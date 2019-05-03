@@ -24,8 +24,8 @@ leads to the prediction of relevant images. This confirms that the shared encode
 \end{figure*}
 
 We now study the effect of varying the Convolutional Neural Network used to extract the visual features used in the Imaginet decoder.
-It has previously been shown that the choice of visual features can affect the performance of vision and language models \cite{Jabri2016,Kiela2016}.
-We compare the effect of training the {\sc imaginet} decoder to predict different types of image features, namely: 4096D features extracted from the `fc7`' layer of the VGG-19 model \cite{Simonyan2015}, 2048D features extracted from the `pool5/7x7\_s1' layer of InceptionNet V3 \cite{Szegedy2015}, and 2048D features extracted from `avg\_pool` layer of ResNet-50 \cite{He2016}.
+It has previously been shown that the choice of visual features can affect the performance of vision and language models \citep{Jabri2016,Kiela2016}.
+We compare the effect of training the {\sc imaginet} decoder to predict different types of image features, namely: 4096D features extracted from the `fc7`' layer of the VGG-19 model \citep{Simonyan2015}, 2048D features extracted from the `pool5/7x7\_s1' layer of InceptionNet V3 \citep{Szegedy2015}, and 2048D features extracted from `avg\_pool` layer of ResNet-50 \citep{He2016}.
 Table \ref{tab:results:features} shows the results of this experiment.
 There is a clear difference between predicting the 2048D vectors (Inception-V3 and ResNet-50) compared to the 4096D vector from VGG-19).
 This difference is reflected in both the translation Meteor score and the Median rank of the images in the validation dataset. This is likely because it is easier to learn the parameters of the image prediction model that has fewer parameters (8.192 million for VGG-19 vs. 4.096 million for Inception-V3 and ResNet-50).

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2018.10.12)  1 MAY 2019 17:44
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2018.10.12)  3 MAY 2019 16:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1852,7 +1852,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 ) [9] [10]
 [11] [12]
-Overfull \hbox (2.77966pt too wide) in paragraph at lines 113--113
+Overfull \hbox (2.77966pt too wide) in paragraph at lines 115--115
  [][] [][][]\EU1/lmr/bx/n/12 Synthetic Pairs for Multilingual Grounded Language
  
  []
@@ -2232,12 +2232,12 @@ File: chapters/TAL/imagenet/sail.png Graphic file (type QTm)
 
 ]
 Chapter 4.
-(./chapters/COLI/intro.tex [83] [84] [85]) (./chapters/COLI/related.tex
-[86] [87] [88] [89]) (./chapters/COLI/models.tex [90] [91]
+[83] [84] [85] (./chapters/COLI/intro.tex [86] [87])
+(./chapters/COLI/related.tex [88] [89] [90]) (./chapters/COLI/models.tex
+[91] [92]
 File: chapters/COLI/imaginet.pdf Graphic file (type QTm)
-
-<use  "chapters/COLI/imaginet.pdf" > [92] [93])
-(./chapters/COLI/experiments.tex [94] (./chapters/COLI/categories.tex
+ <use  "chapters/COLI/imaginet.pdf" > [93] [94] [95])
+(./chapters/COLI/experiments.tex [96] (./chapters/COLI/categories.tex
 File: chapters/COLI/omissionex.pdf Graphic file (type QTm)
 
 <use  "chapters/COLI/omissionex.pdf" >
@@ -2245,7 +2245,7 @@ File: chapters/COLI/85826.jpg Graphic file (type QTm)
  <use  "chapters/COLI/85826.jpg" >
 File: chapters/COLI/60596.jpg Graphic file (type QTm)
 
-<use  "chapters/COLI/60596.jpg" > [95] [96]
+<use  "chapters/COLI/60596.jpg" > [97] [98]
 *************************************************
 * fontspec warning: "addfontfeatures-ignored"
 * 
@@ -2275,8 +2275,8 @@ QTm)
 File: chapters/COLI/imaginet-omission-ratio-dep-boxplot.png Graphic file (type 
 QTm)
 
-<use  "chapters/COLI/imaginet-omission-ratio-dep-boxplot.png" > [97] [98]
-[99]
+<use  "chapters/COLI/imaginet-omission-ratio-dep-boxplot.png" > [99] [100]
+[101]
 *************************************************
 * fontspec warning: "addfontfeatures-ignored"
 * 
@@ -2292,8 +2292,8 @@ pe QTm)
 File: chapters/COLI/imaginet-omission-quotient-dep-boxplot.png Graphic file (ty
 pe QTm)
 
-<use  "chapters/COLI/imaginet-omission-quotient-dep-boxplot.png" > [100]
-[101]
+<use  "chapters/COLI/imaginet-omission-quotient-dep-boxplot.png" > [102]
+[103]
 Overfull \hbox (18.28323pt too wide) in paragraph at lines 235--237
 []\EU1/lmr/m/sc/12 LR full\EU1/lmr/m/n/12 : word type, dependency label, positi
 on, word:dependency
@@ -2308,25 +2308,24 @@ on, word:dependency
 * The current font is "\EU1/lmss/m/n/10 ".
 * The requested feature is "RawFeature=+tnum".
 *************************************************
-[102] [103]
+[104]
 File: chapters/COLI/position-new.pdf Graphic file (type QTm)
  <use  "chapters/COLI/position-new.pdf" >
 File: chapters/COLI/top_words.pdf Graphic file (type QTm)
 
-<use  "chapters/COLI/top_words.pdf" > [104]
+<use  "chapters/COLI/top_words.pdf" > [105] [106] [107]
 File: chapters/COLI/position-coef.pdf Graphic file (type QTm)
 
-<use  "chapters/COLI/position-coef.pdf" > [105])
-(./chapters/COLI/dimensions.tex [106] [107]
+<use  "chapters/COLI/position-coef.pdf" > [108])
+(./chapters/COLI/dimensions.tex [109]
 File: chapters/COLI/raw_mutual.pdf Graphic file (type QTm)
-
-<use  "chapters/COLI/raw_mutual.pdf" > [108] [109]
+ <use  "chapters/COLI/raw_mutual.pdf" >
+[110] [111]
 File: chapters/COLI/bootstrappedMI.pdf Graphic file (type QTm)
-
-<use  "chapters/COLI/bootstrappedMI.pdf" >
+ <use  "chapters/COLI/bootstrappedMI.pdf" >
 File: chapters/COLI/bootstrappedMI2.pdf Graphic file (type QTm)
 
-<use  "chapters/COLI/bootstrappedMI2.pdf" > [110]
+<use  "chapters/COLI/bootstrappedMI2.pdf" > [112]
 *************************************************
 * fontspec warning: "addfontfeatures-ignored"
 * 
@@ -2336,18 +2335,18 @@ File: chapters/COLI/bootstrappedMI2.pdf Graphic file (type QTm)
 * The current font is "\EU1/lmss/m/n/10 ".
 * The requested feature is "RawFeature=+tnum".
 *************************************************
-)) (./chapters/COLI/conclusions.tex [111] [112])) [113] [114]
+)) (./chapters/COLI/conclusions.tex [113] [114])) [115] [116]
 \openout2 = `chapters/IJCNLP/emnlp2017.aux'.
 
 
 (./chapters/IJCNLP/emnlp2017.tex
 Chapter 5.
-(./chapters/IJCNLP/abstract.tex) (./chapters/IJCNLP/introduction.tex [115
+(./chapters/IJCNLP/abstract.tex) [117
 
 
 
-]
-(./chapters/IJCNLP/model_diagram.tex
+] [118]
+(./chapters/IJCNLP/introduction.tex (./chapters/IJCNLP/model_diagram.tex
 Overfull \hbox (7.92958pt too wide) in paragraph at lines 81--81
  [][][][]|\EU1/lmr/bx/n/14.4 Average 
  []
@@ -2357,10 +2356,10 @@ Overfull \hbox (1.96516pt too wide) in paragraph at lines 82--82
  \EU1/lmr/m/sc/17.28 imaginet 
  []
 
-) [116] [117]) (./chapters/IJCNLP/problem.tex [118] [119])
-(./chapters/IJCNLP/model.tex [120] [121] [122]
+) [119] [120]) (./chapters/IJCNLP/problem.tex [121] [122])
+(./chapters/IJCNLP/model.tex [123] [124] [125]
 
-Package natbib Warning: Citation `Chrupala2017' on page 123 undefined on input 
+Package natbib Warning: Citation `Chrupala2017' on page 126 undefined on input 
 line 101.
 
 ) (./chapters/IJCNLP/data.tex
@@ -2373,13 +2372,7 @@ line 101.
 * The current font is "\EU1/lmr/m/n/12 ".
 * The requested feature is "RawFeature=+tnum".
 *************************************************
-[123] [124]) (./chapters/IJCNLP/experiments.tex
-Overfull \hbox (45.19516pt too wide) in paragraph at lines 31--1
-[]\EU1/lmr/m/n/12 Images are represented by 2048D vectors extracted from the ‘p
-ool5/7x7_s1’
- []
-
-[125]
+[126] [127]) (./chapters/IJCNLP/experiments.tex [128]
 *************************************************
 * fontspec warning: "addfontfeatures-ignored"
 * 
@@ -2389,7 +2382,7 @@ ool5/7x7_s1’
 * The current font is "\EU1/lmr/m/n/12 ".
 * The requested feature is "RawFeature=+tnum".
 *************************************************
-[126]
+[129]
 *************************************************
 * fontspec warning: "addfontfeatures-ignored"
 * 
@@ -2408,7 +2401,7 @@ ool5/7x7_s1’
 * The current font is "\EU1/lmr/m/n/12 ".
 * The requested feature is "RawFeature=+tnum".
 *************************************************
-[127] [128]
+[130] [131]
 *************************************************
 * fontspec warning: "addfontfeatures-ignored"
 * 
@@ -2428,7 +2421,7 @@ Overfull \hbox (3.00945pt too wide) in paragraph at lines 129--129
 [][] 
  []
 
-[129] (./chapters/IJCNLP/examples.tex
+[132] (./chapters/IJCNLP/examples.tex
 *************************************************
 * fontspec warning: "addfontfeatures-ignored"
 * 
@@ -2492,7 +2485,7 @@ File: chapters/IJCNLP/images/3325578605.jpg Graphic file (type QTm)
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [130] [131]) (./chapters/IJCNLP/discussion.tex [132]
+) [133] [134]) (./chapters/IJCNLP/discussion.tex [135]
 File: chapters/IJCNLP/images/dev_example_notext.png Graphic file (type QTm)
 
 <use  "chapters/IJCNLP/images/dev_example_notext.png" >
@@ -2510,7 +2503,7 @@ Underfull \hbox (badness 3471) in paragraph at lines 32--32
  equal ILSVRC object recognition
  []
 
-[133]
+[136]
 *************************************************
 * fontspec warning: "addfontfeatures-ignored"
 * 
@@ -2520,12 +2513,12 @@ Underfull \hbox (badness 3471) in paragraph at lines 32--32
 * The current font is "\EU1/lmr/m/n/12 ".
 * The requested feature is "RawFeature=+tnum".
 *************************************************
-) (./chapters/IJCNLP/relatedwork.tex [134] [135] [136])
-(./chapters/IJCNLP/conclusion.tex) (./chapters/IJCNLP/ack.tex [137])) [138]
+) (./chapters/IJCNLP/relatedwork.tex [137] [138] [139])
+(./chapters/IJCNLP/conclusion.tex [140]) (./chapters/IJCNLP/ack.tex) [141])
+[142]
 \openout2 = `chapters/ConLL/conll2018.aux'.
 
-
-(./chapters/ConLL/conll2018.tex
+ (./chapters/ConLL/conll2018.tex
 Chapter 6.
 
 Overfull \hbox (4.94762pt too wide) in paragraph at lines 101--104
@@ -2533,7 +2526,7 @@ Overfull \hbox (4.94762pt too wide) in paragraph at lines 101--104
 earn better visual-semantic
  []
 
-(./chapters/ConLL/intro1.tex [139
+(./chapters/ConLL/intro1.tex [143
 
 
 
@@ -2565,7 +2558,7 @@ Overfull \hbox (2.608pt too wide) in paragraph at lines 8--22
 [] [] 
  []
 
-) [140] [141]
+) [144] [145]
 Overfull \hbox (1.72655pt too wide) in paragraph at lines 26--27
 []\EU1/lmr/m/n/12 Multilingual models have not been explored
  []
@@ -2575,7 +2568,7 @@ Overfull \hbox (26.53058pt too wide) in paragraph at lines 31--32
 []\EU1/lmr/m/n/12 In Section [][]6.6.2[][] we investigate whether
  []
 
-[142]) (./chapters/ConLL/related.tex [143]
+[146]) (./chapters/ConLL/related.tex [147]
 Overfull \hbox (5.78442pt too wide) in paragraph at lines 9--12
 []\EU1/lmr/m/n/12 Grounded representations of sentences that are learned from i
 mage–
@@ -2587,13 +2580,13 @@ Overfull \hbox (6.10443pt too wide) in paragraph at lines 13--16
 ntence
  []
 
-[144]) (./chapters/ConLL/method.tex [145] [146] [147])
+[148]) (./chapters/ConLL/method.tex [149] [150] [151])
 Overfull \hbox (7.77036pt too wide) in paragraph at lines 56--110
 \EU1/lmr/m/n/12 sented by the 2048D average-pool features extracted from the Re
 sNet50
  []
 
-[148] (./chapters/ConLL/data.tex
+[152] (./chapters/ConLL/data.tex
 *************************************************
 * fontspec warning: "addfontfeatures-ignored"
 * 
@@ -2603,7 +2596,7 @@ sNet50
 * The current font is "\EU1/lmr/m/n/12 ".
 * The requested feature is "RawFeature=+tnum".
 *************************************************
-[149]) (./chapters/ConLL/bilingual.tex
+[153]) (./chapters/ConLL/bilingual.tex
 *************************************************
 * fontspec warning: "addfontfeatures-ignored"
 * 
@@ -2659,10 +2652,6 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 83.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\<let>-command' on input line 83.
 
 
@@ -2672,6 +2661,10 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\z@' on input line 83.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\let' on input line 83.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -2694,7 +2687,7 @@ Bilingual + c2c). The \EU1/lmtt/m/n/12 OE\EU1/lmr/m/n/12 , \EU1/lmtt/m/n/12 Piv
 ot-Asym
  []
 
-[150] [151] [152]
+[154] [155] [156]
 *************************************************
 * fontspec warning: "addfontfeatures-ignored"
 * 
@@ -2704,7 +2697,7 @@ ot-Asym
 * The current font is "\EU1/lmr/m/n/12 ".
 * The requested feature is "RawFeature=+tnum".
 *************************************************
-[153]
+[157]
 Overfull \hbox (5.51965pt too wide) in paragraph at lines 132--133
 \EU1/lmr/m/n/12 German sentence for each image in the \EU1/lmr/m/it/12 comparab
 le \EU1/lmr/m/n/12 portion of Multi30K.
@@ -2719,13 +2712,13 @@ ranslation
 *************************************************
 * fontspec warning: "addfontfeatures-ignored"
 * 
-* \addfontfeature(s) ignored on line 141; it cannot be used with a font that
+* \addfontfeature(s) ignored on line 142; it cannot be used with a font that
 * wasn't selected by a fontspec command.
 * 
 * The current font is "\EU1/lmr/m/n/12 ".
 * The requested feature is "RawFeature=+tnum".
 *************************************************
-[154] [155]) (./chapters/ConLL/multilingual.tex [156]
+[158] [159]) (./chapters/ConLL/multilingual.tex [160]
 *************************************************
 * fontspec warning: "addfontfeatures-ignored"
 * 
@@ -2735,7 +2728,7 @@ ranslation
 * The current font is "\EU1/lmr/m/n/12 ".
 * The requested feature is "RawFeature=+tnum".
 *************************************************
-[157]
+[161]
 *************************************************
 * fontspec warning: "addfontfeatures-ignored"
 * 
@@ -2745,11 +2738,11 @@ ranslation
 * The current font is "\EU1/lmr/m/n/12 ".
 * The requested feature is "RawFeature=+tnum".
 *************************************************
-[158]) (./chapters/ConLL/conclusions.tex [159])) [160] [161]
+[162]) (./chapters/ConLL/conclusions.tex [163] [164])) [165]
 \openout2 = `chapters/EMNLP/naaclhlt2019.aux'.
 
 
-(./chapters/EMNLP/naaclhlt2019.tex [162
+(./chapters/EMNLP/naaclhlt2019.tex [166
 
 
 
@@ -2761,7 +2754,7 @@ Overfull \hbox (2.17564pt too wide) in paragraph at lines 58--83
 e advantage of jointly learn-
  []
 
-[163] (./chapters/EMNLP/introduction.tex [164] [165])
+[167] (./chapters/EMNLP/introduction.tex [168] [169])
 (./chapters/EMNLP/method.tex
 
 LaTeX Font Warning: Command \small invalid in math mode on input line 25.
@@ -2770,7 +2763,7 @@ LaTeX Font Warning: Command \small invalid in math mode on input line 25.
 Package amsmath Warning: Cannot use `split' here;
 (amsmath)                trying to recover with `aligned' on input line 29.
 
-[166]
+[170]
 LaTeX Font Info:    Calculating math sizes for size <> on input line 31.
 
 
@@ -2857,9 +2850,9 @@ LaTeX Font Warning: Font shape `OMS/cmsy/b/n' in size <0.7> not available
 LaTeX Font Warning: Font shape `OMS/cmsy/b/n' in size <0.5> not available
 (Font)              size <5> substituted on input line 31.
 
-[167] Excluding 'comment' comment. Excluding 'comment' comment.
-Excluding 'comment' comment. [168] Excluding 'comment' comment.)
-(./chapters/EMNLP/protocol.tex [169]
+[171] Excluding 'comment' comment. Excluding 'comment' comment.
+Excluding 'comment' comment. [172] Excluding 'comment' comment.)
+(./chapters/EMNLP/protocol.tex [173]
 Underfull \hbox (badness 10000) in paragraph at lines 39--39
 [][][][][]$[][][][][] [] [] [] [][] [] [][][][][][][][][] [] [][][] [] [][][][]
 [][][][][][][][][][][] [] [][][][][][][][][] []
@@ -2877,7 +2870,7 @@ Overfull \hbox (4.54362pt too wide) in paragraph at lines 44--49
 erman
  []
 
-[170]) (./chapters/EMNLP/results_baseline.tex
+[174]) (./chapters/EMNLP/results_baseline.tex
 *************************************************
 * fontspec warning: "addfontfeatures-ignored"
 * 
@@ -2908,11 +2901,11 @@ erman
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[171]
+[175]
 
-LaTeX Warning: Text page 172 contains only floats.
+LaTeX Warning: Text page 176 contains only floats.
 
-[172] Excluding 'comment' comment. [173] Excluding 'comment' comment.
+[176] Excluding 'comment' comment. [177] Excluding 'comment' comment.
 Overfull \hbox (2.72499pt too wide) in paragraph at lines 196--202
 \EU1/lmr/m/n/12 combination of \EU1/lmr/m/it/12 disjoint \EU1/lmr/m/n/12 and \E
 U1/lmr/m/it/12 aligned \EU1/lmr/m/n/12 data settings. We train an English-
@@ -2942,13 +2935,13 @@ Overfull \hbox (53.84065pt too wide) in paragraph at lines 28--45
  [][] 
  []
 
-[174] Excluding 'comment' comment.
+[178] Excluding 'comment' comment.
 Overfull \hbox (2.91562pt too wide) in paragraph at lines 74--85
 [] []\EU1/lmr/bx/n/12 Disjoint[] \EU1/lmr/m/n/12 We generate pseudopairs using 
 the \EU1/lmr/m/it/12 disjoint \EU1/lmr/m/n/12 bilingual model
  []
 
-[175] Excluding 'comment' comment. [176]) (./chapters/EMNLP/translation.tex
+[179] Excluding 'comment' comment. [180]) (./chapters/EMNLP/translation.tex
 *************************************************
 * fontspec warning: "addfontfeatures-ignored"
 * 
@@ -2972,7 +2965,7 @@ Overfull \hbox (67.35265pt too wide) in paragraph at lines 30--41
  [][] 
  []
 
-[177]
+[181]
 Overfull \hbox (8.77962pt too wide) in paragraph at lines 53--63
 [] []\EU1/lmr/bx/n/12 Disjoint[] \EU1/lmr/m/n/12 We first report the results of
  disjoint bilingual model trained
@@ -2992,15 +2985,15 @@ LaTeX Warning: No positions in optional float specifier.
 * The current font is "\EU1/lmr/m/n/12 ".
 * The requested feature is "RawFeature=+tnum".
 *************************************************
-[178] [179] Excluding 'comment' comment.)
+[182] [183] Excluding 'comment' comment.)
 (./chapters/EMNLP/discussion-pseudoanalysis.tex
 
-Package natbib Warning: Citation `zipf1949human' on page 180 undefined on input
+Package natbib Warning: Citation `zipf1949human' on page 184 undefined on input
  line 6.
 
-[180]
+[184]
 File: chapters/EMNLP/assets/annotation_freq.pdf Graphic file (type QTm)
- <use  "chapters/EMNLP/assets/annotation_freq.pdf" > [181]
+ <use  "chapters/EMNLP/assets/annotation_freq.pdf" > [185]
 *************************************************
 * fontspec warning: "addfontfeatures-ignored"
 * 
@@ -3024,29 +3017,29 @@ Overfull \hbox (7.92355pt too wide) in paragraph at lines 23--50
  []
 
 Excluding 'comment' comment.) Excluding 'comment' comment.)
-(./chapters/EMNLP/related.tex [182] [183]) (./chapters/EMNLP/conclusions.tex)
+(./chapters/EMNLP/related.tex [186] [187]) (./chapters/EMNLP/conclusions.tex)
 Overfull \hbox (0.56761pt too wide) in paragraph at lines 3--115
 \EU1/lmr/m/n/12 performance when training models jointly on multiple languages 
 [][]Gella
  []
 
-) [184]
+) [188]
 \openout2 = `chapters/conclusion.aux'.
 
  (./chapters/conclusion.tex
 Chapter 8.
-[185
+[189
 
 
 
-] [186]
+] [190]
 Overfull \hbox (11.20044pt too wide) in paragraph at lines 55--62
 []\EU1/lmr/m/n/12 Using this protocol allowed us to directly compare a cross-si
 tuational
  []
 
 
-Package natbib Warning: Citation `lazazaridou2016multimodal' on page 187 undefi
+Package natbib Warning: Citation `lazazaridou2016multimodal' on page 191 undefi
 ned on input line 77.
 
 
@@ -3054,13 +3047,13 @@ Overfull \hbox (11.96344pt too wide) in paragraph at lines 79--79
 |\EU1/lmr/bx/n/17.28 Visually grounded sentence representations| 
  []
 
-[187]
+[191]
 Overfull \hbox (4.47697pt too wide) in paragraph at lines 101--107
 \EU1/lmr/m/n/12 embeddings. As the linguistic interpretation of representations
  learned
  []
 
-[188] [189]
+[192] [193]
 Overfull \hbox (4.09563pt too wide) in paragraph at lines 151--155
 \EU1/lmr/m/n/12 and mutual information based interpretation techniques we have 
 found
@@ -3073,54 +3066,54 @@ ns learned
  []
 
 
-Package natbib Warning: Citation `alishahi2019analyzing' on page 190 undefined 
+Package natbib Warning: Citation `alishahi2019analyzing' on page 194 undefined 
 on input line 174.
 
-[190]
+[194]
 
-Package natbib Warning: Citation `specia2016observed' on page 191 undefined on 
+Package natbib Warning: Citation `specia2016observed' on page 195 undefined on 
 input line 191.
 
-[191] [192]
+[195] [196]
 
-LaTeX Warning: Reference `ch:IJCNNLP' on page 193 undefined on input line 239.
+LaTeX Warning: Reference `ch:IJCNNLP' on page 197 undefined on input line 239.
 
 
-LaTeX Warning: Reference `ch: EMNLP' on page 193 undefined on input line 253.
+LaTeX Warning: Reference `ch: EMNLP' on page 197 undefined on input line 253.
 
-[193] [194] [195] [196] [197]
+[197] [198] [199] [200] [201]
 
-Package natbib Warning: Citation `alonso2016multitas' on page 198 undefined on 
+Package natbib Warning: Citation `alonso2016multitas' on page 202 undefined on 
 input line 361.
 
-) [198] [199] (./dissertation.bbl [200
+) [202] [203] (./dissertation.bbl [204
 
 
-] [201] [202] [203] [204] [205]
+] [205] [206] [207] [208] [209]
 Underfull \hbox (badness 1072) in paragraph at lines 350--354
 []\EU1/lmr/m/n/10 Cauchy, A. (1847).  Méthode générale pour la résolution des s
 ystemes
  []
 
-[206] [207] [208] [209] [210] [211] [212] [213] [214] [215] [216] [217]
-[218] [219] [220]
+[210] [211] [212] [213] [214] [215] [216] [217] [218] [219] [220] [221]
+[222] [223] [224]
 Invalid UTF-8 byte or sequence at line 1284 replaced by U+FFFD.
 Missing character: There is no � in font [lmroman10-regular]:mapping=tex-text!
- [221] [222] [223] [224] [225] [226] [227] [228] [229]
-[230] [231] [232] [233] [234] [235] [236]) [237]
+ [225] [226] [227] [228] [229] [230] [231] [232] [233]
+[234] [235] [236] [237] [238] [239] [240]) [241]
 \openout2 = `endmatter/ticcthesis.aux'.
 
  (./endmatter/ticcthesis.tex
-[238
+[242
 
 
-] [239]
+] [243]
 Overfull \hbox (1.67531pt too wide) in paragraph at lines 78--81
 \EU1/lmr/m/n/10 tion during playful interactions. Promotores: E.J. Krahmer, M.G
 .J. Swerts.
  []
 
-[240] [241]
+[244] [245]
 Overfull \hbox (6.7893pt too wide) in paragraph at lines 153--157
 \EU1/lmr/m/n/10 production, comprehension, and preference. Promotores: A.A. Mae
 s, M.G.J.
@@ -3132,19 +3125,19 @@ Overfull \hbox (6.53532pt too wide) in paragraph at lines 165--168
 Tilburg,
  []
 
-[242]
+[246]
 Overfull \hbox (0.6653pt too wide) in paragraph at lines 174--178
 []\EU1/lmr/m/n/10 Yevgen Matusevych, Learning constructions from bilingual expo
 sure: Com-
  []
 
-[243]
+[247]
 Overfull \hbox (13.34532pt too wide) in paragraph at lines 210--214
 []\EU1/lmr/m/n/10 Emmelyn Croes, Meeting Face-to-Face Online: The Effects of Vi
 deo-Mediated
  []
 
-) [244]
+) [248]
 
 Package natbib Warning: There were undefined citations.
 
@@ -3179,10 +3172,10 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  55742 strings out of 493638
  1237326 string characters out of 6146795
- 1521622 words of memory out of 5000000
+ 1521681 words of memory out of 5000000
  58013 multiletter control sequences out of 15000+600000
  24648 words of font info for 118 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
- 69i,20n,81p,10485b,3002s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 69i,20n,81p,10485b,3006s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on dissertation.pdf (258 pages).
+Output written on dissertation.pdf (262 pages).
