@@ -17,7 +17,7 @@ A level-1 auxiliary file: chapters/EMNLP/naaclhlt2019.aux
 A level-1 auxiliary file: chapters/conclusion.aux
 The style file: apalike2.bst
 A level-1 auxiliary file: endmatter/ticcthesis.aux
-Reallocated field_info (elt_size=4) to 13580 items from 5000.
+Reallocated field_info (elt_size=4) to 13558 items from 5000.
 Database file #1: references.bib
 Repeated entry---line 425 of file references.bib
  : @inproceedings{kievit2013naturalistic
@@ -455,10 +455,7 @@ Repeated entry---line 7740 of file references.bib
 I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "Chrupala2017"
 Warning--I didn't find a database entry for "zipf1949human"
-Warning--I didn't find a database entry for "lazazaridou2016multimodal"
-Warning--I didn't find a database entry for "alishahi2019analyzing"
 Warning--I didn't find a database entry for "specia2016observed"
-Warning--I didn't find a database entry for "alonso2016multitas"
 Warning--can't use both volume and number fields in bergsma2011learning
 Warning--empty journal in Cho2014
 Warning--empty publisher in chomsky2002syntactic
@@ -471,45 +468,45 @@ Warning--can't use both volume and number fields in kievit2013naturalistic
 Warning--empty journal in nivre2015universal
 Warning--empty journal in perfetti1998limits
 Warning--empty journal in Sennrich2017
-You've used 384 entries,
+You've used 386 entries,
             2229 wiz_defined-function locations,
-            2361 strings with 76378 characters,
-and the built_in function-call counts, 178005 in all, are:
-= -- 17551
-> -- 7943
-< -- 300
-+ -- 2862
-- -- 2733
-* -- 14389
-:= -- 29434
-add.period$ -- 1148
-call.type$ -- 384
-change.case$ -- 3264
-chr.to.int$ -- 345
-cite$ -- 396
-duplicate$ -- 7392
-empty$ -- 12140
-format.name$ -- 3281
-if$ -- 36100
+            2366 strings with 76713 characters,
+and the built_in function-call counts, 178652 in all, are:
+= -- 17612
+> -- 7974
+< -- 301
++ -- 2872
+- -- 2743
+* -- 14439
+:= -- 29556
+add.period$ -- 1154
+call.type$ -- 386
+change.case$ -- 3279
+chr.to.int$ -- 347
+cite$ -- 398
+duplicate$ -- 7418
+empty$ -- 12180
+format.name$ -- 3295
+if$ -- 36221
 int.to.chr$ -- 40
 int.to.str$ -- 0
-missing$ -- 391
-newline$ -- 1917
-num.names$ -- 1154
-pop$ -- 3669
+missing$ -- 393
+newline$ -- 1927
+num.names$ -- 1160
+pop$ -- 3683
 preamble$ -- 1
-purify$ -- 3275
+purify$ -- 3290
 quote$ -- 0
-skip$ -- 5648
+skip$ -- 5669
 stack$ -- 0
-substring$ -- 11669
-swap$ -- 1819
+substring$ -- 11693
+swap$ -- 1821
 text.length$ -- 173
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 2284
+type$ -- 2296
 warning$ -- 12
-while$ -- 1374
+while$ -- 1378
 width$ -- 0
-write$ -- 4917
+write$ -- 4941
 (There were 108 error messages)

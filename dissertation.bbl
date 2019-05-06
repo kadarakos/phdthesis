@@ -33,6 +33,18 @@ Alishahi, A. \& Chrupa{\l}a, G. (2012).
   in Natural Language Processing and Computational Natural Language Learning}
   (pp.\ 643--654).: Association for Computational Linguistics.
 
+\bibitem[Alishahi et~al., 2019]{alishahi2019analyzing}
+Alishahi, A., Chrupa{\l}a, G., \& Linzen, T. (2019).
+\newblock Analyzing and interpreting neural networks for nlp: A report on the
+  first blackboxnlp workshop.
+\newblock {\em arXiv preprint arXiv:1904.04063}.
+
+\bibitem[Alonso \& Plank, 2016]{alonso2016multitask}
+Alonso, H.~M. \& Plank, B. (2016).
+\newblock When is multitask learning effective? semantic sequence prediction
+  under varying data conditions.
+\newblock {\em arXiv preprint arXiv:1612.02251}.
+
 \bibitem[Ammar et~al., 2016]{ammar2016many}
 Ammar, W., Mulcaire, G., Ballesteros, M., Dyer, C., \& Smith, N.~A. (2016).
 \newblock Many languages, one parser.

@@ -152,6 +152,5 @@
 \contentsline {subsection}{\numberline {8.5.1}Embedding geometry}{200}{subsection.8.5.1}
 \contentsline {subsection}{\numberline {8.5.2}Multi-task learning}{201}{subsection.8.5.2}
 \contentsline {subsection}{\numberline {8.5.3}Local image descriptors}{202}{subsection.8.5.3}
-\contentsline {subsection}{\numberline {8.5.4}Trasnferring grounded representations}{203}{subsection.8.5.4}
 \contentsline {chapter}{References}{204}{section*.61}
-\contentsline {chapter}{TiCC PhD Series}{242}{section*.63}
+\contentsline {chapter}{TiCC PhD Series}{243}{section*.63}
