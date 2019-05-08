@@ -1,5 +1,5 @@
 %!TEX root = ../dissertation.Tex
-\chapter{Conclusion and discussion}
+\chapter{Discussion and Conclusion}
 \label{ch:conclusion}
 
 Traditional techniques to learn representations of words and sentences only consider 
@@ -334,12 +334,12 @@ distributions over a latent embedding
 space \citep{vilnis2014word}, which allows for the modeling of asymmetric relationship between sentences
 such as entailment, specificity/inclusion and uncertainty. 
 Another less well known approach in the literature is to embed objects in a
-hyperbolic space, which naturally represents hierarchical relationships and can be thought of as a
-continuous version of trees \citep{krioukov2010hyperbolic}.  In a similar setup to ours 
-\cite{tay2018hyperbolic} 
+hyperbolic space \citep{nickel2017poincare}, which naturally represents hierarchical relationships and 
+can be thought of as a continuous version of trees \citep{krioukov2010hyperbolic}. 
+In a similar setup to ours \cite{tay2018hyperbolic} 
 trains a simple hyperbolic sentence embedding architecture for question-answer 
 ranking using a pairwise ranking loss without any attention/interaction layer, 
-which performs at state-of-the-art level. 
+which performs at state-of-the-art level.
 Future work in visually grounded and multilingual representation learning can benefit from exploring
 spaces of various topology for the embedding of sentences. 
 
@@ -379,6 +379,85 @@ between regions and words. This formulation offered a blue-print for later model
 more sophisticated attention mechanisms to compute region--word interactions in a multi-step fashion
  \citep{nam2017dual,huang2017instance}.
 
+
+\section{Conclusion}
+
+Chapters~\ref{ch:TAL} and \ref{ch:COLI} focused on models of word and sentence meaning, 
+which take the visual world as a naturally occuring noisy meaning representation for linguistic utterrances. 
+In these chapters we developed and contrasted such models with traditional distributional approaches. 
+
+Chapters~\ref{ch:IJCNLP}, \ref{ch:ConLL} and \ref{ch:EMNLP} took the concept of visual grounding 
+a step further and utilized images to bridge between multiple languages. We applied visual grounding 
+to improve machine translation and studied multilingual visually grounded sentence representations.
+
+
+In Chapter~\ref{ch:TAL} we developed a novel model of cross-situational word learning, which learns to represent
+each word as a vector of probabilities indicating the strength of association between the word and high-level 
+convolutional image features descriptors. 
+We demonstrated that, while on human similarity benchmarks our model and a state-of-the-art distributional model 
+perform on par, the distributional model captures the semantics of \emph{abstract} and our visually grounded model 
+captures that of the \emph{concrete} words more accurately.
+  
+Chapter~\ref{ch:COLI} focused on visually grounded representations on the sentence level . 
+We developed novel techniques to analyze and understand the representations learned by recurrent
+neural network models of language and used these methods to compare a language model and an image--sentence ranking
+model i.e. distributional versus visually grounded models of linguistic representation learning. We have found that the 
+sentence representations of the visually grounded model are mostly impacted by semantically contentful words, while
+for the language model this saliency score over word categories is more uniform. Furthermore, we have 
+both quantitatively and qualitatively identified differences between the features encoded by the hidden dimensions
+of grounded and distributional models. We presented evidence that
+the dimensions of the latter are more associated with syntactic patterns, while  that of the former seems 
+to be more lexicalized and focused on topically related word sequences.
+
+Chapter~\ref{ch:IJCNLP} introduced our first multilingual experiment and showed that visually grounded sentence
+representation learning can improve machine translation. 
+We applied multi-task learning to train an English sentence encoder to provide useful representations for both
+image representation prediction and translation. Compared to the text-only baseline 
+we observed performance gains both when 
+training on English-German-Image translation pair and corresponding scene triplets and when training on two separate
+sets: an English-German parallel corpus and an English-Image image--description data set. 
+Furthermore, we also showed that visually grounded representation learning results in orthogonal 
+improvements to having access to additional parallel corpora.
+
+Finally,  Chapters~\ref{ch:ConLL} and \ref{ch:EMNLP} focused on learning better quality and more general 
+visually grounded sentence representations by learning to represent multiple languages jointly. 
+
+Chapter~\ref{ch:ConLL} presents several results on the benefits of multilingual joint learning on image--sentence
+ranking. Building on the experiments of \cite{gella2017image} we presented a multi-task learning architecture that 
+combines an image--caption and a cross-lingual caption--caption  loss function. Using this setup we showed that
+multilingual representations consistently outperform bilingual and monolingual grounded sentence representations
+in image--sentence ranking experiments. Furthermore, we provided evidence that performance on lower-resource 
+languages can be improved by training jointly with higher-resource languages. In all these cases the caption--caption
+objective provided consistent improvements.												
+A limitation of most of the experiments presented in Chapter~\ref{ch:ConLL} is that they are based on a 
+specific data configuration, where the same images are annotated with multiple langauges. To assess
+the impact of the existence of \emph{alignment} on the performance we generate synthetically a \emph{disjoint}
+from the \emph{aligned} corpus. In Chapter~\ref{ch:ConLL} we find that the \emph{disjoint} and \emph{aligned}
+settings results in comparable performance improvements compared to the monolingual setting.
+
+Chapter~\ref{ch:EMNLP} explores the issue of \emph{alignment} in a more realistic setting, where
+seperate image--sentence corpora are available for different languages. 
+We do find results contradictory to that of in Chapter~\ref{ch:ConLL}, namely that the \emph{aligned}
+setting offers more performance benefit compared to the \emph{disjoint} setting. 
+To help close the gap between the aligned and disjoint settings we develop a technique we call \emph{pseudopairs} 
+to generate a synthetic \emph{aligned} data set given two \emph{disjoint} sets, without requiring any extra
+data or pipeline elements. We find that our technique improves performance, however, lags behind using
+an automatic machine translation system to create a synthetic aligned set in the desired language.
+
+To improve performance and understanding in visually grounded and multilingual 
+representations representation learning we see several avenues of research. 
+One of our main interest for future work is to pinpoint some of the mechanisms that lead to 
+improvements when learning multilingual as opposed to monolingual representations. To push the state-of-the-art
+results further, we consider replacing our naive multi-task learning and parameter sharing algorithms with 
+more principled approaches. Similarly, in future work we will focus on improving our pseudopair generation 
+algorithm, replacing our initial implementation with more sophisticated matching algorithms optimizing not
+only for the quality, but also diversity of the resulting synthetic sets.
+A further natural extension to the work presented here is taking advantage 
+of image--sentence data sets in all available languages, rather than focusing on the ones we considered 
+in the thesis. Our result in Chapter~\ref{ch:ConLL} suggest that training on more language lead to improved results,
+however, it is unclear how general our findings are due to the limited number of languages we considered.
+Finally, exploring embedding spaces with different topologies, such as hyperpolic geometry we think is an exciting
+future avenue visually grounded and multilingual representations learning.
 
 %\paragraph{Input representation}
 %We mainly focused on learning sentence representations from word-level input. 

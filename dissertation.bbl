@@ -1650,6 +1650,12 @@ Nguyen, A., Yosinski, J., \& Clune, J. (2016).
 \newblock In {\em Visualization for Deep Learning workshop at International
   Conference on Machine Learning (ICML)}.
 
+\bibitem[Nickel \& Kiela, 2017]{nickel2017poincare}
+Nickel, M. \& Kiela, D. (2017).
+\newblock Poincar{\'e} embeddings for learning hierarchical representations.
+\newblock In {\em Advances in neural information processing systems}  (pp.\
+  6338--6347).
+
 \bibitem[Nivre et~al., 2015]{nivre2015universal}
 Nivre, J., Agi{\'c}, {\v{Z}}., Aranzabe, M.~J., Asahara, M., Atutxa, A.,
   Ballesteros, M., Bauer, J., Bengoetxea, K., Bhat, R.~A., Bosco, C., et~al.
