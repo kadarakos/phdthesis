@@ -56,7 +56,7 @@
     & EN $\rightarrow$ DE & DE $\rightarrow$ EN \\
     \midrule
     \citet{rajendran2015bridge} & 57.9 & 57.0 \\
-    \citet{D17-1303} &  77.2 & 76.3 \\
+    \citet{gella2017image} &  77.2 & 76.3 \\
     \citet{rotman2018bridging} &  82.6 & 79.1 \\
     \midrule
     En + De & 82.7   & 83.7  \\
@@ -101,7 +101,7 @@ on image representations as a third view.
 The Bridge Correlation Network (BCN) 
 \cite{rajendran2015bridge} is also trained to maximize the 
 correlation between the sentences using images as pivots.
-IMG\_PIVOT \cite{D17-1303} is the most comparable architecture
+IMG\_PIVOT \cite{gella2017image} is the most comparable architecture
 with the only difference that it uses the VGG-19 
 features instead of ResNet, sum-of-hinges instead 
 of max-of-hinges loss and no c2c objective. 
@@ -129,7 +129,7 @@ data for the c2c model, explaining the superior performance.
 Following \cite{kadar2018conll} in all our experiments we used the max-violation 
 objective function -- see Equation~\ref{eq:maxviol} -- , however many architectures apply
 the sum-violation -- see Equation~\ref{eq:sumviol} --  in the context of image-sentence 
-ranking \cite{nam2017dual} multilingual grounded learning \cite{D17-1303} and 
+ranking \cite{nam2017dual} multilingual grounded learning \cite{gella2017image} and 
 grounded learning from speech signal \cite{chrupala2017representations}. The article
 introducing the max-violation loss function \cite{faghri2017vse++} compares sum- and 
 max-violation objectives and do not show improved performance on Flickr30K 

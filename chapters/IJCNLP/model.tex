@@ -80,7 +80,7 @@ The translation model is trained to minimise the negative log likelihood of pred
 
 \subsection{Imaginet Decoder}
 
-The image prediction decoder is trained to predict the visual feature vector of the image associated with a sentence \citep{Chrupala2015}. 
+The image prediction decoder is trained to predict the visual feature vector of the image associated with a sentence \citep{chrupala2015learning}. 
 It encourages the shared encoder to learn grounded representations for the source language. 
 
 A source language sentence is encoded using the Shared Encoder, as described in Section \ref{sec:model:encoder}. Then we transform the shared encoder representation into a single vector by taking the mean pool over the hidden state annotations, the same way we initialise the hidden state of the translation decoder (Eqn. \ref{eqn:decoder_init}). This sentence representation is the input to a feed-forward neural network that predicts the visual feature vector $\mathbf{\hat{v}}$ associated with a sentence with parameters $\mathbf{W_{vis}}$:
@@ -98,7 +98,8 @@ A source language sentence is encoded using the Shared Encoder, as described in 
 % \end{align}
 
 This decoder is trained to predict the true image vector $\mathbf{v}$ with a margin-based objective, parameterised by the minimum margin
-$\alpha$, and the cosine distance $d(\cdot, \cdot)$. A margin-based objective has previously been used in grounded representation learning \citep{Vendrov2016,Chrupala2017}. The contrastive examples $\mathbf{v'}$ are drawn from the other instances in a minibatch:
+$\alpha$, and the cosine distance $d(\cdot, \cdot)$. A margin-based objective has previously been used in grounded representation learning \citep{vendrov2016order,chrupala2017representations}. 
+The contrastive examples $\mathbf{v'}$ are drawn from the other instances in a minibatch:
 %
 \begin{align}
 	\begin{split}

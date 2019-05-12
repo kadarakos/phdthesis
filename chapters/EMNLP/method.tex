@@ -6,7 +6,7 @@
 %\end{figure*}
 
 We adopt the model architecture and training procedure
-of \citet{kadar2018conll} for the task of matching images with sentences. This task is defined as learning to rank the sentences associated with an image higher than other sentences in the data set, and vice-versa \cite{hodosh2013framing}. The model is comprised of 
+of \cite{kadar2018conll} for the task of matching images with sentences. This task is defined as learning to rank the sentences associated with an image higher than other sentences in the data set, and vice-versa \citep{hodosh2013framing}. The model is comprised of 
 a recurrent neural network language model and a 
 convolutional neural network image encoder. 
 The parameters of the 
@@ -19,7 +19,7 @@ similar to each other, and contrastive pairs
 $<\hat{a},b>$ and 
 $<a,\hat{b}>$ dissimilar from each other in a joint
 embedding space by minimizing the max-violation loss function
-\cite{faghri2017vse++}:
+\citep{faghri2017vse++}:
 %
 \begin{equation}
 \small{
@@ -31,11 +31,11 @@ embedding space by minimizing the max-violation loss function
 \end{equation}
 
 In our experiments, the $<a, b>$ pairs are either image-caption pairs 
-$<i, c>$ or caption--caption pairs $<c_a, c_b>$ (following \cite{D17-1303,kadar2018conll}).
+$<i, c>$ or caption--caption pairs $<c_a, c_b>$ (following \cite{gella2017image,kadar2018conll}).
 When we train on $<i, c>$ pairs, we sample a batch
 from an image--caption data set with uniform probability, encode the images and the sentences, and perform an update of the model parameters.
 For the caption--caption objective, 
-we follow \citet{kadar2018conll} and 
+we follow \cite{kadar2018conll} and 
 generate a sentence pair data set
 by taking all pairs of sentences 
 that belong to the same image
@@ -167,7 +167,7 @@ $<i^2_i, c^{\ell_2}_i>$, we use a machine
 translation system 
 to and translate each caption $c^{\ell_2}_i$ to a language $\ell_1$ leading to new image--caption pairs 
 $<i^2_i, \hat{c}^{\ell_1}_i>$.
-\footnote{\citet{li2016adding} used a similar approach to create Chinese captions for images in the Flickr8K dataset, but they used the translations to train a Chinese image captioning model.} 
+\footnote{\cite{li2016adding} used a similar approach to create Chinese captions for images in the Flickr8K dataset, but they used the translations to train a Chinese image captioning model.} 
 Any off-the-shelf translation system could be used to create the translated captions, e.g. an online service, such as Google Translate, or a pre-trained translation model. Here, we use a pre-trained model as it facilitates reproduction. 
 %Figure \ref{fig:overview} (a) presents an overview of this approach.
 

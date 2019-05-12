@@ -83,14 +83,8 @@ Bach, S., Binder, A., Montavon, G., Klauschen, F., M{\"u}ller, K.-R., \& Samek,
   layer-wise relevance propagation.
 \newblock {\em PloS one}, 10(7), e0130140.
 
-\bibitem[Bahdanau et~al., 2015a]{bahdanau2014neural}
-Bahdanau, D., Cho, K., \& Bengio, Y. (2015a).
-\newblock Neural machine translation by jointly learning to align and
-  translate.
-\newblock In {\em International Conference on Learning Representation (ICLR)}.
-
-\bibitem[Bahdanau et~al., 2015b]{Bahdanau2015}
-Bahdanau, D., Cho, K., \& Bengio, Y. (2015b).
+\bibitem[Bahdanau et~al., 2015]{Bahdanau2015}
+Bahdanau, D., Cho, K., \& Bengio, Y. (2015).
 \newblock Neural machine translation by jointly learning to align and
   translate.
 \newblock In {\em International Conference on Learning Representations}.
@@ -138,11 +132,11 @@ Baroni, M. \& Lenci, A. (2008).
 \newblock {\em Italian Journal of Linguistics}, 20(1), 55--88.
 
 \bibitem[Barrault et~al., 2018]{barrault2018findings}
-Barrault, L., Bougares, F., Specia, L., Lala, C., Elliott, D., \& Frank, S.
-  (2018).
-\newblock Findings of the third shared task on multimodal machine translation.
-\newblock In {\em THIRD CONFERENCE ON MACHINE TRANSLATION (WMT18)}, volume~2
-  (pp.\ 308--327).
+Barrault, L., Frank, S., Elliott, D., \& Specia, L. (2018).
+\newblock Findings of the third shared task on multimodal machine translation
+  and multilingual image description.
+\newblock In {\em Proceedings of the Third Conference on Machine Translation,
+  Volume 2: Shared Task Papers}  Brussels, Belgium.
 
 \bibitem[Barsalou et~al., 2003]{barsalou2003grounding}
 Barsalou, L.~W., Simmons, W.~K., Barbey, A.~K., \& Wilson, C.~D. (2003).
@@ -167,9 +161,9 @@ Bengio, Y., Courville, A., \& Vincent, P. (2013).
   35(8), 1798--1828.
 
 \bibitem[Bengio et~al., 2003]{bengio2003neural}
-Bengio, Y., Ducharme, R., Vincent, P., \& Jauvin, C. (2003).
+Bengio, Y., Ducharme, R., Vincent, P., \& Janvin, C. (2003).
 \newblock A neural probabilistic language model.
-\newblock {\em Journal of machine learning research}, 3(Feb), 1137--1155.
+\newblock {\em The Journal of Machine Learning Research}, 3, 1137--1155.
 
 \bibitem[Bengio et~al., 1994]{bengio1994learning}
 Bengio, Y., Simard, P., \& Frasconi, P. (1994).
@@ -209,12 +203,6 @@ Binder, A., Montavon, G., Lapuschkin, S., M{\"u}ller, K.-R., \& Samek, W.
   deep neural networks}.
 \newblock In {\em Proceedings of the 15th Conference of the European Chapter of
   the Association for Computational Linguistics}  (pp.\ 164--169).
-
-\bibitem[Bingel \& S{\o}gaard, 2017]{bingel2017identifying}
-Bingel, J. \& S{\o}gaard, A. (2017).
-\newblock Identifying beneficial task relations for multi-task learning in deep
-  neural networks.
-\newblock {\em arXiv preprint arXiv:1702.08303}.
 
 \bibitem[Blei et~al., 2003]{blei2003latent}
 Blei, D.~M., Ng, A.~Y., \& Jordan, M.~I. (2003).
@@ -272,7 +260,7 @@ Bruni, E., Tran, G.~B., \& Baroni, M. (2011).
 \bibitem[Bruni et~al., 2014]{bruni2014multimodal}
 Bruni, E., Tran, N.-K., \& Baroni, M. (2014).
 \newblock Multimodal distributional semantics.
-\newblock {\em Journal of Artificial Intelligence Research}, 49, 1--47.
+\newblock {\em J. Artif. Intell. Res(JAIR)}, 49, 1--47.
 
 \bibitem[Bullinaria \& Levy, 2007]{bullinaria2007extracting}
 Bullinaria, J.~A. \& Levy, J.~P. (2007).
@@ -341,15 +329,10 @@ Carey, S. (1978).
 \newblock In M. Halle, J. Bresnan, \& G.~A. Miller (Eds.), {\em Linguistic
   Theory and Psychological Reality}. The MIT Press.
 
-\bibitem[Caruana, 1997a]{caruana1997multitask}
-Caruana, R. (1997a).
+\bibitem[Caruana, 1997]{caruana1997multitask}
+Caruana, R. (1997).
 \newblock Multitask learning.
 \newblock {\em Machine learning}, 28(1), 41--75.
-
-\bibitem[Caruana, 1997b]{Caruana1997}
-Caruana, R. (1997b).
-\newblock Multitask learning.
-\newblock {\em Machine Learning}, 28(1), 41--75.
 
 \bibitem[Caruana et~al., 2015]{caruana2015intelligible}
 Caruana, R., Lou, Y., Gehrke, J., Koch, P., Sturm, M., \& Elhadad, N. (2015).
@@ -382,15 +365,9 @@ Chen, D., Socher, R., Manning, C.~D., \& Ng, A.~Y. (2013).
   and semantic word vectors.
 \newblock {\em arXiv preprint arXiv:1301.3618}.
 
-\bibitem[Chen et~al., 2015a]{Chen2015}
+\bibitem[Chen et~al., 2015]{Chen2015}
 Chen, X., Fang, H., Lin, T., Vedantam, R., Gupta, S., Doll{\'{a}}r, P., \&
-  Zitnick, C.~L. (2015a).
-\newblock Microsoft {COCO} captions: Data collection and evaluation server.
-\newblock {\em CoRR}, abs/1504.00325.
-
-\bibitem[Chen et~al., 2015b]{DBLP:journals/corr/ChenFLVGDZ15}
-Chen, X., Fang, H., Lin, T., Vedantam, R., Gupta, S., Doll{\'{a}}r, P., \&
-  Zitnick, C.~L. (2015b).
+  Zitnick, C.~L. (2015).
 \newblock Microsoft {COCO} captions: Data collection and evaluation server.
 \newblock {\em CoRR}, abs/1504.00325.
 
@@ -407,21 +384,15 @@ Chen, Y., Liu, Y., \& Li, V.~O. (2018).
 \newblock {\em arXiv preprint arXiv:1802.03116}.
 
 \bibitem[Cho et~al., 2014a]{cho2014properties}
-Cho, K., Van~Merri{\"e}nboer, B., Bahdanau, D., \& Bengio, Y. (2014a).
-\newblock On the properties of neural machine translation: Encoder-decoder
+Cho, K., van Merrienboer, B., Bahdanau, D., \& Bengio, Y. (2014a).
+\newblock On the properties of neural machine translation: Encoder--decoder
   approaches.
-\newblock {\em arXiv preprint arXiv:1409.1259}.
+\newblock In {\em Proceedings of SSST-8, Eighth Workshop on Syntax, Semantics
+  and Structure in Statistical Translation}  (pp.\ 103--111).
 
-\bibitem[Cho et~al., 2014b]{cho2014learning}
+\bibitem[Cho et~al., 2014b]{Cho2014}
 Cho, K., Van~Merri{\"e}nboer, B., Gulcehre, C., Bahdanau, D., Bougares, F.,
   Schwenk, H., \& Bengio, Y. (2014b).
-\newblock Learning phrase representations using rnn encoder-decoder for
-  statistical machine translation.
-\newblock {\em arXiv preprint arXiv:1406.1078}.
-
-\bibitem[Cho et~al., 2014c]{Cho2014}
-Cho, K., Van~Merri{\"e}nboer, B., Gulcehre, C., Bahdanau, D., Bougares, F.,
-  Schwenk, H., \& Bengio, Y. (2014c).
 \newblock {Learning phrase representations using RNN encoder-decoder for
   statistical machine translation}.
 \newblock (pp.\ 1724--1734).
@@ -430,26 +401,27 @@ Cho, K., Van~Merri{\"e}nboer, B., Gulcehre, C., Bahdanau, D., Bougares, F.,
 Chomsky, N. (1957).
 \newblock {\em Syntactic structures}.
 
+\bibitem[Chrupa{\l}a et~al., 2017]{chrupala2017representations}
+Chrupa{\l}a, G., Gelderloos, L., \& Alishahi, A. (2017).
+\newblock Representations of language in a model of visually grounded speech
+  signal.
+\newblock In {\em Proceedings of the 55th Annual Meeting of the Association for
+  Computational Linguistics (Volume 1: Long Papers)}, volume~1  (pp.\
+  613--622).
+
 \bibitem[Chrupa{\l}a et~al., 2019]{chrupala2018difficulty}
 Chrupa{\l}a, G., Gelderloos, L., K{\'a}d{\'a}r, {\'A}., \& Alishahi, A. (2019).
 \newblock On the difficulty of a distributional semantics of spoken language.
 \newblock {\em Proceedings of the Society for Computation in Linguistics},
   2(1), 167--173.
 
-\bibitem[Chrupa{\l}a et~al., 2015a]{chrupala2015learning}
-Chrupa{\l}a, G., K{\'a}d{\'a}r, {\`A}., \& Alishahi, A. (2015a).
+\bibitem[Chrupa{\l}a et~al., 2015]{chrupala2015learning}
+Chrupa{\l}a, G., K{\'a}d{\'a}r, {\`A}., \& Alishahi, A. (2015).
 \newblock Learning language through pictures.
 \newblock In {\em Proceedings of the 53rd Annual Meeting of the Association for
   Computational Linguistics and the 7th International Joint Conference on
   Natural Language Processing (Volume 2: Short Papers)}, volume~2  (pp.\
   112--118).
-
-\bibitem[Chrupa{\l}a et~al., 2015b]{Chrupala2015}
-Chrupa{\l}a, G., K\'{a}d\'{a}r, A., \& Alishahi, A. (2015b).
-\newblock Learning language through pictures.
-\newblock In {\em Proceedings of the 53rd Annual Meeting of the Association for
-  Computational Linguistics and the 7th International Joint Conference on
-  Natural Language Processing}  (pp.\ 112--118).
 
 \bibitem[Chung et~al., 2016]{chung2016character}
 Chung, J., Cho, K., \& Bengio, Y. (2016).
@@ -461,7 +433,8 @@ Chung, J., Cho, K., \& Bengio, Y. (2016).
 Chung, J., Gulcehre, C., Cho, K., \& Bengio, Y. (2014).
 \newblock Empirical evaluation of gated recurrent neural networks on sequence
   modeling.
-\newblock {\em arXiv preprint arXiv:1412.3555}.
+\newblock In {\em NIPS 2014 Deep Learning and Representation Learning
+  Workshop}.
 
 \bibitem[Clark \& Pulman, 2007]{clark2007combining}
 Clark, S. \& Pulman, S. (2007).
@@ -539,7 +512,7 @@ Dempster, A.~P., Laird, N.~M., \& Rubin, D.~B. (1977).
 Deng, J., Dong, W., Socher, R., Li, L.-J., Li, K., \& Fei-Fei, L. (2009).
 \newblock Imagenet: A large-scale hierarchical image database.
 \newblock In {\em Computer Vision and Pattern Recognition, 2009. CVPR 2009.
-  IEEE Conference on}  (pp.\ 248--255).: Ieee.
+  IEEE Conference on}  (pp.\ 248--255).: IEEE.
 
 \bibitem[Denkowski \& Lavie, 2014]{denkowski:lavie:meteor-wmt:2014}
 Denkowski, M. \& Lavie, A. (2014).
@@ -634,16 +607,8 @@ Elliott, D. (2018).
 \newblock In {\em Proceedings of the 2018 Conference on Empirical Methods in
   Natural Language Processing}  (pp.\ 2974--2978).
 
-\bibitem[Elliott et~al., 2017a]{Elliott2017}
-Elliott, D., Frank, S., Barrault, L., Bougares, F., \& Specia, L. (2017a).
-\newblock Findings of the second shared task on multimodal machine translation
-  and multilingual image description.
-\newblock In {\em Proceedings of the Second Conference on Machine Translation,
-  Volume 2: Shared Task Papers}  (pp.\ 215--233).  Copenhagen, Denmark:
-  Association for Computational Linguistics.
-
-\bibitem[Elliott et~al., 2017b]{elliott2017findings}
-Elliott, D., Frank, S., Barrault, L., Bougares, F., \& Specia, L. (2017b).
+\bibitem[Elliott et~al., 2017]{elliott2017findings}
+Elliott, D., Frank, S., Barrault, L., Bougares, F., \& Specia, L. (2017).
 \newblock Findings of the second shared task on multimodal machine translation
   and multilingual image description.
 \newblock In {\em Proceedings of the Second Conference on Machine Translation,
@@ -654,27 +619,18 @@ Elliott, D., Frank, S., \& Hasler, E. (2015).
 \newblock Multi-language image description with neural sequence models.
 \newblock {\em CoRR}, abs/1510.04709.
 
-\bibitem[Elliott et~al., 2016a]{ElliottFrankSimaanSpecia2016}
-Elliott, D., Frank, S., Sima'an, K., \& Specia, L. (2016a).
-\newblock {{Multi30K}: Multilingual English-German Image Descriptions}.
-\newblock In {\em Proceedings of the 5th Workshop on Vision and Language}.
-
-\bibitem[Elliott et~al., 2016b]{elliott2016multi30k}
-Elliott, D., Frank, S., Sima'an, K., \& Specia, L. (2016b).
-\newblock Multi30k: Multilingual english-german image descriptions.
-\newblock {\em arXiv preprint arXiv:1605.00459}.
-
-\bibitem[Elliott et~al., 2016c]{W16-3210}
-Elliott, D., Frank, S., Sima'an, K., \& Specia, L. (2016c).
+\bibitem[Elliott et~al., 2016]{W16-3210}
+Elliott, D., Frank, S., Sima'an, K., \& Specia, L. (2016).
 \newblock Multi30k: Multilingual english-german image descriptions.
 \newblock In {\em Proceedings of the 5th Workshop on Vision and Language}
   (pp.\ 70--74).: Association for Computational Linguistics.
 
 \bibitem[Elliott \& K{\'a}d{\'a}r, 2017]{elliott2017imagination}
-Elliott, D. \& K{\'a}d{\'a}r, {\'A}. (2017).
+Elliott, D. \& K{\'a}d{\'a}r, {\`A}. (2017).
 \newblock Imagination improves multimodal translation.
 \newblock In {\em Proceedings of the Eighth International Joint Conference on
-  Natural Language Processing (Volume 1: Long Papers)}  (pp.\ 130--141).
+  Natural Language Processing (Volume 1: Long Papers)}, volume~1  (pp.\
+  130--141).
 
 \bibitem[Elliott \& Keller, 2014]{elliott2014comparing}
 Elliott, D. \& Keller, F. (2014).
@@ -712,7 +668,7 @@ Evert, S. (2005).
 \bibitem[Faghri et~al., 2017]{faghri2017vse++}
 Faghri, F., Fleet, D.~J., Kiros, J.~R., \& Fidler, S. (2017).
 \newblock Vse++: Improved visual-semantic embeddings.
-\newblock {\em arXiv preprint arXiv:1707.05612}.
+\newblock {\em arXiv preprint arXiv:1707.05612}, 2(7), 8.
 
 \bibitem[Fang et~al., 2014]{fang2014captions}
 Fang, H., Gupta, S., Iandola, F., Srivastava, R., Deng, L., Doll{\'a}r, P.,
@@ -766,16 +722,9 @@ Ferreira, T.~C., Moussallem, D., K{\'a}d{\'a}r, {\'A}., Wubben, S., \& Krahmer,
 \newblock In {\em Proceedings of the 56th Annual Meeting of the Association for
   Computational Linguistics (Volume 1: Long Papers)}  (pp.\ 1959--1969).
 
-\bibitem[Finkelstein et~al., 2001a]{wordsim353}
+\bibitem[Finkelstein et~al., 2001]{finkelstein2001placing}
 Finkelstein, L., Gabrilovich, E., Matias, Y., Rivlin, E., Solan, Z., Wolfman,
-  G., \& Ruppin, E. (2001a).
-\newblock Placing search in context: The concept revisited.
-\newblock In {\em Proceedings of the 10th international conference on World
-  Wide Web}  (pp.\ 406--414).: ACM.
-
-\bibitem[Finkelstein et~al., 2001b]{finkelstein2001placing}
-Finkelstein, L., Gabrilovich, E., Matias, Y., Rivlin, E., Solan, Z., Wolfman,
-  G., \& Ruppin, E. (2001b).
+  G., \& Ruppin, E. (2001).
 \newblock Placing search in context: The concept revisited.
 \newblock In {\em Proceedings of the 10th international conference on World
   Wide Web}  (pp.\ 406--414).: ACM.
@@ -858,13 +807,8 @@ Gelderloos, L. \& Chrupa{\l}a, G. (2016).
 \newblock In {\em Proceedings of COLING 2016, the 26th International Conference
   on Computational Linguistics}  (pp.\ 1309--1319).
 
-\bibitem[Gella et~al., 2017a]{gella2017image}
-Gella, S., Sennrich, R., Keller, F., \& Lapata, M. (2017a).
-\newblock Image pivoting for learning multilingual multimodal representations.
-\newblock {\em arXiv preprint arXiv:1707.07601}.
-
-\bibitem[Gella et~al., 2017b]{D17-1303}
-Gella, S., Sennrich, R., Keller, F., \& Lapata, M. (2017b).
+\bibitem[Gella et~al., 2017]{gella2017image}
+Gella, S., Sennrich, R., Keller, F., \& Lapata, M. (2017).
 \newblock Image pivoting for learning multilingual multimodal representations.
 \newblock In {\em Proceedings of the 2017 Conference on Empirical Methods in
   Natural Language Processing}  (pp.\ 2839--2845).: Association for
@@ -953,14 +897,8 @@ Harwath, D., Chuang, G., \& Glass, J. (2018).
   of untranscribed speech.
 \newblock {\em arXiv preprint arXiv:1804.03052}.
 
-\bibitem[He et~al., 2016a]{He2016}
-He, K., Zhang, X., Ren, S., \& Sun, J. (2016a).
-\newblock Deep residual learning for image recognition.
-\newblock In {\em The IEEE Conference on Computer Vision and Pattern
-  Recognition (CVPR)}  (pp.\ 770--778).
-
-\bibitem[He et~al., 2016b]{he2016deep}
-He, K., Zhang, X., Ren, S., \& Sun, J. (2016b).
+\bibitem[He et~al., 2016]{he2016deep}
+He, K., Zhang, X., Ren, S., \& Sun, J. (2016).
 \newblock Deep residual learning for image recognition.
 \newblock In {\em Proceedings of the IEEE conference on computer vision and
   pattern recognition}  (pp.\ 770--778).
@@ -980,42 +918,25 @@ Hill, F., Cho, K., \& Korhonen, A. (2016).
   data.
 \newblock {\em arXiv preprint arXiv:1602.03483}.
 
-\bibitem[Hill et~al., 2014]{hill2014simlex}
-Hill, F., Reichart, R., \& Korhonen, A. (2014).
-\newblock Simlex-999: Evaluating semantic models with (genuine) similarity
-  estimation.
-\newblock {\em arXiv preprint arXiv:1408.3456}.
-
 \bibitem[Hill et~al., 2015]{hill2015simlex}
 Hill, F., Reichart, R., \& Korhonen, A. (2015).
 \newblock Simlex-999: Evaluating semantic models with (genuine) similarity
   estimation.
 \newblock {\em Computational Linguistics}, 41(4), 665--695.
 
-\bibitem[Hitschler et~al., 2016a]{Hitschler2016}
-Hitschler, J., Schamoni, S., \& Riezler, S. (2016a).
+\bibitem[Hitschler et~al., 2016]{Hitschler2016}
+Hitschler, J., Schamoni, S., \& Riezler, S. (2016).
 \newblock {Multimodal Pivots for Image Caption Translation}.
 \newblock In {\em Proceedings of the 54th Annual Meeting of the Association for
   Computational Linguistics}  (pp.\ 2399--2409).
 
-\bibitem[Hitschler et~al., 2016b]{hitschler2016multimodal}
-Hitschler, J., Schamoni, S., \& Riezler, S. (2016b).
-\newblock Multimodal pivots for image caption translation.
-\newblock {\em arXiv preprint arXiv:1601.03916}.
-
 \bibitem[Hochreiter \& Schmidhuber, 1997]{hochreiter1997long}
 Hochreiter, S. \& Schmidhuber, J. (1997).
 \newblock Long short-term memory.
-\newblock {\em Neural computation}, 9(8), 1735--1780.
+\newblock {\em Neural Computation}, 9(8), 1735--1780.
 
-\bibitem[Hodosh et~al., 2013a]{hodosh2013framing}
-Hodosh, M., Young, P., \& Hockenmaier, J. (2013a).
-\newblock Framing image description as a ranking task: Data, models and
-  evaluation metrics.
-\newblock {\em Journal of Artificial Intelligence Research}, 47, 853--899.
-
-\bibitem[Hodosh et~al., 2013b]{Hodosh2013}
-Hodosh, M., Young, P., \& Hockenmaier, J. (2013b).
+\bibitem[Hodosh et~al., 2013]{hodosh2013framing}
+Hodosh, M., Young, P., \& Hockenmaier, J. (2013).
 \newblock Framing image description as a ranking task: Data, models and
   evaluation metrics.
 \newblock {\em Journal of Artificial Intelligence Research}, 47, 853--899.
@@ -1046,16 +967,10 @@ Huang, Y., Wang, W., \& Wang, L. (2017).
 \newblock In {\em Proceedings of the IEEE Conference on Computer Vision and
   Pattern Recognition}  (pp.\ 2310--2318).
 
-\bibitem[Jabri et~al., 2016a]{Jabri2016}
-Jabri, A., Joulin, A., \& van~der Maaten, L. (2016a).
+\bibitem[Jabri et~al., 2016]{Jabri2016}
+Jabri, A., Joulin, A., \& van~der Maaten, L. (2016).
 \newblock Revisiting visual question answering baselines.
 \newblock In {\em European conference on computer vision}  (pp.\ 727--739).
-
-\bibitem[Jabri et~al., 2016b]{jabri2016revisiting}
-Jabri, A., Joulin, A., \& van~der Maaten, L. (2016b).
-\newblock Revisiting visual question answering baselines.
-\newblock In {\em European conference on computer vision}  (pp.\ 727--739).:
-  Springer.
 
 \bibitem[Jernite et~al., 2017]{jernite2017discourse}
 Jernite, Y., Bowman, S.~R., \& Sontag, D. (2017).
@@ -1098,12 +1013,6 @@ Kachergis, G., Yu, C., \& Shiffrin, R.~M. (2012).
 K{\'a}d{\'a}r, {\'A}., Alishahi, A., \& Chrupa{\l}a, G. (2015).
 \newblock Learning word meanings from images of natural scenes.
 \newblock {\em Traitement Automatique des Langues}, 55(3).
-
-\bibitem[K{\'a}d{\'a}r et~al., 2016]{Kadar2016}
-K{\'a}d{\'a}r, A., Chrupa{\l}a, G., \& Alishahi, A. (2016).
-\newblock Representation of linguistic form and function in recurrent neural
-  networks.
-\newblock {\em arXiv preprint arXiv:1602.08952}.
 
 \bibitem[K{\'a}d{\'a}r et~al., 2017]{kadar2017representation}
 K{\'a}d{\'a}r, A., Chrupa{\l}a, G., \& Alishahi, A. (2017).
@@ -1207,12 +1116,7 @@ Kim, Y. (2014).
 \bibitem[Kingma \& Ba, 2014]{kingma2014adam}
 Kingma, D.~P. \& Ba, J. (2014).
 \newblock Adam: A method for stochastic optimization.
-\newblock {\em arXiv preprint arXiv:1412.6980}.
-
-\bibitem[Kingma \& Ba, 2015]{Kingma2015}
-Kingma, D.~P. \& Ba, J. (2015).
-\newblock Adam: {A} method for stochastic optimization.
-\newblock {\em International Conference on Learning Representations}.
+\newblock In {\em International Conference for Learning Representations}.
 
 \bibitem[Kiperwasser \& Ballesteros, 2018]{kiperwasser2018scheduled}
 Kiperwasser, E. \& Ballesteros, M. (2018).
@@ -1244,8 +1148,8 @@ Kiros, R., Salakhutdinov, R., \& Zemel, R.~S. (2014).
 Kiros, R., Zhu, Y., Salakhutdinov, R.~R., Zemel, R., Urtasun, R., Torralba, A.,
   \& Fidler, S. (2015).
 \newblock Skip-thought vectors.
-\newblock In {\em Advances in neural information processing systems}  (pp.\
-  3294--3302).
+\newblock In {\em Advances in Neural Information Processing Systems}  (pp.\
+  3276--3284).
 
 \bibitem[Klein et~al., 2015]{Klein2015AssociatingNW}
 Klein, B.~E., Lev, G., Sadeh, G., \& Wolf, L. (2015).
@@ -1444,7 +1348,8 @@ Lin, X. \& Parikh, D. (2015).
 Linzen, T., Dupoux, E., \& Goldberg, Y. (2016).
 \newblock Assessing the ability of lstms to learn syntax-sensitive
   dependencies.
-\newblock {\em arXiv preprint arXiv:1611.01368}.
+\newblock {\em Transactions of the Association for Computational Linguistics},
+  4, 521--535.
 
 \bibitem[Louwerse, 2011]{louwerse2011symbol}
 Louwerse, M.~M. (2011).
@@ -1476,8 +1381,8 @@ Ma, M., Li, D., Zhao, K., \& Huang, L. (2017).
 
 \bibitem[MacWhinney, 2014]{macwhinney2014childes}
 MacWhinney, B. (2014).
-\newblock {\em The CHILDES project: Tools for analyzing talk, Volume II: The
-  database}.
+\newblock {\em The CHILDES Project: Tools for Analyzing Talk, Volume I:
+  Transcription Format and Programs}.
 \newblock Psychology Press.
 
 \bibitem[Mahendran \& Vedaldi, 2015]{mahendran2015understanding}
@@ -1581,41 +1486,28 @@ Mikolov, T., Sutskever, I., Chen, K., Corrado, G.~S., \& Dean, J. (2013b).
 \bibitem[Miller \& Charles, 1991]{miller1991contextual}
 Miller, G.~A. \& Charles, W.~G. (1991).
 \newblock Contextual correlates of semantic similarity.
-\newblock {\em Language and cognitive processes}, 6(1), 1--28.
+\newblock {\em Language and Cognitive Processes}, 6(1), 1--28.
 
 \bibitem[Mitchell \& Lapata, 2008]{mitchell2008vector}
 Mitchell, J. \& Lapata, M. (2008).
 \newblock Vector-based models of semantic composition.
 \newblock {\em proceedings of ACL-08: HLT}, (pp.\ 236--244).
 
-\bibitem[Miyazaki \& Shimizu, 2016a]{P16-1168}
-Miyazaki, T. \& Shimizu, N. (2016a).
+\bibitem[Miyazaki \& Shimizu, 2016]{P16-1168}
+Miyazaki, T. \& Shimizu, N. (2016).
 \newblock Cross-lingual image caption generation.
 \newblock In {\em Proceedings of the 54th Annual Meeting of the Association for
   Computational Linguistics (Volume 1: Long Papers)}  (pp.\ 1780--1790).:
   Association for Computational Linguistics.
-
-\bibitem[Miyazaki \& Shimizu, 2016b]{miyazaki2016cross}
-Miyazaki, T. \& Shimizu, N. (2016b).
-\newblock Cross-lingual image caption generation.
-\newblock In {\em Proceedings of the 54th Annual Meeting of the Association for
-  Computational Linguistics (Volume 1: Long Papers)}, volume~1  (pp.\
-  1780--1790).
 
 \bibitem[Montague, 1970]{montague1970english}
 Montague, R. (1970).
 \newblock English as a formal language.
 \newblock {\em Linguaggi nella Societa e nella Tecnica}.
 
-\bibitem[Nakayama \& Nishida, 2017a]{nakayama2017zero}
-Nakayama, H. \& Nishida, N. (2017a).
+\bibitem[Nakayama \& Nishida, 2017]{nakayama2017zero}
+Nakayama, H. \& Nishida, N. (2017).
 \newblock Zero-resource machine translation by multimodal encoder--decoder
-  network with multimedia pivot.
-\newblock {\em Machine Translation}, 31(1-2), 49--64.
-
-\bibitem[Nakayama \& Nishida, 2017b]{Nakayama2016}
-Nakayama, H. \& Nishida, N. (2017b).
-\newblock Zero-resource machine translation by multimodal encoder-decoder
   network with multimedia pivot.
 \newblock {\em Machine Translation}, 31(1-2), 49--64.
 
@@ -1748,7 +1640,7 @@ Pratt, L.~Y. (1993).
 \bibitem[Pulverm{\"u}ller, 2005]{pulvermuller2005brain}
 Pulverm{\"u}ller, F. (2005).
 \newblock Brain mechanisms linking language and action.
-\newblock {\em Nature Reviews Neuroscience}, 6(7), 576.
+\newblock {\em Nature reviews neuroscience}, 6(7), 576.
 
 \bibitem[Quine, 1960]{Quine1960}
 Quine, W. (1960).
@@ -1857,26 +1749,14 @@ Rumelhart, D.~E., Hinton, G.~E., \& Williams, R.~J. (1985).
 \newblock Technical report, California Univ San Diego La Jolla Inst for
   Cognitive Science.
 
-\bibitem[Russakovsky et~al., 2014]{ILSVRCarxiv14}
-Russakovsky, O., Deng, J., Su, H., Krause, J., Satheesh, S., Ma, S., Huang, Z.,
-  Karpathy, A., Khosla, A., Bernstein, M., Berg, A.~C., \& Fei-Fei, L. (2014).
-\newblock Imagenet large scale visual recognition challenge.
-\newblock {\em arXiv preprint arXiv:1409.0575}.
-
 \bibitem[Russakovsky et~al., 2015]{russakovsky2015imagenet}
 Russakovsky, O., Deng, J., Su, H., Krause, J., Satheesh, S., Ma, S., Huang, Z.,
   Karpathy, A., Khosla, A., Bernstein, M., et~al. (2015).
 \newblock Imagenet large scale visual recognition challenge.
 \newblock {\em International Journal of Computer Vision}, 115(3), 211--252.
 
-\bibitem[Saha et~al., 2016a]{saha2016correlational}
-Saha, A., Khapra, M.~M., Chandar, S., Rajendran, J., \& Cho, K. (2016a).
-\newblock A correlational encoder decoder architecture for pivot based sequence
-  generation.
-\newblock {\em arXiv preprint arXiv:1606.04754}.
-
-\bibitem[Saha et~al., 2016b]{Saha2016}
-Saha, A., Khapra, M.~M., Chandar, S., Rajendran, J., \& Cho, K. (2016b).
+\bibitem[Saha et~al., 2016]{Saha2016}
+Saha, A., Khapra, M.~M., Chandar, S., Rajendran, J., \& Cho, K. (2016).
 \newblock A correlational encoder decoder architecture for pivot based sequence
   generation.
 \newblock In {\em 26th International Conference on Computational Linguistics:
@@ -1963,18 +1843,14 @@ Silberer, C. \& Lapata, M. (2014).
   Computational Linguistics (Volume 1: Long Papers)}, volume~1  (pp.\
   721--732).
 
-\bibitem[Simonyan et~al., 2013]{simonyan2013deep}
-Simonyan, K., Vedaldi, A., \& Zisserman, A. (2013).
+\bibitem[Simonyan et~al., 2014]{simonyan2013deep}
+Simonyan, K., Vedaldi, A., \& Zisserman, A. (2014).
 \newblock Deep inside convolutional networks: Visualising image classification
   models and saliency maps.
-\newblock {\em arXiv preprint arXiv:1312.6034}.
+\newblock In {\em International Conference on Learning Representation (ICLR)
+  Workshop}.
 
-\bibitem[Simonyan \& Zisserman, 2014]{simonyan2014very}
-Simonyan, K. \& Zisserman, A. (2014).
-\newblock Very deep convolutional networks for large-scale image recognition.
-\newblock {\em arXiv preprint arXiv:1409.1556}.
-
-\bibitem[Simonyan \& Zisserman, 2015]{Simonyan2015}
+\bibitem[Simonyan \& Zisserman, 2015]{simonyan2014very}
 Simonyan, K. \& Zisserman, A. (2015).
 \newblock Very deep convolutional networks for large-scale image recognition.
 \newblock In {\em Proceedings of the International Conference on Learning
@@ -2003,8 +1879,8 @@ Smith, L.~B. \& Yu, C. (2008).
 Socher, R., Karpathy, A., Le, Q.~V., Manning, C.~D., \& Ng, A.~Y. (2014).
 \newblock Grounded compositional semantics for finding and describing images
   with sentences.
-\newblock {\em Transactions of the Association for Computational Linguistics},
-  2, 207--218.
+\newblock {\em Transactions of the Association of Computational Linguistics},
+  2(1), 207--218.
 
 \bibitem[Socher et~al., 2011]{socher2011parsing}
 Socher, R., Lin, C.~C., Manning, C., \& Ng, A.~Y. (2011).
@@ -2014,33 +1890,19 @@ Socher, R., Lin, C.~C., Manning, C., \& Ng, A.~Y. (2011).
   learning (ICML-11)}  (pp.\ 129--136).
 
 \bibitem[Socher et~al., 2013]{socher2013recursive}
-Socher, R., Perelygin, A., Wu, J., Chuang, J., Manning, C.~D., Ng, A., \&
+Socher, R., Perelygin, A., Wu, J.~Y., Chuang, J., Manning, C.~D., Ng, A.~Y., \&
   Potts, C. (2013).
 \newblock Recursive deep models for semantic compositionality over a sentiment
   treebank.
-\newblock In {\em Proceedings of the 2013 conference on empirical methods in
-  natural language processing}  (pp.\ 1631--1642).
+\newblock In {\em Conference on Empirical Methods in Natural Language
+  Processing (EMNLP)}, volume 1631  (pp.\ 1642).
 
-\bibitem[Specia et~al., 2016a]{Specia2016}
-Specia, L., Frank, S., Sima'an, K., \& Elliott, D. (2016a).
+\bibitem[Specia et~al., 2016]{Specia2016}
+Specia, L., Frank, S., Sima'an, K., \& Elliott, D. (2016).
 \newblock A shared task on multimodal machine translation and crosslingual
   image description.
 \newblock In {\em Proceedings of the First Conference on Machine Translation}
   (pp.\ 543--553).
-
-\bibitem[Specia et~al., 2016b]{specia-EtAl:2016:WMT}
-Specia, L., Frank, S., Sima'an, K., \& Elliott, D. (2016b).
-\newblock A shared task on multimodal machine translation and crosslingual
-  image description.
-\newblock In {\em Proceedings of the First Conference on Machine Translation}
-  (pp.\ 543--553).  Berlin, Germany: Association for Computational Linguistics.
-
-\bibitem[Specia et~al., 2016c]{specia2016shared}
-Specia, L., Frank, S., Sima'an, K., \& Elliott, D. (2016c).
-\newblock A shared task on multimodal machine translation and crosslingual
-  image description.
-\newblock In {\em Proceedings of the First Conference on Machine Translation:
-  Volume 2, Shared Task Papers}, volume~2  (pp.\ 543--553).
 
 \bibitem[Srivastava et~al., 2015]{Srivastava2015}
 Srivastava, N., Mansimov, E., \& Salakhudinov, R. (2015).
@@ -2071,17 +1933,11 @@ Szegedy, C., Vanhoucke, V., Ioffe, S., Shlens, J., \& Wojna, Z. (2015).
 \newblock Rethinking the inception architecture for computer vision.
 \newblock {\em CoRR}, abs/1512.00567.
 
-\bibitem[Tai et~al., 2015a]{kai2015treelstm}
-Tai, K.~S., Socher, R., \& D.~Manning, C. (2015a).
+\bibitem[Tai et~al., 2015]{kai2015treelstm}
+Tai, K.~S., Socher, R., \& D.~Manning, C. (2015).
 \newblock Improved semantic representations from tree-structured long
   short-term memory networks.
 \newblock In {\em Association for Computational Linguistic (ACL)}.
-
-\bibitem[Tai et~al., 2015b]{tai2015improved}
-Tai, K.~S., Socher, R., \& Manning, C.~D. (2015b).
-\newblock Improved semantic representations from tree-structured long
-  short-term memory networks.
-\newblock {\em arXiv preprint arXiv:1503.00075}.
 
 \bibitem[Tay et~al., 2018]{tay2018hyperbolic}
 Tay, Y., Tuan, L.~A., \& Hui, S.~C. (2018).
@@ -2146,18 +2002,8 @@ Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A.~N.,
 \newblock In {\em Advances in Neural Information Processing Systems}  (pp.\
   5998--6008).
 
-\bibitem[Vendrov et~al., 2015]{vendrov2015order}
-Vendrov, I., Kiros, R., Fidler, S., \& Urtasun, R. (2015).
-\newblock Order-embeddings of images and language.
-\newblock {\em arXiv preprint arXiv:1511.06361}.
-
-\bibitem[Vendrov et~al., 2016a]{Vendrov2016}
-Vendrov, I., Kiros, R., Fidler, S., \& Urtasun, R. (2016a).
-\newblock Order-embeddings of images and language.
-\newblock {\em ICLR}.
-
-\bibitem[Vendrov et~al., 2016b]{vendrov2016order}
-Vendrov, I., Kiros, R., Fidler, S., \& Urtasun, R. (2016b).
+\bibitem[Vendrov et~al., 2016]{vendrov2016order}
+Vendrov, I., Kiros, R., Fidler, S., \& Urtasun, R. (2016).
 \newblock Order-embeddings of images and language.
 \newblock {\em ICLR}.
 
@@ -2179,11 +2025,6 @@ Vinyals, O., Kaiser, {\L}., Koo, T., Petrov, S., Sutskever, I., \& Hinton, G.
 \newblock Grammar as a foreign language.
 \newblock In {\em Advances in Neural Information Processing Systems}  (pp.\
   2755--2763).
-
-\bibitem[Vinyals et~al., 2014]{vinyals2014show}
-Vinyals, O., Toshev, A., Bengio, S., \& Erhan, D. (2014).
-\newblock Show and tell: A neural image caption generator.
-\newblock {\em arXiv preprint arXiv:1411.4555}.
 
 \bibitem[Vinyals et~al., 2015b]{vinyals2015show}
 Vinyals, O., Toshev, A., Bengio, S., \& Erhan, D. (2015b).
@@ -2326,7 +2167,7 @@ Yu, C. (2008).
 Yu, C. \& Ballard, D.~H. (2007).
 \newblock A unified model of early word learning: Integrating statistical and
   social cues.
-\newblock {\em Neurocomputing}, 70(13-15), 2149--2165.
+\newblock {\em Neurocomputing}, 70(13), 2149--2165.
 
 \bibitem[Yu \& Smith, 2007]{yu.smith.07}
 Yu, C. \& Smith, L.~B. (2007).
@@ -2358,6 +2199,10 @@ Zhang, X., Zhao, J., \& LeCun, Y. (2015).
 Zhou, B., Khosla, A., Lapedriza, A., Oliva, A., \& Torralba, A. (2015).
 \newblock Object detectors emerge in deep scene cnns.
 \newblock In {\em International Conference on Learning Representations (ICLR)}.
+
+\bibitem[Zipf, 1949]{zipf1949human}
+Zipf, G.~K. (1949).
+\newblock Human behavior and the principle of least effort.
 
 \bibitem[Zoph et~al., 2016]{zoph2016transfer}
 Zoph, B., Yuret, D., May, J., \& Knight, K. (2016).

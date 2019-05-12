@@ -8,7 +8,7 @@ processing, many approaches have been proposed that
 integrate visual information in the learning of 
 word and sentence representations, highlighting
 the benefits of visually grounded representations
-\cite{lazaridou2015combining,baroni2016grounding,kiela2017learning,elliott2017imagination}.
+\citep{lazaridou2015combining,baroni2016grounding,kiela2017learning,elliott2017imagination}.
 In these approaches the visual world is
 taken as a naturally occurring meaning representation for 
 linguistic utterances, grounding language in perceptual
@@ -17,7 +17,7 @@ reality.
  Recent work has shown that we can learn better 
  visually grounded representations for sentences by
  jointly training image--sentence ranking models on 
- multiple languages \cite{D17-1303,R17-1020,kadar2018conll}. 
+ multiple languages \citep{gella2017image,R17-1020,kadar2018conll}. 
  %The main
  %advantage of multilingual training is that the model
  %can be jointly optimized for image--sentence ranking and sentence--sentence ranking across languages.
@@ -27,12 +27,12 @@ reality.
  This \emph{alignment} has
  either been in the form of the translation pairs 
  (e.g. the German, English, French, and Czech data in
- Multi30K \cite{W16-3210}) or independently collected
+ Multi30K \citep{W16-3210}) or independently collected
  sentences (English and Japanese captions in STAIR
- \cite{Yoshikawa2017}). 
+ \citep{Yoshikawa2017}). 
  %\todo[inline]{Has anyone actually trained a model for image--sentence retrieval on STAIR Captions? If not, we can expect that training an En-Jp model would work similarly to training an En-De model on the Multi30K.}
  
-  In this paper, we consider the problem of training an image--sentence ranking model using image-caption collections 
+ In this paper, we consider the problem of training an image--sentence ranking model using image-caption collections 
  in different languages with non-overlapping images drawn from different sources. 
  We call these collections \emph{disjoint} datasets, as opposed to
  \emph{aligned} datasets. \cite{kadar2018conll} showed that a

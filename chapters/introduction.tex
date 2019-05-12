@@ -640,7 +640,7 @@ While more complex training algorithms such as hessian-free optimizers
 an overwhelming amount of empirical evidence
 shows that the more compliex long short-term
 memory (LSTM) \citep{hochreiter1997long,gers1999learning}
-and gated recurrent unit networks (GRU) \citep{cho2014learning}  recurrent network variants
+and gated recurrent unit networks (GRU) \citep{Cho2014}  recurrent network variants
 vastly outperform the simple Elman network in practice. We opted for GRUs in
 Chapters~\ref{ch:COLI}, \ref{ch:IJCNLP}, \ref{ch:ConLL} and \ref{ch:EMNLP}.
 
@@ -1021,7 +1021,7 @@ take the input sequentially one word or character at a time,
 convolutional neural networks
 \citep{kalchbrenner2014convolutional,zhang2015character,conneau2016very,chen2013learning}
 process sequences in fixed-sized n-gram patterns up to a large window,
-recursive neural networks \citep{goller1996learning,socher2011parsing,tai2015improved}
+recursive neural networks \citep{goller1996learning,socher2011parsing,kai2015treelstm}
 take a tree data structure as input such as a sentence according to the traversal of a
 constituency and graph neural networks operate on graphs \citep{marcheggiani2017encoding} such as
 syntactic/semantic dependency or abstract meaning representations.
@@ -1035,7 +1035,7 @@ In Chapters \ref{ch:COLI}, \ref{ch:IJCNLP}, \ref{ch:ConLL} and \ref{ch:EMNLP} we
 recurrent neural networks as sentence encoders.
 Recursive neural networks provide a principled approach to
 compute representations along the nodes of constituency
-or dependency parse trees \citep{socher2013recursive,socher2014grounded,le2015compositional,tai2015improved}.
+or dependency parse trees \citep{socher2013recursive,socher2014grounded,le2015compositional,kai2015treelstm}.
 In practice, however, these architectures require parse trees as input,
 which makes them impractical for our mission of learning visually grounded
 representations for multiple languages.
@@ -1046,7 +1046,7 @@ afford straightforward batched computation directly and tend to run dramatically
 slower than recurrent or convolutional models. In terms of performance the jury
 is still out, however, so far only modest improvements have been observed
 over recurrent models on specific tasks in specific settings
-\citep{li2015tree,tai2015improved}. For graph structured neural networks the
+\citep{li2015tree,kai2015treelstm}. For graph structured neural networks the
 same argument holds. Two equally practical alternatives to RNNs
 that operate on raw sequences are convolutional neural networks
 \citep{bai2018empirical} and transformers \citep{vaswani2017attention} and both could
@@ -1175,7 +1175,7 @@ between the learned sentence  and image representations
 in a training set of image--caption pairs.
 
 
-Later we follow the formulations of \cite{vendrov2015order} and \cite{faghri2017vse++} and apply
+Later we follow the formulations of \cite{vendrov2016order} and \cite{faghri2017vse++} and apply
 the sum-of-hinges loss in Chapter~\ref{ch:IJCNLP} and max-of-hinges ranking objective
 in Chapters~\ref{ch:ConLL} and \ref{ch:EMNLP} . These loss functions
 push relevant image--sentence pairs close, while contrastive pairs  and
@@ -1355,7 +1355,7 @@ image-sentence retrieval experiments in French or German where
 the image-caption data set is only available for English, however,
 there is parallel corpora between German or French and English. In other words English acts as a pivot.
 A similar combination of autencoder and correlational training was applied to \emph{bridge}
-image--captioning \citep{saha2016correlational}.
+image--captioning \citep{Saha2016}.
 
 Our formulation of the problem does not fall in the set of approaches generally
 considered as multi-view learning.  However, it is similar to the CCA based techniques in that we
@@ -1542,7 +1542,7 @@ the input creating a local neighborhood around it and fits interpretable linear 
 the predictions of any complex black box classifier.
 Even simpler perturbation based techniques measure the
 difference between the original input and the various perturbed candidates such as the erasure
-\citep{li2016understanding} and our omission \citep{Kadar2016} method in Chapter~\ref{ch:COLI}.
+\citep{li2016understanding} and our omission \citep{kadar2017representation} method in Chapter~\ref{ch:COLI}.
 
 Apart from practical considerations of model interpretation training complex and opaque models
 from close to raw input can help us discover interesting patterns in the input data that

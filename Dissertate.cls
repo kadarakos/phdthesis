@@ -13,6 +13,7 @@
 \ProvidesClass{Dissertate}[2014/03/25 v2.0 Dissertate Class]
 \LoadClass[12pt, twoside, openright]{book}
 
+
 %
 % Options
 %
@@ -134,10 +135,10 @@
 
 % Headings and headers.
 \RequirePackage{fancyhdr}
-\RequirePackage{titlesec}
+%\RequirePackage{titlesec}
 %\titleformat{\chapter}[display]{\normalfont\LARGE\bfseries}
 %\titleformat*{\%%section}{\normalfont\large\bfseries}
-\titleformat*{\subsection}{\normalfont\bfseries}
+%\titleformat*{\subsection}{\normalfont\bfseries}
 
 %\setlength{\headheight}{15pt}
 \pagestyle{plain}

@@ -31,7 +31,7 @@ Captions in total   & 40,000      & 158,900 \\
 \end{table}
 For the Single-concept image descriptions experiments reported in
 section \ref{sec:experiments-production}, we also use the ILSVRC2012
-subset of ImageNet \citep{ILSVRCarxiv14}, a widely-used data set in the computer vision
+subset of ImageNet \citep{russakovsky2015imagenet}, a widely-used data set in the computer vision
 community. It is an image database that annotates the WordNet noun
 synset hierarchy with images. It contains 500 images per synset on
 average.
@@ -66,9 +66,9 @@ present in our datasets.\footnote{These include RG-65
 
 
 The four standard benchmarks that contain the minimum number of word
-pairs are: the full WS-353 \citep{wordsim353}, MTurk-771
+pairs are: the full WS-353 \citep{finkelstein2001placing}, MTurk-771
 \citep{radinsky2011word}, MEN \citep{bruni2014multimodal} and
-SimLex999 \citep{hill2014simlex}. Note that the MTurk dataset only
+SimLex999 \citep{hill2015simlex}. Note that the MTurk dataset only
 contains similarity judgments for nouns. Also, a portion of the full
 WordSim-353 dataset reports relatedness ratings instead of word
 similarity.
@@ -211,7 +211,7 @@ correct words and the P@5 score for the given test case.}}
 Even though we use separate portions of F8k and F30k for training and
 testing, these subsets are still very similar. To test how general the
 \textsc{Visual} word representations are, we use images from the ILSVRC2012
-subset of ImageNet \citep{ILSVRCarxiv14} as benchmark. The major difference between these
+subset of ImageNet \citep{russakovsky2015imagenet} as benchmark. The major difference between these
 images and the ones from F8k and F30k datasets is that labels of the
 images in ImageNet are synsets from WordNet, which identify a single
 concept present in the image instead of providing a natural

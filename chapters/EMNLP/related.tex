@@ -2,23 +2,23 @@
 
 %\subsection{Image--sentence ranking}
 
-Image--sentence ranking is the task of retrieving the sentences that best describe an image, and vice-versa \cite{hodosh2013framing}. Most recent approaches are based learning to project image representations and sentence representations into a shared space using deep neural networks \cite[\textit{inter-alia}]{frome2013devise,socher2014grounded,vendrov2016order,faghri2017vse++}. 
+Image--sentence ranking is the task of retrieving the sentences that best describe an image, and vice-versa \citep{hodosh2013framing}. Most recent approaches are based learning to project image representations and sentence representations into a shared space using deep neural networks \citep[\textit{inter-alia}]{frome2013devise,socher2014grounded,vendrov2016order,faghri2017vse++}. 
 %State-of-the-art approaches are now based on attention mechanisms that operate between both inputs \cite{Huang2017InstanceAwareIA,Lee_2018_ECCV}, but there is a continued interest in simpler approaches using average-pooled representations of both inputs \cite{vendrov2016order,faghri2017vse++}. 
 
-More recently, there has been a focus on solving this task using multilingual data \cite{D17-1303,kadar2018conll} in the Multi30K dataset \cite{W16-3210}; an extension of the popular Flickr30K dataset into German, French, and Czech.
+More recently, there has been a focus on solving this task using multilingual data \citep{gella2017image,kadar2018conll} in the Multi30K dataset \citep{W16-3210}; an extension of the popular Flickr30K dataset into German, French, and Czech.
 These works take a multi-view learning perspective in which 
 images and their descriptions in multiple languages are different views of the
 same concepts. The assumption is that common representations of multiple languages and perceptual stimuli 
 can potentially exploit complementary information
 between views to learn better representations. 
-For example, \cite{rotman2018bridging} improves bilingual sentence representations by incorporating image information as a third view by Deep Partial Canonical Correlation Analysis.
+For example, \citep{rotman2018bridging} improves bilingual sentence representations by incorporating image information as a third view by Deep Partial Canonical Correlation Analysis.
 More similar to our work 
-\cite{D17-1303}, propose a convolutional-recurrent architecture with both an image--caption
+\citep{gella2017image}, propose a convolutional-recurrent architecture with both an image--caption
 and caption--caption loss to learn bilingual visually grounded representations. 
 Their results were improved by the approach presented in \cite{kadar2018conll}, who also
 shown the multilingual models outperform bilingual models, and that image--caption retrieval 
 performance in languages with less resources can be improved with data from higher-resource
-languages. We largely follow \citet{kadar2018conll}, however, our main interest lies in learning multimodal
+languages. We largely follow \cite{kadar2018conll}, however, our main interest lies in learning multimodal
 and bilingual representations in the scenario where the images do not come from the same
 data set i.e.: the data is presented is two sets of image--caption tuples rather than
 image--caption--caption triples.
@@ -26,8 +26,8 @@ image--caption--caption triples.
 Taking a broader perspective, images have been used as pivots in multilingual multimodal language processing. On the word level this intuition is 
 applied to visually grounded bilingual lexicon induction, which aims to learn 
 cross-lingual word representations without aligned text using images as pivots
-\cite{bergsma2011learning,kiela2015visual,vulic2016multi,hartmann2017limitations,hewitt2018learning}. Images have been used as pivots to learn translation models only from image--caption
-data sets, without parallel text \cite{hitschler2016multimodal,nakayama2017zero,lee2017emergent,chen2018zero}.
+\citep{bergsma2011learning,kiela2015visual,vulic2016multi,hartmann2017limitations,hewitt2018learning}. Images have been used as pivots to learn translation models only from image--caption
+data sets, without parallel text \citep{Hitschler2016,nakayama2017zero,lee2017emergent,chen2018zero}.
 
 %In this paper, we study approaches to training better image--sentence ranking models using out-of-domain datasets that do not have annotations in all of the necessary languages.
 

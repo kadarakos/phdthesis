@@ -11,12 +11,12 @@ We present a multitask learning model that decomposes multimodal translation int
 through the Shared Encoder. The translation decoder is an
 attention-based neural machine translation model \citep{Bahdanau2015}, and the
 image prediction decoder is trained to predict a global feature vector of an
-image that is associated with a sentence \citep[{\sc imaginet}]{Chrupala2015}. This decomposition encourages grounded learning in the shared encoder because the {\sc imaginet} decoder is trained to imagine the image associated with a sentence.
-It has been shown that grounded representations are qualitatively different from their text-only counterparts \citep{Kadar2016} and correlate better with human similarity judgements \citep{Chrupala2015}.
+image that is associated with a sentence \citep[{\sc imaginet}]{chrupala2015learning}. This decomposition encourages grounded learning in the shared encoder because the {\sc imaginet} decoder is trained to imagine the image associated with a sentence.
+It has been shown that grounded representations are qualitatively different from their text-only counterparts \citep{kadar2017representation} and correlate better with human similarity judgements \citep{chrupala2015learning}.
 We assess the success of the grounded learning
- by evaluating the image prediction model on an image--sentence ranking task to determine if the shared representations are useful for image retrieval \citep{Hodosh2013}. In contrast with most previous work, our model does not take images as input at translation time, rather it learns grounded representations in the shared encoder.
+ by evaluating the image prediction model on an image--sentence ranking task to determine if the shared representations are useful for image retrieval \citep{hodosh2013framing}. In contrast with most previous work, our model does not take images as input at translation time, rather it learns grounded representations in the shared encoder.
 
-We evaluate Imagination on the Multi30K dataset \citep{ElliottFrankSimaanSpecia2016} using a combination of in-domain and out-of-domain data. In the in-domain experiments, we find that multitasking translation with image prediction is competitive with the state of the art. Our model achieves 55.8 Meteor as a single model trained on multimodal in-domain data, and 57.6 Meteor as an ensemble.
+We evaluate Imagination on the Multi30K dataset \citep{W16-3210} using a combination of in-domain and out-of-domain data. In the in-domain experiments, we find that multitasking translation with image prediction is competitive with the state of the art. Our model achieves 55.8 Meteor as a single model trained on multimodal in-domain data, and 57.6 Meteor as an ensemble.
 
 In the experiments with out-of-domain resources, we find that the improvement in translation quality holds when training the {\sc imaginet} decoder on the MS COCO dataset of described images \citep{Chen2015}.
 Furthermore, if we significantly improve our text-only baseline using out-of-domain parallel text from the News Commentary corpus \citep{Tiedemann2012}, we still find improvements in translation quality from the auxiliary image prediction task. Finally, we report a state-of-the-art result of 59.3 Meteor on the Multi30K corpus when ensembling models trained on in- and out-of-domain resources.

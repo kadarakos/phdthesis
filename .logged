@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2018.10.12)  8 MAY 2019 18:14
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2018.10.12)  12 MAY 2019 20:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1428,7 +1428,7 @@ File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 \c@eu@i=\count274
 \c@mkern=\count275
 )
-Package caption Info: We need package `newfloat' on input line 132.
+Package caption Info: We need package `newfloat' on input line 133.
 
 (/usr/share/texlive/texmf-dist/tex/latex/caption/newfloat.sty
 Package: newfloat 2015/09/17 v1.1-109 Defining new floating environments (AR)
@@ -1462,63 +1462,51 @@ File: microtype.cfg 2013/05/23 v2.5a microtype main configuration file (RS)
 \f@ncyO@olf=\skip159
 \f@ncyO@orf=\skip160
 )
-(/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
-Package: titlesec 2016/03/15 v2.10.1 Sectioning titles
-\ttl@box=\box108
-\beforetitleunit=\skip161
-\aftertitleunit=\skip162
-\ttl@plus=\dimen320
-\ttl@minus=\dimen321
-\ttl@toksa=\toks52
-\titlewidth=\dimen322
-\titlewidthlast=\dimen323
-\titlewidthfirst=\dimen324
-)
 (/usr/share/texlive/texmf-dist/tex/latex/titling/titling.sty
 Package: titling 2009/09/04 v2.1d maketitle typesetting
-\thanksmarkwidth=\skip163
-\thanksmargin=\skip164
-\droptitle=\skip165
+\thanksmarkwidth=\skip161
+\thanksmargin=\skip162
+\droptitle=\skip163
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tocloft/tocloft.sty
 Package: tocloft 2013/05/02 v2.3f parameterised ToC, etc., typesetting
 Package tocloft Info: The document has chapter divisions on input line 44.
-\cftparskip=\skip166
-\cftbeforetoctitleskip=\skip167
-\cftaftertoctitleskip=\skip168
-\cftbeforepartskip=\skip169
-\cftpartnumwidth=\skip170
-\cftpartindent=\skip171
-\cftbeforechapskip=\skip172
-\cftchapindent=\skip173
-\cftchapnumwidth=\skip174
-\cftbeforesecskip=\skip175
-\cftsecindent=\skip176
-\cftsecnumwidth=\skip177
-\cftbeforesubsecskip=\skip178
-\cftsubsecindent=\skip179
-\cftsubsecnumwidth=\skip180
-\cftbeforesubsubsecskip=\skip181
-\cftsubsubsecindent=\skip182
-\cftsubsubsecnumwidth=\skip183
-\cftbeforeparaskip=\skip184
-\cftparaindent=\skip185
-\cftparanumwidth=\skip186
-\cftbeforesubparaskip=\skip187
-\cftsubparaindent=\skip188
-\cftsubparanumwidth=\skip189
-\cftbeforeloftitleskip=\skip190
-\cftafterloftitleskip=\skip191
-\cftbeforefigskip=\skip192
-\cftfigindent=\skip193
-\cftfignumwidth=\skip194
+\cftparskip=\skip164
+\cftbeforetoctitleskip=\skip165
+\cftaftertoctitleskip=\skip166
+\cftbeforepartskip=\skip167
+\cftpartnumwidth=\skip168
+\cftpartindent=\skip169
+\cftbeforechapskip=\skip170
+\cftchapindent=\skip171
+\cftchapnumwidth=\skip172
+\cftbeforesecskip=\skip173
+\cftsecindent=\skip174
+\cftsecnumwidth=\skip175
+\cftbeforesubsecskip=\skip176
+\cftsubsecindent=\skip177
+\cftsubsecnumwidth=\skip178
+\cftbeforesubsubsecskip=\skip179
+\cftsubsubsecindent=\skip180
+\cftsubsubsecnumwidth=\skip181
+\cftbeforeparaskip=\skip182
+\cftparaindent=\skip183
+\cftparanumwidth=\skip184
+\cftbeforesubparaskip=\skip185
+\cftsubparaindent=\skip186
+\cftsubparanumwidth=\skip187
+\cftbeforeloftitleskip=\skip188
+\cftafterloftitleskip=\skip189
+\cftbeforefigskip=\skip190
+\cftfigindent=\skip191
+\cftfignumwidth=\skip192
 \c@lofdepth=\count278
 \c@lotdepth=\count279
-\cftbeforelottitleskip=\skip195
-\cftafterlottitleskip=\skip196
-\cftbeforetabskip=\skip197
-\cfttabindent=\skip198
-\cfttabnumwidth=\skip199
+\cftbeforelottitleskip=\skip193
+\cftafterlottitleskip=\skip194
+\cftbeforetabskip=\skip195
+\cfttabindent=\skip196
+\cfttabnumwidth=\skip197
 )
 (/usr/share/texlive/texmf-dist/tex/latex/appendix/appendix.sty
 Package: appendix 2009/09/02 v1.2b extra appendix facilities
@@ -1528,17 +1516,17 @@ Package: appendix 2009/09/02 v1.2b extra appendix facilities
 )
 (/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
-\bibhang=\skip256
-\bibsep=\skip257
+\bibhang=\skip198
+\bibsep=\skip199
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count283
 )
 (/usr/share/texlive/texmf-dist/tex/latex/quotchap/quotchap.sty
 Package: quotchap 2012/10/20 v1.1 Decorative Chapter Headings with Quotes
-\@quotebox=\box109
+\@quotebox=\box108
 )
-\mybibindent=\skip258
-Package hyperref Info: Option `colorlinks' set `true' on input line 206.
+\mybibindent=\skip256
+Package hyperref Info: Option `colorlinks' set `true' on input line 207.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjustbox.sty
 Package: adjustbox 2012/05/21 v1.0 Adjusting TeX boxes (trim, clip, ...)
@@ -1552,21 +1540,21 @@ Package: trimclip 2012/05/16 v1.0 Trim and clip general TeX material
 
 (/usr/share/texlive/texmf-dist/tex/latex/collectbox/collectbox.sty
 Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
-\collectedbox=\box110
+\collectedbox=\box109
 )
-\tc@llx=\dimen325
-\tc@lly=\dimen326
-\tc@urx=\dimen327
-\tc@ury=\dimen328
+\tc@llx=\dimen320
+\tc@lly=\dimen321
+\tc@urx=\dimen322
+\tc@ury=\dimen323
 Package trimclip Info: Using driver 'tc-xetex.def'.
 
 (/usr/share/texlive/texmf-dist/tex/latex/adjustbox/tc-xetex.def
 File: tc-xetex.def 2012/05/13 v1.0 Clipping driver for xetex
 ))
-\adjbox@Width=\dimen329
-\adjbox@Height=\dimen330
-\adjbox@Depth=\dimen331
-\adjbox@Totalheight=\dimen332
+\adjbox@Width=\dimen324
+\adjbox@Height=\dimen325
+\adjbox@Depth=\dimen326
+\adjbox@Totalheight=\dimen327
 
 (/usr/share/texlive/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
 Package: ifoddpage 2011/09/13 v1.0 Conditionals for odd/even page detection
@@ -1574,10 +1562,10 @@ Package: ifoddpage 2011/09/13 v1.0 Conditionals for odd/even page detection
 )
 (/usr/share/texlive/texmf-dist/tex/latex/varwidth/varwidth.sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
-\@vwid@box=\box111
+\@vwid@box=\box110
 \sift@deathcycles=\count285
-\@vwid@loff=\dimen333
-\@vwid@roff=\dimen334
+\@vwid@loff=\dimen328
+\@vwid@roff=\dimen329
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.gr
 oupplots.code.tex
@@ -1593,14 +1581,14 @@ Package: todonotes 2012/07/25
 Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count289
 \calc@Bcount=\count290
-\calc@Adimen=\dimen335
-\calc@Bdimen=\dimen336
-\calc@Askip=\skip259
-\calc@Bskip=\skip260
+\calc@Adimen=\dimen330
+\calc@Bdimen=\dimen331
+\calc@Askip=\skip257
+\calc@Bskip=\skip258
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
 \calc@Ccount=\count291
-\calc@Cskip=\skip261
+\calc@Cskip=\skip259
 )
 \c@@todonotes@numberoftodonotes=\count292
 )
@@ -1611,7 +1599,7 @@ Package: bibentry 2007/10/30 1.5 (PWD)
 \CommentStream=\write4
 
 Excluding comment 'comment') (./dissertation.bbl
-Invalid UTF-8 byte or sequence at line 1296 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 1200 replaced by U+FFFD.
 ) (./dissertation.aux
 (./frontmatter/personalize.aux) (./frontmatter/cover.aux)
 (./frontmatter/copyright.aux) (./frontmatter/proefschrift.aux)
@@ -1629,30 +1617,30 @@ LaTeX Warning: Label `sec:data' multiply defined.
 (./endmatter/ticcthesis.aux))
 \openout1 = `dissertation.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for EU1/lmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 23.
-LaTeX Font Info:    Try loading font information for T3+cmr on input line 23.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for EU1/lmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 24.
+LaTeX Font Info:    Try loading font information for T3+cmr on input line 24.
  (/usr/share/texmf/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
-LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    ... okay on input line 24.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -1690,7 +1678,7 @@ LaTeX Font Info:    ... okay on input line 23.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 23.
+LaTeX Info: Redefining \selectfont on input line 24.
  ABD: EveryShipout initializing macros
 Package pgfplots notification 'compat/show suggested version=true': you might b
 enefit from \pgfplotsset{compat=1.13} (current compat level: 1.8).
@@ -1700,9 +1688,9 @@ Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: rotating package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package caption Info: We need package `ragged2e' on input line 23.
-\AtBeginShipoutBox=\box112
-Package hyperref Info: Link coloring ON on input line 23.
+Package caption Info: We need package `ragged2e' on input line 24.
+\AtBeginShipoutBox=\box111
+Package hyperref Info: Link coloring ON on input line 24.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
@@ -1711,15 +1699,15 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count293
 )
-LaTeX Info: Redefining \ref on input line 23.
-LaTeX Info: Redefining \pageref on input line 23.
-LaTeX Info: Redefining \nameref on input line 23.
+LaTeX Info: Redefining \ref on input line 24.
+LaTeX Info: Redefining \pageref on input line 24.
+LaTeX Info: Redefining \nameref on input line 24.
 
 (./dissertation.out) (./dissertation.out)
 \@outlinefile=\write5
 \openout5 = `dissertation.out'.
 
-LaTeX Info: Redefining \microtypecontext on input line 23.
+LaTeX Info: Redefining \microtypecontext on input line 24.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: No adjustment of tracking.
@@ -1891,14 +1879,9 @@ Overfull \hbox (4.28761pt too wide) in paragraph at lines 186--192
 ional
  []
 
-
-Overfull \hbox (11.96344pt too wide) in paragraph at lines 193--193
-|\EU1/lmr/bx/n/17.28 Visually grounded sentence representations| 
- []
-
 [7]
-Overfull \hbox (16.81912pt too wide) in paragraph at lines 221--221
-|\EU1/lmr/bx/n/17.28 Visual modality bridging between languages| 
+Overfull \hbox (5.96729pt too wide) in paragraph at lines 221--221
+[]\EU1/lmr/bx/n/17.28 Visual modality bridging between lan-
  []
 
 [8]
@@ -1907,40 +1890,25 @@ Overfull \hbox (11.72362pt too wide) in paragraph at lines 248--257
 s jointly.
  []
 
-[9] [10]
-
-Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 289.
-
-[11] [12] Excluding 'comment' comment. [13] [14
+[9] [10] [11] [12] Excluding 'comment' comment. [13] [14
 
 ]
 Chapter 2.
-[15] [16]
-
-Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 540.
-
-[17] [18] [19]
+[15] [16] [17] [18] [19]
 LaTeX Font Info:    Try loading font information for EU1+lmtt on input line 690
 .
- (/usr/share/texlive/texmf-dist/tex/latex/euenc/eu1lmtt.fd
+
+(/usr/share/texlive/texmf-dist/tex/latex/euenc/eu1lmtt.fd
 File: eu1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 Package microtype Info: Loading generic settings for font family
 (microtype)             `lmtt' (encoding: EU1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-
-[20]
+ [20]
 Overfull \hbox (11.38455pt too wide) in paragraph at lines 714--719
 \EU1/lmr/m/n/12 optimizes word-embeddings to predict the re-weighted $[]$ co-oc
 currence
- []
-
-
-Overfull \hbox (10.07993pt too wide) in paragraph at lines 752--752
-|\EU1/lmr/bx/n/17.28 Visually grounded representations of words| 
  []
 
 [21] [22] [23]
@@ -1955,42 +1923,41 @@ Overfull \hbox (26.89114pt too wide) in paragraph at lines 865--878
 tions
  []
 
-[25] [26] [27] [28] [29] [30] [31] [32]
-Overfull \hbox (11.96344pt too wide) in paragraph at lines 1096--1096
-|\EU1/lmr/bx/n/17.28 Visually grounded sentence representations| 
- []
-
-[33]
-Overfull \hbox (17.35164pt too wide) in paragraph at lines 1120--1127
-\EU1/lmr/m/n/12 They argue that evaluating grounded learning through image–desc
-ription
- []
-
-[34] [35]
+[25] [26] [27] [28] [29] [30] [31] [32] [33] [34] [35] [36]
 Overfull \hbox (8.01161pt too wide) in paragraph at lines 1208--1214
 \EU1/lmr/m/n/12 These findings were confirmed and improved upon using a self-at
 tention
  []
 
-[36] [37] [38]
+[37]
+Overfull \hbox (0.30508pt too wide) in paragraph at lines 1283--1283
+[]\EU1/lmr/bx/n/14.4 Multi-view representation learning perspec-
+ []
+
+[38] [39]
 Overfull \hbox (7.40445pt too wide) in paragraph at lines 1339--1349
 []\EU1/lmr/m/n/12 In the multi-lingual multi-modal setting [][]Funaki & Nakayam
 a[][] ([][]2015[][])
  []
 
-[39]
+
 Overfull \hbox (5.77245pt too wide) in paragraph at lines 1350--1359
 []\EU1/lmr/m/n/12 The bridge correlational neural network approach ([][]Rajendr
 an et al.[][],
  []
 
-[40] [41] [42]
+[40] [41] [42] [43]
 Overfull \hbox (0.23164pt too wide) in paragraph at lines 1470--1482
 \EU1/lmr/m/n/12 improved later by modeling the image-pivot based zero-resource 
 trans-
  []
 
-[43] [44] [45] [46]) [47]
+
+Overfull \hbox (23.5583pt too wide) in paragraph at lines 1484--1484
+[]\EU1/lmr/bx/n/17.28 Interpreting continuous representations 
+ []
+
+[44] [45] [46]) [47]
 \openout2 = `chapters/TAL/main.aux'.
 
  (./chapters/TAL/main.tex [48
@@ -2102,12 +2069,10 @@ Overfull \hbox (2.94843pt too wide) in paragraph at lines 169--172
 * The current font is "\EU1/lmr/m/n/12 ".
 * The requested feature is "RawFeature=+tnum".
 *************************************************
-[66]
 
-Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 158.
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-[67]
+[66] [67]
 File: chapters/TAL/bikeride.png Graphic file (type QTm)
  <use  "chapters/TAL/bikeride.png" > [68] [69]
 File: chapters/TAL/starfish.png Graphic file (type QTm)
@@ -2169,12 +2134,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 80--98
 * The requested feature is "RawFeature=+tnum".
 *************************************************
 File: chapters/TAL/concreteness.png Graphic file (type QTm)
-<use  "chapters/TAL/concreteness.png" >
-
-Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 180.
-
-[75] [76]
+<use  "chapters/TAL/concreteness.png" > [75] [76]
 *************************************************
 * fontspec warning: "addfontfeatures-ignored"
 * 
@@ -2236,8 +2196,8 @@ Chapter 4.
 (./chapters/COLI/related.tex [88] [89] [90]) (./chapters/COLI/models.tex
 [91] [92]
 File: chapters/COLI/imaginet.pdf Graphic file (type QTm)
- <use  "chapters/COLI/imaginet.pdf" > [93] [94] [95])
-(./chapters/COLI/experiments.tex [96] (./chapters/COLI/categories.tex
+ <use  "chapters/COLI/imaginet.pdf" > [93] [94])
+(./chapters/COLI/experiments.tex [95] [96] (./chapters/COLI/categories.tex
 File: chapters/COLI/omissionex.pdf Graphic file (type QTm)
 
 <use  "chapters/COLI/omissionex.pdf" >
@@ -2293,12 +2253,12 @@ File: chapters/COLI/imaginet-omission-quotient-dep-boxplot.png Graphic file (ty
 pe QTm)
 
 <use  "chapters/COLI/imaginet-omission-quotient-dep-boxplot.png" > [102]
-[103]
 Overfull \hbox (18.28323pt too wide) in paragraph at lines 235--237
 []\EU1/lmr/m/sc/12 LR full\EU1/lmr/m/n/12 : word type, dependency label, positi
 on, word:dependency
  []
 
+[103]
 *************************************************
 * fontspec warning: "addfontfeatures-ignored"
 * 
@@ -2313,10 +2273,10 @@ File: chapters/COLI/position-new.pdf Graphic file (type QTm)
  <use  "chapters/COLI/position-new.pdf" >
 File: chapters/COLI/top_words.pdf Graphic file (type QTm)
 
-<use  "chapters/COLI/top_words.pdf" > [105] [106] [107]
+<use  "chapters/COLI/top_words.pdf" > [105] [106]
 File: chapters/COLI/position-coef.pdf Graphic file (type QTm)
 
-<use  "chapters/COLI/position-coef.pdf" > [108])
+<use  "chapters/COLI/position-coef.pdf" > [107] [108])
 (./chapters/COLI/dimensions.tex [109]
 File: chapters/COLI/raw_mutual.pdf Graphic file (type QTm)
  <use  "chapters/COLI/raw_mutual.pdf" >
@@ -2335,7 +2295,7 @@ File: chapters/COLI/bootstrappedMI2.pdf Graphic file (type QTm)
 * The current font is "\EU1/lmss/m/n/10 ".
 * The requested feature is "RawFeature=+tnum".
 *************************************************
-)) (./chapters/COLI/conclusions.tex [113] [114])) [115] [116]
+)) (./chapters/COLI/conclusions.tex [113] [114]) [115]) [116]
 \openout2 = `chapters/IJCNLP/emnlp2017.aux'.
 
 
@@ -2357,12 +2317,7 @@ Overfull \hbox (1.96516pt too wide) in paragraph at lines 82--82
  []
 
 ) [119] [120]) (./chapters/IJCNLP/problem.tex [121] [122])
-(./chapters/IJCNLP/model.tex [123] [124] [125]
-
-Package natbib Warning: Citation `Chrupala2017' on page 126 undefined on input 
-line 101.
-
-) (./chapters/IJCNLP/data.tex
+(./chapters/IJCNLP/model.tex [123] [124] [125]) (./chapters/IJCNLP/data.tex
 *************************************************
 * fontspec warning: "addfontfeatures-ignored"
 * 
@@ -2522,8 +2477,8 @@ Underfull \hbox (badness 3471) in paragraph at lines 32--32
 Chapter 6.
 
 Overfull \hbox (4.94762pt too wide) in paragraph at lines 101--104
-[] []\EU1/lmr/bx/n/12 abstract[] \EU1/lmr/m/n/12 Recent work has shown how to l
-earn better visual-semantic
+ []\EU1/lmr/bx/n/12 abstract[] \EU1/lmr/m/n/12 Recent work has shown how to lea
+rn better visual-semantic
  []
 
 (./chapters/ConLL/intro1.tex [143
@@ -2675,16 +2630,16 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\new@ifnextchar' on input line 83.
 
 
-Overfull \hbox (12.09033pt too wide) in paragraph at lines 86--87
-\EU1/lmr/m/n/12 their setups used for \EU1/lmtt/m/n/12 VSE \EU1/lmr/m/n/12 (Mon
-olingual) and bilingual models \EU1/lmtt/m/n/12 Pivot-Sym
- []
-
-
 Overfull \hbox (1.27696pt too wide) in paragraph at lines 86--87
 \EU1/lmr/m/n/12 (Bilingual) and \EU1/lmtt/m/n/12 Parallel-Sym \EU1/lmr/m/n/12 (
 Bilingual + c2c). The \EU1/lmtt/m/n/12 OE\EU1/lmr/m/n/12 , \EU1/lmtt/m/n/12 Piv
 ot-Asym
+ []
+
+
+Overfull \hbox (9.81642pt too wide) in paragraph at lines 86--87
+[][]\EU1/lmr/m/n/12 2017[][]) is that they use VGG-19 image features, whereas w
+e use ResNet50
  []
 
 [154] [155] [156]
@@ -2750,8 +2705,8 @@ ranslation
 Chapter 7.
 
 Overfull \hbox (2.17564pt too wide) in paragraph at lines 58--83
-[] []\EU1/lmr/bx/n/12 abstract[] \EU1/lmr/m/n/12 Recent work has highlighted th
-e advantage of jointly learn-
+ []\EU1/lmr/bx/n/12 abstract[] \EU1/lmr/m/n/12 Recent work has highlighted the 
+advantage of jointly learn-
  []
 
 [167] (./chapters/EMNLP/introduction.tex [168] [169])
@@ -2859,12 +2814,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 39--39
  []
 
 
-Overfull \hbox (7.20319pt too wide) in paragraph at lines 37--40
-[]\EU1/lmr/m/n/12 We use a pre-trained OpenNMT [][]Klein et al.[][] ([][]2017[]
-[]) English-German
- []
-
-
 Overfull \hbox (4.54362pt too wide) in paragraph at lines 44--49
 \EU1/lmr/m/n/12 The models are trained and evaluated on the bilingual English-G
 erman
@@ -2937,8 +2886,8 @@ Overfull \hbox (53.84065pt too wide) in paragraph at lines 28--45
 
 [178] Excluding 'comment' comment.
 Overfull \hbox (2.91562pt too wide) in paragraph at lines 74--85
-[] []\EU1/lmr/bx/n/12 Disjoint[] \EU1/lmr/m/n/12 We generate pseudopairs using 
-the \EU1/lmr/m/it/12 disjoint \EU1/lmr/m/n/12 bilingual model
+ []\EU1/lmr/bx/n/12 Disjoint[] \EU1/lmr/m/n/12 We generate pseudopairs using th
+e \EU1/lmr/m/it/12 disjoint \EU1/lmr/m/n/12 bilingual model
  []
 
 [179] Excluding 'comment' comment. [180]) (./chapters/EMNLP/translation.tex
@@ -2967,8 +2916,8 @@ Overfull \hbox (67.35265pt too wide) in paragraph at lines 30--41
 
 [181]
 Overfull \hbox (8.77962pt too wide) in paragraph at lines 53--63
-[] []\EU1/lmr/bx/n/12 Disjoint[] \EU1/lmr/m/n/12 We first report the results of
- disjoint bilingual model trained
+ []\EU1/lmr/bx/n/12 Disjoint[] \EU1/lmr/m/n/12 We first report the results of d
+isjoint bilingual model trained
  []
 
 ) (./chapters/EMNLP/discussion.tex (./chapters/EMNLP/discussion-sentsim.tex
@@ -2986,14 +2935,10 @@ LaTeX Warning: No positions in optional float specifier.
 * The requested feature is "RawFeature=+tnum".
 *************************************************
 [182] [183] Excluding 'comment' comment.)
-(./chapters/EMNLP/discussion-pseudoanalysis.tex
-
-Package natbib Warning: Citation `zipf1949human' on page 184 undefined on input
- line 6.
-
-[184]
+(./chapters/EMNLP/discussion-pseudoanalysis.tex [184]
 File: chapters/EMNLP/assets/annotation_freq.pdf Graphic file (type QTm)
- <use  "chapters/EMNLP/assets/annotation_freq.pdf" > [185]
+
+<use  "chapters/EMNLP/assets/annotation_freq.pdf" > [185]
 *************************************************
 * fontspec warning: "addfontfeatures-ignored"
 * 
@@ -3018,9 +2963,9 @@ Overfull \hbox (7.92355pt too wide) in paragraph at lines 23--50
 
 Excluding 'comment' comment.) Excluding 'comment' comment.)
 (./chapters/EMNLP/related.tex [186] [187]) (./chapters/EMNLP/conclusions.tex)
-Overfull \hbox (0.56761pt too wide) in paragraph at lines 3--115
+Overfull \hbox (5.13962pt too wide) in paragraph at lines 3--115
 \EU1/lmr/m/n/12 performance when training models jointly on multiple languages 
-[][]Gella
+([][]Gella
  []
 
 ) [188]
@@ -3038,15 +2983,10 @@ Overfull \hbox (11.20044pt too wide) in paragraph at lines 56--63
 tuational
  []
 
-
-Overfull \hbox (11.96344pt too wide) in paragraph at lines 80--80
-|\EU1/lmr/bx/n/17.28 Visually grounded sentence representations| 
- []
-
 [191]
-Overfull \hbox (4.47697pt too wide) in paragraph at lines 102--108
-\EU1/lmr/m/n/12 embeddings. As the linguistic interpretation of representations
- learned
+Overfull \hbox (3.04364pt too wide) in paragraph at lines 102--108
+\EU1/lmr/m/n/12 linguistic structure that is encoded in the hidden activations 
+\EU1/lmtt/m/n/12 IMAGINET\EU1/lmr/m/n/12 .
  []
 
 [192] [193]
@@ -3062,12 +3002,12 @@ ns learned
  []
 
 [194]
-
-Package natbib Warning: Citation `specia2016observed' on page 195 undefined on 
-input line 193.
+Overfull \hbox (38.17722pt too wide) in paragraph at lines 182--182
+[]\EU1/lmr/bx/n/17.28 Improving translation with visual ground-
+ []
 
 [195] [196] [197] [198] [199] [200] [201] [202] [203]
-Overfull \hbox (2.12442pt too wide) in paragraph at lines 412--421
+Overfull \hbox (2.12442pt too wide) in paragraph at lines 413--422
 []\EU1/lmr/m/n/12 Chapter [][]5[][] introduced our first multilingual experimen
 t and showed
  []
@@ -3076,30 +3016,29 @@ t and showed
 
 
 ] [208] [209] [210] [211]
-Underfull \hbox (badness 1072) in paragraph at lines 362--366
+Underfull \hbox (badness 1072) in paragraph at lines 345--349
 []\EU1/lmr/m/n/10 Cauchy, A. (1847).  Méthode générale pour la résolution des s
 ystemes
  []
 
 [212] [213] [214] [215] [216] [217] [218] [219] [220] [221] [222] [223]
-[224] [225] [226]
-Invalid UTF-8 byte or sequence at line 1296 replaced by U+FFFD.
+[224]
+Invalid UTF-8 byte or sequence at line 1200 replaced by U+FFFD.
 Missing character: There is no � in font [lmroman10-regular]:mapping=tex-text!
- [227] [228] [229] [230] [231] [232] [233] [234] [235]
-[236] [237] [238] [239] [240] [241] [242] [243]) [244]
+ [225] [226] [227] [228] [229] [230] [231] [232] [233] [234] [235]
+[236] [237] [238] [239] [240]) [241]
 \openout2 = `endmatter/ticcthesis.aux'.
 
+ (./endmatter/ticcthesis.tex [242
 
-(./endmatter/ticcthesis.tex [245
 
-
-]
+] [243]
 Overfull \hbox (1.67531pt too wide) in paragraph at lines 78--81
 \EU1/lmr/m/n/10 tion during playful interactions. Promotores: E.J. Krahmer, M.G
 .J. Swerts.
  []
 
-[246] [247]
+[244] [245]
 Overfull \hbox (6.7893pt too wide) in paragraph at lines 153--157
 \EU1/lmr/m/n/10 production, comprehension, and preference. Promotores: A.A. Mae
 s, M.G.J.
@@ -3111,34 +3050,31 @@ Overfull \hbox (6.53532pt too wide) in paragraph at lines 165--168
 Tilburg,
  []
 
-[248]
+[246]
 Overfull \hbox (0.6653pt too wide) in paragraph at lines 174--178
 []\EU1/lmr/m/n/10 Yevgen Matusevych, Learning constructions from bilingual expo
 sure: Com-
  []
 
-[249]
+[247]
 Overfull \hbox (13.34532pt too wide) in paragraph at lines 210--214
 []\EU1/lmr/m/n/10 Emmelyn Croes, Meeting Face-to-Face Online: The Effects of Vi
 deo-Mediated
  []
 
-) [250]
-
-Package natbib Warning: There were undefined citations.
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 73.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 73.
-(./dissertation.aux (./frontmatter/personalize.aux) (./frontmatter/cover.aux)
-(./frontmatter/copyright.aux) (./frontmatter/proefschrift.aux)
-(./frontmatter/promotores.aux) (./frontmatter/quote.aux)
-(./frontmatter/acknowledgements.aux) (./chapters/introduction.aux)
-(./chapters/TAL/main.aux) (./chapters/COLI/double_paper.aux)
-(./chapters/IJCNLP/emnlp2017.aux) (./chapters/ConLL/conll2018.aux)
-(./chapters/EMNLP/naaclhlt2019.aux) (./chapters/conclusion.aux)
-(./endmatter/ticcthesis.aux))
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 73.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 73.
+) [248]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 74.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 74.
+ (./dissertation.aux (./frontmatter/personalize.aux)
+(./frontmatter/cover.aux) (./frontmatter/copyright.aux)
+(./frontmatter/proefschrift.aux) (./frontmatter/promotores.aux)
+(./frontmatter/quote.aux) (./frontmatter/acknowledgements.aux)
+(./chapters/introduction.aux) (./chapters/TAL/main.aux)
+(./chapters/COLI/double_paper.aux) (./chapters/IJCNLP/emnlp2017.aux)
+(./chapters/ConLL/conll2018.aux) (./chapters/EMNLP/naaclhlt2019.aux)
+(./chapters/conclusion.aux) (./endmatter/ticcthesis.aux))
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 74.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 74.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -3153,12 +3089,12 @@ LaTeX Warning: There were multiply-defined labels.
 ### simple group (level 1) entered at line 75 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 55749 strings out of 493638
- 1237552 string characters out of 6146795
- 1522333 words of memory out of 5000000
- 58020 multiletter control sequences out of 15000+600000
+ 55369 strings out of 493638
+ 1231637 string characters out of 6146795
+ 1511580 words of memory out of 5000000
+ 57644 multiletter control sequences out of 15000+600000
  24648 words of font info for 118 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
- 69i,20n,81p,10485b,3006s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 69i,20n,81p,10485b,2776s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on dissertation.pdf (264 pages).
+Output written on dissertation.pdf (262 pages).

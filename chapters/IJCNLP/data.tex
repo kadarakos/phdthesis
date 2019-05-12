@@ -22,7 +22,7 @@ De   & & 8.95M & & --\\
 \caption{The datasets used in our experiments.}\label{tab:datasets}
 \end{table}
 
-We evaluate our model using the benchmark Multi30K dataset \citep{ElliottFrankSimaanSpecia2016}, which is the largest collection of images paired with sentences in multiple languages. This dataset contains 31,014 images paired with an English language sentence and a German language translation: 29,000 instances are reserved for training, 1,014 for development, and 1,000 for evaluation.\footnote{The Multi30K dataset also contains 155K independently collected descriptions in German and English. In order to make our experiments more comparable with previous work, we do not make use of this data.}
+We evaluate our model using the benchmark Multi30K dataset \citep{W16-3210}, which is the largest collection of images paired with sentences in multiple languages. This dataset contains 31,014 images paired with an English language sentence and a German language translation: 29,000 instances are reserved for training, 1,014 for development, and 1,000 for evaluation.\footnote{The Multi30K dataset also contains 155K independently collected descriptions in German and English. In order to make our experiments more comparable with previous work, we do not make use of this data.}
 
 The English and German sentences are preprocessed by normalising the punctuation, lowercasing and tokenizing the text using the Moses toolkit. We additionally decompound the German text  using Zmorge \cite{Sennrich2014}. This results in vocabulary sizes of 10,214 types for English and 16,022 for German.
 
