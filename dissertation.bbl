@@ -489,7 +489,8 @@ Conneau, A., Schwenk, H., Barrault, L., \& Lecun, Y. (2016).
 C{\^o}t{\'e}, M.-A., K{\'a}d{\'a}r, {\'A}., Yuan, X., Kybartas, B., Barnes, T.,
   Fine, E., Moore, J., Hausknecht, M., El~Asri, L., Adada, M., et~al. (2018).
 \newblock Textworld: A learning environment for text-based games.
-\newblock {\em arXiv preprint arXiv:1806.11532}.
+\newblock In {\em Proceedings of the Computer Games Workshop at ICML/IJCAI
+  2018}  (pp.\ 1--29).
 
 \bibitem[Cruse \& Cruse, 1986]{cruse1986lexical}
 Cruse, D.~A. \& Cruse, D.~A. (1986).
@@ -1009,10 +1010,16 @@ Kachergis, G., Yu, C., \& Shiffrin, R.~M. (2012).
   word--referent mappings.
 \newblock {\em Psychonomic bulletin \& review}, 19(2), 317--324.
 
-\bibitem[K{\'a}d{\'a}r et~al., 2015]{kadar2015learning}
-K{\'a}d{\'a}r, {\'A}., Alishahi, A., \& Chrupa{\l}a, G. (2015).
+\bibitem[K{\'a}d{\'a}r et~al., 2015a]{kadar2015learning}
+K{\'a}d{\'a}r, {\'A}., Alishahi, A., \& Chrupa{\l}a, G. (2015a).
 \newblock Learning word meanings from images of natural scenes.
 \newblock {\em Traitement Automatique des Langues}, 55(3).
+
+\bibitem[K{\'a}d{\'a}r et~al., 2015b]{kadar2015lingusitic}
+K{\'a}d{\'a}r, A., Chrupa{\l}a, G., \& Alishahi, A. (2015b).
+\newblock Lingusitic analysis of multi-modal recurrent neural networks.
+\newblock In {\em Proceedings of the Fourth Workshop on Vision and Language}
+  (pp.\ 8--9).
 
 \bibitem[K{\'a}d{\'a}r et~al., 2017]{kadar2017representation}
 K{\'a}d{\'a}r, A., Chrupa{\l}a, G., \& Alishahi, A. (2017).
@@ -1401,6 +1408,14 @@ Mahendran, A. \& Vedaldi, A. (2016).
 Malaviya, C., Neubig, G., \& Littell, P. (2017).
 \newblock Learning language representations for typology prediction.
 \newblock {\em arXiv preprint arXiv:1707.09569}.
+
+\bibitem[Manjavacas et~al., 2019]{manjavacas2019improving}
+Manjavacas, E., K{\'a}d{\'a}r, {\'A}., \& Kestemont, M. (2019).
+\newblock Improving lemmatization of non-standard languages with joint
+  learning.
+\newblock In {\em Proceedings of the 2018 Conference of the North {A}merican
+  Chapter of the Association for Computational Linguistics: Human Language
+  Technologies}.
 
 \bibitem[Mao et~al., 2014a]{mao2014deep}
 Mao, J., Xu, W., Yang, Y., Wang, J., Huang, Z., \& Yuille, A. (2014a).

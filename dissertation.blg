@@ -17,35 +17,35 @@ A level-1 auxiliary file: chapters/EMNLP/naaclhlt2019.aux
 A level-1 auxiliary file: chapters/conclusion.aux
 The style file: apalike2.bst
 A level-1 auxiliary file: endmatter/ticcthesis.aux
-Reallocated field_info (elt_size=4) to 12920 items from 5000.
+Reallocated field_info (elt_size=4) to 12964 items from 5000.
 Database file #1: references.bib
-"{" immediately follows a field name---line 1494 of file references.bib
+"{" immediately follows a field name---line 1511 of file references.bib
  :   pages
  :        {215--233},
 I'm skipping whatever remains of this entry
 Reallocated str_pool (elt_size=1) to 130000 items from 65000.
-Repeated entry---line 3873 of file references.bib
+Repeated entry---line 3890 of file references.bib
  : @inproceedings{simonyan2014very
  :                                ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 4209 of file references.bib
+Repeated entry---line 4226 of file references.bib
  : @article{schuster1997
  :                      ,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 4585 of file references.bib
+I was expecting a `,' or a `}'---line 4602 of file references.bib
  :   
  :   url =  "http://www.aclweb.org/anthology/E06-1040",
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Repeated entry---line 4682 of file references.bib
+Repeated entry---line 4699 of file references.bib
  : @inproceedings{koehn2007
  :                         ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 5551 of file references.bib
+Repeated entry---line 5568 of file references.bib
  : @inproceedings{sennrich2016b
  :                             ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 5800 of file references.bib
+Repeated entry---line 5817 of file references.bib
  : @inproceedings{gal2016
  :                       ,
 I'm skipping whatever remains of this entry
@@ -62,45 +62,45 @@ Warning--empty journal in nivre2015universal
 Warning--empty journal in perfetti1998limits
 Warning--empty journal in Sennrich2017
 Warning--empty journal in zipf1949human
-You've used 360 entries,
+You've used 362 entries,
             2229 wiz_defined-function locations,
-            2284 strings with 73776 characters,
-and the built_in function-call counts, 167389 in all, are:
-= -- 16536
-> -- 7346
-< -- 291
-+ -- 2625
-- -- 2523
-* -- 13501
-:= -- 27566
-add.period$ -- 1075
-call.type$ -- 360
-change.case$ -- 3039
-chr.to.int$ -- 342
-cite$ -- 373
-duplicate$ -- 7003
-empty$ -- 11523
-format.name$ -- 3041
-if$ -- 34046
-int.to.chr$ -- 19
+            2293 strings with 74253 characters,
+and the built_in function-call counts, 168364 in all, are:
+= -- 16630
+> -- 7382
+< -- 293
++ -- 2638
+- -- 2535
+* -- 13574
+:= -- 27717
+add.period$ -- 1081
+call.type$ -- 362
+change.case$ -- 3055
+chr.to.int$ -- 343
+cite$ -- 375
+duplicate$ -- 7054
+empty$ -- 11605
+format.name$ -- 3055
+if$ -- 34259
+int.to.chr$ -- 20
 int.to.str$ -- 0
-missing$ -- 367
-newline$ -- 1796
-num.names$ -- 1082
-pop$ -- 3445
+missing$ -- 369
+newline$ -- 1806
+num.names$ -- 1088
+pop$ -- 3474
 preamble$ -- 1
-purify$ -- 3050
+purify$ -- 3066
 quote$ -- 0
-skip$ -- 5348
+skip$ -- 5375
 stack$ -- 0
-substring$ -- 11116
-swap$ -- 1738
-text.length$ -- 167
+substring$ -- 11171
+swap$ -- 1750
+text.length$ -- 169
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 2140
+type$ -- 2152
 warning$ -- 13
-while$ -- 1303
+while$ -- 1312
 width$ -- 0
-write$ -- 4614
+write$ -- 4640
 (There were 7 error messages)
