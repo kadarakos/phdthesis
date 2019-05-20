@@ -138,7 +138,7 @@ type of contexts. For these contexts we consider word and dependency relation n-
 order three. This results in distributions of mutual information values between activations and
 contexts. We take the median of these distributions to compare the types of contexts that
 are more related to the activation patters in  \texttt{VISUAL} than  \texttt{TEXTUAL}. We find
-the significant difference between the pathways: the features encoded by  \texttt{TEXTUAL} are
+a significant difference between the pathways: the features encoded by  \texttt{TEXTUAL} are
 more related to dependency labels while that of \texttt{VISUAL} are more related to words.
 
 We can also use these mutual information scores to find for each dimension of the hidden states
@@ -231,7 +231,7 @@ version of the Multi30K data set probably does not contain many training samples
 need to take the visual modality into account for translation. The role of visual context in translation
 remains an active area of research at the time of writing this thesis: the "Best Short Paper" title
 at the North American Chapter of Association for Computational Linguistics 2019 was awarded to
-\citep{caglayan2019probing} who show that multi-modal systems are insensitive to images in general
+\cite{caglayan2019probing} who show that multi-modal systems are insensitive to images in general
 , however, the visual contexts can help models recover from corruptions to the source sentences.
 
 
@@ -254,7 +254,7 @@ entailment and sentence classification tasks find that the representations learn
 image--sentence ranking model trained on COCO -- similar to the ones trained in Chapters~\ref{ch:IJCNLP}, 
 \ref{ch:ConLL}, \ref{ch:EMNLP}  -- outperform that of their SkipThought \citep{kiros2015skip} 
 re-implementation. They conclude that visual grounding leads to qualitatively different representations, which
-can be beneficial many tasks.
+can be beneficial to many tasks.
 
 Given the promising results on the benefit of visual grounding on sentence level tasks it seems
 to be an important avenue to explore techniques to learn better quality and more 
@@ -263,7 +263,7 @@ we turned to learning grounded representations for multipe languages jointly.
 The benefit of multilingual joint learning has been demonstrated for example in dependency parsing
  \citep{ammar2016many}, machine translation \citep{johnson2016google} and grapheme-to-phoneme
  conversion \citep{peters2017massively}. 
- In the visually grounded representation learning \citep{gella2017image} showed improved 
+ In the visually grounded representation learning \cite{gella2017image} showed improved 
  performance in some cases for image--sentence ranking and semantic textual similarity when training
  on two languages jointly.
  
@@ -307,7 +307,7 @@ In both cases we find improvements when we use the pseudopair method.
 
 We demonstrated in Chapter~\ref{ch:ConLL} that using our setup we can learn better 
 visually grounded representations when training on multiple languages. Our results suggest that the
-more languages the larger the gain, however, we only considered the same images annotated with 
+more languages are used for training the larger the gain, however, we only considered the same images annotated with 
 four languages. Future work can shed more light on under what circumstances this observation holds
 by running experiments with different resources such as the Chinese Flickr8k \citep{li2016adding}
 or the Japanese COCO \citep{P16-1168}. 
@@ -416,7 +416,7 @@ We applied multi-task learning to train an English sentence encoder to provide u
 image--sentence matching and translation. Compared to the text-only baseline 
 we observed performance gains both when 
 training on English-German-Image translation pairs and corresponding scene triplets and when training on two separate
-sets: an English-German parallel corpus and an English-Image image--description data set. 
+sets: an English-German parallel corpus and an English image--description data set. 
 Furthermore, we also showed that visually grounded representation learning results in orthogonal 
 improvements to having access to additional parallel corpora.
 
