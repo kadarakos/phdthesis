@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2018.10.12)  21 MAY 2019 20:25
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2018.10.12)  21 MAY 2019 20:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1862,9 +1862,9 @@ Overfull \hbox (10.79855pt too wide) in paragraph at lines 43--45
  []
 
 [2] [3]
-Overfull \hbox (15.53563pt too wide) in paragraph at lines 107--127
+Overfull \hbox (10.90363pt too wide) in paragraph at lines 107--127
 \EU1/lmr/m/n/12 earlier \EU1/lmr/m/it/12 count-based \EU1/lmr/m/n/12 methods bu
-ilding word-context co-occurrence vectors-
+ilding word-context co-occurrence vector-
  []
 
 [4] [5] [6]

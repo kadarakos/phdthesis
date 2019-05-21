@@ -47,7 +47,7 @@ basis of Chapter~\ref{ch:COLI} to \emph{improve machine translation} in the doma
 for multiple languages jointly.
 
 \item[Chapter~\ref{ch:EMNLP}] extends the investigations of Chapter~\ref{ch:ConLL} to the
-cross-domain setup, breaking the assumption that for each language the same images are annotated
+cross-domain setup, removing the assumption that for each language the same images are annotated
 with different languages.
 \end{description}
 
@@ -69,7 +69,7 @@ a task-oriented methodology: researchers borrow or collect data sets, define mea
 apply learning algorithms. Chapters~\ref{ch:IJCNLP}, \ref{ch:ConLL} and
 \ref{ch:EMNLP}  closely follow this blueprint.
 
-From the rule based times of "engineering grammars" researchers moved onto "engineering features"
+From the rule based times of ``engineering grammars" researchers moved onto ``engineering features"
 to \emph{represent} the textual data as input to general-purpose pattern recognition algorithms such as
 decision trees, support-vector machines or conditional random fields.
 A large set of these feature templates are still based on various formal-linguistic theories requiring various
@@ -86,7 +86,7 @@ fit in the general \emph{representation learning}  framework consisting of
 machine learning approaches that learn useful representations
 for various tasks from (close to) raw input.
 
-The expression "representation learning" is somewhat synonymous with "deep learning" at the time
+The expression ``representation learning" is somewhat synonymous with ``deep learning" at the time
 of writing this thesis \citep{bengio2013representation}.
 When mentioning representation learning in the deep learning context
 it is usually meant that the goal is to learn a function from raw input to target labels. In the
@@ -114,7 +114,7 @@ To aid the reader with technical and historical context we introduce distributio
 semantics models using the \emph{count-based}/\emph{prediction-based} distinction
 borrowed from \cite{baroni2014don}.
 Section~\ref{sec:count} introduces earlier \emph{count-based}
-methods building word-context co-occurrence vectors-space, while
+methods building word-context co-occurrence vector-space, while
 Section~\ref{sec:pred} presents the  \emph{prediction-based} framework in a more
 detailed fashion as the techniques discussed here are closely related
 to the approaches presented in this thesis.
@@ -208,7 +208,7 @@ linguistic context prediction, but on the sentence level.
 Section~\ref{sec:visualsentences} describes the general framework of learning
 visually-grounded sentence representations and their utility.
 The basic idea is still context prediction, however, we learn associations between
-sentences and their \emph{visual} context i.e model parameters are optimized such
+sentences and their \emph{visual} context i.e.\ model parameters are optimized such
 that related image sentence pairs get pushed close together and unrelated pairs far
 from each other in a learned joint space.
 
@@ -217,7 +217,7 @@ we train such an architecture and explore the learned representations.
 Our main interest and contribution here is the development of general techniques to
 \emph{interpret} linguistic representations learned by
 Recurrent Neural Networks and use these techniques to contrast text-only language
-models with their grounded counter parts trained on the same sentences.
+models with their grounded counterparts trained on the same sentences.
 
 \section{Visual modality bridging between languages}
 
@@ -258,7 +258,7 @@ together with data sets from higher-resource languages.
 
 Lastly, our \textbf{fifth contribution} in Chapter~\ref{ch:EMNLP} is exploring the benefit of multilinguality
 in visually grounded representation learning as in Chapter~\ref{ch:ConLL}, but in the cross-domain setting.
-Here we consider a \emph{disjoint} scenario where the image sentence data sets for different languages do
+Here we consider a \emph{disjoint} scenario where the image-sentence data sets for different languages do
 not share images. We assess how the method applied in Chapter~\ref{ch:ConLL} performs under
 domain-shift. Furthermore, we introduce a technique we call \emph{pseudopairs}, whereby we generate
 new image--caption data sets by creating pairs across data sets using the sentence similarities under
