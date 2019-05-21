@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2018.10.12)  21 MAY 2019 20:54
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2018.10.12)  21 MAY 2019 21:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1907,9 +1907,9 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             See the microtype manual for details.
  [20] [21] [22]
 [23]
-Overfull \hbox (17.48634pt too wide) in paragraph at lines 844--857
-\EU1/lmr/m/n/12 ([][]2012[][]) also combines distributional semantic models and
- BoVW pipelines.
+Overfull \hbox (12.85434pt too wide) in paragraph at lines 844--857
+\EU1/lmr/m/n/12 ([][]2012[][]) also combine distributional semantic models and 
+BoVW pipelines.
  []
 
 [24]
@@ -1918,43 +1918,43 @@ Overfull \hbox (26.89114pt too wide) in paragraph at lines 867--880
 tions
  []
 
-[25] [26] [27] [28] [29] [30] [31] [32] [33] [34] [35] [36]
-Overfull \hbox (8.01161pt too wide) in paragraph at lines 1210--1216
+[25] [26] [27] [28] [29] [30] [31] [32] [33] [34] [35]
+Overfull \hbox (8.01161pt too wide) in paragraph at lines 1208--1214
 \EU1/lmr/m/n/12 These findings were confirmed and improved upon using a self-at
 tention
  []
 
-[37]
-Overfull \hbox (0.30508pt too wide) in paragraph at lines 1286--1286
+[36] [37]
+Overfull \hbox (0.30508pt too wide) in paragraph at lines 1284--1284
 []\EU1/lmr/bx/n/14.4 Multi-view representation learning perspec-
  []
 
 [38]
-Overfull \hbox (7.93295pt too wide) in paragraph at lines 1313--1320
+Overfull \hbox (7.93295pt too wide) in paragraph at lines 1311--1318
 \EU1/lmr/m/n/12 these representations is maximized. This optimization process a
 mounts
  []
 
-[39]
-Overfull \hbox (7.40445pt too wide) in paragraph at lines 1342--1352
+
+Overfull \hbox (7.40445pt too wide) in paragraph at lines 1340--1350
 []\EU1/lmr/m/n/12 In the multi-lingual multi-modal setting [][]Funaki & Nakayam
 a[][] ([][]2015[][])
  []
 
-
-Overfull \hbox (5.77245pt too wide) in paragraph at lines 1353--1362
+[39]
+Overfull \hbox (5.77245pt too wide) in paragraph at lines 1351--1360
 []\EU1/lmr/m/n/12 The bridge correlational neural network approach ([][]Rajendr
 an et al.[][],
  []
 
-[40] [41] [42] [43]
-Overfull \hbox (0.23164pt too wide) in paragraph at lines 1473--1485
+[40] [41] [42]
+Overfull \hbox (0.23164pt too wide) in paragraph at lines 1471--1483
 \EU1/lmr/m/n/12 improved later by modeling the image-pivot based zero-resource 
 trans-
  []
 
-
-Overfull \hbox (23.5583pt too wide) in paragraph at lines 1487--1487
+[43]
+Overfull \hbox (23.5583pt too wide) in paragraph at lines 1485--1485
 []\EU1/lmr/bx/n/17.28 Interpreting continuous representations 
  []
 

@@ -516,7 +516,7 @@ The size of the co-occurrence matrix is then vocabulary size by the number of co
 
 Contexts are typically words appearing within a certain window size or text documents.
 To the counts in the co-occurrence matrix various re-weighting schemes are applied followed 
-by some matrix factorization algorithm resulting in a lower dimensional dense representation.
+by matrix factorization, resulting in a lower dimensional dense representation.
 %Both re-weighting and low-rank approximation reduces the dimensionality of the sparse matrix and leads
 %to faster compute and better generalization.
 
@@ -527,8 +527,8 @@ followed by singular value decomposition.
 More recent approaches apply different re-weighting schemes such as
 point-wise mutual information \citep{bullinaria2007extracting}  and local mutual
 information \citep{evert2005statistics} or different matrix factorization algorithms such as non-negative
-matrix factorization \citep{baroni2014don}.For a comprehensive set of empirical experiments on count-based
-approaches please consult \cite{bullinaria2007extracting} and \cite{bullinaria2012extracting}.
+matrix factorization \citep{baroni2014don}. For a comprehensive set of empirical experiments on count-based
+approaches consult \cite{bullinaria2007extracting} and \cite{bullinaria2012extracting}.
 
 \subsection{Prediction-based approaches}
 \label{sec:pred}
@@ -559,7 +559,7 @@ the target word given the previous fixed number of words as context over a train
 -- $n$-gram language model -- trained with stochastic gradient descent \citep{cauchy1847methode}
 through the backpropagation algorithm \citep{rumelhart1985learning}.
 Shortly after its publication the neural probabilistic feed-forward neural language model of  \cite{bengio2003neural} 
-has been shown to improve performance in speech recognition \citep{schwenk2005training}.
+was shown to improve performance in speech recognition \citep{schwenk2005training}.
 
 %where tanh is the hyperbolic tangent function applied elementwise
 
@@ -615,8 +615,8 @@ and its previous hidden state $\mathbf{h_{t-1}}$ maintained through previous
 time-steps. These are used to compute the current
 state $\mathbf{h_t}$ and to predict the probability distribution over the following word $P(w_t|w_{<t})$.
 It is parametrized by a word-embedding matrix $\mathbf{W} \in \mathbb{R}^{|V| \times d}$,
-an input to hidden weight matrix $\mathbf{W_i}$, a hidden to hidden weight
-matrix $\mathbf{W_h}$ and finally the hidden to output
+an input-to-hidden weight matrix $\mathbf{W_i}$, a hidden-to-hidden weight
+matrix $\mathbf{W_h}$ and finally the hidden-to-output
 weight matrix $\mathbf{U}$ to predict the unnormalized probabilities over the vocabulary entries and additional
 hidden and output bias terms $ \mathbf{b_o}$ and $ \mathbf{b_h}$.
 This model is trained to maximize the probability of the training sequences, 
@@ -628,7 +628,7 @@ hidden states of the network $\mathbf{h_t}$ encode grammatical relations and hie
 constituent structure. In Chapter~\ref{ch:COLI} we also train a recurrent language model
 and compare it to its grounded counterpart
 on real-world data and explore similar questions about the learned opaque representations
-as \cite{elman1991distributed} .
+as \cite{elman1991distributed}.
 
 Despite the early successes, however, it turned out to be difficult to train
 Elman networks on practical applications with longer sequences
@@ -642,7 +642,7 @@ strategies.
 While more complex training algorithms such as hessian-free optimizers
 \citep{martens2011learning} remain out of fashion,
 an overwhelming amount of empirical evidence
-shows that the more compliex long short-term
+shows that the more complex long short-term
 memory (LSTM) \citep{hochreiter1997long,gers1999learning}
 and gated recurrent unit networks (GRU) \citep{Cho2014}  recurrent network variants
 vastly outperform the simple Elman network in practice. We opted for GRUs in
@@ -842,17 +842,17 @@ large margin on word association and word similarity experiments.
 %corresponds to a certain SIFT-cluster. 
 
 The perceptually grounded word representations of \cite{bruni2012distributional}
-also combines distributional semantic models and BoVW pipelines.
+also combine distributional semantic models and BoVW pipelines.
 Rather than having a collection of documents they consider a set of words for which
 both distributional and image features are available. For visual word representations
 they use images labeled with tags by annotators. Similarly to \cite{feng2010visual} they
-apply a BoVW pipeline feature represent images. Contrary to \cite{feng2010visual}, however,
+apply a BoVW pipeline to represent images. Contrary to \cite{feng2010visual}, however,
 a visual-only representation is created for each tag-word by summing over the features
 for all images corresponding to the tag.
-For text-only models \cite{bruni2012distributional}construct several types of distributional semantic spaces
+For text-only models \cite{bruni2012distributional} construct several types of distributional semantic spaces
 from text-only corpora unrelated to the images.
 As in \cite{feng2010visual} they wish to create a multimodal
-word representation and applied separate pipelines to extract textual and visual
+word representation and apply separate pipelines to extract textual and visual
 features. Finally they create the multi-modal space through concatenation.
 
 On word-similarity benchmarks \cite{bruni2012distributional} show that the text-only model performs better than visual-only
@@ -867,10 +867,10 @@ large collections of texts and so grounded representations are superfluous \cite
 Combining BoVW and count-based distributional word-representations remained the standard methodology
 in many other works on multi-modal word representations at the time
 \citep{bruni2011distributional,leong2011going,leong2011measuring}.
-\cite{bruni2014multimodal} frames multi-modal distributional semantics under a general framework:
+\cite{bruni2014multimodal} frame multi-modal distributional semantics under a general framework:
 create separate textual and visual features for words followed by
-re-weighting and matrix factorization. Researchers can apply vector-space
-models to create the distributional space computer vision techniques to create
+re-weighting and matrix factorization. Researchers can apply distributional methods
+models to create a semantic space and computer vision techniques to create
 visual feature representations for the same words. The separate feature spaces
 are mixed together  first  by concatenation, which is
 optionally followed by singular value decomposition
@@ -923,9 +923,9 @@ exposure  \citep{lazaridou2017multimodal}.
 Chapter~\ref{ch:TAL} presents a computational cognitive model of word learning using only
 visual information developed at the same time as the multi-modal skip-gram approach.
 Similarly to \cite{feng2010visual} we assume pairs of text and images. 
-However, in our data set images represent everyday scenes and are paired with descriptive
+However, in our dataset images represent everyday scenes and are paired with descriptive
 sentences to mimic the language environment of children on a high level.
-Our model is inspired by the cross-situational account to language
+Our model is inspired by the cross-situational account of language
 learning  and assumes that the representations of words are learned exclusively through the co-occurrences
 between visual features and words. Rather than building a
 matrix of image-features per word and then summarizing as in \cite{kiela2014learning},
@@ -946,7 +946,7 @@ the learned embeddings: the correlation between our visual word-embeddings
 and human similarity judgements is significantly higher for concrete than abstract nouns. 
 As each word embedding  is represented in the
 image-feature space as in \cite{kiela2014learning}, we show that our model can label images 
-with related nouns through simple nearest neighbor search.
+with related nouns through simple nearest-neighbor search.
 
 \section{From words to sentences}
 \label{sec:sentences}
@@ -997,7 +997,7 @@ tensor operations involved \citep{bowman2016modeling}.
 Lastly, before going forward with the more recent neural models in the next section,
 it is only fair to mention that bag-of-words
 based representations bypassing the issue of compositionality form a set of very strong baselines
-for a number of sentence level tasks \citep{hill2016learning}.
+for a number of sentence-level tasks \citep{hill2016learning}.
 These simple baselines include using multinomial naive Bayes uni- and bigram
 log-count features within support vector machines \citep{wang2012baselines} or
 feeding the average of the word-embeddings in a sentence into a softmax classifier \citep{joulin2016bag}.
@@ -1011,7 +1011,7 @@ and recurrent network \citep{mikolov2010recurrent} language models from the pers
 of learning word-representations. However, both architectures learn embeddings of not only single words,
 but also learn to represent sequences of multiple words such as sentences.
 An intriguing property of such approaches is that
-they represent various linguistic objects in the same space as activations of the neural models.\footnote{This property is not unique to neural models e.g. the pregroup algebra based compositional distributional
+they represent various linguistic objects in the same space as activations of the neural models.\footnote{This property is not unique to neural models e.g. the pregroup-algebra-ased compositional distributional
 semantics framework of \cite{coecke2010mathematical}
 sentences of any grammatical structure live in the same inner-product space.}
 When learning transferable
@@ -1068,7 +1068,7 @@ they train a recurrent encoder to encode a target sentence and use two separate 
 generate its pre-context and post-context.
 This method was confirmed to be a successful self-supervised method for transfer
 learning in a number of sentence
-classification tasks beating simpler approaches such as bag-of-words approaches based on skip-gram
+classification tasks beating simpler methodssuch as bag-of-words approaches based on skip-gram
 or CBOW embeddings, tf-idf vectors and auto-encoders \citep{hill2016learning}. A convolutional
 variant of the encoder was introduced in \cite{gan2016unsupervised} and several other works
 train simple sum/average pre-trained word-embedding encoders using the same sentential
@@ -1151,7 +1151,7 @@ The images depict common real-life scenes such as a \emph{bus turning left} or \
 playing soccer in the park}. As such, annotation collected independently from
 different crowd-source workers end up focusing on different aspects of
 these scenes. For a comprehensive overview on image-description data sets
-please consult \cite{bernardi2016automatic}.
+consult \cite{bernardi2016automatic}.
 
 Following the ranking formulation of grounded learning by \cite{hodosh2013framing}
 the earliest works applying a combination of sentence and image encoder neural networks
@@ -1163,14 +1163,12 @@ sentences the alternative approach of learning latent alignments between image--
 sentence fragments have also been explored concurrently \citep{karpathy2014deep,karpathy2015deep}.
 
 
-Following \cite{kiros2014unifying} to predict images from the sentences
--- and conversely sentences from the images --
+To predict images from the sentences -- and conversely sentences from the images --
 the architecture we chose in
-Chapters \ref{ch:COLI}, \ref{ch:IJCNLP}, \ref{ch:ConLL} and \ref{ch:EMNLP}  combines
-a recurrent neural network to
-represent sentences and a pre-trained convolutional neural network
+Chapters \ref{ch:COLI}, \ref{ch:IJCNLP}, \ref{ch:ConLL} and \ref{ch:EMNLP} follows \cite{kiros2014unifying}: 
+we combine a recurrent neural network to represent sentences and a pre-trained convolutional neural network
 followed by an affine transformation we train for the task
-to extract features from images .
+to extract features from images.
 The image-context prediction from sentences in
 Chapter \ref{ch:COLI} is formulated  as minimizing the cosine distance
 between the learned sentence  and image representations
@@ -1179,11 +1177,11 @@ in a training set of image--caption pairs.
 
 Later we follow the formulations of \cite{vendrov2016order} and \cite{faghri2017vse++} and apply
 the sum-of-hinges loss in Chapter~\ref{ch:IJCNLP} and max-of-hinges ranking objective
-in Chapters~\ref{ch:ConLL} and \ref{ch:EMNLP} . These loss functions
+in Chapters~\ref{ch:ConLL} and \ref{ch:EMNLP}. These loss functions
 push relevant image--sentence pairs close, while contrastive pairs 
 far from each other in a joint embedding space. Given a mini-batch of e.g. 100 samples, for each sample
 the contrastive pairs are generated by taking the wrong pairings from that batch leading to
-99 contrastive pair per sample. The ranking losses are minimized in both image $\rightarrow$ sentence
+99 contrastive pairs per sample. The ranking losses are minimized in both image $\rightarrow$ sentence
 and sentence $\rightarrow$ image directions.
 
 We empirically found both ranking losses to perform better than minimizing the cosine distance alone 
@@ -1302,15 +1300,15 @@ same data point. The two main multi-view learning paradigms put forward in recen
 autoencoders and canonical correlation analysis (CCA) \citep{wang2015deep}.
 
 \cite{ngiam2011multimodal} introduced the idea
-of multi-modal autoencoders to learn multi-modal joint representations of audio and video. Let
-they have a shared encoder neural network extracting features from both modalities and two
+of multi-modal autoencoders to learn multi-modal joint representations of audio and video. Their
+architecture has a shared encoder neural network extracting features from both modalities and two
 modality specific decoders.  
 Their approach learns shared representations such that one view can be reconstructed from another and
 the activations of the shared encoder learn a multi-modal joint space.
 Autoencoder approaches  remain one of the standard family of models
 to study the learning of visual-linguistic multi-modal spaces \citep{silberer2014learning,silberer2017visually,wang2018associative}.
 
-For the discussion of CCA based approaches let us consider the deep canonical correlation analysis (DCCA)
+For the discussion of CCA-based approaches let us consider the deep canonical correlation analysis (DCCA)
 put forward by \cite{andrew2013deep}.  In this approach view
 specific networks are applied to extract non-linear features
 and the canonical correlation between these representations is maximized.
@@ -1356,12 +1354,12 @@ learn common representations in a setting when the different views only need to 
 aligned with one pivot view. They preform
 image-sentence retrieval experiments in French or German where
 the image-caption data set is only available for English, however,
-there is parallel corpora between German or French and English. In other words English acts as a pivot.
+there are parallel corpora between German or French and English. In other words English acts as a pivot.
 A similar combination of autencoder and correlational training was applied to \emph{bridge}
 image--captioning \citep{Saha2016}.
 
 Our formulation of the problem does not fall in the set of approaches generally
-considered as multi-view learning.  However, it is similar to the CCA based techniques in that we
+considered as multi-view learning.  However, it is similar to the CCA-based techniques in that we
 train two sub-networks -- one for the linguistic and another for the image modality --
 and do not rely on decoder networks to compute a reconstruction  loss as in the autoencoder approaches.
 Another connections is that in Chapter~\ref{ch:COLI} we minimize the cosine distance between the learned representations
@@ -1382,8 +1380,8 @@ by full parameter sharing through multi-task learning:
 given multiple image--caption data sets at each iteration we sample
 a batch from one of them and perform an update to the encoders
 using the ranking loss function.
-\cite{gella2017image} applies the image--sentence ranking framework in the multilingual setup
-considering images as a pivots bridging English and German and train a multilingual
+\cite{gella2017image} apply the image--sentence ranking framework in the multilingual setup
+considering images as pivots bridging English and German and train a multilingual
 image--sentence ranking model.
 Their results suggest that the multilingual models outperform the monolingual ones on image-sentence
 ranking, however, they do not show consistent gains across languages and model settings.
@@ -1446,12 +1444,12 @@ word-representations with more traditional multi-lingual word-embedding
 techniques leads to superior performance compared to their uni-modal
 counterparts \citep{vulic2016multi}.
 
-The first large-scale vision based bilingual dictionary induction data set
+The first large-scale vision-based bilingual dictionary induction data set
 was put forward by \cite{hewitt2018learning}. They create a data set
-of \~200K words and 100 images per each using Google Image Search and perform
+of \~200K words and 100 images per word using Google Image Search and perform
 experiments with 32 languages.
 They confirm the finding of \cite{hartmann2017limitations} that image-pivoting
-is most effective for nouns, however, find that using their larger data set
+is most effective for nouns, however, find that using their larger dataset
 adjectives can also be translated reliably. 
 
 %Similarly to \cite{vulic2016multi}
@@ -1461,11 +1459,11 @@ adjectives can also be translated reliably.
 %text-only methods in the case of \emph{concrete} concepts.
 
 Images have also been used as pivots for translating full sentences.
-In automatic machine translation a pivot based approach is applied
+In automatic machine translation a pivot-based approach is applied
 when there are parallel corpora available between language pairs $A\rightarrow C$
 and $C \rightarrow B$, but there is no data for $A\rightarrow B$. The problem is
 solved by first translating $A$ to $C$ and then $C$ to $B$.
-Image--pivoting refers to a setup where we assume the existence of a data set
+Image--pivoting refers to a setup where we assume the existence of a dataset
 of images paired with words or sentences in different languages $A \leftrightarrow I_A$ and
 $B \leftrightarrow I_B$ and translation is done through the image space
 going  through $A \rightarrow I$ to $I \rightarrow C$.
@@ -1479,7 +1477,7 @@ training two components: 1.) visual-sentence encoder that matches images and the
 At test time the visual-sentence encoder representation of the source sentence is fed to the
 image--description generator to produce the translation.
 Their results were improved later by modeling
-the image-pivot based zero-resource translation setup as a
+the image-pivot-ased zero-resource translation setup as a
 multi-agent communication game between encoder and decoder
 \citep{chen2018zero,lee2017emergent}.
 
@@ -1505,7 +1503,7 @@ This is what Chapter \ref{ch:COLI} is dedicated to.
 
 Developing techniques for interpreting machine learning models have multiple goals.
 From the practical point of view as learning algorithms make their way into critical applications
-such as medicine humans and machines need to be able to co-operate to avoid catastrophic
+such as medicine, humans and machines need to be able to co-operate to avoid catastrophic
 outcomes \citep{caruana2015intelligible}. As such there is a growing interest in deriving methods
 to \emph{explain} the decision of such architectures.
 

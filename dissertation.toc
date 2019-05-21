@@ -18,14 +18,14 @@
 \contentsline {subsubsection}{\numberline {2.1.2.2}Efficient linear models}{20}{subsubsection.2.1.2.2}
 \contentsline {section}{\numberline {2.2}Visually grounded representations of words}{21}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}Language and perception}{21}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Combined distributional and visual spaces}{24}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.2}Combined distributional and visual spaces}{23}{subsection.2.2.2}
 \contentsline {section}{\numberline {2.3}From words to sentences}{28}{section.2.3}
 \contentsline {section}{\numberline {2.4}Neural sentence representations}{30}{section.2.4}
-\contentsline {section}{\numberline {2.5}Visually grounded sentence representations}{34}{section.2.5}
-\contentsline {section}{\numberline {2.6}Visually grounded multilingual representations}{38}{section.2.6}
+\contentsline {section}{\numberline {2.5}Visually grounded sentence representations}{33}{section.2.5}
+\contentsline {section}{\numberline {2.6}Visually grounded multilingual representations}{37}{section.2.6}
 \contentsline {subsection}{\numberline {2.6.1}Multi-view representation learning perspective}{38}{subsection.2.6.1}
 \contentsline {subsection}{\numberline {2.6.2}Images as pivots for translation}{42}{subsection.2.6.2}
-\contentsline {section}{\numberline {2.7}Interpreting continuous representations}{45}{section.2.7}
+\contentsline {section}{\numberline {2.7}Interpreting continuous representations}{44}{section.2.7}
 \contentsline {chapter}{\numberline {3}Learning word meanings from images of natural scenes}{49}{chapter.3}
 \contentsline {paragraph}{Abstract}{49}{section*.4}
 \contentsline {paragraph}{This chapter is based on}{51}{section*.5}
