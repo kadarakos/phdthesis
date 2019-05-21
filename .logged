@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2018.10.12)  21 MAY 2019 21:18
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2018.10.12)  21 MAY 2019 21:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1947,13 +1947,7 @@ Overfull \hbox (5.77245pt too wide) in paragraph at lines 1351--1360
 an et al.[][],
  []
 
-[40] [41] [42]
-Overfull \hbox (0.23164pt too wide) in paragraph at lines 1471--1483
-\EU1/lmr/m/n/12 improved later by modeling the image-pivot based zero-resource 
-trans-
- []
-
-[43]
+[40] [41] [42] [43]
 Overfull \hbox (23.5583pt too wide) in paragraph at lines 1485--1485
 []\EU1/lmr/bx/n/17.28 Interpreting continuous representations 
  []
