@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2018.10.12)  20 MAY 2019 19:37
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2018.10.12)  21 MAY 2019 20:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2983,13 +2983,7 @@ Overfull \hbox (11.20044pt too wide) in paragraph at lines 56--63
 tuational
  []
 
-[193]
-Overfull \hbox (3.04364pt too wide) in paragraph at lines 102--108
-\EU1/lmr/m/n/12 linguistic structure that is encoded in the hidden activations 
-\EU1/lmtt/m/n/12 IMAGINET\EU1/lmr/m/n/12 .
- []
-
-[194] [195]
+[193] [194] [195]
 Overfull \hbox (5.39963pt too wide) in paragraph at lines 152--156
 \EU1/lmr/m/n/12 and mutual information-based interpretation techniques we have 
 found

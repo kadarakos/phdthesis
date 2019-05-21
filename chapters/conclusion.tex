@@ -27,13 +27,13 @@ between modalities as evidence.
 
 We departed in two major ways from the canonical computational cross-situational models 
  \citep{siskind.96,fontanari2009cross,fazly.etal.10,kachergis2012associative,matusevych2013automatic,yu2013grounded}: 
-1.) we use large image--description benchmark data sets developed for machine learning purposes, 
+1.) we use large image--description benchmark datasets developed for machine learning purposes, 
 which naturally present a high level of referential uncertainty and ambiguity and
 2.) continuous image representations rather than artificial symbolic scene descriptors.
 
 We adapted the cross-situational word learning model of \cite{fazly.etal.10} -- an 
 online version of the IBM Model 1 word-translation model \citep{BrownPPM94} -- to take as input scene
-representations convolutinal neural network activations.
+representations convolutional neural network activations.
 Even more unorthodox in the cross-situational literature our model does not learn a mapping between 
 words and objects 
 \citep{fazly.etal.10,lazaridou2016multimodal}, but the strength of the relationship between words and high-level
@@ -49,7 +49,7 @@ the results to a state-of-the-art distributional model trained on the same text 
 %Word-similarity benchmark experiments originate from \citep{rubenstein1965contextual} who 
 %intended to provide empirical evidence for the distributional hypothesis of  \citep{harris1954distributional}.
 Word-similarity benchmarks were the standard method at the time to compare
-computational models word meaning \citep{faruqui2014community}, however,
+computational models of word meaning \citep{faruqui2014community}, however,
 we do note that concerns about the validity and consistency of this methodology has been 
 raised \citep{faruqui2016problems}.
 
@@ -81,13 +81,13 @@ models of word learning \citep{yu2007unified,lazaridou2016multimodal}.
 Moving from representations of words to full sentences in Chapter~\ref{ch:COLI} we continue
 our comparative study between distributional and visually grounded representations. 
 Concretely, in Chapter~\ref{ch:COLI} we analyze the patterns of hidden activations in 
-our recurrent visually grounded language learning model 
-\texttt{IMAGINET} \citep{chrupala2015learning}. 
+our recurrent visually-grounded language learning model 
+\textsc{IMAGINET} \citep{chrupala2015learning}. 
 
-\texttt{IMAGINET} consists of two separate recurrent networks coupled through a 
-shared word embedding matrix. The \texttt{VISUAL}
+\textsc{IMAGINET} consists of two separate recurrent networks coupled through a 
+shared word embedding matrix. The \textsc{VISUAL}
 pathway performs visually grounded learning through an image--sentence ranking objective, 
-while \texttt{TEXTUAL} is trained as a language model to maximize the likelihood of the following word
+while \textsc{TEXTUAL} is trained as a language model to maximize the likelihood of the following word
 given the preceding context.
 
 %In  \citep{chrupala2015learning} we compare the word representations learned by only training one
@@ -99,35 +99,35 @@ given the preceding context.
 %on equal evel to it trained on the original captions. We find that the model trained on the original
 %captions does perform better suggesting that it successfully exploit word order information.
 
-Chapter~\ref{ch:COLI} is dedicated to an in depth investigation
-of the kind of linguistic structure that is encoded in the hidden activations \texttt{IMAGINET}. 
-Crucially, we perform a controlled comparison between the grounded \texttt{VISUAL} and the distributional 
- \texttt{TEXTUAL} pathways: both models have the same architecture and share word-embeddings.
+Chapter~\ref{ch:COLI} is dedicated to an in-depth investigation
+of the kind of linguistic structure that is encoded in the hidden activations \textsc{IMAGINET}. 
+Crucially, we perform a controlled comparison between the grounded \textsc{VISUAL} and the distributional 
+ \textsc{TEXTUAL} pathways: both models have the same architecture and share word-embeddings.
  As the linguistic interpretation of representations learned by recurrent networks did not enjoy a 
  large amount of  attention at the time we introduced two novel techniques. 
  
- Firstly, we introduced the \emph{omission score}, an input perturbation based saliency metric assigning a 
+ Firstly, we introduced the \emph{omission score}, an input-perturbation-based saliency metric assigning a 
  real-valued importance score to each input token signaling how much impact  they have on 
  the final sentence representation. Through computing the 
  log ratios of the omission score distribution over part-of-speech tags and dependency labels between
- \texttt{VISUAL} and \texttt{TEXTUAL} we find that 	the representations of the former
+ \textsc{VISUAL} and \textsc{TEXTUAL} we find that 	the representations of the former
  is more impacted by words belonging to categories
  usually filled with semantic content, 
- while for \texttt{TEXTUAL} the distribution is fairly uniform.
+ while for \textsc{TEXTUAL} the distribution is fairly uniform.
  
  To disentangle the impact of word forms and their functions on the representations 
  we fit ridge regression models 
  to predict omission scores for tokens using the word
- identity as predictor or adding dependency relation ( \texttt{+dep}), 
+ identity as predictor or adding dependency relation (\textsc{+dep}), 
  sentence position variables or both and their interactions. 
- We find that the word-identity is much less predictive of omission score for \texttt{TEXTUAL}
- than it is for  \texttt{VISUAL} and that position is most informative for \texttt{TEXTUAL},
- while for \texttt{VISUAL} dependency relation and position variables provide similar increases
+ We find that the word-identity is much less predictive of omission score for \textsc{TEXTUAL}
+ than it is for  \textsc{VISUAL} and that position is most informative for \textsc{TEXTUAL},
+ while for \textsc{VISUAL} dependency relation and position variables provide similar increases
  in $R^2$. 
  
  In a more fine-grained analysis we examined the omission distributions
- computed for the \texttt{VISUAL} pathway of words for which the increase in 
- $R^2$ from the word-identity regression model to the \texttt{+dep} model is the highest.
+ computed for the \textsc{VISUAL} pathway of words for which the increase in 
+ $R^2$ from the word-identity regression model to the \textsc{+dep} model is the highest.
  We find a general pattern that words generally produce the highest omission scores
  when they fill the noun subject or root function in a sentence and smallest when they appear 
  as conjuncts.
@@ -137,17 +137,17 @@ To do so we compute the mutual information between the binned activation values 
 type of contexts. For these contexts we consider word and dependency relation n-grams up to
 order three. This results in distributions of mutual information values between activations and
 contexts. We take the median of these distributions to compare the types of contexts that
-are more related to the activation patters in  \texttt{VISUAL} than  \texttt{TEXTUAL}. We find
-a significant difference between the pathways: the features encoded by  \texttt{TEXTUAL} are
-more related to dependency labels while that of \texttt{VISUAL} are more related to words.
+are more related to the activation patters in  \textsc{VISUAL} than  \textsc{TEXTUAL}. We find
+a significant difference between the pathways: the features encoded by  \textsc{TEXTUAL} are
+more related to dependency labels while that of \textsc{VISUAL} are more related to words.
 
 We can also use these mutual information scores to find for each dimension of the hidden states
 of the recurrent networks, which contexts they are most related to. 
 Through visual inspection we find these contexts for both 
-\texttt{VISUAL} and \texttt{TEXTUAL} to be a combination of semantic/syntactic constructions. 
+\textsc{VISUAL} and \textsc{TEXTUAL} to be a combination of semantic/syntactic constructions. 
 Consider for example two of these
-top contexts for one of the hidden units of  \texttt{TEXTUAL}: \emph{male on a}, \emph{person rides a}.
-In general for \texttt{VISUAL} we find contexts to be more topically than syntactically related.
+top contexts for one of the hidden units of  \textsc{TEXTUAL}: \emph{male on a}, \emph{person rides a}.
+In general for \textsc{VISUAL} we find contexts to be more topically than syntactically related.
 
 Through the development and application of the omission score and 
 mutual information-based interpretation techniques we have found similarities and differences between
@@ -157,18 +157,18 @@ and a language model.
 Since our article was published there have been a large number of input token saliency 
 measures introduced in the literature as discussed in Section~\ref{sec:interpret}. 
 \cite{shrikumar2017learning}
-points out that perturbation based techniques like our omission score tend to struggle
+points out that perturbation-based techniques like our omission score tend to struggle
  due to the limited perturbation window i.e.: the
 important context might be larger than the scope of the perturbation function. 
 On the explanation evaluation benchmark experiments of \cite{poerner2018evaluating} 
 perturbation based methods (including ours) lead to inconsistent results and backpropagation style
 methods \citep{bach2015pixel,shrikumar2017learning} have a stronger performance in general.
 
-To find typical inputs to hidden units \cite{poerner2018interpretable} develops an alternative
-to our mutual information based approach and applies it to our \texttt{IMAGINET} architecture.
+To find typical inputs to hidden units \cite{poerner2018interpretable} develop an alternative
+to our mutual-information-based approach and apply it to our \textsc{IMAGINET} architecture.
 They perform gradient ascent on maximizing the activation values for particular dimensions.
 Even though their technique is quite different, their results reproduce our findings that the hidden 
-units of \texttt{TEXTUAL} tend to be more syntax aware than that of \texttt{VISUAL}.
+units of \textsc{TEXTUAL} tend to be more syntax-aware than that of \textsc{VISUAL}.
 
 Interpretation of deep models of language has become a subfield of NLP in its own right
 with dedicated venues such as the first BlackboxNLP Workshop at EMNLP 2018
@@ -183,10 +183,10 @@ this thesis.
 
 Multi-modal machine translation has been introduced as a shared task in the
 First Conference of Machine Translation (WMT16) \citep{Specia2016} initially with
-German and English  \citep{W16-3210} data and
+German and English data  \citep{W16-3210} and
 later with added French and Czech data \citep{elliott2017findings}. The task is 
-machine translation with added side information in the form of images i.e. the generation of the target sentence 
-is conditioned both on the source and a corresponding image.
+machine translation with added side information in the form of images i.e.\ the generation of the target sentence 
+is conditioned both on the source and the corresponding image.
 Through a review of the state-of-the-art we observe in Chapter~\ref{ch:IJCNLP} 
 that the multi-modal and text-only versions of 
 the top performing systems during the first competition
@@ -199,11 +199,11 @@ introduce an architecture to learn visually grounded representations jointly wit
 More precisely we train a shared
 encoder which provides input representation to an image--sentence ranking and an
 attentional translation decoder. The two sub-models are trained jointly with multi-task learning, much
-like \texttt{IMAGINET} in \cite{chrupala2015learning}.
+like \textsc{IMAGINET} in \cite{chrupala2015learning}.
 
 We considered two setups:
 1.) \emph{aligned} setting where the input is made up of triplets of an English sentence, 
-it's German translation and a corresponding image, 2.) \emph{disjoint} where we have a
+its German translation and a corresponding image, 2.) \emph{disjoint} where we have a
 separate English-German parallel corpus and an image--sentence corpus in English.
 We find that the multi-task model significantly outperforms the text-only baseline with
 no significant difference in performance between the \emph{aligned} and \emph{disjoint}
@@ -231,8 +231,8 @@ version of the Multi30K data set probably does not contain many training samples
 need to take the visual modality into account for translation. The role of visual context in translation
 remains an active area of research at the time of writing this thesis: the "Best Short Paper" title
 at the North American Chapter of Association for Computational Linguistics 2019 was awarded to
-\cite{caglayan2019probing} who show that multi-modal systems are insensitive to images in general
-, however, the visual contexts can help models recover from corruptions to the source sentences.
+\cite{caglayan2019probing} who show that multi-modal systems are insensitive to images in general, 
+however, the visual contexts can help models recover from corruptions to the source sentences.
 
 
 
@@ -245,9 +245,9 @@ and IWSLT 2014 German-English  \citep{cettolo2014report} translation tasks, when
 the translation models with their visually grounded Picturebook word-embeddings. 
 
 They also show that
-combining pre-trained GloVe \citep{pennington2014glove} and Picturebook embeddings lead 
+combining pre-trained GloVe \citep{pennington2014glove} and Picturebook embeddings leads 
 to improvements on natural language inference on the SNLI 
-\citep{bowman2015large} and MultiNLI \cite{williams2017broad} data sets and on predicting
+\citep{bowman2015large} and MultiNLI \citep{williams2017broad} data sets and on predicting
 semantic relatedness on the SICK data set \citep{marelli2014semeval}. 
 \cite{kiela2017learning} through transfer experiments on
 entailment and sentence classification tasks find that the representations learned by an 
@@ -280,7 +280,7 @@ Our experiments suggest the clear benefits of multilingual visually grounded rep
 their mono- and bilingual counterparts.
  
 These results are all based on a setting where the same images are annotated with captions 
- of different languages. To test whether this \emph{alignment} is crucial, we generate
+ in different languages. To test whether this \emph{alignment} is crucial, we generate
  a synthetic \emph{disjoint} set using the data set that we used for the alignment experiments. We find
  that the models perform equally well in both setups.
 
@@ -300,7 +300,7 @@ was to improve the models' capacity to learn from \emph{disjoint} data sets by
 creating a \emph{synthetic alignment}. In the fully \emph{disjoint} experiment our method
 starts by training a bilingual model on the German Multi30K and the English COCO. Then we 
 use the sentence similarities under this \emph{parent model} to generate a synthetic 
-English-German COCO: For each English sentence in COCO find the most similar sentence in Multi30k
+English-German COCO: For each English sentence in COCO we find the most similar sentence in Multi30k
 and use it as the German description for that image. We add an extra experiment we call \emph{aligned
 plus disjoint} setting where both the bilingual Multi30k and the additional larger English COCO is available.
 In both cases we find improvements when we use the pseudopair method.
@@ -327,13 +327,13 @@ The visually grounded sentence representation learning approaches
 we presented in this thesis learn to represent sentences as points
 in an embedding space through minimizing symmetric distance functions. 
 An alternative we have not explored is the asymmetric order-embeddings 
-\citep{vendrov2016order} which has shown to outperform cosine similarity based 
+\citep{vendrov2016order} which was shown to outperform cosine-similarity-based 
 image--sentence ranking models \citep{faghri2017vse++}. 
 Richer semantic representations could be also explored in the future such as Gaussian 
 distributions over a latent embedding 
-space \citep{vilnis2014word}, which allows for the modeling of asymmetric relationship between sentences
+space \citep{vilnis2014word}, which allow for the modeling of asymmetric relationship between sentences
 such as entailment, specificity/inclusion and uncertainty. 
-Another less well known approach in the literature is to embed objects in a
+Another lesser known approach in the literature is to embed objects in a
 hyperbolic space \citep{nickel2017poincare}, which naturally represents hierarchical relationships and 
 can be thought of as a continuous version of trees \citep{krioukov2010hyperbolic}. 
 In a similar setup to ours \cite{tay2018hyperbolic} 
@@ -395,7 +395,7 @@ perform on par, the distributional model captures the semantics of \emph{abstrac
 captures that of the \emph{concrete} words more accurately. We also showed that our model tags images with relevant
 concepts.
   
-Chapter~\ref{ch:COLI} focused on visually grounded representations on the sentence level . 
+Chapter~\ref{ch:COLI} focused on visually grounded representations on the sentence level. 
 We developed novel techniques to analyze and understand the representations learned by recurrent
 neural network models of language and used these methods to compare a language model and an image--sentence ranking
 model i.e. distributional versus visually grounded models of sentence representation learning. We have found that the 
