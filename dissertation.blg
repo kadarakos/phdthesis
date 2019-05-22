@@ -17,38 +17,44 @@ A level-1 auxiliary file: chapters/EMNLP/naaclhlt2019.aux
 A level-1 auxiliary file: chapters/conclusion.aux
 The style file: apalike2.bst
 A level-1 auxiliary file: endmatter/ticcthesis.aux
-Reallocated field_info (elt_size=4) to 12964 items from 5000.
+Reallocated field_info (elt_size=4) to 12942 items from 5000.
 Database file #1: references.bib
-"{" immediately follows a field name---line 1511 of file references.bib
+"{" immediately follows a field name---line 1569 of file references.bib
  :   pages
  :        {215--233},
 I'm skipping whatever remains of this entry
+Repeated entry---line 3037 of file references.bib
+ : @inproceedings{vinyals2015show
+ :                               ,
+I'm skipping whatever remains of this entry
 Reallocated str_pool (elt_size=1) to 130000 items from 65000.
-Repeated entry---line 3890 of file references.bib
+Repeated entry---line 3994 of file references.bib
  : @inproceedings{simonyan2014very
  :                                ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 4226 of file references.bib
+Repeated entry---line 4330 of file references.bib
  : @article{schuster1997
  :                      ,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 4602 of file references.bib
+I was expecting a `,' or a `}'---line 4706 of file references.bib
  :   
  :   url =  "http://www.aclweb.org/anthology/E06-1040",
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Repeated entry---line 4699 of file references.bib
+Repeated entry---line 4803 of file references.bib
  : @inproceedings{koehn2007
  :                         ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 5568 of file references.bib
+Repeated entry---line 5672 of file references.bib
  : @inproceedings{sennrich2016b
  :                             ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 5817 of file references.bib
+Repeated entry---line 5921 of file references.bib
  : @inproceedings{gal2016
  :                       ,
 I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "chen2013learning"
+Warning--I didn't find a database entry for "donahue2014long"
 Warning--can't use both volume and number fields in bergsma2011learning
 Warning--empty journal in Cho2014
 Warning--empty publisher in chomsky2002syntactic
@@ -62,45 +68,45 @@ Warning--empty journal in nivre2015universal
 Warning--empty journal in perfetti1998limits
 Warning--empty journal in Sennrich2017
 Warning--empty journal in zipf1949human
-You've used 362 entries,
+You've used 359 entries,
             2229 wiz_defined-function locations,
-            2293 strings with 74253 characters,
-and the built_in function-call counts, 168364 in all, are:
-= -- 16630
-> -- 7382
-< -- 293
-+ -- 2638
-- -- 2535
-* -- 13574
-:= -- 27717
-add.period$ -- 1081
-call.type$ -- 362
-change.case$ -- 3055
+            2293 strings with 74522 characters,
+and the built_in function-call counts, 172876 in all, are:
+= -- 17224
+> -- 7303
+< -- 317
++ -- 2607
+- -- 2507
+* -- 13838
+:= -- 27955
+add.period$ -- 1072
+call.type$ -- 359
+change.case$ -- 3026
 chr.to.int$ -- 343
-cite$ -- 375
-duplicate$ -- 7054
-empty$ -- 11605
-format.name$ -- 3055
-if$ -- 34259
-int.to.chr$ -- 20
+cite$ -- 372
+duplicate$ -- 7387
+empty$ -- 12162
+format.name$ -- 3024
+if$ -- 35599
+int.to.chr$ -- 17
 int.to.str$ -- 0
-missing$ -- 369
-newline$ -- 1806
-num.names$ -- 1088
-pop$ -- 3474
+missing$ -- 366
+newline$ -- 1791
+num.names$ -- 1079
+pop$ -- 3559
 preamble$ -- 1
-purify$ -- 3066
+purify$ -- 3037
 quote$ -- 0
-skip$ -- 5375
+skip$ -- 5606
 stack$ -- 0
-substring$ -- 11171
-swap$ -- 1750
-text.length$ -- 169
+substring$ -- 12000
+swap$ -- 1967
+text.length$ -- 193
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 2152
+type$ -- 2134
 warning$ -- 13
-while$ -- 1312
+while$ -- 1381
 width$ -- 0
-write$ -- 4640
-(There were 7 error messages)
+write$ -- 4637
+(There were 8 error messages)
