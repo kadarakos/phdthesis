@@ -270,7 +270,7 @@ Bruni, E., Tran, G.~B., \& Baroni, M. (2011).
 \bibitem[Bruni et~al., 2014]{bruni2014multimodal}
 Bruni, E., Tran, N.-K., \& Baroni, M. (2014).
 \newblock Multimodal distributional semantics.
-\newblock {\em J. Artif. Intell. Res(JAIR)}, 49, 1--47.
+\newblock {\em Journal of Artificial Intelligence Research}, 49, 1--47.
 
 \bibitem[Bullinaria \& Levy, 2007]{bullinaria2007extracting}
 Bullinaria, J.~A. \& Levy, J.~P. (2007).
@@ -376,13 +376,13 @@ Chen, X., Fang, H., Lin, T., Vedantam, R., Gupta, S., Doll{\'{a}}r, P., \&
 Chen, X. \& Zitnick, C.~L. (2014).
 \newblock Learning a recurrent visual representation for image caption
   generation.
-\newblock {\em arXiv preprint arXiv:1411.5654}.
+\newblock {\em ICLR}.
 
 \bibitem[Chen et~al., 2018]{chen2018zero}
 Chen, Y., Liu, Y., \& Li, V.~O. (2018).
 \newblock Zero-resource neural machine translation with multi-agent
   communication game.
-\newblock {\em arXiv preprint arXiv:1802.03116}.
+\newblock In {\em Thirty-Second AAAI Conference on Artificial Intelligence}.
 
 \bibitem[Cho et~al., 2014a]{cho2014properties}
 Cho, K., van Merrienboer, B., Bahdanau, D., \& Bengio, Y. (2014a).
@@ -428,7 +428,9 @@ Chrupa{\l}a, G., K{\'a}d{\'a}r, {\`A}., \& Alishahi, A. (2015).
 Chung, J., Cho, K., \& Bengio, Y. (2016).
 \newblock A character-level decoder without explicit segmentation for neural
   machine translation.
-\newblock {\em arXiv preprint arXiv:1603.06147}.
+\newblock In {\em Proceedings of the 54th Annual Meeting of the Association for
+  Computational Linguistics (Volume 1: Long Papers)}, volume~1  (pp.\
+  1693--1703).
 
 \bibitem[Chung et~al., 2014]{chung2014empirical}
 Chung, J., Gulcehre, C., Cho, K., \& Bengio, Y. (2014).
@@ -529,10 +531,10 @@ Devlin, J., Chang, M.-W., Lee, K., \& Toutanova, K. (2018).
   understanding.
 \newblock {\em arXiv preprint arXiv:1810.04805}.
 
-\bibitem[Dinu et~al., 2014]{dinu2014improving}
-Dinu, G., Lazaridou, A., \& Baroni, M. (2014).
+\bibitem[Dinu et~al., 2015]{dinu2014improving}
+Dinu, G., Lazaridou, A., \& Baroni, M. (2015).
 \newblock Improving zero-shot learning by mitigating the hubness problem.
-\newblock {\em arXiv preprint arXiv:1412.6568}.
+\newblock {\em ICLR}.
 
 \bibitem[Dolan et~al., 2004]{dolan2004unsupervised}
 Dolan, B., Quirk, C., \& Brockett, C. (2004).
@@ -541,6 +543,14 @@ Dolan, B., Quirk, C., \& Brockett, C. (2004).
 \newblock In {\em Proceedings of the 20th international conference on
   Computational Linguistics}  (pp.\ 350).: Association for Computational
   Linguistics.
+
+\bibitem[Donahue et~al., 2015]{donahue2014long}
+Donahue, J., Anne~Hendricks, L., Guadarrama, S., Rohrbach, M., Venugopalan, S.,
+  Saenko, K., \& Darrell, T. (2015).
+\newblock Long-term recurrent convolutional networks for visual recognition and
+  description.
+\newblock In {\em Proceedings of the IEEE conference on computer vision and
+  pattern recognition}  (pp.\ 2625--2634).
 
 \bibitem[Donahue et~al., 2014]{donahue2014decaf}
 Donahue, J., Jia, Y., Vinyals, O., Hoffman, J., Zhang, N., Tzeng, E., \&
@@ -661,16 +671,16 @@ Erhan, D., Bengio, Y., Courville, A., \& Vincent, P. (2009).
 Evert, S. (2005).
 \newblock The statistics of word cooccurrences: word pairs and collocations.
 
-\bibitem[Faghri et~al., 2017]{faghri2017vse++}
-Faghri, F., Fleet, D.~J., Kiros, J.~R., \& Fidler, S. (2017).
-\newblock Vse++: Improved visual-semantic embeddings.
-\newblock {\em arXiv preprint arXiv:1707.05612}, 2(7), 8.
+\bibitem[Faghri et~al., 2018]{faghri2017vse++}
+Faghri, F., Fleet, D.~J., Kiros, J.~R., \& Fidler, S. (2018).
+\newblock Vse++: Improving visual-semantic embeddings with hard negatives.
 
-\bibitem[Fang et~al., 2014]{fang2014captions}
-Fang, H., Gupta, S., Iandola, F., Srivastava, R., Deng, L., Doll{\'a}r, P.,
-  Gao, J., He, X., Mitchell, M., Platt, J., et~al. (2014).
+\bibitem[Fang et~al., 2015]{fang2014captions}
+Fang, H., Gupta, S., Iandola, F., Srivastava, R.~K., Deng, L., Doll{\'a}r, P.,
+  Gao, J., He, X., Mitchell, M., Platt, J.~C., et~al. (2015).
 \newblock From captions to visual concepts and back.
-\newblock {\em arXiv preprint arXiv:1411.4952}.
+\newblock In {\em Proceedings of the IEEE conference on computer vision and
+  pattern recognition}  (pp.\ 1473--1482).
 
 \bibitem[Faruqui \& Dyer, 2014]{faruqui2014community}
 Faruqui, M. \& Dyer, C. (2014).
@@ -1087,10 +1097,12 @@ Kiela, D. \& Bottou, L. (2014).
 \newblock In {\em Proceedings of the 2014 Conference on Empirical Methods in
   Natural Language Processing (EMNLP)}  (pp.\ 36--45).
 
-\bibitem[Kiela et~al., 2017]{kiela2017learning}
-Kiela, D., Conneau, A., Jabri, A., \& Nickel, M. (2017).
+\bibitem[Kiela et~al., 2018]{kiela2017learning}
+Kiela, D., Conneau, A., Jabri, A., \& Nickel, M. (2018).
 \newblock Learning visually grounded sentence representations.
-\newblock {\em arXiv preprint arXiv:1707.06320}.
+\newblock In {\em Proceedings of the 2018 Conference of the North American
+  Chapter of the Association for Computational Linguistics: Human Language
+  Technologies, Volume 1 (Long Papers)}  (pp.\ 408--418).
 
 \bibitem[Kiela et~al., 2014]{kiela2014improving}
 Kiela, D., Hill, F., Korhonen, A., \& Clark, S. (2014).
@@ -1225,6 +1237,13 @@ Landauer, T.~K. \& Dumais, S.~T. (1997).
   acquisition, induction, and representation of knowledge.
 \newblock {\em Psychological review}, 104(2), 211.
 
+\bibitem[Lazaridou et~al., 2015]{lazaridou2015combining}
+Lazaridou, A., Baroni, M., et~al. (2015).
+\newblock Combining language and vision with a multimodal skip-gram model.
+\newblock In {\em Proceedings of the 2015 Conference of the North American
+  Chapter of the Association for Computational Linguistics: Human Language
+  Technologies}  (pp.\ 153--163).
+
 \bibitem[Lazaridou et~al., 2016]{lazaridou2016multimodal}
 Lazaridou, A., Chrupa{\l}a, G., Fern{\'a}ndez, R., \& Baroni, M. (2016).
 \newblock Multimodal semantic learning from child-directed input.
@@ -1237,11 +1256,6 @@ Lazaridou, A., Marelli, M., \& Baroni, M. (2017).
 \newblock Multimodal word meaning induction from minimal exposure to natural
   text.
 \newblock {\em Cognitive science}, 41, 677--705.
-
-\bibitem[Lazaridou et~al., 2015]{lazaridou2015combining}
-Lazaridou, A., Pham, N.~T., \& Baroni, M. (2015).
-\newblock Combining language and vision with a multimodal skip-gram model.
-\newblock {\em arXiv preprint arXiv:1501.02598}.
 
 \bibitem[Le \& Zuidema, 2015]{le2015compositional}
 Le, P. \& Zuidema, W. (2015).
@@ -1542,11 +1556,12 @@ Nam, H., Ha, J.-W., \& Kim, J. (2017).
 \newblock In {\em Proceedings of the IEEE Conference on Computer Vision and
   Pattern Recognition}  (pp.\ 299--307).
 
-\bibitem[Nelson et~al., 1998]{nelsonuniversity}
-Nelson, D., McEvoy, C., \& Schreiber, T. (1998).
-\newblock The university of south florida word association, rhyme, and word
-  fragment norms. 1998 http://www. usf. edu.
-\newblock {\em FreeAssociation.[PubMed]}.
+\bibitem[Nelson et~al., 2004]{nelsonuniversity}
+Nelson, D.~L., McEvoy, C.~L., \& Schreiber, T.~A. (2004).
+\newblock The university of south florida free association, rhyme, and word
+  fragment norms.
+\newblock {\em Behavior Research Methods, Instruments, \& Computers}, 36(3),
+  402--407.
 
 \bibitem[Nevin \& Johnson, 2002]{nevin2002legacy}
 Nevin, B.~E. \& Johnson, S.~M. (2002).
@@ -1689,11 +1704,13 @@ Radovanovi{\'c}, M., Nanopoulos, A., \& Ivanovi{\'c}, M. (2010).
 \newblock In {\em Proceedings of the 33rd international ACM SIGIR conference on
   Research and development in information retrieval}  (pp.\ 186--193).: ACM.
 
-\bibitem[Rajendran et~al., 2015]{rajendran2015bridge}
-Rajendran, J., Khapra, M.~M., Chandar, S., \& Ravindran, B. (2015).
+\bibitem[Rajendran et~al., 2016]{rajendran2015bridge}
+Rajendran, J., Khapra, M.~M., Chandar, S., \& Ravindran, B. (2016).
 \newblock Bridge correlational neural networks for multilingual multimodal
   representation learning.
-\newblock {\em arXiv preprint arXiv:1510.03519}.
+\newblock In {\em Proceedings of the 2016 Conference of the North American
+  Chapter of the Association for Computational Linguistics: Human Language
+  Technologies}  (pp.\ 171--181).
 
 \bibitem[Rao, 1969]{rao1969partial}
 Rao, B.~R. (1969).
@@ -1953,14 +1970,15 @@ Sutskever, I., Vinyals, O., \& Le, Q.~V. (2014).
 \newblock In {\em Advances in neural information processing systems}  (pp.\
   3104--3112).
 
-\bibitem[Szegedy et~al., 2014]{szegedy2014going}
+\bibitem[Szegedy et~al., 2015a]{szegedy2014going}
 Szegedy, C., Liu, W., Jia, Y., Sermanet, P., Reed, S., Anguelov, D., Erhan, D.,
-  Vanhoucke, V., \& Rabinovich, A. (2014).
+  Vanhoucke, V., \& Rabinovich, A. (2015a).
 \newblock Going deeper with convolutions.
-\newblock {\em arXiv preprint arXiv:1409.4842}.
+\newblock In {\em Proceedings of the IEEE conference on computer vision and
+  pattern recognition}  (pp.\ 1--9).
 
-\bibitem[Szegedy et~al., 2015]{Szegedy2015}
-Szegedy, C., Vanhoucke, V., Ioffe, S., Shlens, J., \& Wojna, Z. (2015).
+\bibitem[Szegedy et~al., 2015b]{Szegedy2015}
+Szegedy, C., Vanhoucke, V., Ioffe, S., Shlens, J., \& Wojna, Z. (2015b).
 \newblock Rethinking the inception architecture for computer vision.
 \newblock {\em CoRR}, abs/1512.00567.
 
@@ -2237,7 +2255,8 @@ Zhou, B., Khosla, A., Lapedriza, A., Oliva, A., \& Torralba, A. (2015).
 
 \bibitem[Zipf, 1949]{zipf1949human}
 Zipf, G.~K. (1949).
-\newblock Human behavior and the principle of least effort.
+\newblock {\em Human Behaviour and the Principle of Least Effort}.
+\newblock Addison-Wesley.
 
 \bibitem[Zoph et~al., 2016]{zoph2016transfer}
 Zoph, B., Yuret, D., May, J., \& Knight, K. (2016).
