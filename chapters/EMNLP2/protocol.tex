@@ -1,0 +1,77 @@
+\section{Experimental Protocol}
+
+\subsection{Model}
+
+Our implementation, training protocol and parameter settings are based on the existing codebase of \cite{kadar2018conll}.
+%\footnote{\url{https://github.com/kadarakos/mulisera}}.
+In all experiments, we use the 2048 dimensional image features extracted from the
+last average-pooling layer of a pre-trained\footnote{Trained on the ILSVRC 2012 1.2M image 1000 class object classification
+subset ImageNet \citep{russakovsky2015imagenet}} 
+ResNet50 CNN \citep{he2016deep}. 
+  
+The image representation used in our model is obtained by a single 
+affine transformation that we train from scratch 
+$\mathbf{W}_{I} \in \mathbb{R}^{2048 \times 1024}$. For the sentence
+encoder we use a uni-directional Gated Recurrent Unit (GRU) 
+network \citep{cho2014properties} with a single hidden layer with 
+1024  hidden units and 300 dimensional word embeddings. 
+When training bilingual models we use a single word embedding
+for the same word-forms, making no distinction if they come 
+from different languages. Each sentence is represented by the final 
+hidden state of the GRU. For the similarity function in the loss function (Eq. 1) we use cosine similarity and $\alpha=0.2$ margin parameter.
+
+In all experiments we inspect the model performance on the validation 
+set at every 500 updates
+and stop training when no improvement is observed for 10 inspections. 
+The performance metric we use as the stopping criterion is the 
+sum of text-to-image (T$\rightarrow$I) and 
+image-to-text (I$\rightarrow$T) recall scores at ranks 
+1, 5 and 10 across all languages in the training data. 
+In all experiments we use a batch-size of 128.
+The models are trained with the Adam optimizer \citep{kingma2014adam} 
+using default parameters and an initial learning rate of
+\mbox{2e-4}
+without applying any learning-rate decay schedule.
+We apply gradient norm clipping with a value of 2.0.
+
+We use a pre-trained
+%\footnote{As opposed to an online service, such as Google Translate to facilitate reproducibility.}
+OpenNMT \citep{2017opennmt} English-German machine translation model\footnote{\footnotesize{\url{https://s3.amazonaws.com/opennmt-models/wmt-ende_l2-h1024-bpe32k_release.tar.gz}}} to create the data for the translation approach described in Section \ref{sec:method:mt}.
+
+\subsection{Datasets}
+%\todo{Consider making a Table from the data set statistics.}
+
+The models are trained and evaluated on the bilingual English-German Multi30K dataset (M30K), and we
+optionally train on the English COCO dataset 
+\citep{DBLP:journals/corr/ChenFLVGDZ15}. In \textit{monolingual} 
+experiments, the model is trained on a single language from M30K or 
+COCO.
+
+In the \emph{aligned} bilingual experiments, we use the
+independently collected English and German captions in M30K:
+%30K images with 5 English captions for each language per image
+%(taken from the Flickr30K dataset \cite{young2014image}). 
+The training set consists of 29K images and 145K captions; the validation and test sets have 1K images and 5K captions. 
+
+For the \emph{disjoint} experiments, we use the COCO data set
+with the \cite{karpathy2015deep} splits. This gives 82,783 training,
+5,000 validation, and 5,000 test images; each image is paired with five captions.
+The data set has an additional split containing the  
+30,504 images from the original validation set of 
+MS-COCO (``restval''),
+%\footnote{Usually referred to 
+% as "restval" meaning the rest of the original validation set .}, 
+ which we add to the training set as in previous work \citep{karpathy2015deep,vendrov2016order,faghri2017vse++}.
+ 
+%In all of our experiments we report results and perform early-stopping on the M30K data. We report results on Mutimodal Transaltion Shared Task 2016 Test split \cite{specia2016shared}. We do not use the test and validation sets of COCO in any of our experiments.
+
+
+\subsection{Evaluation}
+We report results on Multimodal Translation Shared Task 2016 test split \citep{specia2016shared} of M30K. 
+Due to space constraints, we only report recall at 1 (R@1) for 
+Image-to-Text (I$\rightarrow$T) and Text-to-Image (T$\rightarrow$I)
+retrieval, and the sum of R@1, R@5, and R@10 recall scores across both tasks and languages (Sum).\footnote{This is the criterion we use
+for early-stopping.}
+%The complete set of results including Recall@5 and Recall@10 can be found in the Supplementary Material.
+
+%Recall@1, 5, and 10 for image-to-text retrieval (T $\rightarrow$ I) and text-to-image retrieval (I $\rightarrow$ T). 

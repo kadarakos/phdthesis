@@ -71,13 +71,6 @@ Antol, S., Agrawal, A., Lu, J., Mitchell, M., Batra, D., Lawrence~Zitnick, C.,
 \newblock In {\em Proceedings of the IEEE International Conference on Computer
   Vision}  (pp.\ 2425--2433).
 
-\bibitem[AP et~al., 2014]{ap2014autoencoder}
-AP, S.~C., Lauly, S., Larochelle, H., Khapra, M., Ravindran, B., Raykar, V.~C.,
-  \& Saha, A. (2014).
-\newblock An autoencoder approach to learning bilingual word representations.
-\newblock In {\em Advances in Neural Information Processing Systems}  (pp.\
-  1853--1861).
-
 \bibitem[Bach et~al., 2015]{bach2015pixel}
 Bach, S., Binder, A., Montavon, G., Klauschen, F., M{\"u}ller, K.-R., \& Samek,
   W. (2015).
@@ -361,14 +354,27 @@ Cettolo, M., Niehues, J., St{\"u}ker, S., Bentivogli, L., \& Federico, M.
 \newblock In {\em Proceedings of the International Workshop on Spoken Language
   Translation, Hanoi, Vietnam}  (pp.\~57).
 
+\bibitem[Chandar et~al., 2014]{ap2014autoencoder}
+Chandar, A., Lauly, S., Larochelle, H., Khapra, M.~M., Ravindran, B., Raykar,
+  V., \& Saha, A. (2014).
+\newblock An autoencoder approach to learning bilingual word representations.
+\newblock In {\em Proceedings of the 27th International Conference on Neural
+  Information Processing Systems-Volume 2}  (pp.\ 1853--1861).: MIT Press.
+
 \bibitem[Chandar et~al., 2016]{chandar2016correlational}
 Chandar, S., Khapra, M.~M., Larochelle, H., \& Ravindran, B. (2016).
 \newblock Correlational neural networks.
 \newblock {\em Neural computation}, 28(2), 257--285.
 
-\bibitem[Chen et~al., 2015]{Chen2015}
+\bibitem[Chen et~al., 2015a]{Chen2015}
 Chen, X., Fang, H., Lin, T., Vedantam, R., Gupta, S., Doll{\'{a}}r, P., \&
-  Zitnick, C.~L. (2015).
+  Zitnick, C.~L. (2015a).
+\newblock Microsoft {COCO} captions: Data collection and evaluation server.
+\newblock {\em CoRR}, abs/1504.00325.
+
+\bibitem[Chen et~al., 2015b]{DBLP:journals/corr/ChenFLVGDZ15}
+Chen, X., Fang, H., Lin, T., Vedantam, R., Gupta, S., Doll{\'{a}}r, P., \&
+  Zitnick, C.~L. (2015b).
 \newblock Microsoft {COCO} captions: Data collection and evaluation server.
 \newblock {\em CoRR}, abs/1504.00325.
 
@@ -417,7 +423,7 @@ Chrupa{\l}a, G., Gelderloos, L., K{\'a}d{\'a}r, {\'A}., \& Alishahi, A. (2019).
   2(1), 167--173.
 
 \bibitem[Chrupa{\l}a et~al., 2015]{chrupala2015learning}
-Chrupa{\l}a, G., K{\'a}d{\'a}r, {\`A}., \& Alishahi, A. (2015).
+Chrupa{\l}a, G., K{\'a}d{\'a}r, {\'A}., \& Alishahi, A. (2015).
 \newblock Learning language through pictures.
 \newblock In {\em Proceedings of the 53rd Annual Meeting of the Association for
   Computational Linguistics and the 7th International Joint Conference on
@@ -634,8 +640,8 @@ Elliott, D., Frank, S., Sima'an, K., \& Specia, L. (2016).
 Elliott, D. \& K{\'a}d{\'a}r, {\`A}. (2017).
 \newblock Imagination improves multimodal translation.
 \newblock In {\em Proceedings of the Eighth International Joint Conference on
-  Natural Language Processing (Volume 1: Long Papers)}, volume~1  (pp.\
-  130--141).
+  Natural Language Processing (IJCNLP) (Volume 1: Long Papers)}, volume~1
+  (pp.\ 130--141).
 
 \bibitem[Elliott \& Keller, 2014]{elliott2014comparing}
 Elliott, D. \& Keller, F. (2014).
@@ -1031,11 +1037,11 @@ Kachergis, G., Yu, C., \& Shiffrin, R.~M. (2012).
 \bibitem[K{\'a}d{\'a}r et~al., 2015a]{kadar2015learning}
 K{\'a}d{\'a}r, {\'A}., Alishahi, A., \& Chrupa{\l}a, G. (2015a).
 \newblock Learning word meanings from images of natural scenes.
-\newblock {\em Traitement Automatique des Langues}, 55(3).
+\newblock {\em Traitement Automatique des Langues (TAL)}, 55(3).
 
 \bibitem[K{\'a}d{\'a}r et~al., 2015b]{kadar2015lingusitic}
-K{\'a}d{\'a}r, A., Chrupa{\l}a, G., \& Alishahi, A. (2015b).
-\newblock Lingusitic analysis of multi-modal recurrent neural networks.
+K{\'a}d{\'a}r, {\'A}., Chrupa{\l}a, G., \& Alishahi, A. (2015b).
+\newblock Linguistic analysis of multi-modal recurrent neural networks.
 \newblock In {\em Proceedings of the Fourth Workshop on Vision and Language}
   (pp.\ 8--9).
 
@@ -1043,12 +1049,12 @@ K{\'a}d{\'a}r, A., Chrupa{\l}a, G., \& Alishahi, A. (2015b).
 K{\'a}d{\'a}r, A., Chrupa{\l}a, G., \& Alishahi, A. (2017).
 \newblock Representation of linguistic form and function in recurrent neural
   networks.
-\newblock {\em Computational Linguistics}, 43(4), 761--780.
+\newblock {\em Computational Linguistics (CL)}, 43(4), 761--780.
 
 \bibitem[K{\'a}d{\'a}r et~al., 2018a]{kadar2018revisiting}
 K{\'a}d{\'a}r, {\'A}., C{\^o}t{\'e}, M.-A., Chrupa{\l}a, G., \& Alishahi, A.
   (2018a).
-\newblock Revisiting the hierarchical multiscale lstm.
+\newblock Revisiting the hierarchical multiscale {LSTM}.
 \newblock In {\em Proceedings of the 27th International Conference on
   Computational Linguistics}  (pp.\ 3215--3227).
 
@@ -1057,12 +1063,13 @@ K{\'a}d{\'a}r, {\'A}., Elliott, D., C{\^o}t{\.e}, M.-A., Chrupa{\l}a, G., \&
   Alishahi, A. (2018b).
 \newblock Lessons learned in multilingual grounded language learning.
 \newblock In {\em Proceedings of the 22nd Conference on Computational Natural
-  Language Learning}  (pp.\ 402--412).
+  Language Learning (ConLL)}  (pp.\ 402--412).
 
 \bibitem[Kahou et~al., 2018]{kahou2017figureqa}
 Kahou, S.~E., Atkinson, A., Michalski, V., K{\'a}d{\'a}r, {\'A}., Trischler,
   A., \& Bengio, Y. (2018).
 \newblock Figureqa: An annotated figure dataset for visual reasoning.
+\newblock {\em ICLR Workshop}.
 
 \bibitem[Karpathy \& Fei-Fei, 2015]{karpathy2015deep}
 Karpathy, A. \& Fei-Fei, L. (2015).
@@ -1945,12 +1952,19 @@ Socher, R., Perelygin, A., Wu, J.~Y., Chuang, J., Manning, C.~D., Ng, A.~Y., \&
 \newblock In {\em Conference on Empirical Methods in Natural Language
   Processing (EMNLP)}, volume 1631  (pp.\ 1642).
 
-\bibitem[Specia et~al., 2016]{Specia2016}
-Specia, L., Frank, S., Sima'an, K., \& Elliott, D. (2016).
+\bibitem[Specia et~al., 2016a]{Specia2016}
+Specia, L., Frank, S., Sima'an, K., \& Elliott, D. (2016a).
 \newblock A shared task on multimodal machine translation and crosslingual
   image description.
 \newblock In {\em Proceedings of the First Conference on Machine Translation}
   (pp.\ 543--553).
+
+\bibitem[Specia et~al., 2016b]{specia2016shared}
+Specia, L., Frank, S., Sima'an, K., \& Elliott, D. (2016b).
+\newblock A shared task on multimodal machine translation and crosslingual
+  image description.
+\newblock In {\em Proceedings of the First Conference on Machine Translation:
+  Volume 2, Shared Task Papers}, volume~2  (pp.\ 543--553).
 
 \bibitem[Srivastava et~al., 2015]{Srivastava2015}
 Srivastava, N., Mansimov, E., \& Salakhudinov, R. (2015).
@@ -2039,8 +2053,8 @@ Turney, P.~D., Neuman, Y., Assaf, D., \& Cohen, Y. (2011).
   in Natural Language Processing}  (pp.\ 680--690).
 
 \bibitem[van Miltenburg et~al., 2018]{van2018didec}
-van Miltenburg, E., K{\'a}dar, A., Koolen, R., \& Krahmer, E. (2018).
-\newblock Didec: The dutch image description and eye-tracking corpus.
+van Miltenburg, E., K{\'a}d{\'a}r, {\'A}., Koolen, R., \& Krahmer, E. (2018).
+\newblock Didec: The {D}utch image description and eye-tracking corpus.
 \newblock In {\em Proceedings of the 27th International Conference on
   Computational Linguistics}  (pp.\ 3658--3669).
 
@@ -2252,11 +2266,6 @@ Zhang, X., Zhao, J., \& LeCun, Y. (2015).
 Zhou, B., Khosla, A., Lapedriza, A., Oliva, A., \& Torralba, A. (2015).
 \newblock Object detectors emerge in deep scene cnns.
 \newblock In {\em International Conference on Learning Representations (ICLR)}.
-
-\bibitem[Zipf, 1949]{zipf1949human}
-Zipf, G.~K. (1949).
-\newblock {\em Human Behaviour and the Principle of Least Effort}.
-\newblock Addison-Wesley.
 
 \bibitem[Zoph et~al., 2016]{zoph2016transfer}
 Zoph, B., Yuret, D., May, J., \& Knight, K. (2016).

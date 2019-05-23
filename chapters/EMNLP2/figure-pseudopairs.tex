@@ -1,0 +1,60 @@
+\begin{figure*}[t]
+\begin{center}
+
+\setlength\tabcolsep{8pt}
+
+\begin{tabular}{cccc}
+\subcaptionbox*{
+1.) Ein hund steht auf einem baumstamm im wald. \\  \vspace{1.3em}
+2.) Hund im wald.
+}
+{\includegraphics[width = 0.21\textwidth]{chapters/EMNLP2/assets/8.png}} &
+\subcaptionbox*{
+1.) Mann sitzt im baum. \\ \vspace{3.6em}
+2.) Der mann der auf einem baum sitzt.}
+{\includegraphics[width = 0.21\textwidth]{chapters/EMNLP2/assets/2.png}} &
+\subcaptionbox*{
+1.) Ein mann sitzt in einem boot auf einem see. \\ \vspace{1em}  
+2.) Ein mann sitzt am see auf dem ein boot fährt.}
+{\includegraphics[trim={0 0 0 2.3cm}, clip, width = 0.21\textwidth]{chapters/EMNLP2/assets/9.png}} &
+\subcaptionbox*{
+1.) Ein jet jagt steil in die luft, viel rauch kommt aus dem rumpf. \\ \vspace{1em} 
+2.) Ein jet jagt steil in die luft, viel rauch kommt aus dem rumpf.}
+{\includegraphics[width = 0.21\textwidth]{chapters/EMNLP2/assets/5.png}}
+%\subfloat[- Ein mann und eine katze sitzen nebeneinander auf einer roten couch. \newline - Frau liegt mit katze auf dem arm auf dem sofa]{\includegraphics[width = 0.21\textwidth]{assets/4.png}} &
+%\\
+%\subfloat[- Pferd auf der wiese. \newline - Pferd auf der wiese.]
+%{\includegraphics[width = 0.21\textwidth]{assets/6.png}} &
+%\subfloat[- Ein surfer macht windsurfing auf dem meer. \newline - Eine person mit fallschirm fliegt am meer.]
+%{\includegraphics[width = 0.21\textwidth]{assets/7.png}} &
+% &
+%\subfloat[- Das schild eines kaffeehauses ist mit graffitis vollgesprüht. \newline - Fans halten schilder im stadion hoch %.]{\includegraphics[width = 0.21\textwidth]{assets/10.png}} 
+\end{tabular}
+\end{center}
+
+\caption{Visualisation of the sentences transferred from Multi30K to the COCO data set using the pseudopair method. (1) is transferred from a model trained on De+COCO, whereas (2) is transferred from En+De+COCO.}
+\label{fig:pseudopairs}
+\end{figure*}
+
+\begin{comment}
+\begin{figure*}[t]
+\begin{center}
+
+\setlength\tabcolsep{8pt}
+\begin{tabular}{lcccc}
+\subfloat[\circled{1} \vspace{5.2em}\newline \circled{2}] &
+\subfloat[Ein hund steht auf einem baumstamm im wald. \newline$\lbrack$\emph{A dog is standing on a tree trunk in the forest.}$\rbrack$ \vspace{3.2em}\newline Hund im wald. \newline$\lbrack$\emph{Dog in the forest.}$\rbrack$]
+{\includegraphics[width = 0.21\textwidth]{chapters/EMNLP2/assets/8.png}} &
+\subfloat[Mann sitzt im baum. \newline$\lbrack$\emph{Man is sitting in the tree.}$\rbrack$ \vspace{3.2em}\newline\newline Der mann der auf einem baum sitzt. \newline$\lbrack$\emph{The man sits on the tree.}$\rbrack$]
+{\includegraphics[width = 0.21\textwidth]{chapters/EMNLP2/assets/2.png}} &
+\subfloat[Ein mann sitzt in einem boot auf einem see. \newline$\lbrack$\emph{A man is sitting in a boat on a lake.}$\rbrack$ \vspace{3.2em}\newline Ein mann sitzt am see auf dem ein boot fährt. \newline$\lbrack$\emph{A man is sitting at the lake on which a boat is riding.}$\rbrack$]
+{\includegraphics[trim={0 0 0 2.3cm}, clip, width = 0.21\textwidth]{chapters/EMNLP2/assets/9.png}} &
+\subfloat[Ein jet jagt steil in die luft, viel rauch kommt aus dem rumpf. \newline$\lbrack$\emph{A jet goes steep up into the air, a lot of smoke is coming out of its hull.}$\rbrack$ \vspace{1em}\newline Ein jet jagt steil in die luft, viel rauch kommt aus dem rumpf. \newline$\lbrack$\emph{A jet goes steep up into the air, a lot of smoke is coming out of its hull.}$\rbrack$]
+{\includegraphics[width = 0.21\textwidth]{chapters/EMNLP2/assets/5.png}}
+\end{tabular}
+\end{center}
+
+\caption{Visualisation of the sentences transferred from Multi30K to the COCO data set using the pseudopair method. \circled{1} is transferred from a model trained on De+COCO, whereas \circled{2} is transferred from En+De+COCO. $\lbrack$English glosses of the sentences are included for ease of reading.$\rbrack$}
+\label{fig:pseudopairs}
+\end{figure*}
+\end{comment}

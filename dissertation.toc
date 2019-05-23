@@ -19,8 +19,8 @@
 \contentsline {section}{\numberline {2.2}Visually grounded representations of words}{21}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}Language and perception}{21}{subsection.2.2.1}
 \contentsline {subsection}{\numberline {2.2.2}Combined distributional and visual spaces}{23}{subsection.2.2.2}
-\contentsline {section}{\numberline {2.3}From words to sentences}{28}{section.2.3}
-\contentsline {section}{\numberline {2.4}Neural sentence representations}{30}{section.2.4}
+\contentsline {section}{\numberline {2.3}From words to sentences}{27}{section.2.3}
+\contentsline {section}{\numberline {2.4}Neural sentence representations}{29}{section.2.4}
 \contentsline {section}{\numberline {2.5}Visually grounded sentence representations}{33}{section.2.5}
 \contentsline {section}{\numberline {2.6}Visually grounded multilingual representations}{37}{section.2.6}
 \contentsline {subsection}{\numberline {2.6.1}Multi-view representation learning perspective}{37}{subsection.2.6.1}
@@ -52,7 +52,7 @@
 \contentsline {subsubsection}{\numberline {3.4.2.2}Single-concept image descriptors}{75}{subsubsection.3.4.2.2}
 \contentsline {section}{\numberline {3.5}Discussion and conclusion}{78}{section.3.5}
 \contentsline {chapter}{\numberline {4}Representation of linguistic form and function in recurrent neural networks}{81}{chapter.4}
-\contentsline {paragraph}{abstract}{81}{section*.17}
+\contentsline {paragraph}{Abstract}{81}{section*.17}
 \contentsline {paragraph}{This chapter is based on}{83}{section*.18}
 \contentsline {section}{\numberline {4.1}Introduction}{84}{section.4.1}
 \contentsline {section}{\numberline {4.2}Related work}{86}{section.4.2}
@@ -72,7 +72,7 @@
 \contentsline {subsection}{\numberline {4.5.1}Generalizing to other architectures}{113}{subsection.4.5.1}
 \contentsline {subsection}{\numberline {4.5.2}Future directions}{114}{subsection.4.5.2}
 \contentsline {chapter}{\numberline {5}Imagination Improves Multimodal Translation}{115}{chapter.5}
-\contentsline {paragraph}{abstract}{115}{section*.32}
+\contentsline {paragraph}{Abstract}{115}{section*.32}
 \contentsline {paragraph}{This chapter is based on}{116}{section*.33}
 \contentsline {section}{\numberline {5.1}Introduction}{117}{section.5.1}
 \contentsline {section}{\numberline {5.2}Problem Formulation}{120}{section.5.2}
@@ -95,7 +95,7 @@
 \contentsline {section}{\numberline {5.7}Related work}{136}{section.5.7}
 \contentsline {section}{\numberline {5.8}Conclusion}{139}{section.5.8}
 \contentsline {chapter}{\numberline {6}Lessons learned in multilingual grounded language learning}{141}{chapter.6}
-\contentsline {paragraph}{abstract}{141}{section*.44}
+\contentsline {paragraph}{Abstract}{141}{section*.44}
 \contentsline {paragraph}{This chapter is based on}{142}{section*.45}
 \contentsline {section}{\numberline {6.1}Introduction}{143}{section.6.1}
 \contentsline {section}{\numberline {6.2}Related work}{146}{section.6.2}
@@ -113,8 +113,8 @@
 \contentsline {subsection}{\numberline {6.6.2}High-to-low resource transfer}{160}{subsection.6.6.2}
 \contentsline {subsection}{\numberline {6.6.3}Bilingual vs. multilingual}{161}{subsection.6.6.3}
 \contentsline {section}{\numberline {6.7}Conclusions}{162}{section.6.7}
-\contentsline {chapter}{\numberline {7}Synthetic Pairs for Multilingual Grounded Language Learning}{165}{chapter.7}
-\contentsline {paragraph}{abstract}{165}{section*.60}
+\contentsline {chapter}{\numberline {7}Bootstrapping disjoint datasets for multilingual multimodal representation learning}{165}{chapter.7}
+\contentsline {paragraph}{Abstract}{165}{section*.60}
 \contentsline {paragraph}{This chapter is based on}{167}{section*.61}
 \contentsline {section}{\numberline {7.1}Introduction}{168}{section.7.1}
 \contentsline {section}{\numberline {7.2}Method}{170}{section.7.2}
@@ -122,29 +122,28 @@
 \contentsline {subsection}{\numberline {7.2.2}Pseudopairs approach}{171}{subsection.7.2.2}
 \contentsline {paragraph}{Filtering}{172}{section*.62}
 \contentsline {paragraph}{Fine-tuning vs. restart}{172}{section*.63}
-\contentsline {subsection}{\numberline {7.2.3}Translation approach}{172}{subsection.7.2.3}
+\contentsline {subsection}{\numberline {7.2.3}Translation approach}{173}{subsection.7.2.3}
 \contentsline {section}{\numberline {7.3}Experimental Protocol}{173}{section.7.3}
 \contentsline {subsection}{\numberline {7.3.1}Model}{173}{subsection.7.3.1}
 \contentsline {subsection}{\numberline {7.3.2}Datasets}{174}{subsection.7.3.2}
 \contentsline {subsection}{\numberline {7.3.3}Evaluation}{175}{subsection.7.3.3}
 \contentsline {section}{\numberline {7.4}Baseline Results}{175}{section.7.4}
 \contentsline {paragraph}{Aligned}{175}{table.caption.67}
-\contentsline {paragraph}{Disjoint}{177}{section*.68}
+\contentsline {paragraph}{Disjoint}{176}{section*.68}
 \contentsline {paragraph}{Aligned plus disjoint}{178}{section*.69}
 \contentsline {paragraph}{Summary}{178}{section*.70}
 \contentsline {section}{\numberline {7.5}Training with Pseudopairs}{178}{section.7.5}
 \contentsline {paragraph}{Disjoint}{179}{section*.73}
-\contentsline {paragraph}{Aligned plus disjoint}{179}{section*.74}
-\contentsline {paragraph}{Summary}{180}{section*.75}
+\contentsline {paragraph}{Aligned plus disjoint}{180}{section*.74}
+\contentsline {paragraph}{Summary}{181}{section*.75}
 \contentsline {section}{\numberline {7.6}Training with Translations}{181}{section.7.6}
-\contentsline {paragraph}{Disjoint}{181}{section*.78}
-\contentsline {paragraph}{Aligned plus Disjoint}{182}{section*.79}
-\contentsline {paragraph}{Summary}{182}{section*.80}
-\contentsline {section}{\numberline {7.7}Discussion}{182}{section.7.7}
-\contentsline {subsection}{\numberline {7.7.1}Sentence-similarity quality}{182}{subsection.7.7.1}
-\contentsline {subsection}{\numberline {7.7.2}Characteristics of the Pseudopairs}{184}{subsection.7.7.2}
-\contentsline {section}{\numberline {7.8}Related Work}{185}{section.7.8}
-\contentsline {section}{\numberline {7.9}Conclusions}{187}{section.7.9}
+\contentsline {paragraph}{Disjoint}{181}{section*.77}
+\contentsline {paragraph}{Aligned plus Disjoint}{182}{section*.78}
+\contentsline {paragraph}{Summary}{182}{section*.79}
+\contentsline {subsection}{\numberline {7.6.1}Sentence-similarity quality}{182}{subsection.7.6.1}
+\contentsline {subsection}{\numberline {7.6.2}Characteristics of the Pseudopairs}{183}{subsection.7.6.2}
+\contentsline {section}{\numberline {7.7}Related Work}{185}{section.7.7}
+\contentsline {section}{\numberline {7.8}Conclusions}{187}{section.7.8}
 \contentsline {chapter}{\numberline {8}Discussion and Conclusion}{189}{chapter.8}
 \contentsline {section}{\numberline {8.1}Visually grounded word representations}{189}{section.8.1}
 \contentsline {section}{\numberline {8.2}Visually grounded sentence representations}{192}{section.8.2}
@@ -155,5 +154,5 @@
 \contentsline {subsection}{\numberline {8.5.2}Multi-task learning}{201}{subsection.8.5.2}
 \contentsline {subsection}{\numberline {8.5.3}Local image descriptors}{202}{subsection.8.5.3}
 \contentsline {section}{\numberline {8.6}Conclusion}{203}{section.8.6}
-\contentsline {chapter}{References}{207}{section*.84}
-\contentsline {chapter}{TiCC PhD Series}{243}{section*.86}
+\contentsline {chapter}{References}{207}{section*.82}
+\contentsline {chapter}{TiCC PhD Series}{244}{section*.84}

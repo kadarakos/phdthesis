@@ -1,0 +1,26 @@
+\section{Conclusions}
+
+Previous work has demonstrated improved image--sentence ranking performance
+when training models jointly on multiple languages \citep{gella2017image,kadar2018conll}. Here we presented a study on learning multimodal
+and multilingual representations in the \emph{disjoint setting}, where
+images between languages do not overlap.
+We found that learning representations in this
+setting is more challenging. 
+%than when the images are \emph{aligned} between languages. 
+To close the gap, we developed a \emph{pseudopairing} 
+technique that creates synthetic pairs by annotating the
+images from one of the data sets with the image 
+descriptions of the other using the
+sentence similarities of the model trained on both. 
+We showed that training with pseudopairs 
+improves performance,
+without the need to augment training from additional 
+data sources or other pipeline components. 
+However, our technique is outperformed
+by creating synthetic pairs using an off-the-shelf automatic machine translation system. 
+As such our results suggest that it is better to 
+use translation, when a good translation system 
+is available, however, in its absence, pseudopairs
+offer consistent improvements. 
+We have found that our pseudopairing method only transfers annotations from a small number of images and in the future we plan to substitute our naive matching algorithms
+with approaches developed to mitigate this hubness issue \citep{radovanovic2010existence} and to close the gap between translation and pseudopairs.%,tomavsev2011influence,tomavsev2011probabilistic,dinu2014improving}.

@@ -1,0 +1,85 @@
+\subsection{Sentence-similarity quality}
+
+The core of the proposed pseudopairing method is based on measuring the similarity between sentences, but how well does our model encode similar sentences? Here we analyze the ability of our models to identify translation equivalent sentences using the English-German translation pairs in the Multi30K test 2016 data. This experiment proceeds as follows: (i) we assume a pre-trained image--sentence ranking model, (ii) we encode the German and English sentences using the language encoder of the model, (iii) we calculate the model's performance on the task of ranking the correct translation for English sentences, given the German caption, and vice-versa. 
+%DPCCA is a deep partial canonical correlation analysis method that maximizes the correlation between captions of the same image conditioned on image representations. The Bridge Correlation Network (BCN) \cite{rajendran2015bridge} is trained to maximize the correlation between the sentences using images as pivots. IMG\_PIVOT \cite{D17-1303} is most similar to our approach, except it uses VGG19 image features instead of ResNet, the sum-of-hinges instead of max-of-hinges loss, and no c2c objective. 
+
+To put our results into perspective we compare to the 
+best approach
+to our knowledge as reported by \cite{rotman2018bridging}: DPCCA is a deep partial canonical correlation analysis method maximizing the canonical correlation between captions of the same image conditioned on image representations as a third view. 
+Table~\ref{tab:translate} reports the results of this experiment.
+Our models consistently improve upon the state-of-the-art. The baseline aligned model trained on the Multi30K data slightly outperforms the DPCCA for EN $\rightarrow$ DE retrieval, and more substantially outperforms DPCCA for DE $\rightarrow$ EN. If we train the same model with the additional c2c objective, R@1 improves by 8.0 and 12.1 points, respectively. We find that adding more monolingual English data from the external COCO data set slightly degrades retrieval performance, and that performing sentence retrieval using a model trained on the disjoint M30K German and English COCO data sets result in much lower retrieval performance. We conclude that the model that we used to estimate sentence similarity is the best-performing method known for this task on this data set, but there is room for improvement for models trained on disjoint data sets.
+
+
+\begin{table}[]
+    \centering
+    \begin{tabular}{lcc}
+    \cmidrule[0.08em](r){1-3}
+    & EN {\small $\rightarrow$} DE & DE {\small $\rightarrow$} EN \\
+    \cmidrule(rl){1-3}
+    %BCN & 57.9 & 57.0 \\
+    %IMG\_PIVOT &  77.2 & 76.3 \\
+    DPCCA &  82.6 & 79.1 \\
+    \cmidrule(rl){1-3}
+    En + De & 82.7   & 83.4  \\
+    En + De + c2c & \textbf{90.6} & \textbf{91.2}  \\
+    En + De + COCO & 82.5    & 81.0    \\
+    En + De + COCO + c2c & 90.0   & 90.1  \\
+    De + COCO & 73.4 &  70.7  \\
+    \cmidrule[0.08em](r){1-3}
+    \end{tabular}
+    \caption{Translation retrieval results (Recall @ 1) on the M30K 2016 test set compared to the state of the art.}
+    \label{tab:translate}
+\end{table}
+
+\begin{comment}
+Here we estimate the capability of our model to identify
+translation equivalence by utilizing the English-German
+translation pairs from M30K. 
+Firstly these results help us estimate how much 
+trust should be attributed to the different models
+to generate their own pseudopairs using 
+the sentence-similarity strategy.
+Furthermore, we are interested how well
+do the representations encode translation equivalence even if 
+no translation data was provided i.e. models without 
+the c2c loss solely learn the 
+relationship between languages through using the images 
+as pivots. We then move on to gauge how much these 
+results are improved when using
+the c2c loss. Note that this objective takes pairs
+of captions in different languages belonging to the same image
+as such it is still a noisy supervision for this task.
+
+In Table~\ref{tab:translate}
+we report the R@1 of retrieving the correct translation for 
+English sentences given the German caption and vica-versa on 
+the translation portion of the test set of M30K.
+We compare with the best approaches to our knowledge as
+reported by \cite{rotman2018bridging}. 
+DPCCA is a deep partial canonical correlation 
+analysis method  maximizing the correlation between
+captions of the same image conditioned 
+on image representations. The Bridge Correlation Network (BCN) 
+\cite{rajendran2015bridge} is also trained to maximize the 
+correlation between the sentences, but using images as pivots.
+IMG\_PIVOT \cite{D17-1303} is the most comparable architecture
+with the only difference that it uses the VGG-19 
+features instead of ResNet, sum-of-hinges instead 
+of max-of-hinges loss and no c2c objective. 
+
+Our models substantially improve upon the state-of-the-art. We find this results interesting as 
+\cite{rajendran2015bridge} note that DPCCA improves over the
+CNN+RNN style models even though it is less complex. However,
+our setup outperform the DPCCA even without 
+explicitly being trained to match sentences.
+Adding the c2c loss brings our approach closer to the 
+DPCCA in that here we also explicitly push sentences closer 
+to each other in the embedding space and we find large
+improvements. 
+
+We find that adding more monolingual English data
+in from COCO to the bilingual M30K model slightly degrades retrieval performance. Lastly the disjoint De+COCO
+results in a much lower retrieval performance on
+this task suggesting that this model generates 
+lower quality pseudo-pair.
+\end{comment}

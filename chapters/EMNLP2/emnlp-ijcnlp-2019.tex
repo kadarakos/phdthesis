@@ -1,0 +1,96 @@
+%
+% File emnlp2019.tex
+%
+%% Based on the style files for ACL 2019, which were
+%% Based on the style files for EMNLP 2018, which were
+%% Based on the style files for ACL 2018, which were
+%% Based on the style files for ACL-2015, with some improvements
+%%  taken from the NAACL-2016 style
+%% Based on the style files for ACL-2014, which were, in turn,
+%% based on ACL-2013, ACL-2012, ACL-2011, ACL-2010, ACL-IJCNLP-2009,
+%% EACL-2009, IJCNLP-2008...
+%% Based on the style files for EACL 2006 by 
+%%e.agirre@ehu.es or Sergi.Balari@uab.es
+%% and that of ACL 08 by Joakim Nivre and Noah Smith
+
+%\documentclass[11pt,a4paper]{article}
+%\usepackage[utf8]{inputenc}
+%\usepackage[hyperref]{emnlp-ijcnlp-2019}
+%\usepackage{times}
+%\usepackage{latexsym}
+%\usepackage{comment}
+%\usepackage{amsmath}
+%\usepackage{amssymb}
+%\usepackage{booktabs}
+%\usepackage{arydshln}
+%\usepackage{subfig}
+%\usepackage{float}
+%\usepackage{tikz}
+%\captionsetup[subfigure]{labelformat=empty}
+
+
+
+
+%\usepackage{url}
+
+%\aclfinalcopy % Uncomment this line for the final submission
+
+%\setlength\titlebox{5cm}
+% You can expand the titlebox if you need extra space
+% to show all the authors. Please do not make the titlebox
+% smaller than 5cm (the original size); we will check this
+% in the camera-ready version and ask you to change it back.
+
+%\newcommand\BibTeX{B{\sc ib}\TeX}
+%\newcommand\confname{EMNLP-IJCNLP 2019}
+%\newcommand\conforg{SIGDAT}
+%\newcommand\circled[1]{\tikz[baseline=(char.base)]{\node[shape=circle,draw,inner sep=2pt] (char) {#1}}}
+
+
+\chapter{Bootstrapping disjoint datasets for multilingual multimodal representation learning}
+\label{ch:EMNLP}
+%\begin{document}
+%\maketitle
+
+\paragraph{Abstract}
+  Recent work has highlighted the advantage of jointly learning grounded sentence representations 
+from multiple languages. 
+However, the data used in these studies has 
+been limited to an \emph{aligned} scenario:
+the same images annotated with sentences 
+in multiple languages. We focus on the more realistic 
+\emph{disjoint} scenario in which there is no overlap between the images in multilingual image--caption datasets.
+We confirm that training with aligned data results in better grounded sentence representations than training with \emph{disjoint} data, as measured by image--sentence retrieval performance.
+In order to close this gap in performance, we propose a
+\emph{pseudopairing} method to generate \emph{synthetically aligned} 
+English--German--image triplets from the disjoint sets. The method works by
+first training a model on the 
+disjoint data, and then creating new triples across datasets using sentence similarity 
+under the learned model.
+Experiments show that pseudopairs improve
+image--sentence retrieval performance compared to disjoint training, 
+despite requiring no external data or models. 
+However, we do find that using an external machine translation model 
+to generate the synthetic data sets results in better performance.
+
+\newpage
+
+\paragraph{This chapter is based on} Kádár, Á., Chrupała, G., Alishahi, A., \& Elliott, D. (2019).
+Bootstrapping disjoint datasets for multilingual multimodal representation learning. 
+Submitted to \textit{Empirical Methods in Natural Language Processing (EMNLP)}
+\newpage
+
+\input{chapters/EMNLP2/introduction}
+\input{chapters/EMNLP2/method}
+\input{chapters/EMNLP2/protocol}
+\input{chapters/EMNLP2/results_baseline}
+\input{chapters/EMNLP2/results_pseudo}
+\input{chapters/EMNLP2/results_translation}
+\input{chapters/EMNLP2/discussion_sentsim}
+\input{chapters/EMNLP2/discussion_pseudo}
+\input{chapters/EMNLP2/related}
+\input{chapters/EMNLP2/conclusions}
+
+
+%\bibliography{emnlp-ijcnlp-2019}
+%\bibliographystyle{acl_natbib}

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2018.10.12)  22 MAY 2019 18:21
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2018.10.12)  23 MAY 2019 19:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1598,14 +1598,38 @@ Package: bibentry 2007/10/30 1.5 (PWD)
 (/usr/share/texlive/texmf-dist/tex/latex/comment/comment.sty
 \CommentStream=\write4
 
-Excluding comment 'comment') (./dissertation.bbl
-Invalid UTF-8 byte or sequence at line 1224 replaced by U+FFFD.
-) (./dissertation.aux
-(./frontmatter/personalize.aux) (./frontmatter/cover.aux)
-(./frontmatter/copyright.aux) (./frontmatter/proefschrift.aux)
-(./frontmatter/promotores.aux) (./frontmatter/quote.aux)
-(./frontmatter/acknowledgements.aux) (./chapters/introduction.aux)
-(./chapters/TAL/main.aux) (./chapters/COLI/double_paper.aux
+Excluding comment 'comment')
+(/usr/share/texlive/texmf-dist/tex/latex/arydshln/arydshln.sty
+Package: arydshln 2004/08/31 v1.71 
+\dashlinedash=\dimen332
+\dashlinegap=\dimen333
+\adl@box=\box111
+\adl@height=\dimen334
+\adl@heightsave=\dimen335
+\adl@depth=\dimen336
+\adl@depthsave=\dimen337
+\adl@finaldepth=\dimen338
+\adl@columns=\count293
+\adl@ncol=\count294
+\adl@currentcolumn=\count295
+\adl@currentcolumnsave=\count296
+\adl@totalheight=\count297
+\adl@totalheightsave=\count298
+\adl@dash=\count299
+\adl@gap=\count300
+\adl@cla=\count301
+\adl@clb=\count302
+\adl@everyvbox=\toks52
+\adl@LTpagetotal=\dimen339
+)
+(./dissertation.bbl
+Invalid UTF-8 byte or sequence at line 1231 replaced by U+FFFD.
+) (./dissertation.aux (./frontmatter/personalize.aux)
+(./frontmatter/cover.aux) (./frontmatter/copyright.aux)
+(./frontmatter/proefschrift.aux) (./frontmatter/promotores.aux)
+(./frontmatter/quote.aux) (./frontmatter/acknowledgements.aux)
+(./chapters/introduction.aux) (./chapters/TAL/main.aux)
+(./chapters/COLI/double_paper.aux
 
 LaTeX Warning: Label `sec:experiments' multiply defined.
 
@@ -1613,34 +1637,34 @@ LaTeX Warning: Label `sec:experiments' multiply defined.
 
 LaTeX Warning: Label `sec:data' multiply defined.
 
-) (./chapters/EMNLP/naaclhlt2019.aux) (./chapters/conclusion.aux)
+) (./chapters/EMNLP2/emnlp-ijcnlp-2019.aux) (./chapters/conclusion.aux)
 (./endmatter/ticcthesis.aux))
 \openout1 = `dissertation.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for EU1/lmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 24.
-LaTeX Font Info:    Try loading font information for T3+cmr on input line 24.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for EU1/lmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 25.
+LaTeX Font Info:    Try loading font information for T3+cmr on input line 25.
  (/usr/share/texmf/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
-LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    ... okay on input line 25.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -1678,7 +1702,7 @@ LaTeX Font Info:    ... okay on input line 24.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 24.
+LaTeX Info: Redefining \selectfont on input line 25.
  ABD: EveryShipout initializing macros
 Package pgfplots notification 'compat/show suggested version=true': you might b
 enefit from \pgfplotsset{compat=1.13} (current compat level: 1.8).
@@ -1688,26 +1712,26 @@ Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: rotating package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package caption Info: We need package `ragged2e' on input line 24.
-\AtBeginShipoutBox=\box111
-Package hyperref Info: Link coloring ON on input line 24.
+Package caption Info: We need package `ragged2e' on input line 25.
+\AtBeginShipoutBox=\box112
+Package hyperref Info: Link coloring ON on input line 25.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count293
+\c@section@level=\count303
 )
-LaTeX Info: Redefining \ref on input line 24.
-LaTeX Info: Redefining \pageref on input line 24.
-LaTeX Info: Redefining \nameref on input line 24.
+LaTeX Info: Redefining \ref on input line 25.
+LaTeX Info: Redefining \pageref on input line 25.
+LaTeX Info: Redefining \nameref on input line 25.
 
 (./dissertation.out) (./dissertation.out)
 \@outlinefile=\write5
 \openout5 = `dissertation.out'.
 
-LaTeX Info: Redefining \microtypecontext on input line 24.
+LaTeX Info: Redefining \microtypecontext on input line 25.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: No adjustment of tracking.
@@ -1840,9 +1864,9 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 ) [9] [10]
 [11] [12]
-Overfull \hbox (2.77966pt too wide) in paragraph at lines 116--116
- [][] [][][]\EU1/lmr/bx/n/12 Synthetic Pairs for Multilingual Grounded Language
- 
+Overfull \hbox (0.57164pt too wide) in paragraph at lines 116--116
+ [][] [][][]\EU1/lmr/bx/n/12 Bootstrapping disjoint datasets for multilingual m
+ul- 
  []
 
 [13])
@@ -1906,62 +1930,56 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
  [20] [21] [22]
-[23]
-Overfull \hbox (12.85434pt too wide) in paragraph at lines 844--864
-\EU1/lmr/m/n/12 ([][]2012[][]) also combine distributional semantic models and 
-BoVW pipelines.
- []
-
-[24]
-Overfull \hbox (26.89114pt too wide) in paragraph at lines 865--871
+[23] [24]
+Overfull \hbox (26.89114pt too wide) in paragraph at lines 863--874
 []\EU1/lmr/m/n/12 Combining BoVW and count-based distributional word-representa
 tions
  []
 
 [25] [26] [27] [28] [29] [30] [31] [32] [33] [34] [35]
-Overfull \hbox (8.01161pt too wide) in paragraph at lines 1213--1219
+Overfull \hbox (8.01161pt too wide) in paragraph at lines 1212--1218
 \EU1/lmr/m/n/12 These findings were confirmed and improved upon using a self-at
 tention
  []
 
 [36]
-Overfull \hbox (0.30508pt too wide) in paragraph at lines 1289--1289
+Overfull \hbox (0.30508pt too wide) in paragraph at lines 1288--1288
 []\EU1/lmr/bx/n/14.4 Multi-view representation learning perspec-
  []
 
 [37]
-Overfull \hbox (7.93295pt too wide) in paragraph at lines 1316--1323
+Overfull \hbox (7.93295pt too wide) in paragraph at lines 1317--1324
 \EU1/lmr/m/n/12 these representations is maximized. This optimization process a
 mounts
  []
 
 [38]
-Overfull \hbox (7.40445pt too wide) in paragraph at lines 1345--1355
+Overfull \hbox (7.40445pt too wide) in paragraph at lines 1346--1356
 []\EU1/lmr/m/n/12 In the multi-lingual multi-modal setting [][]Funaki & Nakayam
 a[][] ([][]2015[][])
  []
 
 
-Overfull \hbox (5.77245pt too wide) in paragraph at lines 1356--1365
+Overfull \hbox (5.77245pt too wide) in paragraph at lines 1357--1366
 []\EU1/lmr/m/n/12 The bridge correlational neural network approach ([][]Rajendr
 an et al.[][],
  []
 
 [39] [40] [41] [42]
-Overfull \hbox (23.5583pt too wide) in paragraph at lines 1487--1487
+Overfull \hbox (23.5583pt too wide) in paragraph at lines 1491--1491
 []\EU1/lmr/bx/n/17.28 Interpreting continuous representations 
  []
 
-[43] [44] [45]) [46]
+[43] [44]) [45]
 \openout2 = `chapters/TAL/main.aux'.
 
- (./chapters/TAL/main.tex
+ (./chapters/TAL/main.tex [46
+
+
+
+]
 Chapter 3.
-[47
-
-
-
-] [48] [49] (./chapters/TAL/intro.tex [50] [51] [52] [53])
+[47] [48] [49] (./chapters/TAL/intro.tex [50] [51] [52] [53])
 (./chapters/TAL/models.tex [54] [55]
 *************************************************
 * fontspec warning: "addfontfeatures-ignored"
@@ -2296,12 +2314,18 @@ File: chapters/COLI/bootstrappedMI2.pdf Graphic file (type QTm)
 
 (./chapters/IJCNLP/emnlp2017.tex
 Chapter 5.
-(./chapters/IJCNLP/abstract.tex) [115
+(./chapters/IJCNLP/abstract.tex)
+Overfull \hbox (1.96361pt too wide) in paragraph at lines 3--78
+ []\EU1/lmr/bx/n/12 Abstract[] \EU1/lmr/m/n/12 We decompose multimodal translat
+ion into two sub-tasks:
+ []
+
+[115
 
 
 
-] [116]
-(./chapters/IJCNLP/introduction.tex (./chapters/IJCNLP/model_diagram.tex
+] [116] (./chapters/IJCNLP/introduction.tex
+(./chapters/IJCNLP/model_diagram.tex
 Overfull \hbox (7.92958pt too wide) in paragraph at lines 81--81
  [][][][]|\EU1/lmr/bx/n/14.4 Average 
  []
@@ -2471,8 +2495,8 @@ Underfull \hbox (badness 3471) in paragraph at lines 32--32
  (./chapters/ConLL/conll2018.tex
 Chapter 6.
 
-Overfull \hbox (4.94762pt too wide) in paragraph at lines 101--104
- []\EU1/lmr/bx/n/12 abstract[] \EU1/lmr/m/n/12 Recent work has shown how to lea
+Overfull \hbox (8.58362pt too wide) in paragraph at lines 101--104
+ []\EU1/lmr/bx/n/12 Abstract[] \EU1/lmr/m/n/12 Recent work has shown how to lea
 rn better visual-semantic
  []
 
@@ -2689,118 +2713,19 @@ ranslation
 * The requested feature is "RawFeature=+tnum".
 *************************************************
 [161]) (./chapters/ConLL/conclusions.tex [162] [163])) [164]
-\openout2 = `chapters/EMNLP/naaclhlt2019.aux'.
+\openout2 = `chapters/EMNLP2/emnlp-ijcnlp-2019.aux'.
 
 
-(./chapters/EMNLP/naaclhlt2019.tex
+(./chapters/EMNLP2/emnlp-ijcnlp-2019.tex
 Chapter 7.
-
-Overfull \hbox (2.17564pt too wide) in paragraph at lines 58--83
- []\EU1/lmr/bx/n/12 abstract[] \EU1/lmr/m/n/12 Recent work has highlighted the 
-advantage of jointly learn-
- []
-
 [165
 
 
 
-] [166] [167] (./chapters/EMNLP/introduction.tex [168] [169])
-(./chapters/EMNLP/method.tex
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 25.
-
-
-Package amsmath Warning: Cannot use `split' here;
-(amsmath)                trying to recover with `aligned' on input line 29.
-
-LaTeX Font Info:    Calculating math sizes for size <> on input line 31.
-
-LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <> not available
-(Font)              size <5> substituted on input line 31.
-
-
-LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <0.7> not available
-(Font)              size <5> substituted on input line 31.
-
-
-LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <0.5> not available
-(Font)              size <5> substituted on input line 31.
-
-
-LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <> not available
-(Font)              size <5> substituted on input line 31.
-
-
-LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <0.7> not available
-(Font)              size <5> substituted on input line 31.
-
-
-LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <0.5> not available
-(Font)              size <5> substituted on input line 31.
-
-
-LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <> not available
-(Font)              size <5> substituted on input line 31.
-
-
-LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <0.7> not available
-(Font)              size <5> substituted on input line 31.
-
-
-LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <0.5> not available
-(Font)              size <5> substituted on input line 31.
-
-
-LaTeX Font Warning: Font shape `OT1/cmr/m/it' in size <> not available
-(Font)              size <5> substituted on input line 31.
-
-
-LaTeX Font Warning: Font shape `OT1/cmr/m/it' in size <0.7> not available
-(Font)              size <5> substituted on input line 31.
-
-
-LaTeX Font Warning: Font shape `OT1/cmr/m/it' in size <0.5> not available
-(Font)              size <5> substituted on input line 31.
-
-
-LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <> not available
-(Font)              size <5> substituted on input line 31.
-
-
-LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <0.7> not available
-(Font)              size <5> substituted on input line 31.
-
-
-LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <0.5> not available
-(Font)              size <5> substituted on input line 31.
-
-
-LaTeX Font Warning: Font shape `OML/cmm/b/it' in size <> not available
-(Font)              size <5> substituted on input line 31.
-
-
-LaTeX Font Warning: Font shape `OML/cmm/b/it' in size <0.7> not available
-(Font)              size <5> substituted on input line 31.
-
-
-LaTeX Font Warning: Font shape `OML/cmm/b/it' in size <0.5> not available
-(Font)              size <5> substituted on input line 31.
-
-
-LaTeX Font Warning: Font shape `OMS/cmsy/b/n' in size <> not available
-(Font)              size <5> substituted on input line 31.
-
-
-LaTeX Font Warning: Font shape `OMS/cmsy/b/n' in size <0.7> not available
-(Font)              size <5> substituted on input line 31.
-
-
-LaTeX Font Warning: Font shape `OMS/cmsy/b/n' in size <0.5> not available
-(Font)              size <5> substituted on input line 31.
-
-[170] Excluding 'comment' comment. [171] Excluding 'comment' comment.
-Excluding 'comment' comment. [172] Excluding 'comment' comment.)
-(./chapters/EMNLP/protocol.tex [173]
+] [166] [167] (./chapters/EMNLP2/introduction.tex [168] [169])
+(./chapters/EMNLP2/method.tex [170] Excluding 'comment' comment. [171]
+Excluding 'comment' comment. Excluding 'comment' comment. [172]
+Excluding 'comment' comment.) (./chapters/EMNLP2/protocol.tex [173]
 Underfull \hbox (badness 10000) in paragraph at lines 39--39
 [][][][][]$[][][][][] [] [] [] [][] [] [][][][][][][][][] [] [][][] [] [][][][]
 [][][][][][][][][][][] [] [][][][][][][][][] []
@@ -2812,7 +2737,7 @@ Overfull \hbox (4.54362pt too wide) in paragraph at lines 44--49
 erman
  []
 
-[174]) (./chapters/EMNLP/results_baseline.tex
+[174]) (./chapters/EMNLP2/results_baseline.tex
 *************************************************
 * fontspec warning: "addfontfeatures-ignored"
 * 
@@ -2825,7 +2750,7 @@ erman
 *************************************************
 * fontspec warning: "addfontfeatures-ignored"
 * 
-* \addfontfeature(s) ignored on line 44; it cannot be used with a font that
+* \addfontfeature(s) ignored on line 46; it cannot be used with a font that
 * wasn't selected by a fontspec command.
 * 
 * The current font is "\EU1/lmr/m/n/12 ".
@@ -2834,7 +2759,7 @@ erman
 *************************************************
 * fontspec warning: "addfontfeatures-ignored"
 * 
-* \addfontfeature(s) ignored on line 66; it cannot be used with a font that
+* \addfontfeature(s) ignored on line 69; it cannot be used with a font that
 * wasn't selected by a fontspec command.
 * 
 * The current font is "\EU1/lmr/m/n/12 ".
@@ -2843,17 +2768,13 @@ erman
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-Excluding 'comment' comment. [175]
-
-LaTeX Warning: Text page 176 contains only floats.
-
-[176] [177] Excluding 'comment' comment.
-Overfull \hbox (2.72499pt too wide) in paragraph at lines 196--202
+[175] Excluding 'comment' comment. [176] [177] Excluding 'comment' comment.
+Overfull \hbox (2.72499pt too wide) in paragraph at lines 199--205
 \EU1/lmr/m/n/12 combination of \EU1/lmr/m/it/12 disjoint \EU1/lmr/m/n/12 and \E
 U1/lmr/m/it/12 aligned \EU1/lmr/m/n/12 data settings. We train an English-
  []
 
-) (./chapters/EMNLP/pseudo.tex
+) (./chapters/EMNLP2/results_pseudo.tex
 *************************************************
 * fontspec warning: "addfontfeatures-ignored"
 * 
@@ -2866,24 +2787,20 @@ U1/lmr/m/it/12 aligned \EU1/lmr/m/n/12 data settings. We train an English-
 *************************************************
 * fontspec warning: "addfontfeatures-ignored"
 * 
-* \addfontfeature(s) ignored on line 28; it cannot be used with a font that
+* \addfontfeature(s) ignored on line 29; it cannot be used with a font that
 * wasn't selected by a fontspec command.
 * 
-* The current font is "\EU1/lmr/m/n/12 ".
+* The current font is "\EU1/lmr/m/n/10 ".
 * The requested feature is "RawFeature=+tnum".
 *************************************************
-
-Overfull \hbox (53.84065pt too wide) in paragraph at lines 28--45
- [][] 
- []
-
-Excluding 'comment' comment.
-Overfull \hbox (2.91562pt too wide) in paragraph at lines 74--85
+[178] Excluding 'comment' comment.
+Overfull \hbox (2.91562pt too wide) in paragraph at lines 77--88
  []\EU1/lmr/bx/n/12 Disjoint[] \EU1/lmr/m/n/12 We generate pseudopairs using th
 e \EU1/lmr/m/it/12 disjoint \EU1/lmr/m/n/12 bilingual model
  []
 
-[178] Excluding 'comment' comment. [179]) (./chapters/EMNLP/translation.tex
+[179] Excluding 'comment' comment. [180])
+(./chapters/EMNLP2/results_translation.tex
 *************************************************
 * fontspec warning: "addfontfeatures-ignored"
 * 
@@ -2893,71 +2810,59 @@ e \EU1/lmr/m/it/12 disjoint \EU1/lmr/m/n/12 bilingual model
 * The current font is "\EU1/lmr/m/n/12 ".
 * The requested feature is "RawFeature=+tnum".
 *************************************************
-*************************************************
-* fontspec warning: "addfontfeatures-ignored"
-* 
-* \addfontfeature(s) ignored on line 30; it cannot be used with a font that
-* wasn't selected by a fontspec command.
-* 
-* The current font is "\EU1/lmr/m/n/12 ".
-* The requested feature is "RawFeature=+tnum".
-*************************************************
-
-Overfull \hbox (67.35265pt too wide) in paragraph at lines 30--41
- [][] 
- []
-
-[180]
-Overfull \hbox (8.77962pt too wide) in paragraph at lines 53--63
+Excluding 'comment' comment.
+Overfull \hbox (8.77962pt too wide) in paragraph at lines 55--65
  []\EU1/lmr/bx/n/12 Disjoint[] \EU1/lmr/m/n/12 We first report the results of d
 isjoint bilingual model trained
  []
 
-[181]) (./chapters/EMNLP/discussion.tex
-(./chapters/EMNLP/discussion-sentsim.tex
+[181]) (./chapters/EMNLP2/discussion_sentsim.tex [182]
+Overfull \hbox (2.77563pt too wide) in paragraph at lines 6--11
+\EU1/lmr/m/n/12 proach to our knowledge as reported by [][]Rotman et al.[][] ([
+][]2018[][]): DPCCA
+ []
+
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 3.
+               Default added (so using `tbp') on input line 13.
 
 *************************************************
 * fontspec warning: "addfontfeatures-ignored"
 * 
-* \addfontfeature(s) ignored on line 5; it cannot be used with a font that
+* \addfontfeature(s) ignored on line 15; it cannot be used with a font that
 * wasn't selected by a fontspec command.
 * 
 * The current font is "\EU1/lmr/m/n/12 ".
 * The requested feature is "RawFeature=+tnum".
 *************************************************
-[182] [183] Excluding 'comment' comment.)
-(./chapters/EMNLP/discussion-pseudoanalysis.tex
-File: chapters/EMNLP/assets/annotation_freq.pdf Graphic file (type QTm)
-
-<use  "chapters/EMNLP/assets/annotation_freq.pdf" > [184]
+Excluding 'comment' comment.) (./chapters/EMNLP2/discussion_pseudo.tex [183]
+[184] (./chapters/EMNLP2/figure-pseudopairs.tex
 *************************************************
 * fontspec warning: "addfontfeatures-ignored"
 * 
-* \addfontfeature(s) ignored on line 23; it cannot be used with a font that
+* \addfontfeature(s) ignored on line 6; it cannot be used with a font that
 * wasn't selected by a fontspec command.
 * 
 * The current font is "\EU1/lmr/m/n/12 ".
 * The requested feature is "RawFeature=+tnum".
 *************************************************
-File: chapters/EMNLP/assets/8.png Graphic file (type QTm)
-<use  "chapters/EMNLP/assets/8.png" >
-File: chapters/EMNLP/assets/2.png Graphic file (type QTm)
- <use  "chapters/EMNLP/assets/2.png" >
-File: chapters/EMNLP/assets/9.png Graphic file (type QTm)
+File: chapters/EMNLP2/assets/8.png Graphic file (type QTm)
+<use  "chapters/EMNLP2/assets/8.png" >
+File: chapters/EMNLP2/assets/2.png Graphic file (type QTm)
+ <use  "chapters/EMNLP2/assets/2.png" >
+File: chapters/EMNLP2/assets/9.png Graphic file (type QTm)
 
-<use  "chapters/EMNLP/assets/9.png" >
-File: chapters/EMNLP/assets/5.png Graphic file (type QTm)
- <use  "chapters/EMNLP/assets/5.png" >
-Overfull \hbox (7.92355pt too wide) in paragraph at lines 23--50
+<use  "chapters/EMNLP2/assets/9.png" >
+File: chapters/EMNLP2/assets/5.png Graphic file (type QTm)
+ <use  "chapters/EMNLP2/assets/5.png" >
+Overfull \hbox (7.92355pt too wide) in paragraph at lines 6--33
  [] 
  []
 
 Excluding 'comment' comment.) Excluding 'comment' comment.)
-(./chapters/EMNLP/related.tex [185] [186]) (./chapters/EMNLP/conclusions.tex)
-Overfull \hbox (5.13962pt too wide) in paragraph at lines 3--121
+(./chapters/EMNLP2/related.tex [185] [186]) (./chapters/EMNLP2/conclusions.tex)
+
+Overfull \hbox (5.13962pt too wide) in paragraph at lines 3--93
 \EU1/lmr/m/n/12 performance when training models jointly on multiple languages 
 ([][]Gella
  []
@@ -3004,29 +2909,30 @@ t and showed
 
 
 ] [208] [209] [210] [211]
-Underfull \hbox (badness 1072) in paragraph at lines 352--356
+Underfull \hbox (badness 1072) in paragraph at lines 345--349
 []\EU1/lmr/m/n/10 Cauchy, A. (1847).  Méthode générale pour la résolution des s
 ystemes
  []
 
 [212] [213] [214] [215] [216] [217] [218] [219] [220] [221] [222] [223]
 [224] [225]
-Invalid UTF-8 byte or sequence at line 1224 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 1231 replaced by U+FFFD.
 Missing character: There is no � in font [lmroman10-regular]:mapping=tex-text!
  [226] [227] [228] [229] [230] [231] [232] [233] [234] [235]
-[236] [237] [238] [239] [240] [241]) [242]
+[236] [237] [238] [239] [240] [241] [242]) [243]
 \openout2 = `endmatter/ticcthesis.aux'.
 
- (./endmatter/ticcthesis.tex [243
+ (./endmatter/ticcthesis.tex
+[244
 
 
-]
+] [245]
 Overfull \hbox (1.67531pt too wide) in paragraph at lines 78--81
 \EU1/lmr/m/n/10 tion during playful interactions. Promotores: E.J. Krahmer, M.G
 .J. Swerts.
  []
 
-[244] [245]
+[246] [247]
 Overfull \hbox (6.7893pt too wide) in paragraph at lines 153--157
 \EU1/lmr/m/n/10 production, comprehension, and preference. Promotores: A.A. Mae
 s, M.G.J.
@@ -3038,35 +2944,31 @@ Overfull \hbox (6.53532pt too wide) in paragraph at lines 165--168
 Tilburg,
  []
 
-[246]
+[248]
 Overfull \hbox (0.6653pt too wide) in paragraph at lines 174--178
 []\EU1/lmr/m/n/10 Yevgen Matusevych, Learning constructions from bilingual expo
 sure: Com-
  []
 
-[247]
+[249]
 Overfull \hbox (13.34532pt too wide) in paragraph at lines 210--214
 []\EU1/lmr/m/n/10 Emmelyn Croes, Meeting Face-to-Face Online: The Effects of Vi
 deo-Mediated
  []
 
-) [248]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 74.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 74.
+) [250]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 76.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 76.
  (./dissertation.aux (./frontmatter/personalize.aux)
 (./frontmatter/cover.aux) (./frontmatter/copyright.aux)
 (./frontmatter/proefschrift.aux) (./frontmatter/promotores.aux)
 (./frontmatter/quote.aux) (./frontmatter/acknowledgements.aux)
 (./chapters/introduction.aux) (./chapters/TAL/main.aux)
 (./chapters/COLI/double_paper.aux) (./chapters/IJCNLP/emnlp2017.aux)
-(./chapters/ConLL/conll2018.aux) (./chapters/EMNLP/naaclhlt2019.aux)
+(./chapters/ConLL/conll2018.aux) (./chapters/EMNLP2/emnlp-ijcnlp-2019.aux)
 (./chapters/conclusion.aux) (./endmatter/ticcthesis.aux))
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 74.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 74.
-
-
-LaTeX Font Warning: Size substitutions with differences
-(Font)              up to 4.5pt have occurred.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 76.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 76.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -3077,12 +2979,12 @@ LaTeX Warning: There were multiply-defined labels.
 ### simple group (level 1) entered at line 75 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 55369 strings out of 493638
- 1231709 string characters out of 6146795
- 1514964 words of memory out of 5000000
- 57644 multiletter control sequences out of 15000+600000
- 24648 words of font info for 118 fonts, out of 8000000 for 9000
+ 55517 strings out of 493638
+ 1233601 string characters out of 6146795
+ 1518331 words of memory out of 5000000
+ 57787 multiletter control sequences out of 15000+600000
+ 22721 words of font info for 110 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
  69i,20n,81p,10485b,2776s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on dissertation.pdf (262 pages).
+Output written on dissertation.pdf (264 pages).
