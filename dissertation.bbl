@@ -426,9 +426,9 @@ Chrupa{\l}a, G., Gelderloos, L., K{\'a}d{\'a}r, {\'A}., \& Alishahi, A. (2019).
 Chrupa{\l}a, G., K{\'a}d{\'a}r, {\'A}., \& Alishahi, A. (2015).
 \newblock Learning language through pictures.
 \newblock In {\em Proceedings of the 53rd Annual Meeting of the Association for
-  Computational Linguistics and the 7th International Joint Conference on
-  Natural Language Processing (Volume 2: Short Papers)}, volume~2  (pp.\
-  112--118).
+  Computational Linguistics (ACL) and the 7th International Joint Conference on
+  Natural Language Processing (IJCNLP) (Volume 2: Short Papers)}, volume~2
+  (pp.\ 112--118).
 
 \bibitem[Chung et~al., 2016]{chung2016character}
 Chung, J., Cho, K., \& Bengio, Y. (2016).
@@ -540,7 +540,7 @@ Devlin, J., Chang, M.-W., Lee, K., \& Toutanova, K. (2018).
 \bibitem[Dinu et~al., 2015]{dinu2014improving}
 Dinu, G., Lazaridou, A., \& Baroni, M. (2015).
 \newblock Improving zero-shot learning by mitigating the hubness problem.
-\newblock {\em ICLR}.
+\newblock {\em International Conference on Learning Representations}.
 
 \bibitem[Dolan et~al., 2004]{dolan2004unsupervised}
 Dolan, B., Quirk, C., \& Brockett, C. (2004).
@@ -733,7 +733,7 @@ Ferreira, T.~C., Moussallem, D., K{\'a}d{\'a}r, {\'A}., Wubben, S., \& Krahmer,
   E. (2018).
 \newblock Neuralreg: An end-to-end approach to referring expression generation.
 \newblock In {\em Proceedings of the 56th Annual Meeting of the Association for
-  Computational Linguistics (Volume 1: Long Papers)}  (pp.\ 1959--1969).
+  Computational Linguistics (ACL) (Volume 1: Long Papers)}  (pp.\ 1959--1969).
 
 \bibitem[Finkelstein et~al., 2001]{finkelstein2001placing}
 Finkelstein, L., Gabrilovich, E., Matias, Y., Rivlin, E., Solan, Z., Wolfman,
@@ -1042,8 +1042,8 @@ K{\'a}d{\'a}r, {\'A}., Alishahi, A., \& Chrupa{\l}a, G. (2015a).
 \bibitem[K{\'a}d{\'a}r et~al., 2015b]{kadar2015lingusitic}
 K{\'a}d{\'a}r, {\'A}., Chrupa{\l}a, G., \& Alishahi, A. (2015b).
 \newblock Linguistic analysis of multi-modal recurrent neural networks.
-\newblock In {\em Proceedings of the Fourth Workshop on Vision and Language}
-  (pp.\ 8--9).
+\newblock In {\em Proceedings of the Fourth Workshop on Vision and Language
+  (EMNLP-V\&L Workshop)}  (pp.\ 8--9).
 
 \bibitem[K{\'a}d{\'a}r et~al., 2017]{kadar2017representation}
 K{\'a}d{\'a}r, A., Chrupa{\l}a, G., \& Alishahi, A. (2017).
@@ -1056,7 +1056,7 @@ K{\'a}d{\'a}r, {\'A}., C{\^o}t{\'e}, M.-A., Chrupa{\l}a, G., \& Alishahi, A.
   (2018a).
 \newblock Revisiting the hierarchical multiscale {LSTM}.
 \newblock In {\em Proceedings of the 27th International Conference on
-  Computational Linguistics}  (pp.\ 3215--3227).
+  Computational Linguistics (COLING)}  (pp.\ 3215--3227).
 
 \bibitem[K{\'a}d{\'a}r et~al., 2018b]{kadar2018lessons}
 K{\'a}d{\'a}r, {\'A}., Elliott, D., C{\^o}t{\.e}, M.-A., Chrupa{\l}a, G., \&
@@ -1069,7 +1069,8 @@ K{\'a}d{\'a}r, {\'A}., Elliott, D., C{\^o}t{\.e}, M.-A., Chrupa{\l}a, G., \&
 Kahou, S.~E., Atkinson, A., Michalski, V., K{\'a}d{\'a}r, {\'A}., Trischler,
   A., \& Bengio, Y. (2018).
 \newblock Figureqa: An annotated figure dataset for visual reasoning.
-\newblock {\em ICLR Workshop}.
+\newblock {\em International Conference on Learning Representations (ICLR
+  Workshop)}.
 
 \bibitem[Karpathy \& Fei-Fei, 2015]{karpathy2015deep}
 Karpathy, A. \& Fei-Fei, L. (2015).
@@ -1231,7 +1232,7 @@ Krizhevsky, A., Sutskever, I., \& Hinton, G.~E. (2012).
 Kádár, �., Elliott, D., Côté, M.-A., Chrupała, G., \& Alishahi, A. (2018).
 \newblock Lessons learned in multilingual grounded language learning.
 \newblock In {\em Proceedings of the 21st Conference on Computational Natural
-  Language}.
+  Language (ConLL)}.
 
 \bibitem[Landau et~al., 1998]{landau1998object}
 Landau, B., Smith, L., \& Jones, S. (1998).
@@ -1445,7 +1446,7 @@ Manjavacas, E., K{\'a}d{\'a}r, {\'A}., \& Kestemont, M. (2019).
   learning.
 \newblock In {\em Proceedings of the 2018 Conference of the North {A}merican
   Chapter of the Association for Computational Linguistics: Human Language
-  Technologies}.
+  Technologies (NAACL-HLT)}.
 
 \bibitem[Mao et~al., 2014a]{mao2014deep}
 Mao, J., Xu, W., Yang, Y., Wang, J., Huang, Z., \& Yuille, A. (2014a).
@@ -2082,7 +2083,7 @@ Venugopalan, S., Xu, H., Donahue, J., Rohrbach, M., Mooney, R., \& Saenko, K.
 \bibitem[Vilnis \& McCallum, 2015]{vilnis2014word}
 Vilnis, L. \& McCallum, A. (2015).
 \newblock Word representations via gaussian embedding.
-\newblock {\em ICLR}.
+\newblock {\em International Conference on Learning Representations}.
 
 \bibitem[Vinyals et~al., 2015a]{vinyals2015grammar}
 Vinyals, O., Kaiser, {\L}., Koo, T., Petrov, S., Sutskever, I., \& Hinton, G.
@@ -2190,7 +2191,8 @@ Yang, D. \& Powers, D.~M. (2006).
 \bibitem[Yang \& Hospedales, 2016]{yang2016trace}
 Yang, Y. \& Hospedales, T.~M. (2016).
 \newblock Trace norm regularised deep multi-task learning.
-\newblock {\em ICLR Workshop}.
+\newblock {\em International Conference on Learning Representations
+  (Workshop)}.
 
 \bibitem[Yoo et~al., 2017]{yoo2017improving}
 Yoo, K.~M., Shin, Y., \& Lee, S.-g. (2017).

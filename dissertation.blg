@@ -72,7 +72,7 @@ Warning--empty journal in perfetti1998limits
 Warning--empty journal in Sennrich2017
 You've used 361 entries,
             2229 wiz_defined-function locations,
-            2296 strings with 74993 characters,
+            2300 strings with 75557 characters,
 and the built_in function-call counts, 175768 in all, are:
 = -- 17542
 > -- 7395

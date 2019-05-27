@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2018.10.12)  27 MAY 2019 13:02
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2018.10.12)  27 MAY 2019 18:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1623,7 +1623,7 @@ Package: arydshln 2004/08/31 v1.71
 \adl@LTpagetotal=\dimen339
 )
 (./dissertation.bbl
-Invalid UTF-8 byte or sequence at line 1231 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 1232 replaced by U+FFFD.
 ) (./dissertation.aux (./frontmatter/personalize.aux)
 (./frontmatter/cover.aux) (./frontmatter/copyright.aux)
 (./frontmatter/proefschrift.aux) (./frontmatter/promotores.aux)
@@ -1807,7 +1807,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 18--21
 \openout2 = `frontmatter/promotores.aux'.
 
  (./frontmatter/promotores.tex
-Underfull \hbox (badness 10000) in paragraph at lines 12--16
+Underfull \hbox (badness 10000) in paragraph at lines 16--20
 
  []
 
@@ -2916,7 +2916,7 @@ ystemes
 
 [212] [213] [214] [215] [216] [217] [218] [219] [220] [221] [222] [223]
 [224] [225]
-Invalid UTF-8 byte or sequence at line 1231 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 1232 replaced by U+FFFD.
 Missing character: There is no � in font [lmroman10-regular]:mapping=tex-text!
  [226] [227] [228] [229] [230] [231] [232] [233] [234] [235]
 [236] [237] [238] [239] [240] [241] [242]) [243]
@@ -2981,7 +2981,7 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  55517 strings out of 493638
  1233601 string characters out of 6146795
- 1518331 words of memory out of 5000000
+ 1518603 words of memory out of 5000000
  57787 multiletter control sequences out of 15000+600000
  22721 words of font info for 110 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
