@@ -179,7 +179,7 @@ More concretely in terms of extra-linguistic context the present thesis focuses 
 
 Linguistic-visual multi-modal representations on the word level have a well established albeit
 somewhat brief history (Section~\ref{sec:distvis}).
-Such methods were developed both within the \emph{count-based}
+Methods were developed both within the \emph{count-based}
 and \emph{prediction-based} frameworks using computer vision techniques to represent the
 \emph{visual modality} and NLP methods to represent texts.
 These separate spaces are then combined into a single multi-modal representation.
@@ -849,7 +849,7 @@ For each tag-word a visual-only representation is created by summing over the Bo
 for all images corresponding to the tag.
 \cite{bruni2012distributional} construct several types of distributional semantic spaces
 from text-only corpora unrelated to the images.
-As in \cite{feng2010visual} they create multimodal representations by appling
+As in \cite{feng2010visual} they create multimodal representations by applying
 separate pipelines to extract textual and visual features spaces and then concatenating them.
 On word-similarity benchmarks \cite{bruni2012distributional} show that the text-only model performs better than visual-only
 and that the combination of the two surpasses both.
@@ -860,7 +860,7 @@ distributional semantics models fail to capture the obvious fact that ``the gras
 providing evidence against the theoretical argument that perceptual information is available in
 large collections of texts and so grounded representations are superfluous \citep{louwerse2011symbol}.
 
-Combining BoVW and count-based distributional word-representations remained the standard methodology
+Combining BoVW and count-based distributional representations remained the standard methodology
 in many other works on multi-modal word representations at the time
 \citep{bruni2011distributional,leong2011going,leong2011measuring}.
 \cite{bruni2014multimodal} frame multi-modal distributional semantics under a general framework:
@@ -1072,7 +1072,7 @@ they train a recurrent encoder to encode a target sentence and use two separate 
 generate its pre-context and post-context.
 This method was confirmed to be a successful self-supervised method for transfer
 learning in a number of sentence
-classification tasks beating simpler methodssuch as bag-of-words approaches based on skip-gram
+classification tasks beating simpler methods such as bag-of-words approaches based on skip-gram
 or CBOW embeddings, tf-idf vectors and auto-encoders \citep{hill2016learning}. A convolutional
 variant of the encoder was introduced in \cite{gan2016unsupervised} and several other works
 train simple sum/average pre-trained word-embedding encoders using the same sentential
@@ -1219,7 +1219,7 @@ self-attention mechanism on top of the RNN encoder \citep{yoo2017improving}.
 To investigate the difference between the representations learned by (text-only) language
 models and image--sentence ranking models in Chapter~\ref{ch:COLI} we develop 
 novel visualization and analysis methods. Furthermore,
-expading on the findings of \citep{kiela2017learning} and \citep{yoo2017improving} 
+expanding on the findings of \citep{kiela2017learning} and \citep{yoo2017improving} 
 in Chapter~\ref{ch:IJCNLP} we show that
 visually grounded learning through an image--sentence ranking objective 
 leads to better translations in the visually descriptive domain. We also
@@ -1411,7 +1411,7 @@ transfer in the vision-language domain.
 \subsection{Images as pivots for translation}
 \label{sec:imgpivot}
 
-On word level images have been used to link languages and induce bilingual
+On word level, images have been used to link languages and induce bilingual
 lexicons without parallel corpora. The lack of bi-text in this setting has
 been traditionally solved by methods relying on textual features
 such as ortographic similarity \citep{haghighi2008learning} or similar diachronic distributional
@@ -1455,7 +1455,7 @@ counterparts \citep{vulic2016multi}.
 of \~200K words and 100 images per word using Google Image Search and perform
 experiments with 32 languages.
 They confirm the finding of \cite{hartmann2017limitations} that image-pivoting
-is most effective for nouns, however, find that using their larger dataset
+is most effective for nouns, but also find that using their larger dataset
 adjectives can also be translated reliably. 
 
 %Similarly to \cite{vulic2016multi}

@@ -56,7 +56,7 @@ The multilingual models are trained to minimize the ranking loss for the set of 
 We build our model on the PyTorch implementation\footnote{Code to reproduce our results is available at\\ \url{https://github.com/kadarakos/mulisera}.}
 %\footnote{\url{https://github.com/fartashf/vsepp}}
 of the VSE++ model \citep{faghri2017vse++}.
-Images are represented by the 2048D average-pool features
+Images are represented by the 2048 dimensional average-pool features
 extracted from the ResNet50 architecture \citep{he2016deep} trained on ImageNet \citep{deng2009imagenet}; this is followed by a trained linear layer
 $\mathbf{W}_{I} \in \mathbb{R}^{2048 \times 1024}$. Other implementation details follow \citep{faghri2017vse++}: sentences are represented as the final hidden state of a GRU \citep{chung2014empirical} with 1024 units and 300 dimensional word-embeddings trained from scratch. We use a single word embedding matrix containing  the union of all words in all considered languages.
 %For the linguistic typology experiments we use the pre-trained 64D continuous language typology features of \cite{ostling2016continuous} or the 103D \texttt{syntax\_knn} features of URIEL through the \texttt{lang2vec} framework \cite{littell2017uriel}.  An extra token is prepended to each sentence representing the language as in \cite{malaviya2017learning}.  After the embedding lookup operation the typology-vectors are transformed by a linear layer to have the same dimensionality as the word-embeddings: $\mathbf{W_e} \in \mathbb{R}^{64 \times 300}$ or  $\mathbf{W_e} \in \mathbb{R}^{103 \times 300}$.
