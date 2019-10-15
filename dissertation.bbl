@@ -801,6 +801,12 @@ Funaki, R. \& Nakayama, H. (2015).
 \newblock In {\em Proceedings of the 2015 Conference on Empirical Methods in
   Natural Language Processing}  (pp.\ 585--590).
 
+\bibitem[Gabor, 1946]{gabor1946theory}
+Gabor, D. (1946).
+\newblock Theory of communication. part 1: The analysis of information.
+\newblock {\em Journal of the Institution of Electrical Engineers-Part III:
+  Radio and Communication Engineering}, 93(26), 429--441.
+
 \bibitem[Gal \& Ghahramani, 2016]{Gal2016}
 Gal, Y. \& Ghahramani, Z. (2016).
 \newblock A theoretically grounded application of dropout in recurrent neural

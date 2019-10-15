@@ -1,5 +1,5 @@
-This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
-Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: dissertation.aux
 A level-1 auxiliary file: frontmatter/personalize.aux
 A level-1 auxiliary file: frontmatter/cover.aux
@@ -17,43 +17,43 @@ A level-1 auxiliary file: chapters/EMNLP2/emnlp-ijcnlp-2019.aux
 A level-1 auxiliary file: chapters/conclusion.aux
 The style file: apalike2.bst
 A level-1 auxiliary file: endmatter/ticcthesis.aux
-Reallocated field_info (elt_size=4) to 12942 items from 5000.
+Reallocated field_info (elt_size=4) to 12964 items from 5000.
 Database file #1: references.bib
-"{" immediately follows a field name---line 1569 of file references.bib
+"{" immediately follows a field name---line 1580 of file references.bib
  :   pages
  :        {215--233},
 I'm skipping whatever remains of this entry
-Repeated entry---line 3026 of file references.bib
+Repeated entry---line 3037 of file references.bib
  : @inproceedings{vinyals2015show
  :                               ,
 I'm skipping whatever remains of this entry
 Reallocated str_pool (elt_size=1) to 130000 items from 65000.
-Repeated entry---line 4003 of file references.bib
+Repeated entry---line 4014 of file references.bib
  : @inproceedings{simonyan2014very
  :                                ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 4339 of file references.bib
+Repeated entry---line 4350 of file references.bib
  : @article{schuster1997
  :                      ,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 4715 of file references.bib
+I was expecting a `,' or a `}'---line 4726 of file references.bib
  :   
  :   url =  "http://www.aclweb.org/anthology/E06-1040",
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Repeated entry---line 4812 of file references.bib
+Repeated entry---line 4823 of file references.bib
  : @inproceedings{koehn2007
  :                         ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 5681 of file references.bib
+Repeated entry---line 5692 of file references.bib
  : @inproceedings{sennrich2016b
  :                             ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 5930 of file references.bib
+Repeated entry---line 5941 of file references.bib
  : @inproceedings{gal2016
  :                       ,
 I'm skipping whatever remains of this entry
-I was expecting an "="---line 6476 of file references.bib
+I was expecting an "="---line 6487 of file references.bib
  :   
  :   title={Inferring algorithmic patterns with stack-augmented recurrent nets},
 (Error may have been on previous line)
@@ -70,45 +70,45 @@ Warning--can't use both volume and number fields in kievit2013naturalistic
 Warning--empty journal in nivre2015universal
 Warning--empty journal in perfetti1998limits
 Warning--empty journal in Sennrich2017
-You've used 361 entries,
+You've used 362 entries,
             2229 wiz_defined-function locations,
-            2300 strings with 75557 characters,
-and the built_in function-call counts, 175768 in all, are:
-= -- 17542
-> -- 7395
-< -- 326
-+ -- 2646
-- -- 2541
-* -- 14058
-:= -- 28303
-add.period$ -- 1079
-call.type$ -- 361
-change.case$ -- 3052
-chr.to.int$ -- 342
-cite$ -- 373
-duplicate$ -- 7532
-empty$ -- 12396
-format.name$ -- 3060
-if$ -- 36288
+            2308 strings with 75757 characters,
+and the built_in function-call counts, 176131 in all, are:
+= -- 17580
+> -- 7402
+< -- 327
++ -- 2648
+- -- 2543
+* -- 14089
+:= -- 28365
+add.period$ -- 1082
+call.type$ -- 362
+change.case$ -- 3058
+chr.to.int$ -- 343
+cite$ -- 374
+duplicate$ -- 7546
+empty$ -- 12426
+format.name$ -- 3063
+if$ -- 36359
 int.to.chr$ -- 20
 int.to.str$ -- 0
-missing$ -- 368
-newline$ -- 1802
-num.names$ -- 1085
-pop$ -- 3616
+missing$ -- 369
+newline$ -- 1807
+num.names$ -- 1088
+pop$ -- 3619
 preamble$ -- 1
-purify$ -- 3063
+purify$ -- 3069
 quote$ -- 0
-skip$ -- 5715
+skip$ -- 5726
 stack$ -- 0
-substring$ -- 12312
-swap$ -- 2046
+substring$ -- 12349
+swap$ -- 2047
 text.length$ -- 203
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 2146
+type$ -- 2152
 warning$ -- 12
-while$ -- 1410
+while$ -- 1414
 width$ -- 0
-write$ -- 4675
+write$ -- 4688
 (There were 9 error messages)
